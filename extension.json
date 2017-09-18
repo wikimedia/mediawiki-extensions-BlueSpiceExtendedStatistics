@@ -10,8 +10,8 @@
 	"type": "bluespice",
 	"license-name": "GPL-2.0+",
 	"bsgExtensions": {
-		"Statistics": {
-			"className": "Statistics",
+		"BlueSpiceExtendedStatistics": {
+			"className": "ExtendedStatistics",
 			"extPath": "/BlueSpiceExtendedStatistics"
 		}
 	},
@@ -28,12 +28,39 @@
 			"i18n"
 		]
 	},
+	"AutoloadClasses": {
+		"ExtendedStatistics": "ExtendedStatistics.class.php",
+		"BsStatisticsFilter": "includes/StatisticsFilter.class.php",
+		"BsSelectFilter": "includes/SelectFilter.class.php",
+		"BsMultiSelectFilter": "includes/MultiSelectFilter.class.php",
+		"BsDiagram": "includes/Diagram.class.php",
+		"BsFilterUsers": "includes/FilterUsers.class.php",
+		"BsFilterNamespace": "includes/FilterNamespace.class.php",
+		"BsFilterCategory": "includes/FilterCategory.class.php",
+		"BsFilterSearchScope": "includes/FilterSearchScope.class.php",
+		"BsDiagramNumberOfUsers": "includes/DiagramNumberOfUsers.class.php",
+		"BsDiagramNumberOfPages": "includes/DiagramNumberOfPages.class.php",
+		"BsDiagramNumberOfArticles": "includes/DiagramNumberOfArticles.class.php",
+		"BsDiagramNumberOfEdits": "includes/DiagramNumberOfEdits.class.php",
+		"BsDiagramEditsPerUser": "includes/DiagramEditsPerUser.class.php",
+		"BsDiagramSearches": "includes/DiagramSearches.class.php",
+		"MySQLDbReader": "includes/MySQLDbReader.class.php",
+		"PostGreSQLDbReader": "includes/PostGreSQLDbReader.class.php",
+		"OracleDbReader": "includes/OracleDbReader.class.php",
+		"StatsDataProvider": "includes/StatsDataProvider.class.php",
+		"Interval": "includes/Interval.class.php",
+		"BsCharting": "includes/Charting.class.php",
+		"SpecialExtendedStatistics": "includes/specials/SpecialExtendedStatistics.class.php",
+		"BSApiStatisticsSearchOptionsStore": "includes/api/BSApiStatisticsSearchOptionsStore.php",
+		"BSApiStatisticsAvailableDiagramsStore": "includes/api/BSApiStatisticsAvailableDiagramsStore.php",
+		"BSApiStatisticsTasks": "includes/api/BSApiStatisticsTasks.php"
+	},
 	"ExtensionMessagesFiles": {
 		"ExtendedStatisticsAlias": "includes/specials/SpecialExtendedStatistics.alias.php"
 	},
 	"load_composer_autoloader" : true,
 	"Hooks": {
-		"UnitTestsList": "Statistics::onUnitTestsList"
+		"UnitTestsList": "ExtendedStatistics::onUnitTestsList"
 	},
 	"ResourceModules": {
 		"ext.bluespice.statistics": {
@@ -87,7 +114,7 @@
 	},
 	"ResourceFileModulePaths": {
 		"localBasePath": "resources",
-		"remoteExtPath": "BlueSpiceExtensions/Statistics/resources"
+		"remoteExtPath": "BlueSpiceExtendedStatistics/resources"
 	},
 	"manifest_version": 1
 }

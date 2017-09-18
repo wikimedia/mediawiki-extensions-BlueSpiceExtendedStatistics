@@ -83,17 +83,17 @@ class ExtendedStatistics extends BsExtensionMW {
 		);
 		BsConfig::registerVar( 'MW::Statistics::AvailableGrains', $aAvailableGrains, BsConfig::LEVEL_PRIVATE|BsConfig::TYPE_ARRAY_MIXED, 'bs-statistics-pref-AvailableGrains');
 
-		Statistics::addAvailableFilter( 'FilterUsers' );
-		Statistics::addAvailableFilter( 'FilterNamespace' );
-		Statistics::addAvailableFilter( 'FilterCategory' );
-		Statistics::addAvailableFilter( 'FilterSearchScope' );
+		self::addAvailableFilter( 'FilterUsers' );
+		self::addAvailableFilter( 'FilterNamespace' );
+		self::addAvailableFilter( 'FilterCategory' );
+		self::addAvailableFilter( 'FilterSearchScope' );
 
-		Statistics::addAvailableDiagramClass( 'BsDiagramNumberOfUsers' );
-		Statistics::addAvailableDiagramClass( 'BsDiagramNumberOfPages' );
-		Statistics::addAvailableDiagramClass( 'BsDiagramNumberOfArticles' );
-		Statistics::addAvailableDiagramClass( 'BsDiagramNumberOfEdits' );
-		Statistics::addAvailableDiagramClass( 'BsDiagramEditsPerUser' );
-		Statistics::addAvailableDiagramClass( 'BsDiagramSearches' );
+		self::addAvailableDiagramClass( 'BsDiagramNumberOfUsers' );
+		self::addAvailableDiagramClass( 'BsDiagramNumberOfPages' );
+		self::addAvailableDiagramClass( 'BsDiagramNumberOfArticles' );
+		self::addAvailableDiagramClass( 'BsDiagramNumberOfEdits' );
+		self::addAvailableDiagramClass( 'BsDiagramEditsPerUser' );
+		self::addAvailableDiagramClass( 'BsDiagramSearches' );
 
 		wfProfileOut( 'BS::Statistics::initExt' );
 	}
@@ -109,7 +109,7 @@ class ExtendedStatistics extends BsExtensionMW {
 			$sDiagramClassName =  $sDiagramClass;
 		}
 
-		Statistics::$aAvailableDiagramClasses[$sDiagramClassName] = $sDiagramClassName;
+		self::$aAvailableDiagramClasses[$sDiagramClassName] = $sDiagramClassName;
 	}
 
 	/**
@@ -118,7 +118,7 @@ class ExtendedStatistics extends BsExtensionMW {
 	 */
 	public static function getAvailableDiagrams() {
 		self::loadAvailableDiagrams();
-		return Statistics::$aAvailableDiagrams;
+		return self::$aAvailableDiagrams;
 	}
 
 	/**
@@ -130,7 +130,7 @@ class ExtendedStatistics extends BsExtensionMW {
 			return self::$aAvailableDiagrams;
 		}
 		self::$aAvailableDiagrams = array();
-		foreach ( Statistics::$aAvailableDiagramClasses as $sDiagramClass ) {
+		foreach ( self::$aAvailableDiagramClasses as $sDiagramClass ) {
 			self::$aAvailableDiagrams[$sDiagramClass] = new $sDiagramClass();
 		}
 		return self::$aAvailableDiagrams;
@@ -143,7 +143,7 @@ class ExtendedStatistics extends BsExtensionMW {
 	 */
 	public static function getDiagram( $sDiagramClass ) {
 		self::loadAvailableDiagrams();
-		return Statistics::$aAvailableDiagrams[$sDiagramClass];
+		return self::$aAvailableDiagrams[$sDiagramClass];
 	}
 
 	/**
@@ -163,7 +163,7 @@ class ExtendedStatistics extends BsExtensionMW {
 	 * @return array Names of filtesr.
 	 */
 	public static function getAvailableFilters() {
-		return Statistics::$aAvailableFilters;
+		return self::$aAvailableFilters;
 	}
 
 	/**
@@ -172,8 +172,8 @@ class ExtendedStatistics extends BsExtensionMW {
 	 * @return BsStatisticsFilter Filter object
 	 */
 	public static function getFilter( $sFilterClass ) {
-		if ( isset( Statistics::$aFilterDiagrams[$sFilterClass] ) ) {
-			return Statistics::$aFilterDiagrams[$sFilterClass];
+		if ( isset( self::$aFilterDiagrams[$sFilterClass] ) ) {
+			return self::$aFilterDiagrams[$sFilterClass];
 		} else {
 			return null;
 		}

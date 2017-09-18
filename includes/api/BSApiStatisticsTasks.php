@@ -58,7 +58,7 @@ class BSApiStatisticsTasks extends BSApiTasksBase {
 		$sMode		= $oTaskData->mode;
 		$sTo		= $oTaskData->to;
 
-		$aAvailableDiagrams = Statistics::getAvailableDiagrams();
+		$aAvailableDiagrams = ExtendedStatistics::getAvailableDiagrams();
 		$aAllowedDiaKeys = array_keys( $aAvailableDiagrams );
 
 		if( empty( $sDiagram ) ) {
@@ -110,7 +110,7 @@ class BSApiStatisticsTasks extends BSApiTasksBase {
 			return $oResponse;
 		}
 
-		$oDiagram = Statistics::getDiagram( $sDiagram );
+		$oDiagram = ExtendedStatistics::getDiagram( $sDiagram );
 		$oDiagram->setStartTime( $sFrom );
 		$oDiagram->setEndTime( $sTo );
 		$oDiagram->setActualGrain( $sGrain );

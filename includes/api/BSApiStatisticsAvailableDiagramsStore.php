@@ -4,7 +4,7 @@ class BSApiStatisticsAvailableDiagramsStore extends BSApiExtJSStoreBase {
 	protected function makeData( $sQuery = '' ) {
 		$aData = array();
 
-		foreach ( Statistics::getAvailableDiagrams() as $oDiagram ) {
+		foreach ( ExtendedStatistics::getAvailableDiagrams() as $oDiagram ) {
 			$aFilterKeys = array();
 			foreach( $oDiagram->getFilters() as $key => $oFilter ) $aFilterKeys[] = $key;
 

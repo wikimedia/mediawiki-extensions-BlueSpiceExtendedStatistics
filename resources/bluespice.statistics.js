@@ -10,7 +10,7 @@
  * @filesource
  */
 Ext.onReady(function() {
-	Ext.Loader.setPath( 'BS.Statistics', bs.em.paths.get('Statistics') + '/resources/BS.Statistics');
+	Ext.Loader.setPath( 'BS.Statistics', bs.em.paths.get('BlueSpiceExtendedStatistics') + '/resources/BS.Statistics');
 	Ext.create('BS.Statistics.Panel', {
 		renderTo: 'bs-statistics-panel'
 	});
