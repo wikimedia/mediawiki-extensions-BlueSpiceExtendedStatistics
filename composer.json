@@ -1,0 +1,8 @@
+{
+	"autoload" : {
+		"psr-4": {
+			"BlueSpice\\ExtendedStatistics\\Tests\\" : "tests/phpunit",
+			"BlueSpice\\ExtendedStatistics\\" : "src"
+		}
+	}
+}

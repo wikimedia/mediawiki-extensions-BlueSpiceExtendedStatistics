@@ -1,0 +1,93 @@
+{
+	"name": "ExtendedStatistics",
+	"version": "2.27.1-alpha",
+	"url": "https://help.bluespice.com/index.php/ExtendedStatistics",
+	"author": [
+		"Markus Glaser",
+		"Patric Wirth"
+	],
+	"descriptionmsg": "bs-statistics-desc",
+	"type": "bluespice",
+	"license-name": "GPL-2.0+",
+	"bsgExtensions": {
+		"Statistics": {
+			"className": "Statistics",
+			"extPath": "/BlueSpiceExtendedStatistics"
+		}
+	},
+	"SpecialPages": {
+		"ExtendedStatistics": "SpecialExtendedStatistics"
+	},
+	"APIModules": {
+		"bs-statistics-search-options-store": "BSApiStatisticsSearchOptionsStore",
+		"bs-statistics-available-diagrams-store": "BSApiStatisticsAvailableDiagramsStore",
+		"bs-statistics-tasks": "BSApiStatisticsTasks"
+	},
+	"MessagesDirs": {
+		"Statistics": [
+			"i18n"
+		]
+	},
+	"ExtensionMessagesFiles": {
+		"ExtendedStatisticsAlias": "includes/specials/SpecialExtendedStatistics.alias.php"
+	},
+	"load_composer_autoloader" : true,
+	"Hooks": {
+		"UnitTestsList": "Statistics::onUnitTestsList"
+	},
+	"ResourceModules": {
+		"ext.bluespice.statistics": {
+			"scripts": [
+				"/bluespice.statistics.js"
+			],
+			"dependencies": [
+				"ext.bluespice.extjs"
+			],
+			"messages": [
+				"bs-statistics-filters",
+				"bs-statistics-finish",
+				"bs-statistics-diagram",
+				"bs-statistics-from",
+				"bs-statistics-to",
+				"bs-statistics-filter-user",
+				"bs-statistics-filter-searchscope",
+				"bs-ns",
+				"bs-statistics-filter-category",
+				"bs-statistics-mode",
+				"bs-statistics-absolute",
+				"bs-statistics-aggregated",
+				"bs-statistics-list",
+				"bs-statistics-grain",
+				"bs-statistics-year",
+				"bs-statistics-month",
+				"bs-statistics-week",
+				"bs-statistics-day",
+				"bs-statistics-label-count",
+				"bs-statistics-label-time"
+			]
+		},
+		"ext.bluespice.statisticsPortlets": {
+			"messages": [
+				"bs-statistics-label-count",
+				"bs-statistics-portlet-numberofusers",
+				"bs-statistics-portlet-numberofedits",
+				"bs-statistics-portlet-numberofpages",
+				"bs-statistics-portlet-numberofarticles",
+				"bs-extjs-portal-timespan",
+				"bs-statistics-portletconfig-periodday",
+				"bs-statistics-week",
+				"bs-statistics-month",
+				"bs-statistics-label-time"
+			]
+		},
+		"ext.bluespice.statistics.styles": {
+			"styles": "bluespice.statistics.css",
+			"position": "top"
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "resources",
+		"remoteExtPath": "BlueSpiceExtensions/Statistics/resources"
+	},
+	"manifest_version": 1
+}
