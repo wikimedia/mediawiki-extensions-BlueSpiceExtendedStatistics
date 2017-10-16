@@ -1,4 +1,11 @@
 {
+	"name": "mediawiki/blue-spice-extended-statistics",
+	"type": "mediawiki-extension",
+	"description": "Statistics module for BlueSpice",
+	"license": "GPL-3.0",
+	"require": {
+		"composer/installers": "~1.0"
+	},
 	"autoload" : {
 		"psr-4": {
 			"BlueSpice\\ExtendedStatistics\\Tests\\" : "tests/phpunit",
