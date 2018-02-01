@@ -2,7 +2,7 @@
 	"name": "mediawiki/blue-spice-extended-statistics",
 	"type": "mediawiki-extension",
 	"description": "Statistics module for BlueSpice",
-	"license": "GPL-3.0",
+	"license": "GPL-3.0-only",
 	"require": {
 		"composer/installers": "~1.0"
 	},
