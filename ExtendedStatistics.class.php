@@ -59,7 +59,6 @@ class ExtendedStatistics extends BsExtensionMW {
 	protected function initExt() {
 		$this->mCore->registerPermission( 'right-statistic-viewspecialpage', array( 'user' ), array( 'type' => 'global' ) );
 
-		wfProfileIn( 'BS::Statistics::initExt' );
 		$this->setHook( 'ParserFirstCallInit' );
 		$this->setHook( 'BeforePageDisplay' );
 		$this->setHook( 'BSExtendedSearchAdminButtons' );
@@ -92,8 +91,6 @@ class ExtendedStatistics extends BsExtensionMW {
 		self::addAvailableDiagramClass( 'BsDiagramNumberOfEdits' );
 		self::addAvailableDiagramClass( 'BsDiagramEditsPerUser' );
 		self::addAvailableDiagramClass( 'BsDiagramSearches' );
-
-		wfProfileOut( 'BS::Statistics::initExt' );
 	}
 
 	/**
