@@ -68,17 +68,6 @@ class ExtendedStatistics extends BsExtensionMW {
 		$this->setHook( 'BSDashboardsUserDashboardPortalPortlets' );
 		$this->setHook( 'BSUsageTrackerRegisterCollectors' );
 
-		BsConfig::registerVar( 'MW::Statistics::ExcludeUsers', array( 'WikiSysop' ), BsConfig::LEVEL_PUBLIC|BsConfig::TYPE_ARRAY_STRING, 'bs-statistics-pref-excludeusers', 'multiselectplusadd' );
-		BsConfig::registerVar( 'MW::Statistics::MaxNumberOfIntervals', 366, BsConfig::LEVEL_PUBLIC|BsConfig::TYPE_INT, 'bs-statistics-pref-maxnumberofintervals', 'int' );
-
-		$aAvailableGrains = array(
-			'Y' => 'bs-statistics-year',
-			'm' => 'bs-statistics-month',
-			'W' => 'bs-statistics-week',
-			'd' => 'bs-statistics-day',
-		);
-		BsConfig::registerVar( 'MW::Statistics::AvailableGrains', $aAvailableGrains, BsConfig::LEVEL_PRIVATE|BsConfig::TYPE_ARRAY_MIXED, 'bs-statistics-pref-AvailableGrains');
-
 		self::addAvailableFilter( 'FilterUsers' );
 		self::addAvailableFilter( 'FilterNamespace' );
 		self::addAvailableFilter( 'FilterCategory' );

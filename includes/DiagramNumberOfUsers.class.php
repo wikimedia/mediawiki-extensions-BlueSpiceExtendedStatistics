@@ -25,7 +25,6 @@ class BsDiagramNumberOfUsers extends BsDiagram {
 	public function __construct() {
 		parent::__construct();
 
-		BsConfig::get( 'MW::Statistics::ExcludeUsers' );
 		$this->sTitle = wfMessage( 'bs-statistics-diag-number-of-users' )->plain();
 		$this->sDescription = wfMessage( 'bs-statistics-diag-number-of-users-desc' )->plain();
 		$this->sTitlex = wfMessage( 'bs-statistics-label-time' )->plain();

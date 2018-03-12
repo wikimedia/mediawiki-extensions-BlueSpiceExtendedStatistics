@@ -68,7 +68,7 @@ class BSApiStatisticsTasks extends BSApiTasksBase {
 			$oResponse->errors['inputDiagrams'] = wfMessage( 'bs-statistics-err-unknowndia' )->plain();
 		}
 
-		if( !array_key_exists( $sGrain, BsConfig::get( 'MW::Statistics::AvailableGrains' ) ) ) {
+		if( !array_key_exists( $sGrain, $this->getConfig()->get( 'StatisticsAvailableGrains' ) ) ) {
 			$oResponse->errors['InputDepictionGrain'] = wfMessage( 'bs-statistics-err-unknowngrain' )->plain();
 		}
 
@@ -144,7 +144,7 @@ class BSApiStatisticsTasks extends BSApiTasksBase {
 		}
 
 		$intervals = Interval::getIntervalsFromDiagram( $oDiagram );
-		if( count( $intervals ) > BsConfig::get( 'MW::Statistics::MaxNumberOfIntervals' ) ) {
+		if( count( $intervals ) > $this->getConfig()->get( 'StatisticsMaxNumberOfIntervals' ) ) {
 			$oResponse->message = wfMessage( 'bs-statistics-interval-too-big' )->plain();
 			return $oResponse;
 		}
@@ -227,7 +227,7 @@ class BSApiStatisticsTasks extends BSApiTasksBase {
 			$i ++;
 		}
 
-		$aAvalableGrains = BsConfig::get( 'MW::Statistics::AvailableGrains' );
+		$aAvalableGrains = $this->getConfig()->get( 'StatisticsAvailableGrains' );
 		$sLabelMsgKey = 'bs-statistics-label-time';
 		if( isset($aAvalableGrains[$oDiagram->getActualGrain()]) ) {
 			$sLabelMsgKey = $aAvalableGrains[$oDiagram->getActualGrain()];

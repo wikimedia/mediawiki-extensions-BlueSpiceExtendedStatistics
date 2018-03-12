@@ -15,10 +15,18 @@
 			"BlueSpiceFoundation": "*"
 		}
 	},
-	"bsgExtensions": {
-		"BlueSpiceExtendedStatistics": {
-			"className": "ExtendedStatistics",
-			"extPath": "/BlueSpiceExtendedStatistics"
+	"attributes": {
+		"BlueSpiceFoundation": {
+			"Extensions": {
+				"BlueSpiceExtendedStatistics": {
+					"className": "ExtendedStatistics",
+					"extPath": "/ExtendedStatistics",
+					"configDefinitions": {
+						"StatisticsExcludeUsers": "\\BlueSpice\\ExtendedStatistics\\ConfigDefinition\\ExcludeUsers::getInstance",
+						"StatisticsMaxNumberOfIntervals": "\\BlueSpice\\ExtendedStatistics\\ConfigDefinition\\MaxNumberOfIntervals::getInstance"
+					}
+				}
+			}
 		}
 	},
 	"SpecialPages": {
@@ -71,6 +79,26 @@
 	"Hooks": {
 		"SkinTemplateOutputPageBeforeExec": "\\BlueSpice\\ExtendedStatistics\\Hook\\SkinTemplateOutputPageBeforeExec\\AddExtendedStatistics::callback",
 		"UnitTestsList": "ExtendedStatistics::onUnitTestsList"
+	},
+	"config_prefix": "bsg",
+	"config": {
+		"StatisticsExcludeUsers": {
+			"value": [ "WikiSysop" ],
+			"descriptionmsg": "bs-statistics-pref-excludeusers"
+		},
+		"StatisticsMaxNumberOfIntervals": {
+			"value": 366,
+			"descriptionmsg": "bs-statistics-pref-maxnumberofintervals"
+		},
+		"StatisticsAvailableGrains": {
+			"value": {
+				"Y": "bs-statistics-year",
+				"m": "bs-statistics-month",
+				"W": "bs-statistics-week",
+				"d": "bs-statistics-day"
+			},
+			"descriptionmsg": "bs-statistics-pref-AvailableGrains"
+		}
 	},
 	"ResourceModules": {
 		"ext.bluespice.statistics": {
@@ -125,5 +153,5 @@
 		"localBasePath": "resources",
 		"remoteExtPath": "BlueSpiceExtendedStatistics/resources"
 	},
-	"manifest_version": 1
+	"manifest_version": 2
 }

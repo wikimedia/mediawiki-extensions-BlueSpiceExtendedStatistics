@@ -30,7 +30,9 @@ class BsFilterUsers extends BsMultiSelectFilter {
 
 		$this->sLabel = wfMessage( 'bs-statistics-filter-user' )->text();
 		$this->aAvailableValues = $this->loadAvailableValues();
-		$this->aDefaultValues = BsConfig::get( 'MW::Statistics::ExcludeUsers' );
+		$config = \BlueSpice\Services::getInstance()->getConfigFactory()
+			->makeConfig( 'bsg' );
+		$this->aDefaultValues = $config->get( 'StatisticsExcludeUsers' );
 	}
 
 	/**
