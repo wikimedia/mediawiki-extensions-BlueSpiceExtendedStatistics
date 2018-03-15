@@ -26,9 +26,32 @@
 						"StatisticsMaxNumberOfIntervals": "\\BlueSpice\\ExtendedStatistics\\ConfigDefinition\\MaxNumberOfIntervals::getInstance"
 					}
 				}
+			},
+			"PermissionRegistry": {
+				"right-statistic-viewspecialpage": {
+					"type": "global",
+					"roles": [
+						"editor",
+						"admin"
+					]
+				}
 			}
 		}
 	},
+	"GroupPermissions": {
+		"*": {
+			"right-statistic-viewspecialpage": false
+		},
+		"user": {
+			"right-statistic-viewspecialpage": true
+		},
+		"sysop": {
+			"right-statistic-viewspecialpage": true
+		}
+	},
+	"AvailableRights": [
+		"right-statistic-viewspecialpage"
+	],
 	"SpecialPages": {
 		"ExtendedStatistics": "SpecialExtendedStatistics"
 	},
