@@ -20,7 +20,7 @@
 			"Extensions": {
 				"BlueSpiceExtendedStatistics": {
 					"className": "ExtendedStatistics",
-					"extPath": "/ExtendedStatistics",
+					"extPath": "/BlueSpiceExtendedStatistics",
 					"configDefinitions": {
 						"StatisticsExcludeUsers": "\\BlueSpice\\ExtendedStatistics\\ConfigDefinition\\ExcludeUsers::getInstance",
 						"StatisticsMaxNumberOfIntervals": "\\BlueSpice\\ExtendedStatistics\\ConfigDefinition\\MaxNumberOfIntervals::getInstance"
@@ -61,7 +61,7 @@
 		"bs-statistics-tasks": "BSApiStatisticsTasks"
 	},
 	"MessagesDirs": {
-		"Statistics": [
+		"BlueSpiceExtendedStatistics": [
 			"i18n"
 		]
 	},
