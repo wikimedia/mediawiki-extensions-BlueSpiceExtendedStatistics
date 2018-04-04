@@ -3,7 +3,8 @@
 		"authors": [
 			"Liuxinyu970226",
 			"Cwlin0416",
-			"Kly"
+			"Kly",
+			"Sanmosa"
 		]
 	},
 	"bs-statistics-desc": "增加延伸的統訊資訊功能",
@@ -25,7 +26,7 @@
 	"bs-statistics-finish": "建立圖表",
 	"bs-statistics-filters": "查詢條件",
 	"bs-statistics-interval-too-big": "間隔太大，不可包含超過 35 個間隔步驟。",
-	"bs-statistics-diag-number-of-users": "使用者數",
+	"bs-statistics-diag-number-of-users": "用戶數",
 	"bs-statistics-diag-number-of-users-desc": "顯示指定週期裡所建立的使用者數目。",
 	"bs-statistics-label-name": "名稱",
 	"bs-statistics-label-registration": "註冊",
@@ -50,7 +51,7 @@
 	"bs-statistics-filter-user": "排除的使用者",
 	"bs-statistics-pref-excludeusers": "排除這些使用者：",
 	"bs-statistics-pref-maxnumberofintervals": "間隔步驟最大值：",
-	"bs-statistics-portlet-numberofusers": "使用者數",
+	"bs-statistics-portlet-numberofusers": "用戶數",
 	"bs-statistics-portlet-numberofedits": "編輯數",
 	"bs-statistics-portlet-numberofpages": "頁面數",
 	"bs-statistics-portlet-numberofarticles": "條目數",
