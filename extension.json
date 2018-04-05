@@ -129,7 +129,9 @@
 				"/bluespice.statistics.js"
 			],
 			"dependencies": [
-				"ext.bluespice.extjs"
+				"ext.bluespice.extjs",
+				"ext.extjsbase.charts",
+				"ext.extjsbase.ux"
 			],
 			"messages": [
 				"bs-statistics-filters",
@@ -151,7 +153,9 @@
 				"bs-statistics-week",
 				"bs-statistics-day",
 				"bs-statistics-label-count",
-				"bs-statistics-label-time"
+				"bs-statistics-label-time",
+				"bs-statistics-button-label-export",
+				"bs-statistics-panel-title-result"
 			]
 		},
 		"ext.bluespice.statisticsPortlets": {

@@ -63,5 +63,7 @@
 	"apihelp-bs-statistics-available-diagrams-store-summary": "Provides a store with available diagrams",
 	"apihelp-bs-statistics-search-options-store-description": "Provides a store with available search options",
 	"apihelp-bs-statistics-search-options-store-summary": "Provides a store with available search options",
-	"right-statistic-viewspecialpage": "Access to extended statistic"
+	"right-statistic-viewspecialpage": "Access to extended statistic",
+	"bs-statistics-button-label-export": "Export",
+	"bs-statistics-panel-title-result": "Result"
 }
