@@ -26,5 +26,7 @@
 	"bs-statistics-portlet-numberofeditsdesc": "편집 수의 통계입니다.",
 	"bs-statistics-portlet-numberofpagesdesc": "문서 수의 통계입니다.",
 	"bs-statistics-portlet-numberofarticlesdesc": "문서 수의 통계입니다.",
-	"bs-statistics-portletconfig-periodday": "어제"
+	"bs-statistics-portletconfig-periodday": "어제",
+	"bs-statistics-button-label-export": "내보내기",
+	"bs-statistics-panel-title-result": "결과"
 }

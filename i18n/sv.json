@@ -56,5 +56,7 @@
 	"bs-statistics-portlet-numberofusersdesc": "Statistik för antalet användare.",
 	"bs-statistics-portlet-numberofeditsdesc": "Statistik för antalet redigeringar.",
 	"bs-statistics-portlet-numberofpagesdesc": "Statistik för antalet sidor.",
-	"bs-statistics-portletconfig-periodday": "Igår"
+	"bs-statistics-portletconfig-periodday": "Igår",
+	"bs-statistics-button-label-export": "Exportera",
+	"bs-statistics-panel-title-result": "Resultat"
 }

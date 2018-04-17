@@ -63,5 +63,7 @@
 	"apihelp-bs-statistics-available-diagrams-store-summary": "提供可用图表的存储",
 	"apihelp-bs-statistics-search-options-store-description": "提供带可用搜索选项的存储",
 	"apihelp-bs-statistics-search-options-store-summary": "提供可用搜索选项的存储",
-	"right-statistic-viewspecialpage": "访问扩充统计"
+	"right-statistic-viewspecialpage": "访问扩充统计",
+	"bs-statistics-button-label-export": "导出",
+	"bs-statistics-panel-title-result": "结果"
 }

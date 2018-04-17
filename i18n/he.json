@@ -61,5 +61,7 @@
 	"apihelp-bs-statistics-available-diagrams-store-summary": "אספקת מאגר של תרשימים זמינים",
 	"apihelp-bs-statistics-search-options-store-description": "אספקת מאגר של אפשרויות חיפוש זמינות",
 	"apihelp-bs-statistics-search-options-store-summary": "אספקת מאגר של אפשרויות חיפוש זמינות",
-	"right-statistic-viewspecialpage": "גישה לסטטיסטיקה מורחבת"
+	"right-statistic-viewspecialpage": "גישה לסטטיסטיקה מורחבת",
+	"bs-statistics-button-label-export": "ייצוא",
+	"bs-statistics-panel-title-result": "תוצאה"
 }

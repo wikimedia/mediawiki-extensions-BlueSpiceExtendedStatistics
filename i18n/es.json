@@ -62,5 +62,7 @@
 	"bs-statistics-portletconfig-periodday": "Ayer",
 	"apihelp-bs-statistics-tasks-description": "Proporciona tareas comunes para estadísticas",
 	"apihelp-bs-statistics-available-diagrams-store-description": "Proporciona un almacén de diagramas disponibles",
-	"right-statistic-viewspecialpage": "Acceso a estadísticas ampliadas"
+	"right-statistic-viewspecialpage": "Acceso a estadísticas ampliadas",
+	"bs-statistics-button-label-export": "Exportar",
+	"bs-statistics-panel-title-result": "Resultado"
 }

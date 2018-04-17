@@ -47,5 +47,7 @@
 	"bs-statistics-portlet-numberofeditsdesc": "Στατιστικά του αριθμού επεξεργασιών.",
 	"bs-statistics-portlet-numberofpagesdesc": "Στατιστικά του αριθμού σελίδων.",
 	"bs-statistics-portlet-numberofarticlesdesc": "Στατιστικά του αριθμού λημμάτων.",
-	"bs-statistics-portletconfig-periodday": "Χθες"
+	"bs-statistics-portletconfig-periodday": "Χθες",
+	"bs-statistics-button-label-export": "Εξαγωγή",
+	"bs-statistics-panel-title-result": "Αποτέλεσμα"
 }
