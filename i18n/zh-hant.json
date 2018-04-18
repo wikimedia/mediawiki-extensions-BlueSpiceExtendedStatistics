@@ -66,5 +66,7 @@
 	"apihelp-bs-statistics-available-diagrams-store-summary": "提供帶有可用圖表的儲存",
 	"apihelp-bs-statistics-search-options-store-description": "提供帶有可用搜尋選項的儲存",
 	"apihelp-bs-statistics-search-options-store-summary": "提供帶有可用搜尋選項的儲存",
-	"right-statistic-viewspecialpage": "存取擴充統計"
+	"right-statistic-viewspecialpage": "存取擴充統計",
+	"bs-statistics-button-label-export": "匯出",
+	"bs-statistics-panel-title-result": "結果"
 }
