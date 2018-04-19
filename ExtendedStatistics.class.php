@@ -387,12 +387,4 @@ class ExtendedStatistics extends BsExtensionMW {
 		return true;
 	}
 
-	/**
-	 * Registeres Statistics API unit tests
-	 * @param array $paths
-	 */
-	public static function onUnitTestsList ( array &$paths ) {
-		$paths[] = __DIR__ . '/tests/phpunit/';
-		return true;
-	}
 }
