@@ -44,5 +44,6 @@
 	"bs-statistics-portlet-numberofpagesdesc": "Statystyki liczby stron.",
 	"bs-statistics-portlet-numberofarticlesdesc": "Statystyka liczby artykułów.",
 	"bs-statistics-portletconfig-periodday": "Wczoraj",
-	"right-statistic-viewspecialpage": "Dostęp do rozszerzonej statystyki"
+	"right-statistic-viewspecialpage": "Dostęp do rozszerzonej statystyki",
+	"bs-statistics-panel-title-result": "Wynik"
 }
