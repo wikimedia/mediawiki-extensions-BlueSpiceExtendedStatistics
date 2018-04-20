@@ -100,8 +100,7 @@
 	},
 	"load_composer_autoloader" : true,
 	"Hooks": {
-		"SkinTemplateOutputPageBeforeExec": "\\BlueSpice\\ExtendedStatistics\\Hook\\SkinTemplateOutputPageBeforeExec\\AddExtendedStatistics::callback",
-		"UnitTestsList": "ExtendedStatistics::onUnitTestsList"
+		"SkinTemplateOutputPageBeforeExec": "\\BlueSpice\\ExtendedStatistics\\Hook\\SkinTemplateOutputPageBeforeExec\\AddExtendedStatistics::callback"
 	},
 	"config_prefix": "bsg",
 	"config": {
