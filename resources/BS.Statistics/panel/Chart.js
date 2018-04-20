@@ -14,8 +14,9 @@ Ext.define( 'BS.Statistics.panel.Chart', {
 			]
 		}];
 
-		this.chrtMain = new Ext.chart.CartesianChart( {
+		this.crtMain = new Ext.chart.CartesianChart( {
 			theme: 'blue',
+			engine: 'Ext.draw.engine.Svg', //Default of 'Ext.draw.engine.Canvas' does not allow for SVG export anymore
 			height: 500,
 			store: {
 				fields: [ 'name', 'hits' ],
@@ -57,7 +58,7 @@ Ext.define( 'BS.Statistics.panel.Chart', {
 		} );
 
 		this.items = [
-			this.chrtMain
+			this.crtMain
 		];
 
 		return this.callParent( arguments );
@@ -113,41 +114,19 @@ Ext.define( 'BS.Statistics.panel.Chart', {
 	},
 
 	onClickmuExport: function( menu, item, e, eOpts ) {
+		var url = '';
 		if(item.value == 'image/png') {
-			Ext.draw.engine.ImageExporter.defaultUrl = mw.util.getUrl(
-				'Special:ExtendedStatistics/export-png'
-			);
-			this.crtMain.save( {type:item.value} );
-			return;
+			url =  mw.util.getUrl( 'Special:ExtendedStatistics/export-png' );
 		}
-		var form = Ext.getBody().createChild( {
-			tag: 'form',
-			method: 'POST',
-			action: mw.util.getUrl( 'Special:ExtendedStatistics/export-svg' ),
-			target : '_blank',
-			children: [{
-				tag: 'input',
-				type: 'hidden',
-				name: 'width',
-				value: this.crtMain.getWidth()
-			}, {
-				tag: 'input',
-				type: 'hidden',
-				name: 'height',
-				value: this.crtMain.getHeight()
-			}, {
-				tag: 'input',
-				type: 'hidden',
-				name: 'type',
-				value: 'image/svg+xml'
-			}, {
-				tag: 'input',
-				type: 'hidden',
-				name: 'svg'
-			}]
+		else {
+			url = mw.util.getUrl( 'Special:ExtendedStatistics/export-svg' );
+		}
+
+		this.crtMain.download( {
+			url: url,
+			format: item.value,
+			width: this.crtMain.getWidth(),
+			height: this.crtMain.getHeight()
 		} );
-		form.last( null, true ).value = this.crtMain.save( {type:'image/svg+xml'} );
-		form.dom.submit( {target : '_blank'} );
-		form.remove();
 	}
 });

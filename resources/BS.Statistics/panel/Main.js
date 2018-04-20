@@ -11,14 +11,14 @@
  * @filesource
  */
 
-Ext.define( 'BS.Statistics.Panel', {
+Ext.define( 'BS.Statistics.panel.Main', {
 	extend: 'Ext.tab.Panel',
-	requires: [ 'BS.Statistics.Filter', 'BS.Statistics.panel.Output' ],
+	requires: [ 'BS.Statistics.panel.Filter', 'BS.Statistics.panel.Output' ],
 	layout: 'border',
 	border: true,
 
 	initComponent: function() {
-		this.pnlFilters = new BS.Statistics.Filter( {
+		this.pnlFilters = new BS.Statistics.panel.Filter( {
 			id: 'bs-statistics-filterpanel'
 		} );
 		this.pnlMain = new BS.Statistics.panel.Output();

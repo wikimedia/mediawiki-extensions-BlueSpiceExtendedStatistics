@@ -11,7 +11,7 @@
  * @filesource
  */
 
-Ext.define( 'BS.Statistics.Filter', {
+Ext.define( 'BS.Statistics.panel.Filter', {
 	extend: 'Ext.form.Panel',
 	requires: [
 		'BS.store.BSApi', 'BS.store.ApiUser', 'BS.store.LocalNamespaces',
@@ -21,10 +21,7 @@ Ext.define( 'BS.Statistics.Filter', {
 	fieldDefaults: {
 		labelAlign: 'right'
 	},
-	frame: true,
 	clientValidation: true,
-	submitEmptyText: false,
-	method: 'post',
 	title: mw.message('bs-statistics-filters').plain(),
 	initComponent: function() {
 		this.cbInputDiagrams = new Ext.form.field.ComboBox( {

@@ -15,7 +15,7 @@ Ext.define('BS.Statistics.StatisticsPortletConfig', {
 	extend: 'BS.portal.PortletConfig',
 	requires: [
 		'BS.store.BSApi', 'BS.store.ApiUser', 'BS.store.LocalNamespaces',
-		'BS.store.ApiCategory', 'Ext.ux.form.MultiSelect'
+		'BS.store.ApiCategory', 'Ext.form.field.Tag'
 	],
 	filters: [],
 	afterInitComponent: function() {
@@ -47,7 +47,7 @@ Ext.define('BS.Statistics.StatisticsPortletConfig', {
 		if( $.inArray('UserFilter', this.filters) > -1 ) {
 			this.strUserFilter = new BS.store.ApiUser();
 
-			this.msInputFilterUsers = new Ext.ux.form.MultiSelect({
+			this.msInputFilterUsers = new Ext.form.field.Tag({
 				store: this.strUserFilter,
 				fieldLabel: mw.message('bs-statistics-filter-user').plain(),
 				labelAlign: 'right',
@@ -63,7 +63,7 @@ Ext.define('BS.Statistics.StatisticsPortletConfig', {
 		if( $.inArray('NamespaceFilter', this.filters) > -1 ) {
 			this.strNamespaceFilter = new BS.store.LocalNamespaces();
 
-			this.msInputFilterNamespace = new Ext.ux.form.MultiSelect({
+			this.msInputFilterNamespace = new Ext.form.field.Tag({
 				store: this.storeNamespaceFilter,
 				fieldLabel: mw.message('bs-ns').plain(),
 				labelAlign: 'right',
@@ -79,7 +79,7 @@ Ext.define('BS.Statistics.StatisticsPortletConfig', {
 		if( $.inArray('CategoryFilter', this.filters) > -1 ) {
 			this.strCategoryFilter = new BS.store.ApiCategory();
 
-			this.msInputFilterCategory = new Ext.ux.form.MultiSelect({
+			this.msInputFilterCategory = new Ext.form.field.Tag({
 				store: this.storeCategoryFilter,
 				fieldLabel: mw.message('bs-statistics-filter-category').plain(),
 				labelAlign: 'right',
@@ -104,9 +104,6 @@ Ext.define('BS.Statistics.StatisticsPortletConfig', {
 		var cfg = this.callParent( arguments );
 		cfg.inputPeriod = this.cbInputPeriod.getValue();
 
-		/*if( $.inArray('UserFilter', this.filters) > -1 ) {
-			cfg.userFilter = this.msInputFilterUsers.getValue();
-		}*/
 		return cfg;
 	}
 });

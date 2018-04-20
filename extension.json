@@ -129,8 +129,7 @@
 			],
 			"dependencies": [
 				"ext.bluespice.extjs",
-				"ext.extjsbase.charts",
-				"ext.extjsbase.ux"
+				"ext.extjsbase.charts"
 			],
 			"messages": [
 				"bs-statistics-filters",
@@ -158,6 +157,9 @@
 			]
 		},
 		"ext.bluespice.statisticsPortlets": {
+			"scripts": [
+				"bluespice.statisticsPortlets.namespaceShim.js"
+			],
 			"messages": [
 				"bs-statistics-label-count",
 				"bs-statistics-portlet-numberofusers",

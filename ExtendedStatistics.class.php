@@ -179,13 +179,14 @@ class ExtendedStatistics extends BsExtensionMW {
 	 */
 	public function onBeforePageDisplay( &$oOutputPage, &$oSkin ) {
 		$oOutputPage->addModuleStyles( 'ext.bluespice.statistics.styles' );
+		$title = $oSkin->getTitle();
+		if( $title->isSpecial( 'AdminDashboard' )
+			|| $title->isSpecial('WikiAdmin')
+			|| $title->isSpecial('UserDashboard')
+		) {
+			$oOutputPage->addModules('ext.bluespice.statisticsPortlets');
+		}
 
-		if( !$oSkin->getTitle()->equals(SpecialPage::getTitleFor('AdminDashboard'))
-			&& !$oSkin->getTitle()->equals(SpecialPage::getTitleFor('WikiAdmin'))
-			&& !$oSkin->getTitle()->equals(SpecialPage::getTitleFor('UserDashboard'))
-		) return true;
-
-		$oOutputPage->addModules('ext.bluespice.statisticsPortlets');
 		return true;
 	}
 

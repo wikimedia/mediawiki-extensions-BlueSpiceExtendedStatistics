@@ -17,7 +17,6 @@ Ext.define('BS.Statistics.StatisticsPortlet', {
 	axes: [],
 	series:[],
 	portletConfigClass : 'BS.Statistics.StatisticsPortletConfig',
-	categoryLabel: 'BlueSpice',
 	filters: [],
 	diagram: '',
 	beforeInitCompontent: function() {
@@ -50,7 +49,7 @@ Ext.define('BS.Statistics.StatisticsPortlet', {
 		Ext.Ajax.on('requestcomplete', this.onRequestComplete, this);
 
 		this.ctMainConfig.axes.push({
-			type: 'Numeric',
+			type: 'numeric',
 			position: 'left',
 			fields: ['hits'],
 			title: this.ctMainConfig.yTitle,
@@ -65,10 +64,9 @@ Ext.define('BS.Statistics.StatisticsPortlet', {
 		});
 
 		this.ctMainConfig.axes.push({
-			type: 'Category',
+			type: 'category',
 			position: 'bottom',
-			fields: ['name'],
-			title: this.categoryLabel
+			fields: ['name']
 		});
 
 		this.ctMainConfig.series.push({
@@ -79,15 +77,12 @@ Ext.define('BS.Statistics.StatisticsPortlet', {
 			},
 			axis: 'left',
 			smooth: false,
-			fill: true,
 			xField: 'name',
 			yField: 'hits',
-			markerConfig: {
-				type: 'cross',
-				size: 4,
+			marker: {
 				radius: 4,
-				'stroke-width': 0
-			}
+				lineWidth: 2
+			},
 		});
 
 		this.on( 'configchange', this.onConfigChange, this);
@@ -154,19 +149,19 @@ Ext.define('BS.Statistics.StatisticsPortlet', {
 
 	makeStatisticsApiUrl: function() {
 		return bs.api.makeUrl(
-						'bs-statistics-tasks',
-						{
-							task: 'getData',
-							taskData: JSON.stringify({
-								portletType: 'ExtendedStatistics',
-								diagram: this.diagram,
-								mode: 'aggregated',
-								to: Ext.Date.format(new Date(),'d.m.Y'),
-								from: Ext.Date.format(this.getPeriod(), 'd.m.Y'),
-								grain: this.getGrain()
-							}),
-						},
-						true
-				)
+				'bs-statistics-tasks',
+				{
+					task: 'getData',
+					taskData: JSON.stringify({
+						portletType: 'ExtendedStatistics',
+						diagram: this.diagram,
+						mode: 'aggregated',
+						to: Ext.Date.format(new Date(),'d.m.Y'),
+						from: Ext.Date.format(this.getPeriod(), 'd.m.Y'),
+						grain: this.getGrain()
+					}),
+				},
+				true
+		)
 	}
 });

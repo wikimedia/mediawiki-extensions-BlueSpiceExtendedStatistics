@@ -37,7 +37,8 @@ class SpecialExtendedStatistics extends BsSpecialPage {
 
 		if( !empty($par) ) {
 			global $wgRequest;
-			$sData = $wgRequest->getVal('svg', '');
+			$sData = $wgRequest->getVal('data', '');
+			$sData = $this->extractFromDataProtocol( $sData );
 			if( !empty($sData) ) {
 				switch( $par ) {
 					case 'export-png':
@@ -48,7 +49,7 @@ class SpecialExtendedStatistics extends BsSpecialPage {
 			}
 		}
 
-		$this->getOutput()->addHTML('<div id="bs-statistics-panel"></div>');
+		$this->getOutput()->addHTML('<div id="bs-statistics-panel" class="bs-manager-container"></div>');
 		$this->getOutput()->addModules('ext.bluespice.statistics');
 		$this->getOutput()->setPageTitle( wfMessage( 'extendedstatistics' )->plain() );
 		$bAllowPNGExport = false;
@@ -120,5 +121,22 @@ class SpecialExtendedStatistics extends BsSpecialPage {
 
 	protected function getGroupName() {
 		return 'bluespice';
+	}
+
+	/**
+	 * In ExtJS 6 "Ext.chart.CartesianChart" has no 'save' method anymore. The
+	 * new 'download' method sends the data in form of an url encoded
+	 * data-protocol string
+	 * E.g.: "data:image/svg+xml;utf8,%3C%3Fxml%20version%3D%221.0%22%20sta..."
+	 * @param string $sData
+	 * @return string
+	 */
+	protected function extractFromDataProtocol( $sData ) {
+		$dataProtocolPrefix = "data:image/svg+xml;utf8,";
+		$escapedDataProtocolPrefix = preg_quote( $dataProtocolPrefix );
+		$urlEncodedSvg = preg_replace( "#^$escapedDataProtocolPrefix#", '', $sData );
+		$svg = urldecode( $urlEncodedSvg );
+
+		return $svg;
 	}
 }
