@@ -2,11 +2,13 @@
 	"@metadata": {
 		"authors": [
 			"George Animal",
-			"Ghybu"
+			"Ghybu",
+			"Bikarhêner"
 		]
 	},
 	"bs-statistics-month": "Meh",
 	"bs-statistics-day": "Roj",
 	"bs-statistics-label-page": "Rûpel",
-	"bs-statistics-filter-category": "Kategorî"
+	"bs-statistics-filter-category": "Kategorî",
+	"bs-statistics-panel-title-result": "Encam"
 }
