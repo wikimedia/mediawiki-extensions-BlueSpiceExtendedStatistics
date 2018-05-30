@@ -67,5 +67,7 @@
 	"apihelp-bs-statistics-available-diagrams-store-summary": "Предоставляет магазин с доступными диаграммами",
 	"apihelp-bs-statistics-search-options-store-description": "Предоставляет магазин с доступными опциями поиска",
 	"apihelp-bs-statistics-search-options-store-summary": "Предоставляет магазин с доступными опциями поиска",
-	"right-statistic-viewspecialpage": "Доступ к расширенной статистике"
+	"right-statistic-viewspecialpage": "Доступ к расширенной статистике",
+	"bs-statistics-button-label-export": "Экспортировать",
+	"bs-statistics-panel-title-result": "Результат"
 }
