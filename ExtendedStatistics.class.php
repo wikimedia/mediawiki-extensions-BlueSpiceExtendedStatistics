@@ -241,7 +241,7 @@ class ExtendedStatistics extends BsExtensionMW {
 			'href' => SpecialPage::getTitleFor( 'ExtendedStatistics' )->getLinkUrl(),
 			'onclick' => '',
 			'label' => wfMessage( 'bs-extendedsearch-statistics' )->plain(),
-			'image' => "$wgScriptPath/extensions/BlueSpiceExtensions/Statistics/resources/images/bs-searchstatistics.png"
+			'image' => "$wgScriptPath/extensions/BlueSpiceStatistics/resources/images/bs-searchstatistics.png"
 		);
 
 		return true;
