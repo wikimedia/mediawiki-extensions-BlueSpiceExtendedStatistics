@@ -1,5 +1,5 @@
 {
-	"name": "mediawiki/blue-spice-extended-statistics",
+	"name": "bluespice/extendedstatistics",
 	"type": "mediawiki-extension",
 	"description": "Statistics module for BlueSpice",
 	"license": "GPL-3.0-only",
@@ -25,5 +25,8 @@
 		"fix": [
 			"minus-x fix ."
 		]
+	},
+	"extra": {
+		"installer-name": "BlueSpiceExtendedStatistics"
 	}
 }
