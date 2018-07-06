@@ -22,7 +22,7 @@ abstract class BsSelectFilter extends BsStatisticsFilter {
 
 	/**
 	 * Lists all available values
-	 * @var array List of srings
+	 * @var array List of strings
 	 */
 	protected $aAvailableValues = null;
 	/**
@@ -37,7 +37,7 @@ abstract class BsSelectFilter extends BsStatisticsFilter {
 	protected $aActiveValues;
 	/**
 	 * Lists all available values with internationalized labels
-	 * @var array List of srings
+	 * @var array List of strings
 	 */
 	protected $aLabelledAvailableValues = null;
 
