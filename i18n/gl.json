@@ -65,5 +65,6 @@
 	"apihelp-bs-statistics-search-options-store-description": "Proporciona un almacén de opcións de busca dispoñibles",
 	"apihelp-bs-statistics-search-options-store-summary": "Proporciona un almacén coas opcións de busca dispoñibles",
 	"right-statistic-viewspecialpage": "Acceso ás estatísticas estendidas",
-	"bs-statistics-button-label-export": "Exportar"
+	"bs-statistics-button-label-export": "Exportar",
+	"bs-statistics-panel-title-result": "Resultado"
 }
