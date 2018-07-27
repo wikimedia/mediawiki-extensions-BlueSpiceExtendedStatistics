@@ -34,13 +34,11 @@ class BsDiagramSearches extends BsDiagram {
 		$this->sModLabel = "M y";
 		$this->iDataSource = BsDiagram::DATASOURCE_DATABASE;
 		$this->bListable = true;
-		$this->sSqlWhatForDiagram = "count(stats_term)";
-		$this->sSqlWhatForList = "stats_term, count(stats_term) as x, max(stats_hits)";
-		$this->sSqlFromWhere = "FROM #__bs_searchstats WHERE stats_ts @period AND @BsFilterSearchScope";
-		$this->sSqlOptionsForList = "GROUP BY stats_term";
+		$this->sSqlWhatForDiagram = "count(his_term)";
+		$this->sSqlWhatForList = "his_term, count(his_term) as x, max(his_hits)";
+		$this->sSqlFromWhere = "FROM #__bs_extendedsearch_history WHERE his_timestamp @period";
+		$this->sSqlOptionsForList = "GROUP BY his_term";
 		$this->sListLabel = array( wfMessage( 'bs-statistics-label-searchterm' )->text(), wfMessage( 'bs-statistics-label-count' )->text(), wfMessage( 'bs-statistics-label-maxhits' )->text() );
 		$this->sMode = BsDiagram::MODE_AGGREGATED;
-
-		$this->addFilter( new BsFilterSearchScope( $this, array( "title" ) ) );
 	}
 }

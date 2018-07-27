@@ -87,17 +87,6 @@ Ext.define( 'BS.Statistics.panel.Filter', {
 			valueField: 'cat_title'
 		} );
 
-		this.msInputFilterSearchscope = new Ext.form.field.Tag( {
-			store: new BS.store.BSApi({
-				apiAction: 'bs-statistics-search-options-store',
-				fields: ['key', 'displaytitle']
-			}),
-			fieldLabel: mw.message( 'bs-statistics-filter-searchscope' ).plain(),
-			name: 'hwpFilterBsFilterSearchScope[]',
-			displayField: 'displaytitle',
-			valueField: 'key'
-		} );
-
 		this.rgInputDepictionMode = new Ext.form.RadioGroup( {
 			fieldLabel: mw.message( 'bs-statistics-mode' ).plain(),
 			columns: 1,
@@ -135,8 +124,7 @@ Ext.define( 'BS.Statistics.panel.Filter', {
 			this.rgInputDepictionMode,
 			this.msInputFilterUsers,
 			this.msInputFilterNamespace,
-			this.msInputFilterCategory,
-			this.msInputFilterSearchscope
+			this.msInputFilterCategory
 		];
 
 		this.deactivateFilters();
@@ -168,9 +156,6 @@ Ext.define( 'BS.Statistics.panel.Filter', {
 
 		this.msInputFilterCategory.disable();
 		this.msInputFilterCategory.hide();
-
-		this.msInputFilterSearchscope.disable();
-		this.msInputFilterSearchscope.hide();
 	},
 
 	removeAdditionalModes: function () {
@@ -199,9 +184,6 @@ Ext.define( 'BS.Statistics.panel.Filter', {
 			} else if( keys[i] == 'hwpFilterBsFilterNamespace' ) {
 				this.msInputFilterNamespace.enable();
 				this.msInputFilterNamespace.show();
-			} else if( keys[i] == 'hwpFilterBsFilterSearchScope' ) {
-				this.msInputFilterSearchscope.enable();
-				this.msInputFilterSearchscope.show();
 			}
 		}
 	}

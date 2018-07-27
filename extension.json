@@ -77,7 +77,6 @@
 		"BsFilterUsers": "includes/FilterUsers.class.php",
 		"BsFilterNamespace": "includes/FilterNamespace.class.php",
 		"BsFilterCategory": "includes/FilterCategory.class.php",
-		"BsFilterSearchScope": "includes/FilterSearchScope.class.php",
 		"BsDiagramNumberOfUsers": "includes/DiagramNumberOfUsers.class.php",
 		"BsDiagramNumberOfPages": "includes/DiagramNumberOfPages.class.php",
 		"BsDiagramNumberOfArticles": "includes/DiagramNumberOfArticles.class.php",

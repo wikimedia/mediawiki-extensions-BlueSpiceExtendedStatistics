@@ -10,7 +10,11 @@ Ext.define( 'BS.Statistics.panel.List', {
 		this.store = new Ext.data.JsonStore( {
 			fields: this.bsPayload.data.fields,
 			data: this.bsPayload.data.list.items,
-			pageSize: 10
+			pageSize: 10,
+			proxy: {
+				type: 'memory',
+				enablePaging: true
+			}
 		} );
 
 		this.columns = {
