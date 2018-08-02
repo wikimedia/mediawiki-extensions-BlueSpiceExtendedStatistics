@@ -69,5 +69,6 @@
 	"apihelp-bs-statistics-search-options-store-summary": "Describes an API endpoint that provides a store with available search options\n{{doc-apihelp-summary|bs-statistics-search-options-store}}",
 	"right-statistic-viewspecialpage": "{{doc-right|statistic-viewspecialpage}}",
 	"bs-statistics-button-label-export": "Label for menu button that allows export of data into different formats\n{{Identical|Export}}",
-	"bs-statistics-panel-title-result": "Label for panel title that holds the results of a statistics query in form of a table or chart\n{{Identical|Result}}"
+	"bs-statistics-panel-title-result": "Label for panel title that holds the results of a statistics query in form of a table or chart\n{{Identical|Result}}",
+	"right-statistic-viewspecialpage": "Grants access to the special page [[Special:ExtendedStatistics]].\n{{doc-right|statistic-viewspecialpage}}"
 }
