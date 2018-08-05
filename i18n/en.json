@@ -65,6 +65,5 @@
 	"apihelp-bs-statistics-search-options-store-summary": "Provides a store with available search options",
 	"right-statistic-viewspecialpage": "Access to extended statistic",
 	"bs-statistics-button-label-export": "Export",
-	"bs-statistics-panel-title-result": "Result",
-	"right-statistic-viewspecialpage": "Grants access to the special page [[Special:ExtendedStatistics]]."
+	"bs-statistics-panel-title-result": "Result"
 }
