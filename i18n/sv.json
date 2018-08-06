@@ -57,6 +57,7 @@
 	"bs-statistics-portlet-numberofeditsdesc": "Statistik för antalet redigeringar.",
 	"bs-statistics-portlet-numberofpagesdesc": "Statistik för antalet sidor.",
 	"bs-statistics-portletconfig-periodday": "Igår",
+	"right-statistic-viewspecialpage": "Ger åtkomst till specialsidan [[Special:ExtendedStatistics]].",
 	"bs-statistics-button-label-export": "Exportera",
 	"bs-statistics-panel-title-result": "Resultat"
 }

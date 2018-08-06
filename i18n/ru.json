@@ -5,7 +5,8 @@
 			"Умар",
 			"Okras",
 			"Mailman",
-			"Mouse21"
+			"Mouse21",
+			"Vlad5250"
 		]
 	},
 	"bs-statistics-desc": "Модуль статистики для BlueSpice",
@@ -67,7 +68,7 @@
 	"apihelp-bs-statistics-available-diagrams-store-summary": "Предоставляет магазин с доступными диаграммами",
 	"apihelp-bs-statistics-search-options-store-description": "Предоставляет магазин с доступными опциями поиска",
 	"apihelp-bs-statistics-search-options-store-summary": "Предоставляет магазин с доступными опциями поиска",
-	"right-statistic-viewspecialpage": "Доступ к расширенной статистике",
+	"right-statistic-viewspecialpage": "доступ к служебной странице [[Special:ExtendedStatistics]].",
 	"bs-statistics-button-label-export": "Экспортировать",
 	"bs-statistics-panel-title-result": "Результат"
 }
