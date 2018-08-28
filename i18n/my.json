@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Ninjastrikers"
+			"Ninjastrikers",
+			"Dr Lotus Black"
 		]
 	},
+	"bs-statistics-label-name": "အမည်",
 	"bs-statistics-label-page": "စာမျက်နှာ"
 }
