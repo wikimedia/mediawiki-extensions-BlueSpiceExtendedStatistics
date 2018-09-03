@@ -3,7 +3,8 @@
 		"authors": [
 			"Stephan Muggli <muggli@hallowelt.biz>",
 			"Metalhead64",
-			"Mglaser"
+			"Mglaser",
+			"Hwboehm"
 		]
 	},
 	"bs-statistics-desc": "Statistik-Modul für BlueSpice",
@@ -60,7 +61,9 @@
 	"bs-statistics-portlet-numberofarticlesdesc": "Statistik der Artikelanzahl.",
 	"bs-statistics-portletconfig-periodday": "Gestern",
 	"apihelp-bs-statistics-tasks-description": "Bietet allgemeine Aufgaben für Statistiken",
+	"apihelp-bs-statistics-tasks-summary": "Stellt allgemeine Aufgaben für Statistiken bereit",
 	"apihelp-bs-statistics-available-diagrams-store-description": "Bietet einen Speicher mit verfügbaren Diagrammen",
+	"apihelp-bs-statistics-available-diagrams-store-summary": "Bietet einen Speicher mit verfügbaren Diagrammen",
 	"apihelp-bs-statistics-search-options-store-description": "Bietet einen Speicher mit verfügbaren Suchoptionen",
 	"apihelp-bs-statistics-search-options-store-summary": "Stellt einen Speicher mit verfügbaren Suchoptionen zur Verfügung",
 	"right-statistic-viewspecialpage": "Zugriff auf erweiterte Statistiken",
