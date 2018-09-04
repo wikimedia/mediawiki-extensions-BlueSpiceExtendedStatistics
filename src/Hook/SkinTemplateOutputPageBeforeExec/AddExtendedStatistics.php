@@ -20,7 +20,7 @@ class AddExtendedStatistics extends SkinTemplateOutputPageBeforeExec {
 					'href' => $oSpecialExtendedStatistic->getPageTitle()->getFullURL(),
 					'text' => $oSpecialExtendedStatistic->getDescription(),
 					'title' => $oSpecialExtendedStatistic->getPageTitle(),
-					'classes' => ' icon-statistics ',
+					'iconClass' => ' icon-statistics ',
 					'position' => 700,
 					'data-permissions' => 'read'
 				]
