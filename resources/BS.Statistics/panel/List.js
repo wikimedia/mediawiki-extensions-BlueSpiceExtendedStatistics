@@ -11,6 +11,7 @@ Ext.define( 'BS.Statistics.panel.List', {
 			fields: this.bsPayload.data.fields,
 			data: this.bsPayload.data.list.items,
 			pageSize: 10,
+			remoteSort: true,
 			proxy: {
 				type: 'memory',
 				enablePaging: true
