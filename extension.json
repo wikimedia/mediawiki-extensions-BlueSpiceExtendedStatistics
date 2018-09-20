@@ -31,8 +31,8 @@
 				"right-statistic-viewspecialpage": {
 					"type": "global",
 					"roles": [
-						"editor",
-						"admin"
+						"admin",
+						"maintenanceadmin"
 					]
 				}
 			}
