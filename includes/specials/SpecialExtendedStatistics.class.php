@@ -54,9 +54,10 @@ class SpecialExtendedStatistics extends BsSpecialPage {
 		$this->getOutput()->setPageTitle( wfMessage( 'extendedstatistics' )->plain() );
 		$bAllowPNGExport = false;
 		global $wgSVGConverter, $wgSVGConverters;
-		if( $wgSVGConverter != false && isset($wgSVGConverters[$wgSVGConverter]) ) {
+		// Temporarely disable PNG export, ticket #10472
+		/*if( $wgSVGConverter != false && isset($wgSVGConverters[$wgSVGConverter]) ) {
 			$bAllowPNGExport = true;
-		}
+		}*/
 		$this->getOutput()->addJsConfigVars( 'BsExtendedStatisticsAllowPNGExport', $bAllowPNGExport );
 
 		return true;
