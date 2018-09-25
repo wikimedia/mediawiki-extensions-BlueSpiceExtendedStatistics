@@ -52,7 +52,8 @@ Ext.define( 'BS.Statistics.panel.Filter', {
 			name: 'from',
 			format: 'd.m.Y',
 			maxValue: new Date(),
-			value: lastMonth
+			value: lastMonth,
+			editable: false
 		} );
 
 		this.dfInputTo = new Ext.form.field.Date( {
@@ -60,13 +61,14 @@ Ext.define( 'BS.Statistics.panel.Filter', {
 			name: 'to',
 			format: 'd.m.Y',
 			maxValue: new Date(),
-			value: new Date()
+			value: new Date(),
+			editable: false
 		});
 
 		this.msInputFilterUsers = new Ext.form.field.Tag( {
 			store: new BS.store.ApiUser(),
 			fieldLabel: mw.message( 'bs-statistics-filter-user' ).plain(),
-			name: 'hwpFilterBsFilterUsers[]',
+			name: 'hwpFilterBsFilterUsers',
 			displayField: 'user_name',
 			valueField: 'user_name'
 		} );
@@ -74,7 +76,7 @@ Ext.define( 'BS.Statistics.panel.Filter', {
 		this.msInputFilterNamespace = new Ext.form.field.Tag({
 			store: new BS.store.LocalNamespaces( {} ),
 			fieldLabel: mw.message( 'bs-ns' ).plain(),
-			name: 'hwpFilterBsFilterNamespace[]',
+			name: 'hwpFilterBsFilterNamespace',
 			displayField: 'namespace',
 			valueField: 'id'
 		} );
@@ -82,7 +84,7 @@ Ext.define( 'BS.Statistics.panel.Filter', {
 		this.msInputFilterCategory = new Ext.form.field.Tag( {
 			store: new BS.store.ApiCategory(),
 			fieldLabel: mw.message( 'bs-statistics-filter-category' ).plain(),
-			name: 'hwpFilterBsFilterCategory[]',
+			name: 'hwpFilterBsFilterCategory',
 			displayField: 'cat_title',
 			valueField: 'cat_title'
 		} );

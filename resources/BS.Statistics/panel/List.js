@@ -18,8 +18,12 @@ Ext.define( 'BS.Statistics.panel.List', {
 			}
 		} );
 
+		var columns = this.bsPayload.data.columns;
+		columns[0].width = 250;
+		columns[0].flex = 0;
+
 		this.columns = {
-			items: this.bsPayload.data.columns,
+			items: columns,
 			defaults: {
 				flex: 1
 			}
