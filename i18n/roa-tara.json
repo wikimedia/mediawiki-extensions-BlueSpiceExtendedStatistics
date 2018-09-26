@@ -18,5 +18,8 @@
 	"bs-statistics-list": "Elenghe",
 	"bs-statistics-not-allowed": "Non ge tìne le permesse necessarie.",
 	"bs-statistics-finish": "Ccreje 'nu diagramme",
-	"bs-statistics-filters": "Filtre"
+	"bs-statistics-filters": "Filtre",
+	"bs-statistics-diag-number-of-users": "Numere de utinde ccrejate",
+	"bs-statistics-diag-number-of-pages": "Numere de pàggene ccrejate",
+	"bs-statistics-diag-number-of-pages-mw": "Numere de vôsce ccrejate"
 }
