@@ -166,14 +166,20 @@ abstract class BsDiagram {
 	protected $sTitleY;
 	/**
 	 * Description of diagram
-	 * @var string 
+	 * @var string
 	 */
 	protected $sDescription;
 	/**
 	 * Description of active filters.
-	 * @var string 
+	 * @var string
 	 */
 	protected $sFilterText = '';
+
+	/**
+	 * Should diagram be selected by default
+	 * @var bool
+	 */
+	protected $isDefault = false;
 
 	/**
 	 * Constructor of BsDiagram class
@@ -487,12 +493,16 @@ abstract class BsDiagram {
 	public function getListLabel() {
 		return $this->sListLabel;
 	}
-	
+
 	/**
 	 * Gets the diagram key
-	 * @return string 
+	 * @return string
 	 */
 	public function getDiagramKey() {
 		return get_class( $this );
+	}
+
+	public function getIsDefault() {
+		return $this->isDefault;
 	}
 }

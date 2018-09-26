@@ -13,6 +13,7 @@ class BSApiStatisticsAvailableDiagramsStore extends BSApiExtJSStoreBase {
 			$oTemplate->displaytitle = $oDiagram->getTitle();
 			$oTemplate->listable = $oDiagram->isListable();
 			$oTemplate->filters = $aFilterKeys;
+			$oTemplate->isDefault = $oDiagram->getIsDefault();
 			$aData[] = $oTemplate;
 		}
 

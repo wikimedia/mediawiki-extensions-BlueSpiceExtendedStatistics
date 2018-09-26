@@ -34,6 +34,7 @@ class BsDiagramNumberOfArticles extends BsDiagram {
 		$this->sModLabel = "M y";
 		$this->iDataSource = BsDiagram::DATASOURCE_DATABASE;
 		$this->bListable = true;
+		$this->isDefault = true;
 		$this->sSqlWhatForDiagram = "count(DISTINCT rev_page)";
 		$this->sSqlWhatForList = "DISTINCT page_title, rev_user_text";
 		$this->sSqlFromWhere = "FROM #__revision AS a

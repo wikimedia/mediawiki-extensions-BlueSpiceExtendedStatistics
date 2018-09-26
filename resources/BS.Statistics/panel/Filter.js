@@ -38,11 +38,18 @@ Ext.define( 'BS.Statistics.panel.Filter', {
 			triggerAction: 'all',
 			lastQuery: '',
 			forceSelection: true,
-			allowBlank: false
+			allowBlank: false,
+			editable: false
 		} );
 
 		this.cbInputDiagrams.on( 'select', this.cbInputDiagramsSelect, this );
-		this.cbInputDiagrams.on( 'select', this.cbInputDiagramsSelect, this );
+		this.cbInputDiagrams.getStore().on( 'load', function( store, records ) {
+			$.each( records, function( k, diagram ) {
+				if( diagram.data.isDefault === true ) {
+					this.select( diagram );
+				}
+			}.bind( this ) )
+		}.bind( this.cbInputDiagrams ) );
 
 		var lastMonth = new Date();
 		with(lastMonth) { setMonth( getMonth() -1 ) }
@@ -89,21 +96,15 @@ Ext.define( 'BS.Statistics.panel.Filter', {
 			valueField: 'cat_title'
 		} );
 
-		this.rgInputDepictionMode = new Ext.form.RadioGroup( {
+		this.cbInputDepictionMode = new BS.form.SimpleSelectBox( {
+			bsData: [
+				{ value: 'absolute', name: mw.message( 'bs-statistics-absolute' ).plain() },
+				{ value: 'aggregated', name: mw.message( 'bs-statistics-aggregated' ).plain() }
+			],
+			value: 'aggregated',
 			fieldLabel: mw.message( 'bs-statistics-mode' ).plain(),
-			columns: 1,
-			vertical: false,
-			allowBlank: false,
-			items: [{
-				boxLabel: mw.message( 'bs-statistics-absolute' ).plain(),
-				name: 'mode',
-				inputValue: 'absolute'
-			},{
-				boxLabel: mw.message( 'bs-statistics-aggregated' ).plain(),
-				name: 'mode',
-				inputValue: 'aggregated',
-				checked: true
-			}]
+			name: 'mode',
+			editable: false
 		} );
 
 		this.cbInputDepictionGrain = new BS.form.SimpleSelectBox( {
@@ -115,7 +116,8 @@ Ext.define( 'BS.Statistics.panel.Filter', {
 			],
 			value: 'W',
 			fieldLabel: mw.message( 'bs-statistics-grain' ).plain(),
-			name: 'grain'
+			name: 'grain',
+			editable: false
 		} );
 
 		this.items = [
@@ -123,7 +125,7 @@ Ext.define( 'BS.Statistics.panel.Filter', {
 			this.dfInputFrom,
 			this.dfInputTo,
 			this.cbInputDepictionGrain,
-			this.rgInputDepictionMode,
+			this.cbInputDepictionMode,
 			this.msInputFilterUsers,
 			this.msInputFilterNamespace,
 			this.msInputFilterCategory
@@ -139,10 +141,10 @@ Ext.define( 'BS.Statistics.panel.Filter', {
 		this.activateFilterByKeys( record.get( 'filters' ) );
 
 		if( record.get( 'listable' ) ) {
-			this.rgInputDepictionMode.add( {
-				boxLabel: mw.message( 'bs-statistics-list' ).plain(),
-				name: 'mode',
-				inputValue: 'list'
+			var dmStore = this.cbInputDepictionMode.getStore();
+			dmStore.insert( 0, {
+				value: 'list',
+				name: mw.message( 'bs-statistics-list' ).plain()
 			} );
 		}
 	},
@@ -161,18 +163,11 @@ Ext.define( 'BS.Statistics.panel.Filter', {
 	},
 
 	removeAdditionalModes: function () {
-		this.rgInputDepictionMode.removeAll();
-		this.rgInputDepictionMode.add( {
-			boxLabel: mw.message( 'bs-statistics-absolute' ).plain(),
-			name: 'mode',
-			inputValue: 'absolute'
-		} );
-		this.rgInputDepictionMode.add( {
-			boxLabel: mw.message( 'bs-statistics-aggregated' ).plain(),
-			name: 'mode',
-			inputValue: 'aggregated',
-			checked: true
-		} );
+		var store = this.cbInputDepictionMode.getStore();
+		store.removeAll();
+		store.insert( 0, { value: 'aggregated', name: mw.message( 'bs-statistics-aggregated' ).plain() } );
+		store.insert( 0, { value: 'absolute', name: mw.message( 'bs-statistics-absolute' ).plain() } );
+		this.cbInputDepictionMode.setValue( 'aggregated' );
 	},
 
 	activateFilterByKeys: function( keys ) {
