@@ -317,7 +317,7 @@ class ExtendedStatistics extends BsExtensionMW {
 		$aPortalConfig[2][] = array(
 			'type'  => 'BS.Statistics.StatisticsPortletNumberOfArticles',
 			'config' => array(
-				'title' => wfMessage( 'bs-statistics-portlet-numberofpages' )->plain(),
+				'title' => wfMessage( 'bs-statistics-portlet-numberofarticles' )->plain(),
 				'inputPeriod' => 'week',
 			)
 		);
