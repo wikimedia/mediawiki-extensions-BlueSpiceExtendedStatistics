@@ -28,7 +28,7 @@
 				}
 			},
 			"PermissionRegistry": {
-				"right-statistic-viewspecialpage": {
+				"statistic-viewspecialpage": {
 					"type": "global",
 					"roles": [
 						"admin",
@@ -40,17 +40,17 @@
 	},
 	"GroupPermissions": {
 		"*": {
-			"right-statistic-viewspecialpage": false
+			"statistic-viewspecialpage": false
 		},
 		"user": {
-			"right-statistic-viewspecialpage": true
+			"statistic-viewspecialpage": true
 		},
 		"sysop": {
-			"right-statistic-viewspecialpage": true
+			"statistic-viewspecialpage": true
 		}
 	},
 	"AvailableRights": [
-		"right-statistic-viewspecialpage"
+		"statistic-viewspecialpage"
 	],
 	"SpecialPages": {
 		"ExtendedStatistics": "SpecialExtendedStatistics"
