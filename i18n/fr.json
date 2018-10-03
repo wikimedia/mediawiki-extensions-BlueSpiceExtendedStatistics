@@ -3,7 +3,8 @@
 		"authors": [
 			"Orikrin1998",
 			"Gomoko",
-			"Wladek92"
+			"Wladek92",
+			"Zarisi"
 		]
 	},
 	"bs-statistics-desc": "Module de statistiques pour BlueSpice",
@@ -53,11 +54,11 @@
 	"bs-statistics-portlet-numberofusers": "Nombre d'utilisateurs",
 	"bs-statistics-portlet-numberofedits": "Nombre de modifications",
 	"bs-statistics-portlet-numberofpages": "Nombre de pages",
-	"bs-statistics-portlet-numberofarticles": "Nombre d’articles",
+	"bs-statistics-portlet-numberofarticles": "Nombre de pages de contenu",
 	"bs-statistics-portlet-numberofusersdesc": "Statistique du nombre d'utilisateurs.",
 	"bs-statistics-portlet-numberofeditsdesc": "Statistique du nombre de modifications.",
 	"bs-statistics-portlet-numberofpagesdesc": "Statistique du nombre de pages.",
-	"bs-statistics-portlet-numberofarticlesdesc": "Statistiques du nombre d'articles.",
+	"bs-statistics-portlet-numberofarticlesdesc": "Statistiques du nombre de pages de contenu.",
 	"bs-statistics-portletconfig-periodday": "Hier",
 	"apihelp-bs-statistics-tasks-description": "Fournit les tâches courantes pour les statistiques",
 	"apihelp-bs-statistics-tasks-summary": "Fournit les tâches communes dédiées aux statistiques",

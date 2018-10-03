@@ -56,7 +56,7 @@
 	"bs-statistics-portlet-numberofusers": "Количество участников",
 	"bs-statistics-portlet-numberofedits": "Количество правок",
 	"bs-statistics-portlet-numberofpages": "Количество страниц",
-	"bs-statistics-portlet-numberofarticles": "Количество статей",
+	"bs-statistics-portlet-numberofarticles": "Количество страниц с содержимым",
 	"bs-statistics-portlet-numberofusersdesc": "Статистика количества пользователей.",
 	"bs-statistics-portlet-numberofeditsdesc": "Статистика количества правок.",
 	"bs-statistics-portlet-numberofpagesdesc": "Статистика количества страниц.",

@@ -21,5 +21,7 @@
 	"bs-statistics-filters": "Filtre",
 	"bs-statistics-diag-number-of-users": "Numere de utinde ccrejate",
 	"bs-statistics-diag-number-of-pages": "Numere de pàggene ccrejate",
-	"bs-statistics-diag-number-of-pages-mw": "Numere de vôsce ccrejate"
+	"bs-statistics-diag-number-of-pages-mw": "Numere de vôsce ccrejate",
+	"bs-statistics-button-label-export": "Esporte",
+	"bs-statistics-panel-title-result": "Resultate"
 }

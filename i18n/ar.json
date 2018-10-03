@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Sonic N800",
-			"ديفيد"
+			"ديفيد",
+			"Meno25"
 		]
 	},
 	"bs-statistics-desc": "وحدة إحصائيات لـBlueSpice",
@@ -52,11 +53,11 @@
 	"bs-statistics-portlet-numberofusers": "عدد المستخدمين",
 	"bs-statistics-portlet-numberofedits": "عدد التعديلات",
 	"bs-statistics-portlet-numberofpages": "عدد الصفحات",
-	"bs-statistics-portlet-numberofarticles": "عدد المقالات",
+	"bs-statistics-portlet-numberofarticles": "عدد صفحات المحتوى",
 	"bs-statistics-portlet-numberofusersdesc": "إحصائية عدد المستخدمين.",
 	"bs-statistics-portlet-numberofeditsdesc": "إحصاء عدد التعديلات",
 	"bs-statistics-portlet-numberofpagesdesc": "إحصاء عدد الصفحات",
-	"bs-statistics-portlet-numberofarticlesdesc": "إحصاء عدد المقالات",
+	"bs-statistics-portlet-numberofarticlesdesc": "إحصاء عدد صفحات المحتوى.",
 	"bs-statistics-portletconfig-periodday": "أمس",
 	"apihelp-bs-statistics-tasks-description": "يوفر المهام الشائعة للإحصاءات",
 	"apihelp-bs-statistics-tasks-summary": "يوفر المهام الشائعة للإحصاءات",
