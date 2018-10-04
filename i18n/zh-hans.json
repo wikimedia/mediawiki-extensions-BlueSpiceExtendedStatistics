@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Liuxinyu970226",
-			"Phenolla"
+			"Phenolla",
+			"A Chinese Wikipedian"
 		]
 	},
 	"bs-statistics-desc": "用于BlueSpice的统计模块",
@@ -56,7 +57,7 @@
 	"bs-statistics-portlet-numberofusersdesc": "用户数统计。",
 	"bs-statistics-portlet-numberofeditsdesc": "编辑数统计。",
 	"bs-statistics-portlet-numberofpagesdesc": "页面数统计。",
-	"bs-statistics-portlet-numberofarticlesdesc": "条目数统计。",
+	"bs-statistics-portlet-numberofarticlesdesc": "页面数统计。",
 	"bs-statistics-portletconfig-periodday": "昨天",
 	"apihelp-bs-statistics-tasks-description": "为统计提供一般任务",
 	"apihelp-bs-statistics-tasks-summary": "提供统计的常用任务",
