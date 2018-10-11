@@ -354,11 +354,11 @@ class ExtendedStatistics extends BsExtensionMW {
 		$aPortlets[] = array(
 			'type'  => 'BS.Statistics.StatisticsPortletNumberOfArticles',
 			'config' => array(
-				'title' => wfMessage( 'bs-statistics-portlet-numberofpages' )->plain(),
+				'title' => wfMessage( 'bs-statistics-portlet-numberofarticles' )->plain(),
 				'inputPeriod' => 'week',
 			),
-			'title' => wfMessage( 'bs-statistics-portlet-numberofpages' )->plain(),
-			'description' => wfMessage( 'bs-statistics-portlet-numberofpagesdesc' )->plain()
+			'title' => wfMessage( 'bs-statistics-portlet-numberofarticles' )->plain(),
+			'description' => wfMessage( 'bs-statistics-portlet-numberofarticlesdesc' )->plain()
 		);
 		$aPortlets[] = array(
 			'type'  => 'BS.Statistics.StatisticsPortletNumberOfPages',
