@@ -18,7 +18,7 @@
  * @package BlueSpice_Extensions
  * @subpackage Statistics
  */
-class SpecialExtendedStatistics extends BsSpecialPage {
+class SpecialExtendedStatistics extends \BlueSpice\SpecialPage {
 
 	/**
 	 * Constructor of SpecialExtendedStatistics
@@ -118,10 +118,6 @@ class SpecialExtendedStatistics extends BsSpecialPage {
 		echo $sData;
 
 		return true;
-	}
-
-	protected function getGroupName() {
-		return 'bluespice';
 	}
 
 	/**
