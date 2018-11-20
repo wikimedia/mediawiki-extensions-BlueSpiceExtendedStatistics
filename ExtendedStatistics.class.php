@@ -59,7 +59,6 @@ class ExtendedStatistics extends BsExtensionMW {
 	protected function initExt() {
 
 		$this->setHook( 'ParserFirstCallInit' );
-		$this->setHook( 'BeforePageDisplay' );
 		$this->setHook( 'BSExtendedSearchAdminButtons' );
 		$this->setHook( 'BSDashboardsAdminDashboardPortalConfig' );
 		$this->setHook( 'BSDashboardsAdminDashboardPortalPortlets' );
@@ -169,24 +168,6 @@ class ExtendedStatistics extends BsExtensionMW {
 	public function onParserFirstCallInit( &$parser ) {
 		// for legacy reasons
 		$parser->setHook( 'bs:statistics:progress', array( $this, 'onTagProgress' ) );
-		return true;
-	}
-
-	/**
-	 *
-	 * @param OutputPage $oOutputPage
-	 * @param Skin $oSkin
-	 */
-	public function onBeforePageDisplay( &$oOutputPage, &$oSkin ) {
-		$oOutputPage->addModuleStyles( 'ext.bluespice.statistics.styles' );
-		$title = $oSkin->getTitle();
-		if( $title->isSpecial( 'AdminDashboard' )
-			|| $title->isSpecial('WikiAdmin')
-			|| $title->isSpecial('UserDashboard')
-		) {
-			$oOutputPage->addModules('ext.bluespice.statisticsPortlets');
-		}
-
 		return true;
 	}
 
