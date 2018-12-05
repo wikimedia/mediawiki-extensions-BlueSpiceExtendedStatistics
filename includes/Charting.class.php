@@ -30,12 +30,8 @@ class BsCharting {
 		$intervals = Interval::getIntervalsFromDiagram( $oDiagram );
 		//$oDiagram->addFilterText( wfMessage( 'bs-statistics-from-to', $oDiagram->getStartTime(), $oDiagram->getEndTime() )->plain() );
 		//$oDiagram->addFilterText( "<br/>".wfMessage( 'bs-statistics-mode' )->plain().": ".wfMessage( $oDiagram->getMessage() )->plain() );
-		// PostgreSQL-Check (uses mwuser instead of user)
-		global $wgDBtype;
-		// Pls. keep the space after user, otherwise, user_groups is also replaced
+
 		$sql = $oDiagram->getSQL();
-		if ( $wgDBtype == 'postgres' ) $sql = str_replace( '#__user', '#__mwuser', $sql );
-		if ( $wgDBtype == 'postgres' ) $sql = str_replace( '#__mwuser_', '#__user_', $sql );
 		global $wgDBprefix;
 		$sql = str_replace( "#__", $wgDBprefix, $sql );
 

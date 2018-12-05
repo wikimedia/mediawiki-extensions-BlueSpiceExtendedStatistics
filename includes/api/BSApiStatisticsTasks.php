@@ -129,13 +129,8 @@ class BSApiStatisticsTasks extends BSApiTasksBase {
 
 		switch ( $oDiagram->getDataSource() ) {
 			case BsDiagram::DATASOURCE_DATABASE :
-				global $wgDBtype, $wgDBserver, $wgDBuser, $wgDBpassword, $wgDBname;
-				switch( $wgDBtype ) {
-					case "postgres" : $oReader = new PostGreSQLDbReader(); break;
-					case "oracle"   : $oReader = new OracleDbReader(); break;
-					default         : $oReader = new MySQLDbReader();
-				}
-				//$oReader = $sDbType == 'mysql' ? new MySQLDbReader() : new PostGreSQLDbReader();
+				global $wgDBserver, $wgDBuser, $wgDBpassword, $wgDBname;
+				$oReader = new MySQLDbReader();
 				$oReader->host = $wgDBserver;
 				$oReader->user = $wgDBuser;
 				$oReader->pass = $wgDBpassword;
@@ -149,11 +144,8 @@ class BSApiStatisticsTasks extends BSApiTasksBase {
 			return $oResponse;
 		}
 
-		global $wgDBtype;
-		// Pls. keep the space after user, otherwise, user_groups is also replaced
 		$sql = $oDiagram->getSQL();
-		if ( $wgDBtype == 'postgres' ) $sql = str_replace( '#__user', '#__mwuser', $sql );
-		if ( $wgDBtype == 'postgres' ) $sql = str_replace( '#__mwuser_', '#__user_', $sql );
+
 		global $wgDBprefix;
 		$sql = str_replace( "#__", $wgDBprefix, $sql );
 
