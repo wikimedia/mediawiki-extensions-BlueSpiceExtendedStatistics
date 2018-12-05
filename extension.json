@@ -84,8 +84,6 @@
 		"BsDiagramEditsPerUser": "includes/DiagramEditsPerUser.class.php",
 		"BsDiagramSearches": "includes/DiagramSearches.class.php",
 		"MySQLDbReader": "includes/MySQLDbReader.class.php",
-		"PostGreSQLDbReader": "includes/PostGreSQLDbReader.class.php",
-		"OracleDbReader": "includes/OracleDbReader.class.php",
 		"StatsDataProvider": "includes/StatsDataProvider.class.php",
 		"Interval": "includes/Interval.class.php",
 		"BsCharting": "includes/Charting.class.php",
