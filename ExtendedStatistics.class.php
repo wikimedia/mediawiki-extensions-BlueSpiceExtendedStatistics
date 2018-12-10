@@ -59,7 +59,6 @@ class ExtendedStatistics extends BsExtensionMW {
 	protected function initExt() {
 
 		$this->setHook( 'ParserFirstCallInit' );
-		$this->setHook( 'BSExtendedSearchAdminButtons' );
 		$this->setHook( 'BSDashboardsAdminDashboardPortalConfig' );
 		$this->setHook( 'BSDashboardsAdminDashboardPortalPortlets' );
 		$this->setHook( 'BSDashboardsUserDashboardPortalConfig' );
@@ -213,19 +212,6 @@ class ExtendedStatistics extends BsExtensionMW {
 		$sOut .= '<div style="border:2px solid #DDDDDD;border-left:0px;width:'.$iWidthRemain.'px;height:25px;float:left;"></div>';
 
 		return $sOut;
-	}
-
-	public function onBSExtendedSearchAdminButtons( $oSpecialPage, &$aSearchAdminButtons ) {
-		global $wgScriptPath;
-
-		$aSearchAdminButtons['Statistics'] = array(
-			'href' => SpecialPage::getTitleFor( 'ExtendedStatistics' )->getLinkUrl(),
-			'onclick' => '',
-			'label' => wfMessage( 'bs-extendedsearch-statistics' )->plain(),
-			'image' => "$wgScriptPath/extensions/BlueSpiceStatistics/resources/images/bs-searchstatistics.png"
-		);
-
-		return true;
 	}
 
 	/**
