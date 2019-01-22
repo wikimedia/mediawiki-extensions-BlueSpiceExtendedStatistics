@@ -20,7 +20,7 @@
 	"bs-statistics-absolute": "Option in [[Special:ExtendedStatistics]], label for absolute\n{{Identical|Absolute}}",
 	"bs-statistics-year": "Option in [[Special:ExtendedStatistics]], label for year\n{{Identical|Year}}",
 	"bs-statistics-month": "Option in [[Special:ExtendedStatistics]], label for month\n{{Identical|Month}}",
-	"bs-statistics-week": "Option in [[Special:ExtendedStatistics]], label for calender week\n{{Identical|Calender week}}",
+	"bs-statistics-week": "Option in [[Special:ExtendedStatistics]], label for calendar week\n{{Identical|Calender week}}",
 	"bs-statistics-day": "Option in [[Special:ExtendedStatistics]], label for day\n{{Identical|Day}}",
 	"bs-statistics-list": "Option in [[Special:ExtendedStatistics]], label for list\n{{Identical|List}}",
 	"bs-statistics-not-allowed": "Error message used in [[Special:ExtendedStatistics]], to notify the user that he has not the necessary permissions for some actions.",
