@@ -22,14 +22,14 @@
 	"bs-statistics-day": "Dag",
 	"bs-statistics-list": "Lijst",
 	"bs-statistics-not-allowed": "U hebt niet de vereiste toestemming.",
-	"bs-statistics-finish": "Maak diagram",
+	"bs-statistics-finish": "Diagram aanmaken",
 	"bs-statistics-filters": "Filters",
 	"bs-statistics-interval-too-big": "Het interval is te groot. Het moet niet meer dan 35 interval stappen.",
 	"bs-statistics-diag-number-of-users": "Aantal gebruikers",
 	"bs-statistics-diag-number-of-users-desc": "Geeft het aantal gebruikers weer die zijn gemaakt binnen de gekozen periode.",
 	"bs-statistics-label-name": "Naam",
 	"bs-statistics-label-registration": "Registratie",
-	"bs-statistics-diag-number-of-pages": "Aantal pagina's",
+	"bs-statistics-diag-number-of-pages": "Aantal pagina's aangemaakt",
 	"bs-statistics-diag-number-of-pages-desc": "Geeft het totaal aantal pagina ' s die zijn gemaakt binnen de gekozen periode.",
 	"bs-statistics-diag-number-of-pages-mw": "Aantal pagina ' s met inhoud",
 	"bs-statistics-diag-number-of-pages-mw-desc": "Geeft het nummer van de pagina ' s die zijn gemaakt binnen de gekozen periode.",
@@ -56,5 +56,7 @@
 	"bs-statistics-portlet-numberofusersdesc": "Statistiek van het aantal gebruikers.",
 	"bs-statistics-portlet-numberofeditsdesc": "Statistiek van het aantal bewerkingen.",
 	"bs-statistics-portlet-numberofpagesdesc": "Statistiek van het aantal pagina ' s.",
-	"bs-statistics-portletconfig-periodday": "Gisteren"
+	"bs-statistics-portletconfig-periodday": "Gisteren",
+	"bs-statistics-button-label-export": "Exporteren",
+	"bs-statistics-panel-title-result": "Resultaat"
 }
