@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Purodha"
+			"Purodha",
+			"Hwboehm"
 		]
 	},
 	"bs-statistics-desc": "Schtatesteke för BlueSpice",
@@ -11,9 +12,9 @@
 	"bs-statistics-from": "Vun",
 	"bs-statistics-to": "Bes",
 	"bs-statistics-grain": "Schredd",
-	"bs-statistics-mode": "Aat <!--  https://translatewiki.net/wiki/Thread:Support/About_MediaWiki:Bs-statistics-mode/ksh -->",
-	"bs-statistics-aggregated": "zersammejezallt <!--  https://translatewiki.net/wiki/Thread:Support/About_MediaWiki:Bs-statistics-aggregated/ksh -->",
-	"bs-statistics-absolute": "abseluht <!--  https://translatewiki.net/wiki/Thread:Support/About_MediaWiki:Bs-statistics-absolute/ksh -->",
+	"bs-statistics-mode": "Aat",
+	"bs-statistics-aggregated": "zersammejezallt",
+	"bs-statistics-absolute": "abseluht",
 	"bs-statistics-year": "Johr",
 	"bs-statistics-month": "Mohnd",
 	"bs-statistics-week": "Kaländerwoch",
