@@ -2,12 +2,18 @@
 	"@metadata": {
 		"authors": [
 			"Hwangjy9",
-			"Ykhwong"
+			"Ykhwong",
+			"Comjun04"
 		]
 	},
 	"bs-statistics-desc": "BlueSpice의 통계 모듈",
 	"bs-statistics-diagram": "쿼리",
+	"bs-statistics-year": "년",
+	"bs-statistics-month": "월",
+	"bs-statistics-day": "일",
 	"bs-statistics-list": "목록",
+	"bs-statistics-not-allowed": "필요한 권한을 가지고 있지 않습니다.",
+	"bs-statistics-finish": "다이어그램 만들기",
 	"bs-statistics-filters": "필터",
 	"bs-statistics-diag-number-of-users": "생성된 사용자 수",
 	"bs-statistics-label-name": "이름",
@@ -17,6 +23,7 @@
 	"bs-statistics-label-page": "문서",
 	"bs-statistics-label-creator": "만든이",
 	"bs-statistics-diag-number-of-edits": "편집 수",
+	"bs-statistics-diag-edits-per-user": "사용자당 편집 수",
 	"bs-statistics-label-time": "시간",
 	"bs-statistics-filter-category": "분류",
 	"bs-statistics-portlet-numberofusers": "사용자 수",
