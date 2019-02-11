@@ -3,7 +3,8 @@
 		"authors": [
 			"SPQRobin",
 			"Esketti",
-			"Mainframe98"
+			"Mainframe98",
+			"Xbaked potatox"
 		]
 	},
 	"bs-statistics-desc": "Statistieken module voor BlueSpice",
@@ -25,7 +26,7 @@
 	"bs-statistics-finish": "Diagram aanmaken",
 	"bs-statistics-filters": "Filters",
 	"bs-statistics-interval-too-big": "Het interval is te groot. Het moet niet meer dan 35 interval stappen.",
-	"bs-statistics-diag-number-of-users": "Aantal gebruikers",
+	"bs-statistics-diag-number-of-users": "Aantal gemaakte gebruikers",
 	"bs-statistics-diag-number-of-users-desc": "Geeft het aantal gebruikers weer die zijn gemaakt binnen de gekozen periode.",
 	"bs-statistics-label-name": "Naam",
 	"bs-statistics-label-registration": "Registratie",
