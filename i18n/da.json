@@ -4,9 +4,15 @@
 			"Saederup92"
 		]
 	},
+	"bs-statistics-from": "Fra",
+	"bs-statistics-to": "Til",
+	"bs-statistics-year": "År",
+	"bs-statistics-month": "Måned",
 	"bs-statistics-week": "Kalenderuge",
+	"bs-statistics-day": "Dag",
 	"bs-statistics-diag-number-of-users": "Antal brugere oprettet",
 	"bs-statistics-diag-number-of-pages": "Antal sider oprettet",
 	"bs-statistics-diag-number-of-pages-mw": "Antal indholdssider oprettet",
+	"bs-statistics-filter-category": "Kategori",
 	"bs-statistics-portlet-numberofarticles": "Antal af indholdsider"
 }
