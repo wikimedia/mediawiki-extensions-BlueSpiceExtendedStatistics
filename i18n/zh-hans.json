@@ -3,7 +3,8 @@
 		"authors": [
 			"Liuxinyu970226",
 			"Phenolla",
-			"A Chinese Wikipedian"
+			"A Chinese Wikipedian",
+			"VulpesVulpes825"
 		]
 	},
 	"bs-statistics-desc": "用于BlueSpice的统计模块",
@@ -53,7 +54,7 @@
 	"bs-statistics-portlet-numberofusers": "用户人数",
 	"bs-statistics-portlet-numberofedits": "编辑数",
 	"bs-statistics-portlet-numberofpages": "页面数",
-	"bs-statistics-portlet-numberofarticles": "条目数",
+	"bs-statistics-portlet-numberofarticles": "内容页面数",
 	"bs-statistics-portlet-numberofusersdesc": "用户数统计。",
 	"bs-statistics-portlet-numberofeditsdesc": "编辑数统计。",
 	"bs-statistics-portlet-numberofpagesdesc": "页面数统计。",
