@@ -37,7 +37,7 @@ Ext.define('BS.Statistics.StatisticsPortlet', {
 				},
 				reader: {
 					type: 'json',
-					root: 'payload.data'
+					rootProperty: 'payload.data'
 				},
 				extraParams: {
 					token: mw.user.tokens.get( 'editToken' )
