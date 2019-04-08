@@ -11,8 +11,13 @@
 	"bs-statistics-week": "Kalenderuge",
 	"bs-statistics-day": "Dag",
 	"bs-statistics-diag-number-of-users": "Antal brugere oprettet",
+	"bs-statistics-label-name": "Navn",
+	"bs-statistics-label-registration": "Registrering",
 	"bs-statistics-diag-number-of-pages": "Antal sider oprettet",
 	"bs-statistics-diag-number-of-pages-mw": "Antal indholdssider oprettet",
+	"bs-statistics-label-page": "Side",
+	"bs-statistics-label-creator": "Skaber",
+	"bs-statistics-diag-number-of-edits": "Antal redigeringer",
 	"bs-statistics-filter-category": "Kategori",
 	"bs-statistics-portlet-numberofarticles": "Antal af indholdsider"
 }
