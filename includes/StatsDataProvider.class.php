@@ -9,14 +9,14 @@
  * @package    BlueSpice_Extensions
  * @subpackage Statistics
  * @copyright  Copyright (C) 2016 Hallo Welt! GmbH, All rights reserved.
- * @license    http://www.gnu.org/copyleft/gpl.html GNU Public License v2 or later
+ * @license    http://www.gnu.org/copyleft/gpl.html GPL-2.0-or-later
  * @filesource
  */
 
 /**
  * Reads a data source for Statistics for BlueSpice.
  * @package    BlueSpice_Extensions
- * @subpackage Statistics 
+ * @subpackage Statistics
  */
 abstract class StatsDataProvider {
 	/**
@@ -26,7 +26,7 @@ abstract class StatsDataProvider {
 	public $match = false;
 	/**
 	 * Counts occurrences in a certain interval
-	 * @param Interval $interval
+	 * @param Interval $oInterval
 	 * @return int Number of occurrences
 	 */
 	abstract function countInInterval( $oInterval );

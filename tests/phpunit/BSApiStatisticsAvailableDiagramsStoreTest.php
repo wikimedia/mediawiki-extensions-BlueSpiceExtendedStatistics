@@ -12,7 +12,7 @@ use BlueSpice\Tests\BSApiExtJSStoreTestBase;
 class BSApiStatisticsAvailableDiagramsStoreTest extends BSApiExtJSStoreTestBase {
 	protected $iFixtureTotal = 6;
 
-	protected function getStoreSchema () {
+	protected function getStoreSchema() {
 		return [
 			'key' => [
 				'type' => 'string'
@@ -29,7 +29,7 @@ class BSApiStatisticsAvailableDiagramsStoreTest extends BSApiExtJSStoreTestBase 
 		];
 	}
 
-	protected function createStoreFixtureData () {
+	protected function createStoreFixtureData() {
 		return 6;
 	}
 
@@ -37,13 +37,13 @@ class BSApiStatisticsAvailableDiagramsStoreTest extends BSApiExtJSStoreTestBase 
 		return 'bs-statistics-available-diagrams-store';
 	}
 
-	public function provideSingleFilterData () {
+	public function provideSingleFilterData() {
 		return [
 			'Filter by listable' => [ 'boolean', 'eq', 'listable', true, 4 ]
 		];
 	}
 
-	public function provideMultipleFilterData () {
+	public function provideMultipleFilterData() {
 		return [
 			'Filter by listable and key' => [
 				[

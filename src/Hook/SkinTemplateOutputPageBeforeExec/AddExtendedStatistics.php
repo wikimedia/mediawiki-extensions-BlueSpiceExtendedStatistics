@@ -9,7 +9,7 @@ class AddExtendedStatistics extends SkinTemplateOutputPageBeforeExec {
 	protected function doProcess() {
 		$oSpecialExtendedStatistic = \SpecialPageFactory::getPage( 'ExtendedStatistics' );
 
-		if( !$oSpecialExtendedStatistic ) {
+		if ( !$oSpecialExtendedStatistic ) {
 			return true;
 		}
 

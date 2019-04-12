@@ -9,27 +9,28 @@
  * @package    BlueSpice_Extensions
  * @subpackage Statistics
  * @copyright  Copyright (C) 2016 Hallo Welt! GmbH, All rights reserved.
- * @license    http://www.gnu.org/copyleft/gpl.html GNU Public License v2 or later
+ * @license    http://www.gnu.org/copyleft/gpl.html GPL-2.0-or-later
  * @filesource
  */
 
 /**
  * Describes namesoace filter for Statistics for BlueSpice.
  * @package    BlueSpice_Extensions
- * @subpackage Statistics 
+ * @subpackage Statistics
  */
 class BsFilterNamespace extends BsMultiSelectFilter {
 
 	/**
 	 * Constructor of BsStatisticsFilter class
 	 * @param BsDiagram $oDiagram Instance of diagram the filter is used with.
+	 * @param array $aDefaultValues
 	 */
 	public function __construct( $oDiagram, $aDefaultValues ) {
 		parent::__construct( $oDiagram, $aDefaultValues );
 
 		$this->sLabel = wfMessage( 'bs-ns' )->text();
 		$this->aAvailableValues = $this->loadAvailableValues();
-		$this->aDefaultValues = array( 0 );
+		$this->aDefaultValues = [ 0 ];
 	}
 
 	/**
@@ -38,20 +39,20 @@ class BsFilterNamespace extends BsMultiSelectFilter {
 	 */
 	public function getSql() {
 		$this->getActiveValues();
-		if ( !is_array( $this->aActiveValues ) || count( $this->aActiveValues ) <=0 ) {
+		if ( !is_array( $this->aActiveValues ) || count( $this->aActiveValues ) <= 0 ) {
 			return '1=1';
 		}
 
-		$aInClause = array();
+		$aInClause = [];
 
 		foreach ( $this->aActiveValues as $sValue ) {
-			$aInClause[] = "'".$sValue."'";
+			$aInClause[] = "'" . $sValue . "'";
 		}
 
 		$sInClause = implode( ',', $aInClause );
 
 		$sSql = $sInClause;
-		$sSql = 'page_namespace IN ('.$sInClause.')';
+		$sSql = 'page_namespace IN (' . $sInClause . ')';
 		return $sSql;
 	}
 
@@ -60,7 +61,7 @@ class BsFilterNamespace extends BsMultiSelectFilter {
 	 * @return array List of strings
 	 */
 	public function loadAvailableValues() {
-		return BsNamespaceHelper::getNamespacesForSelectOptions( array( -2,-1 ) );
+		return BsNamespaceHelper::getNamespacesForSelectOptions( [ -2,-1 ] );
 	}
 
 	// TODO MRG (22.12.10 00:56): Diese funktion überschreibt parent. das sollte man besser lösen
@@ -79,7 +80,7 @@ class BsFilterNamespace extends BsMultiSelectFilter {
 	 */
 	public function getActiveFilterText() {
 		$this->getActiveValues();
-		$aI18NValues = array();
+		$aI18NValues = [];
 		foreach ( $this->aActiveValues as $sValue ) {
 			$aI18NValues[] = BsNamespaceHelper::getNamespaceName( $sValue );
 		}

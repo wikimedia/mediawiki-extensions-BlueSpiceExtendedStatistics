@@ -9,14 +9,14 @@
  * @package    BlueSpice_Extensions
  * @subpackage Statistics
  * @copyright  Copyright (C) 2016 Hallo Welt! GmbH, All rights reserved.
- * @license    http://www.gnu.org/copyleft/gpl.html GNU Public License v2 or later
+ * @license    http://www.gnu.org/copyleft/gpl.html GPL-2.0-or-later
  * @filesource
  */
 
 /**
  * Describes a diagram for Statistics for BlueSpice.
  * @package    BlueSpice_Extensions
- * @subpackage Statistics 
+ * @subpackage Statistics
  */
 abstract class BsDiagram {
 	/**
@@ -35,7 +35,7 @@ abstract class BsDiagram {
 	 * Diagram time resoution: years
 	 */
 	const GRAIN_YEAR = 'y';
-	
+
 	/**
 	 * Data shall be retrieved from database
 	 */
@@ -44,7 +44,7 @@ abstract class BsDiagram {
 	 * Data shall be retrieved fromlogfile
 	 */
 	const DATASOURCE_LOGFILE = 2;
-	
+
 	/**
 	 * Data shall be presented as is
 	 */
@@ -57,8 +57,7 @@ abstract class BsDiagram {
 	 * Data shall be presented as a list
 	 */
 	const MODE_LIST = "list";
-	
-	
+
 	/**
 	 * Lower boundary of date interval
 	 * @var string
@@ -86,24 +85,24 @@ abstract class BsDiagram {
 	protected $sMode;
 	/**
 	 * Message data presentation
-	 * @var string 
+	 * @var string
 	 */
 	protected $sMessage;
 	/**
 	 * List of available filters for this diagram
 	 * @var array List of BsStatisticsFilter
 	 */
-	protected $aFilters = array();
+	protected $aFilters = [];
 	/**
 	 * List of data points
 	 * @var array List of integers
 	 */
-	protected $aData = array();
+	protected $aData = [];
 	/**
 	 * List of x axis labels
 	 * @var array List of strings
 	 */
-	protected $aLabelsX = array();
+	protected $aLabelsX = [];
 	/**
 	 * Labels for x shall be generated from this
 	 * @var string time format item, e.g. "M" for month (Jan, Feb...)
@@ -111,7 +110,7 @@ abstract class BsDiagram {
 	protected $sModLabel;
 	/**
 	 * Headings for column headers
-	 * @var array 
+	 * @var array
 	 */
 	protected $sListLabel;
 	/**
@@ -146,22 +145,22 @@ abstract class BsDiagram {
 	protected $bListable;
 	/**
 	 * Format of point labels
-	 * @var string Format as defined by jpGraph 
+	 * @var string Format as defined by jpGraph
 	 */
 	protected $sFormatX;
 	/**
 	 * Overall title of the diagram
-	 * @var string 
+	 * @var string
 	 */
 	protected $sTitle;
 	/**
 	 * Title for x axis
-	 * @var string 
+	 * @var string
 	 */
 	protected $sTitleX;
 	/**
 	 * Title for y axis
-	 * @var string 
+	 * @var string
 	 */
 	protected $sTitleY;
 	/**
@@ -184,7 +183,8 @@ abstract class BsDiagram {
 	/**
 	 * Constructor of BsDiagram class
 	 */
-	public function __construct() {}
+	public function __construct() {
+	}
 
 	/**
 	 * Get current SQL statement for data retrieval
@@ -192,29 +192,29 @@ abstract class BsDiagram {
 	 */
 	public function getSql() {
 		$sql = "SELECT ";
-		$sql .= $this->isList()?$this->sSqlWhatForList:$this->sSqlWhatForDiagram;
+		$sql .= $this->isList() ? $this->sSqlWhatForList : $this->sSqlWhatForDiagram;
 		$sql .= " ";
 		$sql .= $this->sSqlFromWhere;
-		$sql .= $this->isList()?$this->sSqlOptionsForList:$this->sSqlOptionsForDiagram;
+		$sql .= $this->isList() ? $this->sSqlOptionsForList : $this->sSqlOptionsForDiagram;
 		return $sql;
 	}
-	
+
 	/**
 	 * Is this diagram a list
-	 * @return bool 
+	 * @return bool
 	 */
 	public function isList() {
-		return ( $this->sMode == BsDiagram::MODE_LIST );
+		return ( $this->sMode == self::MODE_LIST );
 	}
-	
+
 	/**
 	 * Can this diagram be presented in list mode.
-	 * @return bool 
+	 * @return bool
 	 */
 	public function isListable() {
 		return $this->bListable;
 	}
-	
+
 	/**
 	 * Set ower boundary of date interval
 	 * @param string $sStartTime Date string
@@ -222,7 +222,7 @@ abstract class BsDiagram {
 	public function setStartTime( $sStartTime ) {
 		$this->sStartTime = $sStartTime;
 	}
-	
+
 	/**
 	 * Get lower boundary of date interval
 	 * @return string Date string
@@ -230,7 +230,7 @@ abstract class BsDiagram {
 	public function getStartTime() {
 		return $this->sStartTime;
 	}
-	
+
 	/**
 	 * Set u boundary of date interval
 	 * @param string $sEndTime Date string
@@ -238,7 +238,7 @@ abstract class BsDiagram {
 	public function setEndTime( $sEndTime ) {
 		$this->sEndTime = $sEndTime;
 	}
-	
+
 	/**
 	 * Get upper boundary of date interval
 	 * @return string Date string
@@ -246,7 +246,7 @@ abstract class BsDiagram {
 	public function getEndTime() {
 		return $this->sEndTime;
 	}
-	
+
 	/**
 	 * Set grain to use
 	 * @param string $sActualGrain BsDiagram::GRAIN_
@@ -254,7 +254,7 @@ abstract class BsDiagram {
 	public function setActualGrain( $sActualGrain ) {
 		$this->sActualGrain = $sActualGrain;
 	}
-	
+
 	/**
 	 * Get grain to use
 	 * @return string BsDiagram::GRAIN_
@@ -262,7 +262,7 @@ abstract class BsDiagram {
 	public function getActualGrain() {
 		return $this->sActualGrain;
 	}
-	
+
 	/**
 	 * Set mode of data presentation
 	 * @param string $sMode BsDiagram::MODE_
@@ -270,30 +270,30 @@ abstract class BsDiagram {
 	public function setMode( $sMode ) {
 		$this->sMode = $sMode;
 	}
-	
+
 	/**
 	 * Set mode of data presentation
-	 * @param string $sMode BsDiagram::MODE_
+	 * @param string $sMessage BsDiagram::MODE_
 	 */
 	public function setMessage( $sMessage ) {
 		$this->sMessage = $sMessage;
 	}
-	
+
 	/**
 	 * Get mode of data presentation
-	 * @return string  BsDiagram::MODE_
+	 * @return string BsDiagram::MODE_
 	 */
 	public function getMode() {
 		return $this->sMode;
 	}
 	/**
 	 * Get mode of data presentation
-	 * @return string  BsDiagram::MODE_
+	 * @return string BsDiagram::MODE_
 	 */
 	public function getMessage() {
 		return $this->sMessage;
 	}
-	
+
 	/**
 	 * Set list of available filters for this diagram
 	 * @param array $aFilters List of BsStatisticsFilter
@@ -301,7 +301,7 @@ abstract class BsDiagram {
 	public function setFilters( $aFilters ) {
 		$this->aFilters = $aFilters;
 	}
-	
+
 	/**
 	 * Get list of available filters for this diagram
 	 * @return array List of BsStatisticsFilter
@@ -309,15 +309,15 @@ abstract class BsDiagram {
 	public function getFilters() {
 		return $this->aFilters;
 	}
-	
+
 	/**
 	 * Adds a filter to list of available filters
-	 * @param BsStatisticsFilter $oFilter 
+	 * @param BsStatisticsFilter $oFilter
 	 */
 	public function addFilter( $oFilter ) {
 		$this->aFilters[$oFilter->getParamKey()] = $oFilter;
 	}
-	
+
 	/**
 	 * Returns an active filter
 	 * @param string $sFilterKey ParamKey of filter
@@ -326,7 +326,7 @@ abstract class BsDiagram {
 	public function getFilter( $sFilterKey ) {
 		return $this->aFilters[$sFilterKey];
 	}
-	
+
 	/**
 	 * Sets list of data points
 	 * @param array $aData List of integers
@@ -334,15 +334,15 @@ abstract class BsDiagram {
 	public function setData( $aData ) {
 		$this->aData = $aData;
 	}
-	
+
 	/**
 	 * Gets list of data points
-	 * @return array List of integers 
+	 * @return array List of integers
 	 */
 	public function getData() {
 		return $this->aData;
 	}
-	
+
 	/**
 	 * Sets list of x axis labels
 	 * @param array $aLabelsX List of strings
@@ -350,15 +350,15 @@ abstract class BsDiagram {
 	public function setLabelsX( $aLabelsX ) {
 		$this->aLabelsX = $aLabelsX;
 	}
-	
+
 	/**
 	 * Gets list of x axis labels
-	 * @return array List of strings 
+	 * @return array List of strings
 	 */
 	public function getLabelsX() {
 		return $this->aLabelsX;
 	}
-	
+
 	/**
 	 * Sets format of point labels
 	 * @param string $sFormatX Format as defined by jpGraph
@@ -366,7 +366,7 @@ abstract class BsDiagram {
 	public function setFormatX( $sFormatX ) {
 		$this->sFormatX = $sFormatX;
 	}
-	
+
 	/**
 	 * Gets format of point labels
 	 * @return string Format as defined by jpGraph
@@ -374,47 +374,47 @@ abstract class BsDiagram {
 	public function getFormatX() {
 		return $this->sFormatX;
 	}
-	
+
 	/**
 	 * Sets overall title of the diagram
-	 * @param string $sTitle 
+	 * @param string $sTitle
 	 */
 	public function setTitle( $sTitle ) {
 		$this->sTitle = $sTitle;
 	}
-	
+
 	/**
 	 * Gets overall title of the diagram
-	 * @param string 
+	 * @return string
 	 */
 	public function getTitle() {
 		return $this->sTitle;
 	}
-	
+
 	/**
 	 * Sets title for x axis
-	 * @param string $sTitleX 
+	 * @param string $sTitleX
 	 */
 	public function setTitleX( $sTitleX ) {
 		$this->sTitleX = $sTitleX;
 	}
-	
+
 	/**
 	 * Gets title for x axis
-	 * @param string
+	 * @return string
 	 */
 	public function getTitleX() {
 		return $this->sTitleX;
-	}	
-	
+	}
+
 	/**
 	 * Sets title for y axis
-	 * @param string $sTitleY 
+	 * @param string $sTitleY
 	 */
 	public function setTitleY( $sTitleY ) {
 		$this->sTitleY = $sTitleY;
 	}
-	
+
 	/**
 	 * Gets title for y axis
 	 * @return string
@@ -422,15 +422,15 @@ abstract class BsDiagram {
 	public function getTitleY() {
 		return $this->sTitleY;
 	}
-	
+
 	/**
 	 * Sets description of diagram
-	 * @param string $sDescription 
+	 * @param string $sDescription
 	 */
 	public function setDescription( $sDescription ) {
 		$this->sDescription = $sDescription;
 	}
-	
+
 	/**
 	 * Gets description of diagram
 	 * @return string
@@ -438,30 +438,30 @@ abstract class BsDiagram {
 	public function getDescription() {
 		return $this->sDescription;
 	}
-	
+
 	/**
 	 * Adds a description of active filter.
-	 * @param string $sFilterText 
+	 * @param string $sFilterText
 	 */
 	public function addFilterText( $sFilterText ) {
 		$this->sFilterText .= $sFilterText;
 	}
-	
+
 	/**
 	 * Gets description of active filters.
-	 * @return string 
+	 * @return string
 	 */
 	public function getFilterText() {
 		return $this->sFilterText;
-	}	
-	
+	}
+
 	/* this is a read only property
 	public function setDataSource( $iDataSource ) {
 		//$this->iDataSource = $iDataSource;
 	}
-	 * 
+	 *
 	 */
-	
+
 	/**
 	 * Gets source of data
 	 * @return int BsDiagram::DATASOURCE_
@@ -469,7 +469,7 @@ abstract class BsDiagram {
 	public function getDataSource() {
 		return $this->iDataSource;
 	}
-	
+
 	/**
 	 * Sets format labels for x shall be generated from
 	 * @param string $sModLabel time format item, e.g. "M" for month (Jan, Feb...)
@@ -477,7 +477,7 @@ abstract class BsDiagram {
 	public function setModLabel( $sModLabel ) {
 		$this->sModLabel = $sModLabel;
 	}
-	
+
 	/**
 	 * Gets format labels for x shall be generated from
 	 * @return string time format item, e.g. "M" for month (Jan, Feb...)
@@ -485,7 +485,7 @@ abstract class BsDiagram {
 	public function getModLabel() {
 		return $this->sModLabel;
 	}
-	
+
 	/**
 	 * Gets headings for column headers
 	 * @return array

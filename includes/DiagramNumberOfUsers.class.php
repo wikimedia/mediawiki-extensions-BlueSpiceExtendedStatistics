@@ -8,7 +8,7 @@
  * @package    BlueSpice_Extensions
  * @subpackage Statistics
  * @copyright  Copyright (C) 2016 Hallo Welt! GmbH, All rights reserved.
- * @license    http://www.gnu.org/copyleft/gpl.html GNU Public License v2 or later
+ * @license    http://www.gnu.org/copyleft/gpl.html GPL-2.0-or-later
  * @filesource
  */
 
@@ -46,7 +46,7 @@ class BsDiagramNumberOfUsers extends BsDiagram {
 									SELECT ipb_user FROM #__ipblocks
 								)
 								AND user_name NOT IN (@BsFilterUsers)";
-		$this->sListLabel = array( wfMessage( 'bs-statistics-label-name' )->plain(), wfMessage( 'bs-statistics-label-registration' )->plain() );
+		$this->sListLabel = [ wfMessage( 'bs-statistics-label-name' )->plain(), wfMessage( 'bs-statistics-label-registration' )->plain() ];
 		$this->sMode = BsDiagram::MODE_AGGREGATED;
 
 		$this->addFilter( new BsFilterUsers( $this ) );
