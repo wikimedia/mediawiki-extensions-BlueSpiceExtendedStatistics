@@ -8,7 +8,7 @@
  * @package    BlueSpice_Extensions
  * @subpackage Statistics
  * @copyright  Copyright (C) 2016 Hallo Welt! GmbH, All rights reserved.
- * @license    http://www.gnu.org/copyleft/gpl.html GNU Public License v2 or later
+ * @license    http://www.gnu.org/copyleft/gpl.html GPL-2.0-or-later
  * @filesource
  */
 
@@ -23,13 +23,14 @@ class BsCharting {
 	 * Prepares data for list output
 	 * @param BsDiagram $oDiagram The diagram to prepare chart for
 	 * @param StatsDataProvider $provider Provider class for chart data
+	 * @return BsDiagram
 	 */
-	public static function prepareList($oDiagram, $provider) {
+	public static function prepareList( $oDiagram, $provider ) {
 		// TODO MRG (13.12.10 17:29): make configurable
-		set_time_limit(120);
+		set_time_limit( 120 );
 		$intervals = Interval::getIntervalsFromDiagram( $oDiagram );
-		//$oDiagram->addFilterText( wfMessage( 'bs-statistics-from-to', $oDiagram->getStartTime(), $oDiagram->getEndTime() )->plain() );
-		//$oDiagram->addFilterText( "<br/>".wfMessage( 'bs-statistics-mode' )->plain().": ".wfMessage( $oDiagram->getMessage() )->plain() );
+		// $oDiagram->addFilterText( wfMessage( 'bs-statistics-from-to', $oDiagram->getStartTime(), $oDiagram->getEndTime() )->plain() );
+		// $oDiagram->addFilterText( "<br/>".wfMessage( 'bs-statistics-mode' )->plain().": ".wfMessage( $oDiagram->getMessage() )->plain() );
 
 		$sql = $oDiagram->getSQL();
 		global $wgDBprefix;
@@ -39,7 +40,9 @@ class BsCharting {
 			$sFilterSql = $oFilter->getSql();
 			$sql = str_replace( $oFilter->getSqlKey(), $sFilterSql, $sql );
 			$sActiveFilterText = $oFilter->getActiveFilterText();
-			if ( !empty( $sActiveFilterText ) ) $oDiagram->addFilterText( "<br/>".$oFilter->getLabel().": ".$sActiveFilterText );
+			if ( !empty( $sActiveFilterText ) ) {
+				$oDiagram->addFilterText( "<br/>" . $oFilter->getLabel() . ": " . $sActiveFilterText );
+			}
 		}
 		$provider->match = $sql;
 
@@ -48,12 +51,12 @@ class BsCharting {
 		$endtime = strtotime( $oDiagram->getEndTime() ) + 84599;
 
 		$interval = new Interval();
-		$interval->setStartTS($starttime);
-		$interval->setEndTS($endtime);
+		$interval->setStartTS( $starttime );
+		$interval->setEndTS( $endtime );
 
-		$oDiagram->setData( $provider->uniqueValues($interval, $oDiagram->isListable(), count($oDiagram->getListLabel() ) ) );
+		$oDiagram->setData( $provider->uniqueValues( $interval, $oDiagram->isListable(), count( $oDiagram->getListLabel() ) ) );
 
-		//arsort($diag['data']);
+		// arsort($diag['data']);
 
 		return $oDiagram;
 	}
@@ -66,26 +69,23 @@ class BsCharting {
 	 * @param bool $countable If true, result can be listet.
 	 * @return array List of numbers
 	 */
-	public static function getDataPerDateInterval($dataprovider, $aggregated, $intervals, $countable=false)
-	{
-		$data=array();
+	public static function getDataPerDateInterval( $dataprovider, $aggregated, $intervals, $countable = false ) {
+		$data = [];
 		$sum = 0;
-		if ($aggregated == 'aggregated')
-		{
+		if ( $aggregated == 'aggregated' ) {
 			$intervalBefore = new Interval();
-			$intervalBefore->setStartTS(0);
-			$intervalBefore->setEndTS($intervals[0]->getStartTS());
-			$sum = $dataprovider->countInInterval($intervalBefore, $countable);
+			$intervalBefore->setStartTS( 0 );
+			$intervalBefore->setEndTS( $intervals[0]->getStartTS() );
+			$sum = $dataprovider->countInInterval( $intervalBefore, $countable );
 		}
-		foreach ($intervals as $interval)
-		{
-			$item = $dataprovider->countInInterval($interval, $countable);
-			if ($aggregated=='aggregated')
-			{
+		foreach ( $intervals as $interval ) {
+			$item = $dataprovider->countInInterval( $interval, $countable );
+			if ( $aggregated == 'aggregated' ) {
 				$sum += $item;
 				$data[] = $sum;
+			} else {
+				$data[] = $item;
 			}
-			else $data[] = $item;
 		}
 		return $data;
 	}

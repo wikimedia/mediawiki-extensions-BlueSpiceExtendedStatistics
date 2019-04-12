@@ -9,17 +9,17 @@
  * @package    BlueSpice_Extensions
  * @subpackage Statistics
  * @copyright  Copyright (C) 2016 Hallo Welt! GmbH, All rights reserved.
- * @license    http://www.gnu.org/copyleft/gpl.html GNU Public License v2 or later
+ * @license    http://www.gnu.org/copyleft/gpl.html GPL-2.0-or-later
  * @filesource
  */
-$specialPageAliases = array();
+$specialPageAliases = [];
 
 /** English */
-$specialPageAliases['en'] = array(
-	'ExtendedStatistics' => array( 'ExtendedStatistics' ),
-);
+$specialPageAliases['en'] = [
+	'ExtendedStatistics' => [ 'ExtendedStatistics' ],
+];
 
 /** German (Deutsch) */
-$specialPageAliases['de'] = array(
-	'ExtendedStatistics' => array( 'Erweiterte Statistik' ),
-);
+$specialPageAliases['de'] = [
+	'ExtendedStatistics' => [ 'Erweiterte Statistik' ],
+];
