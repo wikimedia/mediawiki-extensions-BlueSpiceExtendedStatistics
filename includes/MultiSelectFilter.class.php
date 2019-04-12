@@ -9,23 +9,23 @@
  * @package    BlueSpice_Extensions
  * @subpackage Statistics
  * @copyright  Copyright (C) 2016 Hallo Welt! GmbH, All rights reserved.
- * @license    http://www.gnu.org/copyleft/gpl.html GNU Public License v2 or later
+ * @license    http://www.gnu.org/copyleft/gpl.html GPL-2.0-or-later
  * @filesource
  */
 
 /**
  * Describes a multi select filter filter for Statistics for BlueSpice.
  * @package    BlueSpice_Extensions
- * @subpackage Statistics 
+ * @subpackage Statistics
  */
 abstract class BsMultiSelectFilter extends BsSelectFilter {
 
 	/**
 	 * Constructor of BsFilterCategory class
 	 * @param BsDiagram $oDiagram Instance of diagram the filter is used with.
-	 * @param array $aDefaultValues List of strings
+	 * @param array|null $aDefaultValues List of strings
 	 */
-	public function __construct( $oDiagram, $aDefaultValues=null ) {
+	public function __construct( $oDiagram, $aDefaultValues = null ) {
 		parent::__construct( $oDiagram, $aDefaultValues );
 		if ( !is_null( $aDefaultValues ) ) {
 			$this->aDefaultValues = $aDefaultValues;
@@ -37,7 +37,7 @@ abstract class BsMultiSelectFilter extends BsSelectFilter {
 	 */
 	public function getValueFromRequest() {
 		global $wgRequest;
-		$this->aActiveValues = $wgRequest->getArray( $this->getParamKey(), array() );
+		$this->aActiveValues = $wgRequest->getArray( $this->getParamKey(), [] );
 	}
 
 	/*
@@ -46,7 +46,7 @@ abstract class BsMultiSelectFilter extends BsSelectFilter {
 	 */
 	public function getActiveFilterText() {
 		$this->getActiveValues();
-		$aI18NValues = array();
+		$aI18NValues = [];
 		foreach ( $this->aActiveValues as $sValue ) {
 			$sValueText = preg_replace( "/^(<|&lt;)?(.*?)(>|&gt;)?$/", "$2", wfMessage( $sValue )->text() );
 			$aI18NValues[] = $sValueText;

@@ -9,14 +9,14 @@
  * @package    BlueSpice_Extensions
  * @subpackage Statistics
  * @copyright  Copyright (C) 2016 Hallo Welt! GmbH, All rights reserved.
- * @license    http://www.gnu.org/copyleft/gpl.html GNU Public License v2 or later
+ * @license    http://www.gnu.org/copyleft/gpl.html GPL-2.0-or-later
  * @filesource
  */
 
 /**
  * Describes a select filter filter for Statistics for BlueSpice.
  * @package    BlueSpice_Extensions
- * @subpackage Statistics 
+ * @subpackage Statistics
  */
 abstract class BsSelectFilter extends BsStatisticsFilter {
 
@@ -32,7 +32,7 @@ abstract class BsSelectFilter extends BsStatisticsFilter {
 	protected $aDefaultValues;
 	/**
 	 * List of currently selected values
-	 * @var array List of strings 
+	 * @var array List of strings
 	 */
 	protected $aActiveValues;
 	/**
@@ -48,18 +48,18 @@ abstract class BsSelectFilter extends BsStatisticsFilter {
 	public function __construct( $oDiagram ) {
 		parent::__construct( $oDiagram );
 	}
-	
+
 	/**
 	 * Gets list with all available values
-	 * @return array List of strings 
+	 * @return array List of strings
 	 */
 	public function getAvailableValues() {
 		return $this->aAvailableValues;
 	}
-	
+
 	/**
 	 * Gets list with all available values and internationalized labels
-	 * @return array List of key => label pairs 
+	 * @return array List of key => label pairs
 	 */
 	public function getLabelledAvailableValues() {
 		// This function is expensive so let's apply some caching
@@ -67,33 +67,33 @@ abstract class BsSelectFilter extends BsStatisticsFilter {
 		if ( !is_null( $this->aLabelledAvailableValues ) ) {
 			return $this->aLabelledAvailableValues;
 		} else {
-			$this->aLabelledAvailableValues = array();
+			$this->aLabelledAvailableValues = [];
 		}
 		foreach ( $this->aAvailableValues as $sValue ) {
 			$this->aLabelledAvailableValues[$sValue] = $sValue;
 		}
 		return $this->aLabelledAvailableValues;
 	}
-	
+
 	/*
 	 * Returns description of active filter
 	 * @return string
 	 */
 	public function getActiveFilterText() {
 		$this->getActiveValues();
-		$aI18NValues = array();
+		$aI18NValues = [];
 		foreach ( $this->aActiveValues as $sValue ) {
 			$aI18NValues[] = $sValue;
 		}
 		return implode( ", ", $aI18NValues );
 	}
-	
+
 	/**
 	 * Retrieves filter value from HTTP request
 	 */
 	public function getValueFromRequest() {
 		global $wgRequest;
-		$this->aActiveValues = $wgRequest->getArray( $this->getParamKey(), array() );
+		$this->aActiveValues = $wgRequest->getArray( $this->getParamKey(), [] );
 	}
 
 	public function getValueFromTaskData( $oTaskData ) {

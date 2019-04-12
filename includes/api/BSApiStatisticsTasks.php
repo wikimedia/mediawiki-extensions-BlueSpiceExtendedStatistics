@@ -2,7 +2,7 @@
 
 class BSApiStatisticsTasks extends BSApiTasksBase {
 
-	protected $aTasks = array(
+	protected $aTasks = [
 		'getData' => [
 			'params' => [
 				'examples' => [
@@ -41,12 +41,12 @@ class BSApiStatisticsTasks extends BSApiTasksBase {
 				]
 			]
 		]
-	);
+	];
 
 	protected function getRequiredTaskPermissions() {
-		return array(
-			'getData' => array( 'read' )
-		);
+		return [
+			'getData' => [ 'read' ]
+		];
 	}
 
 	public function task_getData( $oTaskData, $aParams ) {
@@ -61,52 +61,51 @@ class BSApiStatisticsTasks extends BSApiTasksBase {
 		$aAvailableDiagrams = ExtendedStatistics::getAvailableDiagrams();
 		$aAllowedDiaKeys = array_keys( $aAvailableDiagrams );
 
-		if( empty( $sDiagram ) ) {
+		if ( empty( $sDiagram ) ) {
 			$oResponse->errors['inputDiagrams'] = wfMessage( 'bs-statistics-err-emptyinput' )->plain();
 		}
-		if( !in_array( $sDiagram, $aAllowedDiaKeys ) ) {
+		if ( !in_array( $sDiagram, $aAllowedDiaKeys ) ) {
 			$oResponse->errors['inputDiagrams'] = wfMessage( 'bs-statistics-err-unknowndia' )->plain();
 		}
 
-		if( !array_key_exists( $sGrain, $this->getConfig()->get( 'StatisticsAvailableGrains' ) ) ) {
+		if ( !array_key_exists( $sGrain, $this->getConfig()->get( 'StatisticsAvailableGrains' ) ) ) {
 			$oResponse->errors['InputDepictionGrain'] = wfMessage( 'bs-statistics-err-unknowngrain' )->plain();
 		}
 
-		if( empty( $sFrom ) ) {
+		if ( empty( $sFrom ) ) {
 			$oResponse->errors['inputFrom'] = wfMessage( 'bs-statistics-err-emptyinput' )->plain();
 		}
-		if( !$oFrom = DateTime::createFromFormat( 'd.m.Y', $sFrom ) ) {
+		if ( !$oFrom = DateTime::createFromFormat( 'd.m.Y', $sFrom ) ) {
 			$oResponse->errors['inputFrom'] = wfMessage( 'bs-statistics-err-invaliddate' )->plain();
 		}
 
-
-		if( empty( $sTo ) ) {
+		if ( empty( $sTo ) ) {
 			$oResponse->errors['inputTo'] = wfMessage( 'bs-statistics-err-emptyinput' )->plain();
 		}
-		if( !$oTo = DateTime::createFromFormat( 'd.m.Y', $sFrom ) ) {
+		if ( !$oTo = DateTime::createFromFormat( 'd.m.Y', $sFrom ) ) {
 			$oResponse->errors['inputTo'] = wfMessage( 'bs-statistics-err-invaliddate' )->plain();
 		}
-		if( $oTo > new DateTime() ) {
+		if ( $oTo > new DateTime() ) {
 			$oResponse->errors['inputTo'] = wfMessage( 'bs-statistics-err-invaliddate' )->plain();
 		}
 
-		if( isset($oFrom) && isset($oTo) && $oFrom > $oTo ) {
+		if ( isset( $oFrom ) && isset( $oTo ) && $oFrom > $oTo ) {
 			$oResponse->errors['inputTo'] = wfMessage( 'bs-statistics-err-invalidtofromrelation' )->plain();
 		}
 
-		if( empty( $sMode ) ) {
+		if ( empty( $sMode ) ) {
 			$oResponse->errors['rgInputDepictionMode'] = wfMessage( 'bs-statistics-err-emptyinput' )->plain();
 		}
-		if( !in_array( $sMode, array('absolute', 'aggregated', 'list') ) ) {
+		if ( !in_array( $sMode, [ 'absolute', 'aggregated', 'list' ] ) ) {
 			$oResponse->errors['rgInputDepictionMode'] = wfMessage( 'bs-statistics-err-unknownmode' )->plain();
 		}
-		if( !isset( $oResponse->errors['inputDiagrams'])
+		if ( !isset( $oResponse->errors['inputDiagrams'] )
 			&& $sMode == 'list'
 			&& !$aAvailableDiagrams[$sDiagram]->isListable() ) {
 			$oResponse->errors['rgInputDepictionMode'] = wfMessage( 'bs-statistics-err-modeunsupported' )->plain();
 		}
 
-		if( !empty( $oResponse->errors ) ) {
+		if ( !empty( $oResponse->errors ) ) {
 			return $oResponse;
 		}
 
@@ -116,15 +115,22 @@ class BSApiStatisticsTasks extends BSApiTasksBase {
 		$oDiagram->setActualGrain( $sGrain );
 		$oDiagram->setModLabel( $sGrain );
 		$oDiagram->setMode( $sMode );
-		//$oDiagram->setMessage( $sMessage );
-		//$oDiagram->setFilters( $aDiagFilter );
+		// $oDiagram->setMessage( $sMessage );
+		// $oDiagram->setFilters( $aDiagFilter );
 
 		switch ( $oDiagram->getActualGrain() ) {
 			// Here, only those grains are listed where label code differs from grain code.
-			case 'W' : $oDiagram->setModLabel( 'W/y' ); break;
-			case 'm' : $oDiagram->setModLabel( 'M y' ); break;
-			case 'd' : $oDiagram->setModLabel( 'd.m' ); break;
-			//default  : $oDiagram->modLabel = false;
+			case 'W':
+				$oDiagram->setModLabel( 'W/y' );
+				break;
+			case 'm':
+				$oDiagram->setModLabel( 'M y' );
+				break;
+			case 'd':
+				$oDiagram->setModLabel( 'd.m' );
+				break;
+			// default:
+				// $oDiagram->modLabel = false;
 		}
 
 		switch ( $oDiagram->getDataSource() ) {
@@ -139,7 +145,7 @@ class BSApiStatisticsTasks extends BSApiTasksBase {
 		}
 
 		$intervals = Interval::getIntervalsFromDiagram( $oDiagram );
-		if( count( $intervals ) > $this->getConfig()->get( 'StatisticsMaxNumberOfIntervals' ) ) {
+		if ( count( $intervals ) > $this->getConfig()->get( 'StatisticsMaxNumberOfIntervals' ) ) {
 			$oResponse->message = wfMessage( 'bs-statistics-interval-too-big' )->plain();
 			return $oResponse;
 		}
@@ -163,22 +169,22 @@ class BSApiStatisticsTasks extends BSApiTasksBase {
 			$aDatas = $oDiagram->getData();
 			$aLabels = $oDiagram->getListLabel();
 
-			$aFields = array();
-			$aColumns = array();
-			foreach( $aLabels as $sLabel ) {
+			$aFields = [];
+			$aColumns = [];
+			foreach ( $aLabels as $sLabel ) {
 				$sField = strtolower( $sLabel );
 				$sField = str_replace( " ", "_", $sField );
 				$sField = str_replace( ".", "", $sField );
-				$aFields[] = array( 'name' => $sField );
-				$aColumns[] = array( 'header' => $sLabel, 'dataIndex' => $sField );
+				$aFields[] = [ 'name' => $sField ];
+				$aColumns[] = [ 'header' => $sLabel, 'dataIndex' => $sField ];
 			}
 
-			$aList = array();
-			$aTypes = array();
-			foreach( $aDatas as $aData ){
-				$aItem = array();
-				for( $i = 0; $i < count( $aData ); $i++ ) {
-					if( $this->isInt( $aData[ $i ] ) ) {
+			$aList = [];
+			$aTypes = [];
+			foreach ( $aDatas as $aData ) {
+				$aItem = [];
+				for ( $i = 0; $i < count( $aData ); $i++ ) {
+					if ( $this->isInt( $aData[ $i ] ) ) {
 						$aTypes[ $aFields[ $i ][ 'name' ] ][] = 'int';
 					} else {
 						$aTypes[ $aFields[ $i ][ 'name' ] ][] = 'string';
@@ -188,14 +194,14 @@ class BSApiStatisticsTasks extends BSApiTasksBase {
 				$aList[ 'items' ][] = $aItem;
 			}
 
-			foreach( $aTypes as $key=>$value ) {
+			foreach ( $aTypes as $key => $value ) {
 				$sColumnType = "string";
-				if( count( array_unique( $value ) ) === 1 ) {
+				if ( count( array_unique( $value ) ) === 1 ) {
 					$sColumnType = $value[0];
 				}
 
-				for( $i = 0; $i < count( $aFields ); $i++ ) {
-					if( $aFields[ $i ][ 'name' ] === $key ) {
+				for ( $i = 0; $i < count( $aFields ); $i++ ) {
+					if ( $aFields[ $i ][ 'name' ] === $key ) {
 						$aFields[ $i ][ 'type' ] = $sColumnType;
 					}
 				}
@@ -212,16 +218,16 @@ class BSApiStatisticsTasks extends BSApiTasksBase {
 		$aData = $oDiagram->getData();
 		$i = 0;
 		foreach ( $intervals as $interval ) {
-			$oResponse->payload['data'][] = array(
+			$oResponse->payload['data'][] = [
 				'name' => $interval->getLabel(),
 				'hits' => (int)$aData[$i],
-			);
-			$i ++;
+			];
+			$i++;
 		}
 
 		$aAvalableGrains = $this->getConfig()->get( 'StatisticsAvailableGrains' );
 		$sLabelMsgKey = 'bs-statistics-label-time';
-		if( isset($aAvalableGrains[$oDiagram->getActualGrain()]) ) {
+		if ( isset( $aAvalableGrains[$oDiagram->getActualGrain()] ) ) {
 			$sLabelMsgKey = $aAvalableGrains[$oDiagram->getActualGrain()];
 		}
 
@@ -229,11 +235,10 @@ class BSApiStatisticsTasks extends BSApiTasksBase {
 
 		$oResponse->success = true;
 		return $oResponse;
-
 	}
 
 	protected function isInt( $sValue ) {
-		if( is_numeric( $sValue ) && gettype( $sValue + 0) === 'integer') {
+		if ( is_numeric( $sValue ) && gettype( $sValue + 0 ) === 'integer' ) {
 			return true;
 		}
 		return false;

@@ -11,20 +11,20 @@ use BlueSpice\Tests\BSApiTasksTestBase;
  */
 class BSApiStatisticsTasksTest extends BSApiTasksTestBase {
 
-	protected function getModuleName () {
+	protected function getModuleName() {
 		return 'bs-statistics-tasks';
 	}
 
 	public function testGetData() {
 		$oData = $this->executeTask(
 			'getData',
-			array(
+			[
 				'diagram' => 'BsDiagramNumberOfUsers',
 				'grain' => 'Y',
 				'from' => date( '01.01.Y' ),
 				'mode' => 'list',
 				'to' => date( '31.12.Y' )
-			)
+			]
 		);
 
 		$this->assertTrue( $oData->success, "API reported failure" );

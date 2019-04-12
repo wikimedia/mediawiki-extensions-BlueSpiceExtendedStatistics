@@ -9,7 +9,7 @@
  * @package    BlueSpice_Extensions
  * @subpackage Statistics
  * @copyright  Copyright (C) 2016 Hallo Welt! GmbH, All rights reserved.
- * @license    http://www.gnu.org/copyleft/gpl.html GNU Public License v2 or later
+ * @license    http://www.gnu.org/copyleft/gpl.html GPL-2.0-or-later
  * @filesource
  */
 
@@ -26,10 +26,10 @@ class BsDiagramNumberOfArticles extends BsDiagram {
 	public function __construct() {
 		parent::__construct();
 
-		$this->sTitle = wfMessage( 'bs-statistics-diag-number-of-pages-mw')->text();
-		$this->sDescription = wfMessage( 'bs-statistics-diag-number-of-pages-mw-desc')->text();
-		$this->sTitlex = wfMessage( 'bs-statistics-label-time')->text();
-		$this->sTitley = wfMessage( 'bs-statistics-label-count')->text();
+		$this->sTitle = wfMessage( 'bs-statistics-diag-number-of-pages-mw' )->text();
+		$this->sDescription = wfMessage( 'bs-statistics-diag-number-of-pages-mw-desc' )->text();
+		$this->sTitlex = wfMessage( 'bs-statistics-label-time' )->text();
+		$this->sTitley = wfMessage( 'bs-statistics-label-count' )->text();
 		$this->sActualGrain = "m";
 		$this->sModLabel = "M y";
 		$this->iDataSource = BsDiagram::DATASOURCE_DATABASE;
@@ -75,10 +75,10 @@ class BsDiagramNumberOfArticles extends BsDiagram {
 									)
 								)
 								AND @BsFilterCategory";
-		$this->sListLabel = array( wfMessage( 'bs-statistics-label-page')->text(), wfMessage( 'bs-statistics-label-creator')->text());
+		$this->sListLabel = [ wfMessage( 'bs-statistics-label-page' )->text(), wfMessage( 'bs-statistics-label-creator' )->text() ];
 		$this->sMode = BsDiagram::MODE_AGGREGATED;
 
-		$this->addFilter( new BsFilterNamespace( $this, array( 0 ) ) );
+		$this->addFilter( new BsFilterNamespace( $this, [ 0 ] ) );
 		$this->addFilter( new BsFilterCategory( $this ) );
 	}
 }

@@ -9,7 +9,7 @@
  * @package    BlueSpice_Extensions
  * @subpackage Statistics
  * @copyright  Copyright (C) 2016 Hallo Welt! GmbH, All rights reserved.
- * @license    http://www.gnu.org/copyleft/gpl.html GNU Public License v2 or later
+ * @license    http://www.gnu.org/copyleft/gpl.html GPL-2.0-or-later
  * @filesource
  */
 
@@ -26,10 +26,10 @@ class BsDiagramEditsPerUser extends BsDiagram {
 	public function __construct() {
 		parent::__construct();
 
-		$this->sTitle = wfMessage( 'bs-statistics-diag-edits-per-user')->text();
-		$this->sDescription = wfMessage( 'bs-statistics-diag-edits-per-user-desc')->text();
-		$this->sTitlex = wfMessage( 'bs-statistics-label-time')->text();
-		$this->sTitley = wfMessage( 'bs-statistics-label-count')->text();
+		$this->sTitle = wfMessage( 'bs-statistics-diag-edits-per-user' )->text();
+		$this->sDescription = wfMessage( 'bs-statistics-diag-edits-per-user-desc' )->text();
+		$this->sTitlex = wfMessage( 'bs-statistics-label-time' )->text();
+		$this->sTitley = wfMessage( 'bs-statistics-label-count' )->text();
 		$this->sActualGrain = "m";
 		$this->sModLabel = "M y";
 		$this->sFormatX = "%01.1f";
@@ -37,7 +37,7 @@ class BsDiagramEditsPerUser extends BsDiagram {
 		$this->bListable = false;
 		$this->sSqlWhatForDiagram = "a/b";
 		// Evtl: user->edits oder artikel->edits?
-		//$this->sSqlWhatForList = "DISTINCT page_title, rev_user_text";
+		// $this->sSqlWhatForList = "DISTINCT page_title, rev_user_text";
 		// Important: Keep DISTINCT rev_id, otherwise a revision is counted once per category link
 		// TODO MRG (30.04.12 01:00): Wieso werden die categorylinks überhaupt gezählt?
 		$this->sSqlFromWhere = "FROM (
@@ -64,10 +64,10 @@ class BsDiagramEditsPerUser extends BsDiagram {
 											)
 											AND NOT user_name IN (@BsFilterUsers)
 									) as y";
-		//$this->sListLabel = array(wfMessage( 'label-article')->text(), wfMessage( 'label-creator')->text());
+		// $this->sListLabel = array(wfMessage( 'label-article')->text(), wfMessage( 'label-creator')->text());
 		$this->sMode = BsDiagram::MODE_ABSOLUTE;
 
-		$this->addFilter( new BsFilterNamespace( $this, array( 0 ) ) );
+		$this->addFilter( new BsFilterNamespace( $this, [ 0 ] ) );
 		$this->addFilter( new BsFilterCategory( $this ) );
 		$this->addFilter( new BsFilterUsers( $this ) );
 	}

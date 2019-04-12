@@ -12,7 +12,7 @@ use BlueSpice\Tests\BSApiExtJSStoreTestBase;
 class BSApiStatisticsSearchOptionsStoreTest extends BSApiExtJSStoreTestBase {
 	protected $iFixtureTotal = 4;
 
-	protected function getStoreSchema () {
+	protected function getStoreSchema() {
 		return [
 			'key' => [
 				'type' => 'string'
@@ -26,7 +26,7 @@ class BSApiStatisticsSearchOptionsStoreTest extends BSApiExtJSStoreTestBase {
 		];
 	}
 
-	protected function createStoreFixtureData () {
+	protected function createStoreFixtureData() {
 		return 4;
 	}
 
@@ -34,13 +34,13 @@ class BSApiStatisticsSearchOptionsStoreTest extends BSApiExtJSStoreTestBase {
 		return 'bs-statistics-search-options-store';
 	}
 
-	public function provideSingleFilterData () {
+	public function provideSingleFilterData() {
 		return [
 			'Filter by key' => [ 'string', 'eq', 'key', 'text', 1 ]
 		];
 	}
 
-	public function provideMultipleFilterData () {
+	public function provideMultipleFilterData() {
 		return [
 			'Filter by leaf and key' => [
 				[
@@ -62,4 +62,3 @@ class BSApiStatisticsSearchOptionsStoreTest extends BSApiExtJSStoreTestBase {
 		];
 	}
 }
-
