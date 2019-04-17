@@ -66,6 +66,7 @@
 	"apihelp-bs-statistics-available-diagrams-store-summary": "Bietet einen Speicher mit verfügbaren Diagrammen",
 	"apihelp-bs-statistics-search-options-store-description": "Bietet einen Speicher mit verfügbaren Suchoptionen",
 	"apihelp-bs-statistics-search-options-store-summary": "Stellt einen Speicher mit verfügbaren Suchoptionen zur Verfügung",
+	"action-statistic-viewspecialpage": "auf erweiterte Statistiken zuzugreifen",
 	"right-statistic-viewspecialpage": "Zugriff auf erweiterte Statistiken",
 	"bs-statistics-button-label-export": "Export",
 	"bs-statistics-panel-title-result": "Ergebnis"
