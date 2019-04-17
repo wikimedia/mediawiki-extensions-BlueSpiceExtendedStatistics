@@ -26,7 +26,7 @@
  * @package    BlueSpice_Extensions
  * @subpackage Statistics
  * @copyright  Copyright (C) 2016 Hallo Welt! GmbH, All rights reserved.
- * @license    http://www.gnu.org/copyleft/gpl.html GNU Public License v3
+ * @license    http://www.gnu.org/copyleft/gpl.html GPL-3.0-only
  * @filesource
  */
 
@@ -41,7 +41,7 @@ class ExtendedStatistics extends BsExtensionMW {
 	 * Collects all available diagrams
 	 * @var array List of strings
 	 */
-	protected static $aAvailableDiagramClasses = array();
+	protected static $aAvailableDiagramClasses = [];
 	/**
 	 * Contains all available diagrams
 	 * @var array List of diagram objects
@@ -51,13 +51,12 @@ class ExtendedStatistics extends BsExtensionMW {
 	 * Contains all available filters
 	 * @var array List of filter objects.
 	 */
-	protected static $aAvailableFilters = array();
+	protected static $aAvailableFilters = [];
 
 	/**
 	 * Initialization of Statistics extension
 	 */
 	protected function initExt() {
-
 		$this->setHook( 'ParserFirstCallInit' );
 		$this->setHook( 'BSDashboardsAdminDashboardPortalConfig' );
 		$this->setHook( 'BSDashboardsAdminDashboardPortalPortlets' );
@@ -84,9 +83,9 @@ class ExtendedStatistics extends BsExtensionMW {
 	 */
 	public static function addAvailableDiagramClass( $sDiagramClass ) {
 		if ( strpos( $sDiagramClass, 'Bs' ) !== 0 ) {
-			$sDiagramClassName =  'Bs'.$sDiagramClass;
+			$sDiagramClassName = 'Bs' . $sDiagramClass;
 		} else {
-			$sDiagramClassName =  $sDiagramClass;
+			$sDiagramClassName = $sDiagramClass;
 		}
 
 		self::$aAvailableDiagramClasses[$sDiagramClassName] = $sDiagramClassName;
@@ -109,7 +108,7 @@ class ExtendedStatistics extends BsExtensionMW {
 		if ( !is_null( self::$aAvailableDiagrams ) ) {
 			return self::$aAvailableDiagrams;
 		}
-		self::$aAvailableDiagrams = array();
+		self::$aAvailableDiagrams = [];
 		foreach ( self::$aAvailableDiagramClasses as $sDiagramClass ) {
 			self::$aAvailableDiagrams[$sDiagramClass] = new $sDiagramClass();
 		}
@@ -132,9 +131,9 @@ class ExtendedStatistics extends BsExtensionMW {
 	 */
 	public static function addAvailableFilter( $sFilterClass ) {
 		if ( strpos( $sFilterClass, 'Bs' ) !== 0 ) {
-			$sFilterClassName =  'Bs'.$sFilterClass;
+			$sFilterClassName = 'Bs' . $sFilterClass;
 		} else {
-			$sFilterClassName =  $sFilterClass;
+			$sFilterClassName = $sFilterClass;
 		}
 	}
 
@@ -161,12 +160,12 @@ class ExtendedStatistics extends BsExtensionMW {
 
 	/**
 	 * Registers a tag "bs:infobox" with the parser. for legacy reasons witn HalloWiki, also "infobox" is supported. Called by ParserFirstCallInit hook
-	 * @param Parser $parser MediaWiki parser object
+	 * @param Parser &$parser MediaWiki parser object
 	 * @return bool allow other hooked methods to be executed. always true
 	 */
 	public function onParserFirstCallInit( &$parser ) {
 		// for legacy reasons
-		$parser->setHook( 'bs:statistics:progress', array( $this, 'onTagProgress' ) );
+		$parser->setHook( 'bs:statistics:progress', [ $this, 'onTagProgress' ] );
 		return true;
 	}
 
@@ -180,10 +179,10 @@ class ExtendedStatistics extends BsExtensionMW {
 	public function onTagProgress( $input, $args, $parser ) {
 		$parser->getOutput()->setProperty( 'bs-tag-statistics-progress', 1 );
 
-		$iBaseCount = BsCore::sanitizeArrayEntry( $args, 'basecount'     , 100  , BsPARAMTYPE::INT );
-		$sBaseItem  = BsCore::sanitizeArrayEntry( $args, 'baseitem'      , '' , BsPARAMTYPE::STRING );
-		$sFraction  = BsCore::sanitizeArrayEntry( $args, 'progressitem'  , 'OK' , BsPARAMTYPE::STRING );
-		$iWidth     = BsCore::sanitizeArrayEntry( $args, 'width'         , 100  , BsPARAMTYPE::INT );
+		$iBaseCount = BsCore::sanitizeArrayEntry( $args, 'basecount', 100, BsPARAMTYPE::INT );
+		$sBaseItem  = BsCore::sanitizeArrayEntry( $args, 'baseitem', '', BsPARAMTYPE::STRING );
+		$sFraction  = BsCore::sanitizeArrayEntry( $args, 'progressitem', 'OK', BsPARAMTYPE::STRING );
+		$iWidth     = BsCore::sanitizeArrayEntry( $args, 'width', 100, BsPARAMTYPE::INT );
 
 		// no Article when in cli mode
 		if ( !is_object( $this->getTitle() ) ) {
@@ -203,13 +202,13 @@ class ExtendedStatistics extends BsExtensionMW {
 
 		$fPercent = $iFraction / $iBase;
 
-		$iWidthGreen = floor($iWidth * $fPercent);
-		$iWidthRemain = $iWidth-$iWidthGreen;
+		$iWidthGreen = floor( $iWidth * $fPercent );
+		$iWidthRemain = $iWidth - $iWidthGreen;
 
 		$sPercent = sprintf( "%0.1f", $fPercent * 100 );
 
-		$sOut = '<div style="background-color:green;border:2px solid #DDDDDD;width:'.$iWidthGreen.'px;height:25px;float:left;color:#DDDDDD;text-align:center;border-right:0px;text-weight:bold;vertical-align:middle;">'.$sPercent.'%</div>';
-		$sOut .= '<div style="border:2px solid #DDDDDD;border-left:0px;width:'.$iWidthRemain.'px;height:25px;float:left;"></div>';
+		$sOut = '<div style="background-color:green;border:2px solid #DDDDDD;width:' . $iWidthGreen . 'px;height:25px;float:left;color:#DDDDDD;text-align:center;border-right:0px;text-weight:bold;vertical-align:middle;">' . $sPercent . '%</div>';
+		$sOut .= '<div style="border:2px solid #DDDDDD;border-left:0px;width:' . $iWidthRemain . 'px;height:25px;float:left;"></div>';
 
 		return $sOut;
 	}
@@ -219,8 +218,8 @@ class ExtendedStatistics extends BsExtensionMW {
 	 *
 	 * @param object $oCaller caller instance
 	 * @param array &$aPortalConfig reference to array portlet configs
-	 * @param boolean $bIsDefault default
-	 * @return boolean always true to keep hook alive
+	 * @param bool $bIsDefault default
+	 * @return bool always true to keep hook alive
 	 */
 	public function onBSDashboardsAdminDashboardPortalConfig( $oCaller, &$aPortalConfig, $bIsDefault ) {
 		$this->getPortalConfig( $aPortalConfig );
@@ -232,7 +231,7 @@ class ExtendedStatistics extends BsExtensionMW {
 	 * Hook Handler for BSDashboardsAdminDashboardPortalPortlets
 	 *
 	 * @param array &$aPortlets reference to array portlets
-	 * @return boolean always true to keep hook alive
+	 * @return bool always true to keep hook alive
 	 */
 	public function onBSDashboardsAdminDashboardPortalPortlets( &$aPortlets ) {
 		$this->getPortalPortlets( $aPortlets );
@@ -240,13 +239,13 @@ class ExtendedStatistics extends BsExtensionMW {
 		return true;
 	}
 
-		/**
+	/**
 	 * Hook Handler for BSDashboardsAdminDashboardPortalConfig
 	 *
 	 * @param object $oCaller caller instance
 	 * @param array &$aPortalConfig reference to array portlet configs
-	 * @param boolean $bIsDefault default
-	 * @return boolean always true to keep hook alive
+	 * @param bool $bIsDefault default
+	 * @return bool always true to keep hook alive
 	 */
 	public function onBSDashboardsUserDashboardPortalConfig( $oCaller, &$aPortalConfig, $bIsDefault ) {
 		$this->getPortalConfig( $aPortalConfig );
@@ -258,7 +257,7 @@ class ExtendedStatistics extends BsExtensionMW {
 	 * Hook Handler for BSDashboardsAdminDashboardPortalPortlets
 	 *
 	 * @param array &$aPortlets reference to array portlets
-	 * @return boolean always true to keep hook alive
+	 * @return bool always true to keep hook alive
 	 */
 	public function onBSDashboardsUserDashboardPortalPortlets( &$aPortlets ) {
 		$this->getPortalPortlets( $aPortlets );
@@ -267,91 +266,91 @@ class ExtendedStatistics extends BsExtensionMW {
 	}
 
 	public function getPortalConfig( &$aPortalConfig ) {
-		$aPortalConfig[1][] = array(
+		$aPortalConfig[1][] = [
 			'type'  => 'BS.Statistics.StatisticsPortletNumberOfUsers',
-			'config' => array(
+			'config' => [
 				'title' => wfMessage( 'bs-statistics-portlet-numberofusers' )->plain(),
 				'inputPeriod' => 'week',
-			)
-		);
-		$aPortalConfig[1][] = array(
+			]
+		];
+		$aPortalConfig[1][] = [
 			'type'  => 'BS.Statistics.StatisticsPortletNumberOfEdits',
-			'config' => array(
+			'config' => [
 				'title' => wfMessage( 'bs-statistics-portlet-numberofedits' )->plain(),
 				'inputPeriod' => 'week',
-			)
-		);
-		$aPortalConfig[2][] = array(
+			]
+		];
+		$aPortalConfig[2][] = [
 			'type'  => 'BS.Statistics.StatisticsPortletNumberOfArticles',
-			'config' => array(
+			'config' => [
 				'title' => wfMessage( 'bs-statistics-portlet-numberofarticles' )->plain(),
 				'inputPeriod' => 'week',
-			)
-		);
-		$aPortalConfig[2][] = array(
+			]
+		];
+		$aPortalConfig[2][] = [
 			'type'  => 'BS.Statistics.StatisticsPortletNumberOfPages',
-			'config' => array(
+			'config' => [
 				'title' => wfMessage( 'bs-statistics-portlet-numberofpages' )->plain(),
 				'inputPeriod' => 'week',
-			)
-		);
+			]
+		];
 
 		return true;
 	}
 
 	public function getPortalPortlets( &$aPortlets ) {
-		$aPortlets[] = array(
+		$aPortlets[] = [
 			'type'  => 'BS.Statistics.StatisticsPortletNumberOfUsers',
-			'config' => array(
+			'config' => [
 				'title' => wfMessage( 'bs-statistics-portlet-numberofusers' )->plain(),
 				'inputPeriod' => 'week',
-			),
+			],
 			'title' => wfMessage( 'bs-statistics-portlet-numberofusers' )->plain(),
 			'description' => wfMessage( 'bs-statistics-portlet-numberofusersdesc' )->plain()
-		);
-		$aPortlets[] = array(
+		];
+		$aPortlets[] = [
 			'type'  => 'BS.Statistics.StatisticsPortletNumberOfEdits',
-			'config' => array(
+			'config' => [
 				'title' => wfMessage( 'bs-statistics-portlet-numberofedits' )->plain(),
 				'inputPeriod' => 'week',
-			),
+			],
 			'title' => wfMessage( 'bs-statistics-portlet-numberofedits' )->plain(),
 			'description' => wfMessage( 'bs-statistics-portlet-numberofeditsdesc' )->plain()
-		);
-		$aPortlets[] = array(
+		];
+		$aPortlets[] = [
 			'type'  => 'BS.Statistics.StatisticsPortletNumberOfArticles',
-			'config' => array(
+			'config' => [
 				'title' => wfMessage( 'bs-statistics-portlet-numberofarticles' )->plain(),
 				'inputPeriod' => 'week',
-			),
+			],
 			'title' => wfMessage( 'bs-statistics-portlet-numberofarticles' )->plain(),
 			'description' => wfMessage( 'bs-statistics-portlet-numberofarticlesdesc' )->plain()
-		);
-		$aPortlets[] = array(
+		];
+		$aPortlets[] = [
 			'type'  => 'BS.Statistics.StatisticsPortletNumberOfPages',
-			'config' => array(
+			'config' => [
 				'title' => wfMessage( 'bs-statistics-portlet-numberofpages' )->plain(),
 				'inputPeriod' => 'week',
-			),
+			],
 			'title' => wfMessage( 'bs-statistics-portlet-numberofpages' )->plain(),
 			'description' => wfMessage( 'bs-statistics-portlet-numberofpagesdesc' )->plain()
-		);
+		];
 
 		return true;
 	}
 
 	/**
 	 * Register tag with UsageTracker extension
-	 * @param array $aCollectorsConfig
+	 * @param array &$aCollectorsConfig
 	 * @return Always true to keep hook running
 	 */
 	public function onBSUsageTrackerRegisterCollectors( &$aCollectorsConfig ) {
-		$aCollectorsConfig['bs:statistics:progress'] = array(
+		$aCollectorsConfig['bs:statistics:progress'] = [
 			'class' => 'Property',
-			'config' => array(
+			'config' => [
 				'identifier' => 'bs-tag-statistics-progress'
-			)
-		);
+			]
+		];
 		return true;
 	}
 
