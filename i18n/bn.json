@@ -3,11 +3,15 @@
 		"authors": [
 			"Aftabuzzaman",
 			"আজিজ",
-			"আফতাবুজ্জামান"
+			"আফতাবুজ্জামান",
+			"Shahadat1971"
 		]
 	},
 	"bs-statistics-week": "পঞ্জিকার সপ্তাহ",
 	"bs-statistics-diag-number-of-users": "ব্যবহারকারীর সংখ্যা",
+	"bs-statistics-label-name": "নাম",
+	"bs-statistics-label-registration": "নিবন্ধন",
+	"bs-statistics-diag-number-of-pages": "তৈরিকৃত পাতার সংখ্যা",
 	"bs-statistics-portlet-numberofarticles": "নিবন্ধের সংখ্যা",
 	"bs-statistics-portlet-numberofarticlesdesc": "নিবন্ধ সংখ্যার পরিসংখ্যান।",
 	"apihelp-bs-statistics-tasks-description": "পরিসংখ্যানের জন্য সাধারণ কৃত্যগুলো প্রদান করুন",
