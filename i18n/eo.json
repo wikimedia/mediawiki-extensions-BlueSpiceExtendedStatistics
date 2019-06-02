@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Mirin"
+		]
+	},
+	"bs-statistics-year": "Jaro",
+	"bs-statistics-month": "Monato",
+	"bs-statistics-day": "Tago",
+	"bs-statistics-list": "Listo",
+	"bs-statistics-filters": "Filtriloj",
+	"bs-statistics-label-name": "Nomo",
+	"bs-statistics-filter-category": "Kategorio"
+}
