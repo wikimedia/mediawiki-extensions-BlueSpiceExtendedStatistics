@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Guycn2",
-			"Erelon"
+			"Erelon",
+			"Steeve815"
 		]
 	},
 	"bs-statistics-desc": "מודול סטטיסטיקה של BlueSpice",
@@ -50,11 +51,11 @@
 	"bs-statistics-portlet-numberofusers": "מספר המשתמשים",
 	"bs-statistics-portlet-numberofedits": "מספר העריכות",
 	"bs-statistics-portlet-numberofpages": "מספר הדפים",
-	"bs-statistics-portlet-numberofarticles": "מספר הערכים",
+	"bs-statistics-portlet-numberofarticles": "מספר דפי התוכן",
 	"bs-statistics-portlet-numberofusersdesc": "סטטיסטיקה עבור מספר המשתמשים.",
 	"bs-statistics-portlet-numberofeditsdesc": "סטטיסטיקה עבור מספר העריכות.",
 	"bs-statistics-portlet-numberofpagesdesc": "סטטיסטיקה עבור מספר הדפים.",
-	"bs-statistics-portlet-numberofarticlesdesc": "סטטיסטיקה של מספר הערכים.",
+	"bs-statistics-portlet-numberofarticlesdesc": "סטטיסטיקה של מספר דפי התוכן.",
 	"bs-statistics-portletconfig-periodday": "אתמול",
 	"apihelp-bs-statistics-tasks-description": "אספקת משימות נפוצות עבור סטטיסטיקות",
 	"apihelp-bs-statistics-tasks-summary": "אספקת משימות נפוצות עבור סטטיסטיקות",
