@@ -52,8 +52,14 @@
 	"bs-statistics-portlet-numberofusers": "Број на корисници",
 	"bs-statistics-portlet-numberofedits": "Број на уредувања",
 	"bs-statistics-portlet-numberofpages": "Број на страници",
+	"bs-statistics-portlet-numberofarticles": "Број на содржински страници",
 	"bs-statistics-portlet-numberofusersdesc": "Статистика за бројот на корисници.",
 	"bs-statistics-portlet-numberofeditsdesc": "Статистика за бројот на уредувања.",
 	"bs-statistics-portlet-numberofpagesdesc": "Статистика за бројот на страници.",
-	"bs-statistics-portletconfig-periodday": "Вчера"
+	"bs-statistics-portlet-numberofarticlesdesc": "Статистика за бројот на содржински страници.",
+	"bs-statistics-portletconfig-periodday": "Вчера",
+	"action-statistic-viewspecialpage": "пристап до проширена статистика",
+	"right-statistic-viewspecialpage": "Пристап до проширена статистика",
+	"bs-statistics-button-label-export": "Извези",
+	"bs-statistics-panel-title-result": "Исход"
 }
