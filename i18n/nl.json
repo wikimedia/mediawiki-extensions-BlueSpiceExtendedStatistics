@@ -15,7 +15,7 @@
 	"bs-statistics-to": "Naar",
 	"bs-statistics-grain": "Interval",
 	"bs-statistics-mode": "Modus",
-	"bs-statistics-aggregated": "Aggregaat",
+	"bs-statistics-aggregated": "geaggregeerd",
 	"bs-statistics-absolute": "absoluut",
 	"bs-statistics-year": "Jaar",
 	"bs-statistics-month": "Maand",
@@ -57,7 +57,7 @@
 	"bs-statistics-portlet-numberofarticles": "Aantal inhoudspagina's",
 	"bs-statistics-portlet-numberofusersdesc": "Statistiek van het aantal gebruikers.",
 	"bs-statistics-portlet-numberofeditsdesc": "Statistiek van het aantal bewerkingen.",
-	"bs-statistics-portlet-numberofpagesdesc": "Statistiek van het aantal pagina ' s.",
+	"bs-statistics-portlet-numberofpagesdesc": "Statistiek van het aantal pagina's.",
 	"bs-statistics-portletconfig-periodday": "Gisteren",
 	"bs-statistics-button-label-export": "Exporteren",
 	"bs-statistics-panel-title-result": "Resultaat"
