@@ -286,6 +286,7 @@ abstract class BsDiagram {
 	public function getMode() {
 		return $this->sMode;
 	}
+
 	/**
 	 * Get mode of data presentation
 	 * @return string BsDiagram::MODE_

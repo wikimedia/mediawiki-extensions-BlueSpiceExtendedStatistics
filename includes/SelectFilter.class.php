@@ -101,6 +101,7 @@ abstract class BsSelectFilter extends BsStatisticsFilter {
 			$this->aActiveValues = $oTaskData->{$this->getParamKey()};
 		}
 	}
+
 	/**
 	 * Gets a list of selected filter values
 	 * @return array List of strings
