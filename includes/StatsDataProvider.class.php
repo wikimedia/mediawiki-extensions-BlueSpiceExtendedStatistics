@@ -24,6 +24,7 @@ abstract class StatsDataProvider {
 	 * @var string Currently regular expression or SQL statement.
 	 */
 	public $match = false;
+
 	/**
 	 * Counts occurrences in a certain interval
 	 * @param Interval $oInterval

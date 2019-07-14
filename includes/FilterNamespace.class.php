@@ -65,6 +65,7 @@ class BsFilterNamespace extends BsMultiSelectFilter {
 	}
 
 	// TODO MRG (22.12.10 00:56): Diese funktion überschreibt parent. das sollte man besser lösen
+
 	/**
 	 * Returns an internationalized list of available values
 	 * @return array List of key value pairs
