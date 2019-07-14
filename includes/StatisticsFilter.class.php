@@ -69,20 +69,24 @@ abstract class BsStatisticsFilter {
 	 * @return string SQL statement
 	 */
 	abstract public function getSql();
+
 	/*
 	 * Returns description of active filter
 	 * @return string
 	 */
 	abstract public function getActiveFilterText();
+
 	/**
 	 * Retrieves active filter value from HTTP request
 	 */
 	abstract public function getValueFromRequest();
+
 	/**
 	 * Retrieves active filter value from API task data
 	 * @param stdClass $oTaskData
 	 */
 	abstract public function getValueFromTaskData( $oTaskData );
+
 	/**
 	 * Checks if a given value is active
 	 * @param string $sValue The value to check

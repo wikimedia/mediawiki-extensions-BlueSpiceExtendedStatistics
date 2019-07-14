@@ -6,17 +6,17 @@
 	"require": {
 		"composer/installers": "~1.0"
 	},
-	"autoload" : {
+	"autoload": {
 		"psr-4": {
-			"BlueSpice\\ExtendedStatistics\\Tests\\" : "tests/phpunit",
-			"BlueSpice\\ExtendedStatistics\\" : "src"
+			"BlueSpice\\ExtendedStatistics\\Tests\\": "tests/phpunit",
+			"BlueSpice\\ExtendedStatistics\\": "src"
 		}
 	},
 	"require-dev": {
 		"jakub-onderka/php-parallel-lint": "1.0.0",
 		"jakub-onderka/php-console-highlighter": "0.3.2",
 		"mediawiki/minus-x": "0.3.1",
-		"mediawiki/mediawiki-codesniffer": "25.0.0"
+		"mediawiki/mediawiki-codesniffer": "26.0.0"
 	},
 	"scripts": {
 		"test": [
