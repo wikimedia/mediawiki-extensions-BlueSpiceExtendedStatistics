@@ -9,11 +9,13 @@
 			"FarsiNevis"
 		]
 	},
+	"bs-statistics-desc": "پودمان آمار برای «چاشنی آبی»",
 	"prefs-statistics": "آمارهای جزئی‌تر",
 	"extendedstatistics": "آمارهای جزئی‌تر",
 	"bs-statistics-diagram": "پرسمان",
 	"bs-statistics-from": "از",
 	"bs-statistics-to": "به",
+	"bs-statistics-grain": "بازه",
 	"bs-statistics-mode": "حالت",
 	"bs-statistics-absolute": "مطلق",
 	"bs-statistics-year": "سال",
@@ -31,6 +33,8 @@
 	"bs-statistics-label-page": "صفحه",
 	"bs-statistics-label-creator": "سازنده",
 	"bs-statistics-diag-number-of-edits": "شمار ویرایش‌ها",
+	"bs-statistics-diag-edits-per-user": "تعداد ویرایش‌ها به‌ازای هر کاربر",
+	"bs-statistics-diag-edits-per-user-desc": "شمار متوسط ویرایش‌های هر کاربر در دورهٔ زمانی مورد نظر را نمایش می‌دهد.",
 	"bs-statistics-label-searchterm": "جستجوی عبارت",
 	"bs-statistics-label-count": "شمار",
 	"bs-statistics-label-maxhits": "بیشینهٔ نتایج",
@@ -46,5 +50,6 @@
 	"bs-statistics-portlet-numberofpagesdesc": "آمارهٔ شمار صفحه‌ها",
 	"bs-statistics-portlet-numberofarticlesdesc": "آمارهٔ شمار صفحه‌های محتوایی",
 	"bs-statistics-portletconfig-periodday": "دیروز",
+	"bs-statistics-button-label-export": "برون‌بری",
 	"bs-statistics-panel-title-result": "نتیجه"
 }
