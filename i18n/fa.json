@@ -35,6 +35,8 @@
 	"bs-statistics-diag-number-of-edits": "شمار ویرایش‌ها",
 	"bs-statistics-diag-edits-per-user": "تعداد ویرایش‌ها به‌ازای هر کاربر",
 	"bs-statistics-diag-edits-per-user-desc": "شمار متوسط ویرایش‌های هر کاربر در دورهٔ زمانی مورد نظر را نمایش می‌دهد.",
+	"bs-statistics-diag-search-queries": "پرسمان‌های جستجو",
+	"bs-statistics-diag-search-queries-desc": "شمار پرسمان‌های جستجو در دورهٔ زمانی مورد نظر را نمایش می‌دهد.",
 	"bs-statistics-label-searchterm": "جستجوی عبارت",
 	"bs-statistics-label-count": "شمار",
 	"bs-statistics-label-maxhits": "بیشینهٔ نتایج",
@@ -50,6 +52,8 @@
 	"bs-statistics-portlet-numberofpagesdesc": "آمارهٔ شمار صفحه‌ها",
 	"bs-statistics-portlet-numberofarticlesdesc": "آمارهٔ شمار صفحه‌های محتوایی",
 	"bs-statistics-portletconfig-periodday": "دیروز",
+	"action-statistic-viewspecialpage": "دست‌یابی به آمارهٔ تعمیم‌یافته",
+	"right-statistic-viewspecialpage": "دست‌یابی به آمارهٔ تعمیم‌یافته",
 	"bs-statistics-button-label-export": "برون‌بری",
 	"bs-statistics-panel-title-result": "نتیجه"
 }
