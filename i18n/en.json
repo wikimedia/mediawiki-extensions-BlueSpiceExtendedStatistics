@@ -66,5 +66,16 @@
 	"action-statistic-viewspecialpage": "access to extended statistic",
 	"right-statistic-viewspecialpage": "Access to extended statistic",
 	"bs-statistics-button-label-export": "Export",
-	"bs-statistics-panel-title-result": "Result"
+	"bs-statistics-panel-title-result": "Result",
+	"bs-extendedstatistics-collection-fatalstatus-unknownaction": "Unknown action \"$1\"",
+	"bs-extendedstatistics-collection-fatalstatus-permissiondeniedusercan": "User is not allowed to perform action \"$1\" on \"$2\"",
+	"bs-extendedstatistics-collection-fatalstatus-permissiondenieduserisallowed": "User is not allowed to perform action \"$1\"",
+	"bs-extendedstatistics-collection-fatalstatus-notitle": "\"Title\" object required",
+	"apihelp-bs-extendedstatistics-collection-store-description": "Provides a store for statistics that can be queried, filtered and aggregated",
+	"apihelp-bs-extendedstatistics-collection-store-summary": "Provides a store for statistics that can be queried, filtered and aggregated",
+	"apihelp-bs-extendedstatistics-collection-store-param-aggregate": "JSON string encoded object with arbitrary data for for the aggregation",
+	"snapshotsstatistics": "Snapshot statistics",
+	"extendedstatisticssnapshots": "Snapshots",
+	"bs-extendedstatistics-collection-var-type": "Source type",
+	"bs-extendedstatistics-collection-var-timestampcreated": "Creation date"
 }

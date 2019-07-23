@@ -12,7 +12,8 @@
 	"requires": {
 		"MediaWiki": ">= 1.34.0",
 		"extensions": {
-			"BlueSpiceFoundation": ">= 3.2"
+			"BlueSpiceFoundation": ">= 3.2",
+			"BlueSpiceExtendedSearch": ">= 3.2"
 		}
 	},
 	"attributes": {
@@ -35,9 +36,26 @@
 						"maintenanceadmin"
 					]
 				}
+			},
+			"EntityRegistry": {
+				"snapshot": "\\BlueSpice\\ExtendedStatistics\\EntityConfig\\Snapshot"
+			},
+			"RunJobsTriggerHandlerRegistry": {
+				"bs-extendedstatistics-snapshot-daily": "\\BlueSpice\\ExtendedStatistics\\RunJobsTriggerHandler\\CreateDailySnapshot::factory"
 			}
+		},
+		"BlueSpiceExtendedSearch": {
+			"Sources": {
+				"extended_statistics":  "\\BlueSpice\\ExtendedStatistics\\ExtendedSearch\\Snapshots::create"
+			}
+		},
+		"BlueSpiceExtendedStatistics": {
+			"SnapshotDataCollectorRegistry": {}
 		}
 	},
+	"ServiceWiringFiles": [
+		"includes/ServiceWiring.php"
+	],
 	"GroupPermissions": {
 		"*": {
 			"statistic-viewspecialpage": false
@@ -53,12 +71,18 @@
 		"statistic-viewspecialpage"
 	],
 	"SpecialPages": {
-		"ExtendedStatistics": "SpecialExtendedStatistics"
+		"ExtendedStatistics": "SpecialExtendedStatistics",
+		"SnapshotsStatistics": "\\BlueSpice\\ExtendedStatistics\\Special\\SnapshotStatistics",
+		"ExtendedStatisticsSnapshots": "\\BlueSpice\\ExtendedStatistics\\Special\\Snapshot"
+	},
+	"JobClasses": {
+		"updateCollectionIndex": "\\BlueSpice\\ExtendedStatistics\\ExtendedSearch\\Job\\Snapshot"
 	},
 	"APIModules": {
 		"bs-statistics-search-options-store": "BSApiStatisticsSearchOptionsStore",
 		"bs-statistics-available-diagrams-store": "BSApiStatisticsAvailableDiagramsStore",
-		"bs-statistics-tasks": "BSApiStatisticsTasks"
+		"bs-statistics-tasks": "BSApiStatisticsTasks",
+		"bs-extendedstatistics-collection-store": "\\BlueSpice\\ExtendedStatistics\\Api\\Store\\Collection"
 	},
 	"MessagesDirs": {
 		"BlueSpiceExtendedStatistics": [
@@ -93,12 +117,13 @@
 		"BSApiStatisticsTasks": "includes/api/BSApiStatisticsTasks.php"
 	},
 	"ExtensionMessagesFiles": {
-		"ExtendedStatisticsAlias": "includes/specials/SpecialExtendedStatistics.alias.php"
+		"ExtendedStatisticsAlias": "languages/ExtendedStatistics.alias.php"
 	},
 	"load_composer_autoloader" : true,
 	"Hooks": {
 		"SkinTemplateOutputPageBeforeExec": "\\BlueSpice\\ExtendedStatistics\\Hook\\SkinTemplateOutputPageBeforeExec\\AddExtendedStatistics::callback",
-		"BeforePageDisplay": "\\BlueSpice\\ExtendedStatistics\\Hook\\BeforePageDisplay\\AddResources::callback"
+		"BeforePageDisplay": "\\BlueSpice\\ExtendedStatistics\\Hook\\BeforePageDisplay\\AddResources::callback",
+		"LoadExtensionSchemaUpdates": "\\BlueSpice\\ExtendedStatistics\\Hook\\LoadExtensionSchemaUpdates\\AddSnapshotTable::callback"
 	},
 	"config_prefix": "bsg",
 	"config": {
@@ -173,6 +198,21 @@
 		},
 		"ext.bluespice.statistics.styles": {
 			"styles": "bluespice.statistics.css"
+		},
+		"ext.bluespice.snapshotstatistics": {
+			"scripts": [
+				"bluespice.snapshotStatistics.js"
+			],
+			"dependencies": [
+				"ext.bluespice.extjs",
+				"ext.extjsbase.charts"
+			]
+		},
+		"ext.bluespice.extendedstatistics.collection": {
+			"messages": [
+				"bs-extendedstatistics-collection-var-type",
+				"bs-extendedstatistics-collection-var-timestampcreated"
+			]
 		}
 	},
 	"ResourceFileModulePaths": {
