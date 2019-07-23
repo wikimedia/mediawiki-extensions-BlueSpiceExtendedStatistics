@@ -70,5 +70,16 @@
 	"action-statistic-viewspecialpage": "{{doc-action|statistic-viewspecialpage}}",
 	"right-statistic-viewspecialpage": "{{doc-right|statistic-viewspecialpage}}",
 	"bs-statistics-button-label-export": "Label for menu button that allows export of data into different formats\n{{Identical|Export}}",
-	"bs-statistics-panel-title-result": "Label for panel title that holds the results of a statistics query in form of a table or chart\n{{Identical|Result}}"
+	"bs-statistics-panel-title-result": "Label for panel title that holds the results of a statistics query in form of a table or chart\n{{Identical|Result}}",
+	"bs-extendedstatistics-collection-fatalstatus-unknownaction": "Generic error message, when an unknown action was performed on the entry.\n* $1 - Name of the action that was performed",
+	"bs-extendedstatistics-collection-fatalstatus-permissiondeniedusercan": "Error message, when a user is not allowed to perform an action on the entry, that is linked to specific wikipage.\n* $1 - Label of the action that the user is now allowed to perform\n* $2 - Text with namespace of the wikipage, the user was trying to perform the action on",
+	"bs-extendedstatistics-collection-fatalstatus-permissiondenieduserisallowed": "Error message, when a user is not allowed to perform an action on the entry.\n* $1 - Label of the action that the user is now allowed to perform",
+	"bs-extendedstatistics-collection-fatalstatus-notitle": "System error message, when a \"Title\" object is required for a permission check, but was not provided",
+	"apihelp-bs-extendedstatistics-collection-store-description": "{{doc-apihelp-description|bs-extendedstatistics-collection-store}}",
+	"apihelp-bs-extendedstatistics-collection-store-summary": "{{doc-apihelp-summary|bs-extendedstatistics-collection-store}}",
+	"apihelp-bs-extendedstatistics-collection-store-param-aggregate": "{{doc-apihelp-param|bs-store|aggregate}}",
+	"snapshotsstatistics": "Special page name for [[Special:SnapshotsStatistics]] special page\n{{Identical|Snapshot statistics}}",
+	"extendedstatisticssnapshots": "Special page name for [[Special:ExtendedStatisticsSnapshots]] special page\n{{Identical|Snapshots}}",
+	"bs-extendedstatistics-collection-var-type": "Label for entry field \"type\".\n{{Identical|Source type}}",
+	"bs-extendedstatistics-collection-var-timestampcreated": "Label for entry field \"timestampcreated\".\n{{Identical|Creation date}}"
 }
