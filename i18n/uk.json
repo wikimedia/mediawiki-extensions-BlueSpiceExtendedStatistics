@@ -69,5 +69,6 @@
 	"apihelp-bs-statistics-search-options-store-summary": "Забезпечує сховище з доступними пошуковими опціями",
 	"right-statistic-viewspecialpage": "доступ до розширеної статистики",
 	"bs-statistics-button-label-export": "Експорт",
-	"bs-statistics-panel-title-result": "Результат"
+	"bs-statistics-panel-title-result": "Результат",
+	"action-statistic-viewspecialpage": "доступ до розширеної статистики"
 }

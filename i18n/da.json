@@ -19,5 +19,11 @@
 	"bs-statistics-label-creator": "Skaber",
 	"bs-statistics-diag-number-of-edits": "Antal redigeringer",
 	"bs-statistics-filter-category": "Kategori",
-	"bs-statistics-portlet-numberofarticles": "Antal af indholdsider"
+	"bs-statistics-portlet-numberofarticles": "Antal af indholdsider",
+	"bs-statistics-list": "Liste",
+	"bs-statistics-diag-edits-per-user": "Redigeringer per bruger",
+	"bs-statistics-filter-user": "Ekskluderede brugere",
+	"bs-statistics-pref-excludeusers": "Ekskluder disse brugere:",
+	"bs-statistics-portlet-numberofusers": "Antal brugere",
+	"bs-statistics-portlet-numberofusersdesc": "Statistik over antallet af brugere."
 }

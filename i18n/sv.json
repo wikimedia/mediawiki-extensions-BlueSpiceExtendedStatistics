@@ -3,7 +3,8 @@
 		"authors": [
 			"Lokal Profil",
 			"WikiPhoenix",
-			"Sturban"
+			"Sturban",
+			"Mjälten"
 		]
 	},
 	"bs-statistics-desc": "Statistikmodul för BlueSpice",
@@ -60,5 +61,6 @@
 	"bs-statistics-portletconfig-periodday": "Igår",
 	"right-statistic-viewspecialpage": "Tillgång till utökad statistik",
 	"bs-statistics-button-label-export": "Exportera",
-	"bs-statistics-panel-title-result": "Resultat"
+	"bs-statistics-panel-title-result": "Resultat",
+	"action-statistic-viewspecialpage": "Tillgång till utökad statistik"
 }

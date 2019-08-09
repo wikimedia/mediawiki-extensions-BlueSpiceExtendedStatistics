@@ -4,7 +4,8 @@
 			"Liuxinyu970226",
 			"Phenolla",
 			"A Chinese Wikipedian",
-			"VulpesVulpes825"
+			"VulpesVulpes825",
+			"佛壁灯"
 		]
 	},
 	"bs-statistics-desc": "用于BlueSpice的统计模块",
@@ -68,5 +69,6 @@
 	"apihelp-bs-statistics-search-options-store-summary": "提供可用搜索选项的存储",
 	"right-statistic-viewspecialpage": "访问扩充统计",
 	"bs-statistics-button-label-export": "导出",
-	"bs-statistics-panel-title-result": "结果"
+	"bs-statistics-panel-title-result": "结果",
+	"action-statistic-viewspecialpage": "访问扩充统计"
 }
