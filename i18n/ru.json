@@ -71,5 +71,6 @@
 	"apihelp-bs-statistics-search-options-store-summary": "Предоставляет магазин с доступными опциями поиска",
 	"right-statistic-viewspecialpage": "доступ к расширенной статистике",
 	"bs-statistics-button-label-export": "Экспортировать",
-	"bs-statistics-panel-title-result": "Результат"
+	"bs-statistics-panel-title-result": "Результат",
+	"action-statistic-viewspecialpage": "доступ к расширенной статистике"
 }
