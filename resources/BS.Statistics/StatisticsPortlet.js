@@ -40,7 +40,7 @@ Ext.define('BS.Statistics.StatisticsPortlet', {
 					rootProperty: 'payload.data'
 				},
 				extraParams: {
-					token: mw.user.tokens.get( 'editToken' )
+					token: mw.user.tokens.get( 'csrfToken' )
 				}
 			},
 			autoLoad: true
