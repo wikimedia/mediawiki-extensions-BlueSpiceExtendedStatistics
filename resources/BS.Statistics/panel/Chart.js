@@ -22,7 +22,7 @@ Ext.define( 'BS.Statistics.panel.Chart', {
 				fields: [ 'name', 'hits' ],
 				data: this.bsPayload.data
 			},
-			axes: [{
+			axes: [ {
 				title: mw.message( 'bs-statistics-label-count' ).plain(),
 				type: 'numeric',
 				position: 'left',
@@ -39,8 +39,8 @@ Ext.define( 'BS.Statistics.panel.Chart', {
 						degrees: -45
 					}
 				}
-			}],
-			series: [{
+			} ],
+			series: [ {
 				type: 'line',
 				xField: 'name',
 				yField: 'hits',
@@ -54,7 +54,7 @@ Ext.define( 'BS.Statistics.panel.Chart', {
 				label: {
 					field: 'hits'
 				}
-			}]
+			} ]
 		} );
 
 		this.items = [

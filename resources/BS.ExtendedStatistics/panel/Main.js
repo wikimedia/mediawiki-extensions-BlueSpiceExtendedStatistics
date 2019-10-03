@@ -2,59 +2,54 @@
 Ext.define( 'BS.ExtendedStatistics.panel.Main', {
 	extend: 'Ext.Panel',
 	requires: [
+		'Ext.Array',
 		'Ext.Panel',
-		'Ext.Toolbar',
-		'Ext.picker.Date',
-		'BS.ExtendedStatistics.panel.Chart',
-		'BS.ExtendedStatistics.panel.Series'
+		'Ext.Button',
+		'Ext.data.Store',
+		'BS.ExtendedStatistics.store.CollectionConfigs',
+		'BS.ExtendedStatistics.panel.Filter',
+		'BS.ExtendedStatistics.panel.Chart'
 	],
 	layout: 'border',
-	border: true,
-	height: 800,
+	border: false,
+	height: 950,
 
 	initComponent: function() {
-		this.pnlMain = new BS.ExtendedStatistics.panel.Chart( {
+		this.collectionConfigsStore = new BS.ExtendedStatistics.store.CollectionConfigs();
+		this.collectionConfigsStore.init();
+
+		this.pnlCharts = new BS.ExtendedStatistics.panel.Chart( {
 			title: 'Chart',
 			collapsible: false,
 			region: 'center',
 			margins: '5 0 0 0'
 		});
-		this.pnlSeries = new BS.ExtendedStatistics.panel.Series( {
-			title: 'series',
-			region: 'south'
-		} );
 
-		var date = new Date();
-		date.setDate(date.getDate() - 1);
-		this.filterTimespanEnd = new Ext.picker.Date ( {
-			name: 'end',
-			value: date
-		} );
-		date.setDate(date.getDate() - 365);
-		this.filterTimespanStart = new Ext.picker.Date ( {
-			name: 'start',
-			value: date
-		} );
+		this.applyToolbar = new BS.ExtendedStatistics.toolbar.Apply( {
+			title: 'Apply',
+			collapsible: false,
+			region: 'right',
+			margins: '5 0 0 0',
+			charts: this.pnlCharts
+		});
+
+		this.pnlFilter = new BS.ExtendedStatistics.panel.Filter( {
+			title: 'Filters',
+			collapsible: false,
+			region: 'center',
+			margins: '5 0 0 0',
+			collectionStore: this.collectionConfigsStore,
+			applyButtonToolbar: this.applyToolbar
+		});
+
+		this.dockedItems = [
+			this.pnlFilter
+		];
 
 		this.items = [
-			this.pnlMain,
-			this.pnlSeries
+			this.pnlCharts
 		];
-		this.tbar = new Ext.Toolbar({
-			style: {
-				backgroundColor: '#FFFFFF',
-				backgroundImage: 'none'
-			},
-			items: this.makeTbarItems()
-		});
+
 		this.callParent();
 	},
-
-	makeTbarItems: function() {
-		return [
-			'->',
-			this.filterTimespanStart,
-			this.filterTimespanEnd
-		];
-	}
 } );
