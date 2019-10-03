@@ -1,8 +1,10 @@
+
 Ext.define( 'BS.ExtendedStatistics.panel.Chart', {
 	extend: 'Ext.panel.Panel',
 	header: false,
-	requires: [ 'BS.store.BSApi', 'Ext.chart.axis.Axis' ],
-	bsPayload: {},
+	requires: [ 'Ext.chart.axis.Axis', 'Ext.TabPanel', 'Ext.Date' ],
+	border: true,
+	chartsStore: {},
 
 	initComponent: function() {
 		this.dockedItems = [{
@@ -14,92 +16,30 @@ Ext.define( 'BS.ExtendedStatistics.panel.Chart', {
 			]
 		}];
 
-		this.store = new BS.store.BSApi( {
-			apiAction: 'bs-extendedstatistics-collection-store',
-			proxy: {
-				limit: -1
-			},
-			fields: [
-				'type',
-				'assignedpages',
-				'unassignedpages',
-				'timestampcreated',
-				'timestamptouched',
-				'namespacename',
-				'assignedpagesaggregated',
-				'unassignedpagesaggregated'
-			],
-			autoLoad: true
-		} );
-		this.crtMain = new Ext.chart.CartesianChart( {
-			theme: 'blue',
-			engine: 'Ext.draw.engine.Svg',
-			height: 500,
-			store: this.store,
-			axes: [{
-				title: mw.message( 'bs-statistics-label-count' ).plain(),
-				type: 'numeric',
-				position: 'left',
-				grid: true,
-				minimum: this.getMinValueForYAxis(),
-				maximum: this.getMaxValueForYAxis(),
-			}, {
-				title: 'test',
-				type: 'category',
-				position: 'bottom',
-				grid: true,
-				label: {
-					rotate: {
-						degrees: -45
-					}
-				}
-			}],
-			series: [{
-				type: 'line',
-				xField: 'timestampcreated',
-				yField: 'assignedpages',
-				style: {
-					lineWidth: 2
-				},
-				marker: {
-					radius: 4,
-					lineWidth: 2
-				},
-				label: {
-					field: 'hits'
-				}
-			}]
+		this.chartTabs = new Ext.TabPanel( {
+			items: []
 		} );
 
 		this.items = [
-			this.crtMain
+			this.chartTabs
 		];
 
 		return this.callParent( arguments );
 	},
 
-	getMaxValueForYAxis: function() {
-		return 99;
+	getMaxValueForYAxis: function( yFieldArr ) {
+		var me = this;
 		var maxValue = 0;
-		for( var i = 0; i < this.bsPayload.data.length; i++ ) {
-			if( this.bsPayload.data[i].hits > maxValue ) {
-				maxValue = this.bsPayload.data[i].hits;
+		var data = me.chartsStore.getRange();
+		yFieldArr.forEach( function( y ) {
+			for( var i = 0; i < data.length; i++ ) {
+				if( data[ i ]['data'][ y.name ] > maxValue ) {
+					maxValue = data[ i ]['data'][ y.name ];
+				}
 			}
-		}
+		} );
 
 		return maxValue + 2;
-	},
-
-	getMinValueForYAxis: function() {
-		return 0;
-		var minValue = this.bsPayload.data[1].hits;
-		for( var i = 0; i < this.bsPayload.data.length; i++ ) {
-			if( this.bsPayload.data[i].hits < minValue ) {
-				minValue = this.bsPayload.data[i].hits;
-			}
-		}
-
-		return minValue - 2;
 	},
 
 	makeExportButton: function() {
@@ -131,18 +71,154 @@ Ext.define( 'BS.ExtendedStatistics.panel.Chart', {
 
 	onClickmuExport: function( menu, item, e, eOpts ) {
 		var url = '';
-		if(item.value == 'image/png') {
+		if( item.value == 'image/png' ) {
 			url =  mw.util.getUrl( 'Special:ExtendedStatistics/export-png' );
-		}
-		else {
+		} else {
 			url = mw.util.getUrl( 'Special:ExtendedStatistics/export-svg' );
 		}
 
-		this.crtMain.download( {
+		this.chartTabs.activeTab.download( {
 			url: url,
 			format: item.value,
-			width: this.crtMain.getWidth(),
-			height: this.crtMain.getHeight()
+			width: this.chartTabs.activeTab.getWidth(),
+			height: this.chartTabs.activeTab.getHeight()
 		} );
-	}
+
+	},
+
+	loadCharts: function( apiStore, xFieldObj, yFieldArr ) {
+		this.chartTabs.removeAll();
+		this.chartsStore = apiStore;
+		this.chartTabs.add( this.generateLineChart( apiStore, xFieldObj, yFieldArr ) );
+		this.chartTabs.add( this.generateBarChart( apiStore, xFieldObj, yFieldArr ) );
+	},
+
+	generateLineChart: function( apiStore, xFieldObj, yFieldArr) {
+		var seriesArr = [];
+		yTitles = [];
+		yFieldArr.forEach( function (y) {
+			yTitles.push( y.name );
+			seriesArr.push( {
+				type: 'line',
+				xField: xFieldObj.name,
+				yField: y.name,
+				title: y.label,
+				tooltip: {
+					anchor: 'bottom',
+					trackMouse: true,
+					renderer: function( tooltip, record, item ) {
+						tooltip.setHtml( item.series.getTitle() + ': ' + record.get( item.series.getYField() ) );
+					}
+				},
+				marker: {
+					type: 'circle',
+					animation: {
+						duration: 200,
+						easing: 'backOut'
+					}
+				},
+				highlightCfg: {
+					scaling: 2
+				},
+				style: {
+					fill: '#3e5389',
+					fillOpacity: 0.6,
+					strokeOpacity: 0.6,
+				}
+			} );
+		});
+
+		return new Ext.chart.CartesianChart( {
+			title: mw.message( 'bs-statistics-label-line-chart' ).plain(),
+			theme: 'blue',
+			engine: 'Ext.draw.engine.Svg',
+			height: 400,
+			store: apiStore,
+			legend: {
+				type: 'sprite',
+				docked: 'right'
+			},
+			axes: [{
+				type: 'numeric',
+				position: 'left',
+				fields: yTitles,
+				title: {
+					text: '',
+					fontSize: 15
+				},
+				grid: true,
+				minimum: 0,
+				maximum: this.getMaxValueForYAxis( yFieldArr ),
+
+			}, {
+				type: 'category',
+				position: 'bottom',
+				fields: [ xFieldObj.name ],
+				title: {
+					text: xFieldObj.label,
+					fontSize: 10
+				},
+				grid: true,
+				label: {
+					rotate: {
+						degrees: -45
+					}
+				}
+			}],
+			series: seriesArr
+		} );
+
+	},
+
+	generateBarChart: function( apiStore, xFieldObj, yFieldArr ) {
+		var yTitles = [];
+		yFieldArr.forEach( function ( y ) {
+			yTitles.push( y.name );
+		} );
+
+		var series = {
+			type: 'bar3d',
+			xField: xFieldObj.name,
+			yField: yTitles,
+		};
+
+		return new Ext.chart.CartesianChart( {
+			title: mw.message( 'bs-statistics-label-bar-chart' ).plain(),
+			engine: 'Ext.draw.engine.Svg',
+			height: 400,
+			store: apiStore,
+			innerPadding: '0 10 0 10',
+			legend: {
+				type: 'sprite',
+				docked: 'right'
+			},
+			axes: [{
+				type: 'numeric3d',
+				position: 'left',
+				fields: yTitles,
+				title: {
+					text: 'items',
+					fontSize: 15
+				},
+				grid: {
+					odd: {
+						fillStyle: 'rgba(255, 255, 255, 0.06)'
+					},
+					even: {
+						fillStyle: 'rgba(0, 0, 0, 0.03)'
+					}
+				}
+
+			}, {
+				type: 'category3d',
+				position: 'bottom',
+				fields: xFieldObj.name,
+				title: {
+					text: xFieldObj.label,
+					fontSize: 10
+				},
+			}],
+			series: series
+		} );
+	},
 });

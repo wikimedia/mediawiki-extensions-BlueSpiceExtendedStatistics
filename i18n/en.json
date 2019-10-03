@@ -77,5 +77,9 @@
 	"snapshotsstatistics": "Snapshot statistics",
 	"extendedstatisticssnapshots": "Snapshots",
 	"bs-extendedstatistics-collection-var-type": "Source type",
-	"bs-extendedstatistics-collection-var-timestampcreated": "Creation date"
+	"bs-extendedstatistics-collection-var-timestampcreated": "Creation date",
+	"bs-statistics-button-label-apply": "Apply filters",
+	"bs-statistics-label-bar-chart": "Bar chart",
+	"bs-statistics-label-line-chart": "Line chart",
+	"bs-statistics-datasource-label": "Data source"
 }

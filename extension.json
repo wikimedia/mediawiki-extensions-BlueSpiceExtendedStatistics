@@ -206,6 +206,20 @@
 			"dependencies": [
 				"ext.bluespice.extjs",
 				"ext.extjsbase.charts"
+			],
+			"messages": [
+				"bs-statistics-label-count",
+				"bs-ns",
+				"bs-statistics-button-label-export",
+				"bs-statistics-button-label-apply",
+				"bs-statistics-label-bar-chart",
+				"bs-statistics-label-line-chart",
+				"bs-statistics-year",
+				"bs-statistics-month",
+				"bs-statistics-week",
+				"bs-statistics-day",
+				"bs-statistics-grain",
+				"bs-statistics-datasource-label"
 			]
 		},
 		"ext.bluespice.extendedstatistics.collection": {

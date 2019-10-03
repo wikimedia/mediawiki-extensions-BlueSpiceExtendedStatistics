@@ -39,7 +39,8 @@ Ext.define('BS.Statistics.StatisticsPortletConfig', {
 			mode: 'local',
 			triggerAction: 'all',
 			lastQuery: '',
-			forceSelection: true
+			forceSelection: true,
+			typeAhead: false
 		});
 		this.items.push( this.cbInputPeriod );
 

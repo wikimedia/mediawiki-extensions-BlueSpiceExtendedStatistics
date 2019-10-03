@@ -39,7 +39,7 @@ Ext.define( 'BS.Statistics.panel.Filter', {
 			lastQuery: '',
 			forceSelection: true,
 			allowBlank: false,
-			editable: false
+			editable: true
 		} );
 
 		this.cbInputDiagrams.on( 'select', this.cbInputDiagramsSelect, this );

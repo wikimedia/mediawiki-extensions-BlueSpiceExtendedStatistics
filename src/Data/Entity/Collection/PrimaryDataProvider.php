@@ -57,8 +57,9 @@ class PrimaryDataProvider extends SearchDataProvider {
 			}
 			$data[$fieldname] = $this->normalizeTS( $data[$fieldname] );
 		}
-		$record = new Record( (object)$data );
 		unset( $data[Collection::ATTR_ID] );
+
+		$record = new Record( (object)$data );
 		$entity = $this->factory->newFromObject( (object)$data );
 		if ( !$entity instanceof Collection ) {
 			return;
