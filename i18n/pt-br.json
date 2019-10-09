@@ -66,5 +66,6 @@
 	"apihelp-bs-statistics-search-options-store-summary": "Fornece armazenamento com opções de pesquisa disponíveis",
 	"right-statistic-viewspecialpage": "Concede acesso à página especial",
 	"bs-statistics-button-label-export": "Exportar",
-	"bs-statistics-panel-title-result": "Resultado"
+	"bs-statistics-panel-title-result": "Resultado",
+	"action-statistic-viewspecialpage": "acesso a estatística estendida"
 }

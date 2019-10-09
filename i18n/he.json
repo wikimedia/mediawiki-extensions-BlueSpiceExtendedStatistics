@@ -1,7 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"Guycn2"
+			"Guycn2",
+			"Erelon",
+			"Steeve815"
 		]
 	},
 	"bs-statistics-desc": "מודול סטטיסטיקה של BlueSpice",
@@ -22,13 +24,13 @@
 	"bs-statistics-not-allowed": "אין לך את ההרשאה המתאימה.",
 	"bs-statistics-finish": "יצירת תרשים",
 	"bs-statistics-filters": "מסננים",
-	"bs-statistics-diag-number-of-users": "מספר המשתמשים",
+	"bs-statistics-diag-number-of-users": "מספר המשתמשים שנוצרו",
 	"bs-statistics-diag-number-of-users-desc": "הצגת מספר המשתמשים שנוצרו במהלך התקופה שנבחרה.",
 	"bs-statistics-label-name": "שם",
 	"bs-statistics-label-registration": "הרשמה",
-	"bs-statistics-diag-number-of-pages": "מספר הדפים",
+	"bs-statistics-diag-number-of-pages": "מספר הדפים שנוצרו",
 	"bs-statistics-diag-number-of-pages-desc": "הצגת המספר הכולל של הדפים שנוצרו במהלך התקופה שנבחרה.",
-	"bs-statistics-diag-number-of-pages-mw": "מספר דפי התוכן",
+	"bs-statistics-diag-number-of-pages-mw": "מספר דפי התוכן שנוצרו",
 	"bs-statistics-diag-number-of-pages-mw-desc": "הצגת מספר דפי התוכן שנוצרו במהלך התקופה שנבחרה.",
 	"bs-statistics-label-page": "דף",
 	"bs-statistics-label-creator": "יוצר",
@@ -49,11 +51,11 @@
 	"bs-statistics-portlet-numberofusers": "מספר המשתמשים",
 	"bs-statistics-portlet-numberofedits": "מספר העריכות",
 	"bs-statistics-portlet-numberofpages": "מספר הדפים",
-	"bs-statistics-portlet-numberofarticles": "מספר הערכים",
+	"bs-statistics-portlet-numberofarticles": "מספר דפי התוכן",
 	"bs-statistics-portlet-numberofusersdesc": "סטטיסטיקה עבור מספר המשתמשים.",
 	"bs-statistics-portlet-numberofeditsdesc": "סטטיסטיקה עבור מספר העריכות.",
 	"bs-statistics-portlet-numberofpagesdesc": "סטטיסטיקה עבור מספר הדפים.",
-	"bs-statistics-portlet-numberofarticlesdesc": "סטטיסטיקה של מספר הערכים.",
+	"bs-statistics-portlet-numberofarticlesdesc": "סטטיסטיקה של מספר דפי התוכן.",
 	"bs-statistics-portletconfig-periodday": "אתמול",
 	"apihelp-bs-statistics-tasks-description": "אספקת משימות נפוצות עבור סטטיסטיקות",
 	"apihelp-bs-statistics-tasks-summary": "אספקת משימות נפוצות עבור סטטיסטיקות",

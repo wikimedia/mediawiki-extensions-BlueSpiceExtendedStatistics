@@ -6,7 +6,8 @@
 			"Okras",
 			"Mailman",
 			"Mouse21",
-			"Vlad5250"
+			"Vlad5250",
+			"Movses"
 		]
 	},
 	"bs-statistics-desc": "Модуль статистики для BlueSpice",
@@ -34,7 +35,7 @@
 	"bs-statistics-label-registration": "Регистрация",
 	"bs-statistics-diag-number-of-pages": "Количество созданных страниц",
 	"bs-statistics-diag-number-of-pages-desc": "Показывает общее количество страниц, созданных в течение выбранного периода.",
-	"bs-statistics-diag-number-of-pages-mw": "Количество страниц с содержимым",
+	"bs-statistics-diag-number-of-pages-mw": "Количество созданных страниц с содержимым",
 	"bs-statistics-diag-number-of-pages-mw-desc": "Показывает общее количество страниц с содержимым, созданных в течение выбранного периода.",
 	"bs-statistics-label-page": "Страница",
 	"bs-statistics-label-creator": "Автор",
@@ -60,7 +61,7 @@
 	"bs-statistics-portlet-numberofusersdesc": "Статистика количества пользователей.",
 	"bs-statistics-portlet-numberofeditsdesc": "Статистика количества правок.",
 	"bs-statistics-portlet-numberofpagesdesc": "Статистика количества страниц.",
-	"bs-statistics-portlet-numberofarticlesdesc": "Статистика количества статей.",
+	"bs-statistics-portlet-numberofarticlesdesc": "Статистика количества страниц с содержимым.",
 	"bs-statistics-portletconfig-periodday": "Вчера",
 	"apihelp-bs-statistics-tasks-description": "Предоставляет общие задачи для статистики",
 	"apihelp-bs-statistics-tasks-summary": "Предоставляет общие задачи для статистики",
@@ -70,5 +71,6 @@
 	"apihelp-bs-statistics-search-options-store-summary": "Предоставляет магазин с доступными опциями поиска",
 	"right-statistic-viewspecialpage": "доступ к расширенной статистике",
 	"bs-statistics-button-label-export": "Экспортировать",
-	"bs-statistics-panel-title-result": "Результат"
+	"bs-statistics-panel-title-result": "Результат",
+	"action-statistic-viewspecialpage": "доступ к расширенной статистике"
 }

@@ -2,7 +2,9 @@
 	"@metadata": {
 		"authors": [
 			"Banjo",
-			"Elisardojm"
+			"Elisardojm",
+			"Navhy",
+			"Iváns"
 		]
 	},
 	"bs-statistics-desc": "Módulo de estatísticas para BlueSpice",
@@ -39,7 +41,7 @@
 	"bs-statistics-diag-edits-per-user": "Edicións por usuario",
 	"bs-statistics-diag-edits-per-user-desc": "Amosa o número medio de edicións que fixo un usuario no período elixido.",
 	"bs-statistics-diag-search-queries": "Procuras de busca",
-	"bs-statistics-diag-search-queries-desc": "Amosa o número de consultas de busca dentro do período elixido.",
+	"bs-statistics-diag-search-queries-desc": "Amosa o número de consultas de procura dentro do período elixido.",
 	"bs-statistics-label-searchterm": "Termo de procura",
 	"bs-statistics-label-count": "Cantidade",
 	"bs-statistics-label-maxhits": "Número máximo de resultados",

@@ -9,16 +9,19 @@
  * @package    BlueSpice_Extensions
  * @subpackage Statistics
  * @copyright  Copyright (C) 2016 Hallo Welt! GmbH, All rights reserved.
- * @license    http://www.gnu.org/copyleft/gpl.html GPL-2.0-or-later
+ * @license    http://www.gnu.org/copyleft/gpl.html GPL-3.0-only
  * @filesource
  */
+
+use BlueSpice\Special\ExtJSBase;
+use MediaWiki\Shell\Shell;
 
 /**
  *Statistics special page that renders the creation dialogue of statistics
  * @package BlueSpice_Extensions
  * @subpackage Statistics
  */
-class SpecialExtendedStatistics extends \BlueSpice\SpecialPage {
+class SpecialExtendedStatistics extends ExtJSBase {
 
 	/**
 	 * Constructor of SpecialExtendedStatistics
@@ -31,9 +34,10 @@ class SpecialExtendedStatistics extends \BlueSpice\SpecialPage {
 	 * Renders special page output.
 	 * @param string $par Name of the article, who's review should be edited, or user whos review should be displayed.
 	 * @return bool Allow other hooked methods to be executed. always true.
+	 * @throws PermissionsError
 	 */
 	public function execute( $par ) {
-		parent::execute( $par );
+		$this->checkPermissions();
 
 		if ( !empty( $par ) ) {
 			global $wgRequest;
@@ -49,16 +53,8 @@ class SpecialExtendedStatistics extends \BlueSpice\SpecialPage {
 			}
 		}
 
-		$this->getOutput()->addHTML( '<div id="bs-statistics-panel" class="bs-manager-container"></div>' );
-		$this->getOutput()->addModules( 'ext.bluespice.statistics' );
 		$this->getOutput()->setPageTitle( wfMessage( 'extendedstatistics' )->plain() );
-		$bAllowPNGExport = false;
-		// Temporarely disable PNG export, ticket #10472
-		/*global $wgSVGConverter, $wgSVGConverters;
-		if( $wgSVGConverter != false && isset($wgSVGConverters[$wgSVGConverter]) ) {
-			$bAllowPNGExport = true;
-		}*/
-		$this->getOutput()->addJsConfigVars( 'BsExtendedStatisticsAllowPNGExport', $bAllowPNGExport );
+		parent::execute( $par );
 
 		return true;
 	}
@@ -85,11 +81,11 @@ class SpecialExtendedStatistics extends \BlueSpice\SpecialPage {
 
 		$cmd = str_replace(
 			[ '$path/', '$width', '$height', '$input', '$output' ],
-			[ $wgSVGConverterPath ? wfEscapeShellArg( "$wgSVGConverterPath/" ) : "",
+			[ $wgSVGConverterPath ? Shell::escape( "$wgSVGConverterPath/" ) : "",
 				intval( $wgRequest->getVal( 'width', 600 ) ),
 				intval( $wgRequest->getVal( 'height', 400 ) ),
-				wfEscapeShellArg( $sCacheDir . '/' . $sFileName . $sFileExt ),
-				wfEscapeShellArg( $sCacheDir . '/' . $sFileName . '.png' )
+				Shell::escape( $sCacheDir . '/' . $sFileName . $sFileExt ),
+				Shell::escape( $sCacheDir . '/' . $sFileName . '.png' )
 			],
 			$wgSVGConverters[$wgSVGConverter]
 		) . " 2>&1";
@@ -135,5 +131,31 @@ class SpecialExtendedStatistics extends \BlueSpice\SpecialPage {
 		$svg = urldecode( $urlEncodedSvg );
 
 		return $svg;
+	}
+
+	/**
+	 * @return string ID of the HTML element being added
+	 */
+	protected function getId() {
+		return 'bs-statistics-panel';
+	}
+
+	/**
+	 * @return array
+	 */
+	protected function getModules() {
+		return [ 'ext.bluespice.statistics' ];
+	}
+
+	protected function getJSVars() {
+		$bAllowPNGExport = false;
+		// Temporarely disable PNG export, ticket #10472
+		/*global $wgSVGConverter, $wgSVGConverters;
+		if( $wgSVGConverter != false && isset($wgSVGConverters[$wgSVGConverter]) ) {
+			$bAllowPNGExport = true;
+		}*/
+		return [
+			'BsExtendedStatisticsAllowPNGExport' => $bAllowPNGExport
+		];
 	}
 }

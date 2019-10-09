@@ -67,5 +67,6 @@
 	"apihelp-bs-statistics-search-options-store-summary": "يوفر متجرا بخيارات البحث المتاحة",
 	"right-statistic-viewspecialpage": "الوصول إلى إحصائيات موسعة",
 	"bs-statistics-button-label-export": "تصدير",
-	"bs-statistics-panel-title-result": "النتيجة"
+	"bs-statistics-panel-title-result": "النتيجة",
+	"action-statistic-viewspecialpage": "الوصول إلى الإحصائية الموسعة"
 }

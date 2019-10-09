@@ -1,8 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"StanProg"
+			"StanProg",
+			"Vlad5250"
 		]
 	},
-	"right-statistic-viewspecialpage": "Достъп до разширена статистика"
+	"bs-statistics-week": "Календарна седмица",
+	"right-statistic-viewspecialpage": "Достъп до разширена статистика",
+	"bs-statistics-button-label-export": "Изнасяне"
 }

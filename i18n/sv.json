@@ -2,7 +2,9 @@
 	"@metadata": {
 		"authors": [
 			"Lokal Profil",
-			"WikiPhoenix"
+			"WikiPhoenix",
+			"Sturban",
+			"Mjälten"
 		]
 	},
 	"bs-statistics-desc": "Statistikmodul för BlueSpice",
@@ -24,13 +26,13 @@
 	"bs-statistics-finish": "Skapa diagram",
 	"bs-statistics-filters": "Filter",
 	"bs-statistics-interval-too-big": "Intervallet är för stor. Det bör inte innehålla mer än 35 intervallsteg.",
-	"bs-statistics-diag-number-of-users": "Antal användare",
+	"bs-statistics-diag-number-of-users": "Antal skapade användare",
 	"bs-statistics-diag-number-of-users-desc": "Visar antalet användare som skapades inom den valda perioden.",
 	"bs-statistics-label-name": "Namn",
 	"bs-statistics-label-registration": "Registrering",
-	"bs-statistics-diag-number-of-pages": "Antal sidor",
+	"bs-statistics-diag-number-of-pages": "Antal skapade sidor",
 	"bs-statistics-diag-number-of-pages-desc": "Visar antalet sidor som skapades inom den valda perioden.",
-	"bs-statistics-diag-number-of-pages-mw": "Antal innehållssidor",
+	"bs-statistics-diag-number-of-pages-mw": "Antal skapade innehållssidor",
 	"bs-statistics-diag-number-of-pages-mw-desc": "Visar antalet innehållssidor som skapades inom den valda perioden.",
 	"bs-statistics-label-page": "Sida",
 	"bs-statistics-label-creator": "Skapare",
@@ -57,7 +59,8 @@
 	"bs-statistics-portlet-numberofeditsdesc": "Statistik för antalet redigeringar.",
 	"bs-statistics-portlet-numberofpagesdesc": "Statistik för antalet sidor.",
 	"bs-statistics-portletconfig-periodday": "Igår",
-	"right-statistic-viewspecialpage": "Ger åtkomst till specialsidan [[Special:ExtendedStatistics]].",
+	"right-statistic-viewspecialpage": "Tillgång till utökad statistik",
 	"bs-statistics-button-label-export": "Exportera",
-	"bs-statistics-panel-title-result": "Resultat"
+	"bs-statistics-panel-title-result": "Resultat",
+	"action-statistic-viewspecialpage": "Tillgång till utökad statistik"
 }

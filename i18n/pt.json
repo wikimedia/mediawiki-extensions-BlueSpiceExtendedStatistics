@@ -64,7 +64,8 @@
 	"apihelp-bs-statistics-available-diagrams-store-summary": "Fornece armazenamento com diagramas disponíveis",
 	"apihelp-bs-statistics-search-options-store-description": "Fornece armazenamento com opções de pesquisa disponíveis",
 	"apihelp-bs-statistics-search-options-store-summary": "Fornece armazenamento com opções de pesquisa disponíveis",
-	"right-statistic-viewspecialpage": "Acesso às estatísticas detalhadas",
+	"right-statistic-viewspecialpage": "Aceder às estatísticas detalhadas",
 	"bs-statistics-button-label-export": "Exportar",
-	"bs-statistics-panel-title-result": "Resultado"
+	"bs-statistics-panel-title-result": "Resultado",
+	"action-statistic-viewspecialpage": "aceder às estatísticas detalhadas"
 }

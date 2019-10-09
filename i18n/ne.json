@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"बिप्लब आनन्द"
+			"बिप्लब आनन्द",
+			"पर्वत सुबेदी"
 		]
 	},
 	"prefs-statistics": "विस्तारित तथ्याङ्कहरू",
@@ -15,7 +16,7 @@
 	"bs-statistics-absolute": "पूर्ण",
 	"bs-statistics-year": "वर्ष",
 	"bs-statistics-month": "महिना",
-	"bs-statistics-week": "क्यालेन्डर हप्ता",
+	"bs-statistics-week": "हप्ता",
 	"bs-statistics-day": "दिन",
 	"bs-statistics-list": "सूची",
 	"bs-statistics-not-allowed": "तपाईंसँग आवश्यक अनुमति छैन।",
