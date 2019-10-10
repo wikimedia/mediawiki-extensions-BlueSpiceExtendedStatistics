@@ -1,6 +1,6 @@
 <?php
 
-namespace BlueSpice\Data\Aggregate;
+namespace BlueSpice\ExtendedStatistics\Data\Aggregate;
 
 use BlueSpice\ExtendedStatistics\Data\Aggregate;
 
