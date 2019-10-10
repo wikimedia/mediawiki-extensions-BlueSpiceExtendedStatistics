@@ -3,7 +3,6 @@
 namespace BlueSpice\ExtendedStatistics\Data\Entity\Collection;
 
 use BlueSpice\Data\Entity\Schema as EntitySchema;
-use BlueSpice\ExtendedStatistics\EntityConfig\Collection;
 
 class Schema extends EntitySchema {
 	const PRIMARY = 'primary';
@@ -25,7 +24,7 @@ class Schema extends EntitySchema {
 	protected function getEntityConfigs() {
 		$entityConfigs = parent::getEntityConfigs();
 		return array_filter( $entityConfigs, function ( $entityConfig ) {
-			return $entityConfig instanceof Collection;
+			return $entityConfig->get( 'IsCollection' );
 		} );
 	}
 
