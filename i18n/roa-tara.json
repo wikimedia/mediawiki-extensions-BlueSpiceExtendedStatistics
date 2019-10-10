@@ -66,5 +66,16 @@
 	"action-statistic-viewspecialpage": "tràse jndr'à le statisteche spannute",
 	"right-statistic-viewspecialpage": "Tràse jndr'à le statisteche spannute",
 	"bs-statistics-button-label-export": "Esporte",
-	"bs-statistics-panel-title-result": "Resultate"
+	"bs-statistics-panel-title-result": "Resultate",
+	"bs-extendedstatistics-collection-fatalstatus-unknownaction": "Azione scanusciute \"$1\"",
+	"bs-extendedstatistics-collection-fatalstatus-permissiondeniedusercan": "L'utende non g'è abbilitate pe fà l'azione \"$1\" sus a \"$2\"",
+	"bs-extendedstatistics-collection-fatalstatus-permissiondenieduserisallowed": "L'utende non g'è abbilitate pe fà l'azione \"$1\"",
+	"bs-extendedstatistics-collection-fatalstatus-notitle": "Oggette \"Titole\" obbligatorie",
+	"apihelp-bs-extendedstatistics-collection-store-description": "Dèje 'nu majazzine pe le statisteche ca ponne essere 'nderrogate, filtrate e aggregate",
+	"apihelp-bs-extendedstatistics-collection-store-summary": "Dèje 'nu majazzine pe le statisteche ca ponne essere 'nderrogate, filtrate e aggregate",
+	"apihelp-bs-extendedstatistics-collection-store-param-aggregate": "'N'oggette stringhe JSON codifecate cu date arbitrarie pe l'aggregazione",
+	"snapshotsstatistics": "Statisteche d'a snapshot",
+	"extendedstatisticssnapshots": "Istandenèe",
+	"bs-extendedstatistics-collection-var-type": "Tipe de sorgende",
+	"bs-extendedstatistics-collection-var-timestampcreated": "Date de ccrejazione"
 }

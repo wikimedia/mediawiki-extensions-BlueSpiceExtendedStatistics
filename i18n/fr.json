@@ -4,7 +4,9 @@
 			"Orikrin1998",
 			"Gomoko",
 			"Wladek92",
-			"Zarisi"
+			"Zarisi",
+			"Pols12",
+			"Verdy p"
 		]
 	},
 	"bs-statistics-desc": "Module de statistiques pour BlueSpice",
@@ -69,5 +71,16 @@
 	"action-statistic-viewspecialpage": "accès aux statistiques étendues",
 	"right-statistic-viewspecialpage": "Accès aux statistiques étendues",
 	"bs-statistics-button-label-export": "Exporter",
-	"bs-statistics-panel-title-result": "Résultat"
+	"bs-statistics-panel-title-result": "Résultat",
+	"bs-extendedstatistics-collection-fatalstatus-unknownaction": "Action « $1 » inconnue",
+	"bs-extendedstatistics-collection-fatalstatus-permissiondeniedusercan": "L’utilisateur n’est pas autorisé à effectuer l’action « $1 » sur « $2 ».",
+	"bs-extendedstatistics-collection-fatalstatus-permissiondenieduserisallowed": "L’utilisateur n’est pas autorisé  à effectuer l’action « $1 ».",
+	"bs-extendedstatistics-collection-fatalstatus-notitle": "L’objet « Titre » est obligatoire.",
+	"apihelp-bs-extendedstatistics-collection-store-description": "Fournit un magasin (''store'') de statistiques qui peut être interrogé par des requêtes, filtré et agrégé.",
+	"apihelp-bs-extendedstatistics-collection-store-summary": "Fournit un magasin (''store'') de statistiques qui peut être interrogé par des requêtes, filtré et agrégé.",
+	"apihelp-bs-extendedstatistics-collection-store-param-aggregate": "Objet encodé sous forme de chaine JSON, avec des données arbitraires pour le regroupement",
+	"snapshotsstatistics": "Statistiques des instantanés",
+	"extendedstatisticssnapshots": "Instantanés",
+	"bs-extendedstatistics-collection-var-type": "Type de source",
+	"bs-extendedstatistics-collection-var-timestampcreated": "Date de création"
 }

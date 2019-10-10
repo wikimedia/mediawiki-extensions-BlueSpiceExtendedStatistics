@@ -68,5 +68,15 @@
 	"action-statistic-viewspecialpage": "الوصول إلى الإحصائية الموسعة",
 	"right-statistic-viewspecialpage": "الوصول إلى إحصائيات موسعة",
 	"bs-statistics-button-label-export": "تصدير",
-	"bs-statistics-panel-title-result": "النتيجة"
+	"bs-statistics-panel-title-result": "النتيجة",
+	"bs-extendedstatistics-collection-fatalstatus-unknownaction": "إجراء غير معروف \"$1\"",
+	"bs-extendedstatistics-collection-fatalstatus-permissiondeniedusercan": "لا يُسمَح للمستخدم بتنفيذ الإجراء \"$1\" على \"$2\"",
+	"bs-extendedstatistics-collection-fatalstatus-permissiondenieduserisallowed": "لا يُسمَح للمستخدم بأداء الإجراء \"$1\"",
+	"bs-extendedstatistics-collection-fatalstatus-notitle": "كائن \"العنوان\" مطلوب",
+	"apihelp-bs-extendedstatistics-collection-store-description": "يوفر متجرا للإحصائيات التي يمكن الاستعلام عنها وتصفيتها وتجميعها",
+	"apihelp-bs-extendedstatistics-collection-store-summary": "يوفر متجرا للإحصائيات التي يمكن الاستعلام عنها وتصفيتها وتجميعها",
+	"snapshotsstatistics": "إحصائيات اللقطات",
+	"extendedstatisticssnapshots": "لقطات",
+	"bs-extendedstatistics-collection-var-type": "نوع المصدر",
+	"bs-extendedstatistics-collection-var-timestampcreated": "تاريخ الإنشاء"
 }
