@@ -5,7 +5,8 @@
 	"url": "https://en.wiki.bluespice.com/wiki/Reference:ExtendedStatistics",
 	"author": [
 		"Markus Glaser",
-		"Patric Wirth"
+		"Patric Wirth",
+		"Oleksandr Pinchuk"
 	],
 	"descriptionmsg": "bs-statistics-desc",
 	"type": "bluespice",
@@ -205,7 +206,8 @@
 			],
 			"dependencies": [
 				"ext.bluespice.extjs",
-				"ext.extjsbase.charts"
+				"ext.extjsbase.charts",
+				"ext.bluespice.snapshotstatistics.styles"
 			],
 			"messages": [
 				"bs-statistics-label-count",
@@ -219,8 +221,15 @@
 				"bs-statistics-week",
 				"bs-statistics-day",
 				"bs-statistics-grain",
-				"bs-statistics-datasource-label"
+				"bs-statistics-datasource-label",
+				"bs-statistics-filters",
+				"bs-statistics-aggregationmode-label",
+				"bs-statistics-aggregationfield-label",
+				"bs-statistics-targets-label"
 			]
+		},
+		"ext.bluespice.snapshotstatistics.styles": {
+			"styles": "bluespice.snapshotStatistics.css"
 		},
 		"ext.bluespice.extendedstatistics.collection": {
 			"messages": [

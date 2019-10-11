@@ -85,5 +85,8 @@
 	"bs-statistics-label-bar-chart": "Label for bar chart",
 	"bs-statistics-label-line-chart": "Label for line chart",
 	"bs-statistics-datasource-label": "Label for data source field",
-	"bs-statistics-button-label-apply": "Label for the button that executes the query"
+	"bs-statistics-button-label-apply": "Label for the button that executes the query",
+	"bs-statistics-aggregationmode-label": "Label for aggregation mode filter",
+	"bs-statistics-aggregationfield-label": "Label for aggregation field filter",
+	"bs-statistics-targets-label": "Label for targets filter"
 }
