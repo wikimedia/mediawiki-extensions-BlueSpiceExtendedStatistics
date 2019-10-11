@@ -42,16 +42,13 @@ Ext.define( 'BS.ExtendedStatistics.panel.Chart', {
 	getMaxValueForYAxis: function( yFieldArr ) {
 		var me = this;
 		var maxValue = 0;
-		var data = me.chartsStore.getRange();
 		yFieldArr.forEach( function( y ) {
-			for( var i = 0; i < data.length; i++ ) {
-				if( data[ i ]['data'][ y.name ] > maxValue ) {
-					maxValue = data[ i ]['data'][ y.name ];
-				}
+			if( me.chartsStore.max( y.name ) > maxValue) {
+				maxValue = me.chartsStore.max( y.name );
 			}
 		} );
-
-		return maxValue + 2;
+		maxValue = Math.ceil( maxValue * 1.2 );
+		return maxValue;
 	},
 
 	makeExportButton: function() {
@@ -71,6 +68,7 @@ Ext.define( 'BS.ExtendedStatistics.panel.Chart', {
 			text: 'SVG',
 			value: 'image/svg+xml'
 		} );
+
 		if( mw.config.get( 'BsExtendedStatisticsAllowPNGExport', false ) === true ) {
 			menu.add( {
 				text: 'PNG',
@@ -101,13 +99,14 @@ Ext.define( 'BS.ExtendedStatistics.panel.Chart', {
 	loadCharts: function( apiStore, xFieldObj, yFieldArr ) {
 		this.chartTabs.removeAll();
 		this.chartsStore = apiStore;
-		this.chartTabs.add( this.generateLineChart( apiStore, xFieldObj, yFieldArr ) );
 		this.chartTabs.add( this.generateBarChart( apiStore, xFieldObj, yFieldArr ) );
+		this.chartTabs.add( this.generateLineChart( apiStore, xFieldObj, yFieldArr ) );
+		this.chartTabs.setActiveTab(0);
 	},
 
 	generateLineChart: function( apiStore, xFieldObj, yFieldArr) {
 		var seriesArr = [];
-		yTitles = [];
+		var yTitles = [];
 		yFieldArr.forEach( function (y) {
 			yTitles.push( y.name );
 			seriesArr.push( {
@@ -119,7 +118,8 @@ Ext.define( 'BS.ExtendedStatistics.panel.Chart', {
 					anchor: 'bottom',
 					trackMouse: true,
 					renderer: function( tooltip, record, item ) {
-						tooltip.setHtml( item.series.getTitle() + ': ' + record.get( item.series.getYField() ) );
+						var html = record.get( item.series.getXField() ) + " <br/> " + item.series.getTitle() + ': ' + record.get( item.series.getYField() );
+						tooltip.setHtml( html );
 					}
 				},
 				marker: {
@@ -144,11 +144,11 @@ Ext.define( 'BS.ExtendedStatistics.panel.Chart', {
 			title: mw.message( 'bs-statistics-label-line-chart' ).plain(),
 			theme: 'blue',
 			engine: 'Ext.draw.engine.Svg',
-			height: 400,
+			height: 500,
 			store: apiStore,
 			legend: {
 				type: 'sprite',
-				docked: 'right'
+				docked: 'bottom'
 			},
 			axes: [{
 				type: 'numeric',
@@ -173,7 +173,7 @@ Ext.define( 'BS.ExtendedStatistics.panel.Chart', {
 				grid: true,
 				label: {
 					rotate: {
-						degrees: -45
+						degrees: 270
 					}
 				}
 			}],
@@ -184,25 +184,45 @@ Ext.define( 'BS.ExtendedStatistics.panel.Chart', {
 
 	generateBarChart: function( apiStore, xFieldObj, yFieldArr ) {
 		var yTitles = [];
+		var yFieldNames = [];
 		yFieldArr.forEach( function ( y ) {
-			yTitles.push( y.name );
+			yTitles.push( y.label );
+			yFieldNames.push( y.name );
 		} );
 
 		var series = {
 			type: 'bar3d',
 			xField: xFieldObj.name,
-			yField: yTitles,
+			yField: yFieldNames,
+			title: yTitles,
+			highlight: true,
+			label: {
+				field: yFieldNames,
+				display: 'insideEnd'
+			},
+			tooltip: {
+				anchor: 'bottom',
+				trackMouse: true,
+				renderer: function( tooltip, record, item ) {
+					var html = record.get( item.series.getXField() ) + '<br/>';
+
+					for ( var i = 0; i < yTitles.length; i++ ) {
+						html += yTitles[ i ] + ': ' + record.get( item.series.getYField()[i] ) + '<br/>';
+					}
+					tooltip.setHtml( html );
+				}
+			}
 		};
 
 		return new Ext.chart.CartesianChart( {
 			title: mw.message( 'bs-statistics-label-bar-chart' ).plain(),
 			engine: 'Ext.draw.engine.Svg',
-			height: 400,
+			height: 500,
 			store: apiStore,
 			innerPadding: '0 10 0 10',
 			legend: {
 				type: 'sprite',
-				docked: 'right'
+				docked: 'bottom'
 			},
 			axes: [{
 				type: 'numeric3d',
@@ -225,10 +245,12 @@ Ext.define( 'BS.ExtendedStatistics.panel.Chart', {
 				type: 'category3d',
 				position: 'bottom',
 				fields: xFieldObj.name,
-				title: {
-					text: xFieldObj.label,
-					fontSize: 10
-				},
+				label: {
+					fontSize: 12,
+					rotation: {
+						degrees: 270
+					}
+				}
 			}],
 			series: series
 		} );

@@ -86,5 +86,6 @@
 	"bs-statistics-datasource-label": "Data source",
 	"bs-statistics-aggregationmode-label": "Aggregation mode",
 	"bs-statistics-aggregationfield-label": "Aggregation field",
+	"bs-statistics-aggregationtype-label": "Aggregation type",
 	"bs-statistics-targets-label": "Targets"
 }

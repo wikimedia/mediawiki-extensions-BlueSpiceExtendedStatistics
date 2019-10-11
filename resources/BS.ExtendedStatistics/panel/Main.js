@@ -20,11 +20,12 @@ Ext.define( 'BS.ExtendedStatistics.panel.Main', {
 		'Ext.data.Store',
 		'BS.ExtendedStatistics.store.CollectionConfigs',
 		'BS.ExtendedStatistics.panel.Filter',
+		'BS.ExtendedStatistics.toolbar.Apply',
 		'BS.ExtendedStatistics.panel.Chart'
 	],
 	layout: 'border',
 	border: false,
-	height: 950,
+	height: 1450,
 
 	initComponent: function() {
 		this.collectionConfigsStore = new BS.ExtendedStatistics.store.CollectionConfigs();
