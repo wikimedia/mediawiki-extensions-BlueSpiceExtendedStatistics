@@ -1,3 +1,15 @@
+/**
+ * SnapshotStatistics Apply Button Toolbar
+ *
+ * Part of BlueSpice MediaWiki
+ *
+ * @author     Oleksandr Pinchuk <intracomof@gmail.com>
+ * @package    BlueSpice_Extensions
+ * @subpackage Statistics
+ * @copyright  Copyright (C) 2019 Hallo Welt! GmbH, All rights reserved.
+ * @license    http://www.gnu.org/copyleft/gpl.html GPL-3.0-only
+ * @filesource
+ */
 
 Ext.define( 'BS.ExtendedStatistics.toolbar.Apply', {
 	extend: 'Ext.Toolbar',

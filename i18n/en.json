@@ -81,5 +81,8 @@
 	"bs-statistics-button-label-apply": "Apply filters",
 	"bs-statistics-label-bar-chart": "Bar chart",
 	"bs-statistics-label-line-chart": "Line chart",
-	"bs-statistics-datasource-label": "Data source"
+	"bs-statistics-datasource-label": "Data source",
+	"bs-statistics-aggregationmode-label": "Aggregation mode",
+	"bs-statistics-aggregationfield-label": "Aggregation field",
+	"bs-statistics-targets-label": "Targets"
 }
