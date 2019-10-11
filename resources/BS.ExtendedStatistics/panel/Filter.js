@@ -1,3 +1,17 @@
+/**
+ * SnapshotStatistics Dynamic Filter panel
+ *
+ * Part of BlueSpice MediaWiki
+ *
+ * @author     Oleksandr Pinchuk <intracomof@gmail.com>
+ * @author     Dejan Savuljesku <savuljesku@hallowelt.com>
+ * @package    BlueSpice_Extensions
+ * @subpackage Statistics
+ * @copyright  Copyright (C) 2019 Hallo Welt! GmbH, All rights reserved.
+ * @license    http://www.gnu.org/copyleft/gpl.html GPL-3.0-only
+ * @filesource
+ */
+
 Ext.define( 'BS.ExtendedStatistics.panel.Filter', {
 	extend: 'Ext.form.Panel',
 	requires: [
@@ -41,7 +55,7 @@ Ext.define( 'BS.ExtendedStatistics.panel.Filter', {
 			allowBlank: false,
 			editable: true,
 			labelAlign: 'top',
-			style: 'padding: 5px',
+			cls: 'padding-5'
 		} );
 
 		this.dataSourceSelect.on( 'select', this.onDataSourceSelect, this );
@@ -54,7 +68,7 @@ Ext.define( 'BS.ExtendedStatistics.panel.Filter', {
 			fieldLabel: 'End Date',
 			name: 'endDate',
 			value: startDate,
-			style: 'padding: 5px',
+			cls: 'padding-5',
 			maxValue: new Date(),
 		} );
 
@@ -66,7 +80,7 @@ Ext.define( 'BS.ExtendedStatistics.panel.Filter', {
 			fieldLabel: 'Start Date',
 			value: endDate,
 			maxValue: new Date(),
-			style: 'padding: 5px'
+			cls: 'padding-5'
 		} );
 		// </From-To DatePickers>
 
@@ -85,28 +99,31 @@ Ext.define( 'BS.ExtendedStatistics.panel.Filter', {
 		// Filters that depend on source
 		this.dynamicFiltersConfig = {};
 		this.dynamicFilters = new Ext.toolbar.Toolbar( {
-			html: '<b>Filters</b>',
+			html: mw.message( 'bs-statistics-filters' ).plain(),
+			cls: 'bold-label',
 			items: []
 		} );
 
 		// Aggregation properties (depend on source)
 		this.aggregationModeToolbar = new Ext.toolbar.Toolbar( {
-			html: '<b>Aggregation Mode</b>',
-			items: [ ]
+			html: mw.message( 'bs-statistics-aggregationmode-label' ).plain(),
+			cls: 'bold-label reset-left',
+			items: []
 		} );
 
 		// Aggregation Field (depends on aggregation mode)
 		this.aggregationField = new Ext.toolbar.Toolbar( {
-			html: '<b>Aggregation Field</b>',
+			html: mw.message( 'bs-statistics-aggregationfield-label' ).plain(),
+			cls: 'bold-label',
 			items: []
 		} );
 
 		this.targets = new Ext.form.CheckboxGroup( {
 			name: 'targets',
-			fieldLabel: '<b>Targets</b>',
+			fieldLabel: mw.message( 'bs-statistics-targets-label' ).plain(),
 			columns: 3,
 			vertical: true,
-			style: 'padding: 10px',
+			cls: 'padding-10',
 			items: []
 		} );
 
@@ -124,8 +141,10 @@ Ext.define( 'BS.ExtendedStatistics.panel.Filter', {
 			mainFilters,
 			{
 				xtype: 'fieldcontainer',
-				layout: 'hbox',
-				align: 'stretch',
+				layout: {
+					type: 'hbox',
+					align: 'left'
+				},
 				items: [
 					this.dynamicFilters,
 					this.aggregationModeToolbar,
@@ -139,7 +158,7 @@ Ext.define( 'BS.ExtendedStatistics.panel.Filter', {
 		this.callParent();
 	},
 
-	/** Here we need to display needed Filters & Agregation modes for selected source **/
+	/** Here we need to display needed Filters & Aggregation modes for selected source **/
 	onDataSourceSelect: function( field, record ) {
 		this.currentSourceConfig = record;
 		var me = this;
@@ -158,10 +177,16 @@ Ext.define( 'BS.ExtendedStatistics.panel.Filter', {
 			} );
 
 			// Key => Object Storage of current set of Filters
-			me.dynamicFiltersConfig[filterConf.name] = filterConf;
+			me.dynamicFiltersConfig[ filterConf.name ] = filterConf;
 			// possible filters for selected source
 			me.dynamicFilters.add( me.generateFilterByConf( filterConf ) );
 		});
+
+		if ( me.dynamicFilters.items.length < 1 ) {
+			me.dynamicFilters.hide();
+		} else {
+			me.dynamicFilters.show();
+		}
 
 		me.generateAggregationModeSelect( aggregationModeDataArr );
 	},
@@ -182,7 +207,7 @@ Ext.define( 'BS.ExtendedStatistics.panel.Filter', {
 			mode: 'local',
 			name: 'aggregation[property]',
 			editable: false,
-			style: 'margin: 90px 0 0 0'
+			margin: '90 0 0 0'
 		} );
 
 		this.aggregationModeSelect.on( 'select', this.onAggregationModeSelect, this );
@@ -206,7 +231,7 @@ Ext.define( 'BS.ExtendedStatistics.panel.Filter', {
 				aggregationFilter = this.generateIntervalFilterSelect();
 				break;
 			default:
-				var filterConf = record.get('filterConf');
+				var filterConf = record.get( 'filterConf' );
 
 				this.aggregationField.add( new Ext.form.field.Hidden( {
 					name: 'aggregation[type]',
@@ -234,7 +259,7 @@ Ext.define( 'BS.ExtendedStatistics.panel.Filter', {
 					labelAlign: 'top',
 					name: filterConf.name,
 					fieldLabel: filterConf.label,
-					style: 'margin: 30px 0 0 0'
+					margin: '30 0 0 0'
 				} );
 				break;
 			case 'boolean':
@@ -276,7 +301,7 @@ Ext.define( 'BS.ExtendedStatistics.panel.Filter', {
 			labelAlign: 'top',
 			name: 'aggregation[type]',
 			editable: false,
-			style: 'margin: 30px 0 0 0'
+			margin: '30 0 0 0'
 		} );
 	},
 
