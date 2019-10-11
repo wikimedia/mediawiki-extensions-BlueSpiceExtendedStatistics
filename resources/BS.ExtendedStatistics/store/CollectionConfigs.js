@@ -20,7 +20,6 @@ Ext.define( 'BS.ExtendedStatistics.store.CollectionConfigs', {
         var me = this;
         var collectionConfigs = mw.config.get( 'bsgExtendedStatisticsCollectionConfigs' );
         var dataSourcesKeys = Object.keys( collectionConfigs );
-
         dataSourcesKeys.forEach( function( sourceKey ) {
             var attrDefObjects = collectionConfigs[sourceKey]['AttributeDefinitions'];
             var messageObjects = collectionConfigs[sourceKey]['VarMessageKeys'];
@@ -46,6 +45,7 @@ Ext.define( 'BS.ExtendedStatistics.store.CollectionConfigs', {
             mw.loader.using( collectionConfigs[sourceKey]['Modules'] );
 
             var filters = [];
+            var filtersLabels = [];
 
             attrKeys.forEach(function( filterName ) {
                 if ( filterFields.includes( filterName ) && !filterName.includes( 'aggregated' ) ) {
@@ -63,10 +63,12 @@ Ext.define( 'BS.ExtendedStatistics.store.CollectionConfigs', {
                             attrDefObjects[ filterName ]
                         )
                     );
+                    filtersLabels[ filterName ] = labelMsg;
                 }
             });
 
             var seriesArr = [];
+            var seriesLabels = {};
             primaryAttrKeys.forEach( function( primaryKey ) {
                 var labelMsg = primaryKey;
                 if ( messageObjects.hasOwnProperty(primaryKey) ) {
@@ -76,14 +78,18 @@ Ext.define( 'BS.ExtendedStatistics.store.CollectionConfigs', {
                     name: primaryKey,
                     label: labelMsg
                 } );
+
+                seriesLabels[ primaryKey ] = labelMsg;
             });
 
             me.add( {
-                displaytitle: mw.message( collectionConfigs[sourceKey]['TypeMessageKey'] ).plain(),
+                displaytitle: mw.message( collectionConfigs[ sourceKey ][ 'TypeMessageKey' ] ).plain(),
                 key: sourceKey,
                 filters: filters,
-                attributes: collectionConfigs[sourceKey]['AttributeDefinitions'],
+                filtersLabels: filtersLabels,
+                attributes: collectionConfigs[ sourceKey ][ 'AttributeDefinitions' ],
                 series: seriesArr,
+                seriesLabels: seriesLabels,
                 targets: targetsArr
             } );
         } );

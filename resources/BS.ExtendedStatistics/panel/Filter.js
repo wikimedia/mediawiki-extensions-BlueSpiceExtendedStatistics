@@ -16,6 +16,7 @@ Ext.define( 'BS.ExtendedStatistics.panel.Filter', {
 	extend: 'Ext.form.Panel',
 	requires: [
 		'Ext.picker.Date',
+		'Ext.panel.Panel',
 		'Ext.form.Panel',
 		'Ext.form.field.Date',
 		'Ext.form.field.Tag',
@@ -23,6 +24,7 @@ Ext.define( 'BS.ExtendedStatistics.panel.Filter', {
 		'Ext.form.field.Number',
 		'Ext.form.field.ComboBox',
 		'Ext.form.field.Checkbox',
+		'Ext.form.FieldContainer',
 		'Ext.form.CheckboxGroup',
 		'BS.form.SimpleSelectBox',
 		'BS.store.ApiUser',
@@ -86,7 +88,8 @@ Ext.define( 'BS.ExtendedStatistics.panel.Filter', {
 
 		// Filters that don't generates dynamically (not depend on source)
 		var mainFilters = {
-			xtype: 'fieldcontainer',
+			title: 'General filters',
+			xtype: 'panel',
 			layout: 'hbox',
 			align: 'stretch',
 			items: [
@@ -104,26 +107,36 @@ Ext.define( 'BS.ExtendedStatistics.panel.Filter', {
 			items: []
 		} );
 
+		// <Aggregation>
+
 		// Aggregation properties (depend on source)
-		this.aggregationModeToolbar = new Ext.toolbar.Toolbar( {
-			html: mw.message( 'bs-statistics-aggregationmode-label' ).plain(),
+		this.aggregationMode = new Ext.toolbar.Toolbar( {
 			cls: 'bold-label reset-left',
 			items: []
 		} );
 
 		// Aggregation Field (depends on aggregation mode)
 		this.aggregationField = new Ext.toolbar.Toolbar( {
-			html: mw.message( 'bs-statistics-aggregationfield-label' ).plain(),
 			cls: 'bold-label',
 			items: []
 		} );
 
-		this.targets = new Ext.form.CheckboxGroup( {
-			name: 'targets',
-			fieldLabel: mw.message( 'bs-statistics-targets-label' ).plain(),
-			columns: 3,
-			vertical: true,
-			cls: 'padding-10',
+		// Aggregation Panel
+		this.aggregationPanel = new Ext.panel.Panel( {
+			title: 'Aggregation',
+			layout: 'hbox',
+			items: [
+				this.aggregationMode,
+				this.aggregationField
+			]
+		} );
+
+		// </Aggregation>
+
+		this.seriesPanel = new Ext.panel.Panel( {
+			title: 'Series',
+			layout: 'vbox',
+			border: '0 0 1 0',
 			items: []
 		} );
 
@@ -139,19 +152,8 @@ Ext.define( 'BS.ExtendedStatistics.panel.Filter', {
 
 		this.items = [
 			mainFilters,
-			{
-				xtype: 'fieldcontainer',
-				layout: {
-					type: 'hbox',
-					align: 'left'
-				},
-				items: [
-					this.dynamicFilters,
-					this.aggregationModeToolbar,
-					this.aggregationField
-				]
-			},
-			this.targets,
+			this.aggregationPanel,
+			this.seriesPanel,
 			this.applyButtonToolbar
 		];
 
@@ -162,52 +164,89 @@ Ext.define( 'BS.ExtendedStatistics.panel.Filter', {
 	onDataSourceSelect: function( field, record ) {
 		this.currentSourceConfig = record;
 		var me = this;
-		var filters = record.get( 'filters' );
-		me.dynamicFilters.removeAll();
+		var filters = record.get( 'filters' ).slice();
+		var series = record.get( 'series' ).slice();
+
+		me.seriesPanel.removeAll();
 		me.dynamicFiltersConfig = {};
 
-		var aggregationModeDataArr = [];
+		series.forEach( function( seriesItem ) {
 
-		filters.forEach( function( filterConf ) {
-			// possible aggregation modes for selected source
-			aggregationModeDataArr.push( {
-				value: filterConf.name,
-				name: filterConf.label,
-				filterConf: filterConf
+			var seriesItemToolbar = new Ext.toolbar.Toolbar( {
+				layout: 'hbox',
+				padding: '0 0 0 0',
+				items: [],
+				border: '0 0 0 0',
+				style: 'overflow: visible',
+				width: '100%',
 			} );
 
-			// Key => Object Storage of current set of Filters
-			me.dynamicFiltersConfig[ filterConf.name ] = filterConf;
-			// possible filters for selected source
-			me.dynamicFilters.add( me.generateFilterByConf( filterConf ) );
-		});
+			var filterToolbar = new Ext.form.Panel( {
+				title: mw.message( 'bs-statistics-filters' ).plain(),
+				// cls: 'bold-label',
+				border: true,
+				layout: 'hbox',
+				items: []
+			} );
 
-		if ( me.dynamicFilters.items.length < 1 ) {
-			me.dynamicFilters.hide();
-		} else {
-			me.dynamicFilters.show();
-		}
+			var seriesCheckbox = new Ext.form.Panel( {
+				border: false,
+				title: 'Series name',
+				height: '100%',
+				layout: 'fit',
+				style: 'overflow: visible',
+				margin: '0 0 0 0',
+				items: [
+					{
+						padding: '35px 0 0 20px',
+						width: '180px',
+						height: '100%',
+						xtype: 'checkbox',
+						boxLabel: seriesItem.label,
+						checked: true,
+						name: 'series',
+						inputValue: seriesItem.name
+					}
+				]
+			} );
 
-		me.generateAggregationModeSelect( aggregationModeDataArr );
+			seriesItemToolbar.add( seriesCheckbox );
+			filters.forEach( function( filterConf ) {
+				// Key => Object Storage of current set of Filters
+				me.dynamicFiltersConfig[ filterConf.name ] = filterConf;
+				// possible filters for selected source
+				filterToolbar.add( me.generateFilterByConf( seriesItem.name, filterConf ) );
+			});
+
+			if ( filterToolbar.items.length > 0 ) {
+				seriesItemToolbar.add(filterToolbar);
+			}
+
+			me.seriesPanel.add( seriesItemToolbar );
+
+		} );
+
+		me.generateAggregationModeSelect( filters );
 	},
 
 	generateAggregationModeSelect: function( aggregationModeDataArr ) {
-		this.aggregationModeToolbar.removeAll();
-
+		this.aggregationMode.removeAll();
 		aggregationModeDataArr.unshift( {
-			value: 'timestampcreated',
-			name: 'Date',
-			filterConf: {}
+			name: 'timestampcreated',
+			label: 'Date'
 		} );
-		aggregationModeDataArr.unshift( { value: 'none', name: 'None', filterConf: {} } );
 
 		this.aggregationModeSelect = new BS.form.SimpleSelectBox( {
+			fieldLabel: mw.message( 'bs-statistics-aggregationmode-label' ).plain(),
+			labelAlign: 'top',
+			displayField: 'label',
+			valueField: 'name',
 			bsData: aggregationModeDataArr,
-			value: aggregationModeDataArr[0].value,
+			value: aggregationModeDataArr[0].name,
 			mode: 'local',
 			name: 'aggregation[property]',
 			editable: false,
-			margin: '90 0 0 0'
+			margin: '20 0 0 0',
 		} );
 
 		this.aggregationModeSelect.on( 'select', this.onAggregationModeSelect, this );
@@ -216,60 +255,62 @@ Ext.define( 'BS.ExtendedStatistics.panel.Filter', {
 			this.aggregationModeSelect.store.getAt( 0 ).get( 'key' ),
 			this.aggregationModeSelect.store.getAt( 0 )
 		);
-		this.aggregationModeToolbar.add( this.aggregationModeSelect );
+
+		this.aggregationMode.add( this.aggregationModeSelect );
 	},
 
 	onAggregationModeSelect: function( field, record ) {
 		this.aggregationField.removeAll();
 		var aggregationFilter;
 
-		switch ( record.get('value') ) {
+		var excludeTargets = [];
+		excludeTargets.push( record.get( 'name' ) );
+
+		switch ( record.get( 'name' ) ) {
 			case 'none':
-				this.targets.hide();
 				return;
 			case 'timestampcreated':
 				aggregationFilter = this.generateIntervalFilterSelect();
 				break;
 			default:
-				var filterConf = record.get( 'filterConf' );
-
+				excludeTargets.push( 'timestampcreated' );
 				this.aggregationField.add( new Ext.form.field.Hidden( {
 					name: 'aggregation[type]',
-					value: filterConf.type
+					value: record.get('type')
 				} ));
 				break;
 		}
 
 		this.aggregationField.add( aggregationFilter );
-		this.generateTargetsCheckbox( record.get( 'value' ) );
+		this.generateTargets( excludeTargets );
 	},
 
-	generateFilterByConf: function( filterConf ) {
+	generateFilterByConf: function( seriesName, filterConf ) {
 		var filterObj;
 		switch( filterConf.type ) {
 			case 'int':
 				filterObj = new Ext.form.field.Number( {
 					labelAlign: 'top',
-					name: filterConf.name,
+					name: 'filter_' + seriesName + '_' + filterConf.name,
 					fieldLabel: filterConf.label
 				} );
 				break;
 			case 'string':
 				filterObj = new Ext.form.field.Text( {
 					labelAlign: 'top',
-					name: filterConf.name,
+					name: 'filter_' + seriesName + '_' + filterConf.name,
 					fieldLabel: filterConf.label,
-					margin: '30 0 0 0'
+					margin: '10'
 				} );
 				break;
 			case 'boolean':
 				filterObj = new Ext.form.field.Checkbox( {
-					name: filterConf.name,
+					name: seriesName + '_' + filterConf.name,
 					labelAlign: 'top',
 					fieldLabel: filterConf.label,
 					items: [
 						{
-							name: filterConf.name,
+							name: 'filter_' + seriesName + '_' + filterConf.name,
 							boxLabel: filterConf.label,
 							inputValue: true
 						}
@@ -279,7 +320,7 @@ Ext.define( 'BS.ExtendedStatistics.panel.Filter', {
 			case 'date':
 				filterObj = new Ext.form.field.Date( {
 					labelAlign: 'top',
-					name: filterConf.name,
+					name: 'filter_' + seriesName + '_' + filterConf.name,
 					fieldLabel: filterConf.label
 				} );
 				break;
@@ -297,25 +338,22 @@ Ext.define( 'BS.ExtendedStatistics.panel.Filter', {
 				{ value: 'yearly', name: mw.message( 'bs-statistics-year' ).plain() }
 			],
 			value: 'daily',
-			fieldLabel: mw.message( 'bs-statistics-grain' ).plain(),
+			fieldLabel: mw.message( 'bs-statistics-aggregationtype-label' ).plain(),
 			labelAlign: 'top',
 			name: 'aggregation[type]',
 			editable: false,
-			margin: '30 0 0 0'
+			margin: '20 0 0 0'
 		} );
 	},
 
-	generateTargetsCheckbox: function( except ) {
+	generateTargets: function( excludeTargets ) {
 		var me = this;
-		me.targets.show();
-		me.targets.removeAll();
-
 		this.currentSourceConfig.get('targets').forEach( function( target ) {
-			if ( target !== except ) {
-				me.targets.add( {
-					boxLabel  : target,
-					inputValue: target,
-					value: true
+			if ( excludeTargets.indexOf( target ) === -1 ) {
+				me.aggregationField.add( {
+					name: 'targets',
+					xtype: 'hiddenfield',
+					value: target,
 				} );
 			}
 		});

@@ -236,6 +236,7 @@
 				"bs-statistics-filters",
 				"bs-statistics-aggregationmode-label",
 				"bs-statistics-aggregationfield-label",
+				"bs-statistics-aggregationtype-label",
 				"bs-statistics-targets-label"
 			]
 		},
