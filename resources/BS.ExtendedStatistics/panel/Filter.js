@@ -297,6 +297,7 @@ Ext.define( 'BS.ExtendedStatistics.panel.Filter', {
 	},
 
 	stringToDate: function( date, format ) {
+		date = date.toString();
 		format = format || 'd-m-Y';
 		var datePattern = '';
 		// Pretty pedestrian - but will do
