@@ -8,6 +8,7 @@ use BlueSpice\Data\IStore;
 use BlueSpice\EntityFactory;
 use BlueSpice\ExtendedStatistics\SnapshotFactory;
 use BlueSpice\ExtendedStatistics\Entity\Snapshot;
+use MWNamespace;
 
 abstract class NamespaceCollector extends SnapshotDiffCollector {
 
@@ -26,10 +27,10 @@ abstract class NamespaceCollector extends SnapshotDiffCollector {
 	 */
 	public static function getNamespaces( Snapshot $snapshot, Services $services ) {
 		$version = $snapshot->getConfig()->get( 'Version' );
-		if ( false && version_compare( $version, '1.34', '>=' ) ) {
-			$namespaces = $services->getNamespaceInfo()->getContentNamespaces();
+		if ( version_compare( $version, '1.34', '>=' ) ) {
+			$namespaces = $services->getNamespaceInfo()->getCanonicalNamespaces();
 		} else {
-			$namespaces = Services::getInstance()->getNamespaceInfo()->getCanonicalNamespaces();
+			$namespaces = MWNamespace::getCanonicalNamespaces();
 		}
 		foreach ( $namespaces as $idx => $canonical ) {
 			if ( $idx >= 0 ) {
