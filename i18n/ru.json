@@ -7,7 +7,8 @@
 			"Mailman",
 			"Mouse21",
 			"Vlad5250",
-			"Movses"
+			"Movses",
+			"Katunchik"
 		]
 	},
 	"bs-statistics-desc": "Модуль статистики для BlueSpice",
@@ -72,5 +73,12 @@
 	"action-statistic-viewspecialpage": "доступ к расширенной статистике",
 	"right-statistic-viewspecialpage": "доступ к расширенной статистике",
 	"bs-statistics-button-label-export": "Экспортировать",
-	"bs-statistics-panel-title-result": "Результат"
+	"bs-statistics-panel-title-result": "Результат",
+	"bs-statistics-button-label-apply": "Применить фильтры",
+	"bs-statistics-label-bar-chart": "Гистограмма",
+	"bs-statistics-label-line-chart": "Линейный график",
+	"bs-statistics-datasource-label": "Источник данных",
+	"bs-statistics-aggregationmode-label": "Режим агрегации",
+	"bs-statistics-aggregationfield-label": "Поле агрегации",
+	"bs-statistics-targets-label": "Цели"
 }

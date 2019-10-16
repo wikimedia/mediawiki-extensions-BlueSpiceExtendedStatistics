@@ -23,5 +23,8 @@
 	"bs-statistics-portlet-numberofpages": "Amarê pelan",
 	"bs-statistics-portletconfig-periodday": "Vızêr",
 	"bs-statistics-panel-title-result": "Netice",
-	"bs-extendedstatistics-collection-var-timestampcreated": "Tarixê vıraştışi"
+	"bs-extendedstatistics-collection-fatalstatus-unknownaction": "Kerdışo ke nêşınasiyeno \"$1\"",
+	"extendedstatisticssnapshots": "Fotrafo enstantane",
+	"bs-extendedstatistics-collection-var-timestampcreated": "Tarixê vıraştışi",
+	"bs-statistics-aggregationfield-label": "Cayê arêbiyayışi"
 }

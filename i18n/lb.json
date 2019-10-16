@@ -56,5 +56,10 @@
 	"bs-statistics-portletconfig-periodday": "Gëschter",
 	"right-statistic-viewspecialpage": "Accès op déi erweidert Statistik",
 	"bs-statistics-button-label-export": "Export",
-	"bs-statistics-panel-title-result": "Resultat"
+	"bs-statistics-panel-title-result": "Resultat",
+	"bs-extendedstatistics-collection-fatalstatus-unknownaction": "Onbekannt Aktioun \"$1\"",
+	"extendedstatisticssnapshots": "Schnappschëss",
+	"bs-statistics-button-label-apply": "Filteren uwenden",
+	"bs-statistics-datasource-label": "Source vun den Donnéeën",
+	"bs-statistics-targets-label": "Ziler"
 }

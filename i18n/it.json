@@ -65,5 +65,7 @@
 	"action-statistic-viewspecialpage": "accedere alle statistiche estese",
 	"right-statistic-viewspecialpage": "Accede alle statistiche estese",
 	"bs-statistics-button-label-export": "Esporta",
-	"bs-statistics-panel-title-result": "Risultato"
+	"bs-statistics-panel-title-result": "Risultato",
+	"bs-extendedstatistics-collection-fatalstatus-unknownaction": "Azione sconosciuta \"$1\"",
+	"bs-extendedstatistics-collection-var-timestampcreated": "Data di creazione"
 }

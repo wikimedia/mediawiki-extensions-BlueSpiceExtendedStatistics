@@ -4,5 +4,7 @@
 			"Papuass"
 		]
 	},
-	"bs-statistics-week": "Kalendārā nedēļa"
+	"bs-statistics-week": "Kalendārā nedēļa",
+	"bs-extendedstatistics-collection-var-timestampcreated": "Izveides datums",
+	"bs-statistics-button-label-apply": "Pielietot filtrus"
 }

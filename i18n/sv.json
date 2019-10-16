@@ -62,5 +62,11 @@
 	"action-statistic-viewspecialpage": "Tillgång till utökad statistik",
 	"right-statistic-viewspecialpage": "Tillgång till utökad statistik",
 	"bs-statistics-button-label-export": "Exportera",
-	"bs-statistics-panel-title-result": "Resultat"
+	"bs-statistics-panel-title-result": "Resultat",
+	"bs-extendedstatistics-collection-var-type": "Källtyp",
+	"bs-statistics-button-label-apply": "Tillämpa filter",
+	"bs-statistics-label-bar-chart": "Stapeldiagram",
+	"bs-statistics-label-line-chart": "Linjediagram",
+	"bs-statistics-datasource-label": "Datakälla",
+	"bs-statistics-targets-label": "Mål"
 }

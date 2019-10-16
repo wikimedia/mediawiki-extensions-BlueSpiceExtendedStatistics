@@ -77,5 +77,12 @@
 	"snapshotsstatistics": "Statisteche d'a snapshot",
 	"extendedstatisticssnapshots": "Istandenèe",
 	"bs-extendedstatistics-collection-var-type": "Tipe de sorgende",
-	"bs-extendedstatistics-collection-var-timestampcreated": "Date de ccrejazione"
+	"bs-extendedstatistics-collection-var-timestampcreated": "Date de ccrejazione",
+	"bs-statistics-button-label-apply": "Appleche le filtre",
+	"bs-statistics-label-bar-chart": "Grafeche a barre",
+	"bs-statistics-label-line-chart": "Grafeche a linèe",
+	"bs-statistics-datasource-label": "Sorgende de date",
+	"bs-statistics-aggregationmode-label": "Mode de aggregazzione",
+	"bs-statistics-aggregationfield-label": "Cambe de aggregazzione",
+	"bs-statistics-targets-label": "Destinaziune"
 }

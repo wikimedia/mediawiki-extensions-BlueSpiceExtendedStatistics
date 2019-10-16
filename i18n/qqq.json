@@ -82,10 +82,10 @@
 	"extendedstatisticssnapshots": "Special page name for [[Special:ExtendedStatisticsSnapshots]] special page\n{{Identical|Snapshots}}",
 	"bs-extendedstatistics-collection-var-type": "Label for entry field \"type\".\n{{Identical|Source type}}",
 	"bs-extendedstatistics-collection-var-timestampcreated": "Label for entry field \"timestampcreated\".\n{{Identical|Creation date}}",
+	"bs-statistics-button-label-apply": "Label for the button that executes the query",
 	"bs-statistics-label-bar-chart": "Label for bar chart",
 	"bs-statistics-label-line-chart": "Label for line chart",
 	"bs-statistics-datasource-label": "Label for data source field",
-	"bs-statistics-button-label-apply": "Label for the button that executes the query",
 	"bs-statistics-aggregationmode-label": "Label for aggregation mode filter",
 	"bs-statistics-aggregationfield-label": "Label for aggregation field filter",
 	"bs-statistics-targets-label": "Label for targets filter"

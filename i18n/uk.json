@@ -70,5 +70,19 @@
 	"action-statistic-viewspecialpage": "доступ до розширеної статистики",
 	"right-statistic-viewspecialpage": "доступ до розширеної статистики",
 	"bs-statistics-button-label-export": "Експорт",
-	"bs-statistics-panel-title-result": "Результат"
+	"bs-statistics-panel-title-result": "Результат",
+	"bs-extendedstatistics-collection-fatalstatus-unknownaction": "Невідома дія «$1»",
+	"bs-extendedstatistics-collection-fatalstatus-permissiondeniedusercan": "Користувачу не дозволено виконувати дію «$1» на «$2»",
+	"bs-extendedstatistics-collection-fatalstatus-permissiondenieduserisallowed": "Користувачу не дозволено виконувати дію «$1»",
+	"bs-extendedstatistics-collection-fatalstatus-notitle": "Об'єкт «Назва» обов'язковий",
+	"snapshotsstatistics": "Статистика знімків",
+	"bs-extendedstatistics-collection-var-type": "Тип джерела",
+	"bs-extendedstatistics-collection-var-timestampcreated": "Дата створення",
+	"bs-statistics-button-label-apply": "Застосувати фільтри",
+	"bs-statistics-label-bar-chart": "Стовпчикова діаграма",
+	"bs-statistics-label-line-chart": "Лінійна діаграма",
+	"bs-statistics-datasource-label": "Джерело даних",
+	"bs-statistics-aggregationmode-label": "Режим агрегації",
+	"bs-statistics-aggregationfield-label": "Поле агрегації",
+	"bs-statistics-targets-label": "Цілі"
 }
