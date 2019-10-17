@@ -16,6 +16,11 @@ class Snapshot extends UpdateTitleBase {
 		$oDP = $this->getSource()->getDocumentProvider();
 		$factory = Services::getInstance()->getBSEntityFactory();
 		$entity = $factory->newFromObject( (object)$this->params['entity'] );
+		if ( !$entity ) {
+			// possible data corruption caused by unknown error
+			// return here to keep the job queue running!
+			return;
+		}
 		foreach ( $entity->get( Entity::ATTR_COLLECTION ) as $key => $collection ) {
 			if ( !$collection instanceof Collection || !$collection->exists() ) {
 				continue;
