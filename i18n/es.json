@@ -64,5 +64,12 @@
 	"apihelp-bs-statistics-available-diagrams-store-description": "Proporciona un almacén de diagramas disponibles",
 	"right-statistic-viewspecialpage": "Acceso a estadística avanzada",
 	"bs-statistics-button-label-export": "Exportar",
-	"bs-statistics-panel-title-result": "Resultado"
+	"bs-statistics-panel-title-result": "Resultado",
+	"bs-statistics-button-label-apply": "Aplicar filtros",
+	"bs-statistics-label-bar-chart": "Gráfico de barras",
+	"bs-statistics-label-line-chart": "Gráfico de líneas",
+	"bs-statistics-datasource-label": "Fuente de datos",
+	"bs-statistics-aggregationmode-label": "Modo de totalización",
+	"bs-statistics-aggregationfield-label": "Campo de totalización",
+	"bs-statistics-targets-label": "Destinos"
 }

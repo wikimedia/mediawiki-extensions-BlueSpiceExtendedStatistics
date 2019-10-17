@@ -82,5 +82,8 @@
 	"bs-statistics-button-label-apply": "Aplicar filtros",
 	"bs-statistics-label-bar-chart": "Gráfico de barras",
 	"bs-statistics-label-line-chart": "Gráfico de linhas",
-	"bs-statistics-datasource-label": "Fontes de dados"
+	"bs-statistics-datasource-label": "Fontes de dados",
+	"bs-statistics-aggregationmode-label": "Modo de agregação",
+	"bs-statistics-aggregationfield-label": "Campo de agregação",
+	"bs-statistics-targets-label": "Alvos"
 }
