@@ -34,7 +34,10 @@ class Snapshot extends \BS\ExtendedSearch\Source\Crawler\Base {
 				$entity->get( Entity::ATTR_ID, 0 )
 			);
 
-			$this->addToJobQueue( $title, [ 'entity' => $entity->getFullData() ] );
+			$this->addToJobQueue( $title, [ 'entity' => [
+				Entity::ATTR_TYPE => $entity->get( Entity::ATTR_TYPE ),
+				Entity::ATTR_ID => $entity->get( Entity::ATTR_ID ),
+			] ] );
 		}
 	}
 
