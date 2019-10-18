@@ -25,5 +25,6 @@
 	"bs-statistics-button-label-apply": "Filtreleri uygula",
 	"bs-statistics-label-bar-chart": "Çubuk grafik",
 	"bs-statistics-label-line-chart": "Çizgi grafik",
-	"bs-statistics-datasource-label": "Veri kaynağı"
+	"bs-statistics-datasource-label": "Veri kaynağı",
+	"bs-statistics-targets-label": "Hedefler"
 }
