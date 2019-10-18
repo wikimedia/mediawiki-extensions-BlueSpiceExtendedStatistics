@@ -165,7 +165,10 @@ class Snapshot extends \BlueSpice\Entity {
 			'ExtendedStatisticsSnapshots',
 			$this->get( static::ATTR_ID, 0 )
 		);
-		$job = new Updater( $title, [ 'entity' => (array)$this->getFullData() ] );
+		$job = new Updater( $title, [ 'entity' => [
+			static::ATTR_TYPE => $this->get( static::ATTR_TYPE ),
+			static::ATTR_ID => $this->get( static::ATTR_ID ),
+		] ] );
 		try {
 			$res = $job->run();
 		} catch ( \Exception $e ) {
