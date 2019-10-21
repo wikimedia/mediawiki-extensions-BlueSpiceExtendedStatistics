@@ -76,7 +76,7 @@
 	"bs-extendedstatistics-collection-fatalstatus-permissiondeniedusercan": "L’utilisateur n’est pas autorisé à effectuer l’action « $1 » sur « $2 ».",
 	"bs-extendedstatistics-collection-fatalstatus-permissiondenieduserisallowed": "L’utilisateur n’est pas autorisé  à effectuer l’action « $1 ».",
 	"bs-extendedstatistics-collection-fatalstatus-notitle": "L’objet « Titre » est obligatoire.",
-	"apihelp-bs-extendedstatistics-collection-store-description": "Fournit un magasin (''store'') de statistiques qui peut être interrogé par des requêtes, filtré et agrégé.",
+	"apihelp-bs-extendedstatistics-collection-store-description": "Fournit un dépôt pour les statistiques qui peut être interrogé par des requêtes, filtré et agrégé.",
 	"apihelp-bs-extendedstatistics-collection-store-summary": "Fournit un magasin (''store'') de statistiques qui peut être interrogé par des requêtes, filtré et agrégé.",
 	"apihelp-bs-extendedstatistics-collection-store-param-aggregate": "Objet encodé sous forme de chaine JSON, avec des données arbitraires pour le regroupement",
 	"snapshotsstatistics": "Statistiques des instantanés",

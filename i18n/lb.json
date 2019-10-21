@@ -58,8 +58,12 @@
 	"bs-statistics-button-label-export": "Export",
 	"bs-statistics-panel-title-result": "Resultat",
 	"bs-extendedstatistics-collection-fatalstatus-unknownaction": "Onbekannt Aktioun \"$1\"",
+	"snapshotsstatistics": "Snapshot-Statistiken",
 	"extendedstatisticssnapshots": "Schnappschëss",
+	"bs-extendedstatistics-collection-var-timestampcreated": "Datum vun der Kreatioun",
 	"bs-statistics-button-label-apply": "Filteren uwenden",
+	"bs-statistics-label-bar-chart": "Balkendiagramm",
+	"bs-statistics-label-line-chart": "Linnendiagramm",
 	"bs-statistics-datasource-label": "Source vun den Donnéeën",
 	"bs-statistics-targets-label": "Ziler"
 }

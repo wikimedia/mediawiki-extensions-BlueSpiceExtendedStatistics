@@ -25,5 +25,7 @@
 	"bs-statistics-pref-excludeusers": "Ekskluder disse brugere:",
 	"bs-statistics-portlet-numberofusers": "Antal brugere",
 	"bs-statistics-portlet-numberofarticles": "Antal af indholdsider",
-	"bs-statistics-portlet-numberofusersdesc": "Statistik over antallet af brugere."
+	"bs-statistics-portlet-numberofusersdesc": "Statistik over antallet af brugere.",
+	"bs-extendedstatistics-collection-fatalstatus-unknownaction": "Ukendt handling \"$1\".",
+	"bs-extendedstatistics-collection-var-type": "Kildetype"
 }

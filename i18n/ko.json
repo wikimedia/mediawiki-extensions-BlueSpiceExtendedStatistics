@@ -51,5 +51,14 @@
 	"bs-statistics-portletconfig-periodday": "어제",
 	"right-statistic-viewspecialpage": "확장 통계에 접근합니다",
 	"bs-statistics-button-label-export": "내보내기",
-	"bs-statistics-panel-title-result": "결과"
+	"bs-statistics-panel-title-result": "결과",
+	"bs-extendedstatistics-collection-fatalstatus-unknownaction": "알 수 없는 동작 \"$1\"",
+	"bs-extendedstatistics-collection-fatalstatus-permissiondenieduserisallowed": "사용자는 \"$1\" 동작을 수행할 권한이 없습니다",
+	"snapshotsstatistics": "스냅샷 통계",
+	"extendedstatisticssnapshots": "스냅샷",
+	"bs-extendedstatistics-collection-var-timestampcreated": "만든 날짜",
+	"bs-statistics-button-label-apply": "필터 적용",
+	"bs-statistics-label-bar-chart": "막대도표",
+	"bs-statistics-label-line-chart": "선도표",
+	"bs-statistics-datasource-label": "데이터 원본"
 }
