@@ -85,7 +85,7 @@ abstract class CategoryCollector extends SnapshotDiffCollector {
 			$res = $this->readCategoryStore();
 			foreach ( $res->getRecords() as $record ) {
 				$category = Category::newFromRow( $record->getData() );
-				if ( $category instanceof  Category ) {
+				if ( $category instanceof Category ) {
 					$this->validCategories[$category->getTitle()->getDBkey()] = $category;
 				}
 			}
