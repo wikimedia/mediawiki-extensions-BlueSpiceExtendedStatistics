@@ -5,7 +5,8 @@
 			"Andriykopanytsia",
 			"Ата",
 			"Piramidion",
-			"Vlad5250"
+			"Vlad5250",
+			"Movses"
 		]
 	},
 	"bs-statistics-desc": "Модуль статистики для BlueSpice",
@@ -75,7 +76,11 @@
 	"bs-extendedstatistics-collection-fatalstatus-permissiondeniedusercan": "Користувачу не дозволено виконувати дію «$1» на «$2»",
 	"bs-extendedstatistics-collection-fatalstatus-permissiondenieduserisallowed": "Користувачу не дозволено виконувати дію «$1»",
 	"bs-extendedstatistics-collection-fatalstatus-notitle": "Об'єкт «Назва» обов'язковий",
+	"apihelp-bs-extendedstatistics-collection-store-description": "Надає сховище для даних статистики, до яких можуть бути побудовані запити, застосовані фільтри, агрегація тощо",
+	"apihelp-bs-extendedstatistics-collection-store-summary": "Надає сховище для даних статистики, до яких можуть бути побудовані запити, застосовані фільтри, агрегація тощо",
+	"apihelp-bs-extendedstatistics-collection-store-param-aggregate": "Об'єкт, закодований як рядок JSON, із допоміжними даними для агрегації",
 	"snapshotsstatistics": "Статистика знімків",
+	"extendedstatisticssnapshots": "Знімки",
 	"bs-extendedstatistics-collection-var-type": "Тип джерела",
 	"bs-extendedstatistics-collection-var-timestampcreated": "Дата створення",
 	"bs-statistics-button-label-apply": "Застосувати фільтри",
