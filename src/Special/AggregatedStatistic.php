@@ -7,9 +7,12 @@ use BlueSpice\Services;
 use BlueSpice\Special\ExtJSBase;
 use BlueSpice\ExtendedStatistics\EntityConfig\Collection;
 
-class SnapshotStatistics extends ExtJSBase {
+class AggregatedStatistic extends ExtJSBase {
 	public function __construct() {
-		parent::__construct( 'SnapshotsStatistics', 'wikiadmin', false );
+		parent::__construct(
+			'AggregatedStatistic',
+			'extendedstatistics-viewspecialpage-aggregated'
+		);
 	}
 
 	/**

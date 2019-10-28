@@ -36,6 +36,13 @@
 						"admin",
 						"maintenanceadmin"
 					]
+				},
+				"extendedstatistics-viewspecialpage-aggregated": {
+					"type": "global",
+					"roles": [
+						"admin",
+						"maintenanceadmin"
+					]
 				}
 			},
 			"EntityRegistry": {
@@ -59,21 +66,25 @@
 	],
 	"GroupPermissions": {
 		"*": {
-			"statistic-viewspecialpage": false
+			"statistic-viewspecialpage": false,
+			"extendedstatistics-viewspecialpage-aggregated": false
 		},
 		"user": {
-			"statistic-viewspecialpage": true
+			"statistic-viewspecialpage": true,
+			"extendedstatistics-viewspecialpage-aggregated": false
 		},
 		"sysop": {
-			"statistic-viewspecialpage": true
+			"statistic-viewspecialpage": true,
+			"extendedstatistics-viewspecialpage-aggregated": true
 		}
 	},
 	"AvailableRights": [
-		"statistic-viewspecialpage"
+		"statistic-viewspecialpage",
+		"extendedstatistics-viewspecialpage-aggregated"
 	],
 	"SpecialPages": {
 		"ExtendedStatistics": "SpecialExtendedStatistics",
-		"SnapshotsStatistics": "\\BlueSpice\\ExtendedStatistics\\Special\\SnapshotStatistics",
+		"AggregatedStatistic": "\\BlueSpice\\ExtendedStatistics\\Special\\AggregatedStatistic",
 		"ExtendedStatisticsSnapshots": "\\BlueSpice\\ExtendedStatistics\\Special\\Snapshot"
 	},
 	"JobClasses": {

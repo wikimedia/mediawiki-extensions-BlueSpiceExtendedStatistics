@@ -17,11 +17,11 @@ $specialPageAliases = [];
 /** English */
 $specialPageAliases['en'] = [
 	'ExtendedStatistics' => [ 'ExtendedStatistics' ],
-	'SnapshotsStatistics' => [ 'SnapshotsStatistics' ]
+	'AggregatedStatistic' => [ 'AggregatedStatistic' ]
 ];
 
 /** German (Deutsch) */
 $specialPageAliases['de'] = [
 	'ExtendedStatistics' => [ 'Erweiterte Statistik' ],
-	'SnapshotsStatistics' => [ 'SnapshotsStatistics', 'Schnappschuss-Statistik' ]
+	'AggregatedStatistic' => [ 'AggregatedStatistic', 'Aggregierte Statistik' ]
 ];
