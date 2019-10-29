@@ -27,7 +27,7 @@ class SpecialExtendedStatistics extends ExtJSBase {
 	 * Constructor of SpecialExtendedStatistics
 	 */
 	public function __construct() {
-		parent::__construct( 'ExtendedStatistics', 'read', true );
+		parent::__construct( 'ExtendedStatistics', 'statistic-viewspecialpage', true );
 	}
 
 	/**
