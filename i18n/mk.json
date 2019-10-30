@@ -65,7 +65,7 @@
 	"bs-statistics-button-label-export": "Извези",
 	"bs-statistics-panel-title-result": "Исход",
 	"bs-extendedstatistics-collection-fatalstatus-unknownaction": "Непознато дејство „$1“",
-	"snapshotsstatistics": "Статистика на снимките",
+	"aggregatedstatistic": "Статистика на снимките",
 	"extendedstatisticssnapshots": "Снимки",
 	"bs-extendedstatistics-collection-var-type": "Вид на извор",
 	"bs-extendedstatistics-collection-var-timestampcreated": "Датум на создавање",

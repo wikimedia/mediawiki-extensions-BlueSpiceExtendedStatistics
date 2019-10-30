@@ -75,7 +75,7 @@
 	"apihelp-bs-extendedstatistics-collection-store-description": "Fornece um armazenamento para estatísticas que podem ser consultadas, filtradas e agregadas",
 	"apihelp-bs-extendedstatistics-collection-store-summary": "Fornece um armazenamento para estatísticas que podem ser consultadas, filtradas e agregadas",
 	"apihelp-bs-extendedstatistics-collection-store-param-aggregate": "Objeto codificado como texto JSON com dados arbitrários para a agregação",
-	"snapshotsstatistics": "Estatísticas de instantâneos",
+	"aggregatedstatistic": "Estatísticas de instantâneos",
 	"extendedstatisticssnapshots": "Instantâneos",
 	"bs-extendedstatistics-collection-var-type": "Tipo de fonte",
 	"bs-extendedstatistics-collection-var-timestampcreated": "Data de criação",
