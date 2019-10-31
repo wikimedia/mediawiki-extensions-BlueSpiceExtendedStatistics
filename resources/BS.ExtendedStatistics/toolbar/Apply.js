@@ -113,7 +113,8 @@ Ext.define( 'BS.ExtendedStatistics.toolbar.Apply', {
 						extraParams: {
 							aggregate: Ext.encode( aggregation ),
 							filter: Ext.encode( Ext.Array.merge( generalFilters, seriesFilters) ),
-							sort: Ext.encode( me.sort )
+							sort: Ext.encode( me.sort ),
+							limit: -1
 						}
 					},
 					fields: responseFields,
