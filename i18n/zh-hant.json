@@ -91,5 +91,6 @@
 	"bs-statistics-datasource-label": "資料來源",
 	"bs-statistics-aggregationmode-label": "合計模式",
 	"bs-statistics-aggregationfield-label": "合計欄位",
+	"bs-statistics-aggregationtype-label": "合計類型",
 	"bs-statistics-targets-label": "目標"
 }

@@ -63,6 +63,8 @@
 	"right-statistic-viewspecialpage": "Tillgång till utökad statistik",
 	"bs-statistics-button-label-export": "Exportera",
 	"bs-statistics-panel-title-result": "Resultat",
+	"action-extendedstatistics-viewspecialpage-aggregated": "komma åt specialsidan [[Special:AggregatedStatistic]]",
+	"right-extendedstatistics-viewspecialpage-aggregated": "Komma åt specialsidan [[Special:AggregatedStatistic]]",
 	"bs-extendedstatistics-collection-var-type": "Källtyp",
 	"bs-statistics-button-label-apply": "Tillämpa filter",
 	"bs-statistics-label-bar-chart": "Stapeldiagram",

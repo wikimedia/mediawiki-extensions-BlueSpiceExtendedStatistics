@@ -75,5 +75,6 @@
 	"bs-statistics-datasource-label": "Извор на податоци",
 	"bs-statistics-aggregationmode-label": "Агрегациски режим",
 	"bs-statistics-aggregationfield-label": "Агрегациско поле",
+	"bs-statistics-aggregationtype-label": "Вид на агрегација",
 	"bs-statistics-targets-label": "Цели"
 }

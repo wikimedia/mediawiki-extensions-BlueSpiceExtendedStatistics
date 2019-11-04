@@ -88,5 +88,6 @@
 	"bs-statistics-datasource-label": "مصدر البيانات",
 	"bs-statistics-aggregationmode-label": "وضع التجميع",
 	"bs-statistics-aggregationfield-label": "حقل التجميع",
+	"bs-statistics-aggregationtype-label": "نوع التجميع",
 	"bs-statistics-targets-label": "الأهداف"
 }

@@ -91,5 +91,6 @@
 	"bs-statistics-datasource-label": "Source de données",
 	"bs-statistics-aggregationmode-label": "Mode d’agrégation",
 	"bs-statistics-aggregationfield-label": "Champ d’agrégation",
+	"bs-statistics-aggregationtype-label": "Type d’agrégation",
 	"bs-statistics-targets-label": "Cibles"
 }
