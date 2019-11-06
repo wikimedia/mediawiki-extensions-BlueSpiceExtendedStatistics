@@ -65,5 +65,7 @@
 	"apihelp-bs-statistics-search-options-store-summary": "אספקת מאגר של אפשרויות חיפוש זמינות",
 	"right-statistic-viewspecialpage": "גישה לסטטיסטיקה מורחבת",
 	"bs-statistics-button-label-export": "ייצוא",
-	"bs-statistics-panel-title-result": "תוצאה"
+	"bs-statistics-panel-title-result": "תוצאה",
+	"bs-extendedstatistics-collection-fatalstatus-unknownaction": "הפעולה \"$1\" אינה ידועה",
+	"bs-extendedstatistics-collection-fatalstatus-notitle": "אובייקט \"Title\" נדרש"
 }

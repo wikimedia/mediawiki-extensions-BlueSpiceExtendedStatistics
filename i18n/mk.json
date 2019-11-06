@@ -61,5 +61,20 @@
 	"action-statistic-viewspecialpage": "пристап до проширена статистика",
 	"right-statistic-viewspecialpage": "Пристап до проширена статистика",
 	"bs-statistics-button-label-export": "Извези",
-	"bs-statistics-panel-title-result": "Исход"
+	"bs-statistics-panel-title-result": "Исход",
+	"apihelp-bs-statistics-tasks-description": "Дава заеднички задачи за статистики",
+	"apihelp-bs-statistics-tasks-summary": "Дава заеднички задачи за статистики",
+	"bs-extendedstatistics-collection-fatalstatus-unknownaction": "Непознато дејство „$1“",
+	"aggregatedstatistic": "Статистика на снимките",
+	"extendedstatisticssnapshots": "Снимки",
+	"bs-extendedstatistics-collection-var-type": "Вид на извор",
+	"bs-extendedstatistics-collection-var-timestampcreated": "Датум на создавање",
+	"bs-statistics-button-label-apply": "Примени филтри",
+	"bs-statistics-label-bar-chart": "Столбен дијаграм",
+	"bs-statistics-label-line-chart": "Линиски дијаграм",
+	"bs-statistics-datasource-label": "Извор на податоци",
+	"bs-statistics-aggregationmode-label": "Агрегациски режим",
+	"bs-statistics-aggregationfield-label": "Агрегациско поле",
+	"bs-statistics-aggregationtype-label": "Вид на агрегација",
+	"bs-statistics-targets-label": "Цели"
 }

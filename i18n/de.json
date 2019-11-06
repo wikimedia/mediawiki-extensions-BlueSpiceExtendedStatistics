@@ -4,7 +4,8 @@
 			"Stephan Muggli <muggli@hallowelt.biz>",
 			"Metalhead64",
 			"Mglaser",
-			"Hwboehm"
+			"Hwboehm",
+			"Ferdinand0101"
 		]
 	},
 	"bs-statistics-desc": "Statistik-Modul für BlueSpice",
@@ -69,5 +70,10 @@
 	"right-statistic-viewspecialpage": "Zugriff auf erweiterte Statistiken",
 	"bs-statistics-button-label-export": "Export",
 	"bs-statistics-panel-title-result": "Ergebnis",
-	"action-statistic-viewspecialpage": "auf erweiterte Statistiken zuzugreifen"
+	"action-statistic-viewspecialpage": "auf erweiterte Statistiken zuzugreifen",
+	"bs-statistics-label-bar-chart": "Balkendiagramm",
+	"bs-statistics-label-line-chart": "Liniendiagramm",
+	"bs-statistics-datasource-label": "Datenquelle",
+	"bs-statistics-aggregationmode-label": "Aggregations Modus",
+	"bs-statistics-aggregationfield-label": "Aggregations Feld"
 }
