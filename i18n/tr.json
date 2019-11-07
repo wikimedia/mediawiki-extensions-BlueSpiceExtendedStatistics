@@ -1,7 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"Sayginer"
+			"Sayginer",
+			"Grkn gll",
+			"BaRaN6161 TURK"
 		]
 	},
 	"prefs-statistics": "Genişletilmiş istatistikler",
@@ -20,5 +22,12 @@
 	"bs-statistics-portlet-numberofusers": "Kullanıcı sayısı",
 	"bs-statistics-portlet-numberofedits": "Değişiklik sayısı",
 	"bs-statistics-portlet-numberofpages": "Sayfa sayısı",
-	"bs-statistics-portletconfig-periodday": "Dün"
+	"bs-statistics-portletconfig-periodday": "Dün",
+	"action-extendedstatistics-viewspecialpage-aggregated": "özel sayfaya eriş [[Special:AggregatedStatistic]]",
+	"right-extendedstatistics-viewspecialpage-aggregated": "Özel sayfaya erişin [[Special:AggregatedStatistic]]",
+	"bs-statistics-button-label-apply": "Filtreleri uygula",
+	"bs-statistics-label-bar-chart": "Çubuk grafik",
+	"bs-statistics-label-line-chart": "Çizgi grafik",
+	"bs-statistics-datasource-label": "Veri kaynağı",
+	"bs-statistics-targets-label": "Hedefler"
 }

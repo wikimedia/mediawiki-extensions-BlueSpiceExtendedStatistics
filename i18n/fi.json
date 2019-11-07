@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Pyscowicz"
+			"Pyscowicz",
+			"Silvonen"
 		]
 	},
 	"bs-statistics-diagram": "Kysely",
@@ -18,5 +19,6 @@
 	"bs-statistics-label-creator": "Luoja",
 	"bs-statistics-label-time": "Aika",
 	"bs-statistics-filter-category": "Luokka",
-	"bs-statistics-portletconfig-periodday": "Eilen"
+	"bs-statistics-portletconfig-periodday": "Eilen",
+	"bs-statistics-panel-title-result": "Tulos"
 }

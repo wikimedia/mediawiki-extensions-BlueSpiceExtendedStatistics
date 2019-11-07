@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Vitorvicentevalente",
-			"Hamilton Abreu"
+			"Hamilton Abreu",
+			"Mansil alfalb"
 		]
 	},
 	"bs-statistics-desc": "Módulo de estatísticas para BlueSpice",
@@ -67,5 +68,24 @@
 	"right-statistic-viewspecialpage": "Aceder às estatísticas detalhadas",
 	"bs-statistics-button-label-export": "Exportar",
 	"bs-statistics-panel-title-result": "Resultado",
-	"action-statistic-viewspecialpage": "aceder às estatísticas detalhadas"
+	"action-statistic-viewspecialpage": "aceder às estatísticas detalhadas",
+	"bs-extendedstatistics-collection-fatalstatus-unknownaction": "Operação desconhecida \"$1\"",
+	"bs-extendedstatistics-collection-fatalstatus-permissiondeniedusercan": "O utilizador não tem permissão para executar a operação \"$1\" em \"$2\"",
+	"bs-extendedstatistics-collection-fatalstatus-permissiondenieduserisallowed": "O utilizador não tem permissão para executar a operação \"$1\"",
+	"bs-extendedstatistics-collection-fatalstatus-notitle": "O objeto \"Título\" é obrigatório",
+	"apihelp-bs-extendedstatistics-collection-store-description": "Fornece um armazenamento para estatísticas que podem ser consultadas, filtradas e agregadas",
+	"apihelp-bs-extendedstatistics-collection-store-summary": "Fornece um armazenamento para estatísticas que podem ser consultadas, filtradas e agregadas",
+	"apihelp-bs-extendedstatistics-collection-store-param-aggregate": "Objeto codificado como texto JSON com dados arbitrários para a agregação",
+	"aggregatedstatistic": "Estatísticas de instantâneos",
+	"extendedstatisticssnapshots": "Instantâneos",
+	"bs-extendedstatistics-collection-var-type": "Tipo de fonte",
+	"bs-extendedstatistics-collection-var-timestampcreated": "Data de criação",
+	"bs-statistics-button-label-apply": "Aplicar filtros",
+	"bs-statistics-label-bar-chart": "Gráfico de barras",
+	"bs-statistics-label-line-chart": "Gráfico de linhas",
+	"bs-statistics-datasource-label": "Fonte de dados",
+	"bs-statistics-aggregationmode-label": "Modo de agregação",
+	"bs-statistics-aggregationfield-label": "Campo de agregação",
+	"bs-statistics-aggregationtype-label": "Tipo de agregação",
+	"bs-statistics-targets-label": "Alvos"
 }
