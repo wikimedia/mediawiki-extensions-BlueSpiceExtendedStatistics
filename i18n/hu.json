@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Csega",
-			"R-Joe"
+			"R-Joe",
+			"Dj"
 		]
 	},
 	"bs-statistics-mode": "Mód",
@@ -13,7 +14,7 @@
 	"bs-statistics-finish": "Diagram létrehozása",
 	"bs-statistics-label-name": "Név",
 	"bs-statistics-label-registration": "Regisztráció",
-	"bs-statistics-diag-number-of-pages": "Lapok száma",
+	"bs-statistics-diag-number-of-pages": "Létrehozott lapok száma",
 	"bs-statistics-label-page": "Lap",
 	"bs-statistics-label-count": "Számláló",
 	"bs-statistics-label-time": "Idő",
