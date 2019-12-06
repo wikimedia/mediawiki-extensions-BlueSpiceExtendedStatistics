@@ -5,7 +5,8 @@
 			"Phenolla",
 			"A Chinese Wikipedian",
 			"VulpesVulpes825",
-			"佛壁灯"
+			"佛壁灯",
+			"沈澄心"
 		]
 	},
 	"bs-statistics-desc": "用于BlueSpice的统计模块",
@@ -70,5 +71,6 @@
 	"right-statistic-viewspecialpage": "访问扩充统计",
 	"bs-statistics-button-label-export": "导出",
 	"bs-statistics-panel-title-result": "结果",
-	"action-statistic-viewspecialpage": "访问扩充统计"
+	"action-statistic-viewspecialpage": "访问扩充统计",
+	"bs-statistics-targets-label": "目标"
 }

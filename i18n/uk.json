@@ -91,5 +91,6 @@
 	"bs-statistics-datasource-label": "Джерело даних",
 	"bs-statistics-aggregationmode-label": "Режим агрегації",
 	"bs-statistics-aggregationfield-label": "Поле агрегації",
-	"bs-statistics-targets-label": "Цілі"
+	"bs-statistics-targets-label": "Цілі",
+	"bs-statistics-aggregationtype-label": "Тип агрегації"
 }
