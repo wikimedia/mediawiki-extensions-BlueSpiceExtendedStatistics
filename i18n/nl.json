@@ -60,5 +60,9 @@
 	"bs-statistics-portlet-numberofpagesdesc": "Statistiek van het aantal pagina's.",
 	"bs-statistics-portletconfig-periodday": "Gisteren",
 	"bs-statistics-button-label-export": "Exporteren",
-	"bs-statistics-panel-title-result": "Resultaat"
+	"bs-statistics-panel-title-result": "Resultaat",
+	"action-extendedstatistics-viewspecialpage-aggregated": "de speciale pagina [[Special:AggregatedStatistic]] te bekijken",
+	"right-extendedstatistics-viewspecialpage-aggregated": "De speciale pagina [[Special:AggregatedStatistic]] bekijken",
+	"bs-extendedstatistics-collection-var-timestampcreated": "Aanmaakdatum",
+	"bs-statistics-button-label-apply": "Filters toepassen"
 }
