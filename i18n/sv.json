@@ -62,6 +62,8 @@
 	"bs-statistics-portletconfig-periodday": "Igår",
 	"apihelp-bs-statistics-tasks-description": "Bjuder på gemensamma uppgifter för statistik",
 	"apihelp-bs-statistics-tasks-summary": "Bjuder på gemensamma uppgifter för statistik",
+	"apihelp-bs-statistics-available-diagrams-store-description": "Bjuder ett lager med tillgängliga diagram",
+	"apihelp-bs-statistics-available-diagrams-store-summary": "Bjuder ett lager med tillgängliga diagram",
 	"action-statistic-viewspecialpage": "Tillgång till utökad statistik",
 	"right-statistic-viewspecialpage": "Tillgång till utökad statistik",
 	"bs-statistics-button-label-export": "Exportera",
