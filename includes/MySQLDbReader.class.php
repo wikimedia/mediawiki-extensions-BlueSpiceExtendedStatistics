@@ -58,7 +58,12 @@ class MySQLDbReader extends StatsDataProvider {
 
 		$sql = $this->match;
 
-		$sql = str_replace( "@period", "BETWEEN '" . $interval->getStartTS( "YmdHis" ) . "' AND '" . $interval->getEndTS( "YmdHis" ) . "' ", $sql );
+		$sql = str_replace(
+			"@period",
+			"BETWEEN '" . $interval->getStartTS( "YmdHis" ) . "' AND '"
+				. $interval->getEndTS( "YmdHis" ) . "' ",
+			$sql
+		);
 		$sql = str_replace( "@start", " '" . $interval->getStartTS( "YmdHis" ) . "' ", $sql );
 		$sql = str_replace( "@end", " '" . $interval->getEndTS( "YmdHis" ) . "' ", $sql );
 
@@ -93,7 +98,12 @@ class MySQLDbReader extends StatsDataProvider {
 
 		$sql = $this->match;
 
-		$sql = str_replace( "@period", "BETWEEN '" . $interval->getStartTS( "YmdHis" ) . "' AND '" . $interval->getEndTS( "YmdHis" ) . "' ", $sql );
+		$sql = str_replace(
+			"@period",
+			"BETWEEN '" . $interval->getStartTS( "YmdHis" ) . "' AND '"
+				. $interval->getEndTS( "YmdHis" ) . "' ",
+			$sql
+		);
 		$sql = str_replace( "@start", " '" . $interval->getStartTS( "YmdHis" ) . "' ", $sql );
 		$sql = str_replace( "@end", " '" . $interval->getEndTS( "YmdHis" ) . "' ", $sql );
 		// echo '<br>'.$sql;
@@ -102,6 +112,7 @@ class MySQLDbReader extends StatsDataProvider {
 			return $uniqueValues;
 		}
 
+		//phpcs:ignore MediaWiki.ControlStructures.AssignmentInControlStructures.AssignmentInControlStructures
 		while ( $row = $res->fetch_array() ) {
 			$rowArr = [];
 			for ( $i = 0; $i < $count; $i++ ) {

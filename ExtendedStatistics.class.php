@@ -159,7 +159,8 @@ class ExtendedStatistics extends BsExtensionMW {
 	}
 
 	/**
-	 * Registers a tag "bs:infobox" with the parser. for legacy reasons witn HalloWiki, also "infobox" is supported. Called by ParserFirstCallInit hook
+	 * Registers a tag "bs:infobox" with the parser. for legacy reasons witn HalloWiki,
+	 * also "infobox" is supported. Called by ParserFirstCallInit hook
 	 * @param Parser &$parser MediaWiki parser object
 	 * @return bool allow other hooked methods to be executed. always true
 	 */
@@ -207,8 +208,15 @@ class ExtendedStatistics extends BsExtensionMW {
 
 		$sPercent = sprintf( "%0.1f", $fPercent * 100 );
 
-		$sOut = '<div style="background-color:green;border:2px solid #DDDDDD;width:' . $iWidthGreen . 'px;height:25px;float:left;color:#DDDDDD;text-align:center;border-right:0px;text-weight:bold;vertical-align:middle;">' . $sPercent . '%</div>';
-		$sOut .= '<div style="border:2px solid #DDDDDD;border-left:0px;width:' . $iWidthRemain . 'px;height:25px;float:left;"></div>';
+		$sOut = '<div style="background-color:green;border:2px solid #DDDDDD;width:'
+			. $iWidthGreen
+			. 'px;height:25px;float:left;color:#DDDDDD;text-align:center;border-right:'
+			. '0px;text-weight:bold;vertical-align:middle;">'
+			. $sPercent
+			. '%</div>';
+		$sOut .= '<div style="border:2px solid #DDDDDD;border-left:0px;width:'
+			. $iWidthRemain
+			. 'px;height:25px;float:left;"></div>';
 
 		return $sOut;
 	}
@@ -221,7 +229,8 @@ class ExtendedStatistics extends BsExtensionMW {
 	 * @param bool $bIsDefault default
 	 * @return bool always true to keep hook alive
 	 */
-	public function onBSDashboardsAdminDashboardPortalConfig( $oCaller, &$aPortalConfig, $bIsDefault ) {
+	public function onBSDashboardsAdminDashboardPortalConfig( $oCaller, &$aPortalConfig,
+		$bIsDefault ) {
 		$this->getPortalConfig( $aPortalConfig );
 
 		return true;
@@ -265,6 +274,11 @@ class ExtendedStatistics extends BsExtensionMW {
 		return true;
 	}
 
+	/**
+	 *
+	 * @param array &$aPortalConfig
+	 * @return bool
+	 */
 	public function getPortalConfig( &$aPortalConfig ) {
 		$aPortalConfig[1][] = [
 			'type'  => 'BS.Statistics.StatisticsPortletNumberOfUsers',
@@ -298,6 +312,11 @@ class ExtendedStatistics extends BsExtensionMW {
 		return true;
 	}
 
+	/**
+	 *
+	 * @param array &$aPortlets
+	 * @return bool
+	 */
 	public function getPortalPortlets( &$aPortlets ) {
 		$aPortlets[] = [
 			'type'  => 'BS.Statistics.StatisticsPortletNumberOfUsers',

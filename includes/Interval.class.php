@@ -26,7 +26,12 @@ class Interval {
 	 * @return object Interval
 	 */
 	public static function getIntervalsFromDiagram( $oDiagram ) {
-		return self::getIntervals( $oDiagram->getActualGrain(), $oDiagram->getStartTime(), $oDiagram->getEndTime(), $oDiagram->getModLabel() );
+		return self::getIntervals(
+			$oDiagram->getActualGrain(),
+			$oDiagram->getStartTime(),
+			$oDiagram->getEndTime(),
+			$oDiagram->getModLabel()
+		);
 	}
 
 	/**
@@ -37,7 +42,8 @@ class Interval {
 	 * @param string $modLabel Date format item, e.g. "M" for "Jan, Feb"
 	 * @return Interval
 	 */
-	public static function getIntervals( $step = "W", $offset = '05/01/2007', $limit = '01/31/2009', $modLabel = false ) {
+	public static function getIntervals( $step = "W", $offset = '05/01/2007',
+		$limit = '01/31/2009', $modLabel = false ) {
 		$intervals = [];
 		$starttime = strtotime( $offset );
 		$endtime = strtotime( $limit );
