@@ -94,6 +94,11 @@ abstract class CategoryCollector extends SnapshotDiffCollector {
 		return $this->validCategories;
 	}
 
+	/**
+	 *
+	 * @param Title $title
+	 * @return array
+	 */
 	protected function getCategoriesForTitle( Title $title ) {
 		if ( !$title instanceof Title ) {
 			return [];

@@ -75,7 +75,7 @@ abstract class BsSelectFilter extends BsStatisticsFilter {
 		return $this->aLabelledAvailableValues;
 	}
 
-	/*
+	/**
 	 * Returns description of active filter
 	 * @return string
 	 */
@@ -96,6 +96,10 @@ abstract class BsSelectFilter extends BsStatisticsFilter {
 		$this->aActiveValues = $wgRequest->getArray( $this->getParamKey(), [] );
 	}
 
+	/**
+	 *
+	 * @param \stdClass $oTaskData
+	 */
 	public function getValueFromTaskData( $oTaskData ) {
 		if ( isset( $oTaskData->{$this->getParamKey()} ) ) {
 			$this->aActiveValues = $oTaskData->{$this->getParamKey()};

@@ -11,10 +11,17 @@ use BlueSpice\Tests\BSApiTasksTestBase;
  */
 class BSApiStatisticsTasksTest extends BSApiTasksTestBase {
 
+	/**
+	 *
+	 * @return string
+	 */
 	protected function getModuleName() {
 		return 'bs-statistics-tasks';
 	}
 
+	/**
+	 * @covers \BSApiStatisticsTasks::task_getData
+	 */
 	public function testGetData() {
 		$oData = $this->executeTask(
 			'getData',

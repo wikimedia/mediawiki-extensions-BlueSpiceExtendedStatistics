@@ -71,7 +71,7 @@ class BsFilterCategory extends BsMultiSelectFilter {
 		// TODO MRG (22.12.10 01:19): Greift auf MW zu
 		$oDbr = wfGetDB( DB_REPLICA );
 		$rRes = $oDbr->select( 'categorylinks', 'distinct cl_to', '', '', [ 'ORDER BY' => 'cl_to ASC' ] );
-		while ( $oRow = $rRes->fetchObject() ) {
+		foreach ( $rRes as $oRow ) {
 			$aCategories[$oRow->cl_to] = $oRow->cl_to;
 		}
 		return $aCategories;
