@@ -4,6 +4,10 @@ namespace BlueSpice\ExtendedStatistics\ConfigDefinition;
 
 class MaxNumberOfIntervals extends \BlueSpice\ConfigDefinition\IntSetting {
 
+	/**
+	 *
+	 * @return string[]
+	 */
 	public function getPaths() {
 		return [
 			static::MAIN_PATH_FEATURE . '/' . static::FEATURE_DATA_ANALYSIS . '/BlueSpiceExtendedStatistics',
@@ -12,6 +16,10 @@ class MaxNumberOfIntervals extends \BlueSpice\ConfigDefinition\IntSetting {
 		];
 	}
 
+	/**
+	 *
+	 * @return string
+	 */
 	public function getLabelMessageKey() {
 		return 'bs-statistics-pref-maxnumberofintervals';
 	}

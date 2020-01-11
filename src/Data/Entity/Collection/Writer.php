@@ -24,6 +24,11 @@ class Writer extends \BlueSpice\Data\Entity\Writer {
 		throw new Exception( 'Removing entity store is not supported yet' );
 	}
 
+	/**
+	 *
+	 * @param Entity $entity
+	 * @return Status
+	 */
 	public function writeEntity( Entity $entity ) {
 	}
 

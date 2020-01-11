@@ -30,5 +30,5 @@ abstract class StatsDataProvider {
 	 * @param Interval $oInterval
 	 * @return int Number of occurrences
 	 */
-	abstract function countInInterval( $oInterval );
+	abstract public function countInInterval( $oInterval );
 }

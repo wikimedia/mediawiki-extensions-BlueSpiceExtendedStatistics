@@ -75,7 +75,7 @@ class BsFilterNamespace extends BsMultiSelectFilter {
 		return $this->aLabelledAvailableValues;
 	}
 
-	/*
+	/**
 	 * Returns description of active filter
 	 * @return string
 	 */

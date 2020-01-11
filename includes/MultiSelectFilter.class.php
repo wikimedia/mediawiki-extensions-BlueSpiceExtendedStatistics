@@ -40,7 +40,7 @@ abstract class BsMultiSelectFilter extends BsSelectFilter {
 		$this->aActiveValues = $wgRequest->getArray( $this->getParamKey(), [] );
 	}
 
-	/*
+	/**
 	 * Returns description of active filter
 	 * @return string
 	 */

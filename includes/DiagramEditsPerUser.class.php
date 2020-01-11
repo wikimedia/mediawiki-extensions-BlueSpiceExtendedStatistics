@@ -64,7 +64,8 @@ class BsDiagramEditsPerUser extends BsDiagram {
 											)
 											AND NOT user_name IN (@BsFilterUsers)
 									) as y";
-		// $this->sListLabel = array(wfMessage( 'label-article')->text(), wfMessage( 'label-creator')->text());
+		// $this->sListLabel = array(wfMessage( 'label-article')->text(),
+		// wfMessage( 'label-creator')->text());
 		$this->sMode = BsDiagram::MODE_ABSOLUTE;
 
 		$this->addFilter( new BsFilterNamespace( $this, [ 0 ] ) );

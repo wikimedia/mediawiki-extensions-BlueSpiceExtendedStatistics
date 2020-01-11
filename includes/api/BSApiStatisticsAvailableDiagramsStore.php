@@ -1,6 +1,11 @@
 <?php
 
 class BSApiStatisticsAvailableDiagramsStore extends BSApiExtJSStoreBase {
+	/**
+	 *
+	 * @param string $sQuery
+	 * @return \stdClass[]
+	 */
 	protected function makeData( $sQuery = '' ) {
 		$aData = [];
 

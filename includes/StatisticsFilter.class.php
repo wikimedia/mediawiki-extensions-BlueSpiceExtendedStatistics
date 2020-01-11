@@ -70,7 +70,7 @@ abstract class BsStatisticsFilter {
 	 */
 	abstract public function getSql();
 
-	/*
+	/**
 	 * Returns description of active filter
 	 * @return string
 	 */

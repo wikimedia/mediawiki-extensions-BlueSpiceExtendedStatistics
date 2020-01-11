@@ -52,7 +52,8 @@ class BsDiagramNumberOfEdits extends BsDiagram {
 								)
 								AND NOT rev_user_text IN (@BsFilterUsers)
 								AND @BsFilterCategory";
-		// $this->sListLabel = array(wfMessage( 'label-article')->text(), wfMessage( 'label-creator')->text());
+		// $this->sListLabel = array(wfMessage( 'label-article')->text(),
+		// wfMessage( 'label-creator')->text());
 		$this->sMode = BsDiagram::MODE_ABSOLUTE;
 
 		$this->addFilter( new BsFilterNamespace( $this, [ 0 ] ) );

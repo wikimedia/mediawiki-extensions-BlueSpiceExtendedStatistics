@@ -32,7 +32,8 @@ class SpecialExtendedStatistics extends ExtJSBase {
 
 	/**
 	 * Renders special page output.
-	 * @param string $par Name of the article, who's review should be edited, or user whos review should be displayed.
+	 * @param string $par Name of the article, who's review should be edited, or user
+	 * whos review should be displayed.
 	 * @return bool Allow other hooked methods to be executed. always true.
 	 * @throws PermissionsError
 	 */
@@ -71,7 +72,11 @@ class SpecialExtendedStatistics extends ExtJSBase {
 		$sFileName = wfTimestampNow();
 		$sFileExt = '.svg';
 
-		$oStatus = BsFileSystemHelper::saveToCacheDirectory( $sFileName . $sFileExt, $sData, 'Statistics' );
+		$oStatus = BsFileSystemHelper::saveToCacheDirectory(
+			$sFileName . $sFileExt,
+			$sData,
+			'Statistics'
+		);
 		if ( !$oStatus->isGood() ) {
 			echo $oStatus->getMessage();
 			return false;
@@ -100,7 +105,9 @@ class SpecialExtendedStatistics extends ExtJSBase {
 		}
 
 		$this->getRequest()->response()->header( "Content-Type:image/png" );
-		$this->getRequest()->response()->header( "Content-Disposition:attachment; filename={$sFileName}{$sFileExt}" );
+		$this->getRequest()->response()->header(
+			"Content-Disposition:attachment; filename={$sFileName}{$sFileExt}"
+		);
 		readfile( $sCacheDir . '/' . $sFileName . $sFileExt );
 		unlink( $sCacheDir . '/' . $sFileName . $sFileExt );
 		return true;
@@ -147,6 +154,10 @@ class SpecialExtendedStatistics extends ExtJSBase {
 		return [ 'ext.bluespice.statistics' ];
 	}
 
+	/**
+	 *
+	 * @return array
+	 */
 	protected function getJSVars() {
 		$bAllowPNGExport = false;
 		// Temporarely disable PNG export, ticket #10472

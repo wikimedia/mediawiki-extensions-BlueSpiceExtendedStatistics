@@ -1,7 +1,13 @@
 <?php
 
+use BlueSpice\Api\Response\Standard;
+
 class BSApiStatisticsTasks extends BSApiTasksBase {
 
+	/**
+	 *
+	 * @var array
+	 */
 	protected $aTasks = [
 		'getData' => [
 			'params' => [
@@ -43,12 +49,22 @@ class BSApiStatisticsTasks extends BSApiTasksBase {
 		]
 	];
 
+	/**
+	 *
+	 * @return string
+	 */
 	protected function getRequiredTaskPermissions() {
 		return [
 			'getData' => [ 'read' ]
 		];
 	}
 
+	/**
+	 *
+	 * @param \stdClass $oTaskData
+	 * @param array $aParams
+	 * @return Standard
+	 */
 	public function task_getData( $oTaskData, $aParams ) {
 		$oResponse = $this->makeStandardReturn();
 
@@ -69,20 +85,23 @@ class BSApiStatisticsTasks extends BSApiTasksBase {
 		}
 
 		if ( !array_key_exists( $sGrain, $this->getConfig()->get( 'StatisticsAvailableGrains' ) ) ) {
-			$oResponse->errors['InputDepictionGrain'] = wfMessage( 'bs-statistics-err-unknowngrain' )->plain();
+			$oResponse->errors['InputDepictionGrain']
+				= wfMessage( 'bs-statistics-err-unknowngrain' )->plain();
 		}
 
 		if ( empty( $sFrom ) ) {
 			$oResponse->errors['inputFrom'] = wfMessage( 'bs-statistics-err-emptyinput' )->plain();
 		}
-		if ( !$oFrom = DateTime::createFromFormat( 'd.m.Y', $sFrom ) ) {
+		$oFrom = DateTime::createFromFormat( 'd.m.Y', $sFrom );
+		if ( !$oFrom ) {
 			$oResponse->errors['inputFrom'] = wfMessage( 'bs-statistics-err-invaliddate' )->plain();
 		}
 
 		if ( empty( $sTo ) ) {
 			$oResponse->errors['inputTo'] = wfMessage( 'bs-statistics-err-emptyinput' )->plain();
 		}
-		if ( !$oTo = DateTime::createFromFormat( 'd.m.Y', $sFrom ) ) {
+		$oTo = DateTime::createFromFormat( 'd.m.Y', $sFrom );
+		if ( !$oTo ) {
 			$oResponse->errors['inputTo'] = wfMessage( 'bs-statistics-err-invaliddate' )->plain();
 		}
 		if ( $oTo > new DateTime() ) {
@@ -90,19 +109,23 @@ class BSApiStatisticsTasks extends BSApiTasksBase {
 		}
 
 		if ( isset( $oFrom ) && isset( $oTo ) && $oFrom > $oTo ) {
-			$oResponse->errors['inputTo'] = wfMessage( 'bs-statistics-err-invalidtofromrelation' )->plain();
+			$oResponse->errors['inputTo']
+				= wfMessage( 'bs-statistics-err-invalidtofromrelation' )->plain();
 		}
 
 		if ( empty( $sMode ) ) {
-			$oResponse->errors['rgInputDepictionMode'] = wfMessage( 'bs-statistics-err-emptyinput' )->plain();
+			$oResponse->errors['rgInputDepictionMode']
+				= wfMessage( 'bs-statistics-err-emptyinput' )->plain();
 		}
 		if ( !in_array( $sMode, [ 'absolute', 'aggregated', 'list' ] ) ) {
-			$oResponse->errors['rgInputDepictionMode'] = wfMessage( 'bs-statistics-err-unknownmode' )->plain();
+			$oResponse->errors['rgInputDepictionMode']
+				= wfMessage( 'bs-statistics-err-unknownmode' )->plain();
 		}
 		if ( !isset( $oResponse->errors['inputDiagrams'] )
 			&& $sMode == 'list'
 			&& !$aAvailableDiagrams[$sDiagram]->isListable() ) {
-			$oResponse->errors['rgInputDepictionMode'] = wfMessage( 'bs-statistics-err-modeunsupported' )->plain();
+			$oResponse->errors['rgInputDepictionMode']
+				= wfMessage( 'bs-statistics-err-modeunsupported' )->plain();
 		}
 
 		if ( !empty( $oResponse->errors ) ) {
@@ -162,7 +185,12 @@ class BSApiStatisticsTasks extends BSApiTasksBase {
 		}
 
 		$oReader->match = $sql;
-		$oDiagram->setData( BsCharting::getDataPerDateInterval( $oReader, $oDiagram->getMode(), $intervals, $oDiagram->isListable() ) );
+		$oDiagram->setData( BsCharting::getDataPerDateInterval(
+			$oReader,
+			$oDiagram->getMode(),
+			$intervals,
+			$oDiagram->isListable()
+		) );
 
 		if ( $oDiagram->isList() ) {
 			BsCharting::prepareList( $oDiagram, $oReader );
@@ -237,6 +265,11 @@ class BSApiStatisticsTasks extends BSApiTasksBase {
 		return $oResponse;
 	}
 
+	/**
+	 *
+	 * @param string $sValue
+	 * @return bool
+	 */
 	protected function isInt( $sValue ) {
 		if ( is_numeric( $sValue ) && gettype( $sValue + 0 ) === 'integer' ) {
 			return true;

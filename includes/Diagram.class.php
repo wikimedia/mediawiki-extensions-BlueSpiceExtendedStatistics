@@ -503,6 +503,10 @@ abstract class BsDiagram {
 		return get_class( $this );
 	}
 
+	/**
+	 *
+	 * @return bool
+	 */
 	public function getIsDefault() {
 		return $this->isDefault;
 	}
