@@ -1,6 +1,5 @@
 <?php
 
-
 require_once dirname( dirname( dirname( __DIR__ ) ) ) . '/maintenance/Maintenance.php';
 
 use BlueSpice\Services;
@@ -11,6 +10,7 @@ class StatisticsSnapshotCreation extends Maintenance {
 
 	public function __construct() {
 		parent::__construct();
+		$this->requireExtension( 'BlueSpiceExtendedStatistics' );
 	}
 
 	public function execute() {
@@ -34,5 +34,5 @@ class StatisticsSnapshotCreation extends Maintenance {
 	}
 }
 
-$maintClass = "StatisticsSnapshotCreation";
+$maintClass = StatisticsSnapshotCreation::class;
 require_once RUN_MAINTENANCE_IF_MAIN;
