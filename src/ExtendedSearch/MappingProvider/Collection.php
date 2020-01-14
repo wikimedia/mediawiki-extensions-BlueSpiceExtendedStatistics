@@ -2,9 +2,9 @@
 
 namespace BlueSpice\ExtendedStatistics\ExtendedSearch\MappingProvider;
 
-use BlueSpice\ExtendedStatistics\Data\Entity\Collection\Store;
-use BlueSpice\ExtendedStatistics\Data\Entity\Collection\Schema;
 use BlueSpice\Data\FieldType;
+use BlueSpice\ExtendedStatistics\Data\Entity\Collection\Schema;
+use BlueSpice\ExtendedStatistics\Data\Entity\Collection\Store;
 
 class Collection extends \BS\ExtendedSearch\Source\MappingProvider\WikiPage {
 	const PREFIX = 'collectiondata';

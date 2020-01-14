@@ -2,10 +2,10 @@
 
 namespace BlueSpice\ExtendedStatistics\Api\Store;
 
-use FormatJson;
 use BlueSpice\Api\Store;
-use BlueSpice\ExtendedStatistics\Data\ReaderParams;
 use BlueSpice\ExtendedStatistics\Data\Entity\Collection\Store as CollectionStore;
+use BlueSpice\ExtendedStatistics\Data\ReaderParams;
+use FormatJson;
 
 class Collection extends Store {
 

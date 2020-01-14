@@ -2,13 +2,13 @@
 
 namespace BlueSpice\ExtendedStatistics;
 
-use Config;
-use BlueSpice\Services;
-use BlueSpice\EntityFactory;
-use BlueSpice\Data\RecordSet;
 use BlueSpice\Data\IRecord;
+use BlueSpice\Data\RecordSet;
+use BlueSpice\EntityFactory;
 use BlueSpice\ExtendedStatistics\Entity\Collection;
 use BlueSpice\ExtendedStatistics\Entity\Snapshot;
+use BlueSpice\Services;
+use Config;
 
 abstract class DataCollector implements IDataCollector {
 

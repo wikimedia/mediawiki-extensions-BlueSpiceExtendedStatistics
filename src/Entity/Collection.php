@@ -2,12 +2,12 @@
 
 namespace BlueSpice\ExtendedStatistics\Entity;
 
-use Status;
-use RequestContext;
-use User;
-use Title;
 use BlueSpice\Data\FieldType;
 use BlueSpice\ExtendedStatistics\Data\Entity\Collection\Schema;
+use RequestContext;
+use Status;
+use Title;
+use User;
 
 abstract class Collection extends \BlueSpice\Entity {
 

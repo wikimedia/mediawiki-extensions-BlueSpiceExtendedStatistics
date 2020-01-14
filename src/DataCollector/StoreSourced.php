@@ -2,13 +2,13 @@
 
 namespace BlueSpice\ExtendedStatistics\DataCollector;
 
-use Config;
-use BlueSpice\EntityFactory;
 use BlueSpice\Data\IStore;
-use BlueSpice\Data\RecordSet;
 use BlueSpice\Data\ReaderParams;
-use BlueSpice\ExtendedStatistics\Entity\Snapshot;
+use BlueSpice\Data\RecordSet;
+use BlueSpice\EntityFactory;
 use BlueSpice\ExtendedStatistics\DataCollector;
+use BlueSpice\ExtendedStatistics\Entity\Snapshot;
+use Config;
 
 abstract class StoreSourced extends DataCollector {
 	/**

@@ -2,15 +2,15 @@
 
 namespace BlueSpice\ExtendedStatistics;
 
-use BlueSpice\Timestamp;
-use BlueSpice\EntityFactory;
-use BlueSpice\Data\ReaderParams;
-use BlueSpice\Data\Filter;
 use BlueSpice\Data\FieldType;
+use BlueSpice\Data\Filter;
 use BlueSpice\Data\Filter\Date;
-use BlueSpice\ExtendedStatistics\Entity\Snapshot;
+use BlueSpice\Data\ReaderParams;
+use BlueSpice\EntityFactory;
 use BlueSpice\ExtendedStatistics\Data\Snapshot\Record;
+use BlueSpice\ExtendedStatistics\Entity\Snapshot;
 use BlueSpice\ExtendedStatistics\Util\SnapshotRange\Daily;
+use BlueSpice\Timestamp;
 
 class SnapshotFactory extends EntityFactory {
 

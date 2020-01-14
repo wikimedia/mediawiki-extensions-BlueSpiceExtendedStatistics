@@ -2,12 +2,12 @@
 
 namespace BlueSpice\ExtendedStatistics\DataCollector\StoreSourced;
 
-use Config;
-use BlueSpice\Services;
 use BlueSpice\Data\IStore;
 use BlueSpice\EntityFactory;
-use BlueSpice\ExtendedStatistics\SnapshotFactory;
 use BlueSpice\ExtendedStatistics\Entity\Snapshot;
+use BlueSpice\ExtendedStatistics\SnapshotFactory;
+use BlueSpice\Services;
+use Config;
 use MWNamespace;
 
 abstract class NamespaceCollector extends SnapshotDiffCollector {

@@ -105,7 +105,7 @@ class ExtendedStatistics extends BsExtensionMW {
 	 * @return array List of available diagrams
 	 */
 	protected static function loadAvailableDiagrams() {
-		if ( !is_null( self::$aAvailableDiagrams ) ) {
+		if ( self::$aAvailableDiagrams !== null ) {
 			return self::$aAvailableDiagrams;
 		}
 		self::$aAvailableDiagrams = [];

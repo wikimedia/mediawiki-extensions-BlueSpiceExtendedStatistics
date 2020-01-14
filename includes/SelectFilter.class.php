@@ -5,7 +5,7 @@
  * Part of BlueSpice MediaWiki
  *
  * @author     Markus Glaser <glaser@hallowelt.com>
-
+ *
  * @package    BlueSpice_Extensions
  * @subpackage Statistics
  * @copyright  Copyright (C) 2016 Hallo Welt! GmbH, All rights reserved.
@@ -64,7 +64,7 @@ abstract class BsSelectFilter extends BsStatisticsFilter {
 	public function getLabelledAvailableValues() {
 		// This function is expensive so let's apply some caching
 		// Might also be a candidate for Memcache
-		if ( !is_null( $this->aLabelledAvailableValues ) ) {
+		if ( $this->aLabelledAvailableValues !== null ) {
 			return $this->aLabelledAvailableValues;
 		} else {
 			$this->aLabelledAvailableValues = [];
@@ -107,7 +107,7 @@ abstract class BsSelectFilter extends BsStatisticsFilter {
 	 * @return array List of strings
 	 */
 	public function getActiveValues() {
-		if ( !is_null( $this->aActiveValues ) ) {
+		if ( $this->aActiveValues !== null ) {
 			return $this->aActiveValues;
 		} else {
 			$this->getValueFromRequest();

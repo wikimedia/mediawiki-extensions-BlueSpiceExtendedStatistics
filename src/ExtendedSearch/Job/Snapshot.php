@@ -2,11 +2,11 @@
 
 namespace BlueSpice\ExtendedStatistics\ExtendedSearch\Job;
 
-use SpecialPage;
-use BlueSpice\Services;
-use BS\ExtendedSearch\Source\Job\UpdateTitleBase;
 use BlueSpice\ExtendedStatistics\Entity\Collection;
 use BlueSpice\ExtendedStatistics\Entity\Snapshot as Entity;
+use BlueSpice\Services;
+use BS\ExtendedSearch\Source\Job\UpdateTitleBase;
+use SpecialPage;
 
 class Snapshot extends UpdateTitleBase {
 

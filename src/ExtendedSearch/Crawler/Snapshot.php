@@ -2,12 +2,12 @@
 
 namespace BlueSpice\ExtendedStatistics\ExtendedSearch\Crawler;
 
-use SpecialPage;
-use BlueSpice\Services;
 use BlueSpice\Data\ReaderParams;
 use BlueSpice\ExtendedStatistics\Data\Snapshot\Record;
 use BlueSpice\ExtendedStatistics\Data\Snapshot\Store;
 use BlueSpice\ExtendedStatistics\Entity\Snapshot as Entity;
+use BlueSpice\Services;
+use SpecialPage;
 
 class Snapshot extends \BS\ExtendedSearch\Source\Crawler\Base {
 	protected $sJobClass = "\\BlueSpice\\ExtendedStatistics\\ExtendedSearch\\Job\\Snapshot";

@@ -2,13 +2,13 @@
 
 namespace BlueSpice\ExtendedStatistics\Data\Snapshot;
 
+use BlueSpice\Data\DatabaseWriter;
+use BlueSpice\Data\Entity\IWriter;
+use BlueSpice\Data\RecordSet;
+use BlueSpice\Entity;
+use BlueSpice\ExtendedStatistics\Entity\Snapshot;
 use FormatJson;
 use Status;
-use BlueSpice\Entity;
-use BlueSpice\Data\DatabaseWriter;
-use BlueSpice\Data\RecordSet;
-use BlueSpice\Data\Entity\IWriter;
-use BlueSpice\ExtendedStatistics\Entity\Snapshot;
 
 class Writer extends DatabaseWriter implements IWriter {
 

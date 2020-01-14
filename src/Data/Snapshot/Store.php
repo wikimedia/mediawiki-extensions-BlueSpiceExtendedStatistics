@@ -2,8 +2,8 @@
 
 namespace BlueSpice\ExtendedStatistics\Data\Snapshot;
 
-use IContextSource;
 use BlueSpice\Services;
+use IContextSource;
 
 class Store implements \BlueSpice\Data\IStore, \BlueSpice\Data\Entity\IStore {
 

@@ -5,7 +5,7 @@
  * Part of BlueSpice MediaWiki
  *
  * @author     Markus Glaser <glaser@hallowelt.com>
-
+ *
  * @package    BlueSpice_Extensions
  * @subpackage Statistics
  * @copyright  Copyright (C) 2016 Hallo Welt! GmbH, All rights reserved.
@@ -17,7 +17,7 @@ use BlueSpice\Special\ExtJSBase;
 use MediaWiki\Shell\Shell;
 
 /**
- *Statistics special page that renders the creation dialogue of statistics
+ * Statistics special page that renders the creation dialogue of statistics
  * @package BlueSpice_Extensions
  * @subpackage Statistics
  */

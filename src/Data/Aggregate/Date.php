@@ -2,10 +2,10 @@
 
 namespace BlueSpice\ExtendedStatistics\Data\Aggregate;
 
+use BlueSpice\ExtendedStatistics\Data\Aggregate;
+use BlueSpice\Timestamp;
 use DateTime;
 use DateTimeZone;
-use BlueSpice\Timestamp;
-use BlueSpice\ExtendedStatistics\Data\Aggregate;
 
 class Date extends Aggregate {
 

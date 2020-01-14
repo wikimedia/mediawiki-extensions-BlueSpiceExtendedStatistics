@@ -3,9 +3,9 @@
 
 require_once dirname( dirname( dirname( __DIR__ ) ) ) . '/maintenance/Maintenance.php';
 
+use BlueSpice\ExtendedStatistics\Entity\Snapshot;
 use BlueSpice\Services;
 use BlueSpice\Timestamp;
-use BlueSpice\ExtendedStatistics\Entity\Snapshot;
 
 class StatisticsSnapshotCreation extends Maintenance {
 

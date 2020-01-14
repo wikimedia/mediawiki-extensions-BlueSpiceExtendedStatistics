@@ -2,12 +2,12 @@
 
 namespace BlueSpice\ExtendedStatistics\Data\Entity\Collection;
 
-use IContextSource;
-use RequestContext;
-use BS\ExtendedSearch\Backend;
+use BlueSpice\Data\Entity\IStore;
 use BlueSpice\EntityFactory;
 use BlueSpice\Services;
-use BlueSpice\Data\Entity\IStore;
+use BS\ExtendedSearch\Backend;
+use IContextSource;
+use RequestContext;
 
 class Store extends \BS\ExtendedSearch\Data\Store implements IStore {
 

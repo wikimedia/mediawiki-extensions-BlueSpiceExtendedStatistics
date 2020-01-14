@@ -2,10 +2,10 @@
 
 namespace BlueSpice\ExtendedStatistics;
 
-use Config;
-use BlueSpice\Services;
-use BlueSpice\ExtensionAttributeBasedRegistry;
 use BlueSpice\ExtendedStatistics\Entity\Snapshot;
+use BlueSpice\ExtensionAttributeBasedRegistry;
+use BlueSpice\Services;
+use Config;
 
 class DataCollectorFactory {
 	/**

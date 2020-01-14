@@ -2,20 +2,20 @@
 
 namespace BlueSpice\ExtendedStatistics\DataCollector\StoreSourced;
 
-use BlueSpice\Data\ReaderParams;
-use Config;
-use RequestContext;
-use BlueSpice\Services;
-use BlueSpice\Data\IStore;
-use BlueSpice\EntityFactory;
-use BlueSpice\ExtendedStatistics\SnapshotFactory;
-use BlueSpice\ExtendedStatistics\Entity\Snapshot;
 use BlueSpice\Data\Categories\Store as CategoryStore;
-use MWException;
+use BlueSpice\Data\IStore;
+use BlueSpice\Data\ReaderParams;
+use BlueSpice\EntityFactory;
+use BlueSpice\ExtendedStatistics\Entity\Snapshot;
+use BlueSpice\ExtendedStatistics\SnapshotFactory;
+use BlueSpice\Services;
 use Category;
-use Title;
+use Config;
 use LoadBalancer;
+use MWException;
+use RequestContext;
 use ResultWrapper;
+use Title;
 
 abstract class CategoryCollector extends SnapshotDiffCollector {
 
