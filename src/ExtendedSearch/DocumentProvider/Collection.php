@@ -2,10 +2,10 @@
 
 namespace BlueSpice\ExtendedStatistics\ExtendedSearch\DocumentProvider;
 
-use BS\ExtendedSearch\Source\DocumentProvider\DecoratorBase;
-use BlueSpice\ExtendedStatistics\Entity\Collection as Entity;
 use BlueSpice\Data\FieldType;
 use BlueSpice\ExtendedStatistics\Data\Entity\Collection\Schema;
+use BlueSpice\ExtendedStatistics\Entity\Collection as Entity;
+use BS\ExtendedSearch\Source\DocumentProvider\DecoratorBase;
 
 class Collection extends DecoratorBase {
 

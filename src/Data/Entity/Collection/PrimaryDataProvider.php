@@ -2,15 +2,15 @@
 
 namespace BlueSpice\ExtendedStatistics\Data\Entity\Collection;
 
-use IContextSource;
-use User;
-use BlueSpice\EntityFactory;
-use BlueSpice\Services;
-use BlueSpice\Data\Record;
 use BlueSpice\Data\FieldType;
+use BlueSpice\Data\Record;
+use BlueSpice\EntityFactory;
+use BlueSpice\ExtendedStatistics\Entity\Collection;
+use BlueSpice\Services;
 use BS\ExtendedSearch\Backend;
 use BS\ExtendedSearch\Data\PrimaryDataProvider as SearchDataProvider;
-use BlueSpice\ExtendedStatistics\Entity\Collection;
+use IContextSource;
+use User;
 
 class PrimaryDataProvider extends SearchDataProvider {
 

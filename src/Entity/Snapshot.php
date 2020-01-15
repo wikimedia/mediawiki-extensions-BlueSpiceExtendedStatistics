@@ -2,13 +2,13 @@
 
 namespace BlueSpice\ExtendedStatistics\Entity;
 
+use BlueSpice\Data\Entity\IStore;
+use BlueSpice\EntityConfig;
+use BlueSpice\EntityFactory;
+use BlueSpice\ExtendedStatistics\DataCollectorFactory;
+use BlueSpice\ExtendedStatistics\ExtendedSearch\Job\Snapshot as Updater;
 use BlueSpice\Services;
 use BlueSpice\Timestamp;
-use BlueSpice\EntityFactory;
-use BlueSpice\Data\Entity\IStore;
-use BlueSpice\ExtendedStatistics\DataCollectorFactory;
-use BlueSpice\EntityConfig;
-use BlueSpice\ExtendedStatistics\ExtendedSearch\Job\Snapshot as Updater;
 
 class Snapshot extends \BlueSpice\Entity {
 	const TYPE = 'snapshot';

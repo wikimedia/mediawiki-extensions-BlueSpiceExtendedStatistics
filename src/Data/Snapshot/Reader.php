@@ -2,10 +2,10 @@
 
 namespace BlueSpice\ExtendedStatistics\Data\Snapshot;
 
-use BlueSpice\Data\ReaderParams;
 use BlueSpice\Data\DatabaseReader;
-use BlueSpice\Data\Filter\Numeric;
 use BlueSpice\Data\Entity\IReader;
+use BlueSpice\Data\Filter\Numeric;
+use BlueSpice\Data\ReaderParams;
 use BlueSpice\EntityConfig;
 use BlueSpice\ExtendedStatistics\Entity\Snapshot;
 

@@ -2,8 +2,8 @@
 
 namespace BlueSpice\ExtendedStatistics\Data\Snapshot;
 
-use FormatJson;
 use BlueSpice\Data\PrimaryDatabaseDataProvider;
+use FormatJson;
 
 class PrimaryDataProvider extends PrimaryDatabaseDataProvider {
 

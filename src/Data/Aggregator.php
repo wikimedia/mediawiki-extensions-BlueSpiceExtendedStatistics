@@ -2,8 +2,8 @@
 
 namespace BlueSpice\ExtendedStatistics\Data;
 
-use FormatJson;
 use BlueSpice\Data\Record;
+use FormatJson;
 
 class Aggregator {
 

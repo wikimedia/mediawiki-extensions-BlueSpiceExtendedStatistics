@@ -2,10 +2,10 @@
 
 namespace BlueSpice\ExtendedStatistics\Special;
 
-use MWException;
-use Html;
-use FormatJson;
 use BlueSpice\Services;
+use FormatJson;
+use Html;
+use MWException;
 
 class Snapshot extends \BlueSpice\SpecialPage {
 	public function __construct() {

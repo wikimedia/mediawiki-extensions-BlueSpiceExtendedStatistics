@@ -2,15 +2,15 @@
 
 namespace BlueSpice\ExtendedStatistics\Data\Entity\Collection;
 
-use IContextSource;
-use Config;
-use BlueSpice\EntityFactory;
-use BlueSpice\EntityConfig;
-use BlueSpice\Data\ResultSet;
 use BlueSpice\Data\Entity\Reader as EntityReader;
-use BS\ExtendedSearch\Backend;
-use BlueSpice\ExtendedStatistics\Data\ReaderParams;
+use BlueSpice\Data\ResultSet;
+use BlueSpice\EntityConfig;
+use BlueSpice\EntityFactory;
 use BlueSpice\ExtendedStatistics\Data\Aggregator;
+use BlueSpice\ExtendedStatistics\Data\ReaderParams;
+use BS\ExtendedSearch\Backend;
+use Config;
+use IContextSource;
 
 class Reader extends EntityReader {
 

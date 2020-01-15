@@ -1,9 +1,9 @@
 <?php
 
-use MediaWiki\MediaWikiServices;
-use BlueSpice\ExtensionAttributeBasedRegistry;
-use BlueSpice\ExtendedStatistics\SnapshotFactory;
 use BlueSpice\ExtendedStatistics\DataCollectorFactory;
+use BlueSpice\ExtendedStatistics\SnapshotFactory;
+use BlueSpice\ExtensionAttributeBasedRegistry;
+use MediaWiki\MediaWikiServices;
 
 return [
 

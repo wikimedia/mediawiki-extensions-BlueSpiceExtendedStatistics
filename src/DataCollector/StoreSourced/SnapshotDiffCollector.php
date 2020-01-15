@@ -2,13 +2,13 @@
 
 namespace BlueSpice\ExtendedStatistics\DataCollector\StoreSourced;
 
-use Config;
 use BlueSpice\Data\IStore;
 use BlueSpice\EntityFactory;
-use BlueSpice\ExtendedStatistics\SnapshotFactory;
-use BlueSpice\ExtendedStatistics\Entity\Snapshot;
 use BlueSpice\ExtendedStatistics\DataCollector\StoreSourced;
 use BlueSpice\ExtendedStatistics\Entity\Collection;
+use BlueSpice\ExtendedStatistics\Entity\Snapshot;
+use BlueSpice\ExtendedStatistics\SnapshotFactory;
+use Config;
 
 abstract class SnapshotDiffCollector extends StoreSourced {
 	/**

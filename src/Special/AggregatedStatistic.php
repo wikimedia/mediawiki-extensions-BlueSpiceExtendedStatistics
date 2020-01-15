@@ -2,10 +2,10 @@
 
 namespace BlueSpice\ExtendedStatistics\Special;
 
+use BlueSpice\ExtendedStatistics\EntityConfig\Collection;
 use BlueSpice\ExtensionAttributeBasedRegistry;
 use BlueSpice\Services;
 use BlueSpice\Special\ExtJSBase;
-use BlueSpice\ExtendedStatistics\EntityConfig\Collection;
 
 class AggregatedStatistic extends ExtJSBase {
 	public function __construct() {

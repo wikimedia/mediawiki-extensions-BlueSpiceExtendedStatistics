@@ -2,8 +2,8 @@
 
 namespace BlueSpice\ExtendedStatistics\Util\SnapshotRange;
 
-use BlueSpice\Timestamp;
 use BlueSpice\ExtendedStatistics\Util\ISnapshotRange;
+use BlueSpice\Timestamp;
 
 class Daily implements ISnapshotRange {
 
