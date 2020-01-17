@@ -46,7 +46,10 @@ class BsDiagramNumberOfUsers extends BsDiagram {
 									SELECT ipb_user FROM #__ipblocks
 								)
 								AND user_name NOT IN (@BsFilterUsers)";
-		$this->sListLabel = [ wfMessage( 'bs-statistics-label-name' )->plain(), wfMessage( 'bs-statistics-label-registration' )->plain() ];
+		$this->sListLabel = [
+			wfMessage( 'bs-statistics-label-name' )->plain(),
+			wfMessage( 'bs-statistics-label-registration' )->plain()
+		];
 		$this->sMode = BsDiagram::MODE_AGGREGATED;
 
 		$this->addFilter( new BsFilterUsers( $this ) );

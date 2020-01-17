@@ -47,7 +47,10 @@ class BsDiagramNumberOfPages extends BsDiagram {
 								)
 								AND @BsFilterNamespace
 								AND @BsFilterCategory";
-		$this->sListLabel = [ wfMessage( 'bs-statistics-label-page' )->text(), wfMessage( 'bs-statistics-label-creator' )->text() ];
+		$this->sListLabel = [
+			wfMessage( 'bs-statistics-label-page' )->text(),
+			wfMessage( 'bs-statistics-label-creator' )->text()
+		];
 		$this->sMode = BsDiagram::MODE_AGGREGATED;
 
 		$this->addFilter( new BsFilterNamespace( $this, [ 0 ] ) );

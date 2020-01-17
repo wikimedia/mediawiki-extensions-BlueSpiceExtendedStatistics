@@ -1,6 +1,11 @@
 <?php
 
 class BSApiStatisticsSearchOptionsStore extends BSApiExtJSStoreBase {
+	/**
+	 *
+	 * @param string $sQuery
+	 * @return \stdClass[]
+	 */
 	protected function makeData( $sQuery = '' ) {
 		$aData = [];
 		foreach ( [ 'title', 'text', 'files', 'all' ] as $sOption ) {

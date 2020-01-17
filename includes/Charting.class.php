@@ -29,8 +29,10 @@ class BsCharting {
 		// TODO MRG (13.12.10 17:29): make configurable
 		set_time_limit( 120 );
 		$intervals = Interval::getIntervalsFromDiagram( $oDiagram );
-		// $oDiagram->addFilterText( wfMessage( 'bs-statistics-from-to', $oDiagram->getStartTime(), $oDiagram->getEndTime() )->plain() );
-		// $oDiagram->addFilterText( "<br/>".wfMessage( 'bs-statistics-mode' )->plain().": ".wfMessage( $oDiagram->getMessage() )->plain() );
+		// $oDiagram->addFilterText( wfMessage( 'bs-statistics-from-to', $oDiagram->getStartTime(),
+		// $oDiagram->getEndTime() )->plain() );
+		// $oDiagram->addFilterText( "<br/>".wfMessage( 'bs-statistics-mode' )->plain().": "
+		// .wfMessage( $oDiagram->getMessage() )->plain() );
 
 		$sql = $oDiagram->getSQL();
 		global $wgDBprefix;
@@ -54,7 +56,11 @@ class BsCharting {
 		$interval->setStartTS( $starttime );
 		$interval->setEndTS( $endtime );
 
-		$oDiagram->setData( $provider->uniqueValues( $interval, $oDiagram->isListable(), count( $oDiagram->getListLabel() ) ) );
+		$oDiagram->setData( $provider->uniqueValues(
+			$interval,
+			$oDiagram->isListable(),
+			count( $oDiagram->getListLabel() )
+		) );
 
 		// arsort($diag['data']);
 
@@ -69,7 +75,8 @@ class BsCharting {
 	 * @param bool $countable If true, result can be listet.
 	 * @return array List of numbers
 	 */
-	public static function getDataPerDateInterval( $dataprovider, $aggregated, $intervals, $countable = false ) {
+	public static function getDataPerDateInterval( $dataprovider, $aggregated, $intervals,
+		$countable = false ) {
 		$data = [];
 		$sum = 0;
 		if ( $aggregated == 'aggregated' ) {
