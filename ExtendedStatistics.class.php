@@ -62,7 +62,6 @@ class ExtendedStatistics extends BsExtensionMW {
 		$this->setHook( 'BSDashboardsAdminDashboardPortalPortlets' );
 		$this->setHook( 'BSDashboardsUserDashboardPortalConfig' );
 		$this->setHook( 'BSDashboardsUserDashboardPortalPortlets' );
-		$this->setHook( 'BSUsageTrackerRegisterCollectors' );
 
 		self::addAvailableFilter( 'FilterUsers' );
 		self::addAvailableFilter( 'FilterNamespace' );
