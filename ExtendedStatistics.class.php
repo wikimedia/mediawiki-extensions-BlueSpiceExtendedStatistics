@@ -357,19 +357,4 @@ class ExtendedStatistics extends BsExtensionMW {
 		return true;
 	}
 
-	/**
-	 * Register tag with UsageTracker extension
-	 * @param array &$aCollectorsConfig
-	 * @return Always true to keep hook running
-	 */
-	public function onBSUsageTrackerRegisterCollectors( &$aCollectorsConfig ) {
-		$aCollectorsConfig['bs:statistics:progress'] = [
-			'class' => 'Property',
-			'config' => [
-				'identifier' => 'bs-tag-statistics-progress'
-			]
-		];
-		return true;
-	}
-
 }
