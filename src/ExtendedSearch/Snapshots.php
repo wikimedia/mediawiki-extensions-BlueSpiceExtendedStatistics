@@ -53,4 +53,10 @@ class Snapshots extends \BS\ExtendedSearch\Source\DecoratorBase {
 		return new Updater( $this->oDecoratedSource );
 	}
 
+	/**
+	 * @return bool
+	 */
+	public function isSortable() {
+		return false;
+	}
 }
