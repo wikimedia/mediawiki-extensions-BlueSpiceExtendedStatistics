@@ -7,7 +7,7 @@
 			"Xbaked potatox"
 		]
 	},
-	"bs-statistics-desc": "Statistieken module voor BlueSpice",
+	"bs-statistics-desc": "Statistiekmodule voor BlueSpice",
 	"prefs-statistics": "Uitgebreide statistieken",
 	"extendedstatistics": "Uitgebreide statistieken",
 	"bs-statistics-diagram": "Zoekopdracht",
@@ -61,8 +61,11 @@
 	"bs-statistics-portletconfig-periodday": "Gisteren",
 	"bs-statistics-button-label-export": "Exporteren",
 	"bs-statistics-panel-title-result": "Resultaat",
+	"bs-extendedstatistics-collection-fatalstatus-unknownaction": "Onbekende handeling \"$1\"",
 	"action-extendedstatistics-viewspecialpage-aggregated": "de speciale pagina [[Special:AggregatedStatistic]] te bekijken",
 	"right-extendedstatistics-viewspecialpage-aggregated": "De speciale pagina [[Special:AggregatedStatistic]] bekijken",
 	"bs-extendedstatistics-collection-var-timestampcreated": "Aanmaakdatum",
-	"bs-statistics-button-label-apply": "Filters toepassen"
+	"bs-statistics-button-label-apply": "Filters toepassen",
+	"bs-statistics-datasource-label": "Gegevensbron",
+	"bs-statistics-targets-label": "Doelen"
 }
