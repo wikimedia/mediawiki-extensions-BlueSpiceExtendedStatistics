@@ -7,7 +7,7 @@
 			"Xbaked potatox"
 		]
 	},
-	"bs-statistics-desc": "Statistieken module voor BlueSpice",
+	"bs-statistics-desc": "Statistiekmodule voor BlueSpice",
 	"prefs-statistics": "Uitgebreide statistieken",
 	"extendedstatistics": "Uitgebreide statistieken",
 	"bs-statistics-diagram": "Zoekopdracht",
@@ -32,7 +32,7 @@
 	"bs-statistics-label-registration": "Registratie",
 	"bs-statistics-diag-number-of-pages": "Aantal pagina's aangemaakt",
 	"bs-statistics-diag-number-of-pages-desc": "Geeft het totaal aantal pagina ' s die zijn gemaakt binnen de gekozen periode.",
-	"bs-statistics-diag-number-of-pages-mw": "Aantal pagina ' s met inhoud",
+	"bs-statistics-diag-number-of-pages-mw": "Aantal aangemaakte inhoudspagina's",
 	"bs-statistics-diag-number-of-pages-mw-desc": "Geeft het nummer van de pagina ' s die zijn gemaakt binnen de gekozen periode.",
 	"bs-statistics-label-page": "Pagina",
 	"bs-statistics-label-creator": "Auteur",
@@ -60,5 +60,14 @@
 	"bs-statistics-portlet-numberofpagesdesc": "Statistiek van het aantal pagina's.",
 	"bs-statistics-portletconfig-periodday": "Gisteren",
 	"bs-statistics-button-label-export": "Exporteren",
-	"bs-statistics-panel-title-result": "Resultaat"
+	"bs-statistics-panel-title-result": "Resultaat",
+	"bs-extendedstatistics-collection-fatalstatus-unknownaction": "Onbekende handeling \"$1\"",
+	"action-extendedstatistics-viewspecialpage-aggregated": "de speciale pagina [[Special:AggregatedStatistic]] te bekijken",
+	"right-extendedstatistics-viewspecialpage-aggregated": "De speciale pagina [[Special:AggregatedStatistic]] bekijken",
+	"bs-extendedstatistics-collection-var-timestampcreated": "Aanmaakdatum",
+	"bs-statistics-button-label-apply": "Filters toepassen",
+	"bs-statistics-label-bar-chart": "Staafdiagram",
+	"bs-statistics-label-line-chart": "Lijndiagram",
+	"bs-statistics-datasource-label": "Gegevensbron",
+	"bs-statistics-targets-label": "Doelen"
 }

@@ -87,5 +87,7 @@
 	"bs-statistics-aggregationmode-label": "Modo de agregação",
 	"bs-statistics-aggregationfield-label": "Campo de agregação",
 	"bs-statistics-aggregationtype-label": "Tipo de agregação",
-	"bs-statistics-targets-label": "Alvos"
+	"bs-statistics-targets-label": "Alvos",
+	"action-extendedstatistics-viewspecialpage-aggregated": "aceder à página especial [[Special:AggregatedStatistic]]",
+	"right-extendedstatistics-viewspecialpage-aggregated": "Aceder à página especial [[Special:AggregatedStatistic]]"
 }
