@@ -18,5 +18,7 @@
 	"bs-statistics-portlet-numberofusers": "వాడుకరుల సంఖ్య",
 	"bs-statistics-portlet-numberofedits": "మార్పుల సంఖ్య",
 	"bs-statistics-portlet-numberofpages": "పేజీల సంఖ్య",
-	"bs-statistics-portletconfig-periodday": "నిన్న"
+	"bs-statistics-portletconfig-periodday": "నిన్న",
+	"bs-statistics-label-maxhits": "గరిష్ఠ ఫలితాలు",
+	"bs-statistics-panel-title-result": "ఫలితం"
 }

@@ -77,7 +77,7 @@
 	"bs-extendedstatistics-collection-fatalstatus-notitle": "System error message, when a \"Title\" object is required for a permission check, but was not provided",
 	"apihelp-bs-extendedstatistics-collection-store-description": "{{doc-apihelp-description|bs-extendedstatistics-collection-store}}",
 	"apihelp-bs-extendedstatistics-collection-store-summary": "{{doc-apihelp-summary|bs-extendedstatistics-collection-store}}",
-	"apihelp-bs-extendedstatistics-collection-store-param-aggregate": "{{doc-apihelp-param|bs-store|aggregate}}",
+	"apihelp-bs-extendedstatistics-collection-store-param-aggregate": "{{doc-apihelp-param|bs-extendedstatistics-collection-store|aggregate}}",
 	"aggregatedstatistic": "Special page name for [[Special:AggregatedStatistic]] special page\n{{Identical|Snapshot statistics}}",
 	"action-extendedstatistics-viewspecialpage-aggregated": "{{doc-action|extendedstatistics-viewspecialpage-aggregated}}",
 	"right-extendedstatistics-viewspecialpage-aggregated": "{{doc-right|extendedstatistics-viewspecialpage-aggregated}}",

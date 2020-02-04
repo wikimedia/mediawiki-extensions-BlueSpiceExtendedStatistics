@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Zygimantus",
-			"Eitvys200"
+			"Eitvys200",
+			"Tomasdd"
 		]
 	},
 	"bs-statistics-desc": "Statistikos modulis BlueSpice",
@@ -23,13 +24,13 @@
 	"bs-statistics-finish": "Sukurti diagramą",
 	"bs-statistics-filters": "Filtrai",
 	"bs-statistics-interval-too-big": "Intervalas yra per didelis. Jame neturėtų būti daugiau nei 35 intervalų žingsniai.",
-	"bs-statistics-diag-number-of-users": "Vartotojų skaičius",
+	"bs-statistics-diag-number-of-users": "Vartotojų skaičius sudarytas",
 	"bs-statistics-diag-number-of-users-desc": "Parodo vartotojų, kurie buvo sukurti per pasirinktą periodą, skaičių.",
 	"bs-statistics-label-name": "Pavadinimas",
 	"bs-statistics-label-registration": "Registracija",
-	"bs-statistics-diag-number-of-pages": "Puslapių skaičius",
+	"bs-statistics-diag-number-of-pages": "Puslapių skaičius sudarytas",
 	"bs-statistics-diag-number-of-pages-desc": "Parodo puslapių, kurie buvo sukurti per pasirinktą periodą, skaičių.",
-	"bs-statistics-diag-number-of-pages-mw": "Turinio puslapių skaičius",
+	"bs-statistics-diag-number-of-pages-mw": "Turinio puslapių skaičius sudarytas",
 	"bs-statistics-diag-number-of-pages-mw-desc": "Parodo turinio puslapių, kurie buvo sukurti per pasirinktą periodą, skaičių.",
 	"bs-statistics-label-page": "Puslapis",
 	"bs-statistics-label-creator": "Autorius",
@@ -51,7 +52,7 @@
 	"bs-statistics-portlet-numberofusers": "Vartotojų skaičius",
 	"bs-statistics-portlet-numberofedits": "Pakeitimų skaičius",
 	"bs-statistics-portlet-numberofpages": "Puslapių skaičius",
-	"bs-statistics-portlet-numberofarticles": "Straipsnių skaičius",
+	"bs-statistics-portlet-numberofarticles": "Turinio puslapių skaičius",
 	"bs-statistics-portlet-numberofusersdesc": "Vartotojų skaičiaus statistika.",
 	"bs-statistics-portlet-numberofeditsdesc": "Keitimų statistika.",
 	"bs-statistics-portlet-numberofpagesdesc": "Puslapių statistika.",

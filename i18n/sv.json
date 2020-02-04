@@ -70,5 +70,20 @@
 	"bs-statistics-label-bar-chart": "Stapeldiagram",
 	"bs-statistics-label-line-chart": "Linjediagram",
 	"bs-statistics-datasource-label": "Datakälla",
-	"bs-statistics-targets-label": "Mål"
+	"bs-statistics-targets-label": "Mål",
+	"bs-statistics-portlet-numberofarticlesdesc": "Statistik för antalet sidor.",
+	"apihelp-bs-statistics-tasks-description": "Bjuder på gemensamma uppgifter för statistik",
+	"apihelp-bs-statistics-tasks-summary": "Bjuder på gemensamma uppgifter för statistik",
+	"apihelp-bs-statistics-available-diagrams-store-description": "Bjuder ett lager med tillgängliga diagram",
+	"apihelp-bs-statistics-available-diagrams-store-summary": "Bjuder ett lager med tillgängliga diagram",
+	"bs-extendedstatistics-collection-fatalstatus-unknownaction": "Okänd handling \"$1\".",
+	"bs-extendedstatistics-collection-fatalstatus-permissiondeniedusercan": "Användaren har inte tillstånd till att utföra handlingen «$1» på «$2»",
+	"bs-extendedstatistics-collection-fatalstatus-permissiondenieduserisallowed": "Användaren har inte tillstånd till att utföra handlingen «$1»",
+	"bs-extendedstatistics-collection-fatalstatus-notitle": "«Title»-objekt krävs",
+	"apihelp-bs-extendedstatistics-collection-store-description": "Bjuder ett lager för statistik som kan frågas mot, filtreras och tillfogas",
+	"apihelp-bs-extendedstatistics-collection-store-summary": "Bjuder ett lager för statistik som kan frågas mot, filtreras och tillfogas",
+	"apihelp-bs-extendedstatistics-collection-store-param-aggregate": "\nJSON-sträng-kodat objekt med godtycklig data för uppgiften",
+	"aggregatedstatistic": "Ögonblickbildstatistik",
+	"extendedstatisticssnapshots": "Ögonblicksbilder",
+	"bs-extendedstatistics-collection-var-timestampcreated": "Skapningsdatum"
 }
