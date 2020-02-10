@@ -66,6 +66,7 @@
 	"bs-statistics-button-label-export": "Exportar",
 	"bs-statistics-panel-title-result": "Resultado",
 	"bs-extendedstatistics-collection-fatalstatus-unknownaction": "Se desconoce la acción «$1»",
+	"bs-extendedstatistics-collection-fatalstatus-notitle": "Se necesita el objeto «Título»",
 	"bs-extendedstatistics-collection-var-timestampcreated": "Fecha de creación",
 	"bs-statistics-button-label-apply": "Aplicar filtros",
 	"bs-statistics-label-bar-chart": "Gráfico de barras",
