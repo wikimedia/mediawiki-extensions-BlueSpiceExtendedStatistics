@@ -74,5 +74,6 @@
 	"bs-statistics-aggregationmode-label": "Modo de totalización",
 	"bs-statistics-aggregationfield-label": "Campo de totalización",
 	"bs-statistics-aggregationtype-label": "Tipo de totalización",
-	"bs-statistics-targets-label": "Destinos"
+	"bs-statistics-targets-label": "Destinos",
+	"bs-extendedstatistics-collection-fatalstatus-notitle": "Se necesita el objeto «Título»"
 }
