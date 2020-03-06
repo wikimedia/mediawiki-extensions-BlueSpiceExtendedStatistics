@@ -7,7 +7,9 @@ use BlueSpice\SkinData;
 
 class AddExtendedStatistics extends SkinTemplateOutputPageBeforeExec {
 	protected function doProcess() {
-		$oSpecialExtendedStatistic = \SpecialPageFactory::getPage( 'ExtendedStatistics' );
+		$oSpecialExtendedStatistic = \MediaWiki\MediaWikiServices::getInstance()
+			->getSpecialPageFactory()
+			->getPage( 'ExtendedStatistics' );
 
 		if ( !$oSpecialExtendedStatistic ) {
 			return true;
