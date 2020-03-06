@@ -61,7 +61,7 @@ class CreateDailySnapshot extends RunJobsTriggerHandler {
 			);
 		}
 		if ( !$util ) {
-			$util = Services::getInstance()->getBSUtilityFactory();
+			$util = Services::getInstance()->getService( 'BSUtilityFactory' );
 		}
 		return new static(
 			$config,

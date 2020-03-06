@@ -14,7 +14,7 @@ class Snapshot extends UpdateTitleBase {
 
 	protected function doRun() {
 		$oDP = $this->getSource()->getDocumentProvider();
-		$factory = Services::getInstance()->getBSEntityFactory();
+		$factory = Services::getInstance()->getService( 'BSEntityFactory' );
 		$entity = $factory->newFromObject( (object)$this->params['entity'] );
 		if ( !$entity ) {
 			// possible data corruption caused by unknown error
@@ -52,7 +52,7 @@ class Snapshot extends UpdateTitleBase {
 	 * @return Collection
 	 */
 	protected function getDocumentProviderSource() {
-		return Services::getInstance()->getBSEntityFactory()->newFromObject(
+		return Services::getInstance()->getService( 'BSEntityFactory' )->newFromObject(
 			(object)$this->params['entity']
 		);
 	}
