@@ -50,7 +50,7 @@ abstract class CategoryCollector extends SnapshotDiffCollector {
 	public static function getCategoryStore( Services $services ) {
 		$context = RequestContext::getMain();
 		$context->setUser(
-			$services->getBSUtilityFactory()->getMaintenanceUser()->getUser()
+			$services->getService( 'BSUtilityFactory' )->getMaintenanceUser()->getUser()
 		);
 		return new CategoryStore( $context );
 	}

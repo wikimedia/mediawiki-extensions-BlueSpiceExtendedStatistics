@@ -66,7 +66,7 @@ abstract class DataCollector implements IDataCollector {
 			$config = $snapshot->getConfig();
 		}
 		if ( !$factory ) {
-			$factory = $services->getBSEntityFactory();
+			$factory = $services->getService( 'BSEntityFactory' );
 		}
 		return new static( $type, $snapshot, $config, $factory );
 	}

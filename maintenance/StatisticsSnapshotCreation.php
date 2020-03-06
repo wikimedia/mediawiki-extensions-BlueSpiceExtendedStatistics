@@ -26,7 +26,7 @@ class StatisticsSnapshotCreation extends Maintenance {
 
 		/** @var Status $status */
 		$status = $snapshot->save(
-			Services::getInstance()->getBSUtilityFactory()->getMaintenanceUser()->getUser()
+			Services::getInstance()->getService( 'BSUtilityFactory' )->getMaintenanceUser()->getUser()
 		);
 		if ( !$status->isOK() ) {
 			$this->error( $status->getMessage( false, false, 'en' ) );

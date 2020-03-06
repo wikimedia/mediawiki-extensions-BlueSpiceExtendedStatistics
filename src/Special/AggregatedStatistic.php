@@ -54,7 +54,7 @@ class AggregatedStatistic extends ExtJSBase {
 		$registry = new ExtensionAttributeBasedRegistry(
 			'BlueSpiceFoundationEntityRegistry'
 		);
-		$configFactory = Services::getInstance()->getBSEntityConfigFactory();
+		$configFactory = Services::getInstance()->getService( 'BSEntityConfigFactory' );
 		$configs = [];
 		foreach ( $registry->getAllKeys() as $type ) {
 			$config = $configFactory->newFromType( $type );
