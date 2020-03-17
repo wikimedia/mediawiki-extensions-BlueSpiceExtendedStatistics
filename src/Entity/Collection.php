@@ -124,7 +124,10 @@ abstract class Collection extends \BlueSpice\Entity {
 			);
 		}
 		$status = Status::newGood( $this );
-		if ( $title instanceof Title && !$title->userCan( $permission, $user ) ) {
+		if ( $title instanceof Title && !\MediaWiki\MediaWikiServices::getInstance()
+			->getPermissionManager()
+			->userCan( $permission, $user, $title )
+		) {
 			$status->fatal(
 				'bs-extendedstatistics-collection-fatalstatus-permissiondeniedusercan',
 				$action,
