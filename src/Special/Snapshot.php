@@ -26,7 +26,7 @@ class Snapshot extends \BlueSpice\SpecialPage {
 		if ( empty( $type ) || empty( $id ) ) {
 			throw new MWException( 'Requires a valid type and id in format "$type-$id"' );
 		}
-		$entity = Services::getInstance()->getBSEntityFactory()->newFromID( $id, $type );
+		$entity = Services::getInstance()->getService( 'BSEntityFactory' )->newFromID( $id, $type );
 		if ( !$entity ) {
 			throw new MWException( "invalid entity \"$type-$id\"" );
 		}

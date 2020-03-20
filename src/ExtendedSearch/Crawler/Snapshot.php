@@ -19,7 +19,7 @@ class Snapshot extends \BS\ExtendedSearch\Source\Crawler\Base {
 		$result = $store->getReader()->read( new ReaderParams( [
 			ReaderParams::PARAM_LIMIT => ReaderParams::LIMIT_INFINITE,
 		] ) );
-		$factory = Services::getInstance()->getBSEntityFactory();
+		$factory = Services::getInstance()->getService( 'BSEntityFactory' );
 		foreach ( $result->getRecords() as $record ) {
 			$entity = $factory->newFromObject( (object)[
 				Entity::ATTR_TYPE => Entity::TYPE,
