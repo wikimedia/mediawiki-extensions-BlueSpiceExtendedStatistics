@@ -75,5 +75,7 @@
 	"bs-statistics-aggregationfield-label": "Campo de totalización",
 	"bs-statistics-aggregationtype-label": "Tipo de totalización",
 	"bs-statistics-targets-label": "Destinos",
-	"bs-extendedstatistics-collection-fatalstatus-notitle": "Se necesita el objeto «Título»"
+	"bs-extendedstatistics-collection-fatalstatus-notitle": "Se necesita el objeto «Título»",
+	"bs-extendedstatistics-collection-fatalstatus-permissiondeniedusercan": "La cuenta no tiene permitido efectuar la acción «$1» en «$2»",
+	"bs-extendedstatistics-collection-fatalstatus-permissiondenieduserisallowed": "La cuenta no tiene permitido efectuar la acción «$1»"
 }

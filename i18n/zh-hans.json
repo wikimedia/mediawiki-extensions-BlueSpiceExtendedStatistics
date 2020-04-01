@@ -72,5 +72,7 @@
 	"bs-statistics-button-label-export": "导出",
 	"bs-statistics-panel-title-result": "结果",
 	"action-statistic-viewspecialpage": "访问扩充统计",
-	"bs-statistics-targets-label": "目标"
+	"bs-statistics-targets-label": "目标",
+	"bs-statistics-label-bar-chart": "图形栏",
+	"bs-statistics-label-line-chart": "线形栏"
 }
