@@ -1,14 +1,14 @@
 {
 	"@metadata": {
 		"authors": [
-			"Аль-Гимравий",
-			"Умар",
-			"Okras",
+			"Katunchik",
 			"Mailman",
 			"Mouse21",
-			"Vlad5250",
 			"Movses",
-			"Katunchik"
+			"Okras",
+			"Vlad5250",
+			"Аль-Гимравий",
+			"Умар"
 		]
 	},
 	"bs-statistics-desc": "Модуль статистики для BlueSpice",
