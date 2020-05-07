@@ -1,12 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Mykola Swarnyk",
 			"Andriykopanytsia",
-			"Ата",
+			"Movses",
+			"Mykola Swarnyk",
 			"Piramidion",
 			"Vlad5250",
-			"Movses"
+			"Ата"
 		]
 	},
 	"bs-statistics-desc": "Модуль статистики для BlueSpice",

@@ -1,13 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
-			"Orikrin1998",
 			"Gomoko",
-			"Wladek92",
-			"Zarisi",
+			"Orikrin1998",
 			"Pols12",
+			"Thibaut120094",
 			"Verdy p",
-			"Thibaut120094"
+			"Wladek92",
+			"Zarisi"
 		]
 	},
 	"bs-statistics-desc": "Module de statistiques pour BlueSpice",

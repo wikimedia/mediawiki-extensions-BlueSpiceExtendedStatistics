@@ -1,11 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Stephan Muggli <muggli@hallowelt.biz>",
+			"Ferdinand0101",
+			"Hwboehm",
 			"Metalhead64",
 			"Mglaser",
-			"Hwboehm",
-			"Ferdinand0101"
+			"Stephan Muggli <muggli@hallowelt.biz>"
 		]
 	},
 	"bs-statistics-desc": "Statistik-Modul für BlueSpice",
