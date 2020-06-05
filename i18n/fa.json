@@ -55,5 +55,9 @@
 	"action-statistic-viewspecialpage": "دست‌یابی به آمارهٔ تعمیم‌یافته",
 	"right-statistic-viewspecialpage": "دست‌یابی به آمارهٔ تعمیم‌یافته",
 	"bs-statistics-button-label-export": "برون‌بری",
-	"bs-statistics-panel-title-result": "نتیجه"
+	"bs-statistics-panel-title-result": "نتیجه",
+	"bs-statistics-label-bar-chart": "نمودار میله‌ای",
+	"bs-statistics-label-line-chart": "نمودار خطی",
+	"bs-statistics-datasource-label": "مأخذ داده‌ها",
+	"bs-statistics-targets-label": "هدف‌ها"
 }
