@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"BaRaN6161 TURK",
 			"Liuxinyu970226",
 			"Robby",
 			"Shirayuki",
@@ -17,7 +18,7 @@
 	"bs-statistics-grain": "Used in [[Special:ExtendedStatistics]], label for interval\n{{Identical|Interval}}",
 	"bs-statistics-mode": "Used in [[Special:ExtendedStatistics]], label for mode\n{{Identical|Mode}}",
 	"bs-statistics-aggregated": "Option in [[Special:ExtendedStatistics]], label for aggregated\n{{Identical|Aggregated}}",
-	"bs-statistics-absolute": "Option in [[Special:ExtendedStatistics]], label for absolute\n{{Identical|Absolute}}",
+	"bs-statistics-absolute": "Option in [[Special:ExtendedStatistics]], label for absolute.",
 	"bs-statistics-year": "Option in [[Special:ExtendedStatistics]], label for year\n{{Identical|Year}}",
 	"bs-statistics-month": "Option in [[Special:ExtendedStatistics]], label for month\n{{Identical|Month}}",
 	"bs-statistics-week": "Option in [[Special:ExtendedStatistics]], label for calendar week\n{{Identical|Calender week}}",
