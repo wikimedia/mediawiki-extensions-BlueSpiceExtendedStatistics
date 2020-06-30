@@ -13,6 +13,13 @@ class AddExtendedStatistics extends SkinTemplateOutputPageBeforeExec {
 			return true;
 		}
 
+		if ( !$this->getContext()
+			->getUser()
+			->isAllowed( $oSpecialExtendedStatistic->getRestriction() )
+		) {
+			return true;
+		}
+
 		$this->mergeSkinDataArray(
 			SkinData::GLOBAL_ACTIONS,
 			[
