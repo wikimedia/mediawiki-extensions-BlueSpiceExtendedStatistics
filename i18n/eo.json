@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Druesenfieber",
 			"Mirin"
 		]
 	},
@@ -24,5 +25,6 @@
 	"bs-statistics-portlet-numberofedits": "Nombro de redaktoj",
 	"bs-statistics-portlet-numberofpages": "Nombro de paĝoj",
 	"bs-statistics-portletconfig-periodday": "Hieraŭ",
-	"bs-statistics-panel-title-result": "Rezulto"
+	"bs-statistics-panel-title-result": "Rezulto",
+	"bs-statistics-datasource-label": "Datumfonto"
 }

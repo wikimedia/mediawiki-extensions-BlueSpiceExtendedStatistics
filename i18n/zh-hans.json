@@ -6,7 +6,8 @@
 			"Phenolla",
 			"VulpesVulpes825",
 			"佛壁灯",
-			"沈澄心"
+			"沈澄心",
+			"铁桶"
 		]
 	},
 	"bs-statistics-desc": "用于BlueSpice的统计模块",
@@ -74,5 +75,6 @@
 	"action-statistic-viewspecialpage": "访问扩充统计",
 	"bs-statistics-targets-label": "目标",
 	"bs-statistics-label-bar-chart": "图形栏",
-	"bs-statistics-label-line-chart": "线形栏"
+	"bs-statistics-label-line-chart": "线形栏",
+	"bs-extendedstatistics-collection-fatalstatus-unknownaction": "未知操作“$1”"
 }
