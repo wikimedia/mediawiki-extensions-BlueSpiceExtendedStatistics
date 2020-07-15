@@ -92,5 +92,6 @@
 	"bs-statistics-aggregationmode-label": "Label for aggregation mode filter",
 	"bs-statistics-aggregationfield-label": "Label for aggregation field filter",
 	"bs-statistics-aggregationtype-label": "Label for aggregation type filter",
-	"bs-statistics-targets-label": "Label for targets filter"
+	"bs-statistics-targets-label": "Label for targets filter",
+	"bs-statistics-paging-page-size": "Label for grid page size control"
 }
