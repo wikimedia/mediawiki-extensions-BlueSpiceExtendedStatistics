@@ -151,7 +151,8 @@
 				"bs-statistics-label-count",
 				"bs-statistics-label-time",
 				"bs-statistics-button-label-export",
-				"bs-statistics-panel-title-result"
+				"bs-statistics-panel-title-result",
+				"bs-statistics-paging-page-size"
 			]
 		},
 		"ext.bluespice.statisticsPortlets": {
