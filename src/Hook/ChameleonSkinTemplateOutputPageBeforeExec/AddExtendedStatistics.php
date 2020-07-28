@@ -1,11 +1,11 @@
 <?php
 
-namespace BlueSpice\ExtendedStatistics\Hook\SkinTemplateOutputPageBeforeExec;
+namespace BlueSpice\ExtendedStatistics\Hook\ChameleonSkinTemplateOutputPageBeforeExec;
 
-use BlueSpice\Hook\SkinTemplateOutputPageBeforeExec;
+use BlueSpice\Calumma\Hook\ChameleonSkinTemplateOutputPageBeforeExec;
 use BlueSpice\SkinData;
 
-class AddExtendedStatistics extends SkinTemplateOutputPageBeforeExec {
+class AddExtendedStatistics extends ChameleonSkinTemplateOutputPageBeforeExec {
 	protected function doProcess() {
 		$oSpecialExtendedStatistic = \MediaWiki\MediaWikiServices::getInstance()
 			->getSpecialPageFactory()
