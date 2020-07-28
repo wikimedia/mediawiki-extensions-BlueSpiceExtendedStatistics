@@ -4,6 +4,7 @@ namespace BlueSpice\ExtendedStatistics\Entity;
 
 use BlueSpice\Data\FieldType;
 use BlueSpice\ExtendedStatistics\Data\Entity\Collection\Schema;
+use MediaWiki\MediaWikiServices;
 use RequestContext;
 use Status;
 use Title;
@@ -136,7 +137,11 @@ abstract class Collection extends \BlueSpice\Entity {
 			return $status;
 		}
 
-		if ( !$user->isAllowed( $permission ) ) {
+		$isAllowed = MediaWikiServices::getInstance()->getPermissionManager()->userHasRight(
+			$user,
+			$permission
+		);
+		if ( !$isAllowed ) {
 			$status->fatal(
 				'bs-extendedstatistics-collection-fatalstatus-permissiondenieduserisallowed',
 				$action

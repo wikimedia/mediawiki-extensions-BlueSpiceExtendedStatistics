@@ -15,10 +15,11 @@ class AddExtendedStatistics extends SkinTemplateOutputPageBeforeExec {
 			return true;
 		}
 
-		if ( !$this->getContext()
-			->getUser()
-			->isAllowed( $oSpecialExtendedStatistic->getRestriction() )
-		) {
+		$isAllowed = $this->getServices()->getPermissionManager()->userHasRight(
+			$this->getContext()->getUser(),
+			$oSpecialExtendedStatistic->getRestriction()
+		);
+		if ( !$isAllowed ) {
 			return true;
 		}
 
