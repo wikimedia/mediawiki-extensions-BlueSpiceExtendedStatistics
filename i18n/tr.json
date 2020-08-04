@@ -3,6 +3,7 @@
 		"authors": [
 			"BaRaN6161 TURK",
 			"Grkn gll",
+			"MuratTheTurkish",
 			"Sayginer"
 		]
 	},
@@ -89,5 +90,6 @@
 	"bs-statistics-aggregationmode-label": "Toplama modu",
 	"bs-statistics-aggregationfield-label": "Toplama alanı",
 	"bs-statistics-aggregationtype-label": "Toplama türü",
-	"bs-statistics-targets-label": "Hedefler"
+	"bs-statistics-targets-label": "Hedefler",
+	"bs-statistics-paging-page-size": "Sayfa boyutu"
 }
