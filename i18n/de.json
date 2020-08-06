@@ -91,5 +91,6 @@
 	"bs-extendedstatistics-collection-var-timestampcreated": "Erstellungsdatum",
 	"bs-statistics-button-label-apply": "Filter anwenden",
 	"bs-statistics-aggregationtype-label": "Aggregationstyp",
-	"bs-statistics-targets-label": "Ziele"
+	"bs-statistics-targets-label": "Ziele",
+	"bs-statistics-paging-page-size": "Seitengröße"
 }

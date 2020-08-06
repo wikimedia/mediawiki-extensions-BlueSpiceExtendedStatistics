@@ -88,5 +88,6 @@
 	"bs-statistics-aggregationmode-label": "Tilføyelsesmodus",
 	"bs-statistics-aggregationfield-label": "Tilføyelsesfelt",
 	"bs-statistics-aggregationtype-label": "Tilføyelsestype",
-	"bs-statistics-targets-label": "Mål"
+	"bs-statistics-targets-label": "Mål",
+	"bs-statistics-paging-page-size": "Sidestørrelse"
 }

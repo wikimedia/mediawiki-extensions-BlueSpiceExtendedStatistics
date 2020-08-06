@@ -3,7 +3,8 @@
 		"authors": [
 			"Meno25",
 			"Sonic N800",
-			"ديفيد"
+			"ديفيد",
+			"محمد أحمد عبد الفتاح"
 		]
 	},
 	"bs-statistics-desc": "وحدة إحصائيات لـBlueSpice",
@@ -89,5 +90,6 @@
 	"bs-statistics-aggregationmode-label": "وضع التجميع",
 	"bs-statistics-aggregationfield-label": "حقل التجميع",
 	"bs-statistics-aggregationtype-label": "نوع التجميع",
-	"bs-statistics-targets-label": "الأهداف"
+	"bs-statistics-targets-label": "الأهداف",
+	"bs-statistics-paging-page-size": "حجم الصفحة"
 }

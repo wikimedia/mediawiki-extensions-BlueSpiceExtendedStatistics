@@ -20,5 +20,6 @@
 	"bs-statistics-label-time": "Aika",
 	"bs-statistics-filter-category": "Luokka",
 	"bs-statistics-portletconfig-periodday": "Eilen",
-	"bs-statistics-panel-title-result": "Tulos"
+	"bs-statistics-panel-title-result": "Tulos",
+	"bs-statistics-paging-page-size": "Sivun koko"
 }

@@ -77,5 +77,6 @@
 	"bs-statistics-targets-label": "Destinos",
 	"bs-extendedstatistics-collection-fatalstatus-notitle": "Se necesita el objeto «Título»",
 	"bs-extendedstatistics-collection-fatalstatus-permissiondeniedusercan": "La cuenta no tiene permitido efectuar la acción «$1» en «$2»",
-	"bs-extendedstatistics-collection-fatalstatus-permissiondenieduserisallowed": "La cuenta no tiene permitido efectuar la acción «$1»"
+	"bs-extendedstatistics-collection-fatalstatus-permissiondenieduserisallowed": "La cuenta no tiene permitido efectuar la acción «$1»",
+	"bs-statistics-paging-page-size": "Tamaño de la página"
 }

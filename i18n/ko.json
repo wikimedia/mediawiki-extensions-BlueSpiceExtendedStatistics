@@ -61,5 +61,6 @@
 	"bs-statistics-button-label-apply": "필터 적용",
 	"bs-statistics-label-bar-chart": "막대도표",
 	"bs-statistics-label-line-chart": "선도표",
-	"bs-statistics-datasource-label": "데이터 원본"
+	"bs-statistics-datasource-label": "데이터 원본",
+	"bs-statistics-paging-page-size": "문서 크기"
 }

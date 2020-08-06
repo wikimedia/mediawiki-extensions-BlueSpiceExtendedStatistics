@@ -38,5 +38,6 @@
 	"bs-statistics-panel-title-result": "Resultat",
 	"bs-statistics-datasource-label": "Datakilde",
 	"bs-statistics-targets-label": "Mål",
-	"bs-statistics-mode": "Tilstand"
+	"bs-statistics-mode": "Tilstand",
+	"bs-statistics-paging-page-size": "Sidestørrelse"
 }
