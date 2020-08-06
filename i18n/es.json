@@ -77,5 +77,6 @@
 	"bs-statistics-aggregationmode-label": "Modo de totalización",
 	"bs-statistics-aggregationfield-label": "Campo de totalización",
 	"bs-statistics-aggregationtype-label": "Tipo de totalización",
-	"bs-statistics-targets-label": "Destinos"
+	"bs-statistics-targets-label": "Destinos",
+	"bs-statistics-paging-page-size": "Tamaño de la página"
 }
