@@ -65,5 +65,6 @@
 	"bs-statistics-label-bar-chart": "Balkendiagramm",
 	"bs-statistics-label-line-chart": "Linnendiagramm",
 	"bs-statistics-datasource-label": "Source vun den Donnéeën",
-	"bs-statistics-targets-label": "Ziler"
+	"bs-statistics-targets-label": "Ziler",
+	"bs-statistics-paging-page-size": "Gréisst vun der Säit"
 }
