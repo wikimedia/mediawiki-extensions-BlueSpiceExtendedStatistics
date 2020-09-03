@@ -4,8 +4,8 @@ namespace BlueSpice\ExtendedStatistics;
 
 use BlueSpice\ExtendedStatistics\Entity\Snapshot;
 use BlueSpice\ExtensionAttributeBasedRegistry;
-use BlueSpice\Services;
 use Config;
+use MediaWiki\MediaWikiServices;
 
 class DataCollectorFactory {
 	/**
@@ -69,7 +69,7 @@ class DataCollectorFactory {
 		}
 		$collector = call_user_func_array( $callback, [
 			$name,
-			Services::getInstance(),
+			MediaWikiServices::getInstance(),
 			$snapshot,
 			$this->config
 		] );

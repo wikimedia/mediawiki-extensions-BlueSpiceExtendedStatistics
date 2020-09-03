@@ -8,10 +8,10 @@ use BlueSpice\Data\ReaderParams;
 use BlueSpice\EntityFactory;
 use BlueSpice\ExtendedStatistics\Entity\Snapshot;
 use BlueSpice\ExtendedStatistics\SnapshotFactory;
-use BlueSpice\Services;
 use Category;
 use Config;
 use LoadBalancer;
+use MediaWiki\MediaWikiServices;
 use MWException;
 use RequestContext;
 use ResultWrapper;
@@ -43,11 +43,11 @@ abstract class CategoryCollector extends SnapshotDiffCollector {
 	/**
 	 * Helper method
 	 *
-	 * @param Services $services
+	 * @param MediaWikiServices $services
 	 * @return CategoryStore
 	 * @throws MWException
 	 */
-	public static function getCategoryStore( Services $services ) {
+	public static function getCategoryStore( MediaWikiServices $services ) {
 		$context = RequestContext::getMain();
 		$context->setUser(
 			$services->getService( 'BSUtilityFactory' )->getMaintenanceUser()->getUser()

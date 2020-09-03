@@ -2,9 +2,9 @@
 
 namespace BlueSpice\ExtendedStatistics\Special;
 
-use BlueSpice\Services;
 use FormatJson;
 use Html;
+use MediaWiki\MediaWikiServices;
 use MWException;
 
 class Snapshot extends \BlueSpice\SpecialPage {
@@ -26,7 +26,10 @@ class Snapshot extends \BlueSpice\SpecialPage {
 		if ( empty( $type ) || empty( $id ) ) {
 			throw new MWException( 'Requires a valid type and id in format "$type-$id"' );
 		}
-		$entity = Services::getInstance()->getService( 'BSEntityFactory' )->newFromID( $id, $type );
+		$entity = MediaWikiServices::getInstance()->getService( 'BSEntityFactory' )->newFromID(
+			$id,
+			$type
+		);
 		if ( !$entity ) {
 			throw new MWException( "invalid entity \"$type-$id\"" );
 		}

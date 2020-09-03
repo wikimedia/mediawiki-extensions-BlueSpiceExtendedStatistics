@@ -4,8 +4,8 @@ namespace BlueSpice\ExtendedStatistics\Special;
 
 use BlueSpice\ExtendedStatistics\EntityConfig\Collection;
 use BlueSpice\ExtensionAttributeBasedRegistry;
-use BlueSpice\Services;
 use BlueSpice\Special\ExtJSBase;
+use MediaWiki\MediaWikiServices;
 
 class AggregatedStatistic extends ExtJSBase {
 	public function __construct() {
@@ -54,7 +54,9 @@ class AggregatedStatistic extends ExtJSBase {
 		$registry = new ExtensionAttributeBasedRegistry(
 			'BlueSpiceFoundationEntityRegistry'
 		);
-		$configFactory = Services::getInstance()->getService( 'BSEntityConfigFactory' );
+		$configFactory = MediaWikiServices::getInstance()->getService(
+			'BSEntityConfigFactory'
+		);
 		$configs = [];
 		foreach ( $registry->getAllKeys() as $type ) {
 			$config = $configFactory->newFromType( $type );

@@ -6,7 +6,7 @@ use BlueSpice\Data\ReaderParams;
 use BlueSpice\ExtendedStatistics\Data\Snapshot\Record;
 use BlueSpice\ExtendedStatistics\Data\Snapshot\Store;
 use BlueSpice\ExtendedStatistics\Entity\Snapshot as Entity;
-use BlueSpice\Services;
+use MediaWiki\MediaWikiServices;
 use SpecialPage;
 
 class Snapshot extends \BS\ExtendedSearch\Source\Crawler\Base {
@@ -19,7 +19,7 @@ class Snapshot extends \BS\ExtendedSearch\Source\Crawler\Base {
 		$result = $store->getReader()->read( new ReaderParams( [
 			ReaderParams::PARAM_LIMIT => ReaderParams::LIMIT_INFINITE,
 		] ) );
-		$factory = Services::getInstance()->getService( 'BSEntityFactory' );
+		$factory = MediaWikiServices::getInstance()->getService( 'BSEntityFactory' );
 		foreach ( $result->getRecords() as $record ) {
 			$entity = $factory->newFromObject( (object)[
 				Entity::ATTR_TYPE => Entity::TYPE,

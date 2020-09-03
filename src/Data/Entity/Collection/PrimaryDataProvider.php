@@ -6,10 +6,10 @@ use BlueSpice\Data\FieldType;
 use BlueSpice\Data\Record;
 use BlueSpice\EntityFactory;
 use BlueSpice\ExtendedStatistics\Entity\Collection;
-use BlueSpice\Services;
 use BS\ExtendedSearch\Backend;
 use BS\ExtendedSearch\Data\PrimaryDataProvider as SearchDataProvider;
 use IContextSource;
+use MediaWiki\MediaWikiServices;
 use User;
 
 class PrimaryDataProvider extends SearchDataProvider {
@@ -96,7 +96,7 @@ class PrimaryDataProvider extends SearchDataProvider {
 	 * @return bool
 	 */
 	protected function isSystemUser( User $user ) {
-		return Services::getInstance()->getService( 'BSUtilityFactory' )
+		return MediaWikiServices::getInstance()->getService( 'BSUtilityFactory' )
 			->getMaintenanceUser()->isMaintenanceUser( $user );
 	}
 
