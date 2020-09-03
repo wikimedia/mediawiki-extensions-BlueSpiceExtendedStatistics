@@ -3,8 +3,8 @@
 require_once dirname( dirname( dirname( __DIR__ ) ) ) . '/maintenance/Maintenance.php';
 
 use BlueSpice\ExtendedStatistics\Entity\Snapshot;
-use BlueSpice\Services;
 use BlueSpice\Timestamp;
+use MediaWiki\MediaWikiServices;
 
 class StatisticsSnapshotCreation extends Maintenance {
 
@@ -16,7 +16,7 @@ class StatisticsSnapshotCreation extends Maintenance {
 	public function execute() {
 		$ts = new DateTime( 'now', new DateTimeZone( 'UTC' ) );
 		$yesterday = DateInterval::createFromDateString( 'yesterday' );
-		$factory = Services::getInstance()->getService(
+		$factory = MediaWikiServices::getInstance()->getService(
 			'BSExtendedStatisticsSnapshotFactory'
 		);
 		/** @var Snapshot $snapshot */
@@ -26,7 +26,8 @@ class StatisticsSnapshotCreation extends Maintenance {
 
 		/** @var Status $status */
 		$status = $snapshot->save(
-			Services::getInstance()->getService( 'BSUtilityFactory' )->getMaintenanceUser()->getUser()
+			MediaWikiServices::getInstance()->getService( 'BSUtilityFactory' )
+				->getMaintenanceUser()->getUser()
 		);
 		if ( !$status->isOK() ) {
 			$this->error( $status->getMessage( false, false, 'en' ) );

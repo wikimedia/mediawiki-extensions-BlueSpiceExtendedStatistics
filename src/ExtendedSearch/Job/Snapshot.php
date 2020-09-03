@@ -4,8 +4,8 @@ namespace BlueSpice\ExtendedStatistics\ExtendedSearch\Job;
 
 use BlueSpice\ExtendedStatistics\Entity\Collection;
 use BlueSpice\ExtendedStatistics\Entity\Snapshot as Entity;
-use BlueSpice\Services;
 use BS\ExtendedSearch\Source\Job\UpdateTitleBase;
+use MediaWiki\MediaWikiServices;
 use SpecialPage;
 
 class Snapshot extends UpdateTitleBase {
@@ -14,7 +14,7 @@ class Snapshot extends UpdateTitleBase {
 
 	protected function doRun() {
 		$oDP = $this->getSource()->getDocumentProvider();
-		$factory = Services::getInstance()->getService( 'BSEntityFactory' );
+		$factory = MediaWikiServices::getInstance()->getService( 'BSEntityFactory' );
 		$entity = $factory->newFromObject( (object)$this->params['entity'] );
 		if ( !$entity ) {
 			// possible data corruption caused by unknown error
@@ -52,7 +52,7 @@ class Snapshot extends UpdateTitleBase {
 	 * @return Collection
 	 */
 	protected function getDocumentProviderSource() {
-		return Services::getInstance()->getService( 'BSEntityFactory' )->newFromObject(
+		return MediaWikiServices::getInstance()->getService( 'BSEntityFactory' )->newFromObject(
 			(object)$this->params['entity']
 		);
 	}

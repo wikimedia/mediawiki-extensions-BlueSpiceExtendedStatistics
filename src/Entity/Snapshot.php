@@ -7,8 +7,8 @@ use BlueSpice\EntityConfig;
 use BlueSpice\EntityFactory;
 use BlueSpice\ExtendedStatistics\DataCollectorFactory;
 use BlueSpice\ExtendedStatistics\ExtendedSearch\Job\Snapshot as Updater;
-use BlueSpice\Services;
 use BlueSpice\Timestamp;
+use MediaWiki\MediaWikiServices;
 
 class Snapshot extends \BlueSpice\Entity {
 	const TYPE = 'snapshot';
@@ -58,12 +58,12 @@ class Snapshot extends \BlueSpice\Entity {
 		IStore $store, EntityFactory $entityFactory = null,
 		DataCollectorFactory $collectorFactory = null ) {
 		if ( !$entityFactory ) {
-			$entityFactory = Services::getInstance()->getService(
+			$entityFactory = MediaWikiServices::getInstance()->getService(
 				'BSEntityFactory'
 			);
 		}
 		if ( !$collectorFactory ) {
-			$collectorFactory = Services::getInstance()->getService(
+			$collectorFactory = MediaWikiServices::getInstance()->getService(
 				'BSExtendedStatisticsDataCollectorFactory'
 			);
 		}

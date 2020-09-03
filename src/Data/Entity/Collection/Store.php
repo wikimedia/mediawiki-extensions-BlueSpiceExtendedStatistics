@@ -4,9 +4,9 @@ namespace BlueSpice\ExtendedStatistics\Data\Entity\Collection;
 
 use BlueSpice\Data\Entity\IStore;
 use BlueSpice\EntityFactory;
-use BlueSpice\Services;
 use BS\ExtendedSearch\Backend;
 use IContextSource;
+use MediaWiki\MediaWikiServices;
 use RequestContext;
 
 class Store extends \BS\ExtendedSearch\Data\Store implements IStore {
@@ -64,7 +64,7 @@ class Store extends \BS\ExtendedSearch\Data\Store implements IStore {
 		if ( $this->factory ) {
 			return $this->factory;
 		}
-		$this->factory = Services::getInstance()->getService( 'BSEntityFactory' );
+		$this->factory = MediaWikiServices::getInstance()->getService( 'BSEntityFactory' );
 		return $this->factory;
 	}
 }
