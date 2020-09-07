@@ -12,6 +12,7 @@
  * @license    http://www.gnu.org/copyleft/gpl.html GPL-3.0-only
  * @filesource
  */
+use MediaWiki\MediaWikiServices;
 
 /**
  * Describes user filter for Statistics for BlueSpice.
@@ -30,7 +31,7 @@ class BsFilterUsers extends BsMultiSelectFilter {
 
 		$this->sLabel = wfMessage( 'bs-statistics-filter-user' )->text();
 		$this->aAvailableValues = $this->loadAvailableValues();
-		$config = \BlueSpice\Services::getInstance()->getConfigFactory()
+		$config = MediaWikiServices::getInstance()->getConfigFactory()
 			->makeConfig( 'bsg' );
 		$this->aDefaultValues = $config->get( 'StatisticsExcludeUsers' );
 	}

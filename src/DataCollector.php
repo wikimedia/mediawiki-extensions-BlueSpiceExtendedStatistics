@@ -7,8 +7,8 @@ use BlueSpice\Data\RecordSet;
 use BlueSpice\EntityFactory;
 use BlueSpice\ExtendedStatistics\Entity\Collection;
 use BlueSpice\ExtendedStatistics\Entity\Snapshot;
-use BlueSpice\Services;
 use Config;
+use MediaWiki\MediaWikiServices;
 
 abstract class DataCollector implements IDataCollector {
 
@@ -54,13 +54,13 @@ abstract class DataCollector implements IDataCollector {
 	/**
 	 *
 	 * @param string $type
-	 * @param Services $services
+	 * @param MediaWikiServices $services
 	 * @param Snapshot $snapshot
 	 * @param Config|null $config
 	 * @param EntityFactory|null $factory
 	 * @return DataCollector
 	 */
-	public static function factory( $type, Services $services, Snapshot $snapshot,
+	public static function factory( $type, MediaWikiServices $services, Snapshot $snapshot,
 		Config $config = null, EntityFactory $factory = null ) {
 		if ( !$config ) {
 			$config = $snapshot->getConfig();

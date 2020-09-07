@@ -6,8 +6,8 @@ use BlueSpice\Data\IStore;
 use BlueSpice\EntityFactory;
 use BlueSpice\ExtendedStatistics\Entity\Snapshot;
 use BlueSpice\ExtendedStatistics\SnapshotFactory;
-use BlueSpice\Services;
 use Config;
+use MediaWiki\MediaWikiServices;
 use MWNamespace;
 
 abstract class NamespaceCollector extends SnapshotDiffCollector {
@@ -22,10 +22,10 @@ abstract class NamespaceCollector extends SnapshotDiffCollector {
 	 * Helper method
 	 *
 	 * @param Snapshot $snapshot
-	 * @param Services $services
+	 * @param MediaWikiServices $services
 	 * @return array
 	 */
-	public static function getNamespaces( Snapshot $snapshot, Services $services ) {
+	public static function getNamespaces( Snapshot $snapshot, MediaWikiServices $services ) {
 		$version = $snapshot->getConfig()->get( 'Version' );
 		if ( version_compare( $version, '1.34', '>=' ) ) {
 			$namespaces = $services->getNamespaceInfo()->getCanonicalNamespaces();

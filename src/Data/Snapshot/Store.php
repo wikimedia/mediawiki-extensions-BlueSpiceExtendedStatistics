@@ -2,8 +2,8 @@
 
 namespace BlueSpice\ExtendedStatistics\Data\Snapshot;
 
-use BlueSpice\Services;
 use IContextSource;
+use MediaWiki\MediaWikiServices;
 
 class Store implements \BlueSpice\Data\IStore, \BlueSpice\Data\Entity\IStore {
 
@@ -13,7 +13,7 @@ class Store implements \BlueSpice\Data\IStore, \BlueSpice\Data\Entity\IStore {
 	 */
 	public function getReader( IContextSource $context = null ) {
 		return new Reader(
-			Services::getInstance()->getDBLoadBalancer()
+			MediaWikiServices::getInstance()->getDBLoadBalancer()
 		);
 	}
 
@@ -24,7 +24,7 @@ class Store implements \BlueSpice\Data\IStore, \BlueSpice\Data\Entity\IStore {
 	public function getWriter( IContextSource $context = null ) {
 		return new Writer(
 			$this->getReader(),
-			Services::getInstance()->getDBLoadBalancer()
+			MediaWikiServices::getInstance()->getDBLoadBalancer()
 		);
 	}
 }

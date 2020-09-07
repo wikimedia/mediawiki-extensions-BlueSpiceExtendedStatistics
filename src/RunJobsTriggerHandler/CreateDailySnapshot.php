@@ -7,13 +7,13 @@ use BlueSpice\INotifier;
 use BlueSpice\RunJobsTriggerHandler;
 use BlueSpice\RunJobsTriggerHandler\Interval;
 use BlueSpice\RunJobsTriggerHandler\Interval\OnceADay;
-use BlueSpice\Services;
 use BlueSpice\Timestamp;
 use BlueSpice\UtilityFactory;
 use Config;
 use DateInterval;
 use DateTime;
 use DateTimeZone;
+use MediaWiki\MediaWikiServices;
 use Status;
 use Wikimedia\Rdbms\LoadBalancer;
 
@@ -56,12 +56,12 @@ class CreateDailySnapshot extends RunJobsTriggerHandler {
 	public static function factory( $config, $loadBalancer, $notifier,
 		SnapshotFactory $snapshotFactory = null, UtilityFactory $util = null ) {
 		if ( !$snapshotFactory ) {
-			$snapshotFactory = Services::getInstance()->getService(
+			$snapshotFactory = MediaWikiServices::getInstance()->getService(
 				'BSExtendedStatisticsSnapshotFactory'
 			);
 		}
 		if ( !$util ) {
-			$util = Services::getInstance()->getService( 'BSUtilityFactory' );
+			$util = MediaWikiServices::getInstance()->getService( 'BSUtilityFactory' );
 		}
 		return new static(
 			$config,
