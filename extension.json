@@ -15,22 +15,6 @@
 		"extensions": {
 			"BlueSpiceFoundation": "~3.2",
 			"BlueSpiceExtendedSearch": "~3.2"
-		},
-		"platform": {
-			"php": ">= 7.2",
-			"ext-ctype": "*",
-			"ext-dom": "*",
-			"ext-gd": "*",
-			"ext-iconv": "*",
-			"ext-fileinfo": "*",
-			"ext-libxml": "*",
-			"ext-mbstring": "*",
-			"ext-SimpleXML": "*",
-			"ext-xml": "*",
-			"ext-xmlreader": "*",
-			"ext-xmlwriter": "*",
-			"ext-zip": "*",
-			"ext-zlib": "*"
 		}
 	},
 	"attributes": {
