@@ -89,5 +89,6 @@
 	"bs-statistics-targets-label": "Alvos",
 	"action-extendedstatistics-viewspecialpage-aggregated": "aceder à página especial [[Special:AggregatedStatistic]]",
 	"right-extendedstatistics-viewspecialpage-aggregated": "Aceder à página especial [[Special:AggregatedStatistic]]",
-	"bs-statistics-aggregationtype-label": "Tipo de agregação"
+	"bs-statistics-aggregationtype-label": "Tipo de agregação",
+	"bs-statistics-paging-page-size": "Tamanho da página"
 }
