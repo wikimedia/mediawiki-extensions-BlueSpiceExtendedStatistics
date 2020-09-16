@@ -3,6 +3,7 @@
 		"authors": [
 			"BaRaN6161 TURK",
 			"Liuxinyu970226",
+			"MuratTheTurkish",
 			"Robby",
 			"Shirayuki",
 			"Stephan Muggli <muggli@hallowelt.biz>",
@@ -84,7 +85,7 @@
 	"right-extendedstatistics-viewspecialpage-aggregated": "{{doc-right|extendedstatistics-viewspecialpage-aggregated}}",
 	"extendedstatisticssnapshots": "Special page name for [[Special:ExtendedStatisticsSnapshots]] special page\n{{Identical|Snapshots}}",
 	"bs-extendedstatistics-collection-var-type": "Label for entry field \"type\".\n{{Identical|Source type}}",
-	"bs-extendedstatistics-collection-var-timestampcreated": "Label for entry field \"timestampcreated\".\n{{Identical|Creation date}}",
+	"bs-extendedstatistics-collection-var-timestampcreated": "Label for entry field \"timestampcreated\".",
 	"bs-statistics-button-label-apply": "Label for the button that executes the query",
 	"bs-statistics-label-bar-chart": "Label for bar chart",
 	"bs-statistics-label-line-chart": "Label for line chart",
