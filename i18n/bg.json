@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Kareyac",
 			"StanProg",
 			"Vlad5250"
 		]
@@ -10,6 +11,7 @@
 	"bs-statistics-week": "Календарна седмица",
 	"bs-statistics-day": "Ден",
 	"bs-statistics-label-page": "Страница",
+	"bs-statistics-filter-category": "Категория",
 	"right-statistic-viewspecialpage": "Достъп до разширена статистика",
 	"bs-statistics-button-label-export": "Изнасяне"
 }
