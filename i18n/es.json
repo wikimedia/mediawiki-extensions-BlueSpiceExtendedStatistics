@@ -69,6 +69,7 @@
 	"bs-extendedstatistics-collection-fatalstatus-permissiondeniedusercan": "La cuenta no tiene permitido efectuar la acción «$1» en «$2»",
 	"bs-extendedstatistics-collection-fatalstatus-permissiondenieduserisallowed": "La cuenta no tiene permitido efectuar la acción «$1»",
 	"bs-extendedstatistics-collection-fatalstatus-notitle": "Se necesita el objeto «Título»",
+	"bs-extendedstatistics-collection-var-type": "Tipo de fuente",
 	"bs-extendedstatistics-collection-var-timestampcreated": "Fecha de creación",
 	"bs-statistics-button-label-apply": "Aplicar filtros",
 	"bs-statistics-label-bar-chart": "Gráfico de barras",
