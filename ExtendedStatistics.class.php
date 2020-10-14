@@ -293,14 +293,14 @@ class ExtendedStatistics extends BsExtensionMW {
 				'inputPeriod' => 'week',
 			]
 		];
-		$aPortalConfig[2][] = [
+		$aPortalConfig[1][] = [
 			'type'  => 'BS.Statistics.StatisticsPortletNumberOfArticles',
 			'config' => [
 				'title' => wfMessage( 'bs-statistics-portlet-numberofarticles' )->plain(),
 				'inputPeriod' => 'week',
 			]
 		];
-		$aPortalConfig[2][] = [
+		$aPortalConfig[1][] = [
 			'type'  => 'BS.Statistics.StatisticsPortletNumberOfPages',
 			'config' => [
 				'title' => wfMessage( 'bs-statistics-portlet-numberofpages' )->plain(),
