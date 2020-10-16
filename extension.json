@@ -211,7 +211,7 @@
 		},
 		"ext.bluespice.statisticsPortlets": {
 			"scripts": [
-				"bluespice.statisticsPortlets.namespaceShim.js"
+				"bluespice.statisticsPortlets.js"
 			],
 			"messages": [
 				"bs-statistics-label-count",
@@ -224,6 +224,10 @@
 				"bs-statistics-week",
 				"bs-statistics-month",
 				"bs-statistics-label-time"
+			],
+			"dependencies": [
+				"ext.bluespice.extjs",
+				"ext.extjsbase.charts"
 			]
 		},
 		"ext.bluespice.statistics.styles": {

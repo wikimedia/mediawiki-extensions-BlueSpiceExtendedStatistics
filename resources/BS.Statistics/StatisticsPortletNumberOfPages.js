@@ -10,9 +10,8 @@
  * @license    http://www.gnu.org/copyleft/gpl.html GPL-3.0-only
  * @filesource
  */
-
-Ext.define('BS.Statistics.StatisticsPortletNumberOfPages', {
+Ext.define( 'BS.Statistics.StatisticsPortletNumberOfPages', {
 	extend: 'BS.Statistics.StatisticsPortlet',
 	diagram: 'BsDiagramNumberOfPages',
 	titleKey: 'bs-statistics-portlet-numberofpages'
-});
+} );
