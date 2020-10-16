@@ -10,10 +10,9 @@
  * @license    http://www.gnu.org/copyleft/gpl.html GPL-3.0-only
  * @filesource
  */
-
-Ext.define('BS.Statistics.StatisticsPortletNumberOfUsers', {
+Ext.define( 'BS.Statistics.StatisticsPortletNumberOfUsers', {
 	extend: 'BS.Statistics.StatisticsPortlet',
 	diagram: 'BsDiagramNumberOfUsers',
 	titleKey: 'bs-statistics-portlet-numberofusers',
 	filters: ['UserFilter']
-});
+} );

@@ -11,8 +11,8 @@
  * @filesource
  */
 
-Ext.define('BS.Statistics.StatisticsPortletNumberOfArticles', {
+Ext.define( 'BS.Statistics.StatisticsPortletNumberOfArticles', {
 	extend: 'BS.Statistics.StatisticsPortlet',
 	diagram: 'BsDiagramNumberOfArticles',
 	titleKey: 'bs-statistics-portlet-numberofarticles'
-});
+} );

@@ -11,8 +11,8 @@
  * @filesource
  */
 
-Ext.define('BS.Statistics.StatisticsPortletNumberOfEdits', {
+Ext.define( 'BS.Statistics.StatisticsPortletNumberOfEdits', {
 	extend: 'BS.Statistics.StatisticsPortlet',
 	diagram: 'BsDiagramNumberOfEdits',
 	titleKey: 'bs-statistics-portlet-numberofedits'
-});
+} );

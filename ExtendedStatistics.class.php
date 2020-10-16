@@ -284,28 +284,32 @@ class ExtendedStatistics extends BsExtensionMW {
 			'config' => [
 				'title' => wfMessage( 'bs-statistics-portlet-numberofusers' )->plain(),
 				'inputPeriod' => 'week',
-			]
+			],
+			'modules'  => [ 'ext.bluespice.statisticsPortlets' ],
 		];
 		$aPortalConfig[1][] = [
 			'type'  => 'BS.Statistics.StatisticsPortletNumberOfEdits',
 			'config' => [
 				'title' => wfMessage( 'bs-statistics-portlet-numberofedits' )->plain(),
 				'inputPeriod' => 'week',
-			]
+			],
+			'modules'  => [ 'ext.bluespice.statisticsPortlets' ],
 		];
 		$aPortalConfig[1][] = [
 			'type'  => 'BS.Statistics.StatisticsPortletNumberOfArticles',
 			'config' => [
 				'title' => wfMessage( 'bs-statistics-portlet-numberofarticles' )->plain(),
 				'inputPeriod' => 'week',
-			]
+			],
+			'modules'  => [ 'ext.bluespice.statisticsPortlets' ],
 		];
 		$aPortalConfig[1][] = [
 			'type'  => 'BS.Statistics.StatisticsPortletNumberOfPages',
 			'config' => [
 				'title' => wfMessage( 'bs-statistics-portlet-numberofpages' )->plain(),
 				'inputPeriod' => 'week',
-			]
+			],
+			'modules'  => [ 'ext.bluespice.statisticsPortlets' ],
 		];
 
 		return true;
