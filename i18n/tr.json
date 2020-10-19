@@ -43,7 +43,7 @@
 	"bs-statistics-diag-edits-per-user-desc": "Bir kullanıcının seçilen süre içinde yaptığı ortalama düzenleme sayısını görüntüler.",
 	"bs-statistics-diag-search-queries": "Sorguları ara",
 	"bs-statistics-diag-search-queries-desc": "Seçilen dönemdeki arama sorgularının sayısını görüntüler.",
-	"bs-statistics-label-searchterm": "Arama terimi",
+	"bs-statistics-label-searchterm": "Terimi ara",
 	"bs-statistics-label-count": "Sayı",
 	"bs-statistics-label-maxhits": "Maksimum sonuç",
 	"bs-statistics-label-time": "Zaman",
