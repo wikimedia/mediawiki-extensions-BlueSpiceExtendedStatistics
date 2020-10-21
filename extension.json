@@ -37,7 +37,7 @@
 		"BlueSpiceFoundation": {
 			"Extensions": {
 				"BlueSpiceExtendedStatistics": {
-					"className": "ExtendedStatistics",
+					"className": "\\BlueSpice\\ExtendedStatistics\\Extension",
 					"extPath": "/BlueSpiceExtendedStatistics",
 					"configDefinitions": {
 						"StatisticsExcludeUsers": "\\BlueSpice\\ExtendedStatistics\\ConfigDefinition\\ExcludeUsers::getInstance",
@@ -77,7 +77,15 @@
 			}
 		},
 		"BlueSpiceExtendedStatistics": {
-			"SnapshotDataCollectorRegistry": {}
+			"SnapshotDataCollectorRegistry": {},
+			"DiagramRegistry": {
+				"BsDiagramNumberOfUsers": "\\BsDiagramNumberOfUsers::factory",
+				"BsDiagramNumberOfPages": "\\BsDiagramNumberOfPages::factory",
+				"BsDiagramNumberOfArticles": "\\BsDiagramNumberOfArticles::factory",
+				"BsDiagramNumberOfEdits": "\\BsDiagramNumberOfEdits::factory",
+				"BsDiagramEditsPerUser": "\\BsDiagramEditsPerUser::factory",
+				"BsDiagramSearches": "\\BsDiagramSearches::factory"
+			}
 		}
 	},
 	"ServiceWiringFiles": [
@@ -124,7 +132,6 @@
 		"BlueSpice\\ExtendedStatistics\\": "src/"
 	},
 	"AutoloadClasses": {
-		"ExtendedStatistics": "ExtendedStatistics.class.php",
 		"BsStatisticsFilter": "includes/StatisticsFilter.class.php",
 		"BsSelectFilter": "includes/SelectFilter.class.php",
 		"BsMultiSelectFilter": "includes/MultiSelectFilter.class.php",
