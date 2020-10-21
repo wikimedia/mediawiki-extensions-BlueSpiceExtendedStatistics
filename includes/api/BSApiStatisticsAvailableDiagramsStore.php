@@ -1,5 +1,7 @@
 <?php
 
+use BlueSpice\ExtendedStatistics\DiagramFactory;
+
 class BSApiStatisticsAvailableDiagramsStore extends BSApiExtJSStoreBase {
 	/**
 	 *
@@ -9,7 +11,7 @@ class BSApiStatisticsAvailableDiagramsStore extends BSApiExtJSStoreBase {
 	protected function makeData( $sQuery = '' ) {
 		$aData = [];
 
-		foreach ( ExtendedStatistics::getAvailableDiagrams() as $oDiagram ) {
+		foreach ( $this->getFactory()->getDiagrams() as $oDiagram ) {
 			$aFilterKeys = [];
 			foreach ( $oDiagram->getFilters() as $key => $oFilter ) {
 				$aFilterKeys[] = $key;
@@ -25,5 +27,13 @@ class BSApiStatisticsAvailableDiagramsStore extends BSApiExtJSStoreBase {
 		}
 
 		return $aData;
+	}
+
+	/**
+	 *
+	 * @return DiagramFactory
+	 */
+	protected function getFactory() {
+		return $this->getServices()->getService( 'BSExtendedStatisticsDiagramFactory' );
 	}
 }

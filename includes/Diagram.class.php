@@ -187,6 +187,26 @@ abstract class BsDiagram {
 	}
 
 	/**
+	 *
+	 * @param Config $config
+	 * @return static
+	 */
+	public static function factory( Config $config ) {
+		$instance = new static;
+		return $instance->setConfig( $config );
+	}
+
+	/**
+	 *
+	 * @param Config $config
+	 * @return static
+	 */
+	public function setConfig( Config $config ) {
+		$this->config = $config;
+		return $this;
+	}
+
+	/**
 	 * Get current SQL statement for data retrieval
 	 * @return string SQL statement
 	 */

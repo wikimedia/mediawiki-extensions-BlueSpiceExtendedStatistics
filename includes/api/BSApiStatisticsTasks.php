@@ -1,6 +1,7 @@
 <?php
 
 use BlueSpice\Api\Response\Standard;
+use BlueSpice\ExtendedStatistics\DiagramFactory;
 
 class BSApiStatisticsTasks extends BSApiTasksBase {
 
@@ -74,7 +75,7 @@ class BSApiStatisticsTasks extends BSApiTasksBase {
 		$sMode		= $oTaskData->mode;
 		$sTo		= $oTaskData->to;
 
-		$aAvailableDiagrams = ExtendedStatistics::getAvailableDiagrams();
+		$aAvailableDiagrams = $this->getFactory()->getDiagrams();
 		$aAllowedDiaKeys = array_keys( $aAvailableDiagrams );
 
 		if ( empty( $sDiagram ) ) {
@@ -132,7 +133,7 @@ class BSApiStatisticsTasks extends BSApiTasksBase {
 			return $oResponse;
 		}
 
-		$oDiagram = ExtendedStatistics::getDiagram( $sDiagram );
+		$oDiagram = $this->getFactory()->newFromName( $sDiagram );
 		$oDiagram->setStartTime( $sFrom );
 		$oDiagram->setEndTime( $sTo );
 		$oDiagram->setActualGrain( $sGrain );
@@ -275,5 +276,13 @@ class BSApiStatisticsTasks extends BSApiTasksBase {
 			return true;
 		}
 		return false;
+	}
+
+	/**
+	 *
+	 * @return DiagramFactory
+	 */
+	protected function getFactory() {
+		return $this->getServices()->getService( 'BSExtendedStatisticsDiagramFactory' );
 	}
 }
