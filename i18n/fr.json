@@ -93,5 +93,6 @@
 	"bs-statistics-aggregationmode-label": "Mode d’agrégation",
 	"bs-statistics-aggregationfield-label": "Champ d’agrégation",
 	"bs-statistics-aggregationtype-label": "Type d’agrégation",
-	"bs-statistics-targets-label": "Cibles"
+	"bs-statistics-targets-label": "Cibles",
+	"bs-statistics-paging-page-size": "Taille de la page"
 }

@@ -3,6 +3,7 @@
 		"authors": [
 			"BadDog",
 			"Bjankuloski06",
+			"Kizule",
 			"Milicevic01",
 			"Zoranzoki21"
 		]
@@ -62,5 +63,6 @@
 	"apihelp-bs-statistics-tasks-description": "Пружа заједничке задатке за статистику",
 	"apihelp-bs-statistics-tasks-summary": "Пружа заједничке задатке за статистику",
 	"bs-statistics-button-label-export": "Извези",
-	"bs-statistics-panel-title-result": "Резултат"
+	"bs-statistics-panel-title-result": "Резултат",
+	"bs-statistics-paging-page-size": "Величина странице"
 }

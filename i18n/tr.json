@@ -3,7 +3,9 @@
 		"authors": [
 			"BaRaN6161 TURK",
 			"Grkn gll",
-			"Sayginer"
+			"MuratTheTurkish",
+			"Sayginer",
+			"Stonecy"
 		]
 	},
 	"bs-statistics-desc": "BlueSpice için istatistik modülü",
@@ -41,7 +43,7 @@
 	"bs-statistics-diag-edits-per-user-desc": "Bir kullanıcının seçilen süre içinde yaptığı ortalama düzenleme sayısını görüntüler.",
 	"bs-statistics-diag-search-queries": "Sorguları ara",
 	"bs-statistics-diag-search-queries-desc": "Seçilen dönemdeki arama sorgularının sayısını görüntüler.",
-	"bs-statistics-label-searchterm": "Arama terimi",
+	"bs-statistics-label-searchterm": "Terimi ara",
 	"bs-statistics-label-count": "Sayı",
 	"bs-statistics-label-maxhits": "Maksimum sonuç",
 	"bs-statistics-label-time": "Zaman",
@@ -89,5 +91,6 @@
 	"bs-statistics-aggregationmode-label": "Toplama modu",
 	"bs-statistics-aggregationfield-label": "Toplama alanı",
 	"bs-statistics-aggregationtype-label": "Toplama türü",
-	"bs-statistics-targets-label": "Hedefler"
+	"bs-statistics-targets-label": "Hedefler",
+	"bs-statistics-paging-page-size": "Sayfa boyutu"
 }
