@@ -85,5 +85,6 @@
 	"bs-statistics-label-bar-chart": "Stapeldiagram",
 	"bs-statistics-label-line-chart": "Linjediagram",
 	"bs-statistics-datasource-label": "Datakälla",
-	"bs-statistics-targets-label": "Mål"
+	"bs-statistics-targets-label": "Mål",
+	"bs-statistics-paging-page-size": "Sidstorlek"
 }

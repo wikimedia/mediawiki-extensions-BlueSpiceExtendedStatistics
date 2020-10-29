@@ -18,5 +18,6 @@
 	"bs-statistics-portlet-numberofedits": "Խմբագրումների քանակ",
 	"bs-statistics-portlet-numberofpages": "Էջերի քանակ",
 	"bs-statistics-portletconfig-periodday": "Երեկ",
-	"bs-statistics-panel-title-result": "Արդյունք"
+	"bs-statistics-panel-title-result": "Արդյունք",
+	"bs-statistics-paging-page-size": "Էջի չափը"
 }

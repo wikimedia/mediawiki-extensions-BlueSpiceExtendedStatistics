@@ -91,5 +91,6 @@
 	"bs-statistics-aggregationmode-label": "Aggregations Modus",
 	"bs-statistics-aggregationfield-label": "Aggregations Feld",
 	"bs-statistics-aggregationtype-label": "Aggregationstyp",
-	"bs-statistics-targets-label": "Ziele"
+	"bs-statistics-targets-label": "Ziele",
+	"bs-statistics-paging-page-size": "Seitengröße"
 }
