@@ -157,7 +157,7 @@ class BSApiStatisticsTasks extends BSApiTasksBase {
 		}
 
 		switch ( $oDiagram->getDataSource() ) {
-			case BsDiagram::DATASOURCE_DATABASE :
+			case BsDiagram::DATASOURCE_DATABASE:
 				global $wgDBserver, $wgDBuser, $wgDBpassword, $wgDBname;
 				$oReader = new MySQLDbReader();
 				$oReader->host = $wgDBserver;

@@ -9,7 +9,7 @@ class Aggregator {
 
 	/**
 	 *
-	 * @var Aggregate[];
+	 * @var Aggregate[]
 	 */
 	protected $aggregates = null;
 
