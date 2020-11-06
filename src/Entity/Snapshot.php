@@ -77,7 +77,11 @@ class Snapshot extends \BlueSpice\Entity {
 	protected function collect() {
 		$collection = [];
 		foreach ( $this->collectorFactory->getCollectors( $this ) as $collector ) {
-			$collection = array_merge( $collection, $collector->collect() );
+			$collected = $collector->collect();
+			if ( !$collected ) {
+				continue;
+			}
+			$collection = array_merge( $collection, $collected );
 		}
 		return $collection;
 	}
