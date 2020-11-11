@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"ArenaL5",
 			"Banjo",
 			"Elisardojm",
 			"Iváns"
@@ -25,13 +26,13 @@
 	"bs-statistics-finish": "Crear diagrama",
 	"bs-statistics-filters": "Filtros",
 	"bs-statistics-interval-too-big": "O intervalo é demasiado grande. Non debe conter máis de 35 pasos de intervalo.",
-	"bs-statistics-diag-number-of-users": "Número de usuarios",
+	"bs-statistics-diag-number-of-users": "Número de usuarios creados",
 	"bs-statistics-diag-number-of-users-desc": "Amosa o número de usuarios que se crearon durante o período elixido.",
 	"bs-statistics-label-name": "Nome",
 	"bs-statistics-label-registration": "Rexistro",
-	"bs-statistics-diag-number-of-pages": "Número de páxinas",
+	"bs-statistics-diag-number-of-pages": "Número de páxinas creadas",
 	"bs-statistics-diag-number-of-pages-desc": "Amosa o número total de páxinas que se crearon durante o período elixido.",
-	"bs-statistics-diag-number-of-pages-mw": "Número de páxinas de contido",
+	"bs-statistics-diag-number-of-pages-mw": "Número de páxinas de contido creadas",
 	"bs-statistics-diag-number-of-pages-mw-desc": "Amosa o número de páxinas de contido que se crearon durante o período elixido.",
 	"bs-statistics-label-page": "Páxina",
 	"bs-statistics-label-creator": "Creador",
@@ -53,11 +54,11 @@
 	"bs-statistics-portlet-numberofusers": "Número de usuarios",
 	"bs-statistics-portlet-numberofedits": "Número de edicións",
 	"bs-statistics-portlet-numberofpages": "Número de páxinas",
-	"bs-statistics-portlet-numberofarticles": "Número de artigos",
+	"bs-statistics-portlet-numberofarticles": "Número de páxinas de contido",
 	"bs-statistics-portlet-numberofusersdesc": "Estatística do número de usuarios.",
 	"bs-statistics-portlet-numberofeditsdesc": "Estatística do número de edicións.",
 	"bs-statistics-portlet-numberofpagesdesc": "Estatística do número de páxinas.",
-	"bs-statistics-portlet-numberofarticlesdesc": "Estatística do número de artigos.",
+	"bs-statistics-portlet-numberofarticlesdesc": "Estatística do número de páxinas de contido.",
 	"bs-statistics-portletconfig-periodday": "Onte",
 	"apihelp-bs-statistics-tasks-description": "Proporciona tarefas comúns para estatísticas",
 	"apihelp-bs-statistics-tasks-summary": "Proporciona tarefas comúns para estatísticas",
