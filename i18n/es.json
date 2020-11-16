@@ -4,7 +4,8 @@
 			"Dgstranz",
 			"Fitoschido",
 			"Javiersanp",
-			"Macofe"
+			"Macofe",
+			"MarcoAurelio"
 		]
 	},
 	"bs-statistics-desc": "Módulo de estadísticas para BlueSpice",
@@ -62,6 +63,7 @@
 	"bs-statistics-portletconfig-periodday": "Ayer",
 	"apihelp-bs-statistics-tasks-description": "Proporciona tareas comunes para estadísticas",
 	"apihelp-bs-statistics-available-diagrams-store-description": "Proporciona un almacén de diagramas disponibles",
+	"action-statistic-viewspecialpage": "acceder a estadísticas avanzadas",
 	"right-statistic-viewspecialpage": "Acceso a estadística avanzada",
 	"bs-statistics-button-label-export": "Exportar",
 	"bs-statistics-panel-title-result": "Resultado",
