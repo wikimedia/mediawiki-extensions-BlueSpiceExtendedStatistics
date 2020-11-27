@@ -66,6 +66,9 @@
 			},
 			"RunJobsTriggerHandlerRegistry": {
 				"bs-extendedstatistics-snapshot-daily": "\\BlueSpice\\ExtendedStatistics\\RunJobsTriggerHandler\\CreateDailySnapshot::factory"
+			},
+			"TagRegistry": {
+				"progress": "\\BlueSpice\\ExtendedStatistics\\Tag\\Progress"
 			}
 		},
 		"BlueSpiceExtendedSearch": {
