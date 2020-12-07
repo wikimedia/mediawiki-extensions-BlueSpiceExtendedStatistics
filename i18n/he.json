@@ -4,7 +4,8 @@
 			"Erelon",
 			"Guycn2",
 			"Steeve815",
-			"YaronSh"
+			"YaronSh",
+			"ישראל קלר"
 		]
 	},
 	"bs-statistics-desc": "מודול סטטיסטיקה של BlueSpice",
@@ -69,6 +70,7 @@
 	"bs-statistics-panel-title-result": "תוצאה",
 	"bs-extendedstatistics-collection-fatalstatus-unknownaction": "הפעולה \"$1\" אינה ידועה",
 	"bs-extendedstatistics-collection-fatalstatus-notitle": "אובייקט \"Title\" נדרש",
+	"extendedstatisticssnapshots": "קובצי מאגרים",
 	"bs-extendedstatistics-collection-var-type": "סוג מקור",
 	"bs-extendedstatistics-collection-var-timestampcreated": "תאריך יצירה",
 	"bs-statistics-button-label-apply": "החלת מסננים",
