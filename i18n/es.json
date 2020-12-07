@@ -4,7 +4,8 @@
 			"Dgstranz",
 			"Fitoschido",
 			"Javiersanp",
-			"Macofe"
+			"Macofe",
+			"MarcoAurelio"
 		]
 	},
 	"bs-statistics-desc": "Módulo de estadísticas para BlueSpice",
@@ -79,5 +80,7 @@
 	"bs-extendedstatistics-collection-fatalstatus-permissiondeniedusercan": "La cuenta no tiene permitido efectuar la acción «$1» en «$2»",
 	"bs-extendedstatistics-collection-fatalstatus-permissiondenieduserisallowed": "La cuenta no tiene permitido efectuar la acción «$1»",
 	"bs-statistics-paging-page-size": "Tamaño de la página",
-	"bs-extendedstatistics-collection-var-type": "Tipo de fuente"
+	"bs-extendedstatistics-collection-var-type": "Tipo de fuente",
+	"action-statistic-viewspecialpage": "acceder a estadísticas avanzadas",
+	"extendedstatisticssnapshots": "Instantáneas"
 }

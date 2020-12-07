@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
+			"BrennodAloisi",
 			"Cedric31"
 		]
 	},
-	"bs-statistics-portletconfig-periodday": "Ièr"
+	"bs-statistics-portletconfig-periodday": "Ièr",
+	"bs-statistics-month": "Mes"
 }

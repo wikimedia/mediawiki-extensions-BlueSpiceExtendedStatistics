@@ -4,7 +4,8 @@
 			"Erelon",
 			"Guycn2",
 			"Steeve815",
-			"YaronSh"
+			"YaronSh",
+			"ישראל קלר"
 		]
 	},
 	"bs-statistics-desc": "מודול סטטיסטיקה של BlueSpice",
@@ -76,5 +77,6 @@
 	"bs-statistics-label-line-chart": "תרשים קו",
 	"bs-statistics-datasource-label": "מקור נתונים",
 	"bs-statistics-targets-label": "יעדים",
-	"bs-statistics-paging-page-size": "גודל דף"
+	"bs-statistics-paging-page-size": "גודל דף",
+	"extendedstatisticssnapshots": "קובצי מאגרים"
 }
