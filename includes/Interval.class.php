@@ -22,8 +22,8 @@ class Interval {
 
 	/**
 	 * Shortcut for getting a series of Intervals from a diagram
-	 * @param object Diagram $oDiagram
-	 * @return object Interval
+	 * @param Diagram $oDiagram
+	 * @return Interval
 	 */
 	public static function getIntervalsFromDiagram( $oDiagram ) {
 		return self::getIntervals(
