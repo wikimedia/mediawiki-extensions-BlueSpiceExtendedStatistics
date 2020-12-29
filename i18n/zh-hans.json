@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			")8",
 			"A Chinese Wikipedian",
 			"Liuxinyu970226",
 			"Phenolla",
@@ -76,5 +77,6 @@
 	"bs-extendedstatistics-collection-fatalstatus-unknownaction": "未知操作“$1”",
 	"bs-statistics-label-bar-chart": "图形栏",
 	"bs-statistics-label-line-chart": "线形栏",
-	"bs-statistics-targets-label": "目标"
+	"bs-statistics-targets-label": "目标",
+	"bs-statistics-paging-page-size": "页面大小"
 }
