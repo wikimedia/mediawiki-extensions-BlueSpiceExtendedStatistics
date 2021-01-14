@@ -84,7 +84,6 @@
 	],
 	"SpecialPages": {
 		"ExtendedStatistics": "SpecialExtendedStatistics",
-		"AggregatedStatistic": "\\BlueSpice\\ExtendedStatistics\\Special\\AggregatedStatistic",
 		"ExtendedStatisticsSnapshots": "\\BlueSpice\\ExtendedStatistics\\Special\\Snapshot"
 	},
 	"JobClasses": {
@@ -93,8 +92,7 @@
 	"APIModules": {
 		"bs-statistics-search-options-store": "BSApiStatisticsSearchOptionsStore",
 		"bs-statistics-available-diagrams-store": "BSApiStatisticsAvailableDiagramsStore",
-		"bs-statistics-tasks": "BSApiStatisticsTasks",
-		"bs-extendedstatistics-collection-store": "\\BlueSpice\\ExtendedStatistics\\Api\\Store\\Collection"
+		"bs-statistics-tasks": "BSApiStatisticsTasks"
 	},
 	"MessagesDirs": {
 		"BlueSpiceExtendedStatistics": [
