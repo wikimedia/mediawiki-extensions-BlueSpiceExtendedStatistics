@@ -8,5 +8,11 @@
 	"bs-statistics-year": "Leto",
 	"bs-statistics-month": "Mesec",
 	"bs-statistics-day": "Dan",
-	"bs-statistics-diag-search-queries": "Poizvedbe"
+	"bs-statistics-filters": "Filtri",
+	"bs-statistics-label-name": "Ime",
+	"bs-statistics-label-page": "Stran",
+	"bs-statistics-diag-search-queries": "Poizvedbe",
+	"bs-statistics-filter-category": "Kategorija",
+	"bs-statistics-button-label-export": "Izvozi",
+	"bs-statistics-panel-title-result": "Rezultat"
 }
