@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"A2y4",
+			"Foomin10",
 			"Shirayuki",
 			"Yatalu"
 		]
@@ -17,7 +18,7 @@
 	"bs-statistics-not-allowed": "あなたには、必要な権限がありません。",
 	"bs-statistics-finish": "図表を作成",
 	"bs-statistics-filters": "絞り込み",
-	"bs-statistics-diag-number-of-users": "利用者数",
+	"bs-statistics-diag-number-of-users": "登録利用者数",
 	"bs-statistics-label-name": "名前",
 	"bs-statistics-diag-number-of-pages": "作成されたページ数",
 	"bs-statistics-diag-number-of-pages-mw": "作成された本文ページ数",
