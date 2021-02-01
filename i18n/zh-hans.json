@@ -3,6 +3,7 @@
 		"authors": [
 			")8",
 			"A Chinese Wikipedian",
+			"Lakejason0",
 			"Liuxinyu970226",
 			"Phenolla",
 			"VulpesVulpes825",
@@ -75,6 +76,7 @@
 	"bs-statistics-button-label-export": "导出",
 	"bs-statistics-panel-title-result": "结果",
 	"bs-extendedstatistics-collection-fatalstatus-unknownaction": "未知操作“$1”",
+	"bs-statistics-button-label-apply": "应用过滤器",
 	"bs-statistics-label-bar-chart": "图形栏",
 	"bs-statistics-label-line-chart": "线形栏",
 	"bs-statistics-targets-label": "目标",
