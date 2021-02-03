@@ -30,6 +30,7 @@ class Writer extends \BlueSpice\Data\Entity\Writer {
 	 * @return Status
 	 */
 	public function writeEntity( Entity $entity ) {
+		return \Status::newGood();
 	}
 
 }
