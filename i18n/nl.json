@@ -1,9 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"SPQRobin",
+			"Encycloon",
 			"Esketti",
 			"Mainframe98",
+			"SPQRobin",
 			"Xbaked potatox"
 		]
 	},
@@ -50,7 +51,7 @@
 	"bs-statistics-filter-searchscope": "Zoekbereik",
 	"bs-statistics-filter-user": "Uitgesloten gebruikers",
 	"bs-statistics-pref-excludeusers": "Deze gebruikers uitsluiten:",
-	"bs-statistics-pref-maxnumberofintervals": "Maximum aantal interval stappen:",
+	"bs-statistics-pref-maxnumberofintervals": "Maximum aantal intervalstappen:",
 	"bs-statistics-portlet-numberofusers": "Aantal gebruikers",
 	"bs-statistics-portlet-numberofedits": "Aantal bewerkingen",
 	"bs-statistics-portlet-numberofpages": "Aantal pagina's",

@@ -1,10 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Fitoschido",
-			"Macofe",
 			"Dgstranz",
-			"Javiersanp"
+			"Fitoschido",
+			"Javiersanp",
+			"Macofe",
+			"MarcoAurelio"
 		]
 	},
 	"bs-statistics-desc": "Módulo de estadísticas para BlueSpice",
@@ -74,5 +75,12 @@
 	"bs-statistics-aggregationmode-label": "Modo de totalización",
 	"bs-statistics-aggregationfield-label": "Campo de totalización",
 	"bs-statistics-aggregationtype-label": "Tipo de totalización",
-	"bs-statistics-targets-label": "Destinos"
+	"bs-statistics-targets-label": "Destinos",
+	"action-statistic-viewspecialpage": "acceder a estadísticas avanzadas",
+	"bs-extendedstatistics-collection-fatalstatus-permissiondeniedusercan": "La cuenta no tiene permitido efectuar la acción «$1» en «$2»",
+	"bs-extendedstatistics-collection-fatalstatus-permissiondenieduserisallowed": "La cuenta no tiene permitido efectuar la acción «$1»",
+	"bs-extendedstatistics-collection-fatalstatus-notitle": "Se necesita el objeto «Título»",
+	"extendedstatisticssnapshots": "Instantáneas",
+	"bs-extendedstatistics-collection-var-type": "Tipo de fuente",
+	"bs-statistics-paging-page-size": "Tamaño de la página"
 }

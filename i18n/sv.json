@@ -2,9 +2,9 @@
 	"@metadata": {
 		"authors": [
 			"Lokal Profil",
-			"WikiPhoenix",
+			"Mjälten",
 			"Sturban",
-			"Mjälten"
+			"WikiPhoenix"
 		]
 	},
 	"bs-statistics-desc": "Statistikmodul för BlueSpice",
@@ -85,5 +85,6 @@
 	"apihelp-bs-extendedstatistics-collection-store-param-aggregate": "\nJSON-sträng-kodat objekt med godtycklig data för uppgiften",
 	"aggregatedstatistic": "Ögonblickbildstatistik",
 	"extendedstatisticssnapshots": "Ögonblicksbilder",
-	"bs-extendedstatistics-collection-var-timestampcreated": "Skapningsdatum"
+	"bs-extendedstatistics-collection-var-timestampcreated": "Skapningsdatum",
+	"bs-statistics-paging-page-size": "Sidstorlek"
 }

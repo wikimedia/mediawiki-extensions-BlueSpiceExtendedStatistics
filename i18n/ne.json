@@ -1,8 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
+			"पर्वत सुबेदी",
 			"बिप्लब आनन्द",
-			"पर्वत सुबेदी"
+			"हिमाल सुबेदी"
 		]
 	},
 	"prefs-statistics": "विस्तारित तथ्याङ्कहरू",
@@ -21,7 +22,7 @@
 	"bs-statistics-list": "सूची",
 	"bs-statistics-not-allowed": "तपाईंसँग आवश्यक अनुमति छैन।",
 	"bs-statistics-finish": "चित्र निर्माण गर्ने",
-	"bs-statistics-filters": "फिल्टरहरू",
+	"bs-statistics-filters": "छनाेटहरू",
 	"bs-statistics-diag-number-of-users": "प्रयोगकर्ता संख्या",
 	"bs-statistics-label-name": "नाम",
 	"bs-statistics-label-registration": "पञ्जिकरण",

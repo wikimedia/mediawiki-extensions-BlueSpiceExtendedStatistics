@@ -1,8 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Felipe L. Ewald",
-			"Eduardo Addad de Oliveira"
+			"Eduardo Addad de Oliveira",
+			"Felipe L. Ewald"
 		]
 	},
 	"bs-statistics-desc": "Módulo de estatísticas para BlueSpice",
@@ -88,5 +88,6 @@
 	"bs-statistics-aggregationmode-label": "Modo de agregação",
 	"bs-statistics-aggregationfield-label": "Campo de agregação",
 	"bs-statistics-aggregationtype-label": "Tipo de agregação",
-	"bs-statistics-targets-label": "Alvos"
+	"bs-statistics-targets-label": "Alvos",
+	"bs-statistics-paging-page-size": "Tamanho da página"
 }

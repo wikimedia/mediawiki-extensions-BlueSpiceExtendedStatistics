@@ -1,11 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Liuxinyu970226",
+			"A2093064",
 			"Cwlin0416",
 			"Kly",
+			"Liuxinyu970226",
 			"Sanmosa",
-			"A2093064",
 			"Xiplus"
 		]
 	},
@@ -92,5 +92,6 @@
 	"bs-statistics-aggregationmode-label": "合計模式",
 	"bs-statistics-aggregationfield-label": "合計欄位",
 	"bs-statistics-aggregationtype-label": "合計類型",
-	"bs-statistics-targets-label": "目標"
+	"bs-statistics-targets-label": "目標",
+	"bs-statistics-paging-page-size": "頁面大小"
 }

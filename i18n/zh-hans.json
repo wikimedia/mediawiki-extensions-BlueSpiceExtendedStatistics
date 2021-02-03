@@ -1,12 +1,15 @@
 {
 	"@metadata": {
 		"authors": [
+			")8",
+			"A Chinese Wikipedian",
+			"Lakejason0",
 			"Liuxinyu970226",
 			"Phenolla",
-			"A Chinese Wikipedian",
 			"VulpesVulpes825",
 			"佛壁灯",
-			"沈澄心"
+			"沈澄心",
+			"铁桶"
 		]
 	},
 	"bs-statistics-desc": "用于BlueSpice的统计模块",
@@ -72,5 +75,10 @@
 	"bs-statistics-button-label-export": "导出",
 	"bs-statistics-panel-title-result": "结果",
 	"action-statistic-viewspecialpage": "访问扩充统计",
-	"bs-statistics-targets-label": "目标"
+	"bs-statistics-targets-label": "目标",
+	"bs-extendedstatistics-collection-fatalstatus-unknownaction": "未知操作“$1”",
+	"bs-statistics-button-label-apply": "应用过滤器",
+	"bs-statistics-label-bar-chart": "图形栏",
+	"bs-statistics-label-line-chart": "线形栏",
+	"bs-statistics-paging-page-size": "页面大小"
 }

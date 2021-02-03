@@ -2,11 +2,12 @@
 	"@metadata": {
 		"authors": [
 			"Alirezaaa",
-			"Reza1615",
-			"Dalba",
-			"Huji",
 			"Amirsara",
-			"FarsiNevis"
+			"Dalba",
+			"FarsiNevis",
+			"Huji",
+			"Jeeputer",
+			"Reza1615"
 		]
 	},
 	"bs-statistics-diagram": "پرسمان",
@@ -55,5 +56,29 @@
 	"action-statistic-viewspecialpage": "دست‌یابی به آمارهٔ تعمیم‌یافته",
 	"right-statistic-viewspecialpage": "دست‌یابی به آمارهٔ تعمیم‌یافته",
 	"bs-statistics-button-label-export": "برون‌بری",
-	"bs-statistics-panel-title-result": "نتیجه"
+	"bs-statistics-panel-title-result": "نتیجه",
+	"bs-statistics-aggregated": "متراکم",
+	"bs-statistics-interval-too-big": "وقفه بسیار بزرگ است. نباید شامل بیشتر از ۳۵ مرحله وقفه باشد.",
+	"bs-statistics-diag-number-of-users-desc": "شمار کاربرانی که در دورهٔ زمانی مورد نظر ایجاد شده‌اند را نمایش می‌دهد.",
+	"bs-statistics-diag-number-of-pages-desc": "مجموع شمار صفحه‌هایی که در دورهٔ زمانی مورد نظر ایجاد شده‌اند را نمایش می‌دهد.",
+	"bs-statistics-diag-number-of-pages-mw": "شمار صفحه‌های محتوایی ایجاد شده",
+	"bs-statistics-diag-number-of-pages-mw-desc": "شمار صفحه‌های محتوایی که در دورهٔ زمانی مورد نظر ایجاد شده‌اند را نمایش می‌دهد.",
+	"bs-statistics-diag-number-of-edits-desc": "مجموع شمار ویرایش‌های انجام‌شده در دورهٔ زمانی مورد نظر را نمایش می‌دهد.",
+	"bs-statistics-filter-user": "کاربران مستثنی‌شده",
+	"bs-statistics-pref-excludeusers": "مستثنی‌کردن این کاربران:",
+	"bs-statistics-pref-maxnumberofintervals": "بیشینهٔ شمار مراحل وقفه",
+	"bs-extendedstatistics-collection-fatalstatus-unknownaction": "عمل ناشناختهٔ «$1»",
+	"bs-extendedstatistics-collection-fatalstatus-permissiondeniedusercan": "کاربر اجازهٔ انجام عمل «$1» در «$2» را ندارد",
+	"bs-extendedstatistics-collection-fatalstatus-permissiondenieduserisallowed": "کاربر اجازهٔ انجام عمل «$1» را ندارد",
+	"bs-extendedstatistics-collection-var-type": "نوع منبع",
+	"bs-extendedstatistics-collection-var-timestampcreated": "تاریخ ایجاد",
+	"bs-statistics-button-label-apply": "اعمال پالایش‌ها",
+	"bs-statistics-label-bar-chart": "نمودار میله‌ای",
+	"bs-statistics-label-line-chart": "نمودار خطی",
+	"bs-statistics-datasource-label": "مأخذ داده‌ها",
+	"bs-statistics-aggregationmode-label": "حالت تجمع",
+	"bs-statistics-aggregationfield-label": "زمینهٔ تجمع",
+	"bs-statistics-aggregationtype-label": "نوع تجمع",
+	"bs-statistics-targets-label": "هدف‌ها",
+	"bs-statistics-paging-page-size": "حجم صفحه"
 }

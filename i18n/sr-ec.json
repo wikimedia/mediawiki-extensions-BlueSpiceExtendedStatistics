@@ -1,18 +1,19 @@
 {
 	"@metadata": {
 		"authors": [
-			"Milicevic01",
 			"BadDog",
-			"Zoranzoki21",
-			"Bjankuloski06"
+			"Bjankuloski06",
+			"Kizule",
+			"Milicevic01",
+			"Zoranzoki21"
 		]
 	},
 	"bs-statistics-week": "Календарска недеља",
 	"bs-statistics-not-allowed": "Немате потребну дозволу.",
 	"bs-statistics-diag-number-of-users": "Број отворених налога",
 	"bs-statistics-diag-number-of-pages": "Број направљених страница",
-	"bs-statistics-portlet-numberofarticles": "Број страница са садржајем",
-	"bs-statistics-portlet-numberofarticlesdesc": "Статистика броја страница са садржајем.",
+	"bs-statistics-portlet-numberofarticles": "Број садржајних страница",
+	"bs-statistics-portlet-numberofarticlesdesc": "Статистика броја садржајних страница.",
 	"prefs-statistics": "Проширена статистика",
 	"extendedstatistics": "Проширена статистика",
 	"bs-statistics-diagram": "Упит",
@@ -33,8 +34,8 @@
 	"bs-statistics-label-name": "Име",
 	"bs-statistics-label-registration": "Регистрација",
 	"bs-statistics-diag-number-of-pages-desc": "Приказује укупан број страница које су креиране у одабраном периоду.",
-	"bs-statistics-diag-number-of-pages-mw": "Број креираних страница са садржајем",
-	"bs-statistics-diag-number-of-pages-mw-desc": "Приказује број страница са садржајем које су креиране у изабраном периоду.",
+	"bs-statistics-diag-number-of-pages-mw": "Број направљених садржајних страница",
+	"bs-statistics-diag-number-of-pages-mw-desc": "Приказује број садржајних страница направљених у одабраном периоду.",
 	"bs-statistics-label-page": "Страница",
 	"bs-statistics-label-creator": "Аутор",
 	"bs-statistics-diag-number-of-edits": "Број измена",
@@ -62,5 +63,6 @@
 	"apihelp-bs-statistics-tasks-description": "Пружа заједничке задатке за статистику",
 	"apihelp-bs-statistics-tasks-summary": "Пружа заједничке задатке за статистику",
 	"bs-statistics-button-label-export": "Извези",
-	"bs-statistics-panel-title-result": "Резултат"
+	"bs-statistics-panel-title-result": "Резултат",
+	"bs-statistics-paging-page-size": "Величина странице"
 }

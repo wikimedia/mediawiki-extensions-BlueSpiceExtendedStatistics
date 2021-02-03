@@ -5,5 +5,7 @@
 		]
 	},
 	"bs-statistics-mode": "Modo",
-	"bs-statistics-label-page": "Pagino"
+	"bs-statistics-label-page": "Pagino",
+	"bs-statistics-year": "Yaro",
+	"bs-statistics-button-label-export": "Exportacar"
 }

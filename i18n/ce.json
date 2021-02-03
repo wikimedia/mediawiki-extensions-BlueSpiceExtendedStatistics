@@ -32,5 +32,6 @@
 	"bs-statistics-portlet-numberofusers": "Декъашхойн дукхалла",
 	"bs-statistics-portlet-numberofedits": "Нисдарийн дукхалла",
 	"bs-statistics-portlet-numberofpages": "АгӀонийн дукхалла",
-	"bs-statistics-portletconfig-periodday": "Селхана"
+	"bs-statistics-portletconfig-periodday": "Селхана",
+	"bs-statistics-datasource-label": "Хаамийн хьост"
 }

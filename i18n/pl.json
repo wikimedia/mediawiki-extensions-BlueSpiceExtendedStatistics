@@ -2,8 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Chrumps",
-			"Railfail536",
-			"Rail"
+			"Rail",
+			"Railfail536"
 		]
 	},
 	"bs-statistics-desc": "Moduł statystyki BlueSpice",
@@ -49,5 +49,6 @@
 	"right-statistic-viewspecialpage": "Dostęp do rozszerzonej statystyki",
 	"bs-statistics-button-label-export": "Eksport",
 	"bs-statistics-panel-title-result": "Wynik",
-	"action-statistic-viewspecialpage": "podglądu rozszerzonej statystyki"
+	"action-statistic-viewspecialpage": "podglądu rozszerzonej statystyki",
+	"bs-statistics-paging-page-size": "Rozmiar strony"
 }

@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Sayginer",
+			"BaRaN6161 TURK",
 			"Grkn gll",
-			"BaRaN6161 TURK"
+			"MuratTheTurkish",
+			"Sayginer",
+			"Stonecy"
 		]
 	},
 	"prefs-statistics": "Genişletilmiş istatistikler",
@@ -16,18 +18,18 @@
 	"bs-statistics-label-creator": "Oluşturan",
 	"bs-statistics-diag-number-of-edits": "Değişiklik sayısı",
 	"bs-statistics-diag-number-of-edits-desc": "Seçilen dönem içinde yapılan değişikliklerin toplam sayısını görüntüler.",
-	"bs-statistics-label-searchterm": "Arama terimi",
+	"bs-statistics-label-searchterm": "Terimi ara",
 	"bs-statistics-filter-category": "Kategori",
 	"bs-statistics-pref-excludeusers": "Şu kullanıcılar hariç:",
 	"bs-statistics-portlet-numberofusers": "Kullanıcı sayısı",
 	"bs-statistics-portlet-numberofedits": "Değişiklik sayısı",
 	"bs-statistics-portlet-numberofpages": "Sayfa sayısı",
 	"bs-statistics-portletconfig-periodday": "Dün",
-	"action-extendedstatistics-viewspecialpage-aggregated": "özel sayfaya eriş [[Special:AggregatedStatistic]]",
-	"right-extendedstatistics-viewspecialpage-aggregated": "Özel sayfaya erişin [[Special:AggregatedStatistic]]",
+	"action-extendedstatistics-viewspecialpage-aggregated": "[[Special:AggregatedStatistic]] özel sayfaya eriş",
+	"right-extendedstatistics-viewspecialpage-aggregated": "[[Special:AggregatedStatistic]] özel sayfaya erişin",
 	"bs-statistics-button-label-apply": "Filtreleri uygula",
-	"bs-statistics-label-bar-chart": "Çubuk grafik",
-	"bs-statistics-label-line-chart": "Çizgi grafik",
+	"bs-statistics-label-bar-chart": "Çubuk grafiği",
+	"bs-statistics-label-line-chart": "Çizgi grafiği",
 	"bs-statistics-datasource-label": "Veri kaynağı",
 	"bs-statistics-targets-label": "Hedefler",
 	"bs-statistics-desc": "BlueSpice için istatistik modülü",
@@ -51,7 +53,7 @@
 	"bs-statistics-diag-number-of-pages-mw": "Oluşturulan içerik sayfası sayısı",
 	"bs-statistics-diag-number-of-pages-mw-desc": "Seçilen süre içinde oluşturulan içerik sayfası sayısını görüntüler.",
 	"bs-statistics-label-page": "Sayfa",
-	"bs-statistics-diag-edits-per-user": "Kullanıcı başına düzenleme",
+	"bs-statistics-diag-edits-per-user": "Kullanıcı başına düzenlemeler",
 	"bs-statistics-diag-edits-per-user-desc": "Bir kullanıcının seçilen süre içinde yaptığı ortalama düzenleme sayısını görüntüler.",
 	"bs-statistics-diag-search-queries": "Sorguları ara",
 	"bs-statistics-diag-search-queries-desc": "Seçilen dönemdeki arama sorgularının sayısını görüntüler.",
@@ -82,12 +84,13 @@
 	"bs-extendedstatistics-collection-fatalstatus-notitle": "\"Başlık\" nesnesi gerekli",
 	"apihelp-bs-extendedstatistics-collection-store-description": "Sorgulanabilen, filtrelenebilen ve toplanabilen istatistikler için bir mağaza sağlar",
 	"apihelp-bs-extendedstatistics-collection-store-summary": "Sorgulanabilen, filtrelenebilen ve toplanabilen istatistikler için bir mağaza sağlar",
-	"apihelp-bs-extendedstatistics-collection-store-param-aggregate": "Toplama için rasgele veriler içeren JSON dize kodlu nesne",
+	"apihelp-bs-extendedstatistics-collection-store-param-aggregate": "Toplama için rastgele veriler içeren JSON dize kodlu nesne",
 	"aggregatedstatistic": "Anlık görüntü istatistikleri",
 	"extendedstatisticssnapshots": "Anlık resimler",
-	"bs-extendedstatistics-collection-var-type": "Kaynak tipi",
+	"bs-extendedstatistics-collection-var-type": "Kaynak türü",
 	"bs-extendedstatistics-collection-var-timestampcreated": "Oluşturulma tarihi",
 	"bs-statistics-aggregationmode-label": "Toplama modu",
 	"bs-statistics-aggregationfield-label": "Toplama alanı",
-	"bs-statistics-aggregationtype-label": "Toplama türü"
+	"bs-statistics-aggregationtype-label": "Toplama türü",
+	"bs-statistics-paging-page-size": "Sayfa boyutu"
 }
