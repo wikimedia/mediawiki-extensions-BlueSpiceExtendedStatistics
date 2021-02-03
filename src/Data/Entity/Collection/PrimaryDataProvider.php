@@ -44,7 +44,6 @@ class PrimaryDataProvider extends SearchDataProvider {
 	/**
 	 *
 	 * @param \Elastica\Result $row
-	 * @return null
 	 */
 	protected function appendRowToData( \Elastica\Result $row ) {
 		$data = $row->{$this->getTypeName()};
