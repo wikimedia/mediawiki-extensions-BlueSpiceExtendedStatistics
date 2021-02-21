@@ -54,7 +54,7 @@
 		},
 		"BlueSpiceExtendedSearch": {
 			"Sources": {
-				"extended_statistics":  "\\BlueSpice\\ExtendedStatistics\\ExtendedSearch\\Snapshots::create"
+				"extended_statistics": "\\BlueSpice\\ExtendedStatistics\\ExtendedSearch\\Snapshots::create"
 			}
 		},
 		"BlueSpiceExtendedStatistics": {
@@ -129,7 +129,7 @@
 	"ExtensionMessagesFiles": {
 		"ExtendedStatisticsAlias": "languages/ExtendedStatistics.alias.php"
 	},
-	"load_composer_autoloader" : true,
+	"load_composer_autoloader": true,
 	"Hooks": {
 		"SkinTemplateOutputPageBeforeExec": "\\BlueSpice\\ExtendedStatistics\\Hook\\SkinTemplateOutputPageBeforeExec\\AddExtendedStatistics::callback",
 		"BeforePageDisplay": "\\BlueSpice\\ExtendedStatistics\\Hook\\BeforePageDisplay\\AddResources::callback",
