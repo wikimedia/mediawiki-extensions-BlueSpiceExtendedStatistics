@@ -76,9 +76,13 @@
 	"bs-statistics-button-label-export": "导出",
 	"bs-statistics-panel-title-result": "结果",
 	"bs-extendedstatistics-collection-fatalstatus-unknownaction": "未知操作“$1”",
+	"extendedstatisticssnapshots": "快照",
+	"bs-extendedstatistics-collection-var-type": "来源类型",
+	"bs-extendedstatistics-collection-var-timestampcreated": "创建日期",
 	"bs-statistics-button-label-apply": "应用过滤器",
 	"bs-statistics-label-bar-chart": "图形栏",
 	"bs-statistics-label-line-chart": "线形栏",
+	"bs-statistics-datasource-label": "数据源",
 	"bs-statistics-targets-label": "目标",
 	"bs-statistics-paging-page-size": "页面大小"
 }
