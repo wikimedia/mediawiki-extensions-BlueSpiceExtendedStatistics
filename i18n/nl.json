@@ -70,5 +70,6 @@
 	"bs-statistics-label-bar-chart": "Staafdiagram",
 	"bs-statistics-label-line-chart": "Lijndiagram",
 	"bs-statistics-datasource-label": "Gegevensbron",
-	"bs-statistics-targets-label": "Doelen"
+	"bs-statistics-targets-label": "Doelen",
+	"bs-statistics-paging-page-size": "Paginagrootte"
 }
