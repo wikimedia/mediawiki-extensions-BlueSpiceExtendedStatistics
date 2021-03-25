@@ -31,7 +31,11 @@ class Snapshot extends UpdateTitleBase {
 				'ExtendedStatisticsSnapshots',
 				"$id-$type-$key"
 			);
-			$aDC = $oDP->getDataConfig( $title->getCanonicalURL(), $collection, $title );
+			$dataItem = [
+				'title' => $title,
+				'entity' => $collection
+			];
+			$aDC = $oDP->getDataConfig( $title->getCanonicalURL(), $dataItem );
 			$this->getSource()->addDocumentsToIndex( [ $aDC ] );
 		}
 
