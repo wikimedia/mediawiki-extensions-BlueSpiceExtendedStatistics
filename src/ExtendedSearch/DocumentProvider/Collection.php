@@ -12,11 +12,12 @@ class Collection extends DecoratorBase {
 	/**
 	 *
 	 * @param string $sUri
-	 * @param Entity $entity
-	 * @param Title $title
+	 * @param mixed $mDataItem
 	 * @return array
 	 */
-	public function getDataConfig( $sUri, $entity, $title ) {
+	public function getDataConfig( $sUri, $mDataItem ) {
+		$title = $mDataItem['title'];
+		$entity = $mDataItem['entity'];
 		$aDC = $this->oDecoratedDP->getDataConfig( $sUri, null );
 		$aDC = array_merge( $aDC, [
 			'basename' => $title->getBaseText(),
