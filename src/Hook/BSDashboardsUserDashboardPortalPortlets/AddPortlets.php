@@ -8,17 +8,6 @@ class AddPortlets extends BSDashboardsUserDashboardPortalPortlets {
 
 	protected function doProcess() {
 		$this->portlets[] = [
-			'type' => 'BS.ExtendedStatistics.RSSPortlet',
-			'config' => [
-				'title' => $this->msg( 'bs-rssfeeder-rss' )->plain(),
-				'height' => 660,
-				'rssurl' => 'https://blog.bluespice.com/feed/'
-			],
-			'title' => $this->msg( 'bs-rssfeeder-rss' )->plain(),
-			'description' => $this->msg( 'bs-rssfeeder-rss-desc' )->plain(),
-			'modules' => 'ext.bluespice.rssFeeder',
-		];
-		$this->portlets[] = [
 			'type'  => 'BS.Statistics.StatisticsPortletNumberOfUsers',
 			'config' => [
 				'title' => $this->msg( 'bs-statistics-portlet-numberofusers' )->plain(),
