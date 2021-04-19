@@ -38,12 +38,12 @@
 			"Extensions": {
 				"BlueSpiceExtendedStatistics": {
 					"className": "\\BlueSpice\\ExtendedStatistics\\Extension",
-					"extPath": "/BlueSpiceExtendedStatistics",
-					"configDefinitions": {
-						"StatisticsExcludeUsers": "\\BlueSpice\\ExtendedStatistics\\ConfigDefinition\\ExcludeUsers::getInstance",
-						"StatisticsMaxNumberOfIntervals": "\\BlueSpice\\ExtendedStatistics\\ConfigDefinition\\MaxNumberOfIntervals::getInstance"
-					}
+					"extPath": "/BlueSpiceExtendedStatistics"
 				}
+			},
+			"ConfigDefinitionRegistry": {
+				"StatisticsExcludeUsers": "\\BlueSpice\\ExtendedStatistics\\ConfigDefinition\\ExcludeUsers::getInstance",
+				"StatisticsMaxNumberOfIntervals": "\\BlueSpice\\ExtendedStatistics\\ConfigDefinition\\MaxNumberOfIntervals::getInstance"
 			},
 			"PermissionRegistry": {
 				"statistic-viewspecialpage": {
