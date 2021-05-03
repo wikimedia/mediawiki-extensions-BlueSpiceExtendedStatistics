@@ -82,7 +82,7 @@ class ExportCollection extends Maintenance {
 		$this->output( " OK\n" );
 		$this->output( " * Create spreadsheet..." );
 		$rows = [];
-		$type = array_filter( $data[ReaderParams::PARAM_FILTER], function ( $e ) {
+		$type = array_filter( $data[ReaderParams::PARAM_FILTER], static function ( $e ) {
 			return $e->{StringValue::KEY_PROPERTY} === Collection::ATTR_TYPE;
 		} );
 		$config = $this->getFactory()->newFromType( $type[0]->{StringValue::KEY_VALUE} );
@@ -202,7 +202,7 @@ class ExportCollection extends Maintenance {
 				ReaderParams::PARAM_FILTER . " must be an array of objects"
 			);
 		}
-		$type = array_filter( $data[ReaderParams::PARAM_FILTER], function ( $e ) {
+		$type = array_filter( $data[ReaderParams::PARAM_FILTER], static function ( $e ) {
 			return $e->{StringValue::KEY_PROPERTY} === Collection::ATTR_TYPE;
 		} );
 		if ( empty( $type ) ) {
@@ -235,7 +235,7 @@ class ExportCollection extends Maintenance {
 				ReaderParams::PARAM_AGGREGATOR . " must be an array of objects"
 			);
 		}
-		$type = array_filter( $data[ReaderParams::PARAM_FILTER], function ( $e ) {
+		$type = array_filter( $data[ReaderParams::PARAM_FILTER], static function ( $e ) {
 			return $e->{StringValue::KEY_PROPERTY} === Collection::ATTR_TYPE;
 		} );
 		$config = $this->getFactory()->newFromType( $type[0]->{StringValue::KEY_VALUE} );

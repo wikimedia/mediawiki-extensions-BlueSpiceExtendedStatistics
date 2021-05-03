@@ -23,7 +23,7 @@ class Schema extends EntitySchema {
 	 */
 	protected function getEntityConfigs() {
 		$entityConfigs = parent::getEntityConfigs();
-		return array_filter( $entityConfigs, function ( $entityConfig ) {
+		return array_filter( $entityConfigs, static function ( $entityConfig ) {
 			return $entityConfig->get( 'IsCollection' );
 		} );
 	}

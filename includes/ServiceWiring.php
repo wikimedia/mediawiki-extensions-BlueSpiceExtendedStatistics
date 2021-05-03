@@ -8,7 +8,7 @@ use MediaWiki\MediaWikiServices;
 
 return [
 
-	'BSExtendedStatisticsDataCollectorFactory' => function ( MediaWikiServices $services ) {
+	'BSExtendedStatisticsDataCollectorFactory' => static function ( MediaWikiServices $services ) {
 		$registry = new ExtensionAttributeBasedRegistry(
 			'BlueSpiceExtendedStatisticsSnapshotDataCollectorRegistry'
 		);
@@ -18,7 +18,7 @@ return [
 		);
 	},
 
-	'BSExtendedStatisticsSnapshotFactory' => function ( MediaWikiServices $services ) {
+	'BSExtendedStatisticsSnapshotFactory' => static function ( MediaWikiServices $services ) {
 		$registry = new ExtensionAttributeBasedRegistry(
 			'BlueSpiceFoundationEntityRegistry'
 		);
@@ -29,7 +29,7 @@ return [
 		);
 	},
 
-	'BSExtendedStatisticsDiagramFactory' => function ( MediaWikiServices $services ) {
+	'BSExtendedStatisticsDiagramFactory' => static function ( MediaWikiServices $services ) {
 		$registry = new ExtensionAttributeBasedRegistry(
 			'BlueSpiceExtendedStatisticsDiagramRegistry'
 		);

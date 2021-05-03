@@ -60,7 +60,7 @@ abstract class SnapshotDiffCollector extends StoreSourced {
 		$expectedClass = $this->getCollectionClass();
 		$this->lastCollection = array_filter(
 			$snapshot->get( Snapshot::ATTR_COLLECTION ),
-			function ( Collection $e ) use ( $expectedClass ) {
+			static function ( Collection $e ) use ( $expectedClass ) {
 				return $e instanceof $expectedClass;
 			}
 		);
