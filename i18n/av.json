@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Gazimagomedov",
+			"Omarov M.",
 			"Аль-Гимравий"
 		]
 	},
@@ -15,10 +16,10 @@
 	"bs-statistics-day": "Къо",
 	"bs-statistics-finish": "Диаграмма гIуцIцIизе",
 	"bs-statistics-filters": "Фильтрал",
-	"bs-statistics-diag-number-of-users": "ГIахьалчагIазул къадар",
+	"bs-statistics-diag-number-of-users": "Гьарурал гIахьалчагIазул къадар",
 	"bs-statistics-label-name": "ЦІар",
 	"bs-statistics-label-registration": "Регистрация",
-	"bs-statistics-diag-number-of-pages": "Гьумеразул номерал",
+	"bs-statistics-diag-number-of-pages": "Гьарурал гьумеразул къадар",
 	"bs-statistics-label-page": "Гьумер",
 	"bs-statistics-label-creator": "Автор",
 	"bs-statistics-diag-number-of-edits": "Хиса-басиязул къадар",
