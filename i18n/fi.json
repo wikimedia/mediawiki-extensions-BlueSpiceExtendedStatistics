@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Joquliina",
 			"Pyscowicz",
 			"Silvonen"
 		]
@@ -21,5 +22,25 @@
 	"bs-statistics-filter-category": "Luokka",
 	"bs-statistics-portletconfig-periodday": "Eilen",
 	"bs-statistics-panel-title-result": "Tulos",
-	"bs-statistics-paging-page-size": "Sivun koko"
+	"bs-statistics-paging-page-size": "Sivun koko",
+	"bs-statistics-diag-number-of-users-desc": "Näyttää valitun ajan sisällä luotujen käyttäjien määrän.",
+	"bs-statistics-diag-number-of-pages": "Luotujen sivujen määrä",
+	"bs-statistics-diag-number-of-pages-desc": "Näyttää valitun ajan sisällä luotujen sivujen kokonaismäärän.",
+	"bs-statistics-diag-number-of-pages-mw": "Luotujen sisältösivujen määrä",
+	"bs-statistics-diag-number-of-pages-mw-desc": "Näyttää valitun ajan sisällä luotujen sisältösivujen määrän.",
+	"bs-statistics-diag-number-of-edits": "Muokkauksien määrä",
+	"bs-statistics-diag-number-of-edits-desc": "Näyttää valitun ajan sisällä tehtyjen muokkauksien kokonaismäärän.",
+	"bs-statistics-diag-edits-per-user": "Muokkauksia käyttäjää kohti",
+	"bs-statistics-diag-search-queries-desc": "Näyttää valitun ajan sisällä tehtyjen hakujen määrän.",
+	"bs-statistics-label-count": "Määrä",
+	"bs-statistics-portlet-numberofusers": "Käyttäjien määrä",
+	"bs-statistics-portlet-numberofedits": "Muokkauksien määrä",
+	"bs-statistics-portlet-numberofpages": "Sivujen määrä",
+	"bs-statistics-portlet-numberofarticles": "Sisältösivujen määrä",
+	"bs-statistics-button-label-export": "Vie",
+	"bs-extendedstatistics-collection-fatalstatus-unknownaction": "Tuntematon toiminto \"$1\"",
+	"bs-extendedstatistics-collection-fatalstatus-permissiondeniedusercan": "Käyttäjä ei saa suorittaa toimintoa \"$1\" sivulla \"$2\"",
+	"bs-extendedstatistics-collection-fatalstatus-permissiondenieduserisallowed": "Käyttäjä ei saa suorittaa toimintoa \"$1\"",
+	"bs-statistics-button-label-apply": "Käytä suodattimia",
+	"bs-statistics-targets-label": "Kohteet"
 }

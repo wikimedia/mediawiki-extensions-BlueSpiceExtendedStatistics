@@ -4,7 +4,8 @@
 			"Dgstranz",
 			"Fitoschido",
 			"Javiersanp",
-			"Macofe"
+			"Macofe",
+			"MarcoAurelio"
 		]
 	},
 	"bs-statistics-desc": "Módulo de estadísticas para BlueSpice",
@@ -79,5 +80,7 @@
 	"bs-statistics-aggregationtype-label": "Tipo de totalización",
 	"bs-statistics-targets-label": "Destinos",
 	"bs-extendedstatistics-collection-var-type": "Tipo de fuente",
-	"bs-statistics-paging-page-size": "Tamaño de la página"
+	"bs-statistics-paging-page-size": "Tamaño de la página",
+	"action-statistic-viewspecialpage": "acceder a estadísticas avanzadas",
+	"extendedstatisticssnapshots": "Instantáneas"
 }
