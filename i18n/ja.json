@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"A2y4",
+			"Ajeje Brazorf",
 			"Foomin10",
 			"Shirayuki",
 			"Yatalu"
@@ -10,6 +11,8 @@
 	"bs-statistics-desc": "BlueSpice 用の統計モジュール",
 	"prefs-statistics": "拡張統計",
 	"extendedstatistics": "拡張統計",
+	"bs-statistics-from": "差出人",
+	"bs-statistics-to": "宛先",
 	"bs-statistics-mode": "モード",
 	"bs-statistics-year": "年",
 	"bs-statistics-month": "月",
