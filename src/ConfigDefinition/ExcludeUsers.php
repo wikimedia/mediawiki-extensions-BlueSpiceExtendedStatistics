@@ -31,4 +31,12 @@ class ExcludeUsers extends \BlueSpice\ConfigDefinition\ArraySetting {
 	public function getHtmlFormField() {
 		return new \HTMLMultiSelectPlusAdd( $this->makeFormFieldParams() );
 	}
+
+	/**
+	 *
+	 * @return string
+	 */
+	public function getHelpMessageKey() {
+		return 'bs-statistics-pref-excludeusers-help';
+	}
 }
