@@ -86,5 +86,6 @@
 	"bs-statistics-aggregationfield-label": "Aggregations Feld",
 	"bs-statistics-aggregationtype-label": "Aggregationstyp",
 	"bs-statistics-targets-label": "Ziele",
-	"bs-statistics-paging-page-size": "Seitengröße"
+	"bs-statistics-paging-page-size": "Seitengröße",
+	"bs-statistics-pref-excludeusers-help": "Manche Benutzer, z.B. mit Admin-Rechten, können die Statistik auf der Seite Spezial:ExtendedStatistics verzerren. Sie können hier von den statistischen Ergebnissen ausgeschlossen werden."
 }

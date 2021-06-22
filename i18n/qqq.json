@@ -110,5 +110,6 @@
 	"bs-statistics-aggregated-report-filter-user-multi": "Filter name",
 	"bs-statistics-aggregated-filter-category-namespace-notice": "Help/notice message for a filter",
 	"bs-statistics-aggregated-report-error": "Generic error message",
-	"bs-statistics-aggregated-report-loading": "Loading notice"
+	"bs-statistics-aggregated-report-loading": "Loading notice",
+	"bs-statistics-pref-excludeusers-help": "Description for config variable \"StatisticsExcludeUsers\""
 }
