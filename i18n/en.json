@@ -104,5 +104,6 @@
 	"bs-statistics-aggregated-report-filter-user-multi": "Users",
 	"bs-statistics-aggregated-filter-category-namespace-notice": "Filter either by categories or by namespaces",
 	"bs-statistics-aggregated-report-error": "An error has occurred!",
-	"bs-statistics-aggregated-report-loading": "Loading data..."
+	"bs-statistics-aggregated-report-loading": "Loading data...",
+	"bs-statistics-pref-excludeusers-help": "Some users, e.g. with admin rights, can distort the statistcs on the page Special:ExtendedStatistics. They can be excluded from statistical results."
 }
