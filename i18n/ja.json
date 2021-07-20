@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"A2y4",
+			"Ajeje Brazorf",
 			"Foomin10",
 			"Shirayuki",
 			"Yatalu"
@@ -35,5 +36,7 @@
 	"extendedstatisticssnapshots": "スナップショット",
 	"bs-statistics-label-bar-chart": "棒グラフ",
 	"bs-statistics-label-line-chart": "折れ線グラフ",
-	"bs-statistics-paging-page-size": "ページのサイズ"
+	"bs-statistics-paging-page-size": "ページのサイズ",
+	"bs-statistics-from": "差出人",
+	"bs-statistics-to": "宛先"
 }
