@@ -47,9 +47,6 @@
 			},
 			"EntityRegistry": {
 				"snapshot": "\\BlueSpice\\ExtendedStatistics\\EntityConfig\\Snapshot"
-			},
-			"RunJobsTriggerHandlerRegistry": {
-				"bs-extendedstatistics-snapshot-daily": "\\BlueSpice\\ExtendedStatistics\\RunJobsTriggerHandler\\CreateDailySnapshot::factory"
 			}
 		},
 		"BlueSpiceExtendedSearch": {

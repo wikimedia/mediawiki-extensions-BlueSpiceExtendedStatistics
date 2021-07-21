@@ -2,6 +2,7 @@
 
 require_once dirname( dirname( dirname( __DIR__ ) ) ) . '/maintenance/Maintenance.php';
 
+use BlueSpice\ExtendedStatistics\Entity\Collection;
 use BlueSpice\Services;
 use BlueSpice\Timestamp;
 use BlueSpice\ExtendedStatistics\Entity\Snapshot;
@@ -23,7 +24,22 @@ class StatisticsSnapshotCreation extends Maintenance {
 		$snapshot = $factory->newFromTimestamp(
 			new Timestamp( $ts->add( $yesterday ) )
 		);
+		if ( !$snapshot ) {
+			$this->error( 'snapshot could not be created from Timestamp' );
+			return;
+		}
 
+		$type = null;
+		$GLOBALS['wgHooks']['BSEntitySetValuesByObject'][] = function ( $entity ) use( &$type ) {
+			if ( !$entity instanceof Collection ) {
+				return;
+			}
+			if ( $entity->get( $entity::ATTR_TYPE, '' ) !== $type ) {
+				$type = $entity->get( $entity::ATTR_TYPE, '' );
+				$this->output( "\n$type: " );
+			}
+			$this->output( "." );
+		};
 		/** @var Status $status */
 		$status = $snapshot->save(
 			Services::getInstance()->getService( 'BSUtilityFactory' )->getMaintenanceUser()->getUser()
@@ -31,6 +47,7 @@ class StatisticsSnapshotCreation extends Maintenance {
 		if ( !$status->isOK() ) {
 			$this->error( $status->getMessage( false, false, 'en' ) );
 		}
+		$this->output( "\nOK" );
 	}
 }
 
