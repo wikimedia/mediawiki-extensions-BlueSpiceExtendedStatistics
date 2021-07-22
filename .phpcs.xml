@@ -6,6 +6,7 @@
 		<exclude name="PSR12.Properties.ConstantVisibility.NotFound" />
 		<exclude name="MediaWiki.Commenting.FunctionComment.MissingDocumentationPrivate" />
 		<exclude name="MediaWiki.Commenting.PropertyDocumentation.MissingDocumentationProtected" />
+		<exclude name="MediaWiki.Commenting.PropertyDocumentation.TypeTypeHintVar" />
 	</rule>
 	<file>.</file>
 	<arg name="extensions" value="php"/>
