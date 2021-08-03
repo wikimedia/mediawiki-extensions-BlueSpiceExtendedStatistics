@@ -6,5 +6,7 @@
 	},
 	"bs-statistics-year": "Annu",
 	"bs-statistics-day": "Jornu",
-	"bs-statistics-filter-category": "Catigurìa"
+	"bs-statistics-filter-category": "Catigurìa",
+	"bs-statistics-month": "Misi",
+	"bs-statistics-label-page": "Pàggina"
 }
