@@ -2,12 +2,11 @@
 
 namespace BlueSpice\ExtendedStatistics\Special;
 
-use BlueSpice\ExtensionAttributeBasedRegistry;
-use BlueSpice\Services;
-use BlueSpice\Special\ExtJSBase;
-use BlueSpice\ExtendedStatistics\EntityConfig\Collection;
+use Html;
+use SpecialPage;
 
-class AggregatedStatistic extends ExtJSBase {
+class AggregatedStatistic extends SpecialPage {
+
 	public function __construct() {
 		parent::__construct(
 			'AggregatedStatistic',
@@ -17,56 +16,22 @@ class AggregatedStatistic extends ExtJSBase {
 
 	/**
 	 *
-	 * @return string
+	 * @param string $param
 	 */
-	protected function getId() {
-		return 'bs-extendedstatistics-special-snapshotstatistics';
-	}
+	public function execute( $param ) {
+		$request = $this->getRequest();
+		$output = $this->getOutput();
 
-	/**
-	 *
-	 * @return array
-	 */
-	protected function getModules() {
-		$modules = [ "ext.bluespice.snapshotstatistics" ];
-		foreach ( $this->getCollectionConfigs() as $config ) {
-			$modules = array_merge( $modules, $config->get( 'Modules' ) );
-		}
-		return array_unique( array_values( $modules ) );
-	}
+		$output->addModules( [
+			'ext.bluespice.extendedstatistics.d3',
+			'ext.bluespice.aggregatedstatistics'
+		] );
 
-	/**
-	 * @return array [ $name => $value ]
-	 */
-	protected function getJSVars() {
-		$configs = [];
-		foreach ( $this->getCollectionConfigs() as $config ) {
-			$configs[$config->getType()] = $config->jsonSerialize();
-		}
-		return [ 'bsgExtendedStatisticsCollectionConfigs' => $configs ];
-	}
+		$output->enableOOUI();
 
-	/**
-	 *
-	 * @return Collection[]
-	 */
-	protected function getCollectionConfigs() {
-		$registry = new ExtensionAttributeBasedRegistry(
-			'BlueSpiceFoundationEntityRegistry'
-		);
-		$configFactory = Services::getInstance()->getService( 'BSEntityConfigFactory' );
-		$configs = [];
-		foreach ( $registry->getAllKeys() as $type ) {
-			$config = $configFactory->newFromType( $type );
-			if ( !$config ) {
-				continue;
-			}
-			if ( !$config->get( 'IsCollection' ) ) {
-				continue;
-			}
-			$configs[] = $config;
-		}
-		return $configs;
+		$output->addHTML( Html::element( 'div', [
+			'id' => 'bs-extendedstatistics-special-aggregatedstatistics'
+		] ) );
+		$this->setHeaders();
 	}
-
 }

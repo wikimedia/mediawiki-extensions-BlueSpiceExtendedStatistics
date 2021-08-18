@@ -81,7 +81,8 @@
 	],
 	"SpecialPages": {
 		"ExtendedStatistics": "SpecialExtendedStatistics",
-		"ExtendedStatisticsSnapshots": "\\BlueSpice\\ExtendedStatistics\\Special\\Snapshot"
+		"ExtendedStatisticsSnapshots": "\\BlueSpice\\ExtendedStatistics\\Special\\Snapshot",
+		"AggregatedStatistic": "\\BlueSpice\\ExtendedStatistics\\Special\\AggregatedStatistic"
 	},
 	"JobClasses": {
 		"updateCollectionIndex": "\\BlueSpice\\ExtendedStatistics\\ExtendedSearch\\Job\\Snapshot"
@@ -244,6 +245,43 @@
 			"messages": [
 				"bs-extendedstatistics-collection-var-type",
 				"bs-extendedstatistics-collection-var-timestampcreated"
+			]
+		},
+		"ext.bluespice.extendedstatistics.d3": {
+			"scripts": ["libs/d3.min.js"]
+		},
+		"ext.bluespice.aggregatedstatistics.registry": {
+			"scripts": [
+				"specialPage/Item/StatisticsItemRegistry.js",
+				"specialPage/Item/StatisticsItem.js",
+				"specialPage/Charts/Barchart.js",
+				"specialPage/Charts/GroupBarchart.js",
+				"specialPage/Charts/Bubblechart.js",
+				"specialPage/Filter/StatisticsFilterRegistry.js",
+				"specialPage/Filter/Filter.js",
+				"specialPage/Filter/DateFilter.js",
+				"specialPage/Filter/IntervalFilter.js",
+				"specialPage/Filter/NamespaceFilter.js"
+			],
+			"dependencies": [
+				"oojs",
+				"ext.bluespice.oojs"
+			]
+		},
+		"ext.bluespice.aggregatedstatistics": {
+			"scripts": [
+				"specialPage/bluespice.aggregatedstatistics.js"
+			],
+			"dependencies": [
+				"ext.bluespice.extendedstatistics.d3",
+				"ext.bluespice.aggregatedstatistics.registry",
+				"ext.bluespice.oojs",
+				"mediawiki.widgets",
+				"ext.bluespice.flaggedRevsConnector.statistics",
+				"ext.bluespice.whoisonline.statistics",
+				"ext.bluespice.extendedsearch.statistics",
+				"ext.bluespice.pageassignments.statistics",
+				"ext.bluespice.categorymanager.statistics"
 			]
 		}
 	},
