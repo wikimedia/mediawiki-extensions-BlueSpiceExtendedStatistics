@@ -80,5 +80,8 @@
 	"bs-statistics-datasource-label": "Источник данных",
 	"bs-statistics-aggregationmode-label": "Режим агрегации",
 	"bs-statistics-aggregationfield-label": "Поле агрегации",
-	"bs-statistics-targets-label": "Цели"
+	"bs-statistics-targets-label": "Цели",
+	"bs-extendedstatistics-collection-fatalstatus-unknownaction": "Неизвестное действие «$1»",
+	"bs-extendedstatistics-collection-var-timestampcreated": "Дата создания",
+	"bs-statistics-paging-page-size": "Размер страницы"
 }

@@ -3,12 +3,14 @@
 		"authors": [
 			")8",
 			"A Chinese Wikipedian",
+			"AYZ04",
 			"Lakejason0",
 			"Liuxinyu970226",
 			"Phenolla",
 			"VulpesVulpes825",
 			"佛壁灯",
 			"沈澄心",
+			"落花有意12138",
 			"铁桶"
 		]
 	},
@@ -85,5 +87,11 @@
 	"bs-extendedstatistics-collection-var-type": "来源类型",
 	"bs-extendedstatistics-collection-var-timestampcreated": "创建日期",
 	"bs-statistics-datasource-label": "数据源",
-	"aggregatedstatistic": "快照统计"
+	"aggregatedstatistic": "快照统计",
+	"bs-extendedstatistics-collection-fatalstatus-permissiondenieduserisallowed": "用户不被允许执行动作“$1\"",
+	"bs-extendedstatistics-collection-fatalstatus-notitle": "需要“标题”对象",
+	"right-extendedstatistics-viewspecialpage-aggregated": "进入特殊页面[[Special:AggregatedStatistic]]",
+	"bs-statistics-aggregationmode-label": "聚合模式",
+	"bs-statistics-aggregationfield-label": "聚合字段",
+	"bs-statistics-aggregationtype-label": "聚合类型"
 }
