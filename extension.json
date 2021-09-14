@@ -13,8 +13,7 @@
 	"requires": {
 		"MediaWiki": ">= 1.36.0",
 		"extensions": {
-			"BlueSpiceFoundation": ">= 4.1",
-			"BlueSpiceExtendedSearch": ">= 4.1"
+			"BlueSpiceFoundation": ">= 4.1"
 		},
 		"platform": {
 			"php": ">= 7.2",
@@ -61,20 +60,19 @@
 					]
 				}
 			},
-			"EntityRegistry": {
-				"snapshot": "\\BlueSpice\\ExtendedStatistics\\EntityConfig\\Snapshot"
-			},
 			"TagRegistry": {
 				"progress": "\\BlueSpice\\ExtendedStatistics\\Tag\\Progress"
 			}
 		},
-		"BlueSpiceExtendedSearch": {
-			"Sources": {
-				"extended_statistics": "\\BlueSpice\\ExtendedStatistics\\ExtendedSearch\\Snapshots::create"
-			}
-		},
 		"BlueSpiceExtendedStatistics": {
-			"SnapshotDataCollectorRegistry": {},
+			"SnapshotProviders": {},
+			"Reports": {},
+			"SnapshotStores": {
+				"database": {
+					"class": "BlueSpice\\ExtendedStatistics\\SnapshotStore\\DatabaseStore",
+					"services": [ "DBLoadBalancer" ]
+				}
+			},
 			"DiagramRegistry": {
 				"BsDiagramNumberOfUsers": "\\BsDiagramNumberOfUsers::factory",
 				"BsDiagramNumberOfPages": "\\BsDiagramNumberOfPages::factory",
@@ -88,6 +86,9 @@
 	"ServiceWiringFiles": [
 		"includes/ServiceWiring.php"
 	],
+	"APIMetaModules": {
+		"statistics-reports": "BlueSpice\\ExtendedStatistics\\Api\\ApiQueryReports"
+	},
 	"GroupPermissions": {
 		"*": {
 			"statistic-viewspecialpage": false,
@@ -108,7 +109,6 @@
 	],
 	"SpecialPages": {
 		"ExtendedStatistics": "SpecialExtendedStatistics",
-		"ExtendedStatisticsSnapshots": "\\BlueSpice\\ExtendedStatistics\\Special\\Snapshot",
 		"AggregatedStatistic": "\\BlueSpice\\ExtendedStatistics\\Special\\AggregatedStatistic"
 	},
 	"JobClasses": {
@@ -182,6 +182,10 @@
 				"d": "bs-statistics-day"
 			},
 			"descriptionmsg": "bs-statistics-pref-AvailableGrains"
+		},
+		"StatisticsSnapshotStoreType": {
+			"public": false,
+			"value": "database"
 		}
 	},
 	"ResourceModules": {
@@ -243,79 +247,58 @@
 		"ext.bluespice.statistics.styles": {
 			"styles": "bluespice.statistics.css"
 		},
-		"ext.bluespice.snapshotstatistics": {
-			"scripts": [
-				"bluespice.snapshotStatistics.js"
-			],
-			"dependencies": [
-				"ext.bluespice.extjs",
-				"ext.extjsbase.charts",
-				"ext.bluespice.snapshotstatistics.styles"
-			],
-			"messages": [
-				"bs-statistics-label-count",
-				"bs-ns",
-				"bs-statistics-button-label-export",
-				"bs-statistics-button-label-apply",
-				"bs-statistics-label-bar-chart",
-				"bs-statistics-label-line-chart",
-				"bs-statistics-year",
-				"bs-statistics-month",
-				"bs-statistics-week",
-				"bs-statistics-day",
-				"bs-statistics-grain",
-				"bs-statistics-datasource-label",
-				"bs-statistics-filters",
-				"bs-statistics-aggregationmode-label",
-				"bs-statistics-aggregationfield-label",
-				"bs-statistics-aggregationtype-label",
-				"bs-statistics-targets-label"
-			]
-		},
-		"ext.bluespice.snapshotstatistics.styles": {
-			"styles": "bluespice.snapshotStatistics.css"
-		},
-		"ext.bluespice.extendedstatistics.collection": {
-			"messages": [
-				"bs-extendedstatistics-collection-var-type",
-				"bs-extendedstatistics-collection-var-timestampcreated"
-			]
-		},
 		"ext.bluespice.extendedstatistics.d3": {
 			"scripts": [ "libs/d3.min.js" ]
 		},
-		"ext.bluespice.aggregatedstatistics.registry": {
+		"ext.bluespice.aggregatedstatistics": {
 			"scripts": [
-				"specialPage/Item/StatisticsItemRegistry.js",
-				"specialPage/Item/StatisticsItem.js",
-				"specialPage/Charts/Barchart.js",
-				"specialPage/Charts/GroupBarchart.js",
-				"specialPage/Charts/Bubblechart.js",
-				"specialPage/Filter/StatisticsFilterRegistry.js",
-				"specialPage/Filter/Filter.js",
-				"specialPage/Filter/DateFilter.js",
-				"specialPage/Filter/IntervalFilter.js",
-				"specialPage/Filter/NamespaceFilter.js"
+				"report/Charts/Barchart.js",
+				"report/Charts/GroupBarchart.js",
+				"report/Charts/Bubblechart.js",
+				"report/Charts/LineChart.js",
+				"report/Filter/Filter.js",
+				"report/Filter/DateFilter.js",
+				"report/Filter/UserMultiFilter.js",
+				"report/Filter/UserFilter.js",
+				"report/Filter/CategoryMultiFilter.js",
+				"report/Filter/PageFilter.js",
+				"report/Filter/IntervalFilter.js",
+				"report/Filter/NamespaceFilter.js",
+				"report/Filter/NamespaceMultiFilter.js",
+				"report/Filter/NamespaceCategoryFilter.js",
+				"report/Report/ReportRegistry.js",
+				"report/Report/ReportBase.js",
+				"bluespice.aggregatedstatistics.js"
+			],
+			"styles": [
+				"bluespice.aggregatedstatistics.less"
 			],
 			"dependencies": [
 				"oojs",
-				"ext.bluespice.oojs"
-			]
-		},
-		"ext.bluespice.aggregatedstatistics": {
-			"scripts": [
-				"specialPage/bluespice.aggregatedstatistics.js"
-			],
-			"dependencies": [
-				"ext.bluespice.extendedstatistics.d3",
-				"ext.bluespice.aggregatedstatistics.registry",
 				"ext.bluespice.oojs",
+				"ext.bluespice.extendedstatistics.d3",
 				"mediawiki.widgets",
-				"ext.bluespice.flaggedRevsConnector.statistics",
-				"ext.bluespice.whoisonline.statistics",
-				"ext.bluespice.extendedsearch.statistics",
-				"ext.bluespice.pageassignments.statistics",
-				"ext.bluespice.categorymanager.statistics"
+				"mediawiki.widgets.UsersMultiselectWidget"
+			],
+			"messages": [
+				"bs-statistics-aggregated-report-picker-label",
+				"bs-statistics-aggregated-report-no-date",
+				"bs-statistics-aggregated-report-filter-category-multi",
+				"bs-statistics-aggregated-report-filter-date-start",
+				"bs-statistics-aggregated-report-filter-date-end",
+				"bs-statistics-aggregated-report-filter-interval",
+				"bs-statistics-aggregated-report-filter-interval-day",
+				"bs-statistics-aggregated-report-filter-interval-week",
+				"bs-statistics-aggregated-report-filter-interval-month",
+				"bs-statistics-aggregated-report-filter-interval-year",
+				"bs-statistics-aggregated-report-filter-namespace",
+				"bs-statistics-aggregated-report-filter-page",
+				"bs-statistics-aggregated-report-filter-user",
+				"bs-statistics-aggregated-report-filter-user-multi",
+				"bs-statistics-aggregated-report-filter-namespaces",
+				"bs-statistics-aggregated-filter-category-namespace-notice",
+				"bs-statistics-aggregated-report-loading",
+				"bs-statistics-aggregated-report-error"
 			]
 		}
 	},
