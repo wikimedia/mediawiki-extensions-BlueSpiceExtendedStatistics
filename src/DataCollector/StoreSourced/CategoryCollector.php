@@ -10,12 +10,12 @@ use BlueSpice\ExtendedStatistics\Entity\Snapshot;
 use BlueSpice\ExtendedStatistics\SnapshotFactory;
 use Category;
 use Config;
-use LoadBalancer;
 use MediaWiki\MediaWikiServices;
 use MWException;
 use RequestContext;
-use ResultWrapper;
 use Title;
+use Wikimedia\Rdbms\LoadBalancer;
+use Wikimedia\Rdbms\ResultWrapper;
 
 abstract class CategoryCollector extends SnapshotDiffCollector {
 
