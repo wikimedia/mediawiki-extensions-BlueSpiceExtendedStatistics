@@ -35,8 +35,6 @@
 	"bs-statistics-portletconfig-periodday": "I går",
 	"bs-statistics-button-label-export": "Eksporter",
 	"bs-statistics-panel-title-result": "Resultat",
-	"bs-extendedstatistics-collection-fatalstatus-unknownaction": "Ukendt handling \"$1\".",
-	"bs-extendedstatistics-collection-var-type": "Kildetype",
 	"bs-statistics-datasource-label": "Datakilde",
 	"bs-statistics-targets-label": "Mål",
 	"bs-statistics-paging-page-size": "Sidestørrelse"
