@@ -5,7 +5,8 @@
 			"Hwboehm",
 			"Metalhead64",
 			"Mglaser",
-			"Stephan Muggli <muggli@hallowelt.biz>"
+			"Stephan Muggli <muggli@hallowelt.biz>",
+			"Umlaut"
 		]
 	},
 	"bs-statistics-desc": "Statistik-Modul für BlueSpice",
@@ -87,5 +88,18 @@
 	"bs-statistics-aggregationtype-label": "Aggregationstyp",
 	"bs-statistics-targets-label": "Ziele",
 	"bs-statistics-paging-page-size": "Seitengröße",
+	"bs-statistics-aggregated-report-filter-date-start": "Startdatum",
+	"bs-statistics-aggregated-report-filter-date-end": "Enddatum",
+	"bs-statistics-aggregated-report-filter-interval": "Intervall",
+	"bs-statistics-aggregated-report-filter-interval-day": "Tag",
+	"bs-statistics-aggregated-report-filter-interval-week": "Woche",
+	"bs-statistics-aggregated-report-filter-interval-month": "Monat",
+	"bs-statistics-aggregated-report-filter-interval-year": "Jahr",
+	"bs-statistics-aggregated-report-filter-namespace": "Namensraum",
+	"bs-statistics-aggregated-report-filter-namespaces": "Namensräume",
+	"bs-statistics-aggregated-report-filter-page": "Seite",
+	"bs-statistics-aggregated-report-filter-user": "Benutzer",
+	"bs-statistics-aggregated-report-filter-user-multi": "Benutzer",
+	"bs-statistics-aggregated-report-loading": "Daten werden geladen...",
 	"bs-statistics-pref-excludeusers-help": "Manche Benutzer, z.B. mit Admin-Rechten, können die Statistik auf der Seite Spezial:ExtendedStatistics verzerren. Sie können hier von den statistischen Ergebnissen ausgeschlossen werden."
 }
