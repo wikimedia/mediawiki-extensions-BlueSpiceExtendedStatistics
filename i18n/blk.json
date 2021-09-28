@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"Khun Kt",
+			"Ninjastrikers"
+		]
+	},
+	"bs-statistics-aggregated-report-filter-category-multi": "အစွိုးအမျိုꩻဖုံႏ",
+	"bs-statistics-aggregated-report-filter-date-start": "စမွူးနီꩻ၊ မွူးနီꩻစ",
+	"bs-statistics-aggregated-report-filter-interval-day": "မွူးနီꩻ၊ နီꩻ",
+	"bs-statistics-aggregated-report-filter-interval-week": "ပတ်",
+	"bs-statistics-aggregated-report-filter-interval-month": "လာ",
+	"bs-statistics-aggregated-report-filter-interval-year": "နေင်ႏ",
+	"bs-statistics-aggregated-report-filter-namespace": "မိဉ်ꩻခင်ႏလမ်း",
+	"bs-statistics-aggregated-report-filter-namespaces": "မိဉ်ꩻခင်ႏလမ်းဖုံႏ",
+	"bs-statistics-aggregated-report-filter-page": "လိတ်မဲ့ငါ",
+	"bs-statistics-aggregated-report-filter-user": "သွုံꩻသား",
+	"bs-statistics-aggregated-report-filter-user-multi": "သွုံꩻသားဖုံႏ",
+	"bs-statistics-aggregated-report-error": "ထီႏမော့ꩻခါꩻပျသာႏနာႏ!"
+}

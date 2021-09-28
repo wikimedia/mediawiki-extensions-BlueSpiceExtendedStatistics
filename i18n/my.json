@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Dr Lotus Black",
-			"Ninjastrikers"
+			"Ninjastrikers",
+			"ခွန်ပညာႏ(တောင်ႏကီꩻ)"
 		]
 	},
 	"bs-statistics-filters": "စိစစ်မှုများ",
@@ -26,5 +27,12 @@
 	"bs-statistics-portlet-numberofpages": "စာမျက်နှာများ အရေအတွက်",
 	"bs-statistics-portletconfig-periodday": "မနေ့",
 	"bs-statistics-button-label-export": "တင်ပို့ရန်",
-	"bs-statistics-panel-title-result": "ရလဒ်"
+	"bs-statistics-panel-title-result": "ရလဒ်",
+	"bs-statistics-aggregated-report-filter-date-end": "ထွူသွတ်ꩻမွူးနီꩻ",
+	"bs-statistics-aggregated-report-filter-interval-day": "မွူးနီꩻ",
+	"bs-statistics-aggregated-report-filter-interval-week": "ပတ်",
+	"bs-statistics-aggregated-report-filter-interval-month": "လာ",
+	"bs-statistics-aggregated-report-filter-interval-year": "နေင်ႏ",
+	"bs-statistics-aggregated-report-filter-page": "လိတ်မဲ့ငါ",
+	"bs-statistics-aggregated-report-filter-user": "ထူႏသွုံꩻသား"
 }
