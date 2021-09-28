@@ -90,6 +90,8 @@
 	"bs-statistics-aggregationtype-label": "Type d’agrégation",
 	"bs-statistics-targets-label": "Cibles",
 	"bs-statistics-paging-page-size": "Taille de la page",
+	"bs-statistics-aggregated-report-picker-label": "Type de rapport",
+	"bs-statistics-aggregated-report-no-date": "Pas de données pour le groupe de filtres actuel, veuillez changer les valeurs des filtres.",
 	"bs-statistics-aggregated-report-filter-category-multi": "Catégories",
 	"bs-statistics-aggregated-report-filter-date-start": "Date de début",
 	"bs-statistics-aggregated-report-filter-date-end": "Date de fin",
@@ -102,5 +104,9 @@
 	"bs-statistics-aggregated-report-filter-namespaces": "Espaces de noms",
 	"bs-statistics-aggregated-report-filter-page": "Page",
 	"bs-statistics-aggregated-report-filter-user": "Utilisateur",
-	"bs-statistics-aggregated-report-filter-user-multi": "Utilisateurs"
+	"bs-statistics-aggregated-report-filter-user-multi": "Utilisateurs",
+	"bs-statistics-aggregated-filter-category-namespace-notice": "Filtrer soit par catégories, soit par espaces de noms",
+	"bs-statistics-aggregated-report-error": "Une erreur est survenue !",
+	"bs-statistics-aggregated-report-loading": "Chargement des données...",
+	"bs-statistics-pref-excludeusers-help": "Certains utilisateurs, par exemple avec des droits d'administrateur, peuvent fausser les statistiques de la page Special:ExtendedStatistics. Ils peuvent être exclus des résultats statistiques."
 }
