@@ -11,6 +11,7 @@
 			"TsuyaMarisa",
 			"VulpesVulpes825",
 			"佛壁灯",
+			"列维劳德",
 			"沈澄心",
 			"落花有意12138",
 			"铁桶"
@@ -92,7 +93,7 @@
 	"bs-statistics-targets-label": "目标",
 	"bs-statistics-paging-page-size": "页面大小",
 	"bs-statistics-aggregated-report-filter-category-multi": "分类",
-	"bs-statistics-aggregated-report-filter-date-start": "起始日期",
+	"bs-statistics-aggregated-report-filter-date-start": "开始日期",
 	"bs-statistics-aggregated-report-filter-date-end": "结束日期",
 	"bs-statistics-aggregated-report-filter-interval": "间隔",
 	"bs-statistics-aggregated-report-filter-interval-day": "天",
@@ -104,5 +105,5 @@
 	"bs-statistics-aggregated-report-filter-page": "页面",
 	"bs-statistics-aggregated-report-filter-user": "用户",
 	"bs-statistics-aggregated-report-filter-user-multi": "用户",
-	"bs-statistics-aggregated-report-loading": "正在加载数据..."
+	"bs-statistics-aggregated-report-loading": "数据加载中……"
 }
