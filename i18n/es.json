@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Dgstranz",
+			"Fewasser Traduce",
 			"Fitoschido",
 			"Javiersanp",
 			"Macofe",
@@ -76,5 +77,16 @@
 	"bs-statistics-aggregationfield-label": "Campo de totalización",
 	"bs-statistics-aggregationtype-label": "Tipo de totalización",
 	"bs-statistics-targets-label": "Destinos",
-	"bs-statistics-paging-page-size": "Tamaño de la página"
+	"bs-statistics-paging-page-size": "Tamaño de la página",
+	"bs-statistics-aggregated-report-filter-category-multi": "Categorías",
+	"bs-statistics-aggregated-report-filter-date-start": "Fecha de inicio",
+	"bs-statistics-aggregated-report-filter-interval": "Intervalo",
+	"bs-statistics-aggregated-report-filter-interval-day": "Día",
+	"bs-statistics-aggregated-report-filter-interval-week": "Semana",
+	"bs-statistics-aggregated-report-filter-interval-month": "Mes",
+	"bs-statistics-aggregated-report-filter-interval-year": "Año",
+	"bs-statistics-aggregated-report-filter-page": "Página",
+	"bs-statistics-aggregated-report-filter-user": "Usuario",
+	"bs-statistics-aggregated-report-filter-user-multi": "Usuarios",
+	"bs-statistics-aggregated-report-loading": "Cargando datos..."
 }

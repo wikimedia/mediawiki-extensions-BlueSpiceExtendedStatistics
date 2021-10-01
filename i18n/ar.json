@@ -85,5 +85,6 @@
 	"bs-statistics-aggregationfield-label": "حقل التجميع",
 	"bs-statistics-aggregationtype-label": "نوع التجميع",
 	"bs-statistics-targets-label": "الأهداف",
-	"bs-statistics-paging-page-size": "حجم الصفحة"
+	"bs-statistics-paging-page-size": "حجم الصفحة",
+	"bs-statistics-aggregated-report-filter-date-start": "تاريخ البدء"
 }
