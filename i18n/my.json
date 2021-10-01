@@ -34,5 +34,9 @@
 	"bs-statistics-aggregated-report-filter-interval-month": "လာ",
 	"bs-statistics-aggregated-report-filter-interval-year": "နေင်ႏ",
 	"bs-statistics-aggregated-report-filter-page": "လိတ်မဲ့ငါ",
-	"bs-statistics-aggregated-report-filter-user": "ထူႏသွုံꩻသား"
+	"bs-statistics-aggregated-report-filter-user": "ထူႏသွုံꩻသား",
+	"bs-statistics-aggregated-report-filter-category-multi": "ကဏ္ဍများ",
+	"bs-statistics-aggregated-report-filter-date-start": "စတင်သည့်ရက်စွဲ",
+	"bs-statistics-aggregated-report-filter-namespace": "အမည်ညွှန်း",
+	"bs-statistics-aggregated-report-filter-user-multi": "အသုံးပြုသူများ"
 }
