@@ -12,6 +12,8 @@ class ImportDummyData extends Maintenance {
 	private $providerFactory;
 	/** @var \BlueSpice\ExtendedStatistics\ISnapshotStore */
 	private $snapshotStore;
+	/** @var NamespaceInfo */
+	private $namespaceInfo;
 
 	private $collection = [
 		'week' => [],
@@ -42,7 +44,7 @@ class ImportDummyData extends Maintenance {
 			if ( $ns === 0 ) {
 				return '-';
 			}
-			return MWNamespace::getCanonicalName( $ns );
+			return $this->namespaceInfo->getCanonicalName( $ns );
 		}, explode( ',', $this->getOption( 'namespace' ) ) );
 		$this->mOptions['namespace'] = implode( ',', $namespaces );
 		$this->mOptions['term'] = implode( ',', $this->terms );
@@ -158,6 +160,7 @@ class ImportDummyData extends Maintenance {
 			'ExtendedStatisticsSnapshotProviderFactory'
 		);
 		$this->snapshotStore = $services->getService( 'ExtendedStatisticsSnapshotStore' );
+		$this->namespaceInfo = $services->getNamespaceInfo();
 	}
 
 	/**
