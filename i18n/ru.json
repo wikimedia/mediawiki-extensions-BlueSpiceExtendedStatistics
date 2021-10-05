@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"DDPAT",
 			"Katunchik",
 			"Mailman",
 			"Mouse21",
@@ -74,6 +75,7 @@
 	"right-statistic-viewspecialpage": "доступ к расширенной статистике",
 	"bs-statistics-button-label-export": "Экспортировать",
 	"bs-statistics-panel-title-result": "Результат",
+	"extendedstatisticssnapshots": "Снимки",
 	"bs-statistics-button-label-apply": "Применить фильтры",
 	"bs-statistics-label-bar-chart": "Гистограмма",
 	"bs-statistics-label-line-chart": "Линейный график",
@@ -81,5 +83,21 @@
 	"bs-statistics-aggregationmode-label": "Режим агрегации",
 	"bs-statistics-aggregationfield-label": "Поле агрегации",
 	"bs-statistics-targets-label": "Цели",
-	"bs-statistics-paging-page-size": "Размер страницы"
+	"bs-statistics-paging-page-size": "Размер страницы",
+	"bs-statistics-aggregated-report-filter-category-multi": "Категории",
+	"bs-statistics-aggregated-report-filter-date-start": "Дата начала",
+	"bs-statistics-aggregated-report-filter-date-end": "Дата окончания",
+	"bs-statistics-aggregated-report-filter-interval": "Интервал",
+	"bs-statistics-aggregated-report-filter-interval-day": "День",
+	"bs-statistics-aggregated-report-filter-interval-week": "Неделя",
+	"bs-statistics-aggregated-report-filter-interval-month": "Месяц",
+	"bs-statistics-aggregated-report-filter-interval-year": "Год",
+	"bs-statistics-aggregated-report-filter-namespace": "Пространство имён",
+	"bs-statistics-aggregated-report-filter-namespaces": "Пространства имён",
+	"bs-statistics-aggregated-report-filter-page": "Страница",
+	"bs-statistics-aggregated-report-filter-user": "Участник",
+	"bs-statistics-aggregated-report-filter-user-multi": "Участники",
+	"bs-statistics-aggregated-filter-category-namespace-notice": "Фильтр по категориям или по пространствам имен",
+	"bs-statistics-aggregated-report-error": "Произошла ошибка!",
+	"bs-statistics-aggregated-report-loading": "Идёт загрузка данных…"
 }

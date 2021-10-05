@@ -82,5 +82,7 @@
 	"bs-statistics-aggregationfield-label": "Cambe de aggregazzione",
 	"bs-statistics-aggregationtype-label": "Tipe de aggregazzione",
 	"bs-statistics-targets-label": "Destinaziune",
-	"bs-statistics-paging-page-size": "Dimenzione d'a pàgene"
+	"bs-statistics-paging-page-size": "Dimenzione d'a pàgene",
+	"apihelp-query+statistics-reports-summary": "Dèje 'nu riepiloghe de statisteche pe diverse tipe de statisteche",
+	"bs-statistics-aggregated-report-filter-category-multi": "Categorije"
 }
