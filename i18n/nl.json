@@ -93,5 +93,17 @@
 	"bs-extendedstatistics-collection-var-type": "Brontype",
 	"bs-statistics-aggregationmode-label": "Aggregatiemodus",
 	"bs-statistics-aggregationfield-label": "Aggregatieveld",
-	"bs-statistics-aggregationtype-label": "Aggregatietype"
+	"bs-statistics-aggregationtype-label": "Aggregatietype",
+	"bs-statistics-aggregated-report-filter-category-multi": "Categorieën",
+	"bs-statistics-aggregated-report-filter-date-start": "Begindatum",
+	"bs-statistics-aggregated-report-filter-date-end": "Einddatum",
+	"bs-statistics-aggregated-report-filter-interval-day": "Dag",
+	"bs-statistics-aggregated-report-filter-interval-week": "Week",
+	"bs-statistics-aggregated-report-filter-interval-month": "Maand",
+	"bs-statistics-aggregated-report-filter-interval-year": "Jaar",
+	"bs-statistics-aggregated-report-filter-namespace": "Naamruimte",
+	"bs-statistics-aggregated-report-filter-namespaces": "Naamruimten",
+	"bs-statistics-aggregated-report-filter-page": "Pagina",
+	"bs-statistics-aggregated-report-filter-user": "Gebruiker",
+	"bs-statistics-aggregated-report-filter-user-multi": "Gebruikers"
 }
