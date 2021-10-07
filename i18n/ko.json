@@ -62,6 +62,7 @@
 	"bs-statistics-aggregated-report-picker-label": "보고 유형",
 	"bs-statistics-aggregated-report-filter-category-multi": "분류",
 	"bs-statistics-aggregated-report-filter-date-start": "시작일",
+	"bs-statistics-aggregated-report-filter-date-end": "끝 날짜",
 	"bs-statistics-aggregated-report-filter-interval-day": "일",
 	"bs-statistics-aggregated-report-filter-interval-week": "주",
 	"bs-statistics-aggregated-report-filter-interval-month": "월",
