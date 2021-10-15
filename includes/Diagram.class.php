@@ -22,41 +22,41 @@ abstract class BsDiagram {
 	/**
 	 * Diagram time resoution: days
 	 */
-	const GRAIN_DAY = 'd';
+	public const GRAIN_DAY = 'd';
 	/**
 	 * Diagram time resoution: (calendar) weeks
 	 */
-	const GRAIN_WEEK = 'W';
+	public const GRAIN_WEEK = 'W';
 	/**
 	 * Diagram time resoution: months
 	 */
-	const GRAIN_MONTH = 'm';
+	public const GRAIN_MONTH = 'm';
 	/**
 	 * Diagram time resoution: years
 	 */
-	const GRAIN_YEAR = 'y';
+	public const GRAIN_YEAR = 'y';
 
 	/**
 	 * Data shall be retrieved from database
 	 */
-	const DATASOURCE_DATABASE = 1;
+	public const DATASOURCE_DATABASE = 1;
 	/**
 	 * Data shall be retrieved fromlogfile
 	 */
-	const DATASOURCE_LOGFILE = 2;
+	public const DATASOURCE_LOGFILE = 2;
 
 	/**
 	 * Data shall be presented as is
 	 */
-	const MODE_ABSOLUTE = "absolute";
+	public const MODE_ABSOLUTE = "absolute";
 	/**
 	 * Data shall be aggregated (added up)
 	 */
-	const MODE_AGGREGATED = "aggregated";
+	public const MODE_AGGREGATED = "aggregated";
 	/**
 	 * Data shall be presented as a list
 	 */
-	const MODE_LIST = "list";
+	public const MODE_LIST = "list";
 
 	/**
 	 * Lower boundary of date interval

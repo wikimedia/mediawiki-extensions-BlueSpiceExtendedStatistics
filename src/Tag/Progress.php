@@ -12,10 +12,10 @@ use Parser;
 use PPFrame;
 
 class Progress extends Tag {
-	const ATTR_BASE_COUNT = 'basecount';
-	const ATTR_BASE_ITEM = 'baseitem';
-	const ATTR_PROGRESS_ITEM = 'progressitem';
-	const ATTR_WIDTH = 'width';
+	public const ATTR_BASE_COUNT = 'basecount';
+	public const ATTR_BASE_ITEM = 'baseitem';
+	public const ATTR_PROGRESS_ITEM = 'progressitem';
+	public const ATTR_WIDTH = 'width';
 
 	/**
 	 *
