@@ -5,10 +5,10 @@ namespace BlueSpice\ExtendedStatistics;
 use JsonSerializable;
 
 class Snapshot implements JsonSerializable {
-	const INTERVAL_DAY = 'day';
-	const INTERVAL_WEEK = 'week';
-	const INTERVAL_MONTH = 'month';
-	const INTERVAL_YEAR = 'year';
+	public const INTERVAL_DAY = 'day';
+	public const INTERVAL_WEEK = 'week';
+	public const INTERVAL_MONTH = 'month';
+	public const INTERVAL_YEAR = 'year';
 
 	/** @var SnapshotDate */
 	private $date;
