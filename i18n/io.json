@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"JSantos",
 			"Joao Xavier"
 		]
 	},
@@ -8,5 +9,8 @@
 	"bs-statistics-label-page": "Pagino",
 	"bs-statistics-year": "Yaro",
 	"bs-statistics-button-label-export": "Exportacar",
-	"bs-statistics-day": "Dio"
+	"bs-statistics-day": "Dio",
+	"bs-statistics-label-name": "Nomo",
+	"bs-statistics-aggregated-report-filter-user": "Uzero",
+	"bs-statistics-aggregated-report-filter-user-multi": "Uzeri"
 }
