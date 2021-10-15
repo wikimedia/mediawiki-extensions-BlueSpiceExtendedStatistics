@@ -11,8 +11,8 @@ use Exception;
 use Wikimedia\Rdbms\LoadBalancer;
 
 class DatabaseStore implements ISnapshotStore {
-	const TABLE = 'bs_extendedstatistics_snapshot';
-	const FIELDS = [ 'ess_type', 'ess_data', 'ess_timestamp', 'ess_interval' ];
+	public const TABLE = 'bs_extendedstatistics_snapshot';
+	public const FIELDS = [ 'ess_type', 'ess_data', 'ess_timestamp', 'ess_interval' ];
 
 	/** @var LoadBalancer */
 	private $loadBalancer;

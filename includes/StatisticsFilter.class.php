@@ -23,11 +23,11 @@ abstract class BsStatisticsFilter {
 	/**
 	 * Prefix for URL params
 	 */
-	const FILTER_PARAM_PREFIX = 'hwpFilter';
+	public const FILTER_PARAM_PREFIX = 'hwpFilter';
 	/**
 	 * Prefix for SQL placeholder
 	 */
-	const FILTER_SQL_PREFIX = '@';
+	public const FILTER_SQL_PREFIX = '@';
 
 	/**
 	 * Label for Fiter
