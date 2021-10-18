@@ -278,6 +278,7 @@
 				"ext.bluespice.oojs",
 				"ext.bluespice.extendedstatistics.d3",
 				"mediawiki.widgets",
+				"mediawiki.widgets.DateInputWidget",
 				"mediawiki.widgets.UsersMultiselectWidget"
 			],
 			"messages": [
