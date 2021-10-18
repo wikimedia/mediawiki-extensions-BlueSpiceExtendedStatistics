@@ -5,6 +5,7 @@
 			"Esketti",
 			"Mainframe98",
 			"McDutchie",
+			"Robin van der Vliet",
 			"SPQRobin",
 			"Xbaked potatox"
 		]
@@ -88,6 +89,7 @@
 	"bs-statistics-aggregationtype-label": "Aggregatietype",
 	"bs-statistics-targets-label": "Doelen",
 	"bs-statistics-paging-page-size": "Paginagrootte",
+	"bs-statistics-aggregated-report-picker-label": "Rapporttype",
 	"bs-statistics-aggregated-report-filter-category-multi": "Categorieën",
 	"bs-statistics-aggregated-report-filter-date-start": "Begindatum",
 	"bs-statistics-aggregated-report-filter-date-end": "Einddatum",

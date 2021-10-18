@@ -7,6 +7,7 @@
 			"Mglaser",
 			"Mschlindwein",
 			"Stephan Muggli <muggli@hallowelt.biz>",
+			"Umherirrender",
 			"Umlaut"
 		]
 	},
@@ -106,6 +107,6 @@
 	"bs-statistics-aggregated-report-filter-user-multi": "Benutzer",
 	"bs-statistics-aggregated-filter-category-namespace-notice": "Nach Kategorien oder Namensräumen filtern",
 	"bs-statistics-aggregated-report-error": "Ein Fehler ist aufgetreten!",
-	"bs-statistics-aggregated-report-loading": "Daten werden geladen...",
+	"bs-statistics-aggregated-report-loading": "Daten werden geladen …",
 	"bs-statistics-pref-excludeusers-help": "Manche Benutzer, z.B. mit Admin-Rechten, können die Statistik auf der Seite Spezial:ExtendedStatistics verzerren. Sie können hier von den statistischen Ergebnissen ausgeschlossen werden."
 }

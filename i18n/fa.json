@@ -76,6 +76,7 @@
 	"bs-statistics-aggregationtype-label": "نوع تجمع",
 	"bs-statistics-targets-label": "هدف‌ها",
 	"bs-statistics-paging-page-size": "حجم صفحه",
+	"bs-statistics-aggregated-report-picker-label": "نوع گزارش",
 	"bs-statistics-aggregated-report-filter-category-multi": "رده‌ها",
 	"bs-statistics-aggregated-report-filter-date-start": "تاریخ آغاز",
 	"bs-statistics-aggregated-report-filter-date-end": "تاریخ پایان",
@@ -89,5 +90,6 @@
 	"bs-statistics-aggregated-report-filter-page": "صفحه",
 	"bs-statistics-aggregated-report-filter-user": "کاربر",
 	"bs-statistics-aggregated-report-filter-user-multi": "کاربران",
+	"bs-statistics-aggregated-report-error": "خطایی رخ داد!",
 	"bs-statistics-aggregated-report-loading": "بارگیری داده..."
 }

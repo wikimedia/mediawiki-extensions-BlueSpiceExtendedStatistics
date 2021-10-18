@@ -84,6 +84,7 @@
 	"bs-statistics-aggregationfield-label": "Поле агрегации",
 	"bs-statistics-targets-label": "Цели",
 	"bs-statistics-paging-page-size": "Размер страницы",
+	"bs-statistics-aggregated-report-picker-label": "Тип отчёта",
 	"bs-statistics-aggregated-report-filter-category-multi": "Категории",
 	"bs-statistics-aggregated-report-filter-date-start": "Дата начала",
 	"bs-statistics-aggregated-report-filter-date-end": "Дата окончания",
