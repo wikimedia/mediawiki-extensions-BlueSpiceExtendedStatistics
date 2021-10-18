@@ -19,12 +19,13 @@ class ObjectFactoryWithServices extends ObjectFactory {
 
 	/**
 	 * @param array $specs
+	 * @param array $options
 	 * @return object
 	 * @throws \ReflectionException
 	 */
-	public function createObject( $specs ) {
+	public function createObject( $specs, array $options = [] ) {
 		$specs = $this->convertToServices( $specs );
-		return static::getObjectFromSpec( $specs );
+		return static::getObjectFromSpec( $specs, $options );
 	}
 
 	/**
@@ -44,6 +45,7 @@ class ObjectFactoryWithServices extends ObjectFactory {
 			foreach ( array_reverse( $specs['services'] ) as $serviceKey ) {
 				array_unshift( $specs['args'], $this->services->getService( $serviceKey ) );
 			}
+			unset( $specs['services'] );
 		}
 
 		return $specs;
