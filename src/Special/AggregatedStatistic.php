@@ -62,4 +62,12 @@ class AggregatedStatistic extends SpecialPage {
 			] )
 		);
 	}
+
+	/**
+	 *
+	 * @return string
+	 */
+	public function getGroupName() {
+		return 'bluespice';
+	}
 }
