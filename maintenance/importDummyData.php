@@ -3,8 +3,8 @@
 use BlueSpice\ExtendedStatistics\ISnapshotProvider;
 use BlueSpice\ExtendedStatistics\Snapshot;
 use BlueSpice\ExtendedStatistics\SnapshotDate;
-use BlueSpice\ExtendedStatistics\SnapshotDateRange;
 use MediaWiki\MediaWikiServices;
+use Wikimedia\Rdbms\IDatabase;
 
 require_once dirname( dirname( dirname( __DIR__ ) ) ) . '/maintenance/Maintenance.php';
 
@@ -25,27 +25,43 @@ class ImportDummyData extends Maintenance {
 		'payroll', 'bookkeeping', 'chartered accountant', 'accountant salary'
 	];
 
+	/** @var IDatabase */
+	private $dbr = null;
+
+	/** @var string[] */
+	private $userList = [];
+
+	/** @var string[] */
+	private $pageList = [];
+
+	/** @var string[] */
+	private $namespaceList = [];
+
+	/** @var string[] */
+	private $categoryList = [];
+
+	/**
+	 *
+	 */
 	public function __construct() {
 		parent::__construct();
 		$this->requireExtension( 'BlueSpiceExtendedStatistics' );
-		$this->addOption( 'category', 'Categories to use, comma-separated', true );
-		$this->addOption( 'page', 'Pages to use, comma-separated', true );
-		$this->addOption( 'namespace', 'Namespaces to use, comma-separated', true );
-		$this->addOption( 'user', 'Users to use, comma-separated', true );
 		$this->addOption( 'days', 'Number of days to mock', false, true );
 	}
 
+	/**
+	 *
+	 * @return void
+	 */
 	public function execute() {
 		$this->setServices();
 
-		$namespaces = array_map( function ( $ns ) {
-			$ns = (int)$ns;
-			if ( $ns === 0 ) {
-				return '-';
-			}
-			return MWNamespace::getCanonicalName( $ns );
-		}, explode( ',', $this->getOption( 'namespace' ) ) );
-		$this->mOptions['namespace'] = implode( ',', $namespaces );
+		$this->dbr = $this->getDB( DB_REPLICA );
+		$this->loadUserList();
+		$this->loadPageList();
+		$this->loadNamespaceList();
+		$this->loadCategoryList();
+
 		$this->mOptions['term'] = implode( ',', $this->terms );
 
 		foreach ( $this->providerFactory->getAll() as $key => $provider ) {
@@ -53,6 +69,44 @@ class ImportDummyData extends Maintenance {
 		}
 	}
 
+	private function loadUserList() {
+		$res = $this->dbr->select( 'user', 'user_name' );
+		foreach ( $res as $row ) {
+			$this->userList[] = $row->user_name;
+		}
+	}
+
+	private function loadPageList() {
+		$res = $this->dbr->select( 'page', '*', [ 'page_content_model' => 'wikitext' ] );
+		foreach ( $res as $row ) {
+			$title = Title::newFromRow( $row );
+			$this->pageList[] = $title->getPrefixedDBkey();
+		}
+	}
+
+	private function loadCategoryList() {
+		$res = $this->dbr->select( 'category', 'cat_title' );
+		foreach ( $res as $row ) {
+			$this->categoryList[] = $row->cat_title;
+		}
+	}
+
+	private function loadNamespaceList() {
+		$namespaces = MWNamespace::getContentNamespaces();
+		foreach ( $namespaces as $idx ) {
+			$namespaceName = MWNamespace::getCanonicalName( $idx );
+			$namespaceName = empty( $namespaceName ) ? '-' : $namespaceName;
+			$this->namespaceList[] = $namespaceName;
+		}
+		$this->namespaceList = array_unique( $this->namespaceList );
+	}
+
+	/**
+	 *
+	 * @param string $key
+	 * @param ISnapshotProvider $provider
+	 * @return void
+	 */
 	private function processProvider( $key, ISnapshotProvider $provider ) {
 		$file = __DIR__ . '/../doc/snapshotData/' . $key . '.json';
 		if ( !file_exists( $file ) ) {
@@ -111,7 +165,22 @@ class ImportDummyData extends Maintenance {
 		$data = [];
 		if ( is_array( $value ) ) {
 			if ( isset( $value['key'] ) ) {
-				$parsed = $this->parseKey( $value['key'] );
+				switch ( $value['key'] ) {
+					case '{{{user}}}':
+						$parsed = $this->userList;
+						break;
+					case '{{{page}}}':
+						$parsed = $this->pageList;
+						break;
+					case '{{{namespace}}}':
+						$parsed = $this->namespaceList;
+						break;
+					case '{{{category}}}':
+						$parsed = $this->categoryList;
+						break;
+					default: $parsed = $this->parseKey( $value['key'] );
+						break;
+				}
 				if ( is_string( $parsed ) ) {
 					$data[$parsed] = $this->processValue( $value['value'] );
 				}
@@ -179,8 +248,8 @@ class ImportDummyData extends Maintenance {
 	/**
 	 * @param ISnapshotProvider $provider
 	 * @param string $interval
-	 * @param SnapshotDateRange $range
-	 * @param string $nextInterval
+	 * @param DateTime $date
+	 * @param string|null $nextInterval
 	 */
 	private function insertAggregate(
 		ISnapshotProvider $provider, $interval, DateTime $date, $nextInterval = null
