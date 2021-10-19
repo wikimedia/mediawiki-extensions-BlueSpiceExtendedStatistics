@@ -27,7 +27,7 @@
 			this.$element.append( filterLayout.$element );
 		}
 
-		this.$chartCnt = $( '<div>' );
+		this.$chartCnt = $( '<div id="chartCtn">' );
 		this.$element.append( this.$chartCnt );
 		this.chart = this.getChart();
 		this.updateChart();
