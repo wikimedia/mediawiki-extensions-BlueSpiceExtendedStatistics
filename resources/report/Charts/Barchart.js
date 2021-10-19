@@ -40,23 +40,63 @@
 			.attr( "transform", `translate( ${40} , 0 )`)
 			.call( d3.axisLeft( yScale ).ticks( null, this.data.format ) );
 
-		this.chart = d3.create( "svg" )
+		this.chart = d3.select( "#chartCtn" )
 				.append( "svg" )
+				.attr("id", "chart")
 				.attr( "viewBox", [ 0, 0, this.width, this.height + 90 ] );
 
 		this.chart.selectAll( "g" )
-				.data( this.data )
-				.enter()
-				.append( "rect" )
-				.attr( "x", ( d, i ) => xScale( i ) )
-				.attr( "y", d => yScale( d.value ) )
-				.attr( "height", d => yScale( 0 ) - yScale( d.value ) )
-				.attr( "width", xScale.bandwidth() )
-				.attr( "fill", "#eaecf0" );
+			.data( this.data )
+			.enter()
+			.append( "rect" )
+			.attr( "x", ( d, i ) => xScale( i ) )
+			.attr( "y", d => yScale( d.value ) )
+			.attr( "height", d => yScale( 0 ) - yScale( d.value ) )
+			.attr( "width", xScale.bandwidth() )
+			.attr( "fill", "#eaecf0" )
+			.on( 'mouseenter', function ( actual, i ) {
+				d3.select(this)
+				.attr('opacity', 0.6);
 
-		this.chart.append( "g" ).call( this.xAxis );
+				$tooltip
+				.html( i.value )
+				.css('visibility', 'visible')
+				.css("top", ( actual.y + 90 + 'px'))
+				.css("left", actual.x + 'px' )
+				.attr("height", "30px")
+				.attr("width", "50px");
+			})
+			.on('mousemove', function (actual, i) {
+				$tooltip.css("top", ( actual.y + 90 + 'px'))
+				.css("left", actual.x + 'px' )
+			})
+			.on('mouseout', function (actual, i) {
+				d3.select(this).attr('opacity', 1);
+				$tooltip
+				.css('visibility', "hidden");
+			});
 
-		this.chart.append( "g" ).call( this.yAxis );
+			this.chart.append( "g" ).call( this.xAxis );
+
+			this.chart.append( "g" ).call( this.yAxis );
+			this.chart.append('g')
+				.attr("class", "grid")
+				.attr( "transform", `translate( ${40} , 0 )`)
+				.call(d3.axisLeft( yScale )
+				.tickSize( -this.width  , 0, 0)
+				.tickFormat(''));
+
+			var $tooltip = $('<div>')
+			.attr('class', 'abc')
+			.css("visibility", 'hidden')
+			.css("background-color", "white")
+			.css("border", "solid")
+			.css("border-width", "1px")
+			.css("border-radius", "5px")
+			.css("padding", "10px")
+			.css("position", "absolute");
+
+			$tooltip.appendTo( 'body' );
 
 		this.$element =  this.chart;
 	};
