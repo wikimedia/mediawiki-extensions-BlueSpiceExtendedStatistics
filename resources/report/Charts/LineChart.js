@@ -28,7 +28,6 @@
 	};
 
 	bs.aggregatedStatistics.charts.LineChart.prototype.viewchart = function () {
-
 		xScale = d3.scaleTime()
 		.domain( d3.extent( this.data, function(d) { return d.name; } ) )
 		.rangeRound( [ 50, this.width - 40 ] );
@@ -70,7 +69,20 @@
 		.attr( "viewBox", [ 0, 0, this.width, this.height + 90 ] );
 
 		this.chart.append( "g" ).call( this.xAxis );
+		this.chart.append('g')
+		.attr("class", "grid")
+		.attr("transform", `translate(0, ${ this.height - 30 } )`)
+		.call(d3.axisBottom( xScale )
+		.tickSize( -this.height + 50 , 20, 0)
+		.tickFormat(''));
+
 		this.chart.append( "g" ).call( this.yAxis );
+		this.chart.append('g')
+		.attr("class", "grid")
+		.attr( "transform", `translate( ${50} , 0 )`)
+		.call(d3.axisLeft( yScale )
+		.tickSize( -this.width , 0, 0)
+		.tickFormat(''));
 
 		this.chart.append("text")
 		.attr("transform", "rotate(-90)")
@@ -93,23 +105,66 @@
             .x(function(d) { return xScale(d.name); })
             .y(function(d) { return yScale(d.value); })
             (d[1])
-        })
-		var lines = this.chart.selectAll(".line")
-		.data( this.sumData )
+        });
+
+		this.chart.selectAll( ".line" )
+		.data(this.data)
 		.enter()
-		.append( "text" )
-		.attr("class", "serie-label")
-		.attr( "transform" , function(d) {
-			return "translate( " + ( xScale(d[1][d[1].length -1 ].name) ) + ","
-			+ ( yScale(d[1][d[1].length -1 ].value) + 5) + ")";
+		.append( "circle" )
+		.attr("cx", function(d) { return xScale(d.name); })
+		.attr("cy", function(d) { return yScale(d.value) })
+		.attr( "r",  12 )
+		.attr( "fill", 'grey' )
+		.attr("opacity", 0.2)
+		.on( 'mouseenter', function ( actual, i ) {
+			d3.select(this)
+			.attr('opacity', 0.6)
+
+			$tooltip.html( i.value )
+			.css('visibility', 'visible')
+			.css("top", ( actual.y + 90 + 'px'))
+			.css("left", actual.x + 'px' )
+			.attr("height", "30px")
+			.attr("width", "50px");
 		})
-		.attr( "x", 3)
-		.attr( "dy" , ".35em" )
-		.text( function(d) { return d[1][d[1].length -1 ].line })
-		.attr( "text-anchor", "middle" )
-		.style( "fill", function(d) { return colorLabel( d );})
-		.style( "font-size", "9px" );
-		
+		.on('mousemove', function (actual, i) {
+			$tooltip.css("top", ( actual.y + 90 + 'px'))
+			.css("left", actual.x + 'px' )
+		})
+		.on('mouseout', function (actual, i) {
+			d3.select(this).attr('opacity', 0.2);
+			$tooltip
+			.css('visibility', "hidden");
+		});
+
+		var lines = this.chart.selectAll(".line")
+			.data( this.sumData )
+			.enter()
+			.append( "text" )
+			.attr("class", "serie-label")
+			.attr( "transform" , function(d) {
+				return "translate( " + ( xScale(d[1][d[1].length -1 ].name) ) + ","
+				+ ( yScale(d[1][d[1].length -1 ].value) + 5) + ")";
+			})
+			.attr( "x", 3)
+			.attr( "dy" , ".35em" )
+			.text( function(d) { return d[1][d[1].length -1 ].line })
+			.attr( "text-anchor", "middle" )
+			.style( "fill", function(d) { return colorLabel( d );})
+			.style( "font-size", "9px" );
+
+		var $tooltip = $('<div>')
+			.attr('class', 'abc')
+			.css("visibility", 'hidden')
+			.css("background-color", "white")
+			.css("border", "solid")
+			.css("border-width", "1px")
+			.css("border-radius", "5px")
+			.css("padding", "10px")
+			.css("position", "absolute");
+
+			$tooltip.appendTo( 'body' );
+
 		this.$element =  this.chart;
 	};
 

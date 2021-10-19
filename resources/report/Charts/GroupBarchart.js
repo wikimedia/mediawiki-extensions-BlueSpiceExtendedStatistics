@@ -69,6 +69,12 @@
 
 		this.chart.append( "g" )
 				.call( this.yAxis );
+		this.chart.append('g')
+			.attr("class", "grid")
+			.attr( "transform", `translate( ${50} , 0 )`)
+			.call(d3.axisLeft( yScale )
+			.tickSize( -this.width  , 0, 0)
+			.tickFormat(''));
 
 		this.chart.append( "g" )
 				.selectAll( "g" )
@@ -82,7 +88,26 @@
 				.attr( "y", d => yScale( d.values ) )
 				.attr( "width", xInner.bandwidth() )
 				.attr( "height", d =>  yScale( 0 ) - yScale( d.values ) )
-				.attr( "fill", d => this.colorChart( d.name ) );
+				.attr( "fill", d => this.colorChart( d.name ) )
+				.on( 'mouseenter', function ( actual, i ) {
+					d3.select(this)
+					.attr('opacity', 0.6);
+					$tooltip.html( i.values )
+					.css('visibility', 'visible')
+					.css("top", ( actual.y + 120 + 'px'))
+					.css("left", actual.x + 'px' )
+					.attr("height", "30px")
+					.attr("width", "50px");
+				})
+				.on('mousemove', function (actual, i) {
+					$tooltip.css("top", ( actual.y + 90 + 'px'))
+					.css("left", actual.x + 'px' )
+				})
+				.on('mouseout', function (actual, i) {
+					d3.select(this).attr('opacity', 1);
+					$tooltip
+					.css('visibility', "hidden");
+				});
 
 		var legend= this.chart.selectAll( ".legend" )
 				.data( this.labels ).enter().append( "g" )
@@ -96,12 +121,24 @@
 				.style( "fill",  d => this.colorLabel( d ) );
 
 		legend.append( "text" )
-				.attr( "x", this.width - 24 )
+				.attr( "x", this.width -24 )
 				.attr( "y", 9 )
 				.attr( "dy" , ".35em" )
 				.style( "text-anchor", "end" )
 				.style( "font-size", "9px" )
 				.text( function ( d ) { return d; });
+
+		var $tooltip = $('<div>')
+		.attr('class', 'abc')
+		.css("visibility", 'hidden')
+		.css("background-color", "white")
+		.css("border", "solid")
+		.css("border-width", "1px")
+		.css("border-radius", "5px")
+		.css("padding", "10px")
+		.css("position", "absolute");
+
+		$tooltip.appendTo( 'body' );
 
 		this.$element = this.chart;
 	};
