@@ -101,5 +101,6 @@
 	"bs-statistics-aggregated-report-filter-user-multi": "Участники",
 	"bs-statistics-aggregated-filter-category-namespace-notice": "Фильтр по категориям или по пространствам имен",
 	"bs-statistics-aggregated-report-error": "Произошла ошибка!",
-	"bs-statistics-aggregated-report-loading": "Идёт загрузка данных…"
+	"bs-statistics-aggregated-report-loading": "Идёт загрузка данных…",
+	"bs-statistics-aggregated-report-picker-label": "Тип отчёта"
 }

@@ -94,5 +94,7 @@
 	"bs-statistics-aggregated-report-filter-page": "صفحه",
 	"bs-statistics-aggregated-report-filter-user": "کاربر",
 	"bs-statistics-aggregated-report-filter-user-multi": "کاربران",
-	"bs-statistics-aggregated-report-loading": "بارگیری داده..."
+	"bs-statistics-aggregated-report-loading": "بارگیری داده...",
+	"bs-statistics-aggregated-report-picker-label": "نوع گزارش",
+	"bs-statistics-aggregated-report-error": "خطایی رخ داد!"
 }

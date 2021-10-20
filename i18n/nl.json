@@ -5,6 +5,7 @@
 			"Esketti",
 			"Mainframe98",
 			"McDutchie",
+			"Robin van der Vliet",
 			"SPQRobin",
 			"Xbaked potatox"
 		]
@@ -105,5 +106,6 @@
 	"bs-statistics-aggregated-report-filter-namespaces": "Naamruimten",
 	"bs-statistics-aggregated-report-filter-page": "Pagina",
 	"bs-statistics-aggregated-report-filter-user": "Gebruiker",
-	"bs-statistics-aggregated-report-filter-user-multi": "Gebruikers"
+	"bs-statistics-aggregated-report-filter-user-multi": "Gebruikers",
+	"bs-statistics-aggregated-report-picker-label": "Rapporttype"
 }

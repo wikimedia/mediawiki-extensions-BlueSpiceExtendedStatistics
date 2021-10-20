@@ -102,5 +102,9 @@
 	"bs-statistics-aggregated-report-filter-user-multi": "Brukere",
 	"bs-statistics-aggregated-filter-category-namespace-notice": "Filtrer etter kategori eller navnerom",
 	"bs-statistics-aggregated-report-error": "Det oppstod en feil!",
-	"bs-statistics-aggregated-report-loading": "Laster inn data…"
+	"bs-statistics-aggregated-report-loading": "Laster inn data…",
+	"bs-statistics-aggregated-report-filter-category-multi": "Kategorier",
+	"bs-statistics-aggregated-report-filter-date-start": "Startdato",
+	"bs-statistics-aggregated-report-filter-date-end": "Sluttdato",
+	"bs-statistics-aggregated-report-filter-interval": "Intervall"
 }

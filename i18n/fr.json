@@ -114,5 +114,9 @@
 	"bs-statistics-aggregated-filter-category-namespace-notice": "Filtrer soit par catégories, soit par espaces de noms",
 	"bs-statistics-aggregated-report-error": "Une erreur est survenue !",
 	"bs-statistics-aggregated-report-loading": "Chargement des données...",
-	"bs-statistics-pref-excludeusers-help": "Certains utilisateurs, par exemple avec des droits d'administrateur, peuvent fausser les statistiques de la page Special:ExtendedStatistics. Ils peuvent être exclus des résultats statistiques."
+	"bs-statistics-pref-excludeusers-help": "Certains utilisateurs, par exemple avec des droits d'administrateur, peuvent fausser les statistiques de la page Special:ExtendedStatistics. Ils peuvent être exclus des résultats statistiques.",
+	"apihelp-query+statistics-reports-summary": "Fournit des rapports statistiques pour différents types de statistiques",
+	"apihelp-query+statistics-reports-example": "Fournir tous les rapports pour le type « mytype », pour les dates 2021-09-14 et 2021-09-15",
+	"apihelp-query+statistics-reports-param-type": "Type de statistiques (clé du rapport)",
+	"apihelp-query+statistics-reports-param-filter": "Données de filtre encodées en JSON"
 }
