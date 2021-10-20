@@ -1,8 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
+			"Muotâ",
 			"Yupik"
 		]
 	},
-	"bs-statistics-filter-category": "Luokka"
+	"bs-statistics-filter-category": "Luokka",
+	"bs-statistics-diag-number-of-pages-mw": "Rahtum siskáldâssiijđoi meeri",
+	"bs-statistics-portlet-numberofpages": "Siijđoi meeri",
+	"bs-statistics-portlet-numberofarticles": "Siskáldâssiijđoi meeri"
 }

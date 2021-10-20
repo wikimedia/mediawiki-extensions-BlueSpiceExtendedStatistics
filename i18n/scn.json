@@ -8,5 +8,19 @@
 	"bs-statistics-day": "Jornu",
 	"bs-statistics-filter-category": "Catigurìa",
 	"bs-statistics-label-page": "Pàggina",
-	"bs-statistics-month": "Misi"
+	"bs-statistics-month": "Misi",
+	"bs-statistics-label-name": "Nomu",
+	"bs-statistics-diag-number-of-edits": "Nùmmiru di canciamenti",
+	"bs-statistics-portlet-numberofedits": "Nùmmiru di canciamenti",
+	"bs-statistics-portletconfig-periodday": "Aieri",
+	"bs-statistics-aggregated-report-filter-category-multi": "Catigurìi",
+	"bs-statistics-aggregated-report-filter-interval-day": "Jornu",
+	"bs-statistics-aggregated-report-filter-interval-week": "Simana",
+	"bs-statistics-aggregated-report-filter-interval-month": "Misi",
+	"bs-statistics-aggregated-report-filter-interval-year": "Annu",
+	"bs-statistics-aggregated-report-filter-namespace": "Namespace",
+	"bs-statistics-aggregated-report-filter-namespaces": "Namespace",
+	"bs-statistics-aggregated-report-filter-page": "Pàggina",
+	"bs-statistics-aggregated-report-filter-user": "Utenti",
+	"bs-statistics-aggregated-report-filter-user-multi": "Utenti"
 }
