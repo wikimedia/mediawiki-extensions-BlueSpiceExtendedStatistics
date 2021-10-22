@@ -94,6 +94,7 @@
 	"bs-statistics-aggregationtype-label": "聚合类型",
 	"bs-statistics-targets-label": "目标",
 	"bs-statistics-paging-page-size": "页面大小",
+	"apihelp-query+statistics-reports-param-filter": "JSON编码的过滤数据",
 	"bs-statistics-aggregated-report-picker-label": "报告类型",
 	"bs-statistics-aggregated-report-filter-category-multi": "分类",
 	"bs-statistics-aggregated-report-filter-date-start": "开始日期",
