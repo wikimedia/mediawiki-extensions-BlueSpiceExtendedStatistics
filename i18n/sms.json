@@ -5,5 +5,8 @@
 		]
 	},
 	"bs-statistics-filter-category": "Kategoria",
-	"bs-statistics-portlet-numberofpages": "Seeidai mieʹrr"
+	"bs-statistics-portlet-numberofpages": "Seeidai mieʹrr",
+	"bs-statistics-label-page": "Seidd",
+	"bs-statistics-aggregated-report-filter-user": "Õõʹnni",
+	"bs-statistics-aggregated-report-filter-user-multi": "Õõʹnni"
 }

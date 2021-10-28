@@ -112,5 +112,6 @@
 	"bs-statistics-aggregated-report-filter-user": "用户",
 	"bs-statistics-aggregated-report-filter-user-multi": "用户",
 	"bs-statistics-aggregated-report-error": "发生错误了！",
-	"bs-statistics-aggregated-report-loading": "数据加载中……"
+	"bs-statistics-aggregated-report-loading": "数据加载中……",
+	"apihelp-query+statistics-reports-param-filter": "JSON编码的过滤数据"
 }
