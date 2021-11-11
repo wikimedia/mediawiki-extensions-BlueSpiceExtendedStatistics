@@ -2,9 +2,11 @@
 
 use BlueSpice\ExtendedStatistics\AttributeRegistryFactory;
 use BlueSpice\ExtendedStatistics\Compatibility\ObjectFactoryWithServices;
+use BlueSpice\ExtendedStatistics\DiagramFactory;
 use BlueSpice\ExtendedStatistics\IReport;
 use BlueSpice\ExtendedStatistics\ISnapshotProvider;
 use BlueSpice\ExtendedStatistics\ISnapshotStore;
+use BlueSpice\ExtensionAttributeBasedRegistry;
 use MediaWiki\MediaWikiServices;
 
 return [
