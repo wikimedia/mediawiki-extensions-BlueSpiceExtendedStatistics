@@ -4,6 +4,7 @@
 			"Comjun04",
 			"Hwangjy9",
 			"Maoue",
+			"Underbaaar",
 			"Ykhwong"
 		]
 	},
@@ -77,5 +78,6 @@
 	"bs-statistics-aggregated-report-filter-user-multi": "사용자",
 	"bs-statistics-aggregated-report-error": "오류가 발생했습니다!",
 	"bs-statistics-aggregated-report-loading": "데이터를 불러오는 중...",
-	"bs-statistics-aggregated-report-filter-date-end": "끝 날짜"
+	"bs-statistics-aggregated-report-filter-date-end": "끝 날짜",
+	"bs-statistics-aggregated-report-filter-interval": "간격"
 }

@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Danieldegroot2",
 			"Encycloon",
 			"Esketti",
 			"Mainframe98",
@@ -107,5 +108,7 @@
 	"bs-statistics-aggregated-report-filter-page": "Pagina",
 	"bs-statistics-aggregated-report-filter-user": "Gebruiker",
 	"bs-statistics-aggregated-report-filter-user-multi": "Gebruikers",
-	"bs-statistics-aggregated-report-picker-label": "Rapporttype"
+	"bs-statistics-aggregated-report-picker-label": "Rapporttype",
+	"bs-statistics-aggregated-report-error": "Er is een fout opgetreden!",
+	"bs-statistics-aggregated-report-loading": "Gegevens laden..."
 }
