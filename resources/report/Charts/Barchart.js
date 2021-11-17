@@ -11,7 +11,7 @@
 
 	bs.aggregatedStatistics.charts.Barchart.prototype.setAxisLabels = function ( labels  ) {
 		this.labels = Object.values( labels );
-	}
+	};
 
 	bs.aggregatedStatistics.charts.Barchart.prototype.updateData = function ( data ) {
 		this.data = data;

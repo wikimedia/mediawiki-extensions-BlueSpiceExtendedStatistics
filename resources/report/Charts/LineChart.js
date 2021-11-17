@@ -11,10 +11,9 @@
 
 	bs.aggregatedStatistics.charts.LineChart.prototype.setAxisLabels = function ( labels  ) {
 		this.labels = Object.values( labels );
-	}
+	};
 
 	bs.aggregatedStatistics.charts.LineChart.prototype.updateData = function ( data ) {
-		
 		parseTime = d3.timeParse("%Y-%m-%d");
 
 		data.forEach( function ( d ) {
@@ -42,7 +41,7 @@
 
 		this.xAxis = g => g
 		.attr( "transform", `translate(0, ${ this.height - 30 } )` )
-		.call( d3.axisBottom( xScale ).ticks( tickLength ).tickSizeOuter( 0 ) )
+		.call( d3.axisBottom( xScale ).tickFormat( d3.timeFormat( "%Y-%m-%d" ) ) )
 		.selectAll( "text" )
 		.attr( "text-anchor", "end" )
 		.attr( "transform", "rotate(-65)" )
@@ -61,7 +60,7 @@
 		colorLabel = d3.scaleOrdinal()
 			.range( [ "#25401E", "#520610", "#84A63C","#B8D943","#EAF2AC",
 			"#56732C", "#D95062","#D10F29","#521E25","#9E0B1F",
-			"#2B283C", "#3E4557", "#D3BC76", "#D5AA46", "#DBC797", 
+			"#2B283C", "#3E4557", "#D3BC76", "#D5AA46", "#DBC797",
 			"#BFBFBF","#A6A6A6","#737373","#404040","#0D0D0D" ] );
 
 		this.chart = d3.create( "svg" )
@@ -97,28 +96,28 @@
 		.enter()
 		.append("g")
 		.append("path")
-        .attr("fill", "none")
-        .attr("stroke", function(d) { return colorLine( d );})
-        .attr("stroke-width", 1.5)
-        .attr("d", function(d) {
-          return d3.line()
-            .x(function(d) { return xScale(d.name); })
-            .y(function(d) { return yScale(d.value); })
-            (d[1])
-        });
+		.attr("fill", "none")
+		.attr("stroke", function(d) { return colorLine( d );})
+		.attr("stroke-width", 1.5)
+		.attr("d", function(d) {
+		return d3.line()
+			.x(function(d) { return xScale(d.name); })
+			.y(function(d) { return yScale(d.value); })
+			(d[1]);
+		});
 
 		this.chart.selectAll( ".line" )
 		.data(this.data)
 		.enter()
 		.append( "circle" )
 		.attr("cx", function(d) { return xScale(d.name); })
-		.attr("cy", function(d) { return yScale(d.value) })
+		.attr("cy", function(d) { return yScale(d.value); })
 		.attr( "r",  12 )
 		.attr( "fill", 'grey' )
 		.attr("opacity", 0.2)
 		.on( 'mouseenter', function ( actual, i ) {
 			d3.select(this)
-			.attr('opacity', 0.6)
+			.attr('opacity', 0.6);
 
 			$tooltip.html( i.value )
 			.css('visibility', 'visible')
@@ -129,7 +128,7 @@
 		})
 		.on('mousemove', function (actual, i) {
 			$tooltip.css("top", ( actual.y + 90 + 'px'))
-			.css("left", actual.x + 'px' )
+			.css("left", actual.x + 'px' );
 		})
 		.on('mouseout', function (actual, i) {
 			d3.select(this).attr('opacity', 0.2);
