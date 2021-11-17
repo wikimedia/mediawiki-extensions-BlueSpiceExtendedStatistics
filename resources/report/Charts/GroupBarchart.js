@@ -13,7 +13,7 @@
 
 	bs.aggregatedStatistics.charts.Groupchart.prototype.setAxisLabels = function ( labels  ) {
 		this.labels = Object.values( labels );
-	}
+	};
 
 	bs.aggregatedStatistics.charts.Groupchart.prototype.updateData = function ( data ) {
 		this.data = data;
@@ -23,7 +23,7 @@
 		names = this.names;
 		this.data.forEach( function ( d ) {
 			d.values = names.map( function ( name ) {
-				return { name:name, values: d[name] }
+				return { name:name, values: d[name] };
 			});
 		});
 		this.viewchart();
