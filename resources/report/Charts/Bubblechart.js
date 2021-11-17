@@ -11,7 +11,7 @@
 
 	bs.aggregatedStatistics.charts.Bubblechart.prototype.setAxisLabels = function ( labels  ) {
 		this.labels = Object.values( labels );
-	}
+	};
 
 	bs.aggregatedStatistics.charts.Bubblechart.prototype.updateData = function ( data ) {
 		this.data = data;
