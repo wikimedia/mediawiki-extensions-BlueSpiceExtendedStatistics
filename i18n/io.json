@@ -12,5 +12,7 @@
 	"bs-statistics-day": "Dio",
 	"bs-statistics-label-name": "Nomo",
 	"bs-statistics-aggregated-report-filter-user": "Uzero",
-	"bs-statistics-aggregated-report-filter-user-multi": "Uzeri"
+	"bs-statistics-aggregated-report-filter-user-multi": "Uzeri",
+	"bs-statistics-aggregated-report-filter-namespace": "Nomaro (''namespace'')",
+	"bs-statistics-aggregated-report-filter-namespaces": "Nomari (''namespaces'')"
 }
