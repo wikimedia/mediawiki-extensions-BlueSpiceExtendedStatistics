@@ -8,7 +8,8 @@
 			"Okras",
 			"Vlad5250",
 			"Аль-Гимравий",
-			"Умар"
+			"Умар",
+			"DDPAT"
 		]
 	},
 	"bs-statistics-desc": "Модуль статистики для BlueSpice",
@@ -75,6 +76,7 @@
 	"bs-statistics-button-label-export": "Экспортировать",
 	"bs-statistics-panel-title-result": "Результат",
 	"bs-extendedstatistics-collection-fatalstatus-unknownaction": "Неизвестное действие «$1»",
+	"extendedstatisticssnapshots": "Снимки",
 	"bs-extendedstatistics-collection-var-timestampcreated": "Дата создания",
 	"bs-statistics-button-label-apply": "Применить фильтры",
 	"bs-statistics-label-bar-chart": "Гистограмма",

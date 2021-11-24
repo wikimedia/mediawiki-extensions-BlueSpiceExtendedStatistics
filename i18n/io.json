@@ -1,12 +1,14 @@
 {
 	"@metadata": {
 		"authors": [
-			"Joao Xavier"
+			"Joao Xavier",
+			"JSantos"
 		]
 	},
 	"bs-statistics-mode": "Modo",
 	"bs-statistics-year": "Yaro",
 	"bs-statistics-day": "Dio",
+	"bs-statistics-label-name": "Nomo",
 	"bs-statistics-label-page": "Pagino",
 	"bs-statistics-button-label-export": "Exportacar"
 }
