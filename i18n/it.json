@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Ajeje Brazorf",
 			"Beta16",
 			"Saracrovetto",
 			"Selven",
@@ -68,5 +69,16 @@
 	"bs-statistics-button-label-export": "Esporta",
 	"bs-statistics-panel-title-result": "Risultato",
 	"bs-statistics-datasource-label": "Sorgente dati",
-	"bs-statistics-paging-page-size": "Dimensioni pagina"
+	"bs-statistics-paging-page-size": "Dimensioni pagina",
+	"bs-statistics-aggregated-report-filter-category-multi": "Categorie",
+	"bs-statistics-aggregated-report-filter-interval": "Intervallo",
+	"bs-statistics-aggregated-report-filter-interval-day": "Giorno",
+	"bs-statistics-aggregated-report-filter-interval-week": "Settimana",
+	"bs-statistics-aggregated-report-filter-interval-month": "Mese",
+	"bs-statistics-aggregated-report-filter-interval-year": "Anno",
+	"bs-statistics-aggregated-report-filter-namespace": "Namespace",
+	"bs-statistics-aggregated-report-filter-namespaces": "Namespace",
+	"bs-statistics-aggregated-report-filter-page": "Pagina",
+	"bs-statistics-aggregated-report-filter-user": "Utente",
+	"bs-statistics-aggregated-report-filter-user-multi": "Utenti"
 }
