@@ -8,5 +8,7 @@
 	"bs-statistics-portlet-numberofpages": "Seeidai mieʹrr",
 	"bs-statistics-label-page": "Seidd",
 	"bs-statistics-aggregated-report-filter-user": "Õõʹnni",
-	"bs-statistics-aggregated-report-filter-user-multi": "Õõʹnni"
+	"bs-statistics-aggregated-report-filter-user-multi": "Õõʹnni",
+	"bs-statistics-diag-number-of-edits": "Muttsi lååkkmieʹrr",
+	"bs-statistics-portlet-numberofedits": "Muttsi lååkkmieʹrr"
 }
