@@ -114,5 +114,9 @@
 	"bs-statistics-aggregated-report-filter-user-multi": "Benutzer",
 	"bs-statistics-aggregated-filter-category-namespace-notice": "Nach Kategorien oder Namensräumen filtern",
 	"bs-statistics-aggregated-report-error": "Ein Fehler ist aufgetreten!",
-	"bs-statistics-aggregated-report-loading": "Daten werden geladen …"
+	"bs-statistics-aggregated-report-loading": "Daten werden geladen …",
+	"apihelp-query+statistics-reports-summary": "Stellt Statistikberichte für verschiedene Statistiktypen bereit",
+	"apihelp-query+statistics-reports-example": "Stelle alle Berichte für den Typ \"mytype\" für die Daten zwischen 14.09.2021 und 15.09.2021 bereit",
+	"apihelp-query+statistics-reports-param-type": "Typ der Statistik (Berichtsschlüssel)",
+	"apihelp-query+statistics-reports-param-filter": "JSON-kodierte Fiterdaten"
 }
