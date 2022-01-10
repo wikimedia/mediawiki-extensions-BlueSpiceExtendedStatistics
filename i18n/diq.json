@@ -27,5 +27,6 @@
 	"extendedstatisticssnapshots": "Fotrafo enstantane",
 	"bs-statistics-datasource-label": "Çımeyê melumati",
 	"bs-statistics-aggregationfield-label": "Cayê arêbiyayışi",
-	"bs-statistics-targets-label": "Hedefi"
+	"bs-statistics-targets-label": "Hedefi",
+	"bs-statistics-aggregated-report-filter-category-multi": "Kategoriyi"
 }
