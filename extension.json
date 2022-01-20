@@ -81,6 +81,11 @@
 				"BsDiagramEditsPerUser": "\\BsDiagramEditsPerUser::factory",
 				"BsDiagramSearches": "\\BsDiagramSearches::factory"
 			}
+		},
+		"BlueSpiceVisualEditorConnector": {
+			"TagDefinitions": [
+				"ext.bluespice.extendedstatistics.visualEditorTagDefinition"
+			]
 		}
 	},
 	"ServiceWiringFiles": [
@@ -162,7 +167,8 @@
 		"BSDashboardsAdminDashboardPortalConfig": "\\BlueSpice\\ExtendedStatistics\\Hook\\BSDashboardsAdminDashboardPortalConfig\\AddConfigs::callback",
 		"BSDashboardsAdminDashboardPortalPortlets": "\\BlueSpice\\ExtendedStatistics\\Hook\\BSDashboardsAdminDashboardPortalPortlets\\AddPortlets::callback",
 		"BSDashboardsUserDashboardPortalConfig": "\\BlueSpice\\ExtendedStatistics\\Hook\\BSDashboardsUserDashboardPortalConfig\\AddConfigs::callback",
-		"BSDashboardsUserDashboardPortalPortlets": "\\BlueSpice\\ExtendedStatistics\\Hook\\BSDashboardsUserDashboardPortalPortlets\\AddPortlets::callback"
+		"BSDashboardsUserDashboardPortalPortlets": "\\BlueSpice\\ExtendedStatistics\\Hook\\BSDashboardsUserDashboardPortalPortlets\\AddPortlets::callback",
+		"BSInsertMagicAjaxGetData": "\\BlueSpice\\ExtendedStatistics\\Hook\\BSInsertMagicAjaxGetData\\AddProgressTag::callback"
 	},
 	"config_prefix": "bsg",
 	"config": {
@@ -300,6 +306,23 @@
 				"bs-statistics-aggregated-filter-category-namespace-notice",
 				"bs-statistics-aggregated-report-loading",
 				"bs-statistics-aggregated-report-error"
+			]
+		},
+		"ext.bluespice.extendedstatistics.visualEditorTagDefinition": {
+			"scripts": [
+				"bs.extendedstatistics/util/tag/ProgressDefinition.js"
+			],
+			"messages": [
+				"bs-statistics-tag-progress-desc",
+				"bs-statistics-ve-progressinspector-title",
+				"bs-statistics-ve-progress-attr-basecount-label",
+				"bs-statistics-ve-progress-attr-basecount-help",
+				"bs-statistics-ve-progress-attr-baseitem-label",
+				"bs-statistics-ve-progress-attr-baseitem-help",
+				"bs-statistics-ve-progress-attr-progressitem-label",
+				"bs-statistics-ve-progress-attr-progressitem-help",
+				"bs-statistics-ve-progress-attr-width-label",
+				"bs-statistics-ve-progress-attr-width-help"
 			]
 		}
 	},
