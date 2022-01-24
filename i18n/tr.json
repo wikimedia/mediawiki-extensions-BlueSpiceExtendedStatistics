@@ -89,6 +89,7 @@
 	"bs-statistics-aggregationtype-label": "Toplama türü",
 	"bs-statistics-targets-label": "Hedefler",
 	"bs-statistics-paging-page-size": "Sayfa boyutu",
+	"apihelp-query+statistics-reports-param-type": "İstatistik türü (rapor anahtarı)",
 	"bs-statistics-aggregated-report-picker-label": "Rapor türü",
 	"bs-statistics-aggregated-report-filter-category-multi": "Kategoriler",
 	"bs-statistics-aggregated-report-filter-date-start": "Başlangıç tarihi",

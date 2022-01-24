@@ -4,6 +4,7 @@
 			"A2y4",
 			"Ajeje Brazorf",
 			"Foomin10",
+			"MathXplore",
 			"Shirayuki",
 			"Yatalu"
 		]
@@ -38,5 +39,7 @@
 	"extendedstatisticssnapshots": "スナップショット",
 	"bs-statistics-label-bar-chart": "棒グラフ",
 	"bs-statistics-label-line-chart": "折れ線グラフ",
-	"bs-statistics-paging-page-size": "ページのサイズ"
+	"bs-statistics-paging-page-size": "ページのサイズ",
+	"bs-statistics-ve-progressinspector-title": "進捗",
+	"bs-statistics-ve-progress-attr-width-label": "幅"
 }

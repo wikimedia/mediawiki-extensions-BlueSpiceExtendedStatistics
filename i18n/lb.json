@@ -79,5 +79,7 @@
 	"bs-statistics-aggregated-report-filter-user": "Benotzer",
 	"bs-statistics-aggregated-report-filter-user-multi": "Benotzer",
 	"bs-statistics-aggregated-report-error": "Et ass e Feeler geschitt!",
-	"bs-statistics-aggregated-report-loading": "Donnéeë gi gelueden..."
+	"bs-statistics-aggregated-report-loading": "Donnéeë gi gelueden...",
+	"bs-statistics-ve-progressinspector-title": "Fortschrëtt",
+	"bs-statistics-ve-progress-attr-width-label": "Breet"
 }

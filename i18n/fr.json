@@ -112,5 +112,15 @@
 	"bs-statistics-aggregated-filter-category-namespace-notice": "Filtrer soit par catégories, soit par espaces de noms",
 	"bs-statistics-aggregated-report-error": "Une erreur est survenue !",
 	"bs-statistics-aggregated-report-loading": "Chargement des données...",
-	"bs-statistics-pref-excludeusers-help": "Certains utilisateurs, par exemple avec des droits d'administrateur, peuvent fausser les statistiques de la page Special:ExtendedStatistics. Ils peuvent être exclus des résultats statistiques."
+	"bs-statistics-pref-excludeusers-help": "Certains utilisateurs, par exemple avec des droits d'administrateur, peuvent fausser les statistiques de la page Special:ExtendedStatistics. Ils peuvent être exclus des résultats statistiques.",
+	"bs-statistics-tag-progress-desc": "Génère une barre de progression. La valeur dépend de l’apparition d’un texte donné trouvé dans le corps et une limite maximale définie par l’utilisateur.",
+	"bs-statistics-ve-progressinspector-title": "Progrès",
+	"bs-statistics-ve-progress-attr-basecount-label": "Compteur de base",
+	"bs-statistics-ve-progress-attr-basecount-help": "Aide du compteur de base",
+	"bs-statistics-ve-progress-attr-baseitem-label": "Élément de base",
+	"bs-statistics-ve-progress-attr-baseitem-help": "Aide de l’élément de base",
+	"bs-statistics-ve-progress-attr-progressitem-label": "Élément de progression",
+	"bs-statistics-ve-progress-attr-progressitem-help": "Aide de l’élément de progression",
+	"bs-statistics-ve-progress-attr-width-label": "Largeur",
+	"bs-statistics-ve-progress-attr-width-help": "Aide sur la largeur"
 }

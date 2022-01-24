@@ -11,6 +11,7 @@
 			"Shimamura Sakura",
 			"TsuyaMarisa",
 			"VulpesVulpes825",
+			"Willy1018",
 			"Xiplus",
 			"佛壁灯",
 			"列维劳德",
@@ -110,5 +111,7 @@
 	"bs-statistics-aggregated-report-filter-user": "用户",
 	"bs-statistics-aggregated-report-filter-user-multi": "用户",
 	"bs-statistics-aggregated-report-error": "发生错误了！",
-	"bs-statistics-aggregated-report-loading": "数据加载中……"
+	"bs-statistics-aggregated-report-loading": "数据加载中……",
+	"bs-statistics-ve-progressinspector-title": "进度",
+	"bs-statistics-ve-progress-attr-width-label": "宽度"
 }
