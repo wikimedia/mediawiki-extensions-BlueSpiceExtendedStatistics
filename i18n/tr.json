@@ -6,7 +6,8 @@
 			"Melissadilara",
 			"MuratTheTurkish",
 			"Sayginer",
-			"Stonecy"
+			"Stonecy",
+			"Can"
 		]
 	},
 	"bs-statistics-desc": "BlueSpice için istatistik modülü",
@@ -72,10 +73,6 @@
 	"right-statistic-viewspecialpage": "Genişletilmiş istatistiğe erişin",
 	"bs-statistics-button-label-export": "Dışa aktar",
 	"bs-statistics-panel-title-result": "Sonuç",
-	"bs-extendedstatistics-collection-fatalstatus-unknownaction": "Bilinmeyen işlem \"$1\"",
-	"bs-extendedstatistics-collection-fatalstatus-permissiondeniedusercan": "Kullanıcının \"$2\" üzerinde \"$1\" işlemini gerçekleştirmesine izin verilmiyor",
-	"bs-extendedstatistics-collection-fatalstatus-permissiondenieduserisallowed": "Kullanıcının \"$1\" işlemini gerçekleştirmesine izin verilmiyor",
-	"bs-extendedstatistics-collection-fatalstatus-notitle": "\"Başlık\" nesnesi gerekli",
 	"apihelp-bs-extendedstatistics-collection-store-description": "Sorgulanabilen, filtrelenebilen ve toplanabilen istatistikler için bir mağaza sağlar",
 	"apihelp-bs-extendedstatistics-collection-store-summary": "Sorgulanabilen, filtrelenebilen ve toplanabilen istatistikler için bir mağaza sağlar",
 	"apihelp-bs-extendedstatistics-collection-store-param-aggregate": "Toplama için rastgele veriler içeren JSON dize kodlu nesne",
@@ -83,8 +80,6 @@
 	"action-extendedstatistics-viewspecialpage-aggregated": "[[Special:AggregatedStatistic]] özel sayfaya eriş",
 	"right-extendedstatistics-viewspecialpage-aggregated": "[[Special:AggregatedStatistic]] özel sayfaya erişin",
 	"extendedstatisticssnapshots": "Anlık resimler",
-	"bs-extendedstatistics-collection-var-type": "Kaynak türü",
-	"bs-extendedstatistics-collection-var-timestampcreated": "Oluşturulma tarihi",
 	"bs-statistics-button-label-apply": "Filtreleri uygula",
 	"bs-statistics-label-bar-chart": "Çubuk grafiği",
 	"bs-statistics-label-line-chart": "Çizgi grafiği",
@@ -106,5 +101,11 @@
 	"bs-statistics-aggregated-report-filter-user": "Kullanıcı",
 	"bs-statistics-aggregated-report-filter-user-multi": "Kullanıcılar",
 	"bs-statistics-aggregated-report-error": "Bir hata oluştu!",
-	"bs-statistics-aggregated-report-loading": "Veri yükleniyor..."
+	"bs-statistics-aggregated-report-loading": "Veri yükleniyor...",
+	"bs-statistics-ve-progressinspector-title": "Süreç",
+	"bs-statistics-ve-progress-attr-baseitem-label": "Temel öge",
+	"bs-statistics-ve-progress-attr-progressitem-label": "Süreç ögesi",
+	"bs-statistics-ve-progress-attr-progressitem-help": "Süreç ögesi yardımı",
+	"bs-statistics-ve-progress-attr-width-label": "Genişlik",
+	"bs-statistics-ve-progress-attr-width-help": "Genişlik yardımı"
 }
