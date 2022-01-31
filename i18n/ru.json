@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"DDPAT",
+			"Kareyac",
 			"Katunchik",
 			"Mailman",
 			"Mouse21",
@@ -9,8 +10,7 @@
 			"Okras",
 			"Vlad5250",
 			"Аль-Гимравий",
-			"Умар",
-			"Kareyac"
+			"Умар"
 		]
 	},
 	"bs-statistics-desc": "Модуль статистики для BlueSpice",

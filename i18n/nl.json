@@ -6,6 +6,7 @@
 			"Esketti",
 			"Mainframe98",
 			"McDutchie",
+			"Nickthijssen1994",
 			"Robin van der Vliet",
 			"SPQRobin",
 			"Xbaked potatox"
@@ -106,5 +107,6 @@
 	"bs-statistics-aggregated-report-filter-user": "Gebruiker",
 	"bs-statistics-aggregated-report-filter-user-multi": "Gebruikers",
 	"bs-statistics-aggregated-report-error": "Er is een fout opgetreden!",
-	"bs-statistics-aggregated-report-loading": "Gegevens laden..."
+	"bs-statistics-aggregated-report-loading": "Gegevens laden...",
+	"bs-statistics-ve-progress-attr-width-label": "Breedte"
 }
