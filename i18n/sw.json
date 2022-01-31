@@ -1,10 +1,14 @@
 {
 	"@metadata": {
 		"authors": [
-			"Yasen igra"
+			"Yasen igra",
+			"Magotech"
 		]
 	},
 	"bs-statistics-year": "Mwaka",
 	"bs-statistics-day": "Siku",
-	"bs-statistics-label-name": "Jina"
+	"bs-statistics-label-name": "Jina",
+	"bs-statistics-ve-progressinspector-title": "Maendeleo",
+	"bs-statistics-ve-progress-attr-basecount-label": "Kima cha chini cha kuhesabu",
+	"bs-statistics-ve-progress-attr-width-label": "Upana"
 }

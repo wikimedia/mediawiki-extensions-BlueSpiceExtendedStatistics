@@ -70,10 +70,6 @@
 	"right-statistic-viewspecialpage": "الوصول إلى إحصائيات موسعة",
 	"bs-statistics-button-label-export": "تصدير",
 	"bs-statistics-panel-title-result": "النتيجة",
-	"bs-extendedstatistics-collection-fatalstatus-unknownaction": "إجراء غير معروف \"$1\"",
-	"bs-extendedstatistics-collection-fatalstatus-permissiondeniedusercan": "لا يُسمَح للمستخدم بتنفيذ الإجراء \"$1\" على \"$2\"",
-	"bs-extendedstatistics-collection-fatalstatus-permissiondenieduserisallowed": "لا يُسمَح للمستخدم بأداء الإجراء \"$1\"",
-	"bs-extendedstatistics-collection-fatalstatus-notitle": "كائن \"العنوان\" مطلوب",
 	"apihelp-bs-extendedstatistics-collection-store-description": "يوفر متجرا للإحصائيات التي يمكن الاستعلام عنها وتصفيتها وتجميعها",
 	"apihelp-bs-extendedstatistics-collection-store-summary": "يوفر متجرا للإحصائيات التي يمكن الاستعلام عنها وتصفيتها وتجميعها",
 	"apihelp-bs-extendedstatistics-collection-store-param-aggregate": "سلسلة كائن JSON المشفر الكائن مع بيانات اعتباطية للتجميع",
@@ -81,8 +77,6 @@
 	"action-extendedstatistics-viewspecialpage-aggregated": "الوصول إلى الصفحة الخاصة [[Special:AggregatedStatistic]]",
 	"right-extendedstatistics-viewspecialpage-aggregated": "الوصول إلى الصفحة الخاصة [[Special:AggregatedStatistic]]",
 	"extendedstatisticssnapshots": "لقطات",
-	"bs-extendedstatistics-collection-var-type": "نوع المصدر",
-	"bs-extendedstatistics-collection-var-timestampcreated": "تاريخ الإنشاء",
 	"bs-statistics-button-label-apply": "تطبيق المرشحات",
 	"bs-statistics-label-bar-chart": "مخطط شريطي",
 	"bs-statistics-label-line-chart": "مخطط بياني خطي",
@@ -92,5 +86,7 @@
 	"bs-statistics-aggregationtype-label": "نوع التجميع",
 	"bs-statistics-targets-label": "الأهداف",
 	"bs-statistics-paging-page-size": "حجم الصفحة",
-	"bs-statistics-aggregated-report-filter-date-start": "تاريخ البدء"
+	"bs-statistics-aggregated-report-filter-category-multi": "التصنيفات",
+	"bs-statistics-aggregated-report-filter-date-start": "تاريخ البدء",
+	"bs-statistics-aggregated-report-filter-namespace": "نطاق"
 }

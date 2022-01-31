@@ -5,12 +5,15 @@
 			"Ajeje Brazorf",
 			"Foomin10",
 			"Shirayuki",
-			"Yatalu"
+			"Yatalu",
+			"MathXplore"
 		]
 	},
 	"bs-statistics-desc": "BlueSpice 用の統計モジュール",
 	"prefs-statistics": "拡張統計",
 	"extendedstatistics": "拡張統計",
+	"bs-statistics-from": "差出人",
+	"bs-statistics-to": "宛先",
 	"bs-statistics-mode": "モード",
 	"bs-statistics-year": "年",
 	"bs-statistics-month": "月",
@@ -37,6 +40,6 @@
 	"bs-statistics-label-bar-chart": "棒グラフ",
 	"bs-statistics-label-line-chart": "折れ線グラフ",
 	"bs-statistics-paging-page-size": "ページのサイズ",
-	"bs-statistics-from": "差出人",
-	"bs-statistics-to": "宛先"
+	"bs-statistics-ve-progressinspector-title": "進捗",
+	"bs-statistics-ve-progress-attr-width-label": "幅"
 }

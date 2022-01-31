@@ -9,7 +9,8 @@
 			"Okras",
 			"Vlad5250",
 			"Аль-Гимравий",
-			"Умар"
+			"Умар",
+			"Kareyac"
 		]
 	},
 	"bs-statistics-desc": "Модуль статистики для BlueSpice",
@@ -75,6 +76,7 @@
 	"right-statistic-viewspecialpage": "доступ к расширенной статистике",
 	"bs-statistics-button-label-export": "Экспортировать",
 	"bs-statistics-panel-title-result": "Результат",
+	"extendedstatisticssnapshots": "Снимки",
 	"bs-statistics-button-label-apply": "Применить фильтры",
 	"bs-statistics-label-bar-chart": "Гистограмма",
 	"bs-statistics-label-line-chart": "Линейный график",
@@ -82,7 +84,6 @@
 	"bs-statistics-aggregationmode-label": "Режим агрегации",
 	"bs-statistics-aggregationfield-label": "Поле агрегации",
 	"bs-statistics-targets-label": "Цели",
-	"extendedstatisticssnapshots": "Снимки",
 	"bs-statistics-paging-page-size": "Размер страницы",
 	"bs-statistics-aggregated-report-picker-label": "Тип отчёта",
 	"bs-statistics-aggregated-report-filter-category-multi": "Категории",
@@ -100,5 +101,7 @@
 	"bs-statistics-aggregated-report-filter-user-multi": "Участники",
 	"bs-statistics-aggregated-filter-category-namespace-notice": "Фильтр по категориям или по пространствам имен",
 	"bs-statistics-aggregated-report-error": "Произошла ошибка!",
-	"bs-statistics-aggregated-report-loading": "Идёт загрузка данных…"
+	"bs-statistics-aggregated-report-loading": "Идёт загрузка данных…",
+	"bs-statistics-ve-progressinspector-title": "Прогресс",
+	"bs-statistics-ve-progress-attr-width-label": "Ширина"
 }

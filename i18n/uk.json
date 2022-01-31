@@ -7,7 +7,8 @@
 			"Mykola Swarnyk",
 			"Piramidion",
 			"Vlad5250",
-			"Ата"
+			"Ата",
+			"Shybetsky"
 		]
 	},
 	"bs-statistics-desc": "Модуль статистики для BlueSpice",
@@ -73,10 +74,6 @@
 	"right-statistic-viewspecialpage": "Доступ до розширеної статистики",
 	"bs-statistics-button-label-export": "Експорт",
 	"bs-statistics-panel-title-result": "Результат",
-	"bs-extendedstatistics-collection-fatalstatus-unknownaction": "Невідома дія «$1»",
-	"bs-extendedstatistics-collection-fatalstatus-permissiondeniedusercan": "Користувачу не дозволено виконувати дію «$1» на «$2»",
-	"bs-extendedstatistics-collection-fatalstatus-permissiondenieduserisallowed": "Користувачу не дозволено виконувати дію «$1»",
-	"bs-extendedstatistics-collection-fatalstatus-notitle": "Об'єкт «Назва» обов'язковий",
 	"apihelp-bs-extendedstatistics-collection-store-description": "Надає сховище для даних статистики, до яких можуть бути побудовані запити, застосовані фільтри, агрегація тощо",
 	"apihelp-bs-extendedstatistics-collection-store-summary": "Надає сховище для даних статистики, до яких можуть бути побудовані запити, застосовані фільтри, агрегація тощо",
 	"apihelp-bs-extendedstatistics-collection-store-param-aggregate": "Об'єкт, закодований як рядок JSON, із допоміжними даними для агрегації",
@@ -84,8 +81,6 @@
 	"action-extendedstatistics-viewspecialpage-aggregated": "доступ до спеціальної сторінки [[Special:AggregatedStatistic]]",
 	"right-extendedstatistics-viewspecialpage-aggregated": "Доступ до спеціальної сторінки [[Special:AggregatedStatistic]]",
 	"extendedstatisticssnapshots": "Знімки",
-	"bs-extendedstatistics-collection-var-type": "Тип джерела",
-	"bs-extendedstatistics-collection-var-timestampcreated": "Дата створення",
 	"bs-statistics-button-label-apply": "Застосувати фільтри",
 	"bs-statistics-label-bar-chart": "Стовпчикова діаграма",
 	"bs-statistics-label-line-chart": "Лінійна діаграма",
@@ -117,5 +112,6 @@
 	"bs-statistics-aggregated-filter-category-namespace-notice": "Фільтруйте за категоріями або за просторами назв",
 	"bs-statistics-aggregated-report-error": "Сталася помилка!",
 	"bs-statistics-aggregated-report-loading": "Завантаження даних…",
-	"bs-statistics-pref-excludeusers-help": "Деякі користувачі, напр. з правами адміністратора, може спотворювати статистику сторінки Special:ExtendedStatistics. Їх можна виключити зі статистичних результатів."
+	"bs-statistics-pref-excludeusers-help": "Деякі користувачі, напр. з правами адміністратора, може спотворювати статистику сторінки Special:ExtendedStatistics. Їх можна виключити зі статистичних результатів.",
+	"bs-statistics-ve-progress-attr-width-label": "Ширина"
 }
