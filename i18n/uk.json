@@ -113,5 +113,6 @@
 	"bs-statistics-aggregated-report-error": "Сталася помилка!",
 	"bs-statistics-aggregated-report-loading": "Завантаження даних…",
 	"bs-statistics-pref-excludeusers-help": "Деякі користувачі, напр. з правами адміністратора, може спотворювати статистику сторінки Special:ExtendedStatistics. Їх можна виключити зі статистичних результатів.",
+	"bs-statistics-ve-progressinspector-title": "Прогрес",
 	"bs-statistics-ve-progress-attr-width-label": "Ширина"
 }
