@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"Jemima2019"
 		]
 	},
 	"bs-statistics-ve-progressinspector-title": "nkɔsoɔ",
+	"bs-statistics-ve-progress-attr-progressitem-label": "Nkaekroɔ adeɛ",
 	"bs-statistics-ve-progress-attr-progressitem-help": "nnoɔma a ɛboa nkɔsoɔ"
 }
