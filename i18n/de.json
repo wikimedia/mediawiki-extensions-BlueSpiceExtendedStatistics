@@ -7,6 +7,7 @@
 			"Mglaser",
 			"Mschlindwein",
 			"Stephan Muggli <muggli@hallowelt.biz>",
+			"ThePiscin",
 			"Umherirrender",
 			"Umlaut"
 		]
@@ -116,5 +117,6 @@
 	"bs-statistics-tag-progress-desc": "Generiert eine Fortschrittsanzeige. Der Wert hängt vom Auftreten eines gegebenen Textes im Textkörper und einer vom Benutzer bestimmten Obergrenze ab.",
 	"bs-statistics-ve-progressinspector-title": "Fortschritt",
 	"bs-statistics-ve-progress-attr-basecount-label": "Basiszahl",
-	"bs-statistics-ve-progress-attr-basecount-help": "Hilfe zur Basiszahl"
+	"bs-statistics-ve-progress-attr-basecount-help": "Hilfe zur Basiszahl",
+	"bs-statistics-ve-progress-attr-width-label": "Breite"
 }
