@@ -7,9 +7,11 @@
 	},
 	"bs-statistics-mode": "Modo",
 	"bs-statistics-year": "Yaro",
+	"bs-statistics-month": "Monato",
 	"bs-statistics-day": "Dio",
 	"bs-statistics-label-name": "Nomo",
 	"bs-statistics-label-registration": "Enrejistrado",
 	"bs-statistics-label-page": "Pagino",
+	"bs-statistics-filter-category": "Kategorio",
 	"bs-statistics-button-label-export": "Exportacar"
 }
