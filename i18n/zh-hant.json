@@ -5,6 +5,7 @@
 			"Cwlin0416",
 			"Kly",
 			"Liuxinyu970226",
+			"Madeleinemcc",
 			"Sanmosa",
 			"Xiplus"
 		]
@@ -110,5 +111,6 @@
 	"bs-statistics-aggregated-filter-category-namespace-notice": "依照分類或是命名空間篩選",
 	"bs-statistics-aggregated-report-error": "發生錯誤！",
 	"bs-statistics-aggregated-report-loading": "正在載入資料…",
-	"bs-statistics-pref-excludeusers-help": "對於某些使用者，例如具有管理員權限的人，可以篡改頁面 Special:ExtendedStatistics 的統計內容。他們可以從統計結果裡排除。"
+	"bs-statistics-pref-excludeusers-help": "對於某些使用者，例如具有管理員權限的人，可以篡改頁面 Special:ExtendedStatistics 的統計內容。他們可以從統計結果裡排除。",
+	"bs-statistics-ve-progressinspector-title": "進度"
 }
