@@ -6,7 +6,8 @@
 			"Kly",
 			"Liuxinyu970226",
 			"Sanmosa",
-			"Xiplus"
+			"Xiplus",
+			"Madeleinemcc"
 		]
 	},
 	"bs-statistics-desc": "增加延伸的統訊資訊功能",
@@ -72,10 +73,6 @@
 	"right-statistic-viewspecialpage": "存取擴充統計內容",
 	"bs-statistics-button-label-export": "匯出",
 	"bs-statistics-panel-title-result": "結果",
-	"bs-extendedstatistics-collection-fatalstatus-unknownaction": "不明操作「$1」",
-	"bs-extendedstatistics-collection-fatalstatus-permissiondeniedusercan": "使用者不允許在「$2」上執行操作「$1」",
-	"bs-extendedstatistics-collection-fatalstatus-permissiondenieduserisallowed": "使用者不允許執行操作「$1」",
-	"bs-extendedstatistics-collection-fatalstatus-notitle": "需要「Title」對象",
 	"apihelp-bs-extendedstatistics-collection-store-description": "提供可用於查詢、篩選、與合計的統計儲存",
 	"apihelp-bs-extendedstatistics-collection-store-summary": "提供可用於查詢、篩選、與合計的統計儲存",
 	"apihelp-bs-extendedstatistics-collection-store-param-aggregate": "用於合計，帶有任意資料的 JSON 字串編碼物件",
@@ -83,8 +80,6 @@
 	"action-extendedstatistics-viewspecialpage-aggregated": "存取特殊頁面 [[Special:AggregatedStatistic]]",
 	"right-extendedstatistics-viewspecialpage-aggregated": "存取特殊頁面 [[Special:AggregatedStatistic]]",
 	"extendedstatisticssnapshots": "快照",
-	"bs-extendedstatistics-collection-var-type": "來源類型",
-	"bs-extendedstatistics-collection-var-timestampcreated": "建立日期",
 	"bs-statistics-button-label-apply": "套用篩選",
 	"bs-statistics-label-bar-chart": "條狀圖",
 	"bs-statistics-label-line-chart": "線狀圖",
@@ -116,5 +111,6 @@
 	"bs-statistics-aggregated-filter-category-namespace-notice": "依照分類或是命名空間篩選",
 	"bs-statistics-aggregated-report-error": "發生錯誤！",
 	"bs-statistics-aggregated-report-loading": "正在載入資料…",
-	"bs-statistics-pref-excludeusers-help": "對於某些使用者，例如具有管理員權限的人，可以篡改頁面 Special:ExtendedStatistics 的統計內容。他們可以從統計結果裡排除。"
+	"bs-statistics-pref-excludeusers-help": "對於某些使用者，例如具有管理員權限的人，可以篡改頁面 Special:ExtendedStatistics 的統計內容。他們可以從統計結果裡排除。",
+	"bs-statistics-ve-progressinspector-title": "進度"
 }
