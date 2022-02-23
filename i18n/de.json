@@ -117,6 +117,11 @@
 	"bs-statistics-tag-progress-desc": "Generiert eine Fortschrittsanzeige. Der Wert hängt vom Auftreten eines gegebenen Textes im Textkörper und einer vom Benutzer bestimmten Obergrenze ab.",
 	"bs-statistics-ve-progressinspector-title": "Fortschritt",
 	"bs-statistics-ve-progress-attr-basecount-label": "Basiszahl",
-	"bs-statistics-ve-progress-attr-basecount-help": "Hilfe zur Basiszahl",
-	"bs-statistics-ve-progress-attr-width-label": "Breite"
+	"bs-statistics-ve-progress-attr-basecount-help": "Gibt die Obergrenze an, wie oft das gegebene Fortschrittselement auf der Seite auftreten muss, damit der Fortschrittsbalken vollständig gefüllt ist",
+	"bs-statistics-ve-progress-attr-baseitem-label": "Grundelement",
+	"bs-statistics-ve-progress-attr-baseitem-help": "Alternativ zur Basiszahl, bei der Text zur Berechnung des Fortschritts verwendet werden kann. Die Anzahl der Vorkommen des Basiselements im Text wird ins Verhältnis zur Anzahl der Vorkommen des Fortschrittselements gesetzt und zeigt somit den Fortschritt an",
+	"bs-statistics-ve-progress-attr-progressitem-label": "Fortschrittselement",
+	"bs-statistics-ve-progress-attr-progressitem-help": "Text, der im Textkörper erscheint, definiert den Fortschritt",
+	"bs-statistics-ve-progress-attr-width-label": "Breite",
+	"bs-statistics-ve-progress-attr-width-help": "Breite des Fortschrittsbalken in Pixel"
 }
