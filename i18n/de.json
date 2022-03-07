@@ -9,7 +9,8 @@
 			"Stephan Muggli <muggli@hallowelt.biz>",
 			"Umherirrender",
 			"Umlaut",
-			"ThePiscin"
+			"ThePiscin",
+			"Brettchenweber"
 		]
 	},
 	"bs-statistics-desc": "Statistik-Modul für BlueSpice",
@@ -123,5 +124,5 @@
 	"bs-statistics-ve-progress-attr-progressitem-label": "Fortschrittselement",
 	"bs-statistics-ve-progress-attr-progressitem-help": "Text, der im Textkörper erscheint, definiert den Fortschritt",
 	"bs-statistics-ve-progress-attr-width-label": "Breite",
-	"bs-statistics-ve-progress-attr-width-help": "Breite des Fortschrittsbalken in Pixel"
+	"bs-statistics-ve-progress-attr-width-help": "Breite des Fortschrittsbalkens in Pixel"
 }
