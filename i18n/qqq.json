@@ -112,5 +112,15 @@
 	"bs-statistics-aggregated-filter-category-namespace-notice": "Help/notice message for a filter",
 	"bs-statistics-aggregated-report-error": "Generic error message",
 	"bs-statistics-aggregated-report-loading": "Loading notice",
-	"bs-statistics-pref-excludeusers-help": "Description for config variable \"StatisticsExcludeUsers\""
+	"bs-statistics-pref-excludeusers-help": "Description for config variable \"StatisticsExcludeUsers\"",
+	"bs-statistics-tag-progress-desc": "Description of the progress tag shown in the VisualEditor tag inspector",
+	"bs-statistics-ve-progressinspector-title": "Title for the progress tag VisualEditor inspector\n{{identical|Progress}}",
+	"bs-statistics-ve-progress-attr-basecount-label": "Label for the parameter \"basecount\"",
+	"bs-statistics-ve-progress-attr-basecount-help": "Help message for the parameter \"basecount\"",
+	"bs-statistics-ve-progress-attr-baseitem-label": "Label for the parameter \"baseitem\"",
+	"bs-statistics-ve-progress-attr-baseitem-help": "Help message for the parameter \"baseitem\"",
+	"bs-statistics-ve-progress-attr-progressitem-label": "Label for the parameter \"progressitem\"",
+	"bs-statistics-ve-progress-attr-progressitem-help": "Help message for the parameter \"progressitem\"",
+	"bs-statistics-ve-progress-attr-width-label": "Label for the parameter \"width\"\n{{identical|Width}}",
+	"bs-statistics-ve-progress-attr-width-help": "Help message for the parameter \"width\""
 }

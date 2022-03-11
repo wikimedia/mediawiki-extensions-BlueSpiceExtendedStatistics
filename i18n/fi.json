@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Joquliina",
+			"MITO",
 			"Nike",
 			"Pyscowicz",
 			"Silvonen"
@@ -44,5 +45,7 @@
 	"bs-extendedstatistics-collection-fatalstatus-permissiondenieduserisallowed": "Käyttäjä ei saa suorittaa toimintoa \"$1\"",
 	"bs-statistics-button-label-apply": "Käytä suodattimia",
 	"bs-statistics-targets-label": "Kohteet",
-	"bs-statistics-aggregated-report-filter-namespaces": "Nimiavaruudet"
+	"bs-statistics-aggregated-report-filter-namespaces": "Nimiavaruudet",
+	"bs-statistics-ve-progressinspector-title": "Edistyminen",
+	"bs-statistics-ve-progress-attr-width-label": "Leveys"
 }

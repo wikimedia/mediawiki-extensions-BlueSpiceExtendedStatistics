@@ -81,5 +81,7 @@
 	"bs-statistics-aggregated-report-loading": "Donnéeë gi gelueden...",
 	"bs-statistics-aggregated-report-filter-date-end": "Schlussdatum",
 	"bs-statistics-aggregated-report-filter-namespaces": "Nummraim",
-	"bs-statistics-aggregated-report-error": "Et ass e Feeler geschitt!"
+	"bs-statistics-aggregated-report-error": "Et ass e Feeler geschitt!",
+	"bs-statistics-ve-progressinspector-title": "Fortschrëtt",
+	"bs-statistics-ve-progress-attr-width-label": "Breet"
 }

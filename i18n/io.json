@@ -14,5 +14,10 @@
 	"bs-statistics-aggregated-report-filter-user": "Uzero",
 	"bs-statistics-aggregated-report-filter-user-multi": "Uzeri",
 	"bs-statistics-aggregated-report-filter-namespace": "Nomaro (''namespace'')",
-	"bs-statistics-aggregated-report-filter-namespaces": "Nomari (''namespaces'')"
+	"bs-statistics-aggregated-report-filter-namespaces": "Nomari (''namespaces'')",
+	"bs-statistics-month": "Monato",
+	"bs-statistics-label-registration": "Enrejistrado",
+	"bs-statistics-filter-category": "Kategorio",
+	"bs-statistics-aggregated-report-filter-category-multi": "Kategorii",
+	"bs-statistics-aggregated-report-filter-interval-month": "Monato"
 }

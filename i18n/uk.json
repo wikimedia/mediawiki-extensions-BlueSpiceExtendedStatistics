@@ -3,9 +3,12 @@
 		"authors": [
 			"Andriykopanytsia",
 			"DDPAT",
+			"Ice bulldog",
 			"Movses",
 			"Mykola Swarnyk",
 			"Piramidion",
+			"Samflint",
+			"Shybetsky",
 			"Vlad5250",
 			"Ата"
 		]
@@ -117,5 +120,12 @@
 	"bs-statistics-aggregated-filter-category-namespace-notice": "Фільтруйте за категоріями або за просторами назв",
 	"bs-statistics-aggregated-report-error": "Сталася помилка!",
 	"bs-statistics-aggregated-report-loading": "Завантаження даних…",
-	"bs-statistics-pref-excludeusers-help": "Деякі користувачі, напр. з правами адміністратора, може спотворювати статистику сторінки Special:ExtendedStatistics. Їх можна виключити зі статистичних результатів."
+	"bs-statistics-pref-excludeusers-help": "Деякі користувачі, напр. з правами адміністратора, може спотворювати статистику сторінки Special:ExtendedStatistics. Їх можна виключити зі статистичних результатів.",
+	"bs-statistics-tag-progress-desc": "Генерує індикатор виконання. Значення залежить від зовнішнього вигляду даного тексту, знайденого в головній частині, і верхньої межі, визначеної користувачем.",
+	"bs-statistics-ve-progressinspector-title": "Прогрес",
+	"bs-statistics-ve-progress-attr-basecount-help": "Вказує верхню межу, як часто даний елемент прогресу має зустрічатися на сторінці, щоб індикатор прогресу був повністю заповнений",
+	"bs-statistics-ve-progress-attr-baseitem-label": "Базовий елемент",
+	"bs-statistics-ve-progress-attr-progressitem-help": "Текст, котрий з'являється у головній частині, визначає прогрес",
+	"bs-statistics-ve-progress-attr-width-label": "Ширина",
+	"bs-statistics-ve-progress-attr-width-help": "Ширина індикатора прогресу в пікселях"
 }

@@ -2,11 +2,20 @@
 	"@metadata": {
 		"authors": [
 			"Muotâ",
+			"Seipinne",
 			"Yupik"
 		]
 	},
 	"bs-statistics-filter-category": "Luokka",
 	"bs-statistics-diag-number-of-pages-mw": "Rahtum siskáldâssiijđoi meeri",
 	"bs-statistics-portlet-numberofarticles": "Siskáldâssiijđoi meeri",
-	"bs-statistics-portlet-numberofpages": "Siijđoi meeri"
+	"bs-statistics-portlet-numberofpages": "Siijđoi meeri",
+	"bs-statistics-month": "Mánuppaje",
+	"bs-statistics-filters": "Silleeh",
+	"bs-statistics-label-name": "Nommâ",
+	"bs-statistics-label-page": "Sijđo",
+	"bs-statistics-diag-number-of-edits": "Hammiimij meeri",
+	"bs-statistics-label-time": "Äigi",
+	"bs-statistics-portlet-numberofedits": "Hammiimij meeri",
+	"bs-statistics-aggregated-report-filter-interval-month": "Mánuppaje"
 }

@@ -2,11 +2,14 @@
 	"@metadata": {
 		"authors": [
 			"DDPAT",
+			"Ice bulldog",
+			"Kareyac",
 			"Katunchik",
 			"Mailman",
 			"Mouse21",
 			"Movses",
 			"Okras",
+			"Tanzun",
 			"Vlad5250",
 			"Аль-Гимравий",
 			"Умар"
@@ -102,5 +105,8 @@
 	"bs-statistics-aggregated-filter-category-namespace-notice": "Фильтр по категориям или по пространствам имен",
 	"bs-statistics-aggregated-report-error": "Произошла ошибка!",
 	"bs-statistics-aggregated-report-loading": "Идёт загрузка данных…",
-	"bs-statistics-aggregated-report-picker-label": "Тип отчёта"
+	"bs-statistics-aggregated-report-picker-label": "Тип отчёта",
+	"bs-statistics-ve-progressinspector-title": "Прогресс",
+	"bs-statistics-ve-progress-attr-progressitem-help": "Текст, который появляется в теле, определяет прогресс",
+	"bs-statistics-ve-progress-attr-width-label": "Ширина"
 }

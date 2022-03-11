@@ -1,11 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"Erelon",
 			"Guycn2",
 			"Steeve815",
 			"YaronSh",
-			"ישראל קלר"
+			"ישראל קלר",
+			"שוקו מוקה"
 		]
 	},
 	"bs-statistics-desc": "מודול סטטיסטיקה של BlueSpice",
@@ -78,5 +80,20 @@
 	"bs-statistics-label-line-chart": "תרשים קו",
 	"bs-statistics-datasource-label": "מקור נתונים",
 	"bs-statistics-targets-label": "יעדים",
-	"bs-statistics-paging-page-size": "גודל דף"
+	"bs-statistics-paging-page-size": "גודל דף",
+	"bs-statistics-aggregated-report-filter-category-multi": "קטגוריות",
+	"bs-statistics-aggregated-report-filter-date-start": "תאריך התחלה",
+	"bs-statistics-aggregated-report-filter-date-end": "תאריך סיום",
+	"bs-statistics-aggregated-report-filter-interval-day": "יום",
+	"bs-statistics-aggregated-report-filter-interval-week": "שבוע",
+	"bs-statistics-aggregated-report-filter-interval-month": "חודש",
+	"bs-statistics-aggregated-report-filter-interval-year": "שנה",
+	"bs-statistics-aggregated-report-filter-namespace": "מרחב שם",
+	"bs-statistics-aggregated-report-filter-namespaces": "מרחבי שם",
+	"bs-statistics-aggregated-report-filter-page": "דף",
+	"bs-statistics-aggregated-report-filter-user": "משתמש",
+	"bs-statistics-aggregated-report-filter-user-multi": "משתמשים",
+	"bs-statistics-aggregated-report-loading": "טעינת נתונים...",
+	"bs-statistics-ve-progressinspector-title": "התקדמות",
+	"bs-statistics-ve-progress-attr-width-label": "רוחב"
 }

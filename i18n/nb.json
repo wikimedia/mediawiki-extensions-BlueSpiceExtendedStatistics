@@ -3,7 +3,8 @@
 		"authors": [
 			"Abuluntu",
 			"Danmichaelo",
-			"Jon Harald Søby"
+			"Jon Harald Søby",
+			"Vukky"
 		]
 	},
 	"bs-statistics-desc": "Statistikkmodul for BlueSpice",
@@ -106,5 +107,8 @@
 	"bs-statistics-aggregated-report-filter-category-multi": "Kategorier",
 	"bs-statistics-aggregated-report-filter-date-start": "Startdato",
 	"bs-statistics-aggregated-report-filter-date-end": "Sluttdato",
-	"bs-statistics-aggregated-report-filter-interval": "Intervall"
+	"bs-statistics-aggregated-report-filter-interval": "Intervall",
+	"bs-statistics-aggregated-report-picker-label": "Rapporttype",
+	"bs-statistics-ve-progressinspector-title": "Framgang",
+	"bs-statistics-ve-progress-attr-width-label": "Bredde"
 }

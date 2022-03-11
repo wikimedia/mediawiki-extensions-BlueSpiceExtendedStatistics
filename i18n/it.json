@@ -82,5 +82,7 @@
 	"bs-statistics-aggregated-report-filter-namespaces": "Namespace",
 	"bs-statistics-aggregated-report-filter-page": "Pagina",
 	"bs-statistics-aggregated-report-filter-user": "Utente",
-	"bs-statistics-aggregated-report-filter-user-multi": "Utenti"
+	"bs-statistics-aggregated-report-filter-user-multi": "Utenti",
+	"bs-statistics-ve-progressinspector-title": "Avanzamento",
+	"bs-statistics-ve-progress-attr-width-label": "Larghezza"
 }

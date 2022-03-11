@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Khun Kt",
-			"Ninjastrikers"
+			"Ninjastrikers",
+			"咽頭べさ"
 		]
 	},
 	"bs-statistics-aggregated-report-filter-category-multi": "အစွိုးအမျိုꩻဖုံႏ",
@@ -16,5 +17,7 @@
 	"bs-statistics-aggregated-report-filter-page": "လိတ်မဲ့ငါ",
 	"bs-statistics-aggregated-report-filter-user": "ကေားသုင်ꩻသား",
 	"bs-statistics-aggregated-report-filter-user-multi": "သွုံꩻသားဖုံႏ",
-	"bs-statistics-aggregated-report-error": "ထီႏမော့ꩻခါꩻပျသာႏနာႏ!"
+	"bs-statistics-aggregated-report-error": "ထီႏမော့ꩻခါꩻပျသာႏနာႏ!",
+	"bs-statistics-diag-number-of-edits": "မွဉ်းဖျင်မုꩻဆေ့ꩻအာ",
+	"bs-statistics-portlet-numberofedits": "မွဉ်းဖျင်မုꩻဆေ့ꩻအာ"
 }

@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"BaRaN6161 TURK",
+			"Can",
 			"Grkn gll",
 			"Melissadilara",
 			"MuratTheTurkish",
@@ -106,5 +107,12 @@
 	"bs-statistics-aggregated-report-filter-user": "Kullanıcı",
 	"bs-statistics-aggregated-report-filter-user-multi": "Kullanıcılar",
 	"bs-statistics-aggregated-report-error": "Bir hata oluştu!",
-	"bs-statistics-aggregated-report-loading": "Veri yükleniyor..."
+	"bs-statistics-aggregated-report-loading": "Veri yükleniyor...",
+	"apihelp-query+statistics-reports-param-type": "İstatistik türü (rapor anahtarı)",
+	"bs-statistics-ve-progressinspector-title": "Süreç",
+	"bs-statistics-ve-progress-attr-baseitem-label": "Temel öge",
+	"bs-statistics-ve-progress-attr-progressitem-label": "Süreç ögesi",
+	"bs-statistics-ve-progress-attr-progressitem-help": "Süreç ögesi yardımı",
+	"bs-statistics-ve-progress-attr-width-label": "Genişlik",
+	"bs-statistics-ve-progress-attr-width-help": "Genişlik yardımı"
 }
