@@ -3,7 +3,8 @@
 		"authors": [
 			"Eduardo Addad de Oliveira",
 			"Eduardoaddad",
-			"Felipe L. Ewald"
+			"Felipe L. Ewald",
+			"Juan90264"
 		]
 	},
 	"bs-statistics-desc": "Módulo de estatísticas para BlueSpice",
@@ -111,5 +112,17 @@
 	"bs-statistics-aggregated-report-filter-user-multi": "Usuários",
 	"bs-statistics-aggregated-filter-category-namespace-notice": "Filtrar por categorias ou por espaços nominais",
 	"bs-statistics-aggregated-report-error": "Ocorreu um erro!",
-	"bs-statistics-aggregated-report-loading": "Carregando dados..."
+	"bs-statistics-aggregated-report-loading": "Carregando dados...",
+	"apihelp-query+statistics-reports-example": "Forneça todos os relatórios para o tipo \"mytype\", para as datas 2021-09-14 e 2021-09-15",
+	"bs-statistics-pref-excludeusers-help": "Alguns usuários, por ex. com direitos de administrador, pode distorcer as estatísticas na página Special:ExtendedStatistics. Eles podem ser excluídos dos resultados estatísticos.",
+	"bs-statistics-tag-progress-desc": "Alguns usuários, por ex. com direitos de administrador, pode distorcer as estatísticas na página Special:ExtendedStatistics. Eles podem ser excluídos dos resultados estatísticos.",
+	"bs-statistics-ve-progressinspector-title": "Progresso",
+	"bs-statistics-ve-progress-attr-basecount-label": "Contagem básica",
+	"bs-statistics-ve-progress-attr-basecount-help": "Specifies upper limit how often the given progress element must occur on the page for the progress bar to be filled completely\nPORTUGUÊS\nEspecifica o limite superior com que frequência o elemento de progresso fornecido deve ocorrer na página para que a barra de progresso seja preenchida completamente",
+	"bs-statistics-ve-progress-attr-baseitem-label": "Base item",
+	"bs-statistics-ve-progress-attr-baseitem-help": "Alternativa ao número base onde o texto pode ser usado para calcular o progresso. O número de ocorrências do item base no texto é definido em relação ao número de ocorrências do item de andamento e, portanto, indica o andamento",
+	"bs-statistics-ve-progress-attr-progressitem-label": "Progresso de item",
+	"bs-statistics-ve-progress-attr-progressitem-help": "Texto cujas aparências no corpo definem o progresso",
+	"bs-statistics-ve-progress-attr-width-label": "Largura",
+	"bs-statistics-ve-progress-attr-width-help": "Largura da barra de progresso em pixels"
 }
