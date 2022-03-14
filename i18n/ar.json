@@ -4,7 +4,8 @@
 			"Meno25",
 			"Sonic N800",
 			"ديفيد",
-			"محمد أحمد عبد الفتاح"
+			"محمد أحمد عبد الفتاح",
+			"FiberAhmed"
 		]
 	},
 	"bs-statistics-desc": "وحدة إحصائيات لـBlueSpice",
@@ -88,5 +89,11 @@
 	"bs-statistics-paging-page-size": "حجم الصفحة",
 	"bs-statistics-aggregated-report-filter-category-multi": "التصنيفات",
 	"bs-statistics-aggregated-report-filter-date-start": "تاريخ البدء",
-	"bs-statistics-aggregated-report-filter-namespace": "نطاق"
+	"bs-statistics-aggregated-report-filter-interval-day": "يوم",
+	"bs-statistics-aggregated-report-filter-interval-week": "أسبوع",
+	"bs-statistics-aggregated-report-filter-interval-month": "شهر",
+	"bs-statistics-aggregated-report-filter-interval-year": "سنة",
+	"bs-statistics-aggregated-report-filter-namespace": "نطاق",
+	"bs-statistics-aggregated-report-filter-page": "صفحة",
+	"bs-statistics-aggregated-report-filter-user": "مستخدم"
 }
