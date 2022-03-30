@@ -1,9 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Alp Er Tunqa"
+			"Alp Er Tunqa",
+			"Bir morty",
+			"Ziraksima"
 		]
 	},
 	"bs-statistics-filters": "فیلترلر",
-	"bs-statistics-diag-number-of-users": "ایشلدنلر سایی"
+	"bs-statistics-diag-number-of-users": "ایشلدنلر سایی",
+	"bs-statistics-paging-page-size": "صفحه اؤلچوسو"
 }
