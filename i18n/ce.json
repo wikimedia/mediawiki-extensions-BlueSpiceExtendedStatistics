@@ -33,5 +33,7 @@
 	"bs-statistics-portlet-numberofedits": "Нисдарийн дукхалла",
 	"bs-statistics-portlet-numberofpages": "АгӀонийн дукхалла",
 	"bs-statistics-portletconfig-periodday": "Селхана",
-	"bs-statistics-datasource-label": "Хаамийн хьост"
+	"bs-statistics-datasource-label": "Хаамийн хьост",
+	"bs-statistics-aggregated-report-filter-date-start": "Йолайелла хан",
+	"bs-statistics-aggregated-report-filter-date-end": "Чекхйолу хан"
 }
