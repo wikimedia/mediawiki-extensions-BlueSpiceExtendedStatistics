@@ -5,7 +5,9 @@
 			"Fitoschido",
 			"Javiersanp",
 			"Macofe",
-			"MarcoAurelio"
+			"MarcoAurelio",
+			"DiegoAmbrocio",
+			"Fewasser Traduce"
 		]
 	},
 	"bs-statistics-desc": "Módulo de estadísticas para BlueSpice",
@@ -71,6 +73,9 @@
 	"bs-extendedstatistics-collection-fatalstatus-permissiondeniedusercan": "La cuenta no tiene permitido efectuar la acción «$1» en «$2»",
 	"bs-extendedstatistics-collection-fatalstatus-permissiondenieduserisallowed": "La cuenta no tiene permitido efectuar la acción «$1»",
 	"bs-extendedstatistics-collection-fatalstatus-notitle": "Se necesita el objeto «Título»",
+	"aggregatedstatistic": "Estadísticas de las instantáneas",
+	"action-extendedstatistics-viewspecialpage-aggregated": "acceder a la página especial [[Special:AggregatedStatistic]]",
+	"right-extendedstatistics-viewspecialpage-aggregated": "Acceder a la página especial [[Special:AggregatedStatistic]]",
 	"extendedstatisticssnapshots": "Instantáneas",
 	"bs-extendedstatistics-collection-var-type": "Tipo de fuente",
 	"bs-extendedstatistics-collection-var-timestampcreated": "Fecha de creación",
