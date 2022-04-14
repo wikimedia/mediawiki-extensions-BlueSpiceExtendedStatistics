@@ -3,7 +3,13 @@
 	<rule ref="./vendor/mediawiki/mediawiki-codesniffer/MediaWiki">
 		<exclude name="MediaWiki.Files.ClassMatchesFilename.NotMatch" />
 		<exclude name="MediaWiki.NamingConventions.LowerCamelFunctionsName.FunctionName" />
+		<exclude name="MediaWiki.Usage.StaticClosure.StaticClosure" />
+		<exclude name="PSR2.ControlStructures.SwitchDeclaration.SpaceBeforeColonCASE" />
 		<exclude name="MediaWiki.Commenting.FunctionComment.MissingDocumentationPrivate" />
+		<exclude name="MediaWiki.Commenting.FunctionComment.ObjectTypeHintReturn" />
+		<exclude name="MediaWiki.Commenting.PropertyDocumentation.MissingDocumentationPrivate" />
+		<exclude name="MediaWiki.Commenting.PropertyDocumentation.ObjectTypeHintVar" />
+		<exclude name="MediaWiki.Commenting.PropertyDocumentation.TypeTypeHintVar" />
 	</rule>
 	<file>.</file>
 	<arg name="extensions" value="php"/>
