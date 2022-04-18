@@ -8,7 +8,8 @@
 			"Huji",
 			"Jeeputer",
 			"Reza1615",
-			"Beginneruser"
+			"Beginneruser",
+			"LordProfo"
 		]
 	},
 	"bs-statistics-desc": "پودمان آمار برای «چاشنی آبی»",
@@ -92,5 +93,10 @@
 	"bs-statistics-aggregated-report-filter-user": "کاربر",
 	"bs-statistics-aggregated-report-filter-user-multi": "کاربران",
 	"bs-statistics-aggregated-report-error": "خطایی رخ داد!",
-	"bs-statistics-aggregated-report-loading": "بارگیری داده..."
+	"bs-statistics-aggregated-report-loading": "بارگیری داده...",
+	"bs-statistics-ve-progressinspector-title": "پیشرفت",
+	"bs-statistics-ve-progress-attr-basecount-label": "شمارش پایه",
+	"bs-statistics-ve-progress-attr-baseitem-label": "آیتم پایه",
+	"bs-statistics-ve-progress-attr-progressitem-label": "آیتم پیشرفت",
+	"bs-statistics-ve-progress-attr-width-label": "عرض"
 }
