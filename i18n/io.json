@@ -19,5 +19,7 @@
 	"bs-statistics-aggregated-report-filter-namespace": "Nomaro (''namespace'')",
 	"bs-statistics-aggregated-report-filter-namespaces": "Nomari (''namespaces'')",
 	"bs-statistics-aggregated-report-filter-user": "Uzero",
-	"bs-statistics-aggregated-report-filter-user-multi": "Uzeri"
+	"bs-statistics-aggregated-report-filter-user-multi": "Uzeri",
+	"bs-statistics-diag-number-of-edits": "Quanto di redakturi",
+	"bs-statistics-portlet-numberofedits": "Quanto di redakturi"
 }

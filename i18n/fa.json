@@ -3,10 +3,12 @@
 		"authors": [
 			"Alirezaaa",
 			"Amirsara",
+			"Beginneruser",
 			"Dalba",
 			"FarsiNevis",
 			"Huji",
 			"Jeeputer",
+			"LordProfo",
 			"Reza1615"
 		]
 	},
@@ -25,7 +27,7 @@
 	"bs-statistics-day": "روز",
 	"bs-statistics-list": "فهرست",
 	"bs-statistics-not-allowed": "شما دسترسی لازم را ندارید.",
-	"bs-statistics-finish": "ساخت نمودار",
+	"bs-statistics-finish": "ایجاد نمودار",
 	"bs-statistics-filters": "پالایه‌ها",
 	"bs-statistics-diag-number-of-users": "شمار کاربرانِ ایجاد شده",
 	"bs-statistics-label-name": "نام",
@@ -96,5 +98,10 @@
 	"bs-statistics-aggregated-report-filter-user": "کاربر",
 	"bs-statistics-aggregated-report-filter-user-multi": "کاربران",
 	"bs-statistics-aggregated-report-error": "خطایی رخ داد!",
-	"bs-statistics-aggregated-report-loading": "بارگیری داده..."
+	"bs-statistics-aggregated-report-loading": "بارگیری داده...",
+	"bs-statistics-ve-progressinspector-title": "پیشرفت",
+	"bs-statistics-ve-progress-attr-basecount-label": "شمارش پایه",
+	"bs-statistics-ve-progress-attr-baseitem-label": "آیتم پایه",
+	"bs-statistics-ve-progress-attr-progressitem-label": "آیتم پیشرفت",
+	"bs-statistics-ve-progress-attr-width-label": "عرض"
 }

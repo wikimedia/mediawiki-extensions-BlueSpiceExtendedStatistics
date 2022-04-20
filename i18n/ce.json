@@ -25,7 +25,7 @@
 	"bs-statistics-label-page": "АгӀо",
 	"bs-statistics-label-creator": "Автор",
 	"bs-statistics-diag-number-of-edits": "Нисдарийн дукхалла",
-	"bs-statistics-label-searchterm": "Лахаран хьал",
+	"bs-statistics-label-searchterm": "Лахаран термин",
 	"bs-statistics-label-maxhits": "Максимум хилам",
 	"bs-statistics-label-time": "Хан",
 	"bs-statistics-filter-category": "Категори",
@@ -33,5 +33,7 @@
 	"bs-statistics-portlet-numberofedits": "Нисдарийн дукхалла",
 	"bs-statistics-portlet-numberofpages": "АгӀонийн дукхалла",
 	"bs-statistics-portletconfig-periodday": "Селхана",
-	"bs-statistics-datasource-label": "Хаамийн хьост"
+	"bs-statistics-datasource-label": "Хаамийн хьост",
+	"bs-statistics-aggregated-report-filter-date-start": "Йолайелла хан",
+	"bs-statistics-aggregated-report-filter-date-end": "Чекхйолу хан"
 }
