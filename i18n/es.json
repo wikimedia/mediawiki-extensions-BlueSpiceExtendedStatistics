@@ -88,6 +88,7 @@
 	"bs-statistics-paging-page-size": "Tamaño de la página",
 	"apihelp-query+statistics-reports-example": "Proporcionar todos los informes para el tipo \"mytype\", para las fechas 2021-09-14 y 2021-09-15",
 	"apihelp-query+statistics-reports-param-type": "Tipo de estadísticas (clave del reporte)",
+	"apihelp-query+statistics-reports-param-filter": "Datos del filtro codificados en JSON",
 	"bs-statistics-aggregated-report-picker-label": "Tipo de informe",
 	"bs-statistics-aggregated-report-no-date": "No hay datos para el conjunto de filtros actual, por favor, cambie los valores de los filtros",
 	"bs-statistics-aggregated-report-filter-category-multi": "Categorías",
