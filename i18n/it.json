@@ -4,7 +4,9 @@
 			"Beta16",
 			"Saracrovetto",
 			"Selven",
-			"Stefano"
+			"Stefano",
+			"Ajeje Brazorf",
+			"GpieroMW"
 		]
 	},
 	"bs-statistics-desc": "Modulo statistiche per BlueSpice",
@@ -69,6 +71,9 @@
 	"bs-statistics-panel-title-result": "Risultato",
 	"bs-extendedstatistics-collection-fatalstatus-unknownaction": "Azione sconosciuta \"$1\"",
 	"bs-extendedstatistics-collection-var-timestampcreated": "Data di creazione",
+	"bs-statistics-button-label-apply": "Applica i filtri",
+	"bs-statistics-label-bar-chart": "Grafico a barre",
+	"bs-statistics-label-line-chart": "Grafico a linee",
 	"bs-statistics-datasource-label": "Sorgente dati",
 	"bs-statistics-paging-page-size": "Dimensioni pagina"
 }
