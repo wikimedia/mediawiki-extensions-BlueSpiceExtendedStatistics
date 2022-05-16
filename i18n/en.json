@@ -69,7 +69,7 @@
 	"bs-statistics-panel-title-result": "Result",
 	"apihelp-bs-extendedstatistics-collection-store-description": "Provides a store for statistics that can be queried, filtered and aggregated",
 	"apihelp-bs-extendedstatistics-collection-store-summary": "Provides a store for statistics that can be queried, filtered and aggregated",
-	"apihelp-bs-extendedstatistics-collection-store-param-aggregate": "JSON string encoded object with arbitrary data for for the aggregation",
+	"apihelp-bs-extendedstatistics-collection-store-param-aggregate": "JSON string encoded object with arbitrary data for the aggregation",
 	"aggregatedstatistic": "Snapshot statistics",
 	"action-extendedstatistics-viewspecialpage-aggregated": "access the special page [[Special:AggregatedStatistic]]",
 	"right-extendedstatistics-viewspecialpage-aggregated": "Access the special page [[Special:AggregatedStatistic]]",
