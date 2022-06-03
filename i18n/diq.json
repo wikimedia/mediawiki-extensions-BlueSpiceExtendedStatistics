@@ -38,5 +38,6 @@
 	"bs-statistics-aggregated-report-filter-namespaces": "Heruna nameyan",
 	"bs-statistics-aggregated-report-filter-page": "Pele",
 	"bs-statistics-aggregated-report-filter-user": "Karber",
-	"bs-statistics-aggregated-report-filter-user-multi": "Karberi"
+	"bs-statistics-aggregated-report-filter-user-multi": "Karberi",
+	"bs-statistics-mode": "Mod"
 }

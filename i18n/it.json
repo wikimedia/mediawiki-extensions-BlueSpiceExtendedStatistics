@@ -3,6 +3,7 @@
 		"authors": [
 			"Ajeje Brazorf",
 			"Beta16",
+			"GpieroMW",
 			"Saracrovetto",
 			"Selven",
 			"Stefano"
@@ -82,5 +83,11 @@
 	"bs-statistics-aggregated-report-filter-user": "Utente",
 	"bs-statistics-aggregated-report-filter-user-multi": "Utenti",
 	"bs-statistics-ve-progressinspector-title": "Avanzamento",
-	"bs-statistics-ve-progress-attr-width-label": "Larghezza"
+	"bs-statistics-ve-progress-attr-width-label": "Larghezza",
+	"bs-statistics-button-label-apply": "Applica i filtri",
+	"bs-statistics-label-bar-chart": "Grafico a barre",
+	"bs-statistics-label-line-chart": "Grafico a linee",
+	"bs-statistics-aggregated-report-filter-date-start": "Data inizio",
+	"bs-statistics-aggregated-report-filter-date-end": "Data fine",
+	"bs-statistics-aggregated-report-loading": "Caricamento dati ..."
 }
