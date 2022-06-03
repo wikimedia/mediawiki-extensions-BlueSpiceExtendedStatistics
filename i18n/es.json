@@ -2,12 +2,12 @@
 	"@metadata": {
 		"authors": [
 			"Dgstranz",
+			"DiegoAmbrocio",
 			"Fewasser Traduce",
 			"Fitoschido",
 			"Javiersanp",
 			"Macofe",
-			"MarcoAurelio",
-			"DiegoAmbrocio"
+			"MarcoAurelio"
 		]
 	},
 	"bs-statistics-desc": "Módulo de estadísticas para BlueSpice",

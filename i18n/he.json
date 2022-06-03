@@ -1,12 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"Erelon",
 			"Guycn2",
 			"Steeve815",
 			"YaronSh",
 			"ישראל קלר",
-			"Amire80",
 			"שוקו מוקה"
 		]
 	},
@@ -120,5 +120,6 @@
 	"bs-statistics-ve-progress-attr-progressitem-label": "פריט התקדמות",
 	"bs-statistics-ve-progress-attr-progressitem-help": "הטקסט שמופיע בגוף מגדיר את ההתקדמות",
 	"bs-statistics-ve-progress-attr-width-label": "רוחב",
-	"bs-statistics-ve-progress-attr-width-help": "רוחב סרגל ההתקדמות בפיקסלים"
+	"bs-statistics-ve-progress-attr-width-help": "רוחב סרגל ההתקדמות בפיקסלים",
+	"apihelp-bs-extendedstatistics-collection-store-param-aggregate": "מחרוזת מקודדת ב־JSON עם נתונים שרירותיים עבור האגירה"
 }

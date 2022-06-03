@@ -1,16 +1,16 @@
 {
 	"@metadata": {
 		"authors": [
+			"Brettchenweber",
 			"Ferdinand0101",
 			"Hwboehm",
 			"Metalhead64",
 			"Mglaser",
 			"Mschlindwein",
 			"Stephan Muggli <muggli@hallowelt.biz>",
-			"Umherirrender",
-			"Umlaut",
 			"ThePiscin",
-			"Brettchenweber"
+			"Umherirrender",
+			"Umlaut"
 		]
 	},
 	"bs-statistics-desc": "Statistik-Modul für BlueSpice",
