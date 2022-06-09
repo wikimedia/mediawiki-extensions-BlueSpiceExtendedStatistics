@@ -17,7 +17,8 @@
 			"列维劳德",
 			"沈澄心",
 			"落花有意12138",
-			"铁桶"
+			"铁桶",
+			"孟天皓"
 		]
 	},
 	"bs-statistics-desc": "用于BlueSpice的统计模块",
@@ -113,5 +114,8 @@
 	"bs-statistics-aggregated-report-error": "发生错误了！",
 	"bs-statistics-aggregated-report-loading": "数据加载中……",
 	"bs-statistics-ve-progressinspector-title": "进度",
+	"bs-statistics-ve-progress-attr-baseitem-label": "基本条目",
+	"bs-statistics-ve-progress-attr-progressitem-label": "进度项目",
+	"bs-statistics-ve-progress-attr-progressitem-help": "正文中出现的文本定义进度",
 	"bs-statistics-ve-progress-attr-width-label": "宽度"
 }
