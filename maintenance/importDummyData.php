@@ -281,5 +281,5 @@ class ImportDummyData extends Maintenance {
 	}
 }
 
-$maintClass = "ImportDummyData";
+$maintClass = ImportDummyData::class;
 require_once RUN_MAINTENANCE_IF_MAIN;

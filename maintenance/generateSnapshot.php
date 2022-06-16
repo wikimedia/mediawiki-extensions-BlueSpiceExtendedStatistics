@@ -167,5 +167,5 @@ class GenerateSnapshot extends Maintenance {
 	}
 }
 
-$maintClass = "GenerateSnapshot";
+$maintClass = GenerateSnapshot::class;
 require_once RUN_MAINTENANCE_IF_MAIN;
