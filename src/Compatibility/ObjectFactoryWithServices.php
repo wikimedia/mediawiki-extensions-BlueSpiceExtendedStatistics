@@ -3,7 +3,7 @@
 namespace BlueSpice\ExtendedStatistics\Compatibility;
 
 use MediaWiki\MediaWikiServices;
-use Wikimedia\ObjectFactory;
+use Wikimedia\ObjectFactory\ObjectFactory;
 
 class ObjectFactoryWithServices extends ObjectFactory {
 	/** @var MediaWikiServices */
