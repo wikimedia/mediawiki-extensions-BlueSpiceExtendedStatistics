@@ -4,7 +4,7 @@ namespace BlueSpice\ExtendedStatistics;
 
 use MWException;
 use ReflectionException;
-use Wikimedia\ObjectFactory;
+use Wikimedia\ObjectFactory\ObjectFactory;
 
 class AttributeRegistryFactory {
 	/** @var array */
