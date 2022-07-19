@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Dekeract",
 			"Dgstranz",
 			"DiegoAmbrocio",
 			"Fewasser Traduce",
@@ -117,5 +118,6 @@
 	"bs-statistics-ve-progress-attr-progressitem-label": "Elemento de progreso",
 	"bs-statistics-ve-progress-attr-progressitem-help": "El texto que aparece en el cuerpo define el progreso",
 	"bs-statistics-ve-progress-attr-width-label": "Anchura",
-	"bs-statistics-ve-progress-attr-width-help": "Ancho de la barra de progreso en píxeles"
+	"bs-statistics-ve-progress-attr-width-help": "Ancho de la barra de progreso en píxeles",
+	"apihelp-query+statistics-reports-summary": "Proporciona informes estadísticos para varios tipos de estadísticas"
 }
