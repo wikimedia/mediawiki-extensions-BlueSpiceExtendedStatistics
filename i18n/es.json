@@ -7,7 +7,8 @@
 			"Javiersanp",
 			"Macofe",
 			"MarcoAurelio",
-			"DiegoAmbrocio"
+			"DiegoAmbrocio",
+			"Dekeract"
 		]
 	},
 	"bs-statistics-desc": "Módulo de estadísticas para BlueSpice",
@@ -86,6 +87,7 @@
 	"bs-statistics-aggregationtype-label": "Tipo de totalización",
 	"bs-statistics-targets-label": "Destinos",
 	"bs-statistics-paging-page-size": "Tamaño de la página",
+	"apihelp-query+statistics-reports-summary": "Proporciona informes estadísticos para varios tipos de estadísticas",
 	"apihelp-query+statistics-reports-example": "Proporcionar todos los informes para el tipo \"mytype\", para las fechas 2021-09-14 y 2021-09-15",
 	"apihelp-query+statistics-reports-param-type": "Tipo de estadísticas (clave del reporte)",
 	"apihelp-query+statistics-reports-param-filter": "Datos del filtro codificados en JSON",
