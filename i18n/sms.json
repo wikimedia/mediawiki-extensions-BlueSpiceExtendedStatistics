@@ -16,5 +16,6 @@
 	"bs-statistics-aggregated-report-filter-category-multi": "Kategoria",
 	"bs-statistics-aggregated-report-filter-page": "Seidd",
 	"bs-statistics-aggregated-report-filter-user": "Õõʹnni",
-	"bs-statistics-aggregated-report-filter-user-multi": "Õõʹnni"
+	"bs-statistics-aggregated-report-filter-user-multi": "Õõʹnni",
+	"bs-statistics-paging-page-size": "Seeid šorradvuõtt"
 }
