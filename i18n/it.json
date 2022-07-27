@@ -72,11 +72,19 @@
 	"right-statistic-viewspecialpage": "Accede alle statistiche estese",
 	"bs-statistics-button-label-export": "Esporta",
 	"bs-statistics-panel-title-result": "Risultato",
+	"action-extendedstatistics-viewspecialpage-aggregated": "accedere alla pagina speciale [[Special:AggregatedStatistic]]",
+	"right-extendedstatistics-viewspecialpage-aggregated": "Accede alla pagina speciale [[Special:AggregatedStatistic]]",
+	"extendedstatisticssnapshots": "Istantanee",
 	"bs-statistics-button-label-apply": "Applica i filtri",
 	"bs-statistics-label-bar-chart": "Grafico a barre",
 	"bs-statistics-label-line-chart": "Grafico a linee",
 	"bs-statistics-datasource-label": "Sorgente dati",
+	"bs-statistics-aggregationmode-label": "Modalità di aggregazione",
+	"bs-statistics-aggregationfield-label": "Campo di aggregazione",
+	"bs-statistics-aggregationtype-label": "Tipo di aggregazione",
+	"bs-statistics-targets-label": "Obiettivi",
 	"bs-statistics-paging-page-size": "Dimensioni pagina",
+	"apihelp-query+statistics-reports-param-type": "Tipo di statistiche (chiave del rapporto)",
 	"bs-statistics-aggregated-report-filter-category-multi": "Categorie",
 	"bs-statistics-aggregated-report-filter-date-start": "Data inizio",
 	"bs-statistics-aggregated-report-filter-date-end": "Data fine",
@@ -93,5 +101,6 @@
 	"bs-statistics-aggregated-report-error": "Si è verificato un errore!",
 	"bs-statistics-aggregated-report-loading": "Caricamento dati ...",
 	"bs-statistics-ve-progressinspector-title": "Avanzamento",
-	"bs-statistics-ve-progress-attr-width-label": "Larghezza"
+	"bs-statistics-ve-progress-attr-width-label": "Larghezza",
+	"bs-statistics-ve-progress-attr-width-help": "Larghezza della barra di avanzamento in pixel"
 }
