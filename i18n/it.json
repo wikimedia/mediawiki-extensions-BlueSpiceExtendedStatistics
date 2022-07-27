@@ -93,5 +93,14 @@
 	"apihelp-bs-statistics-tasks-summary": "Fornisce attività comuni per le statistiche",
 	"apihelp-bs-statistics-available-diagrams-store-summary": "Fornisce un archivio con i diagrammi disponibili",
 	"apihelp-bs-statistics-search-options-store-summary": "Fornisce un archivio delle opzioni di ricerca disponibili",
-	"bs-statistics-aggregated-report-error": "Si è verificato un errore!"
+	"bs-statistics-aggregated-report-error": "Si è verificato un errore!",
+	"action-extendedstatistics-viewspecialpage-aggregated": "accedere alla pagina speciale [[Special:AggregatedStatistic]]",
+	"right-extendedstatistics-viewspecialpage-aggregated": "Accede alla pagina speciale [[Special:AggregatedStatistic]]",
+	"extendedstatisticssnapshots": "Istantanee",
+	"bs-statistics-aggregationmode-label": "Modalità di aggregazione",
+	"bs-statistics-aggregationfield-label": "Campo di aggregazione",
+	"bs-statistics-aggregationtype-label": "Tipo di aggregazione",
+	"bs-statistics-targets-label": "Obiettivi",
+	"apihelp-query+statistics-reports-param-type": "Tipo di statistiche (chiave del rapporto)",
+	"bs-statistics-ve-progress-attr-width-help": "Larghezza della barra di avanzamento in pixel"
 }
