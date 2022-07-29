@@ -19,5 +19,10 @@
 	"bs-statistics-aggregated-report-filter-user-multi": "Õõʹnni",
 	"bs-statistics-paging-page-size": "Seeid šorradvuõtt",
 	"bs-statistics-label-searchterm": "Ooccâmsääʹnn",
-	"bs-statistics-portletconfig-periodday": "Jåhtta"
+	"bs-statistics-portletconfig-periodday": "Jåhtta",
+	"bs-statistics-year": "Eeʹǩǩ",
+	"bs-statistics-aggregated-report-filter-date-start": "Äʹlǧǧempeiʹvv",
+	"bs-statistics-aggregated-report-filter-interval-week": "Neäʹttel",
+	"bs-statistics-aggregated-report-filter-interval-year": "Eeʹǩǩ",
+	"bs-statistics-ve-progress-attr-width-label": "Kobddâdvuõtt"
 }
