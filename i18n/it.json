@@ -102,5 +102,12 @@
 	"bs-statistics-aggregationtype-label": "Tipo di aggregazione",
 	"bs-statistics-targets-label": "Obiettivi",
 	"apihelp-query+statistics-reports-param-type": "Tipo di statistiche (chiave del rapporto)",
-	"bs-statistics-ve-progress-attr-width-help": "Larghezza della barra di avanzamento in pixel"
+	"bs-statistics-ve-progress-attr-width-help": "Larghezza della barra di avanzamento in pixel",
+	"apihelp-bs-extendedstatistics-collection-store-description": "Fornisce un archivio per le statistiche che possono essere interrogate, filtrate e raggruppate",
+	"apihelp-bs-extendedstatistics-collection-store-summary": "Fornisce un archivio per le statistiche che possono essere interrogate, filtrate e raggruppate",
+	"apihelp-bs-extendedstatistics-collection-store-param-aggregate": "Un oggetto stringa JSON codificata con dati arbitrari per il raggruppamento",
+	"aggregatedstatistic": "Statistiche istantanee",
+	"apihelp-query+statistics-reports-summary": "Fornisce report statistici per vari tipi di statistiche",
+	"bs-statistics-aggregated-filter-category-namespace-notice": "Filtro per categorie o per namespace",
+	"bs-statistics-tag-progress-desc": "Genera una barra di avanzamento. Il valore dipende dall'aspetto di un testo dato nel corpo e da un limite superiore definito dall'utente."
 }
