@@ -9,11 +9,10 @@ use RequestContext;
 class ProgressHandler extends Handler {
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function handle() {
-		$this->parser->getOutput()->setProperty( 'bs-tag-statistics-progress', 1 );
+		$this->parser->getOutput()->setPageProperty( 'bs-tag-statistics-progress', 1 );
 		$iBaseCount = $this->processedArgs[Progress::ATTR_BASE_COUNT];
 		$sBaseItem  = $this->processedArgs[Progress::ATTR_BASE_ITEM];
 		$sFraction  = $this->processedArgs[Progress::ATTR_PROGRESS_ITEM];
