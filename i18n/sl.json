@@ -15,5 +15,7 @@
 	"bs-statistics-diag-search-queries": "Poizvedbe",
 	"bs-statistics-filter-category": "Kategorija",
 	"bs-statistics-button-label-export": "Izvozi",
-	"bs-statistics-panel-title-result": "Rezultat"
+	"bs-statistics-panel-title-result": "Rezultat",
+	"bs-statistics-aggregated-report-filter-namespace": "Imenski prostor",
+	"bs-statistics-aggregated-report-filter-namespaces": "Imenski prostori"
 }
