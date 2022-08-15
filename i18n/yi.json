@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Pacha Tchernof",
 			"פוילישער"
 		]
 	},
@@ -18,5 +19,7 @@
 	"bs-statistics-label-time": "צײַט",
 	"bs-statistics-filter-category": "קאַטעגאָריע",
 	"bs-statistics-portlet-numberofusers": "צאל באניצער",
-	"bs-statistics-portlet-numberofedits": "צאל רעדאקטירונגען"
+	"bs-statistics-portlet-numberofedits": "צאל רעדאקטירונגען",
+	"bs-statistics-aggregated-report-filter-category-multi": "קאַטעגאָריעס",
+	"bs-statistics-aggregated-report-filter-page": "בלאַט"
 }
