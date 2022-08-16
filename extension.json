@@ -86,6 +86,13 @@
 			"TagDefinitions": [
 				"ext.bluespice.extendedstatistics.visualEditorTagDefinition"
 			]
+		},
+		"ContentDroplets": {
+			"Droplets": {
+				"progress": {
+					"class": "BlueSpice\\ExtendedStatistics\\ContentDroplets\\ProgressDroplet"
+				}
+			}
 		}
 	},
 	"ServiceWiringFiles": [
