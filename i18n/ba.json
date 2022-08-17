@@ -3,7 +3,8 @@
 		"authors": [
 			"Sagan",
 			"Азат Хәлилов",
-			"Рустам Нурыев"
+			"Рустам Нурыев",
+			"Kareyac"
 		]
 	},
 	"bs-statistics-desc": "BlueSpice өсөн статистика модуле",
@@ -56,5 +57,6 @@
 	"bs-statistics-portlet-numberofusersdesc": "Ҡатнашыусылар һаны статистикаһы",
 	"bs-statistics-portlet-numberofeditsdesc": "Төҙәтеүҙәр һаны статистикаһы",
 	"bs-statistics-portlet-numberofpagesdesc": "Биттәр һаны статистикаһы",
-	"bs-statistics-portletconfig-periodday": "Кисәге"
+	"bs-statistics-portletconfig-periodday": "Кисәге",
+	"bs-statistics-aggregated-report-filter-page": "Бит"
 }
