@@ -330,6 +330,9 @@
 				"bs-statistics-ve-progress-attr-progressitem-help",
 				"bs-statistics-ve-progress-attr-width-label",
 				"bs-statistics-ve-progress-attr-width-help"
+			],
+			"dependencies": [
+				"ext.bluespice.visualEditorConnector.tags.classes"
 			]
 		}
 	},
