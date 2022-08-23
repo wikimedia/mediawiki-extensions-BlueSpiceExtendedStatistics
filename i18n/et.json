@@ -5,5 +5,7 @@
 		]
 	},
 	"bs-statistics-label-page": "Lehekülg",
-	"bs-statistics-aggregated-report-filter-page": "Lehekülg"
+	"bs-statistics-aggregated-report-filter-page": "Lehekülg",
+	"bs-statistics-filter-category": "Kategooria",
+	"bs-statistics-aggregated-report-filter-category-multi": "Kategooriad"
 }
