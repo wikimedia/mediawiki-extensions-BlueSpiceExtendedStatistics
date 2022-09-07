@@ -106,5 +106,6 @@
 	"bs-statistics-aggregated-report-filter-user-multi": "Gebruikers",
 	"bs-statistics-aggregated-report-error": "Er is een fout opgetreden!",
 	"bs-statistics-aggregated-report-loading": "Gegevens laden...",
+	"bs-statistics-ve-progressinspector-title": "Voortgang",
 	"bs-statistics-ve-progress-attr-width-label": "Breedte"
 }
