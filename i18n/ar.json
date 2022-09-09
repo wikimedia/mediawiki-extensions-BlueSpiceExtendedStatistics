@@ -3,6 +3,7 @@
 		"authors": [
 			"FiberAhmed",
 			"Meno25",
+			"NEHAOUA",
 			"Sonic N800",
 			"أَحمد",
 			"ديفيد",
@@ -96,5 +97,6 @@
 	"bs-statistics-aggregated-report-filter-interval-year": "سنة",
 	"bs-statistics-aggregated-report-filter-namespace": "نطاق",
 	"bs-statistics-aggregated-report-filter-page": "صفحة",
-	"bs-statistics-aggregated-report-filter-user": "مستخدم"
+	"bs-statistics-aggregated-report-filter-user": "مستخدم",
+	"bs-statistics-ve-progressinspector-title": "التقدم"
 }
