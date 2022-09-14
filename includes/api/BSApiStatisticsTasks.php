@@ -283,6 +283,6 @@ class BSApiStatisticsTasks extends BSApiTasksBase {
 	 * @return DiagramFactory
 	 */
 	protected function getFactory() {
-		return $this->getServices()->getService( 'BSExtendedStatisticsDiagramFactory' );
+		return $this->services->getService( 'BSExtendedStatisticsDiagramFactory' );
 	}
 }
