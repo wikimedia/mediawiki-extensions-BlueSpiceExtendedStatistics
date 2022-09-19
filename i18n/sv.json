@@ -101,5 +101,6 @@
 	"bs-statistics-aggregated-report-filter-page": "Sida",
 	"bs-statistics-aggregated-report-filter-user": "Användare",
 	"bs-statistics-aggregated-report-filter-user-multi": "Användare",
-	"bs-statistics-ve-progress-attr-width-label": "Bredd"
+	"bs-statistics-ve-progress-attr-width-label": "Bredd",
+	"bs-statistics-aggregated-report-loading": "Laddar data..."
 }
