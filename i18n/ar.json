@@ -91,6 +91,7 @@
 	"bs-statistics-paging-page-size": "حجم الصفحة",
 	"bs-statistics-aggregated-report-filter-category-multi": "التصنيفات",
 	"bs-statistics-aggregated-report-filter-date-start": "تاريخ البدء",
+	"bs-statistics-aggregated-report-filter-date-end": "تاريخ الانتهاء",
 	"bs-statistics-aggregated-report-filter-interval-day": "يوم",
 	"bs-statistics-aggregated-report-filter-interval-week": "أسبوع",
 	"bs-statistics-aggregated-report-filter-interval-month": "شهر",
