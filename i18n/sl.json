@@ -21,5 +21,6 @@
 	"bs-statistics-aggregated-report-filter-interval-month": "Mesec",
 	"bs-statistics-aggregated-report-filter-interval-year": "Leto",
 	"bs-statistics-aggregated-report-filter-user": "Uporabnik",
-	"bs-statistics-aggregated-report-filter-user-multi": "Uporabniki"
+	"bs-statistics-aggregated-report-filter-user-multi": "Uporabniki",
+	"bs-statistics-aggregated-report-filter-interval-day": "Dan"
 }
