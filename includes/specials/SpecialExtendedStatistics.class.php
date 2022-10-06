@@ -136,6 +136,10 @@ class SpecialExtendedStatistics extends ExtJSBase {
 		$escapedDataProtocolPrefix = preg_quote( $dataProtocolPrefix );
 		$urlEncodedSvg = preg_replace( "#^$escapedDataProtocolPrefix#", '', $sData );
 		$svg = urldecode( $urlEncodedSvg );
+		// Replace double quotes around font names with single quotes
+		// Unfortunately, don't know how to reliably do this without specifying actual font names
+		// Avoids: style="font: 400 14px "Arial", "Helvetica", "sans-serif"" which is invalid
+		$svg = preg_replace( '#"(Arial|Helvetica|sans-serif)"#', "'$1'", $svg );
 
 		return $svg;
 	}
