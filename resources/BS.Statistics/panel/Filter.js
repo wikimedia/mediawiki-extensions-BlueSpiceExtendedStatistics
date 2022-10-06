@@ -46,10 +46,12 @@ Ext.define( 'BS.Statistics.panel.Filter', {
 		this.cbInputDiagrams.getStore().on( 'load', function( store, records ) {
 			$.each( records, function( k, diagram ) {
 				if( diagram.data.isDefault === true ) {
-					this.select( diagram );
+					this.cbInputDiagrams.select( diagram );
+					// For some reason the select event is not fired
+					this.cbInputDiagramsSelect( '', diagram );
 				}
-			}.bind( this ) )
-		}.bind( this.cbInputDiagrams ) );
+			}.bind( this ) );
+		}.bind( this ) );
 
 		var lastMonth = new Date();
 		with(lastMonth) { setMonth( getMonth() -1 ) }
