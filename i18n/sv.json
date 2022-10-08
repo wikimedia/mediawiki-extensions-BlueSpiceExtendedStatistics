@@ -1,11 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
+			"JohanahoJ",
 			"Lokal Profil",
 			"Mjälten",
 			"Sturban",
-			"WikiPhoenix",
-			"JohanahoJ"
+			"WikiPhoenix"
 		]
 	},
 	"bs-statistics-desc": "Statistikmodul för BlueSpice",
