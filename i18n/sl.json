@@ -23,5 +23,7 @@
 	"bs-statistics-aggregated-report-filter-user": "Uporabnik",
 	"bs-statistics-aggregated-report-filter-user-multi": "Uporabniki",
 	"bs-statistics-aggregated-report-filter-interval-day": "Dan",
-	"bs-statistics-aggregated-report-filter-category-multi": "Kategorije"
+	"bs-statistics-aggregated-report-filter-category-multi": "Kategorije",
+	"bs-statistics-diagram": "Poizvedba",
+	"bs-statistics-portletconfig-periodday": "Včeraj"
 }
