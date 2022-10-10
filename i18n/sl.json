@@ -23,5 +23,7 @@
 	"bs-statistics-aggregated-report-filter-namespace": "Imenski prostor",
 	"bs-statistics-aggregated-report-filter-namespaces": "Imenski prostori",
 	"bs-statistics-aggregated-report-filter-user": "Uporabnik",
-	"bs-statistics-aggregated-report-filter-user-multi": "Uporabniki"
+	"bs-statistics-aggregated-report-filter-user-multi": "Uporabniki",
+	"bs-statistics-diagram": "Poizvedba",
+	"bs-statistics-portletconfig-periodday": "Včeraj"
 }
