@@ -5,6 +5,7 @@
 			"Yerpo"
 		]
 	},
+	"bs-statistics-diagram": "Poizvedba",
 	"bs-statistics-year": "Leto",
 	"bs-statistics-month": "Mesec",
 	"bs-statistics-day": "Dan",
@@ -14,6 +15,7 @@
 	"bs-statistics-label-page": "Stran",
 	"bs-statistics-diag-search-queries": "Poizvedbe",
 	"bs-statistics-filter-category": "Kategorija",
+	"bs-statistics-portletconfig-periodday": "Včeraj",
 	"bs-statistics-button-label-export": "Izvozi",
 	"bs-statistics-panel-title-result": "Zadetek",
 	"bs-statistics-aggregated-report-filter-category-multi": "Kategorije",
