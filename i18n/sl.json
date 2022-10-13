@@ -25,5 +25,6 @@
 	"bs-statistics-aggregated-report-filter-user": "Uporabnik",
 	"bs-statistics-aggregated-report-filter-user-multi": "Uporabniki",
 	"bs-statistics-diagram": "Poizvedba",
-	"bs-statistics-portletconfig-periodday": "Včeraj"
+	"bs-statistics-portletconfig-periodday": "Včeraj",
+	"bs-statistics-label-time": "Čas"
 }
