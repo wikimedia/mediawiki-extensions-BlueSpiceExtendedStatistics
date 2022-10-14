@@ -92,6 +92,7 @@
 			if ( data.length === 0 ) {
 				this.setLoading( false );
 				this.$chartCnt.html( this.getNoDataMessage() );
+				this.emit( 'dataset', [] );
 				return;
 			}
 			this.chart.setAxisLabels( this.getAxisLabels());
@@ -99,6 +100,7 @@
 
 			this.setLoading( false );
 			this.$chartCnt.html( this.chart.$element._groups[0] );
+			this.emit( 'dataset', data );
 		}.bind( this ) )
 		.fail( function( err ) {
 			this.setLoading( false );
@@ -118,7 +120,7 @@
 			esrtype: this.getName(),
 			esraggregate: this.isAggregate() ? 1 : 0,
 		} ).done( function( response ) {
-			 dfd.resolve( response.query['statistics-reports'][this.getName()] );
+			dfd.resolve( response.query['statistics-reports'][this.getName()] );
 		}.bind( this ) ).fail( function( response ) {
 			if ( response.hasOwnProperty( 'error' ) ) {
 				dfd.reject( response.error.info );

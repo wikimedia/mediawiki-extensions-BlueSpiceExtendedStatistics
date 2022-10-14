@@ -80,7 +80,8 @@
 				"BsDiagramNumberOfEdits": "\\BsDiagramNumberOfEdits::factory",
 				"BsDiagramEditsPerUser": "\\BsDiagramEditsPerUser::factory",
 				"BsDiagramSearches": "\\BsDiagramSearches::factory"
-			}
+			},
+			"PluginModules": []
 		},
 		"BlueSpiceVisualEditorConnector": {
 			"TagDefinitions": [
@@ -264,6 +265,18 @@
 			"scripts": [ "libs/d3.min.js" ]
 		},
 		"ext.bluespice.aggregatedstatistics": {
+			"packageFiles": [
+				"bluespice.aggregatedstatistics.js",
+				{
+					"name": "pluginModules.json",
+					"callback": "\\BlueSpice\\ExtendedStatistics\\AggregatedStatisticPluginModules::getPluginModules"
+				}
+			],
+			"dependencies": [
+				"ext.bluespice.aggregatedstatistics.tools"
+			]
+		},
+		"ext.bluespice.aggregatedstatistics.tools": {
 			"scripts": [
 				"report/Charts/Barchart.js",
 				"report/Charts/GroupBarchart.js",
@@ -280,8 +293,7 @@
 				"report/Filter/NamespaceMultiFilter.js",
 				"report/Filter/NamespaceCategoryFilter.js",
 				"report/Report/ReportRegistry.js",
-				"report/Report/ReportBase.js",
-				"bluespice.aggregatedstatistics.js"
+				"report/Report/ReportBase.js"
 			],
 			"styles": [
 				"bluespice.aggregatedstatistics.less"
