@@ -123,5 +123,6 @@
 	"bs-statistics-ve-progress-attr-baseitem-label": "Базовий елемент",
 	"bs-statistics-ve-progress-attr-progressitem-help": "Текст, котрий з'являється у головній частині, визначає прогрес",
 	"bs-statistics-ve-progress-attr-width-label": "Ширина",
-	"bs-statistics-ve-progress-attr-width-help": "Ширина індикатора прогресу в пікселях"
+	"bs-statistics-ve-progress-attr-width-help": "Ширина індикатора прогресу в пікселях",
+	"bs-statistics-ve-progress-attr-progressitem-label": "Елемент прогресу"
 }
