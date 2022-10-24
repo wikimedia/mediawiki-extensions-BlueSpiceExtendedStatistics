@@ -49,5 +49,7 @@
 	"bs-statistics-aggregated-report-filter-namespaces": "Navnerum",
 	"bs-statistics-aggregated-report-filter-page": "Side",
 	"bs-statistics-aggregated-report-filter-user": "Bruger",
-	"bs-statistics-aggregated-report-filter-user-multi": "Brugere"
+	"bs-statistics-aggregated-report-filter-user-multi": "Brugere",
+	"bs-statistics-ve-progressinspector-title": "Fremskridt",
+	"bs-statistics-ve-progress-attr-width-label": "Bredde"
 }
