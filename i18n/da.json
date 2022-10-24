@@ -49,5 +49,7 @@
 	"bs-statistics-aggregated-report-filter-user-multi": "Brugere",
 	"bs-statistics-aggregated-report-filter-category-multi": "Kategorier",
 	"bs-statistics-aggregated-report-filter-date-start": "Startdato",
-	"bs-statistics-aggregated-report-filter-date-end": "Slutdato"
+	"bs-statistics-aggregated-report-filter-date-end": "Slutdato",
+	"bs-statistics-ve-progressinspector-title": "Fremskridt",
+	"bs-statistics-ve-progress-attr-width-label": "Bredde"
 }
