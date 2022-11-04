@@ -97,7 +97,9 @@
 		.append("g")
 		.append("path")
 		.attr("fill", "none")
-		.attr("stroke", function(d) { return colorLine( d );})
+		.attr("stroke", function(d) {
+			color = colorLine( d );
+			return color; })
 		.attr("stroke-width", 1.5)
 		.attr("d", function(d) {
 		return d3.line()
@@ -143,13 +145,13 @@
 			.attr("class", "serie-label")
 			.attr( "transform" , function(d) {
 				return "translate( " + ( xScale(d[1][d[1].length -1 ].name) ) + ","
-				+ ( yScale(d[1][d[1].length -1 ].value) + 5) + ")";
+				+ ( yScale(d[1][d[1].length -1 ].value) + 10) + ")";
 			})
 			.attr( "x", 3)
 			.attr( "dy" , ".35em" )
 			.text( function(d) { return d[1][d[1].length -1 ].line })
 			.attr( "text-anchor", "middle" )
-			.style( "fill", function(d) { return colorLabel( d );})
+			.style( "fill", function(d) { return color; } )
 			.style( "font-size", "9px" );
 
 		var $tooltip = $('<div>')
