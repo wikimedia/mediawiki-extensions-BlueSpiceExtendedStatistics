@@ -8,7 +8,8 @@
 			"Fitoschido",
 			"Javiersanp",
 			"Macofe",
-			"MarcoAurelio"
+			"MarcoAurelio",
+			"SpikeShroom"
 		]
 	},
 	"bs-statistics-desc": "Módulo de estadísticas para BlueSpice",
@@ -119,5 +120,6 @@
 	"bs-statistics-ve-progress-attr-progressitem-label": "Elemento de progreso",
 	"bs-statistics-ve-progress-attr-progressitem-help": "El texto que aparece en el cuerpo define el progreso",
 	"bs-statistics-ve-progress-attr-width-label": "Anchura",
-	"bs-statistics-ve-progress-attr-width-help": "Ancho de la barra de progreso en píxeles"
+	"bs-statistics-ve-progress-attr-width-help": "Ancho de la barra de progreso en píxeles",
+	"apihelp-bs-statistics-search-options-store-summary": "Proporciona una tienda con opciones de búsqueda disponibles"
 }
