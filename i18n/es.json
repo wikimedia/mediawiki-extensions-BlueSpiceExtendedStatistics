@@ -8,7 +8,8 @@
 			"Fitoschido",
 			"Javiersanp",
 			"Macofe",
-			"MarcoAurelio"
+			"MarcoAurelio",
+			"SpikeShroom"
 		]
 	},
 	"bs-statistics-desc": "Módulo de estadísticas para BlueSpice",
@@ -69,6 +70,7 @@
 	"apihelp-bs-statistics-available-diagrams-store-description": "Proporciona un almacén de diagramas disponibles",
 	"apihelp-bs-statistics-available-diagrams-store-summary": "Proporciona un almacén con los diagramas disponibles",
 	"apihelp-bs-statistics-search-options-store-description": "Proporciona una tienda con las opciones de búsqueda disponibles",
+	"apihelp-bs-statistics-search-options-store-summary": "Proporciona una tienda con opciones de búsqueda disponibles",
 	"action-statistic-viewspecialpage": "acceder a estadísticas avanzadas",
 	"right-statistic-viewspecialpage": "Acceso a estadística avanzada",
 	"bs-statistics-button-label-export": "Exportar",
