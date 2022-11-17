@@ -90,6 +90,7 @@ Ext.define( 'BS.Statistics.panel.Chart', {
 		this.muExport = this.makeExportMenu();
 		this.btnExport = new Ext.Button( {
 			text: mw.message( 'bs-statistics-button-label-export' ).plain(),
+			ariaLabel: mw.message( 'bs-statistics-button-label-export' ).plain(),
 			menu: this.muExport,
 			id: 'bs-statistics-mainpanel-exportmenu'
 		} );
