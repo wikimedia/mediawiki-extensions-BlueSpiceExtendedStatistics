@@ -109,5 +109,6 @@
 	"aggregatedstatistic": "Statistiche istantanee",
 	"apihelp-query+statistics-reports-summary": "Fornisce report statistici per vari tipi di statistiche",
 	"bs-statistics-aggregated-filter-category-namespace-notice": "Filtro per categorie o per namespace",
-	"bs-statistics-tag-progress-desc": "Genera una barra di avanzamento. Il valore dipende dall'aspetto di un testo dato nel corpo e da un limite superiore definito dall'utente."
+	"bs-statistics-tag-progress-desc": "Genera una barra di avanzamento. Il valore dipende dall'aspetto di un testo dato nel corpo e da un limite superiore definito dall'utente.",
+	"bs-statistics-aggregated-report-picker-label": "Tipo di rapporto"
 }
