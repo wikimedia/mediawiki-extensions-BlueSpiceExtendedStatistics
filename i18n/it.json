@@ -90,6 +90,7 @@
 	"bs-statistics-paging-page-size": "Dimensioni pagina",
 	"apihelp-query+statistics-reports-summary": "Fornisce report statistici per vari tipi di statistiche",
 	"apihelp-query+statistics-reports-param-type": "Tipo di statistiche (chiave del rapporto)",
+	"bs-statistics-aggregated-report-picker-label": "Tipo di rapporto",
 	"bs-statistics-aggregated-report-filter-category-multi": "Categorie",
 	"bs-statistics-aggregated-report-filter-date-start": "Data inizio",
 	"bs-statistics-aggregated-report-filter-date-end": "Data fine",
