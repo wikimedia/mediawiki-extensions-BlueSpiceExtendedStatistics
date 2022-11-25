@@ -7,5 +7,8 @@
 	"bs-statistics-diagram": "Jearran",
 	"bs-statistics-filter-category": "Kategoriija",
 	"bs-statistics-portlet-numberofpages": "Siidduid mearri",
-	"bs-statistics-filters": "Sillit"
+	"bs-statistics-filters": "Sillit",
+	"bs-statistics-aggregated-report-filter-namespace": "Nammagomuvuohta",
+	"bs-statistics-aggregated-report-filter-namespaces": "Nammagomuvuođat",
+	"bs-statistics-aggregated-report-filter-user-multi": "Geavaheaddjit"
 }
