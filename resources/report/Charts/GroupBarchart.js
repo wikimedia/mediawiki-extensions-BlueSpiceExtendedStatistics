@@ -13,6 +13,8 @@
 
 	bs.aggregatedStatistics.charts.Groupchart.prototype.setAxisLabels = function ( labels  ) {
 		this.labels = Object.values( labels );
+		this.axisLabel = this.labels[0];
+		this.labels.shift();
 	};
 
 	bs.aggregatedStatistics.charts.Groupchart.prototype.updateData = function ( data ) {
@@ -75,6 +77,14 @@
 			.call(d3.axisLeft( yScale )
 			.tickSize( -this.width  , 0, 0)
 			.tickFormat(''));
+
+		this.chart.append("text")
+			.attr("transform", "rotate(-90)")
+			.attr("x", 0 - (this.height / 2) )
+			.attr("y",  10 )
+			.attr("text-anchor", "middle")
+			.style( "font-size", "9px" )
+			.text( this.axisLabel );
 
 		this.chart.append( "g" )
 				.selectAll( "g" )
