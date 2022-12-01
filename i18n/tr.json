@@ -7,7 +7,8 @@
 			"Melissadilara",
 			"MuratTheTurkish",
 			"Sayginer",
-			"Stonecy"
+			"Stonecy",
+			"ToprakM"
 		]
 	},
 	"bs-statistics-desc": "BlueSpice için istatistik modülü",
@@ -98,6 +99,8 @@
 	"bs-statistics-aggregated-report-filter-interval-week": "Hafta",
 	"bs-statistics-aggregated-report-filter-interval-month": "Ay",
 	"bs-statistics-aggregated-report-filter-interval-year": "Yıl",
+	"bs-statistics-aggregated-report-filter-namespace": "Ad alanı",
+	"bs-statistics-aggregated-report-filter-namespaces": "Ad alanları",
 	"bs-statistics-aggregated-report-filter-page": "Sayfa",
 	"bs-statistics-aggregated-report-filter-user": "Kullanıcı",
 	"bs-statistics-aggregated-report-filter-user-multi": "Kullanıcılar",
