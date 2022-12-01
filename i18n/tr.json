@@ -7,7 +7,8 @@
 			"Melissadilara",
 			"MuratTheTurkish",
 			"Sayginer",
-			"Stonecy"
+			"Stonecy",
+			"ToprakM"
 		]
 	},
 	"bs-statistics-desc": "BlueSpice için istatistik modülü",
@@ -108,5 +109,7 @@
 	"bs-statistics-ve-progress-attr-progressitem-label": "Süreç ögesi",
 	"bs-statistics-ve-progress-attr-progressitem-help": "Süreç ögesi yardımı",
 	"bs-statistics-ve-progress-attr-width-label": "Genişlik",
-	"bs-statistics-ve-progress-attr-width-help": "Genişlik yardımı"
+	"bs-statistics-ve-progress-attr-width-help": "Genişlik yardımı",
+	"bs-statistics-aggregated-report-filter-namespace": "Ad alanı",
+	"bs-statistics-aggregated-report-filter-namespaces": "Ad alanları"
 }
