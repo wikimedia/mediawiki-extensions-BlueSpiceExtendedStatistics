@@ -19,7 +19,8 @@
 			"孟天皓",
 			"沈澄心",
 			"落花有意12138",
-			"铁桶"
+			"铁桶",
+			"飞小RAN"
 		]
 	},
 	"bs-statistics-desc": "用于BlueSpice的统计模块",
@@ -120,5 +121,11 @@
 	"bs-statistics-ve-progress-attr-progressitem-label": "进度项目",
 	"bs-statistics-ve-progress-attr-progressitem-help": "正文中出现的文本定义进度",
 	"apihelp-bs-extendedstatistics-collection-store-param-aggregate": "JSON字符串编码的对象，带用于任务的任意数据",
-	"apihelp-query+statistics-reports-summary": "提供各种统计类型的统计报告"
+	"apihelp-query+statistics-reports-summary": "提供各种统计类型的统计报告",
+	"apihelp-bs-extendedstatistics-collection-store-description": "提供可用于查询、筛选、与合计的统计储存",
+	"apihelp-bs-extendedstatistics-collection-store-summary": "提供可用于查询、筛选、与合计的统计储存",
+	"action-extendedstatistics-viewspecialpage-aggregated": "访问特殊页面 [[Special:AggregatedStatistic]]",
+	"apihelp-query+statistics-reports-example": "提供所有「mytype」类型的报告，日期为2021-09-14与2021-09-15",
+	"bs-statistics-aggregated-filter-category-namespace-notice": "按分类或名称空间筛选",
+	"bs-statistics-ve-progress-attr-width-help": "进度条的宽度（像素）"
 }
