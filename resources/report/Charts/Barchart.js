@@ -86,6 +86,14 @@
 				.tickSize( -this.width  , 0, 0)
 				.tickFormat(''));
 
+			this.chart.append("text")
+				.attr("transform", "rotate(-90)")
+				.attr("x", 0 - (this.height / 2) )
+				.attr("y",  10 )
+				.attr("text-anchor", "middle")
+				.style( "font-size", "9px" )
+				.text( this.labels[0] );
+
 			var $tooltip = $('<div>')
 			.attr('class', 'abc')
 			.css("visibility", 'hidden')
