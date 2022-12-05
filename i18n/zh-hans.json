@@ -19,7 +19,8 @@
 			"孟天皓",
 			"沈澄心",
 			"落花有意12138",
-			"铁桶"
+			"铁桶",
+			"飞小RAN"
 		]
 	},
 	"bs-statistics-desc": "用于BlueSpice的统计模块",
@@ -85,8 +86,11 @@
 	"right-statistic-viewspecialpage": "访问扩充统计",
 	"bs-statistics-button-label-export": "导出",
 	"bs-statistics-panel-title-result": "结果",
+	"apihelp-bs-extendedstatistics-collection-store-description": "提供可用于查询、筛选、与合计的统计储存",
+	"apihelp-bs-extendedstatistics-collection-store-summary": "提供可用于查询、筛选、与合计的统计储存",
 	"apihelp-bs-extendedstatistics-collection-store-param-aggregate": "JSON字符串编码的对象，带用于任务的任意数据",
 	"aggregatedstatistic": "快照统计",
+	"action-extendedstatistics-viewspecialpage-aggregated": "访问特殊页面 [[Special:AggregatedStatistic]]",
 	"right-extendedstatistics-viewspecialpage-aggregated": "进入特殊页面[[Special:AggregatedStatistic]]",
 	"extendedstatisticssnapshots": "快照",
 	"bs-statistics-button-label-apply": "应用过滤器",
@@ -99,6 +103,7 @@
 	"bs-statistics-targets-label": "目标",
 	"bs-statistics-paging-page-size": "页面大小",
 	"apihelp-query+statistics-reports-summary": "提供各种统计类型的统计报告",
+	"apihelp-query+statistics-reports-example": "提供所有「mytype」类型的报告，日期为2021-09-14与2021-09-15",
 	"apihelp-query+statistics-reports-param-filter": "JSON编码的过滤数据",
 	"bs-statistics-aggregated-report-picker-label": "报告类型",
 	"bs-statistics-aggregated-report-filter-category-multi": "分类",
@@ -114,11 +119,13 @@
 	"bs-statistics-aggregated-report-filter-page": "页面",
 	"bs-statistics-aggregated-report-filter-user": "用户",
 	"bs-statistics-aggregated-report-filter-user-multi": "用户",
+	"bs-statistics-aggregated-filter-category-namespace-notice": "按分类或名称空间筛选",
 	"bs-statistics-aggregated-report-error": "发生错误了！",
 	"bs-statistics-aggregated-report-loading": "数据加载中……",
 	"bs-statistics-ve-progressinspector-title": "进度",
 	"bs-statistics-ve-progress-attr-baseitem-label": "基本条目",
 	"bs-statistics-ve-progress-attr-progressitem-label": "进度项目",
 	"bs-statistics-ve-progress-attr-progressitem-help": "正文中出现的文本定义进度",
-	"bs-statistics-ve-progress-attr-width-label": "宽度"
+	"bs-statistics-ve-progress-attr-width-label": "宽度",
+	"bs-statistics-ve-progress-attr-width-help": "进度条的宽度（像素）"
 }
