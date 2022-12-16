@@ -64,5 +64,6 @@
 	"apihelp-bs-statistics-tasks-summary": "Пружа заједничке задатке за статистику",
 	"bs-statistics-button-label-export": "Извези",
 	"bs-statistics-panel-title-result": "Резултат",
-	"bs-statistics-paging-page-size": "Величина странице"
+	"bs-statistics-paging-page-size": "Величина странице",
+	"bs-statistics-aggregated-report-filter-category-multi": "Категорије"
 }
