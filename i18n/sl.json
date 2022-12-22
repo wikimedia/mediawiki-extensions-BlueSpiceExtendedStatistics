@@ -27,5 +27,6 @@
 	"bs-statistics-diagram": "Poizvedba",
 	"bs-statistics-portletconfig-periodday": "Včeraj",
 	"bs-statistics-label-time": "Čas",
-	"bs-statistics-aggregated-report-filter-page": "Stran"
+	"bs-statistics-aggregated-report-filter-page": "Stran",
+	"bs-statistics-label-registration": "Registracija"
 }
