@@ -28,5 +28,6 @@
 	"bs-statistics-aggregated-report-filter-namespaces": "Imenski prostori",
 	"bs-statistics-aggregated-report-filter-page": "Stran",
 	"bs-statistics-aggregated-report-filter-user": "Uporabnik",
-	"bs-statistics-aggregated-report-filter-user-multi": "Uporabniki"
+	"bs-statistics-aggregated-report-filter-user-multi": "Uporabniki",
+	"bs-statistics-aggregated-report-error": "Prišlo je do napake!"
 }
