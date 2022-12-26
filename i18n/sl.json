@@ -29,5 +29,6 @@
 	"bs-statistics-label-time": "Čas",
 	"bs-statistics-aggregated-report-filter-page": "Stran",
 	"bs-statistics-label-registration": "Registracija",
-	"bs-statistics-aggregated-report-error": "Prišlo je do napake!"
+	"bs-statistics-aggregated-report-error": "Prišlo je do napake!",
+	"bs-statistics-label-count": "Število"
 }
