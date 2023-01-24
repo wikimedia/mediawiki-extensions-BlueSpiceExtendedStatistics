@@ -4,7 +4,6 @@ namespace BlueSpice\ExtendedStatistics\ContentDroplets;
 
 use MediaWiki\Extension\ContentDroplets\Droplet\TagDroplet;
 use Message;
-use RawMessage;
 
 class ProgressDroplet extends TagDroplet {
 
@@ -12,21 +11,21 @@ class ProgressDroplet extends TagDroplet {
 	 * @inheritDoc
 	 */
 	public function getName(): Message {
-		return new RawMessage( 'Progress' );
+		return Message::newFromKey( 'bs-statistics-droplet-progress-name' );
 	}
 
 	/**
 	 * @inheritDoc
 	 */
 	public function getDescription(): Message {
-		return new RawMessage( "Progress description" );
+		return Message::newFromKey( 'bs-statistics-droplet-progress-description' );
 	}
 
 	/**
 	 * @inheritDoc
 	 */
 	public function getIcon(): string {
-		return 'ellipsis';
+		return 'droplet-progress';
 	}
 
 	/**

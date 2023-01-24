@@ -331,6 +331,7 @@
 			"scripts": [
 				"bs.extendedstatistics/util/tag/ProgressDefinition.js"
 			],
+			"styles": "bluespice.statistics.droplet.css",
 			"messages": [
 				"bs-statistics-tag-progress-desc",
 				"bs-statistics-ve-progressinspector-title",
