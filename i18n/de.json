@@ -124,5 +124,7 @@
 	"bs-statistics-ve-progress-attr-progressitem-label": "Fortschrittselement",
 	"bs-statistics-ve-progress-attr-progressitem-help": "Text, der im Textkörper erscheint, definiert den Fortschritt",
 	"bs-statistics-ve-progress-attr-width-label": "Breite",
-	"bs-statistics-ve-progress-attr-width-help": "Breite des Fortschrittsbalkens in Pixel"
+	"bs-statistics-ve-progress-attr-width-help": "Breite des Fortschrittsbalkens in Pixel",
+	"bs-statistics-droplet-progress-name": "Fortschritt",
+	"bs-statistics-droplet-progress-description": "Visualisiert den Fortschritt anhand gegebener Messvariablen"
 }
