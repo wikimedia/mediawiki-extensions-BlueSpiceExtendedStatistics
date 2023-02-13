@@ -4,7 +4,8 @@
 			"ArenaL5",
 			"Banjo",
 			"Elisardojm",
-			"Iváns"
+			"Iváns",
+			"Xabier Cid"
 		]
 	},
 	"bs-statistics-desc": "Módulo de estatísticas para BlueSpice",
@@ -68,5 +69,10 @@
 	"apihelp-bs-statistics-search-options-store-summary": "Proporciona un almacén coas opcións de busca dispoñibles",
 	"right-statistic-viewspecialpage": "Acceso ás estatísticas estendidas",
 	"bs-statistics-button-label-export": "Exportar",
-	"bs-statistics-panel-title-result": "Resultado"
+	"bs-statistics-panel-title-result": "Resultado",
+	"bs-statistics-aggregated-report-filter-interval-day": "Día",
+	"bs-statistics-aggregated-report-filter-interval-week": "Semana",
+	"bs-statistics-aggregated-report-filter-interval-month": "Mes",
+	"bs-statistics-aggregated-report-filter-interval-year": "Ano",
+	"bs-statistics-aggregated-report-filter-page": "Páxina"
 }
