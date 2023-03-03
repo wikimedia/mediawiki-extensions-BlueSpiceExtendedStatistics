@@ -7,6 +7,7 @@
 			"MathXplore",
 			"Shirayuki",
 			"Yatalu",
+			"もなー(偽物)",
 			"背番号4のエース"
 		]
 	},
@@ -104,5 +105,12 @@
 	"bs-statistics-ve-progress-attr-baseitem-label": "ベースアイテム",
 	"bs-statistics-ve-progress-attr-progressitem-label": "進行項目",
 	"bs-statistics-ve-progress-attr-progressitem-help": "本文の外観が進行状況を定義するテキスト",
-	"bs-statistics-ve-progress-attr-width-help": "プログレスバーの幅 (ピクセル単位)"
+	"bs-statistics-ve-progress-attr-width-help": "プログレスバーの幅 (ピクセル単位)",
+	"apihelp-bs-statistics-tasks-description": "統計の共通タスクを提供します",
+	"bs-statistics-aggregated-report-filter-user-multi": "利用者",
+	"bs-statistics-aggregated-filter-category-namespace-notice": "カテゴリまたは名前空間で絞り込み",
+	"bs-statistics-aggregated-report-error": "エラーが発生しました",
+	"bs-statistics-aggregated-report-loading": "データを読込中...",
+	"bs-statistics-pref-excludeusers-help": "管理者権限を持つ利用者など、一部の利用者はSpecial:ExtendedStatistics ページの統計情報を改ざんする可能性がありますが、統計結果から除外できます。",
+	"bs-statistics-tag-progress-desc": "進行状況バーを生成します。値は、本文で見つかった特定のテキストの外観と、利用者が定義した上限によって異なります。"
 }
