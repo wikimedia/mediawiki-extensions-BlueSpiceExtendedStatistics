@@ -7,6 +7,7 @@
 			"MathXplore",
 			"Shirayuki",
 			"Yatalu",
+			"もなー(偽物)",
 			"背番号4のエース"
 		]
 	},
@@ -63,6 +64,7 @@
 	"bs-statistics-portlet-numberofpagesdesc": "ページ数の統計。",
 	"bs-statistics-portlet-numberofarticlesdesc": "コンテンツページ数の統計。",
 	"bs-statistics-portletconfig-periodday": "昨日",
+	"apihelp-bs-statistics-tasks-description": "統計の共通タスクを提供します",
 	"apihelp-bs-statistics-available-diagrams-store-description": "利用可能なダイアグラムをストアに提供します",
 	"apihelp-bs-statistics-available-diagrams-store-summary": "利用可能なダイアグラムをストアに提供します",
 	"apihelp-bs-statistics-search-options-store-description": "利用可能な検索オプションをストアに提供します",
@@ -97,6 +99,12 @@
 	"bs-statistics-aggregated-report-filter-namespaces": "名前空間",
 	"bs-statistics-aggregated-report-filter-page": "ページ",
 	"bs-statistics-aggregated-report-filter-user": "利用者",
+	"bs-statistics-aggregated-report-filter-user-multi": "利用者",
+	"bs-statistics-aggregated-filter-category-namespace-notice": "カテゴリまたは名前空間で絞り込み",
+	"bs-statistics-aggregated-report-error": "エラーが発生しました",
+	"bs-statistics-aggregated-report-loading": "データを読込中...",
+	"bs-statistics-pref-excludeusers-help": "管理者権限を持つ利用者など、一部の利用者はSpecial:ExtendedStatistics ページの統計情報を改ざんする可能性がありますが、統計結果から除外できます。",
+	"bs-statistics-tag-progress-desc": "進行状況バーを生成します。値は、本文で見つかった特定のテキストの外観と、利用者が定義した上限によって異なります。",
 	"bs-statistics-ve-progressinspector-title": "進捗",
 	"bs-statistics-ve-progress-attr-basecount-label": "ベースカウント",
 	"bs-statistics-ve-progress-attr-basecount-help": "進行状況バーが完全に満たされるために、指定された進行状況要素がページ上で発生しなければならない頻度の上限を指定します",
