@@ -112,5 +112,14 @@
 	"bs-statistics-aggregated-report-error": "エラーが発生しました",
 	"bs-statistics-aggregated-report-loading": "データを読込中...",
 	"bs-statistics-pref-excludeusers-help": "管理者権限を持つ利用者など、一部の利用者はSpecial:ExtendedStatistics ページの統計情報を改ざんする可能性がありますが、統計結果から除外できます。",
-	"bs-statistics-tag-progress-desc": "進行状況バーを生成します。値は、本文で見つかった特定のテキストの外観と、利用者が定義した上限によって異なります。"
+	"bs-statistics-tag-progress-desc": "進行状況バーを生成します。値は、本文で見つかった特定のテキストの外観と、利用者が定義した上限によって異なります。",
+	"apihelp-bs-statistics-tasks-summary": "統計の共通タスクを提供します",
+	"apihelp-bs-extendedstatistics-collection-store-description": "クエリ、フィルタリング、および集計が可能な統計のストアを提供しますb",
+	"apihelp-bs-extendedstatistics-collection-store-summary": "クエリ、フィルタリング、および集計が可能な統計のストアを提供します",
+	"apihelp-bs-extendedstatistics-collection-store-param-aggregate": "タスクの任意のデータを含むJSON文字列エンコードオブジェクト",
+	"aggregatedstatistic": "スナップショット統計",
+	"apihelp-query+statistics-reports-summary": "さまざまな統計タイプの統計レポートを提供します",
+	"apihelp-query+statistics-reports-example": "タイプ「mytype」、日付 2021-09-14 および 2021-09-15 のすべてのレポートを提供します",
+	"apihelp-query+statistics-reports-param-type": "統計の種類 (レポートキー)",
+	"bs-statistics-ve-progress-attr-baseitem-help": "テキストを使用して進行状況を計算できるベース番号の代替。本文中の基本項目の出現回数は、進捗項目の出現回数との関係で設定され、進捗状況を示します。"
 }
