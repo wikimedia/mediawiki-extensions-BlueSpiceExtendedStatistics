@@ -8,6 +8,7 @@
 	"bs-statistics-diagram": "פֿראגע",
 	"bs-statistics-from": "פון",
 	"bs-statistics-to": "צו",
+	"bs-statistics-month": "מאָנאַט",
 	"bs-statistics-day": "טאָג",
 	"bs-statistics-list": "ליסטע",
 	"bs-statistics-filters": "פֿילטערס",
@@ -20,6 +21,8 @@
 	"bs-statistics-filter-category": "קאַטעגאָריע",
 	"bs-statistics-portlet-numberofusers": "צאל באניצער",
 	"bs-statistics-portlet-numberofedits": "צאל רעדאקטירונגען",
+	"bs-statistics-portlet-numberofpages": "צאָל בלעטער",
 	"bs-statistics-aggregated-report-filter-category-multi": "קאַטעגאָריעס",
+	"bs-statistics-aggregated-report-filter-interval-month": "מאָנאַט",
 	"bs-statistics-aggregated-report-filter-page": "בלאַט"
 }
