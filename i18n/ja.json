@@ -93,6 +93,7 @@
 	"apihelp-query+statistics-reports-summary": "さまざまな統計タイプの統計レポートを提供します",
 	"apihelp-query+statistics-reports-example": "タイプ「mytype」、日付 2021-09-14 および 2021-09-15 のすべてのレポートを提供します",
 	"apihelp-query+statistics-reports-param-type": "統計の種類 (レポートキー)",
+	"apihelp-query+statistics-reports-param-filter": "JSONでエンコードされた絞り込み情報",
 	"bs-statistics-aggregated-report-picker-label": "レポートの種類",
 	"bs-statistics-aggregated-report-no-date": "現在のフィルタセットのデータがありません。フィルタ値を変更してください",
 	"bs-statistics-aggregated-report-filter-category-multi": "カテゴリ:",
