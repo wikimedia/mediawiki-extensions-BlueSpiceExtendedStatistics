@@ -19,5 +19,7 @@
 	"bs-statistics-portlet-numberofpages": "Էջերի քանակ",
 	"bs-statistics-portletconfig-periodday": "Երեկ",
 	"bs-statistics-panel-title-result": "Արդյունք",
-	"bs-statistics-paging-page-size": "Էջի չափը"
+	"bs-statistics-paging-page-size": "Էջի չափը",
+	"bs-statistics-aggregated-report-filter-category-multi": "Կատեգորիաներ",
+	"bs-statistics-aggregated-report-filter-interval-day": "Օր"
 }
