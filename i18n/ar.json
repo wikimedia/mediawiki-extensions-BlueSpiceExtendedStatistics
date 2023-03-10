@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"AA800",
 			"FiberAhmed",
 			"Meno25",
 			"NEHAOUA",
@@ -99,5 +100,6 @@
 	"bs-statistics-aggregated-report-filter-namespace": "نطاق",
 	"bs-statistics-aggregated-report-filter-page": "صفحة",
 	"bs-statistics-aggregated-report-filter-user": "مستخدم",
-	"bs-statistics-ve-progressinspector-title": "التقدم"
+	"bs-statistics-ve-progressinspector-title": "التقدم",
+	"bs-statistics-aggregated-report-filter-user-multi": "المستخدمون"
 }
