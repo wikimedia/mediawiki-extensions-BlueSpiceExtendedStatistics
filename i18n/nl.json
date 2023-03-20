@@ -125,5 +125,7 @@
 	"bs-statistics-ve-progress-attr-baseitem-help": "Alternatief voor het basisaantal waarbij de tekst kan worden gebruikt om de voortgang te berekenen. De voortgangsweergave wordt gebaseerd op de verhouding tussen het aantal malen dat het basiselement in de tekst voorkomt en het aantal malen dat het voortgangselement erin voorkomt.",
 	"bs-statistics-ve-progress-attr-progressitem-label": "Voortgangselement",
 	"bs-statistics-ve-progress-attr-progressitem-help": "Tekst waarvan het voorkomen in de hoofdtekst de voortgang bepaalt",
-	"bs-statistics-ve-progress-attr-width-help": "Breedte van voortgangsbalk in pixels"
+	"bs-statistics-ve-progress-attr-width-help": "Breedte van voortgangsbalk in pixels",
+	"bs-statistics-droplet-progress-name": "Voortgang",
+	"bs-statistics-droplet-progress-description": "Visualiseert de voortgang aan de hand van bepaalde meetvariabelen"
 }

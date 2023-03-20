@@ -122,5 +122,6 @@
 	"apihelp-query+statistics-reports-example": "タイプ「mytype」、日付 2021-09-14 および 2021-09-15 のすべてのレポートを提供します",
 	"apihelp-query+statistics-reports-param-type": "統計の種類 (レポートキー)",
 	"bs-statistics-ve-progress-attr-baseitem-help": "テキストを使用して進行状況を計算できるベース番号の代替。本文中の基本項目の出現回数は、進捗項目の出現回数との関係で設定され、進捗状況を示します。",
-	"apihelp-query+statistics-reports-param-filter": "JSONでエンコードされた絞り込み情報"
+	"apihelp-query+statistics-reports-param-filter": "JSONでエンコードされた絞り込み情報",
+	"bs-statistics-droplet-progress-name": "進捗"
 }

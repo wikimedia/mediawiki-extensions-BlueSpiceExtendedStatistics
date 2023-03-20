@@ -122,5 +122,7 @@
 	"bs-statistics-ve-progress-attr-progressitem-label": "Élément de progression",
 	"bs-statistics-ve-progress-attr-progressitem-help": "Texte dont les apparitions dans le corps définit la progression",
 	"bs-statistics-ve-progress-attr-width-label": "Largeur",
-	"bs-statistics-ve-progress-attr-width-help": "Largeur de la barre de progression en pixels"
+	"bs-statistics-ve-progress-attr-width-help": "Largeur de la barre de progression en pixels",
+	"bs-statistics-droplet-progress-name": "Avancement",
+	"bs-statistics-droplet-progress-description": "Visualise la progression des variables de mesure données"
 }
