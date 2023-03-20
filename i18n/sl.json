@@ -116,5 +116,7 @@
 	"bs-statistics-ve-progress-attr-progressitem-label": "Element napredka",
 	"bs-statistics-ve-progress-attr-progressitem-help": "Besedilo, katerega videz v telesu določa napredek",
 	"bs-statistics-ve-progress-attr-width-label": "Širina",
-	"bs-statistics-ve-progress-attr-width-help": "Širina vrstice napredka v slikovnih pikah"
+	"bs-statistics-ve-progress-attr-width-help": "Širina vrstice napredka v slikovnih pikah",
+	"bs-statistics-droplet-progress-name": "Napredek",
+	"bs-statistics-droplet-progress-description": "Vizualizira napredek glede na dane merjene spremenljivke"
 }

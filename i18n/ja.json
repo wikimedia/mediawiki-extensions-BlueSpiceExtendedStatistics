@@ -122,5 +122,6 @@
 	"bs-statistics-ve-progress-attr-progressitem-label": "進行項目",
 	"bs-statistics-ve-progress-attr-progressitem-help": "本文の外観が進行状況を定義するテキスト",
 	"bs-statistics-ve-progress-attr-width-label": "幅",
-	"bs-statistics-ve-progress-attr-width-help": "プログレスバーの幅 (ピクセル単位)"
+	"bs-statistics-ve-progress-attr-width-help": "プログレスバーの幅 (ピクセル単位)",
+	"bs-statistics-droplet-progress-name": "進捗"
 }

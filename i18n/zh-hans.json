@@ -106,6 +106,7 @@
 	"apihelp-query+statistics-reports-example": "提供所有「mytype」类型的报告，日期为2021-09-14与2021-09-15",
 	"apihelp-query+statistics-reports-param-filter": "JSON编码的过滤数据",
 	"bs-statistics-aggregated-report-picker-label": "报告类型",
+	"bs-statistics-aggregated-report-no-date": "目前没有过滤器集合，请更改过滤器值",
 	"bs-statistics-aggregated-report-filter-category-multi": "分类",
 	"bs-statistics-aggregated-report-filter-date-start": "开始日期",
 	"bs-statistics-aggregated-report-filter-date-end": "结束日期",
@@ -127,5 +128,6 @@
 	"bs-statistics-ve-progress-attr-progressitem-label": "进度项目",
 	"bs-statistics-ve-progress-attr-progressitem-help": "正文中出现的文本定义进度",
 	"bs-statistics-ve-progress-attr-width-label": "宽度",
-	"bs-statistics-ve-progress-attr-width-help": "进度条的宽度（像素）"
+	"bs-statistics-ve-progress-attr-width-help": "进度条的宽度（像素）",
+	"bs-statistics-droplet-progress-name": "进度"
 }
