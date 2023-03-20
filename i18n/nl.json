@@ -123,5 +123,7 @@
 	"bs-statistics-ve-progress-attr-progressitem-label": "Voortgangselement",
 	"bs-statistics-ve-progress-attr-progressitem-help": "Tekst waarvan het voorkomen in de hoofdtekst de voortgang bepaalt",
 	"bs-statistics-ve-progress-attr-width-label": "Breedte",
-	"bs-statistics-ve-progress-attr-width-help": "Breedte van voortgangsbalk in pixels"
+	"bs-statistics-ve-progress-attr-width-help": "Breedte van voortgangsbalk in pixels",
+	"bs-statistics-droplet-progress-name": "Voortgang",
+	"bs-statistics-droplet-progress-description": "Visualiseert de voortgang aan de hand van bepaalde meetvariabelen"
 }

@@ -3,6 +3,7 @@
 		"authors": [
 			"Abuluntu",
 			"Danmichaelo",
+			"EdoAug",
 			"Jon Harald Søby",
 			"Vukky"
 		]
@@ -104,5 +105,6 @@
 	"bs-statistics-aggregated-report-error": "Det oppstod en feil!",
 	"bs-statistics-aggregated-report-loading": "Laster inn data…",
 	"bs-statistics-ve-progressinspector-title": "Framgang",
-	"bs-statistics-ve-progress-attr-width-label": "Bredde"
+	"bs-statistics-ve-progress-attr-width-label": "Bredde",
+	"bs-statistics-droplet-progress-name": "Framgang"
 }
