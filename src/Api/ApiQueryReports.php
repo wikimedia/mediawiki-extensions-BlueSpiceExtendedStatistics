@@ -13,6 +13,7 @@ use BlueSpice\ExtendedStatistics\SnapshotDateRange;
 use DateInterval;
 use InvalidArgumentException;
 use MediaWiki\MediaWikiServices;
+use Wikimedia\ParamValidator\ParamValidator;
 
 class ApiQueryReports extends \ApiQueryBase {
 	/** @var AttributeRegistryFactory */
@@ -66,18 +67,18 @@ class ApiQueryReports extends \ApiQueryBase {
 	public function getAllowedParams( $flags = 0 ) {
 		return [
 			'filter' => [
-				ApiBase::PARAM_REQUIRED => false,
-				ApiBase::PARAM_TYPE => 'string',
+				ParamValidator::PARAM_REQUIRED => false,
+				ParamValidator::PARAM_TYPE => 'string',
 				ApiBase::PARAM_HELP_MSG => 'apihelp-query+statistics-reports-param-filter'
 			],
 			'type' => [
-				ApiBase::PARAM_REQUIRED => true,
-				ApiBase::PARAM_TYPE => 'string',
+				ParamValidator::PARAM_REQUIRED => true,
+				ParamValidator::PARAM_TYPE => 'string',
 				ApiBase::PARAM_HELP_MSG => 'apihelp-query+statistics-reports-param-type'
 			],
 			'aggregate' => [
-				ApiBase::PARAM_REQUIRED => false,
-				ApiBase::PARAM_TYPE => 'integer',
+				ParamValidator::PARAM_REQUIRED => false,
+				ParamValidator::PARAM_TYPE => 'integer',
 				ApiBase::PARAM_HELP_MSG => 'apihelp-query+statistics-reports-param-aggregate'
 			]
 		];
