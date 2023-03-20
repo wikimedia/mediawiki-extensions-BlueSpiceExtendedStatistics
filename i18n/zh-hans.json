@@ -127,5 +127,7 @@
 	"action-extendedstatistics-viewspecialpage-aggregated": "访问特殊页面 [[Special:AggregatedStatistic]]",
 	"apihelp-query+statistics-reports-example": "提供所有「mytype」类型的报告，日期为2021-09-14与2021-09-15",
 	"bs-statistics-aggregated-filter-category-namespace-notice": "按分类或名称空间筛选",
-	"bs-statistics-ve-progress-attr-width-help": "进度条的宽度（像素）"
+	"bs-statistics-ve-progress-attr-width-help": "进度条的宽度（像素）",
+	"bs-statistics-aggregated-report-no-date": "目前没有过滤器集合，请更改过滤器值",
+	"bs-statistics-droplet-progress-name": "进度"
 }
