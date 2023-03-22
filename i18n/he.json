@@ -121,5 +121,7 @@
 	"bs-statistics-ve-progress-attr-progressitem-help": "הטקסט שמופיע בגוף מגדיר את ההתקדמות",
 	"bs-statistics-ve-progress-attr-width-label": "רוחב",
 	"bs-statistics-ve-progress-attr-width-help": "רוחב סרגל ההתקדמות בפיקסלים",
-	"apihelp-bs-extendedstatistics-collection-store-param-aggregate": "מחרוזת מקודדת ב־JSON עם נתונים שרירותיים עבור האגירה"
+	"apihelp-bs-extendedstatistics-collection-store-param-aggregate": "מחרוזת מקודדת ב־JSON עם נתונים שרירותיים עבור האגירה",
+	"bs-statistics-droplet-progress-name": "התקדמות",
+	"bs-statistics-droplet-progress-description": "הצגה חזותית של התקדמות מול משתני מדידה נתונים"
 }
