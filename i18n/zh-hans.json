@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			")8",
+			"850710247liu",
 			"A Chinese Wikipedian",
 			"AYZ04",
 			"Evesiesta",
@@ -129,5 +130,6 @@
 	"bs-statistics-ve-progress-attr-width-label": "宽度",
 	"bs-statistics-ve-progress-attr-width-help": "进度条的宽度（像素）",
 	"bs-statistics-aggregated-report-no-date": "目前没有过滤器集合，请更改过滤器值",
-	"bs-statistics-droplet-progress-name": "进度"
+	"bs-statistics-droplet-progress-name": "进度",
+	"bs-statistics-pref-excludeusers-help": "对于某些用户，例如具有管理员权限的用户，可以改变 Special:ExtendedStatistics 页面上的统计数据。它们可以从统计结果里排除。"
 }
