@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			")8",
+			"850710247liu",
 			"A Chinese Wikipedian",
 			"AYZ04",
 			"Evesiesta",
@@ -123,6 +124,7 @@
 	"bs-statistics-aggregated-filter-category-namespace-notice": "按分类或名称空间筛选",
 	"bs-statistics-aggregated-report-error": "发生错误了！",
 	"bs-statistics-aggregated-report-loading": "数据加载中……",
+	"bs-statistics-pref-excludeusers-help": "对于某些用户，例如具有管理员权限的用户，可以改变 Special:ExtendedStatistics 页面上的统计数据。它们可以从统计结果里排除。",
 	"bs-statistics-ve-progressinspector-title": "进度",
 	"bs-statistics-ve-progress-attr-baseitem-label": "基本条目",
 	"bs-statistics-ve-progress-attr-progressitem-label": "进度项目",
