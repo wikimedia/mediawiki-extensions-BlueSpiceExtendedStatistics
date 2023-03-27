@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"V Bhavya",
 			"Veeven"
 		]
 	},
@@ -23,5 +24,6 @@
 	"bs-statistics-panel-title-result": "ఫలితం",
 	"bs-statistics-paging-page-size": "పేజీ పరిమాణం",
 	"bs-statistics-filters": "వడపోతలు",
-	"bs-statistics-label-page": "పేజీ"
+	"bs-statistics-label-page": "పేజీ",
+	"bs-statistics-droplet-progress-name": "పురోగతి"
 }
