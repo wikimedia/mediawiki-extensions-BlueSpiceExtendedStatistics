@@ -8,6 +8,7 @@
 			"Madeleinemcc",
 			"Sanmosa",
 			"Willy1018",
+			"Winston Sung",
 			"Xiplus"
 		]
 	},
@@ -114,5 +115,6 @@
 	"bs-statistics-aggregated-report-loading": "正在載入資料…",
 	"bs-statistics-pref-excludeusers-help": "對於某些使用者，例如具有管理員權限的人，可以篡改頁面 Special:ExtendedStatistics 的統計內容。他們可以從統計結果裡排除。",
 	"bs-statistics-ve-progressinspector-title": "進度",
-	"bs-statistics-ve-progress-attr-width-label": "寬度"
+	"bs-statistics-ve-progress-attr-width-label": "寬度",
+	"bs-statistics-droplet-progress-name": "進度"
 }

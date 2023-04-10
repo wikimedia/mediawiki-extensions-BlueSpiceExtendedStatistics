@@ -118,5 +118,6 @@
 	"bs-statistics-ve-progress-attr-progressitem-label": "Progresso de item",
 	"bs-statistics-ve-progress-attr-progressitem-help": "Texto cujas aparências no corpo definem o progresso",
 	"bs-statistics-ve-progress-attr-width-label": "Largura",
-	"bs-statistics-ve-progress-attr-width-help": "Largura da barra de progresso em pixels"
+	"bs-statistics-ve-progress-attr-width-help": "Largura da barra de progresso em pixels",
+	"bs-statistics-droplet-progress-name": "Progresso"
 }
