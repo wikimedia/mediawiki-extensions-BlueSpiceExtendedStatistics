@@ -3,7 +3,8 @@
 		"authors": [
 			"Chrumps",
 			"Rail",
-			"Railfail536"
+			"Railfail536",
+			"WaldiSt"
 		]
 	},
 	"bs-statistics-desc": "Moduł statystyki BlueSpice",
@@ -50,5 +51,6 @@
 	"right-statistic-viewspecialpage": "Dostęp do rozszerzonej statystyki",
 	"bs-statistics-button-label-export": "Eksport",
 	"bs-statistics-panel-title-result": "Wynik",
-	"bs-statistics-paging-page-size": "Rozmiar strony"
+	"bs-statistics-paging-page-size": "Rozmiar strony",
+	"bs-statistics-droplet-progress-name": "Postęp"
 }
