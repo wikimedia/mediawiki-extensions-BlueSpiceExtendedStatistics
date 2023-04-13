@@ -65,7 +65,7 @@ class Snapshot implements JsonSerializable {
 	/**
 	 * @return array
 	 */
-	public function jsonSerialize() {
+	public function jsonSerialize(): array {
 		return [
 			'date' => $this->date->mwDate(),
 			'type' => $this->type,
