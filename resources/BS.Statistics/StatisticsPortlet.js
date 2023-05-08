@@ -144,7 +144,24 @@ Ext.define('BS.Statistics.StatisticsPortlet', {
 	onConfigChange: function( oConfig ) {
 		this.ctMainConfig.store.getProxy().extraParams.inputFrom = Ext.Date.format( this.getPeriod(), 'd.m.Y' )
 		this.ctMainConfig.store.getProxy().extraParams.InputDepictionGrain = this.getGrain();
-		this.ctMainConfig.store.load();
+
+		Ext.Ajax.request({
+			url: this.makeStatisticsApiUrl(),
+			method: 'POST',
+			params: this.ctMainConfig.store.getProxy().extraParams,
+			scope: this,
+			success: function(response) {
+				var responseData = Ext.decode(response.responseText);
+				if (responseData && responseData.payload && responseData.payload.data) {
+					// Update the chart's data and force a layout update
+					this.ctMain.getStore().setData(responseData.payload.data);
+					this.ctMain.performLayout();
+				}
+			},
+			failure: function(response) {
+				console.error('Failed to load data:', response);
+			}
+		});
 	},
 
 	makeStatisticsApiUrl: function() {
