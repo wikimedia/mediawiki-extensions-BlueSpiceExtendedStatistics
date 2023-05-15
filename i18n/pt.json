@@ -117,5 +117,7 @@
 	"bs-statistics-ve-progress-attr-progressitem-label": "Elemento de progresso",
 	"bs-statistics-ve-progress-attr-progressitem-help": "O texto que aparece no corpo define o progresso",
 	"bs-statistics-ve-progress-attr-width-label": "Largura",
-	"bs-statistics-ve-progress-attr-width-help": "Largura da barra de progresso em píxeis"
+	"bs-statistics-ve-progress-attr-width-help": "Largura da barra de progresso em píxeis",
+	"bs-statistics-droplet-progress-name": "Progresso",
+	"bs-statistics-droplet-progress-description": "Visualiza o progresso em relação a determinadas variáveis de medição"
 }
