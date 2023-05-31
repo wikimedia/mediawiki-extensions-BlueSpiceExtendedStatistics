@@ -23,5 +23,7 @@
 	"bs-statistics-aggregated-report-filter-namespaces": "Nomari (''namespaces'')",
 	"bs-statistics-aggregated-report-filter-user": "Uzero",
 	"bs-statistics-aggregated-report-filter-user-multi": "Uzeri",
-	"bs-statistics-list": "Listar"
+	"bs-statistics-list": "Listar",
+	"bs-statistics-portletconfig-periodday": "Hiere",
+	"bs-statistics-aggregated-report-filter-interval-day": "Dio"
 }
