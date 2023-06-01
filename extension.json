@@ -169,7 +169,6 @@
 	"load_composer_autoloader": true,
 	"Hooks": {
 		"ChameleonSkinTemplateOutputPageBeforeExec": "\\BlueSpice\\ExtendedStatistics\\Hook\\ChameleonSkinTemplateOutputPageBeforeExec\\AddExtendedStatistics::callback",
-		"BeforePageDisplay": "\\BlueSpice\\ExtendedStatistics\\Hook\\BeforePageDisplay\\AddResources::callback",
 		"LoadExtensionSchemaUpdates": "\\BlueSpice\\ExtendedStatistics\\Hook\\LoadExtensionSchemaUpdates\\AddSnapshotTable::callback",
 		"BSUsageTrackerRegisterCollectors": "\\BlueSpice\\ExtendedStatistics\\Hook\\BSUsageTrackerRegisterCollectors\\AddStatisticsProgressTag::callback",
 		"BSDashboardsAdminDashboardPortalConfig": "\\BlueSpice\\ExtendedStatistics\\Hook\\BSDashboardsAdminDashboardPortalConfig\\AddConfigs::callback",
@@ -257,9 +256,6 @@
 				"ext.bluespice.extjs",
 				"ext.extjsbase.charts"
 			]
-		},
-		"ext.bluespice.statistics.styles": {
-			"styles": "bluespice.statistics.css"
 		},
 		"ext.bluespice.extendedstatistics.d3": {
 			"scripts": [ "libs/d3.min.js" ]
