@@ -3,6 +3,7 @@
 		"authors": [
 			"A2y4",
 			"Ajeje Brazorf",
+			"Anonymoususer12321",
 			"Foomin10",
 			"MathXplore",
 			"Shirayuki",
@@ -123,5 +124,6 @@
 	"bs-statistics-ve-progress-attr-progressitem-help": "本文の外観が進行状況を定義するテキスト",
 	"bs-statistics-ve-progress-attr-width-label": "幅",
 	"bs-statistics-ve-progress-attr-width-help": "プログレスバーの幅 (ピクセル単位)",
-	"bs-statistics-droplet-progress-name": "進捗"
+	"bs-statistics-droplet-progress-name": "進捗",
+	"bs-statistics-droplet-progress-description": "与えられた計測変数に対する進行度を可視化します"
 }
