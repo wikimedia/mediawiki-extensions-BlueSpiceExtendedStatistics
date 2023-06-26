@@ -60,7 +60,6 @@
 	"bs-statistics-portlet-numberofpagesdesc": "Статистика броја страница.",
 	"bs-statistics-portlet-numberofarticlesdesc": "Статистика броја садржајних страница.",
 	"bs-statistics-portletconfig-periodday": "Јуче",
-	"apihelp-bs-statistics-tasks-description": "Пружа заједничке задатке за статистику",
 	"apihelp-bs-statistics-tasks-summary": "Пружа заједничке задатке за статистику",
 	"bs-statistics-button-label-export": "Извези",
 	"bs-statistics-panel-title-result": "Резултат",
