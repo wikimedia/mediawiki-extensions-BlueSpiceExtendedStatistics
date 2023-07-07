@@ -106,5 +106,6 @@
 	"bs-statistics-aggregated-report-loading": "Laster inn data …",
 	"bs-statistics-ve-progressinspector-title": "Framgang",
 	"bs-statistics-ve-progress-attr-width-label": "Bredde",
-	"bs-statistics-droplet-progress-name": "Framgang"
+	"bs-statistics-droplet-progress-name": "Framgang",
+	"apihelp-query+statistics-reports-summary": "Gir statistikkrapporter for ulike statistikktyper"
 }
