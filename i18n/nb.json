@@ -87,6 +87,7 @@
 	"bs-statistics-aggregationtype-label": "Tilføyelsestype",
 	"bs-statistics-targets-label": "Mål",
 	"bs-statistics-paging-page-size": "Sidestørrelse",
+	"apihelp-query+statistics-reports-summary": "Gir statistikkrapporter for ulike statistikktyper",
 	"bs-statistics-aggregated-report-picker-label": "Rapporttype",
 	"bs-statistics-aggregated-report-filter-category-multi": "Kategorier",
 	"bs-statistics-aggregated-report-filter-date-start": "Startdato",
