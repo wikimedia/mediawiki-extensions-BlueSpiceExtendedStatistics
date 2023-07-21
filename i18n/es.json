@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"AnupamM",
 			"Dekeract",
 			"Dgstranz",
 			"DiegoAmbrocio",
@@ -121,5 +122,6 @@
 	"bs-statistics-ve-progress-attr-width-label": "Anchura",
 	"bs-statistics-ve-progress-attr-width-help": "Ancho de la barra de progreso en píxeles",
 	"apihelp-query+statistics-reports-summary": "Proporciona informes estadísticos para varios tipos de estadísticas",
-	"apihelp-bs-statistics-search-options-store-summary": "Proporciona una tienda con opciones de búsqueda disponibles"
+	"apihelp-bs-statistics-search-options-store-summary": "Proporciona una tienda con opciones de búsqueda disponibles",
+	"bs-statistics-droplet-progress-name": "Progreso"
 }
