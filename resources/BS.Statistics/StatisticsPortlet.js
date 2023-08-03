@@ -19,7 +19,7 @@ Ext.define('BS.Statistics.StatisticsPortlet', {
 	portletConfigClass : 'BS.Statistics.StatisticsPortletConfig',
 	filters: [],
 	diagram: '',
-	beforeInitCompontent: function() {
+	beforeInitComponent: function() {
 
 		this.ctMainConfig = {
 			axes: [],
