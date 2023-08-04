@@ -11,5 +11,10 @@
 	"bs-statistics-list": "Тизме",
 	"bs-statistics-filters": "Чыпкалар",
 	"bs-statistics-day": "Күн",
-	"bs-statistics-aggregated-report-filter-interval-day": "Күн"
+	"bs-statistics-aggregated-report-filter-interval-day": "Күн",
+	"bs-statistics-year": "Жыл",
+	"bs-statistics-month": "Ай",
+	"bs-statistics-aggregated-report-filter-interval-week": "Апта",
+	"bs-statistics-aggregated-report-filter-interval-month": "Ай",
+	"bs-statistics-aggregated-report-filter-interval-year": "Жыл"
 }
