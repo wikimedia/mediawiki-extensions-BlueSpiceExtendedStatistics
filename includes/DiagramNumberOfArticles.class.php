@@ -28,8 +28,8 @@ class BsDiagramNumberOfArticles extends BsDiagram {
 
 		$this->sTitle = wfMessage( 'bs-statistics-diag-number-of-pages-mw' )->text();
 		$this->sDescription = wfMessage( 'bs-statistics-diag-number-of-pages-mw-desc' )->text();
-		$this->sTitlex = wfMessage( 'bs-statistics-label-time' )->text();
-		$this->sTitley = wfMessage( 'bs-statistics-label-count' )->text();
+		$this->sTitleX = wfMessage( 'bs-statistics-label-time' )->text();
+		$this->sTitleY = wfMessage( 'bs-statistics-label-count' )->text();
 		$this->sActualGrain = "m";
 		$this->sModLabel = "M y";
 		$this->iDataSource = BsDiagram::DATASOURCE_DATABASE;
@@ -37,7 +37,7 @@ class BsDiagramNumberOfArticles extends BsDiagram {
 		$this->isDefault = true;
 		$this->sSqlWhatForDiagram = "count(DISTINCT rev_page)";
 		$this->sSqlWhatForList = "DISTINCT page_title, rev_user_text";
-		$this->sSqlFromWhere = "FROM #__revision AS a
+		$this->sSqlWhatFromWhere = "FROM #__revision AS a
 									JOIN #__page ON #__page.page_id = a.rev_page
 									LEFT JOIN #__categorylinks AS c ON c.cl_from = a.rev_page
 								WHERE rev_timestamp @period

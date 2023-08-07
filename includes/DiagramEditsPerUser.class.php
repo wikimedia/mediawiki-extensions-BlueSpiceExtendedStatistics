@@ -28,8 +28,8 @@ class BsDiagramEditsPerUser extends BsDiagram {
 
 		$this->sTitle = wfMessage( 'bs-statistics-diag-edits-per-user' )->text();
 		$this->sDescription = wfMessage( 'bs-statistics-diag-edits-per-user-desc' )->text();
-		$this->sTitlex = wfMessage( 'bs-statistics-label-time' )->text();
-		$this->sTitley = wfMessage( 'bs-statistics-label-count' )->text();
+		$this->sTitleX = wfMessage( 'bs-statistics-label-time' )->text();
+		$this->sTitleY = wfMessage( 'bs-statistics-label-count' )->text();
 		$this->sActualGrain = "m";
 		$this->sModLabel = "M y";
 		$this->sFormatX = "%01.1f";
@@ -40,7 +40,7 @@ class BsDiagramEditsPerUser extends BsDiagram {
 		// $this->sSqlWhatForList = "DISTINCT page_title, rev_user_text";
 		// Important: Keep DISTINCT rev_id, otherwise a revision is counted once per category link
 		// TODO MRG (30.04.12 01:00): Wieso werden die categorylinks überhaupt gezählt?
-		$this->sSqlFromWhere = "FROM (
+		$this->sSqlWhatFromWhere = "FROM (
 									SELECT count(DISTINCT rev_id) as a
 										FROM #__revision AS a
 											JOIN #__page ON #__page.page_id = a.rev_page
