@@ -27,15 +27,15 @@ class BsDiagramNumberOfUsers extends BsDiagram {
 
 		$this->sTitle = wfMessage( 'bs-statistics-diag-number-of-users' )->plain();
 		$this->sDescription = wfMessage( 'bs-statistics-diag-number-of-users-desc' )->plain();
-		$this->sTitlex = wfMessage( 'bs-statistics-label-time' )->plain();
-		$this->sTitley = wfMessage( 'bs-statistics-label-count' )->plain();
+		$this->sTitleX = wfMessage( 'bs-statistics-label-time' )->plain();
+		$this->sTitleY = wfMessage( 'bs-statistics-label-count' )->plain();
 		$this->sActualGrain = "m";
 		$this->sModLabel = "M y";
 		$this->iDataSource = BsDiagram::DATASOURCE_DATABASE;
 		$this->bListable = true;
 		$this->sSqlWhatForDiagram = "count(user_id)";
 		$this->sSqlWhatForList = "user_name, user_registration";
-		$this->sSqlFromWhere = "FROM #__user
+		$this->sSqlWhatFromWhere = "FROM #__user
 								WHERE user_registration @period
 								AND user_id NOT IN (
 									SELECT ug_user
