@@ -16,5 +16,8 @@
 	"bs-statistics-month": "Ай",
 	"bs-statistics-aggregated-report-filter-interval-week": "Апта",
 	"bs-statistics-aggregated-report-filter-interval-month": "Ай",
-	"bs-statistics-aggregated-report-filter-interval-year": "Жыл"
+	"bs-statistics-aggregated-report-filter-interval-year": "Жыл",
+	"bs-statistics-diag-number-of-pages": "Түзүлгөн барактардын саны",
+	"bs-statistics-portlet-numberofpages": "Барактардын саны",
+	"bs-statistics-panel-title-result": "Натыйжа"
 }
