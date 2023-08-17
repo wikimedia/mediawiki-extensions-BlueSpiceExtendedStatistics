@@ -4,7 +4,8 @@
 			"Kareyac",
 			"Sagan",
 			"Азат Хәлилов",
-			"Рустам Нурыев"
+			"Рустам Нурыев",
+			"З. ӘЙЛЕ"
 		]
 	},
 	"bs-statistics-desc": "BlueSpice өсөн статистика модуле",
@@ -32,7 +33,7 @@
 	"bs-statistics-label-registration": "Теркәүҙәр",
 	"bs-statistics-diag-number-of-pages": "Биттәр һаны",
 	"bs-statistics-diag-number-of-pages-desc": "Һайланған ваҡыт эсендә биттәрҙең дөйөм һанын күрһәтә.",
-	"bs-statistics-diag-number-of-pages-mw": "Эстелеге булған биттәр һаны",
+	"bs-statistics-diag-number-of-pages-mw": "Эстәлеге булған биттәр һаны",
 	"bs-statistics-diag-number-of-pages-mw-desc": "Һайланған ваҡыт эстәлеге булған биттәр һанын һанын күрһәтә.",
 	"bs-statistics-label-page": "Бит",
 	"bs-statistics-label-creator": "Автор",

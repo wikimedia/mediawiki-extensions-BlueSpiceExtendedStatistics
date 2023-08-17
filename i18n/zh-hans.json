@@ -22,7 +22,8 @@
 			"铁桶",
 			"飞小RAN",
 			"850710247liu",
-			"Jbyccc"
+			"Jbyccc",
+			"CrownedWharf566"
 		]
 	},
 	"bs-statistics-desc": "用于BlueSpice的统计模块",
@@ -129,6 +130,7 @@
 	"bs-statistics-pref-excludeusers-help": "对于某些用户，例如具有管理员权限的用户，可以改变 Special:ExtendedStatistics 页面上的统计数据。它们可以从统计结果里排除。",
 	"bs-statistics-tag-progress-desc": "生成一个项目栏。数值取决于正文中给定文本的外观和用户设定的上限。",
 	"bs-statistics-ve-progressinspector-title": "进度",
+	"bs-statistics-ve-progress-attr-basecount-label": "碱基数",
 	"bs-statistics-ve-progress-attr-baseitem-label": "基本条目",
 	"bs-statistics-ve-progress-attr-progressitem-label": "进度项目",
 	"bs-statistics-ve-progress-attr-progressitem-help": "正文中出现的文本定义进度",

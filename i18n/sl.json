@@ -89,7 +89,7 @@
 	"apihelp-query+statistics-reports-param-type": "Vrsta statistike (ključ poročila)",
 	"apihelp-query+statistics-reports-param-filter": "JSON kodirani podatki filtra",
 	"bs-statistics-aggregated-report-picker-label": "Vrsta poročila",
-	"bs-statistics-aggregated-report-no-date": "Za trenutni niz filtrov ni podatkov. Prosimo, spremenite vrednosti filtra.",
+	"bs-statistics-aggregated-report-no-date": "Za trenutni nabor filtrov ni podatkov. Prosimo, spremenite vrednosti filtra.",
 	"bs-statistics-aggregated-report-filter-category-multi": "Kategorije",
 	"bs-statistics-aggregated-report-filter-date-start": "Začetni datum:",
 	"bs-statistics-aggregated-report-filter-date-end": "Končni datum",
