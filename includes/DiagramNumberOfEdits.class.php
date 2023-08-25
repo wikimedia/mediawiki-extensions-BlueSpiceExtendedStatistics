@@ -40,17 +40,18 @@ class BsDiagramNumberOfEdits extends BsDiagram {
 		// Important: Keep DISTINCT rev_id, otherwise a revision is counted once per category link
 		// cf also EditsPerUser
 		// TODO MRG (30.04.12 01:00): Wieso werden die categorylinks überhaupt gezählt?
-		$this->sSqlWhatFromWhere = "FROM #__revision AS a
-									JOIN #__page ON #__page.page_id = a.rev_page
-									LEFT JOIN #__categorylinks AS c ON c.cl_from = a.rev_page
+		$this->sSqlWhatFromWhere = "FROM #__revision AS r
+									JOIN #__page ON #__page.page_id = r.rev_page
+									LEFT JOIN #__categorylinks AS c ON c.cl_from = r.rev_page
+									LEFT JOIN #__actor ON actor.actor_id = r.rev_actor
 								WHERE rev_timestamp @period
 								AND @BsFilterNamespace
-								AND NOT rev_user IN (
+								AND NOT actor_user IN (
 									SELECT ug_user
 									FROM #__user_groups
 									WHERE ug_group = 'bot'
 								)
-								AND NOT rev_user_text IN (@BsFilterUsers)
+								AND NOT actor_user IN (@BsFilterUsers)
 								AND @BsFilterCategory";
 		// $this->sListLabel = array(wfMessage( 'label-article')->text(),
 		// wfMessage( 'label-creator')->text());
