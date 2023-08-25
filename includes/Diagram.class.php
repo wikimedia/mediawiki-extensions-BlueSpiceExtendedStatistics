@@ -181,6 +181,11 @@ abstract class BsDiagram {
 	protected $isDefault = false;
 
 	/**
+	 * @var Config
+	 */
+	protected $config = null;
+
+	/**
 	 * Constructor of BsDiagram class
 	 */
 	public function __construct() {
@@ -214,7 +219,7 @@ abstract class BsDiagram {
 		$sql = "SELECT ";
 		$sql .= $this->isList() ? $this->sSqlWhatForList : $this->sSqlWhatForDiagram;
 		$sql .= " ";
-		$sql .= $this->sSqlFromWhere;
+		$sql .= $this->sSqlWhatFromWhere;
 		$sql .= $this->isList() ? $this->sSqlOptionsForList : $this->sSqlOptionsForDiagram;
 		return $sql;
 	}
