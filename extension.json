@@ -174,8 +174,7 @@
 		"BSDashboardsAdminDashboardPortalConfig": "\\BlueSpice\\ExtendedStatistics\\Hook\\BSDashboardsAdminDashboardPortalConfig\\AddConfigs::callback",
 		"BSDashboardsAdminDashboardPortalPortlets": "\\BlueSpice\\ExtendedStatistics\\Hook\\BSDashboardsAdminDashboardPortalPortlets\\AddPortlets::callback",
 		"BSDashboardsUserDashboardPortalConfig": "\\BlueSpice\\ExtendedStatistics\\Hook\\BSDashboardsUserDashboardPortalConfig\\AddConfigs::callback",
-		"BSDashboardsUserDashboardPortalPortlets": "\\BlueSpice\\ExtendedStatistics\\Hook\\BSDashboardsUserDashboardPortalPortlets\\AddPortlets::callback",
-		"BSInsertMagicAjaxGetData": "\\BlueSpice\\ExtendedStatistics\\Hook\\BSInsertMagicAjaxGetData\\AddProgressTag::callback"
+		"BSDashboardsUserDashboardPortalPortlets": "\\BlueSpice\\ExtendedStatistics\\Hook\\BSDashboardsUserDashboardPortalPortlets\\AddPortlets::callback"
 	},
 	"config_prefix": "bsg",
 	"config": {
