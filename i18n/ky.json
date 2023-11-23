@@ -1,0 +1,26 @@
+{
+	"@metadata": {
+		"authors": [
+			"Bosogo"
+		]
+	},
+	"bs-statistics-year": "Жыл",
+	"bs-statistics-month": "Ай",
+	"bs-statistics-day": "Күн",
+	"bs-statistics-list": "Тизме",
+	"bs-statistics-filters": "Чыпкалар",
+	"bs-statistics-label-name": "Аталыш",
+	"bs-statistics-label-registration": "Катталуу",
+	"bs-statistics-diag-number-of-pages": "Түзүлгөн барактардын саны",
+	"bs-statistics-label-page": "Барак",
+	"bs-statistics-label-creator": "Автор",
+	"bs-statistics-diag-number-of-edits": "Түзөтүүлөрдүн саны",
+	"bs-statistics-portlet-numberofedits": "Түзөтүүлөрдүн саны",
+	"bs-statistics-portlet-numberofpages": "Барактардын саны",
+	"bs-statistics-panel-title-result": "Натыйжа",
+	"bs-statistics-aggregated-report-filter-interval-day": "Күн",
+	"bs-statistics-aggregated-report-filter-interval-week": "Апта",
+	"bs-statistics-aggregated-report-filter-interval-month": "Ай",
+	"bs-statistics-aggregated-report-filter-interval-year": "Жыл",
+	"bs-statistics-aggregated-report-filter-page": "Барак"
+}

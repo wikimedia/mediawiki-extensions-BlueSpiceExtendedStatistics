@@ -106,5 +106,20 @@
 	"bs-statistics-aggregated-report-loading": "Laster inn data …",
 	"bs-statistics-ve-progressinspector-title": "Framgang",
 	"bs-statistics-ve-progress-attr-width-label": "Bredde",
-	"bs-statistics-droplet-progress-name": "Framgang"
+	"bs-statistics-droplet-progress-name": "Framgang",
+	"apihelp-query+statistics-reports-summary": "Gir statistikkrapporter for ulike statistikktyper",
+	"apihelp-query+statistics-reports-example": "Oppgi alle rapporter av typen «mytype» for datoene 2021-09-14 og 2021-09-15",
+	"apihelp-query+statistics-reports-param-type": "Statistikktype (rapportnøkkel)",
+	"apihelp-query+statistics-reports-param-filter": "JSON-kodede filterdata",
+	"bs-statistics-aggregated-report-no-date": "Ingen data for nåværende filtersett, endre filterverdiene",
+	"bs-statistics-pref-excludeusers-help": "Noen brukere, f.eks. med administratorrettigheter, kan forvrenge statistikkene på Special:ExtendedStatistics. De kan ekskluderes fra statistiske resultater.",
+	"bs-statistics-tag-progress-desc": "Genererer en fremdriftslinje. Verdien avhenger av utseendet til angitt tekst i brødteksten og en øvre grense definert av brukeren.",
+	"bs-statistics-ve-progress-attr-basecount-label": "Grunntall",
+	"bs-statistics-ve-progress-attr-basecount-help": "Angir øvre grense på hvor ofte det gitte fremdriftselementet må forekomme på siden for at fremdriftslinja skal fylles helt",
+	"bs-statistics-ve-progress-attr-baseitem-label": "Grunnelement",
+	"bs-statistics-ve-progress-attr-baseitem-help": "Alternativ til grunntallet der tekst kan brukes for å regne ut framgangen. Antall forekomster av grunnelementet i teksten settes i forhold til antall forekomster i framgangselementet og indikerer dermed framgangen",
+	"bs-statistics-ve-progress-attr-progressitem-label": "Fremdriftselement",
+	"bs-statistics-ve-progress-attr-progressitem-help": "Tekst i brødtekst som definerer fremgang",
+	"bs-statistics-ve-progress-attr-width-help": "Bredde på fremdriftslinje i piksler",
+	"bs-statistics-droplet-progress-description": "Visualiserer fremgang mot gitte målevariabler"
 }
