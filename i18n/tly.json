@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Patriot Kor"
+			"Patriot Kor",
+			"Гусейн"
 		]
 	},
 	"bs-statistics-to": "Bə",
+	"bs-statistics-filter-category": "Kategorijə",
 	"bs-statistics-button-label-export": "İxroc"
 }
