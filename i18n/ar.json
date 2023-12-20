@@ -9,7 +9,8 @@
 			"Sonic N800",
 			"أَحمد",
 			"ديفيد",
-			"محمد أحمد عبد الفتاح"
+			"محمد أحمد عبد الفتاح",
+			"علاء"
 		]
 	},
 	"bs-statistics-desc": "وحدة إحصائيات لـBlueSpice",
@@ -27,7 +28,7 @@
 	"bs-statistics-week": "أسبوع التقويم",
 	"bs-statistics-day": "يوم",
 	"bs-statistics-list": "قائمة",
-	"bs-statistics-not-allowed": "ليست لديك الصلاحية اللازمة.",
+	"bs-statistics-not-allowed": "ليس لديك الصلاحية اللازمة.",
 	"bs-statistics-finish": "إنشاء رسم بياني",
 	"bs-statistics-filters": "مرشحات",
 	"bs-statistics-interval-too-big": "الفاصل كبير جدا; يجب ألا يحتوي على أكثر من 35 خطوة فاصلة.",
