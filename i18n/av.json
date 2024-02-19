@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Augustus A C",
 			"Gazimagomedov",
 			"Omarov M.",
 			"Аль-Гимравий"
@@ -29,5 +30,6 @@
 	"bs-statistics-filter-searchscope": "Балагьиялъул бутӀалъи",
 	"bs-statistics-portlet-numberofpages": "Гьумеразул къадар",
 	"bs-statistics-portlet-numberofeditsdesc": "Хисизариязул къадаралъул статистика",
-	"bs-statistics-portletconfig-periodday": "НолӀ"
+	"bs-statistics-portletconfig-periodday": "НолӀ",
+	"bs-statistics-portlet-numberofedits": "Хисизариязул рикӀкӀен"
 }
