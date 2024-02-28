@@ -23,13 +23,13 @@
 	"bs-statistics-diag-number-of-pages": "Гьарурал гьумеразул къадар",
 	"bs-statistics-label-page": "Гьумер",
 	"bs-statistics-label-creator": "Автор",
-	"bs-statistics-diag-number-of-edits": "Хисизариязул къадар",
+	"bs-statistics-diag-number-of-edits": "Хисизариязул рикӀкӀен",
 	"bs-statistics-label-searchterm": "Балагьиялъулаб термин",
 	"bs-statistics-label-maxhits": "Максималияб хӀасил",
 	"bs-statistics-filter-category": "Категория",
 	"bs-statistics-filter-searchscope": "Балагьиялъул бутӀалъи",
 	"bs-statistics-portlet-numberofedits": "Хисизариязул рикӀкӀен",
-	"bs-statistics-portlet-numberofpages": "Гьумеразул къадар",
+	"bs-statistics-portlet-numberofpages": "Гьумеразул рикӀкӀен",
 	"bs-statistics-portlet-numberofeditsdesc": "Хисизариязул къадаралъул статистика",
 	"bs-statistics-portletconfig-periodday": "НолӀ"
 }
