@@ -61,7 +61,7 @@ class BsFilterNamespace extends BsMultiSelectFilter {
 	 * @return array List of strings
 	 */
 	public function loadAvailableValues() {
-		return BsNamespaceHelper::getNamespacesForSelectOptions( [ -2,-1 ] );
+		return BsNamespaceHelper::getNamespacesForSelectOptions( [ -2, -1 ] );
 	}
 
 	// TODO MRG (22.12.10 00:56): Diese funktion überschreibt parent. das sollte man besser lösen
