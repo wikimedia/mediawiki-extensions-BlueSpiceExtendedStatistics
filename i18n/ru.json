@@ -12,7 +12,8 @@
 			"Tanzun",
 			"Vlad5250",
 			"Аль-Гимравий",
-			"Умар"
+			"Умар",
+			"Yurina Tatiana"
 		]
 	},
 	"bs-statistics-desc": "Модуль статистики для BlueSpice",
@@ -103,5 +104,6 @@
 	"bs-statistics-aggregated-report-loading": "Идёт загрузка данных…",
 	"bs-statistics-ve-progressinspector-title": "Прогресс",
 	"bs-statistics-ve-progress-attr-progressitem-help": "Текст, который появляется в теле, определяет прогресс",
-	"bs-statistics-ve-progress-attr-width-label": "Ширина"
+	"bs-statistics-ve-progress-attr-width-label": "Ширина",
+	"bs-statistics-droplet-progress-name": "Прогресс"
 }
