@@ -111,16 +111,7 @@
 	"bs-statistics-aggregated-report-error": "發生錯誤！",
 	"bs-statistics-aggregated-report-loading": "正在載入資料…",
 	"bs-statistics-pref-excludeusers-help": "對於某些使用者，例如具有管理員權限的人，可以篡改頁面 Special:ExtendedStatistics 的統計內容。他們可以從統計結果裡排除。",
-	"bs-statistics-tag-progress-desc": "產生進度條。該值取決於正文中給定文字的外觀以及使用者定義的上限。",
 	"bs-statistics-ve-progressinspector-title": "進度",
-	"bs-statistics-ve-progress-attr-basecount-label": "鹼基數",
-	"bs-statistics-ve-progress-attr-basecount-help": "指定給定進度元素必須在頁面上出現的頻率上限才能完全填入進度條",
-	"bs-statistics-ve-progress-attr-baseitem-label": "基礎專案",
-	"bs-statistics-ve-progress-attr-baseitem-help": "替代基數，可以使用文字來計算進度。文本中基本項目的出現次數是根據進度項目的出現次數來設定的，從而指示進度",
-	"bs-statistics-ve-progress-attr-progressitem-label": "進度項",
-	"bs-statistics-ve-progress-attr-progressitem-help": "出現在正文中定義進度的文本",
 	"bs-statistics-ve-progress-attr-width-label": "寬度",
-	"bs-statistics-ve-progress-attr-width-help": "進度條的寬度（以像素為單位）",
-	"bs-statistics-droplet-progress-name": "進度",
-	"bs-statistics-droplet-progress-description": "根據給定的測量變數可視化進度"
+	"bs-statistics-droplet-progress-name": "進度"
 }
