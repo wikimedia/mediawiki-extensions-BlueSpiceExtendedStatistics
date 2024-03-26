@@ -13,6 +13,8 @@
  * @filesource
  */
 
+use MediaWiki\MediaWikiServices;
+
 /**
  * Describes category filter for Statistics for BlueSpice.
  * @package    BlueSpice_Extensions
@@ -68,9 +70,9 @@ class BsFilterCategory extends BsMultiSelectFilter {
 		$aCategories = [];
 		// TODO MRG (20.02.11 23:51): i18n geht noch nicht so recht
 		$aCategories[wfMessage( 'bs-ns_all' )->text()] = '(all)';
-		// TODO MRG (22.12.10 01:19): Greift auf MW zu
-		$oDbr = wfGetDB( DB_REPLICA );
-		$rRes = $oDbr->select( 'categorylinks', 'distinct cl_to', '', '', [ 'ORDER BY' => 'cl_to ASC' ] );
+		$dbr = MediaWikiServices::getInstance()->getDBLoadBalancer()
+			->getConnection( DB_REPLICA );
+		$rRes = $dbr->select( 'categorylinks', 'distinct cl_to', '', '', [ 'ORDER BY' => 'cl_to ASC' ] );
 		foreach ( $rRes as $oRow ) {
 			$aCategories[$oRow->cl_to] = $oRow->cl_to;
 		}
