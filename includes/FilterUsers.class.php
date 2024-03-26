@@ -63,8 +63,9 @@ class BsFilterUsers extends BsMultiSelectFilter {
 	 */
 	public function loadAvailableValues() {
 		$aUserNames = [];
-		$oDbr = wfGetDB( DB_REPLICA );
-		$rRes = $oDbr->select( 'user', 'distinct user_name', '', '', [ 'ORDER BY' => 'user_name ASC' ] );
+		$dbr = MediaWikiServices::getInstance()->getDBLoadBalancer()
+			->getConnection( DB_REPLICA );
+		$rRes = $dbr->select( 'user', 'distinct user_name', '', '', [ 'ORDER BY' => 'user_name ASC' ] );
 		foreach ( $rRes as $oRow ) {
 			$aUserNames[$oRow->user_name] = $oRow->user_name;
 		}
