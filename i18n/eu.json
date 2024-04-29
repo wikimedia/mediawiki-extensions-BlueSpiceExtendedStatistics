@@ -3,11 +3,12 @@
 		"authors": [
 			"An13sa",
 			"Mikel Ibaiba",
-			"Subi"
+			"Subi",
+			"Xabier Armendaritz"
 		]
 	},
 	"bs-statistics-diagram": "Kontsulta",
-	"bs-statistics-from": "Nondik",
+	"bs-statistics-from": "\/",
 	"bs-statistics-to": "Hartzailea",
 	"bs-statistics-mode": "Modua",
 	"bs-statistics-aggregated": "gehituta",
