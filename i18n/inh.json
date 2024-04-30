@@ -2,11 +2,11 @@
 	"@metadata": {
 		"authors": [
 			"Adam-Yourist",
-			"\u04c0\u0430\u0431\u0434\u0443\u0440\u0440\u0430\u0448\u0438\u0434"
+			"Ӏабдуррашид"
 		]
 	},
-	"bs-statistics-day": "\u0414\u0438",
-	"bs-statistics-filters": "\u0424\u0438\u043b\u044c\u0442\u0440\u0430\u0448",
-	"bs-statistics-ve-progress-attr-width-label": "\u0428\u043e\u0440\u0430\u043b",
-	"bs-statistics-aggregated-report-filter-user-multi": "\u0414\u043e\u0430\u043a\u044a\u0430\u0448\u0445\u043e\u0439"
+	"bs-statistics-day": "Ди",
+	"bs-statistics-filters": "Фильтраш",
+	"bs-statistics-ve-progress-attr-width-label": "Шорал",
+	"bs-statistics-aggregated-report-filter-user-multi": "Доакъашхой"
 }
