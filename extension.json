@@ -168,7 +168,6 @@
 	},
 	"load_composer_autoloader": true,
 	"Hooks": {
-		"ChameleonSkinTemplateOutputPageBeforeExec": "\\BlueSpice\\ExtendedStatistics\\Hook\\ChameleonSkinTemplateOutputPageBeforeExec\\AddExtendedStatistics::callback",
 		"LoadExtensionSchemaUpdates": "\\BlueSpice\\ExtendedStatistics\\Hook\\LoadExtensionSchemaUpdates\\AddSnapshotTable::callback",
 		"BSUsageTrackerRegisterCollectors": "\\BlueSpice\\ExtendedStatistics\\Hook\\BSUsageTrackerRegisterCollectors\\AddStatisticsProgressTag::callback",
 		"BSDashboardsAdminDashboardPortalConfig": "\\BlueSpice\\ExtendedStatistics\\Hook\\BSDashboardsAdminDashboardPortalConfig\\AddConfigs::callback",
