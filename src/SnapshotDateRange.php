@@ -10,21 +10,37 @@ class SnapshotDateRange {
 
 	/**
 	 * @param array $data
+	 * @param string $interval
 	 * @param string $format
+	 *
 	 * @return static
+	 * @throws \Exception
 	 */
-	public static function newFromFilterData( $data, $format = 'Ymd' ) {
+	public static function newFromFilterData( $data, $interval, $format = 'Ymd' ) {
 		if ( $format === 'Ymd' ) {
-			return new static(
-				SnapshotDate::newFromMWTimestamp( $data['dateStart'] ),
-				SnapshotDate::newFromMWTimestamp( $data['dateEnd'] )
-			);
+			$startDate = SnapshotDate::newFromMWTimestamp( $data['dateStart'] );
+			$endDate = SnapshotDate::newFromMWTimestamp( $data['dateEnd'] );
 		} else {
-			return new static(
-				SnapshotDate::newFromFormat( $data['dateStart'], $format ),
-				SnapshotDate::newFromFormat( $data['dateEnd'], $format )
-			);
+			$startDate = SnapshotDate::newFromFormat( $data['dateStart'], $format );
+			$endDate = SnapshotDate::newFromFormat( $data['dateEnd'], $format );
 		}
+
+		if ( $interval === Snapshot::INTERVAL_WEEK ) {
+			$startDate->modify( 'monday this week' );
+			$endDate->modify( 'sunday this week' );
+		}
+
+		if ( $interval === Snapshot::INTERVAL_MONTH ) {
+			$startDate->modify( 'first day of this month' );
+			$endDate->modify( 'last day of this month' );
+		}
+
+		if ( $interval === Snapshot::INTERVAL_YEAR ) {
+			$startDate->modify( 'first day of january this year' );
+			$endDate->modify( 'last day of december this year' );
+		}
+
+		return new static( $startDate, $endDate );
 	}
 
 	/**
