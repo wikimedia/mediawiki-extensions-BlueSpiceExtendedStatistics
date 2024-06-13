@@ -72,7 +72,7 @@ class ImportDummyData extends Maintenance {
 		$this->loadNamespaceList();
 		$this->loadCategoryList();
 
-		$this->parameters['term'] = implode( ',', $this->terms );
+		$this->parameters->addOption( 'term', implode( ',', $this->terms ) );
 
 		foreach ( $this->providerFactory->getAll() as $key => $provider ) {
 			$this->processProvider( $key, $provider );
