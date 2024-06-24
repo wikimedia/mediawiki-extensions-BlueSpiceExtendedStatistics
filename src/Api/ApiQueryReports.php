@@ -107,10 +107,10 @@ class ApiQueryReports extends \ApiQueryBase {
 	}
 
 	private function getFiltered( $type ) {
-		$range = SnapshotDateRange::newFromFilterData( $this->filter['date'], 'Y-m-d' );
-		unset( $this->filter['date'] );
 		$interval = $this->filter['interval'];
 		unset( $this->filter['interval'] );
+		$range = SnapshotDateRange::newFromFilterData( $this->filter['date'], $interval, 'Y-m-d' );
+		unset( $this->filter['date'] );
 		/** @var ISnapshotProvider $provider */
 		$provider = $this->providerFactory->get( $type );
 		$snapshots = $this->snapshotStore->getSnapshotForRange( $range, $type, $interval );
