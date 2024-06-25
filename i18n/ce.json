@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Исмаил Садуев",
 			"Умар"
 		]
 	},
@@ -64,7 +65,7 @@
 	"bs-statistics-aggregated-report-filter-page": "АгӀо",
 	"bs-statistics-aggregated-report-filter-user": "Декъашхо",
 	"bs-statistics-aggregated-report-filter-user-multi": "Декъашхой",
-	"bs-statistics-aggregated-report-loading": "Хаамаш чубохуш бу...",
+	"bs-statistics-aggregated-report-loading": "Хаамаш дӀахӀуьттуш бу...",
 	"bs-statistics-ve-progressinspector-title": "Прогресс",
 	"bs-statistics-ve-progress-attr-width-label": "Шоралла",
 	"bs-statistics-droplet-progress-name": "Прогресс"
