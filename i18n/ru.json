@@ -108,5 +108,6 @@
 	"bs-statistics-ve-progressinspector-title": "Прогресс",
 	"bs-statistics-ve-progress-attr-progressitem-help": "Текст, который появляется в теле, определяет прогресс",
 	"bs-statistics-ve-progress-attr-width-label": "Ширина",
-	"bs-statistics-droplet-progress-name": "Прогресс"
+	"bs-statistics-droplet-progress-name": "Прогресс",
+	"aggregatedstatistic": "Статистика снимка"
 }
