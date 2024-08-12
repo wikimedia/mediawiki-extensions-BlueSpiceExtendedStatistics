@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"W"
+			"W",
+			"Renessaince"
 		]
 	},
 	"bs-statistics-year": "Год",
@@ -23,5 +24,6 @@
 	"bs-statistics-portletconfig-periodday": "Учора",
 	"bs-statistics-panel-title-result": "Вынік",
 	"bs-statistics-datasource-label": "Крыніца зьвестак",
-	"bs-statistics-paging-page-size": "Памер старонкі"
+	"bs-statistics-paging-page-size": "Памер старонкі",
+	"bs-statistics-aggregated-report-loading": "Загрузка зьвестак…"
 }
