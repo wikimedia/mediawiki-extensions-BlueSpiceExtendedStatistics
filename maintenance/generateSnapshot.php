@@ -120,7 +120,7 @@ class GenerateSnapshot extends Maintenance {
 				break;
 			case Snapshot::INTERVAL_MONTH:
 				$range = SnapshotDateRange::newLastMonth();
-				$stepDownInterval = Snapshot::INTERVAL_WEEK;
+				$stepDownInterval = Snapshot::INTERVAL_DAY;
 				$identifier = $range->getFrom()->format( 'F' );
 				break;
 			case Snapshot::INTERVAL_YEAR:

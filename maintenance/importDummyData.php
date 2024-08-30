@@ -1,8 +1,11 @@
 <?php
 
 use BlueSpice\ExtendedStatistics\ISnapshotProvider;
+use BlueSpice\ExtendedStatistics\PageHitsSnapshot;
 use BlueSpice\ExtendedStatistics\Snapshot;
 use BlueSpice\ExtendedStatistics\SnapshotDate;
+use BlueSpice\ExtendedStatistics\SnapshotDateRange;
+use BlueSpice\ExtendedStatistics\SnapshotFactory;
 use MediaWiki\MediaWikiServices;
 use Wikimedia\Rdbms\IDatabase;
 
@@ -17,14 +20,9 @@ class ImportDummyData extends Maintenance {
 	private $namespaceInfo;
 
 	/**
-	 *
 	 * @var array
 	 */
-	private $collection = [
-		'week' => [],
-		'month' => [],
-		'year' => []
-	];
+	private $collection = [];
 
 	/**
 	 *
@@ -50,6 +48,9 @@ class ImportDummyData extends Maintenance {
 	/** @var string[] */
 	private $categoryList = [];
 
+	/** @var SnapshotFactory */
+	private SnapshotFactory $snapshotFactory;
+
 	/**
 	 *
 	 */
@@ -60,8 +61,9 @@ class ImportDummyData extends Maintenance {
 	}
 
 	/**
-	 *
 	 * @return void
+	 * @throws MWException
+	 * @throws ReflectionException
 	 */
 	public function execute() {
 		$this->setServices();
@@ -115,18 +117,15 @@ class ImportDummyData extends Maintenance {
 	 *
 	 * @param string $key
 	 * @param ISnapshotProvider $provider
+	 *
 	 * @return void
+	 * @throws Exception
 	 */
 	private function processProvider( $key, ISnapshotProvider $provider ) {
-		$file = __DIR__ . '/../doc/snapshotData/' . $key . '.json';
-		if ( !file_exists( $file ) ) {
-			$this->output( "File $file does not exist!\n" );
-			return;
-		}
-		$template = json_decode( file_get_contents( $file ), 1 );
-		if ( !$template ) {
-			$this->output( "Template for $key not readable!\n" );
-			return;
+		try {
+			$template = $this->loadTemplate( $key );
+		} catch ( Exception $e ) {
+			$this->output( $e->getMessage() );
 		}
 
 		$days = (int)$this->getOption( 'days', 365 );
@@ -134,34 +133,70 @@ class ImportDummyData extends Maintenance {
 		$date = ( clone $today )->sub( new DateInterval( "P{$days}D" ) );
 		while ( $date->format( 'Ymd' ) !== $today->format( 'Ymd' ) ) {
 			$date->add( new DateInterval( "P1D" ) );
+
 			if ( (int)$date->format( 'N' ) === 1 ) {
 				$this->insertAggregate(
-					$provider, Snapshot::INTERVAL_WEEK,
-					( clone $date )->sub( new DateInterval( 'P1W' ) ), Snapshot::INTERVAL_MONTH
+					$provider,
+					Snapshot::INTERVAL_WEEK,
+					( clone $date )->sub( new DateInterval( 'P1W' ) )
 				);
 			}
 			if ( (int)$date->format( 'j' ) === 1 ) {
 				$this->insertAggregate(
-					$provider, Snapshot::INTERVAL_MONTH,
-					( clone $date )->sub( new DateInterval( 'P1M' ) ), Snapshot::INTERVAL_YEAR
+					$provider,
+					Snapshot::INTERVAL_MONTH,
+					( clone $date )->sub( new DateInterval( 'P1M' ) )
 				);
 			}
 			if ( $date->format( 'jn' ) === "11" ) {
 				$this->insertAggregate(
-					$provider, Snapshot::INTERVAL_YEAR,
+					$provider,
+					Snapshot::INTERVAL_YEAR,
 					( clone $date )->sub( new DateInterval( 'P1Y' ) )
 				);
 			}
+
 			$snapshotDate = SnapshotDate::newFromFormat( $date->format( 'Ymd' ), 'Ymd' );
-			$snapshot = new Snapshot(
-				$snapshotDate, $key, $this->processTemplate( $template ), Snapshot::INTERVAL_DAY
-			);
-			$this->snapshotStore->persistSnapshot( $snapshot );
-			if ( !isset( $this->collection[Snapshot::INTERVAL_WEEK][$key] ) ) {
-				$this->collection[Snapshot::INTERVAL_WEEK][$key] = [];
+			$data = $this->processTemplate( $template );
+
+			// Add hitDiff and previous hits to PageHits data
+			if ( $key === PageHitsSnapshot::TYPE ) {
+				$previous = $this->snapshotStore->getPrevious( clone $snapshotDate, PageHitsSnapshot::TYPE );
+
+				foreach ( $data as $page => &$pageData ) {
+					$pageData['hitDiff'] = 0;
+
+					if ( $previous ) {
+						$previousHits = $previous->getData()[$page]['hits'];
+						$pageData['hits'] += $previousHits;
+						$pageData['hitDiff'] = $pageData['hits'] - $previousHits;
+					}
+				}
 			}
-			$this->collection[Snapshot::INTERVAL_WEEK][$key][] = $snapshot;
+
+			$this->insertSingle( $snapshotDate, $data, $key );
 		}
+	}
+
+	/**
+	 * @param string $key
+	 *
+	 * @return array
+	 * @throws Exception
+	 */
+	private function loadTemplate( string $key, ): array {
+		$file = __DIR__ . '/../doc/snapshotData/' . $key . '.json';
+		if ( !file_exists( $file ) ) {
+			throw new Exception( "File $file does not exist!\n" );
+		}
+
+		$template = json_decode( file_get_contents( $file ), 1 );
+		if ( !$template ) {
+			$this->output( "Template for $key not readable!\n" );
+			throw new Exception( "Template for $key not readable!\n" );
+		}
+
+		return $template;
 	}
 
 	private function processTemplate( $template ) {
@@ -197,7 +232,7 @@ class ImportDummyData extends Maintenance {
 				}
 				if ( is_array( $parsed ) ) {
 					foreach ( $parsed as $key ) {
-						$data[$key] = $this->processValue( $value['value' ] );
+						$data[$key] = $this->processValue( $value['value'] );
 					}
 				}
 			} else {
@@ -240,6 +275,7 @@ class ImportDummyData extends Maintenance {
 		);
 		$this->snapshotStore = $services->getService( 'ExtendedStatisticsSnapshotStore' );
 		$this->namespaceInfo = $services->getNamespaceInfo();
+		$this->snapshotFactory = $services->getService( 'ExtendedStatisticsSnapshotFactory' );
 	}
 
 	/**
@@ -258,26 +294,65 @@ class ImportDummyData extends Maintenance {
 	}
 
 	/**
+	 * @param SnapshotDate $snapshotDate
+	 * @param array $data
+	 * @param string $key
+	 *
+	 * @return void
+	 */
+	private function insertSingle( SnapshotDate $snapshotDate, array $data, string $key ): void {
+		$snapshot = $this->snapshotFactory->createSnapshot( $snapshotDate, $key, $data );
+		$this->snapshotStore->persistSnapshot( $snapshot );
+
+		if ( !isset( $this->collection[$key] ) ) {
+			$this->collection[$key] = [];
+		}
+		$this->collection[$key][] = $snapshot;
+	}
+
+	/**
 	 * @param ISnapshotProvider $provider
 	 * @param string $interval
 	 * @param DateTime $date
-	 * @param string|null $nextInterval
+	 *
+	 * @throws Exception
 	 */
 	private function insertAggregate(
-		ISnapshotProvider $provider, $interval, DateTime $date, $nextInterval = null
-	) {
-		if ( !empty( $this->collection[$interval][$provider->getType()] ) ) {
-			$new = $provider->aggregate(
-				$this->collection[$interval][$provider->getType()], $interval,
-				SnapshotDate::newFromFormat( $date->format( 'Ymd' ), 'Ymd' )
-			);
-			$this->snapshotStore->persistSnapshot( $new );
-			$this->collection[$interval][$provider->getType()] = [];
-			if ( $nextInterval ) {
-				$this->collection[$nextInterval][$provider->getType()][] = $new;
-			}
-
+		ISnapshotProvider $provider,
+		string $interval,
+		DateTime $date
+	): void {
+		if ( empty( $this->collection[$provider->getType()] ) ) {
+			return;
 		}
+
+		$new = $provider->aggregate(
+			$this->getSnapshotsForRange( $provider->getType(), $interval, $date ),
+			$interval,
+			SnapshotDate::newFromFormat( $date->format( 'Ymd' ), 'Ymd' )
+		);
+		$this->snapshotStore->persistSnapshot( $new );
+	}
+
+	/**
+	 * @param string $type
+	 * @param string $interval
+	 * @param DateTime $date
+	 *
+	 * @return Snapshot[]
+	 * @throws Exception
+	 */
+	private function getSnapshotsForRange( string $type, string $interval, DateTime $date ): array {
+		$range = SnapshotDateRange::newFromFilterData( [
+			'dateStart' => $date->format( 'Ymd' ),
+			'dateEnd' => $date->format( 'Ymd' ),
+		], $interval );
+
+		return array_filter(
+			$this->collection[$type],
+			fn( Snapshot $snapshot ) => $snapshot->getDate() >= $range->getFrom() &&
+				$snapshot->getDate() <= $range->getTo()
+		);
 	}
 }
 
