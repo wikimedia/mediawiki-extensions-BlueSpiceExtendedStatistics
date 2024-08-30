@@ -70,7 +70,7 @@
 			"SnapshotStores": {
 				"database": {
 					"class": "BlueSpice\\ExtendedStatistics\\SnapshotStore\\DatabaseStore",
-					"services": [ "DBLoadBalancer" ]
+					"services": [ "DBLoadBalancer", "ExtendedStatisticsSnapshotFactory" ]
 				}
 			},
 			"DiagramRegistry": {
