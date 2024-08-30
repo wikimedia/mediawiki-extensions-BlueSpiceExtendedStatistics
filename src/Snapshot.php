@@ -15,7 +15,7 @@ class Snapshot implements JsonSerializable {
 	/** @var string */
 	private $type;
 	/** @var array|null */
-	private $data;
+	protected $data;
 	/** @var string */
 	private $interval;
 
