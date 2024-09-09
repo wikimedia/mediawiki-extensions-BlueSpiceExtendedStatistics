@@ -110,6 +110,7 @@
 	"bs-statistics-aggregated-report-loading": "Loading notice",
 	"bs-statistics-pref-excludeusers-help": "Description for config variable \"StatisticsExcludeUsers\"",
 	"bs-statistics-tag-progress-desc": "Description of the progress tag shown in the VisualEditor tag inspector",
+	"bs-statistics-tag-progress-label-text": "Label text of the progress bar shown in published pages, so that screen reader users know the percentage number $1 shown by the progress bar",
 	"bs-statistics-ve-progressinspector-title": "Title for the progress tag VisualEditor inspector\n{{identical|Progress}}",
 	"bs-statistics-ve-progress-attr-basecount-label": "Label for the parameter \"basecount\"",
 	"bs-statistics-ve-progress-attr-basecount-help": "Help message for the parameter \"basecount\"",
