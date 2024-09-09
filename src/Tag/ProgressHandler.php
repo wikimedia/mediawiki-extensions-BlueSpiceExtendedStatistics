@@ -4,6 +4,8 @@ namespace BlueSpice\ExtendedStatistics\Tag;
 
 use BlueSpice\Tag\Handler;
 use BsPageContentProvider;
+use Html;
+use Message;
 use RequestContext;
 
 class ProgressHandler extends Handler {
@@ -43,16 +45,24 @@ class ProgressHandler extends Handler {
 
 		$sPercent = sprintf( "%0.1f", $fPercent * 100 );
 
-		$sOut = '<div style="background-color:green;border:2px solid #DDDDDD;width:'
-			. $iWidthGreen
-			. 'px;height:25px;float:left;color:#DDDDDD;text-align:center;border-right:'
-			. '0px;text-weight:bold;vertical-align:middle;">'
-			. $sPercent
-			. '%</div>';
-		$sOut .= '<div style="border:2px solid #DDDDDD;border-left:0px;width:'
-			. $iWidthRemain
-			. 'px;height:25px;float:left;"></div>';
+		$sProgressAtLabel = Message::newFromKey( 'bs-statistics-tag-progress-label-text', $sPercent )->text();
 
+		$sOut = Html::rawElement(
+			'div',
+			[
+				'class' => 'progress',
+				'style' => 'height: 25px; width:' . $iWidth . 'px;',
+				'aria-label' => $sProgressAtLabel,
+			],
+			Html::element(
+				'div',
+				[
+					'class' => 'progress-bar bg-success',
+					'style' => 'width:' . $sPercent . '%;',
+				],
+				$sPercent . '%'
+			)
+		);
 		return $sOut;
 	}
 }
