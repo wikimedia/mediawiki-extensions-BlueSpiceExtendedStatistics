@@ -107,6 +107,7 @@
 	"bs-statistics-aggregated-report-loading": "Loading data...",
 	"bs-statistics-pref-excludeusers-help": "Some users, e.g. with admin rights, can distort the statistcs on the page Special:ExtendedStatistics. They can be excluded from statistical results.",
 	"bs-statistics-tag-progress-desc": "Generates a progress bar. The value depends on the appearance of a given text found in the body and an upper limit defined by the user.",
+	"bs-statistics-tag-progress-label-text": "Progress bar at position $1%",
 	"bs-statistics-ve-progressinspector-title": "Progress",
 	"bs-statistics-ve-progress-attr-basecount-label": "Base count",
 	"bs-statistics-ve-progress-attr-basecount-help": "Specifies upper limit how often the given progress element must occur on the page for the progress bar to be filled completely",
