@@ -44,15 +44,11 @@ class ProgressHandler extends Handler {
 		$iWidthRemain = $iWidth - $iWidthGreen;
 
 		$sPercent = sprintf( "%0.1f", $fPercent * 100 );
-
-		$sProgressAtLabel = Message::newFromKey( 'bs-statistics-tag-progress-label-text', $sPercent )->text();
-
-		$sOut = Html::rawElement(
+		$sBar = Html::rawElement(
 			'div',
 			[
 				'class' => 'progress',
 				'style' => 'height: 25px; width:' . $iWidth . 'px;',
-				'aria-label' => $sProgressAtLabel,
 			],
 			Html::element(
 				'div',
@@ -63,6 +59,7 @@ class ProgressHandler extends Handler {
 				$sPercent . '%'
 			)
 		);
+		$sOut = Message::newFromKey( 'bs-statistics-tag-progress-label-text', $sBar )->text();
 		return $sOut;
 	}
 }
