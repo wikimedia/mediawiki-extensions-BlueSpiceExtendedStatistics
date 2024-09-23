@@ -8,7 +8,8 @@
 			"Thibaut120094",
 			"Verdy p",
 			"Wladek92",
-			"Zarisi"
+			"Zarisi",
+			"Terio legale"
 		]
 	},
 	"bs-statistics-desc": "Module de statistiques pour BlueSpice",
@@ -114,6 +115,7 @@
 	"bs-statistics-aggregated-report-loading": "Chargement des données...",
 	"bs-statistics-pref-excludeusers-help": "Certains utilisateurs, par exemple ceux avec des droits d’administrateur, peuvent perturber les statistiques de la page Special:ExtendedStatistics. Ils peuvent être exclus des résultats statistiques.",
 	"bs-statistics-tag-progress-desc": "Génère une barre de progression. La valeur dépend de l’apparition d’un texte donné trouvé dans le corps et d’une limite maximale définie par l’utilisateur.",
+	"bs-statistics-tag-progress-label-text": "Barre de progression à la position $1 %",
 	"bs-statistics-ve-progressinspector-title": "Progression",
 	"bs-statistics-ve-progress-attr-basecount-label": "Compteur de base",
 	"bs-statistics-ve-progress-attr-basecount-help": "Spécifie la limite supérieure du nombre de fois où l’élément de progression donné doit se trouver sur la page pour que la barre de progression soit complètement remplie",
