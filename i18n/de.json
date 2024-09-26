@@ -112,6 +112,7 @@
 	"bs-statistics-aggregated-report-loading": "Daten werden geladen …",
 	"bs-statistics-pref-excludeusers-help": "Manche Benutzer, z.B. mit Admin-Rechten, können die Statistik auf der Seite Spezial:ExtendedStatistics verzerren. Sie können hier von den statistischen Ergebnissen ausgeschlossen werden.",
 	"bs-statistics-tag-progress-desc": "Generiert eine Fortschrittsanzeige. Der Wert hängt vom Auftreten eines gegebenen Textes im Textkörper und einer vom Benutzer bestimmten Obergrenze ab.",
+	"bs-statistics-tag-progress-label-text": "<span class='visually-hidden'>Fortschrittsbalken bei</span> $1",
 	"bs-statistics-ve-progressinspector-title": "Fortschritt",
 	"bs-statistics-ve-progress-attr-basecount-label": "Basiszahl",
 	"bs-statistics-ve-progress-attr-basecount-help": "Gibt die Obergrenze an, wie oft das gegebene Fortschrittselement auf der Seite auftreten muss, damit der Fortschrittsbalken vollständig gefüllt ist",
