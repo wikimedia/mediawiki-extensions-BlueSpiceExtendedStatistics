@@ -113,6 +113,7 @@
 	"bs-statistics-aggregated-report-loading": "טעינת נתונים...",
 	"bs-statistics-pref-excludeusers-help": "משתמשים מסוימים, למשל עם הרשאות מפעיל, יכולים לסלף את הסטטיסטיקות בדף Special:ExtendedStatistics. אפשר להדיר אותם מתוצאות הסטטיסטיקה.",
 	"bs-statistics-tag-progress-desc": "יצירת סרגל התקדמות. הערך תלוי בהופעה של טקסט נתון שנמצא בגוף ובמגבלה העליונה שמוגדרת על־ידי המשתמש.",
+	"bs-statistics-tag-progress-label-text": "<span class='visually-hidden'>סרגל התקדמות:</span> $1%",
 	"bs-statistics-ve-progressinspector-title": "התקדמות",
 	"bs-statistics-ve-progress-attr-basecount-label": "ספירת בסיס",
 	"bs-statistics-ve-progress-attr-basecount-help": "הגדרת מגבלה עליונהשל התדירות שבה רכיב התקדמות נתון צריך להתרחש בדף כדי שסרגל התקדמות יתמלא.",
