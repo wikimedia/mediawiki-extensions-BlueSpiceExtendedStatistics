@@ -118,5 +118,6 @@
 	"bs-statistics-ve-progress-attr-width-label": "Širina",
 	"bs-statistics-ve-progress-attr-width-help": "Širina vrstice napredka v slikovnih pikah",
 	"bs-statistics-droplet-progress-name": "Napredek",
-	"bs-statistics-droplet-progress-description": "Prikaže napredek glede na dane merjene spremenljivke"
+	"bs-statistics-droplet-progress-description": "Prikaže napredek glede na dane merjene spremenljivke",
+	"bs-statistics-tag-progress-label-text": "<span class='visually-hidden'>Vrstica napredka na</span> $1"
 }

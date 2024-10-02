@@ -10,6 +10,7 @@
 			"Javiersanp",
 			"Macofe",
 			"MarcoAurelio",
+			"No se",
 			"SpikeShroom"
 		]
 	},
@@ -123,5 +124,6 @@
 	"bs-statistics-ve-progress-attr-width-label": "Anchura",
 	"bs-statistics-ve-progress-attr-width-help": "Ancho de la barra de progreso en píxeles",
 	"apihelp-bs-statistics-search-options-store-summary": "Proporciona una tienda con opciones de búsqueda disponibles",
-	"bs-statistics-droplet-progress-name": "Progreso"
+	"bs-statistics-droplet-progress-name": "Progreso",
+	"bs-statistics-tag-progress-label-text": "Barra de progreso en la posición $1%"
 }
