@@ -5,6 +5,7 @@
 			"Gomoko",
 			"Orikrin1998",
 			"Pols12",
+			"Terio legale",
 			"Thibaut120094",
 			"Verdy p",
 			"Wladek92",
@@ -124,5 +125,6 @@
 	"bs-statistics-ve-progress-attr-width-label": "Largeur",
 	"bs-statistics-ve-progress-attr-width-help": "Largeur de la barre de progression en pixels",
 	"bs-statistics-droplet-progress-name": "Avancement",
-	"bs-statistics-droplet-progress-description": "Visualise la progression des variables de mesure données"
+	"bs-statistics-droplet-progress-description": "Visualise la progression des variables de mesure données",
+	"bs-statistics-tag-progress-label-text": "Barre de progression à la position $1 %"
 }
