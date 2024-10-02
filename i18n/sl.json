@@ -104,6 +104,7 @@
 	"bs-statistics-aggregated-report-loading": "Nalaganje podatkov ...",
 	"bs-statistics-pref-excludeusers-help": "Nekateri uporabniki, npr. z administratorskimi pravicami, lahko popačijo statistiko na strani Special:ExtendedStatistics. Mogoče jih je izključiti iz statističnih rezultatov.",
 	"bs-statistics-tag-progress-desc": "Ustvari vrstico napredka. Vrednost je odvisna od videza danega besedila v telesu in zgornje meje, ki jo določi uporabnik.",
+	"bs-statistics-tag-progress-label-text": "<span class='visually-hidden'>Vrstica napredka na</span> $1",
 	"bs-statistics-ve-progressinspector-title": "Napredek",
 	"bs-statistics-ve-progress-attr-basecount-label": "Osnovno število",
 	"bs-statistics-ve-progress-attr-basecount-help": "Določa zgornjo mejo, kako pogosto se mora dani element napredka pojaviti na strani, da se vrstica napredka v celoti zapolni",
