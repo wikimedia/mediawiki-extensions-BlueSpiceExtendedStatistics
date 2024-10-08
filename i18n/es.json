@@ -112,7 +112,7 @@
 	"bs-statistics-aggregated-report-loading": "Cargando datos...",
 	"bs-statistics-pref-excludeusers-help": "Algunos usuarios, por ejemplo con derechos de administrador, pueden distorsionar las estadísticas en la página especial :ExtendedStatistics. Pueden ser excluidos de los resultados estadísticos.",
 	"bs-statistics-tag-progress-desc": "Genera una barra de progreso. El valor depende de la aparición de un texto determinado que se encuentra en el cuerpo y de un límite superior definido por el usuario.",
-	"bs-statistics-tag-progress-label-text": "Barra de progreso en la posición $1%",
+	"bs-statistics-tag-progress-label-text": "<span class='visually-hidden'>Barra de progreso en</span> $1",
 	"bs-statistics-ve-progressinspector-title": "Progreso",
 	"bs-statistics-ve-progress-attr-basecount-label": "Conteo de la base",
 	"bs-statistics-ve-progress-attr-basecount-help": "Especifica el límite superior de la frecuencia con la que el elemento de progreso dado debe aparecer en la página para que la barra de progreso se llene completamente",
