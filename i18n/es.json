@@ -125,5 +125,5 @@
 	"bs-statistics-ve-progress-attr-width-help": "Ancho de la barra de progreso en píxeles",
 	"apihelp-bs-statistics-search-options-store-summary": "Proporciona una tienda con opciones de búsqueda disponibles",
 	"bs-statistics-droplet-progress-name": "Progreso",
-	"bs-statistics-tag-progress-label-text": "Barra de progreso en la posición $1%"
+	"bs-statistics-tag-progress-label-text": "<span class='visually-hidden'>Barra de progreso en</span> $1"
 }

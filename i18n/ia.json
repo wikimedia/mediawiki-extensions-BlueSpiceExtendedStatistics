@@ -117,5 +117,6 @@
 	"bs-statistics-ve-progress-attr-width-label": "Latitude",
 	"bs-statistics-ve-progress-attr-width-help": "Latitude del barra de progresso in pixels",
 	"bs-statistics-droplet-progress-name": "Progresso",
-	"bs-statistics-droplet-progress-description": "Visualisa progresso contra variabiles de mesura fornite"
+	"bs-statistics-droplet-progress-description": "Visualisa progresso contra variabiles de mesura fornite",
+	"bs-statistics-tag-progress-label-text": "<span class='visually-hidden'>Barra de progresso a </span> $1"
 }
