@@ -9,9 +9,11 @@
 	"bs-statistics-month": "Määnpââʹjj",
 	"bs-statistics-day": "Peiʹvv",
 	"bs-statistics-list": "Listt",
+	"bs-statistics-filters": "Siʹllʼjeei",
 	"bs-statistics-label-name": "Nõmm",
 	"bs-statistics-label-page": "Seidd",
 	"bs-statistics-diag-number-of-edits": "Muttsi lååkkmieʹrr",
+	"bs-statistics-diag-search-queries": "Ooccâmkõjldõõzz",
 	"bs-statistics-label-searchterm": "Ooccâmsääʹnn",
 	"bs-statistics-filter-category": "Kategoria",
 	"bs-statistics-portlet-numberofedits": "Muttsi lååkkmieʹrr",
@@ -28,7 +30,5 @@
 	"bs-statistics-aggregated-report-filter-page": "Seidd",
 	"bs-statistics-aggregated-report-filter-user": "Õõʹnni",
 	"bs-statistics-aggregated-report-filter-user-multi": "Õõʹnni",
-	"bs-statistics-ve-progress-attr-width-label": "Kobddâdvuõtt",
-	"bs-statistics-filters": "Siʹllʼjeei",
-	"bs-statistics-diag-search-queries": "Ooccâmkõjldõõzz"
+	"bs-statistics-ve-progress-attr-width-label": "Kobddâdvuõtt"
 }

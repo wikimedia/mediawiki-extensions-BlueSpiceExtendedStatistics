@@ -90,6 +90,7 @@
 	"bs-statistics-paging-page-size": "Dimensioni pagina",
 	"apihelp-query+statistics-reports-summary": "Fornisce report statistici per vari tipi di statistiche",
 	"apihelp-query+statistics-reports-param-type": "Tipo di statistiche (chiave del rapporto)",
+	"bs-statistics-aggregated-report-picker-label": "Tipo di rapporto",
 	"bs-statistics-aggregated-report-filter-category-multi": "Categorie",
 	"bs-statistics-aggregated-report-filter-date-start": "Data inizio",
 	"bs-statistics-aggregated-report-filter-date-end": "Data fine",
@@ -109,6 +110,5 @@
 	"bs-statistics-tag-progress-desc": "Genera una barra di avanzamento. Il valore dipende dall'aspetto di un testo dato nel corpo e da un limite superiore definito dall'utente.",
 	"bs-statistics-ve-progressinspector-title": "Avanzamento",
 	"bs-statistics-ve-progress-attr-width-label": "Larghezza",
-	"bs-statistics-ve-progress-attr-width-help": "Larghezza della barra di avanzamento in pixel",
-	"bs-statistics-aggregated-report-picker-label": "Tipo di rapporto"
+	"bs-statistics-ve-progress-attr-width-help": "Larghezza della barra di avanzamento in pixel"
 }

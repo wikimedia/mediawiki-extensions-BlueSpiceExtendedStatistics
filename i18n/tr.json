@@ -99,6 +99,8 @@
 	"bs-statistics-aggregated-report-filter-interval-week": "Hafta",
 	"bs-statistics-aggregated-report-filter-interval-month": "Ay",
 	"bs-statistics-aggregated-report-filter-interval-year": "Yıl",
+	"bs-statistics-aggregated-report-filter-namespace": "Ad alanı",
+	"bs-statistics-aggregated-report-filter-namespaces": "Ad alanları",
 	"bs-statistics-aggregated-report-filter-page": "Sayfa",
 	"bs-statistics-aggregated-report-filter-user": "Kullanıcı",
 	"bs-statistics-aggregated-report-filter-user-multi": "Kullanıcılar",
@@ -109,7 +111,5 @@
 	"bs-statistics-ve-progress-attr-progressitem-label": "Süreç ögesi",
 	"bs-statistics-ve-progress-attr-progressitem-help": "Süreç ögesi yardımı",
 	"bs-statistics-ve-progress-attr-width-label": "Genişlik",
-	"bs-statistics-ve-progress-attr-width-help": "Genişlik yardımı",
-	"bs-statistics-aggregated-report-filter-namespace": "Ad alanı",
-	"bs-statistics-aggregated-report-filter-namespaces": "Ad alanları"
+	"bs-statistics-ve-progress-attr-width-help": "Genişlik yardımı"
 }
