@@ -184,7 +184,7 @@ class ImportDummyData extends Maintenance {
 	 * @return array
 	 * @throws Exception
 	 */
-	private function loadTemplate( string $key, ): array {
+	private function loadTemplate( string $key ): array {
 		$file = __DIR__ . '/../doc/snapshotData/' . $key . '.json';
 		if ( !file_exists( $file ) ) {
 			throw new Exception( "File $file does not exist!\n" );
