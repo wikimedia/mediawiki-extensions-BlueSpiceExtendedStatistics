@@ -115,6 +115,7 @@
 	"bs-statistics-aggregated-report-loading": "Gegevens laden...",
 	"bs-statistics-pref-excludeusers-help": "Sommige gebruikers, bv. met beheerdersrechten, kunnen de statistieken op de pagina Special:ExtendedStatistics vervormen. Zij kunnen worden uitgesloten van statistische resultaten.",
 	"bs-statistics-tag-progress-desc": "Genereert een voortgangsbalk. De waarde hangt af van het uiterlijk van een gegeven tekst uit de hoofdtekst en van een door de gebruiker gedefinieerde bovengrens.",
+	"bs-statistics-tag-progress-label-text": "<span class='visually-hidden'>Voortgangsbalk op </span> $1",
 	"bs-statistics-ve-progressinspector-title": "Voortgang",
 	"bs-statistics-ve-progress-attr-basecount-label": "Basisaantal",
 	"bs-statistics-ve-progress-attr-basecount-help": "Geeft de bovengrens aan van het aantal keren dat het gegeven voortgangselement op de pagina moet voorkomen om de voortgangsbalk volledig te vullen",
