@@ -1,5 +1,7 @@
 <?php
 
+namespace BlueSpice\ExtendedStatistics\Tests;
+
 use BlueSpice\ExtendedStatistics\ISnapshotStore;
 use BlueSpice\ExtendedStatistics\Snapshot;
 use BlueSpice\ExtendedStatistics\SnapshotDate;
