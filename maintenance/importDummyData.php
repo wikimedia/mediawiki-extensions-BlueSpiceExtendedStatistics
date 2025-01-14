@@ -350,7 +350,7 @@ class ImportDummyData extends Maintenance {
 
 		return array_filter(
 			$this->collection[$type],
-			fn( Snapshot $snapshot ) => $snapshot->getDate() >= $range->getFrom() &&
+			fn ( Snapshot $snapshot ) => $snapshot->getDate() >= $range->getFrom() &&
 				$snapshot->getDate() <= $range->getTo()
 		);
 	}

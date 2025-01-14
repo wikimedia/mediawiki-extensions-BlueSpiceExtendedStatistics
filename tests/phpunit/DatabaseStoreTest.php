@@ -26,7 +26,7 @@ class DatabaseStoreTest extends TestCase {
 	}
 
 	/**
-	 * @covers DatabaseStore::getSnapshotForRange
+	 * @covers \BlueSpice\ExtendedStatistics\SnapshotStore\DatabaseStore::getSnapshotForRange
 	 * @return void
 	 */
 	public function testGetSnapshotForRangeQuery(): void {
@@ -38,16 +38,16 @@ class DatabaseStoreTest extends TestCase {
 		$this->dbMock->method( 'timestamp' )->willReturn( 'mockTimestamp' );
 		$this->dbMock->method( 'addQuotes' )->willReturn( 'mockQuotes' );
 		$this->dbMock->expects( $this->once() )->method( 'select' )->with(
-			$this->equalTo( DatabaseStore::TABLE ),
-			$this->equalTo( DatabaseStore::FIELDS ),
-			$this->equalTo( $conds )
+			DatabaseStore::TABLE,
+			DatabaseStore::FIELDS,
+			$conds
 		)->willReturn( [] );
 		$snapshotDateRange = new SnapshotDateRange( new SnapshotDate(), new SnapshotDate() );
 		$this->snapshotStore->getSnapshotForRange( $snapshotDateRange );
 	}
 
 	/**
-	 * @covers DatabaseStore::hasSnapshot
+	 * @covers \BlueSpice\ExtendedStatistics\SnapshotStore\DatabaseStore::hasSnapshot
 	 * @return void
 	 * @throws Exception
 	 */
@@ -62,7 +62,7 @@ class DatabaseStoreTest extends TestCase {
 	}
 
 	/**
-	 * @covers DatabaseStore::hasSnapshot
+	 * @covers \BlueSpice\ExtendedStatistics\SnapshotStore\DatabaseStore::hasSnapshot
 	 * @return void
 	 * @throws Exception
 	 */
