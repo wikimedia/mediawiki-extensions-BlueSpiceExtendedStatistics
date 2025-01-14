@@ -140,6 +140,9 @@
 	"AutoloadNamespaces": {
 		"BlueSpice\\ExtendedStatistics\\": "src/"
 	},
+	"TestAutoloadNamespaces": {
+		"BlueSpice\\ExtendedStatistics\\Tests\\": "tests/phpunit/"
+	},
 	"AutoloadClasses": {
 		"BsStatisticsFilter": "includes/StatisticsFilter.class.php",
 		"BsSelectFilter": "includes/SelectFilter.class.php",
