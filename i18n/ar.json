@@ -125,5 +125,7 @@
 	"bs-statistics-ve-progress-attr-width-help": "عرض شريط التقدم بالبكسل",
 	"bs-statistics-droplet-progress-name": "التقدم",
 	"bs-statistics-droplet-progress-description": "يصور التقدم مقابل متغيرات القياس المحددة",
-	"bs-statistics-aggregated-report-filter-namespaces": "نطاقات"
+	"bs-statistics-aggregated-report-filter-namespaces": "نطاقات",
+	"bs-statistics-aggregated-report-filter-interval": "فاصلة",
+	"bs-statistics-tag-progress-label-text": "<span class='visually-hidden'>شريط التقدم عند</span> $1"
 }
