@@ -6,7 +6,7 @@ use BlueSpice\Tag\Handler;
 use BsPageContentProvider;
 use Html;
 use MediaWiki\Context\RequestContext;
-use Message;
+use MediaWiki\Message\Message;
 
 class ProgressHandler extends Handler {
 
