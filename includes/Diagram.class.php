@@ -13,6 +13,8 @@
  * @filesource
  */
 
+use MediaWiki\Config\Config;
+
 /**
  * Describes a diagram for Statistics for BlueSpice.
  * @package    BlueSpice_Extensions

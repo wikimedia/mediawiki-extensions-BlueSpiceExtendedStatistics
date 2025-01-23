@@ -4,7 +4,7 @@ namespace BlueSpice\ExtendedStatistics;
 
 use BlueSpice\ExtensionAttributeBasedRegistry;
 use BsDiagram;
-use Config;
+use MediaWiki\Config\Config;
 
 class DiagramFactory {
 	/**
