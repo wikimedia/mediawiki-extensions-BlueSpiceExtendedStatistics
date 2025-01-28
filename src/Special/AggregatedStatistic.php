@@ -5,7 +5,7 @@ namespace BlueSpice\ExtendedStatistics\Special;
 use BlueSpice\ExtendedStatistics\IReport;
 use BlueSpice\ExtendedStatistics\SnapshotDate;
 use DateInterval;
-use Html;
+use MediaWiki\Html\Html;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\SpecialPage\SpecialPage;
 
