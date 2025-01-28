@@ -7,7 +7,7 @@ use BlueSpice\ExtendedStatistics\SnapshotDate;
 use DateInterval;
 use Html;
 use MediaWiki\MediaWikiServices;
-use SpecialPage;
+use MediaWiki\SpecialPage\SpecialPage;
 
 class AggregatedStatistic extends SpecialPage {
 	/** @var AttributeRegistryFactory */
