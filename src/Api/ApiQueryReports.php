@@ -2,7 +2,6 @@
 
 namespace BlueSpice\ExtendedStatistics\Api;
 
-use ApiBase;
 use ApiQuery;
 use BlueSpice\ExtendedStatistics\AttributeRegistryFactory;
 use BlueSpice\ExtendedStatistics\IReport;
@@ -12,6 +11,7 @@ use BlueSpice\ExtendedStatistics\SnapshotDate;
 use BlueSpice\ExtendedStatistics\SnapshotDateRange;
 use DateInterval;
 use InvalidArgumentException;
+use MediaWiki\Api\ApiBase;
 use MediaWiki\MediaWikiServices;
 use Wikimedia\ParamValidator\ParamValidator;
 
