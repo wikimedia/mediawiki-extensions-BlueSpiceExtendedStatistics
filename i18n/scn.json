@@ -1,13 +1,14 @@
 {
 	"@metadata": {
 		"authors": [
-			"Ajeje Brazorf"
+			"Ajeje Brazorf",
+			"GianAntonucci"
 		]
 	},
 	"bs-statistics-year": "Annu",
 	"bs-statistics-month": "Misi",
 	"bs-statistics-day": "Jornu",
-	"bs-statistics-list": "Elencu",
+	"bs-statistics-list": "Lista",
 	"bs-statistics-filters": "Filtri",
 	"bs-statistics-diag-number-of-users": "Nùmmiri di utenti criati",
 	"bs-statistics-label-name": "Nomu",
@@ -25,7 +26,7 @@
 	"bs-statistics-portlet-numberofeditsdesc": "Statistìca dû nùmmiru di canciamentii.",
 	"bs-statistics-portlet-numberofpagesdesc": "Statistìca dû nùmmiru di pàggini.",
 	"bs-statistics-portlet-numberofarticlesdesc": "Statistìca dû nùmmiru di pàggini di cuntinutu.",
-	"bs-statistics-portletconfig-periodday": "Aieri",
+	"bs-statistics-portletconfig-periodday": "Ajeri",
 	"bs-statistics-panel-title-result": "Risurtatu",
 	"bs-statistics-aggregated-report-filter-category-multi": "Catigurìi",
 	"bs-statistics-aggregated-report-filter-interval-day": "Jornu",
