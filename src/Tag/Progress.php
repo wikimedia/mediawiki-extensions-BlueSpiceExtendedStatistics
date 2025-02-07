@@ -9,7 +9,7 @@ use BlueSpice\Tag\MarkerType;
 use BlueSpice\Tag\MarkerType\NoWiki;
 use BlueSpice\Tag\Tag;
 use MediaWiki\Parser\Parser;
-use PPFrame;
+use MediaWiki\Parser\PPFrame;
 
 class Progress extends Tag {
 	public const ATTR_BASE_COUNT = 'basecount';
