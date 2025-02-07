@@ -7,6 +7,7 @@ use BlueSpice\ExtendedStatistics\SnapshotDate;
 use BlueSpice\ExtendedStatistics\SnapshotDateRange;
 use BlueSpice\ExtendedStatistics\SnapshotFactory;
 use MediaWiki\MediaWikiServices;
+use MediaWiki\Title\NamespaceInfo;
 use Wikimedia\Rdbms\IDatabase;
 
 require_once dirname( dirname( dirname( __DIR__ ) ) ) . '/maintenance/Maintenance.php';
@@ -17,7 +18,7 @@ class ImportDummyData extends Maintenance {
 	/** @var \BlueSpice\ExtendedStatistics\ISnapshotStore */
 	private $snapshotStore;
 	/** @var NamespaceInfo */
-	private $namespaceInfo;
+	private NamespaceInfo $namespaceInfo;
 
 	/**
 	 * @var array
