@@ -9,6 +9,7 @@ use BlueSpice\ExtendedStatistics\ISnapshotStore;
 use BlueSpice\ExtendedStatistics\SnapshotFactory;
 use BlueSpice\ExtensionAttributeBasedRegistry;
 use MediaWiki\MediaWikiServices;
+use MediaWiki\Registration\ExtensionRegistry;
 
 return [
 
