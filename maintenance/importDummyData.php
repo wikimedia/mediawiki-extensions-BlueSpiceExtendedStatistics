@@ -9,6 +9,7 @@ use BlueSpice\ExtendedStatistics\SnapshotFactory;
 use MediaWiki\Maintenance\Maintenance;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Title\NamespaceInfo;
+use MediaWiki\Title\Title;
 use Wikimedia\Rdbms\IDatabase;
 
 require_once dirname( dirname( dirname( __DIR__ ) ) ) . '/maintenance/Maintenance.php';
