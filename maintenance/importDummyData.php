@@ -6,6 +6,7 @@ use BlueSpice\ExtendedStatistics\Snapshot;
 use BlueSpice\ExtendedStatistics\SnapshotDate;
 use BlueSpice\ExtendedStatistics\SnapshotDateRange;
 use BlueSpice\ExtendedStatistics\SnapshotFactory;
+use MediaWiki\Maintenance\Maintenance;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Title\NamespaceInfo;
 use Wikimedia\Rdbms\IDatabase;
