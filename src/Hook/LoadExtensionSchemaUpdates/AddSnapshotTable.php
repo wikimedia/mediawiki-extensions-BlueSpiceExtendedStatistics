@@ -3,7 +3,7 @@
 namespace BlueSpice\ExtendedStatistics\Hook\LoadExtensionSchemaUpdates;
 
 use BlueSpice\Hook\LoadExtensionSchemaUpdates;
-use DatabaseUpdater;
+use MediaWiki\Installer\DatabaseUpdater;
 
 class AddSnapshotTable extends LoadExtensionSchemaUpdates {
 
