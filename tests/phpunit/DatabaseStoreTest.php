@@ -9,8 +9,12 @@ use BlueSpice\ExtendedStatistics\SnapshotDateRange;
 use BlueSpice\ExtendedStatistics\SnapshotFactory;
 use BlueSpice\ExtendedStatistics\SnapshotStore\DatabaseStore;
 use PHPUnit\Framework\TestCase;
+use Wikimedia\Rdbms\IDatabase;
 use Wikimedia\Rdbms\LoadBalancer;
 
+/**
+ * @group Database
+ */
 class DatabaseStoreTest extends TestCase {
 	/** @var IDatabase */
 	private IDatabase $dbMock;
@@ -77,10 +81,10 @@ class DatabaseStoreTest extends TestCase {
 	 * @param string $title
 	 * @param int $hits
 	 *
-	 * @return stdClass
+	 * @return \stdClass
 	 */
-	private function mockDatabaseSnapshot( string $title, int $hits ): stdClass {
-		$snapshotMock = $this->createMock( stdClass::class );
+	private function mockDatabaseSnapshot( string $title, int $hits ): \stdClass {
+		$snapshotMock = $this->createMock( \stdClass::class );
 		$snapshotMock->ess_timestamp = 0;
 		$snapshotMock->ess_data = json_encode( [] );
 		$snapshotMock->ess_type = 'type';

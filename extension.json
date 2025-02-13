@@ -40,18 +40,7 @@
 					"extPath": "/BlueSpiceExtendedStatistics"
 				}
 			},
-			"ConfigDefinitionRegistry": {
-				"StatisticsExcludeUsers": "\\BlueSpice\\ExtendedStatistics\\ConfigDefinition\\ExcludeUsers::getInstance",
-				"StatisticsMaxNumberOfIntervals": "\\BlueSpice\\ExtendedStatistics\\ConfigDefinition\\MaxNumberOfIntervals::getInstance"
-			},
 			"PermissionRegistry": {
-				"statistic-viewspecialpage": {
-					"type": "global",
-					"roles": [
-						"admin",
-						"maintenanceadmin"
-					]
-				},
 				"extendedstatistics-viewspecialpage-aggregated": {
 					"type": "global",
 					"roles": [
@@ -104,33 +93,23 @@
 	},
 	"GroupPermissions": {
 		"*": {
-			"statistic-viewspecialpage": false,
 			"extendedstatistics-viewspecialpage-aggregated": false
 		},
 		"user": {
-			"statistic-viewspecialpage": true,
 			"extendedstatistics-viewspecialpage-aggregated": false
 		},
 		"sysop": {
-			"statistic-viewspecialpage": true,
 			"extendedstatistics-viewspecialpage-aggregated": true
 		}
 	},
 	"AvailableRights": [
-		"statistic-viewspecialpage",
 		"extendedstatistics-viewspecialpage-aggregated"
 	],
 	"SpecialPages": {
-		"ExtendedStatistics": "SpecialExtendedStatistics",
 		"AggregatedStatistic": "\\BlueSpice\\ExtendedStatistics\\Special\\AggregatedStatistic"
 	},
 	"JobClasses": {
 		"updateCollectionIndex": "\\BlueSpice\\ExtendedStatistics\\ExtendedSearch\\Job\\Snapshot"
-	},
-	"APIModules": {
-		"bs-statistics-search-options-store": "BSApiStatisticsSearchOptionsStore",
-		"bs-statistics-available-diagrams-store": "BSApiStatisticsAvailableDiagramsStore",
-		"bs-statistics-tasks": "BSApiStatisticsTasks"
 	},
 	"MessagesDirs": {
 		"BlueSpiceExtendedStatistics": [
@@ -143,40 +122,13 @@
 	"TestAutoloadNamespaces": {
 		"BlueSpice\\ExtendedStatistics\\Tests\\": "tests/phpunit/"
 	},
-	"AutoloadClasses": {
-		"BsStatisticsFilter": "includes/StatisticsFilter.class.php",
-		"BsSelectFilter": "includes/SelectFilter.class.php",
-		"BsMultiSelectFilter": "includes/MultiSelectFilter.class.php",
-		"BsDiagram": "includes/Diagram.class.php",
-		"BsFilterUsers": "includes/FilterUsers.class.php",
-		"BsFilterNamespace": "includes/FilterNamespace.class.php",
-		"BsFilterCategory": "includes/FilterCategory.class.php",
-		"BsDiagramNumberOfUsers": "includes/DiagramNumberOfUsers.class.php",
-		"BsDiagramNumberOfPages": "includes/DiagramNumberOfPages.class.php",
-		"BsDiagramNumberOfArticles": "includes/DiagramNumberOfArticles.class.php",
-		"BsDiagramNumberOfEdits": "includes/DiagramNumberOfEdits.class.php",
-		"BsDiagramEditsPerUser": "includes/DiagramEditsPerUser.class.php",
-		"BsDiagramSearches": "includes/DiagramSearches.class.php",
-		"MySQLDbReader": "includes/MySQLDbReader.class.php",
-		"StatsDataProvider": "includes/StatsDataProvider.class.php",
-		"Interval": "includes/Interval.class.php",
-		"BsCharting": "includes/Charting.class.php",
-		"SpecialExtendedStatistics": "includes/specials/SpecialExtendedStatistics.class.php",
-		"BSApiStatisticsSearchOptionsStore": "includes/api/BSApiStatisticsSearchOptionsStore.php",
-		"BSApiStatisticsAvailableDiagramsStore": "includes/api/BSApiStatisticsAvailableDiagramsStore.php",
-		"BSApiStatisticsTasks": "includes/api/BSApiStatisticsTasks.php"
-	},
 	"ExtensionMessagesFiles": {
 		"ExtendedStatisticsAlias": "languages/ExtendedStatistics.alias.php"
 	},
 	"load_composer_autoloader": true,
 	"Hooks": {
 		"LoadExtensionSchemaUpdates": "\\BlueSpice\\ExtendedStatistics\\Hook\\LoadExtensionSchemaUpdates\\AddSnapshotTable::callback",
-		"BSUsageTrackerRegisterCollectors": "\\BlueSpice\\ExtendedStatistics\\Hook\\BSUsageTrackerRegisterCollectors\\AddStatisticsProgressTag::callback",
-		"BSDashboardsAdminDashboardPortalConfig": "\\BlueSpice\\ExtendedStatistics\\Hook\\BSDashboardsAdminDashboardPortalConfig\\AddConfigs::callback",
-		"BSDashboardsAdminDashboardPortalPortlets": "\\BlueSpice\\ExtendedStatistics\\Hook\\BSDashboardsAdminDashboardPortalPortlets\\AddPortlets::callback",
-		"BSDashboardsUserDashboardPortalConfig": "\\BlueSpice\\ExtendedStatistics\\Hook\\BSDashboardsUserDashboardPortalConfig\\AddConfigs::callback",
-		"BSDashboardsUserDashboardPortalPortlets": "\\BlueSpice\\ExtendedStatistics\\Hook\\BSDashboardsUserDashboardPortalPortlets\\AddPortlets::callback"
+		"BSUsageTrackerRegisterCollectors": "\\BlueSpice\\ExtendedStatistics\\Hook\\BSUsageTrackerRegisterCollectors\\AddStatisticsProgressTag::callback"
 	},
 	"config_prefix": "bsg",
 	"config": {
@@ -203,61 +155,6 @@
 		}
 	},
 	"ResourceModules": {
-		"ext.bluespice.statistics": {
-			"scripts": [
-				"/bluespice.statistics.js"
-			],
-			"dependencies": [
-				"ext.bluespice.extjs",
-				"ext.extjsbase.charts"
-			],
-			"messages": [
-				"bs-statistics-filters",
-				"bs-statistics-finish",
-				"bs-statistics-diagram",
-				"bs-statistics-from",
-				"bs-statistics-to",
-				"bs-statistics-filter-user",
-				"bs-statistics-filter-searchscope",
-				"bs-ns",
-				"bs-statistics-filter-category",
-				"bs-statistics-mode",
-				"bs-statistics-absolute",
-				"bs-statistics-aggregated",
-				"bs-statistics-list",
-				"bs-statistics-grain",
-				"bs-statistics-year",
-				"bs-statistics-month",
-				"bs-statistics-week",
-				"bs-statistics-day",
-				"bs-statistics-label-count",
-				"bs-statistics-label-time",
-				"bs-statistics-button-label-export",
-				"bs-statistics-panel-title-result",
-				"bs-statistics-paging-page-size"
-			]
-		},
-		"ext.bluespice.statisticsPortlets": {
-			"scripts": [
-				"bluespice.statisticsPortlets.js"
-			],
-			"messages": [
-				"bs-statistics-label-count",
-				"bs-statistics-portlet-numberofusers",
-				"bs-statistics-portlet-numberofedits",
-				"bs-statistics-portlet-numberofpages",
-				"bs-statistics-portlet-numberofarticles",
-				"bs-extjs-portal-timespan",
-				"bs-statistics-portletconfig-periodday",
-				"bs-statistics-week",
-				"bs-statistics-month",
-				"bs-statistics-label-time"
-			],
-			"dependencies": [
-				"ext.bluespice.extjs",
-				"ext.extjsbase.charts"
-			]
-		},
 		"ext.bluespice.extendedstatistics.d3": {
 			"scripts": [ "libs/d3.min.js" ]
 		},
