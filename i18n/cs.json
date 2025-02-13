@@ -3,7 +3,8 @@
 		"authors": [
 			"Dvorapa",
 			"Fraxinus.cs",
-			"H4nek"
+			"H4nek",
+			"Jrobicek"
 		]
 	},
 	"bs-statistics-day": "Den",
@@ -21,5 +22,7 @@
 	"bs-statistics-aggregated-report-filter-page": "Stránka",
 	"bs-statistics-aggregated-report-filter-user": "Uživatel",
 	"bs-statistics-aggregated-report-filter-user-multi": "Uživatelé",
-	"bs-statistics-aggregated-report-loading": "Načítají se data…"
+	"bs-statistics-aggregated-report-loading": "Načítají se data…",
+	"bs-statistics-diag-number-of-edits": "Počet úprav",
+	"bs-statistics-diag-number-of-edits-desc": "Zobrazuje celkový počet úprav, které byly provedeny ve zvoleném období."
 }
