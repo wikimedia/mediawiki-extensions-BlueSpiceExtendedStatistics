@@ -1,7 +1,6 @@
 <?php
 
 use BlueSpice\ExtendedStatistics\AttributeRegistryFactory;
-use BlueSpice\ExtendedStatistics\Compatibility\ObjectFactoryWithServices;
 use BlueSpice\ExtendedStatistics\DiagramFactory;
 use BlueSpice\ExtendedStatistics\IReport;
 use BlueSpice\ExtendedStatistics\ISnapshotProvider;
@@ -28,7 +27,7 @@ return [
 			'BlueSpiceExtendedStatisticsSnapshotProviders'
 		);
 		return new AttributeRegistryFactory(
-			$registry, new ObjectFactoryWithServices( $services ), ISnapshotProvider::class
+			$registry, $services->getObjectFactory(), ISnapshotProvider::class
 		);
 	},
 
@@ -37,7 +36,7 @@ return [
 			'BlueSpiceExtendedStatisticsReports'
 		);
 		return new AttributeRegistryFactory(
-			$registry, new ObjectFactoryWithServices( $services ), IReport::class
+			$registry, $services->getObjectFactory(), IReport::class
 		);
 	},
 
@@ -56,7 +55,7 @@ return [
 			$specs = [ 'factory' => $specs ];
 		}
 		// Forward-compatibility to MW1.34+
-		$objectFactory = new ObjectFactoryWithServices( $services );
+		$objectFactory = $services->getObjectFactory();
 
 		$instance = $objectFactory->createObject( $specs );
 		if ( !$instance instanceof ISnapshotStore ) {
