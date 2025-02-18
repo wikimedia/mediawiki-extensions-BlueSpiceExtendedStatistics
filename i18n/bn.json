@@ -8,12 +8,5 @@
 			"আফতাবুজ্জামান"
 		]
 	},
-	"bs-statistics-week": "পঞ্জিকার সপ্তাহ",
-	"bs-statistics-diag-number-of-users": "ব্যবহারকারীর সংখ্যা",
-	"bs-statistics-label-name": "নাম",
-	"bs-statistics-label-registration": "নিবন্ধন",
-	"bs-statistics-diag-number-of-pages": "তৈরিকৃত পাতার সংখ্যা",
-	"bs-statistics-portlet-numberofarticles": "নিবন্ধের সংখ্যা",
-	"bs-statistics-portlet-numberofarticlesdesc": "নিবন্ধ সংখ্যার পরিসংখ্যান।",
 	"bs-statistics-tag-progress-label-text": "$1 <span class='visually-hidden'>এ অগ্রগতি দণ্ড</span>"
 }
