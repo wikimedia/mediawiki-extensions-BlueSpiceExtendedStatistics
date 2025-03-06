@@ -26,7 +26,7 @@ class ProgressHandler implements ITagHandler {
 	 * @inheritDoc
 	 */
 	public function getRenderedContent( string $input, array $params, Parser $parser, PPFrame $frame ): string {
-		$parser->getOutput()->setPageProperty( 'bs-tag-statistics-progress', 1 );
+		$parser->getOutput()->setPageProperty( 'bs-tag-statistics-progress', '1' );
 
 		// no Article when in cli mode
 		if ( !$this->title ) {
