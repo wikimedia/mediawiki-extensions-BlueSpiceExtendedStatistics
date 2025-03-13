@@ -167,12 +167,10 @@ class ImportDummyData extends Maintenance {
 				$previous = $this->snapshotStore->getPrevious( clone $snapshotDate, PageHitsSnapshot::TYPE );
 
 				foreach ( $data as $page => &$pageData ) {
-					$pageData['hitDiff'] = 0;
+					$pageData['hits'] = $pageData['hitDiff'];
 
 					if ( $previous ) {
-						$previousHits = $previous->getData()[$page]['hits'];
-						$pageData['hits'] += $previousHits;
-						$pageData['hitDiff'] = $pageData['hits'] - $previousHits;
+						$pageData['hits'] += $previous->getData()[$page]['hits'];
 					}
 				}
 			}
@@ -283,13 +281,20 @@ class ImportDummyData extends Maintenance {
 
 	/**
 	 * @param string $key
-	 * @return false|string|string[]|null
+	 * @return string|string[]|null
 	 */
 	private function parseKey( $key ) {
 		$matches = [];
 		if ( preg_match( '/\{\{\{(.*?)\}\}\}/', $key, $matches ) ) {
+			$option = $this->getOption( $matches[1] );
+
+			if ( !$option ) {
+				return [];
+			}
+
 			$options = explode( ',', $this->getOption( $matches[1] ) );
 			shuffle( $options );
+
 			return $options;
 		}
 
@@ -353,8 +358,8 @@ class ImportDummyData extends Maintenance {
 
 		return array_filter(
 			$this->collection[$type],
-			fn ( Snapshot $snapshot ) => $snapshot->getDate() >= $range->getFrom() &&
-				$snapshot->getDate() <= $range->getTo()
+			fn( Snapshot $snapshot ) => $snapshot->getDate() >= $range->getFrom() &&
+			$snapshot->getDate() <= $range->getTo()
 		);
 	}
 }
