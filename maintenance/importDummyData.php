@@ -17,7 +17,7 @@ class ImportDummyData extends Maintenance {
 	/** @var \BlueSpice\ExtendedStatistics\ISnapshotStore */
 	private $snapshotStore;
 	/** @var NamespaceInfo */
-	private $namespaceInfo;
+	private NamespaceInfo $namespaceInfo;
 
 	/**
 	 * @var array
@@ -29,8 +29,16 @@ class ImportDummyData extends Maintenance {
 	 * @var array
 	 */
 	private $terms = [
-		'income tax', 'quickbooks', 'account', 'accountant', 'cma', 'tax return',
-		'payroll', 'bookkeeping', 'chartered accountant', 'accountant salary'
+		'income tax',
+		'quickbooks',
+		'account',
+		'accountant',
+		'cma',
+		'tax return',
+		'payroll',
+		'bookkeeping',
+		'chartered accountant',
+		'accountant salary'
 	];
 
 	/** @var IDatabase */
@@ -164,12 +172,10 @@ class ImportDummyData extends Maintenance {
 				$previous = $this->snapshotStore->getPrevious( clone $snapshotDate, PageHitsSnapshot::TYPE );
 
 				foreach ( $data as $page => &$pageData ) {
-					$pageData['hitDiff'] = 0;
+					$pageData[ 'hits' ] = $pageData[ 'hitDiff' ];
 
 					if ( $previous ) {
-						$previousHits = $previous->getData()[$page]['hits'];
-						$pageData['hits'] += $previousHits;
-						$pageData['hitDiff'] = $pageData['hits'] - $previousHits;
+						$pageData[ 'hits' ] += $previous->getData()[ $page ][ 'hits' ];
 					}
 				}
 			}
@@ -200,7 +206,7 @@ class ImportDummyData extends Maintenance {
 	}
 
 	private function processTemplate( $template ) {
-		return $this->processValue( $template['members'] );
+		return $this->processValue( $template[ 'members' ] );
 	}
 
 	private function processValue( $value ) {
@@ -209,8 +215,8 @@ class ImportDummyData extends Maintenance {
 		}
 		$data = [];
 		if ( is_array( $value ) ) {
-			if ( isset( $value['key'] ) ) {
-				switch ( $value['key'] ) {
+			if ( isset( $value[ 'key' ] ) ) {
+				switch ( $value[ 'key' ] ) {
 					case '{{{user}}}':
 						$parsed = $this->userList;
 						break;
@@ -224,20 +230,20 @@ class ImportDummyData extends Maintenance {
 						$parsed = $this->categoryList;
 						break;
 					default:
-						$parsed = $this->parseKey( $value['key'] );
+						$parsed = $this->parseKey( $value[ 'key' ] );
 						break;
 				}
 				if ( is_string( $parsed ) ) {
-					$data[$parsed] = $this->processValue( $value['value'] );
+					$data[ $parsed ] = $this->processValue( $value[ 'value' ] );
 				}
 				if ( is_array( $parsed ) ) {
 					foreach ( $parsed as $key ) {
-						$data[$key] = $this->processValue( $value['value'] );
+						$data[ $key ] = $this->processValue( $value[ 'value' ] );
 					}
 				}
 			} else {
 				foreach ( $value as $k => $v ) {
-					$data[$k] = $this->processValue( $v );
+					$data[ $k ] = $this->processValue( $v );
 				}
 			}
 		}
@@ -247,6 +253,7 @@ class ImportDummyData extends Maintenance {
 
 	/**
 	 * @param string $value
+	 *
 	 * @return bool
 	 */
 	private function isRandInt( $value ) {
@@ -255,6 +262,7 @@ class ImportDummyData extends Maintenance {
 
 	/**
 	 * @param string $value
+	 *
 	 * @return int
 	 */
 	private function randInt( $value ) {
@@ -263,8 +271,12 @@ class ImportDummyData extends Maintenance {
 		if ( count( $bits ) === 1 ) {
 			return rand( 0, 100000 );
 		}
-		$limits = $bits[1];
-		[ $low, $high ] = explode( ',', $limits );
+		$limits = $bits[ 1 ];
+		[
+			$low,
+			$high
+		] = explode( ',', $limits );
+
 		return rand( (int)$low, (int)$high );
 	}
 
@@ -280,13 +292,21 @@ class ImportDummyData extends Maintenance {
 
 	/**
 	 * @param string $key
-	 * @return false|string|string[]|null
+	 *
+	 * @return string|string[]|null
 	 */
 	private function parseKey( $key ) {
 		$matches = [];
 		if ( preg_match( '/\{\{\{(.*?)\}\}\}/', $key, $matches ) ) {
-			$options = explode( ',', $this->getOption( $matches[1] ) );
+			$option = $this->getOption( $matches[ 1 ] );
+
+			if ( !$option ) {
+				return [];
+			}
+
+			$options = explode( ',', $this->getOption( $matches[ 1 ] ) );
 			shuffle( $options );
+
 			return $options;
 		}
 
@@ -304,10 +324,10 @@ class ImportDummyData extends Maintenance {
 		$snapshot = $this->snapshotFactory->createSnapshot( $snapshotDate, $key, $data );
 		$this->snapshotStore->persistSnapshot( $snapshot );
 
-		if ( !isset( $this->collection[$key] ) ) {
-			$this->collection[$key] = [];
+		if ( !isset( $this->collection[ $key ] ) ) {
+			$this->collection[ $key ] = [];
 		}
-		$this->collection[$key][] = $snapshot;
+		$this->collection[ $key ][] = $snapshot;
 	}
 
 	/**
@@ -322,7 +342,7 @@ class ImportDummyData extends Maintenance {
 		string $interval,
 		DateTime $date
 	): void {
-		if ( empty( $this->collection[$provider->getType()] ) ) {
+		if ( empty( $this->collection[ $provider->getType() ] ) ) {
 			return;
 		}
 
@@ -349,9 +369,9 @@ class ImportDummyData extends Maintenance {
 		], $interval );
 
 		return array_filter(
-			$this->collection[$type],
+			$this->collection[ $type ],
 			fn( Snapshot $snapshot ) => $snapshot->getDate() >= $range->getFrom() &&
-				$snapshot->getDate() <= $range->getTo()
+			$snapshot->getDate() <= $range->getTo()
 		);
 	}
 }
