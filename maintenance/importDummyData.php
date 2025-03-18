@@ -85,14 +85,24 @@ class ImportDummyData extends Maintenance {
 	}
 
 	private function loadUserList() {
-		$res = $this->dbr->select( 'user', 'user_name' );
+		$res = $this->dbr->select(
+			'user',
+			'user_name',
+			'',
+			__METHOD__
+		);
 		foreach ( $res as $row ) {
 			$this->userList[] = $row->user_name;
 		}
 	}
 
 	private function loadPageList() {
-		$res = $this->dbr->select( 'page', '*', [ 'page_content_model' => 'wikitext' ] );
+		$res = $this->dbr->select(
+			'page',
+			'*',
+			[ 'page_content_model' => 'wikitext' ],
+			__METHOD__
+		);
 		foreach ( $res as $row ) {
 			$title = Title::newFromRow( $row );
 			$this->pageList[] = $title->getPrefixedDBkey();
@@ -100,7 +110,12 @@ class ImportDummyData extends Maintenance {
 	}
 
 	private function loadCategoryList() {
-		$res = $this->dbr->select( 'category', 'cat_title' );
+		$res = $this->dbr->select(
+			'category',
+			'cat_title',
+			'',
+			__METHOD__
+		);
 		foreach ( $res as $row ) {
 			$this->categoryList[] = $row->cat_title;
 		}
