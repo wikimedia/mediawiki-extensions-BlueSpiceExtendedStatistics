@@ -58,7 +58,13 @@ class AddSnapshotTable extends LoadExtensionSchemaUpdates {
 	 */
 	public function removeOldData( DatabaseUpdater $updater ) {
 		$db = $updater->getDB();
-		if ( !$db->fieldExists( 'bs_extendedstatistics_snapshot', 'ess_type' ) ) {
+		if (
+			!$db->fieldExists(
+				'bs_extendedstatistics_snapshot',
+				'ess_type',
+				__METHOD__
+			)
+		) {
 			$updater->output( 'Field ess_type does not exists, aborting' );
 			return;
 		}
