@@ -22,5 +22,7 @@
 	"bs-statistics-panel-title-result": "Натыйжа",
 	"bs-statistics-label-creator": "Автор",
 	"bs-statistics-diag-number-of-edits": "Түзөтүүлөрдүн саны",
-	"bs-statistics-portlet-numberofedits": "Түзөтүүлөрдүн саны"
+	"bs-statistics-portlet-numberofedits": "Түзөтүүлөрдүн саны",
+	"bs-statistics-aggregated-report-filter-user": "Колдонуучу",
+	"bs-statistics-aggregated-report-filter-user-multi": "Колдонуучулар"
 }

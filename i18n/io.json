@@ -25,5 +25,6 @@
 	"bs-statistics-aggregated-report-filter-user-multi": "Uzeri",
 	"bs-statistics-list": "Listar",
 	"bs-statistics-portletconfig-periodday": "Hiere",
-	"bs-statistics-aggregated-report-filter-interval-day": "Dio"
+	"bs-statistics-aggregated-report-filter-interval-day": "Dio",
+	"bs-statistics-aggregated-report-filter-interval-week": "Semano"
 }
