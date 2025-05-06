@@ -96,6 +96,9 @@ class ApiQueryReports extends ApiQueryBase {
 		];
 	}
 
+	/**
+	 * @return array
+	 */
 	private function getFilter() {
 		$param = $this->getParameter( 'filter' );
 		$parsed = json_decode( $param, 1 );
@@ -107,6 +110,10 @@ class ApiQueryReports extends ApiQueryBase {
 		return $parsed;
 	}
 
+	/**
+	 * @param string $type
+	 * @return array
+	 */
 	private function getFiltered( $type ) {
 		$interval = $this->filter['interval'];
 		unset( $this->filter['interval'] );
@@ -122,6 +129,9 @@ class ApiQueryReports extends ApiQueryBase {
 		return $snapshots;
 	}
 
+	/**
+	 * @return mixed
+	 */
 	private function getType() {
 		$param = $this->getParameter( 'type' );
 		if ( !$this->reportFactory->hasType( $param ) ) {
