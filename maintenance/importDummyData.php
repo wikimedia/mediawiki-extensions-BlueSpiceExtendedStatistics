@@ -217,10 +217,18 @@ class ImportDummyData extends Maintenance {
 		return $template;
 	}
 
+	/**
+	 * @param array $template
+	 * @return array
+	 */
 	private function processTemplate( $template ) {
 		return $this->processValue( $template['members'] );
 	}
 
+	/**
+	 * @param mixed $value
+	 * @return array
+	 */
 	private function processValue( $value ) {
 		if ( $this->isRandInt( $value ) ) {
 			return $this->randInt( $value );

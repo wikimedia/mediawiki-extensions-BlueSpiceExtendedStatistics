@@ -7,9 +7,9 @@ use BsDiagram;
 use MediaWiki\Config\Config;
 
 class DiagramFactory {
+
 	/**
-	 * ExtensionAttributeBasedRegistry
-	 * @var type
+	 * @var ExtensionAttributeBasedRegistry
 	 */
 	protected $registry = null;
 
