@@ -6,6 +6,7 @@ use BlueSpice\ExtendedStatistics\ISnapshotStore;
 use BlueSpice\ExtendedStatistics\Snapshot;
 use BlueSpice\ExtendedStatistics\SnapshotDate;
 use BlueSpice\ExtendedStatistics\SnapshotDateRange;
+use BlueSpice\ExtendedStatistics\SnapshotFactory;
 use DateInterval;
 use Exception;
 use Wikimedia\Rdbms\LoadBalancer;
@@ -19,18 +20,23 @@ class DatabaseStore implements ISnapshotStore {
 	/** @var array */
 	private $conds = [];
 
+	/** @var SnapshotFactory */
+	private SnapshotFactory $snapshotFactory;
+
 	/**
 	 * @param LoadBalancer $loadBalancer
+	 * @param SnapshotFactory $snapshotFactory
 	 */
-	public function __construct( LoadBalancer $loadBalancer ) {
+	public function __construct( LoadBalancer $loadBalancer, SnapshotFactory $snapshotFactory ) {
 		$this->loadBalancer = $loadBalancer;
+		$this->snapshotFactory = $snapshotFactory;
 	}
 
 	/**
 	 * @inheritDoc
 	 */
 	public function getSnapshotForRange(
-		SnapshotDateRange $range, $type = null, $interval = 'day'
+		SnapshotDateRange $range, $type = null, $interval = Snapshot::INTERVAL_DAY
 	): array {
 		return $this->forRange( $range )->forType( $type )->forInterval( $interval )->query();
 	}
@@ -226,6 +232,6 @@ class DatabaseStore implements ISnapshotStore {
 		$type = $row->ess_type;
 		$interval = $row->ess_interval;
 
-		return new Snapshot( $date, $type, $data, $interval );
+		return $this->snapshotFactory->createSnapshot( $date, $type, $data, $interval );
 	}
 }
