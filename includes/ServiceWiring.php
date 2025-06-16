@@ -6,6 +6,7 @@ use BlueSpice\ExtendedStatistics\DiagramFactory;
 use BlueSpice\ExtendedStatistics\IReport;
 use BlueSpice\ExtendedStatistics\ISnapshotProvider;
 use BlueSpice\ExtendedStatistics\ISnapshotStore;
+use BlueSpice\ExtendedStatistics\SnapshotFactory;
 use BlueSpice\ExtensionAttributeBasedRegistry;
 use MediaWiki\MediaWikiServices;
 
@@ -65,5 +66,9 @@ return [
 		}
 
 		return $instance;
+	},
+
+	'ExtendedStatisticsSnapshotFactory' => static function ( MediaWikiServices $services ) {
+		return new SnapshotFactory();
 	}
 ];
