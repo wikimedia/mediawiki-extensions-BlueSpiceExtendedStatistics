@@ -218,7 +218,8 @@
 				"bs-statistics-aggregated-report-filter-namespaces",
 				"bs-statistics-aggregated-filter-category-namespace-notice",
 				"bs-statistics-aggregated-report-loading",
-				"bs-statistics-aggregated-report-error"
+				"bs-statistics-aggregated-report-error",
+				"bs-ns_main"
 			]
 		},
 		"ext.bluespice.extendedstatistics.visualEditorTagDefinition": {
