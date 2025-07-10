@@ -22,6 +22,7 @@
 	"apihelp-query+statistics-reports-example": "Forni tote le reportos pro le typo \"mytype\" pro datas 2021-09-14 e 2021-09-15",
 	"apihelp-query+statistics-reports-param-type": "Typo de statisticas (clave de reporto)",
 	"apihelp-query+statistics-reports-param-filter": "Datos de filtro codificate in JSON",
+	"apihelp-query+statistics-reports-param-aggregate": "Si le statisticas debe esser aggregate",
 	"bs-statistics-aggregated-report-picker-label": "Typo de reporto",
 	"bs-statistics-aggregated-report-no-date": "Il non ha datos pro le insimul actual de filtros, per favor cambia le valores de filtros",
 	"bs-statistics-aggregated-report-filter-category-multi": "Categorias",

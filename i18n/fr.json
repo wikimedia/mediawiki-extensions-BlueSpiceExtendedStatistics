@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Derugon",
 			"DreZhsh",
 			"Gomoko",
 			"Mahabarata",
@@ -31,6 +32,7 @@
 	"apihelp-query+statistics-reports-example": "Fournir tous les rapports de type « mytype », pour les dates 2021-09-14 et 2021-09-15",
 	"apihelp-query+statistics-reports-param-type": "Type de statistiques (clé du rapport)",
 	"apihelp-query+statistics-reports-param-filter": "Données de filtre encodées en JSON",
+	"apihelp-query+statistics-reports-param-aggregate": "Si les statistiques doivent être agrégées ou non",
 	"bs-statistics-aggregated-report-picker-label": "Type de rapport",
 	"bs-statistics-aggregated-report-no-date": "Aucune donnée pour le groupe de filtres actuel, veuillez changer les valeurs des filtres.",
 	"bs-statistics-aggregated-report-filter-category-multi": "Catégories",
