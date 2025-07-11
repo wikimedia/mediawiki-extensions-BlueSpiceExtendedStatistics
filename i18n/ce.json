@@ -5,6 +5,10 @@
 			"Умар"
 		]
 	},
+	"bs-statistics-desc": "BlueSpice статистикин модуль",
+	"aggregatedstatistic": "Суьртийн статистика",
+	"extendedstatisticssnapshots": "Суьрташ",
+	"bs-statistics-button-label-apply": "Фильтраш лелайе",
 	"bs-statistics-label-bar-chart": "Гистограмма",
 	"bs-statistics-label-line-chart": "Сизийн графика",
 	"bs-statistics-datasource-label": "Хаамийн хьост",
