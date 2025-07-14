@@ -5,6 +5,7 @@
 			"Умар"
 		]
 	},
+	"bs-statistics-desc": "BlueSpice статистикин модуль",
 	"prefs-statistics": "Шуьйра статистика",
 	"extendedstatistics": "Шуьйра статистика",
 	"bs-statistics-diagram": "Дехар",
@@ -43,6 +44,9 @@
 	"bs-statistics-portletconfig-periodday": "Селхана",
 	"bs-statistics-button-label-export": "Экспортйан",
 	"bs-statistics-panel-title-result": "Хилам",
+	"aggregatedstatistic": "Суьртийн статистика",
+	"extendedstatisticssnapshots": "Суьрташ",
+	"bs-statistics-button-label-apply": "Фильтраш лелайе",
 	"bs-statistics-label-bar-chart": "Гистограмма",
 	"bs-statistics-label-line-chart": "Сизийн графика",
 	"bs-statistics-datasource-label": "Хаамийн хьост",
