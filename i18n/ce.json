@@ -33,6 +33,9 @@
 	"bs-statistics-aggregated-report-filter-user-multi": "Декъашхой",
 	"bs-statistics-aggregated-report-loading": "Хаамаш дӀахӀуьттуш бу...",
 	"bs-statistics-ve-progressinspector-title": "Прогресс",
+	"bs-statistics-ve-progress-attr-basecount-label": "Базин лоруш",
+	"bs-statistics-ve-progress-attr-baseitem-label": "Базин элемент",
+	"bs-statistics-ve-progress-attr-progressitem-label": "Прогресс-элемент",
 	"bs-statistics-ve-progress-attr-width-label": "Шоралла",
 	"bs-statistics-droplet-progress-name": "Прогресс"
 }
