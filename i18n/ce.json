@@ -34,5 +34,8 @@
 	"bs-statistics-desc": "BlueSpice статистикин модуль",
 	"aggregatedstatistic": "Суьртийн статистика",
 	"extendedstatisticssnapshots": "Суьрташ",
-	"bs-statistics-button-label-apply": "Фильтраш лелайе"
+	"bs-statistics-button-label-apply": "Фильтраш лелайе",
+	"bs-statistics-ve-progress-attr-basecount-label": "Базин лоруш",
+	"bs-statistics-ve-progress-attr-baseitem-label": "Базин элемент",
+	"bs-statistics-ve-progress-attr-progressitem-label": "Прогресс-элемент"
 }
