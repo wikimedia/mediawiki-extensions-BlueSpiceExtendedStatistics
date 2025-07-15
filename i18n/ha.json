@@ -1,12 +1,14 @@
 {
 	"@metadata": {
 		"authors": [
+			"Gwanki",
 			"Hamxo",
 			"Harunaningi",
 			"Nura A Sani"
 		]
 	},
 	"apihelp-query+statistics-reports-summary": "Gabatar da kididdigaggen rahotanni akan ire-iren kididdigogi",
+	"apihelp-query+statistics-reports-param-aggregate": "Ko don tara kididdiga",
 	"bs-statistics-aggregated-report-no-date": "Ba bayani akan saitin wannan matatar, muna rokon achanza darajar matatar",
 	"bs-statistics-aggregated-report-filter-category-multi": "RABE RABE",
 	"bs-statistics-aggregated-report-filter-date-start": "Ranar  farawa",
