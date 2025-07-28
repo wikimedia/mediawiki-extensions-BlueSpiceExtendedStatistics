@@ -30,6 +30,7 @@
 	"apihelp-query+statistics-reports-example": "Geeft alle rapporten weer voor type \"mytype\", voor datums 2021-09-14 en 2021-09-15",
 	"apihelp-query+statistics-reports-param-type": "Type statistieken (rapportsleutel)",
 	"apihelp-query+statistics-reports-param-filter": "In JSON gecodeerde filtergegevens",
+	"apihelp-query+statistics-reports-param-aggregate": "Of de statistieken moeten worden samengevoegd",
 	"bs-statistics-aggregated-report-picker-label": "Rapporttype",
 	"bs-statistics-aggregated-report-no-date": "Geen gegevens voor de huidige filtergroep, wijzig aub. de filterwaarden",
 	"bs-statistics-aggregated-report-filter-category-multi": "Categorieën",
