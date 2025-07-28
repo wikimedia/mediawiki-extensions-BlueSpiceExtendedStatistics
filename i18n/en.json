@@ -118,5 +118,6 @@
 	"bs-statistics-ve-progress-attr-width-label": "Width",
 	"bs-statistics-ve-progress-attr-width-help": "Width of progress bar in pixels",
 	"bs-statistics-droplet-progress-name": "Progress",
-	"bs-statistics-droplet-progress-description": "Visualizes progress against given measurement variables"
+	"bs-statistics-droplet-progress-description": "Visualizes progress against given measurement variables",
+	"apihelp-query+statistics-reports-param-aggregate": "Whether to aggregate the statistics"
 }

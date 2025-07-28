@@ -5,6 +5,7 @@
 			"850710247liu",
 			"A Chinese Wikipedian",
 			"AYZ04",
+			"Aoum",
 			"CrownedWharf566",
 			"Evesiesta",
 			"Jbyccc",
@@ -138,5 +139,6 @@
 	"apihelp-query+statistics-reports-param-type": "统计数据的类型（关键报告）",
 	"bs-statistics-tag-progress-desc": "生成进度条。其值取决于正文中给定文本的外观和用户定义的上限。",
 	"bs-statistics-ve-progress-attr-basecount-label": "碱基数",
-	"bs-statistics-tag-progress-label-text": "<span class='visually-hidden'>进度条位于</span>$1"
+	"bs-statistics-tag-progress-label-text": "<span class='visually-hidden'>进度条位于</span>$1",
+	"apihelp-query+statistics-reports-param-aggregate": "是否聚合统计数据"
 }
