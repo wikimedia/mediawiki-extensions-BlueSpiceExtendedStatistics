@@ -28,6 +28,7 @@
 	"apihelp-query+statistics-reports-example": "אספקת כל הדו\"חות מסוג \"mytype\", עבור התאריכים 2021-09-14 ו־2021-09-15",
 	"apihelp-query+statistics-reports-param-type": "סוג הסטטיסטיקה (מפתח דו\"ח)",
 	"apihelp-query+statistics-reports-param-filter": "נתוני סינון מקודדים ב־JSON",
+	"apihelp-query+statistics-reports-param-aggregate": "האם לצבור את הסטטיסטיקות",
 	"bs-statistics-aggregated-report-picker-label": "סוג הדו\"ח",
 	"bs-statistics-aggregated-report-no-date": "אין נתונים עבור ערכת המסננים הנוכחית, נא לשנות את ערכי הסינון",
 	"bs-statistics-aggregated-report-filter-category-multi": "קטגוריות",
