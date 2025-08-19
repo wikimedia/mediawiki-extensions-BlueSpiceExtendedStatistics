@@ -12,7 +12,7 @@
 	"bs-statistics-desc": "Módulo de estatísticas para BlueSpice",
 	"aggregatedstatistic": "Estatísticas das instantáneas",
 	"action-extendedstatistics-viewspecialpage-aggregated": "acceder á páxina especial [[Special:AggregatedStatistic]]",
-	"right-extendedstatistics-viewspecialpage-aggregated": "Acceder á páxina especial [[Special:AggregatedStatistic]]",
+	"right-extendedstatistics-viewspecialpage-aggregated": "Acceso á páxina especial [[Special:AggregatedStatistic]]",
 	"extendedstatisticssnapshots": "Instantáneas",
 	"bs-statistics-button-label-apply": "Aplicar os filtros",
 	"bs-statistics-label-bar-chart": "Gráfico de barras",
