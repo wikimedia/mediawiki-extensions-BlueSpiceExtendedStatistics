@@ -13,6 +13,7 @@
 			"LaoShuBaby",
 			"LittlePaw365",
 			"Liuxinyu970226",
+			"Peterxy12",
 			"Phenolla",
 			"Shimamura Sakura",
 			"TsuyaMarisa",
@@ -140,5 +141,8 @@
 	"bs-statistics-tag-progress-desc": "生成进度条。其值取决于正文中给定文本的外观和用户定义的上限。",
 	"bs-statistics-ve-progress-attr-basecount-label": "碱基数",
 	"bs-statistics-tag-progress-label-text": "<span class='visually-hidden'>进度条位于</span>$1",
-	"apihelp-query+statistics-reports-param-aggregate": "是否聚合统计数据"
+	"apihelp-query+statistics-reports-param-aggregate": "是否聚合统计数据",
+	"bs-statistics-ve-progress-attr-basecount-help": "指定进度条完全填充时给定进度元素在页面上出现频率的上限",
+	"bs-statistics-ve-progress-attr-baseitem-help": "替代基数，可使用文本计算进度。文本中基数项的出现次数是根据进度项的出现次数设置的，从而指示进度",
+	"bs-statistics-droplet-progress-description": "根据给定的测量变量可视化进度"
 }
