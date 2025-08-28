@@ -170,6 +170,7 @@
 		},
 		"ext.bluespice.aggregatedstatistics.tools": {
 			"scripts": [
+				"bluespice.aggregatedstatistics.menuoptionwidget.js",
 				"report/Charts/Barchart.js",
 				"report/Charts/GroupBarchart.js",
 				"report/Charts/Bubblechart.js",
