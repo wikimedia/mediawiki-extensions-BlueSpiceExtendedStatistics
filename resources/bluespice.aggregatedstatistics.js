@@ -6,21 +6,25 @@ $( function() {
 		registry = new bs.aggregatedStatistics.ReportRegistry( JSON.parse( reportHandlers ) ),
 		defaultFilters = JSON.parse( $mainContainer.attr( 'data-default-filter' ) );
 
-	registry.connect( this, {
-		registrationComplete: function() {
+	registry.connect(this, {
+		registrationComplete: function () {
 			var options = [];
-			for ( var key in registry.registry ) {
-				if ( !registry.registry.hasOwnProperty( key ) ) {
+			for (var key in registry.registry) {
+				if (!registry.registry.hasOwnProperty(key)) {
 					continue;
 				}
-				options.push( new OO.ui.MenuOptionWidget( { data: key, label: registry.registry[key].static.label } ) );
+				options.push(new OO.ui.MenuOptionWidget({
+					data: key,
+					label: registry.registry[key].static.label,
+					desc: registry.registry[key].static.desc
+				}));
 			}
-			dropdown.getMenu().addItems( options );
-			dropdown.setDisabled( false );
+			dropdown.getMenu().addItems(options);
+			dropdown.setDisabled(false);
 
-			dropdown.getMenu().selectItemByData( Object.keys( registry.registry )[0] );
+			dropdown.getMenu().selectItemByData(Object.keys(registry.registry)[0]);
 		}
-	} );
+	});
 
 	var dropdown = new OO.ui.DropdownWidget( {
 		id: "statistic-selector",
