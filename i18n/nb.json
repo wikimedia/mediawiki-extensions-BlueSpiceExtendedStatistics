@@ -121,5 +121,7 @@
 	"bs-statistics-ve-progress-attr-progressitem-help": "Tekst i brødtekst som definerer fremgang",
 	"bs-statistics-ve-progress-attr-width-help": "Bredde på fremdriftslinje i piksler",
 	"bs-statistics-droplet-progress-description": "Visualiserer fremgang mot gitte målevariabler",
-	"bs-statistics-ve-progress-attr-baseitem-help": "Alternativ til grunntallet der tekst kan brukes for å regne ut framgangen. Antall forekomster av grunnelementet i teksten settes i forhold til antall forekomster i framgangselementet og indikerer dermed framgangen"
+	"bs-statistics-ve-progress-attr-baseitem-help": "Alternativ til grunntallet der tekst kan brukes for å regne ut framgangen. Antall forekomster av grunnelementet i teksten settes i forhold til antall forekomster i framgangselementet og indikerer dermed framgangen",
+	"apihelp-query+statistics-reports-param-aggregate": "Hvorvidt statistikken skal aggregeres",
+	"bs-statistics-tag-progress-label-text": "$1 <span class='visually-hidden'>fremdrift</span>"
 }
