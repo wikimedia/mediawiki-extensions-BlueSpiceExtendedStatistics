@@ -111,6 +111,7 @@
 	"bs-statistics-aggregated-report-loading": "Laster inn data …",
 	"bs-statistics-pref-excludeusers-help": "Noen brukere, f.eks. med administratorrettigheter, kan forvrenge statistikkene på Special:ExtendedStatistics. De kan ekskluderes fra statistiske resultater.",
 	"bs-statistics-tag-progress-desc": "Genererer en fremdriftslinje. Verdien avhenger av utseendet til angitt tekst i brødteksten og en øvre grense definert av brukeren.",
+	"bs-statistics-tag-progress-label-text": "$1 <span class='visually-hidden'>fremdrift</span>",
 	"bs-statistics-ve-progressinspector-title": "Framgang",
 	"bs-statistics-ve-progress-attr-basecount-label": "Grunntall",
 	"bs-statistics-ve-progress-attr-basecount-help": "Angir øvre grense på hvor ofte det gitte fremdriftselementet må forekomme på siden for at fremdriftslinja skal fylles helt",
