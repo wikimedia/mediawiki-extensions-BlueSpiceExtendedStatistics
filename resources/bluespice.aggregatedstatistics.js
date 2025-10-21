@@ -13,7 +13,7 @@ $( function() {
 				if (!registry.registry.hasOwnProperty(key)) {
 					continue;
 				}
-				options.push(new OO.ui.MenuOptionWidget({
+				options.push(new bs.aggregatedStatistics.MenuOptionWidget({
 					data: key,
 					label: registry.registry[key].static.label,
 					desc: registry.registry[key].static.desc
