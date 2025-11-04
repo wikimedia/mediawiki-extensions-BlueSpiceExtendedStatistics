@@ -24,5 +24,6 @@
 	"bs-statistics-diag-number-of-edits": "Түзөтүүлөрдүн саны",
 	"bs-statistics-portlet-numberofedits": "Түзөтүүлөрдүн саны",
 	"bs-statistics-aggregated-report-filter-user": "Колдонуучу",
-	"bs-statistics-aggregated-report-filter-user-multi": "Колдонуучулар"
+	"bs-statistics-aggregated-report-filter-user-multi": "Колдонуучулар",
+	"bs-statistics-aggregated-report-filter-category-multi": "Категориялар"
 }
