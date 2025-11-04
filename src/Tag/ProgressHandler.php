@@ -14,11 +14,11 @@ class ProgressHandler implements ITagHandler {
 
 	/**
 	 * @param BsPageContentProvider $pageContentProvider
-	 * @param Title $title
+	 * @param Title|null $title
 	 */
 	public function __construct(
 		private readonly BsPageContentProvider $pageContentProvider,
-		private readonly Title $title
+		private readonly ?Title $title
 	) {
 	}
 
