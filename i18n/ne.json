@@ -68,7 +68,7 @@
 	"bs-statistics-aggregated-report-filter-page": "पृष्ठ",
 	"bs-statistics-aggregated-report-filter-user": "प्रयोगकर्ता",
 	"bs-statistics-aggregated-report-filter-user-multi": "प्रयोगकर्ताहरू",
-	"bs-statistics-aggregated-filter-category-namespace-notice": "कोटीहरू वा नामस्थानहरूद्वारा फिल्टर गर्नुहोस्",
+	"bs-statistics-aggregated-filter-category-namespace-notice": "श्रेणीहरू वा नामपदहरूद्वारा फिल्टर गर्नुहोस्",
 	"bs-statistics-aggregated-report-error": "एउटा त्रुटि भएको छ!",
 	"bs-statistics-aggregated-report-loading": "डेटा लोड हुँदै...",
 	"bs-statistics-tag-progress-label-text": "$1 <span class='visually-hidden'>मा प्रगति पट्टी</span>",
