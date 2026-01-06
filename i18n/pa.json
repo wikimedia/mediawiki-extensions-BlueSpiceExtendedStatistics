@@ -4,6 +4,8 @@
 			"Cabal"
 		]
 	},
+	"bs-statistics-paging-page-size": "ਵਰਕੇ ਦਾ ਆਕਾਰ",
+	"bs-statistics-aggregated-report-filter-page": "ਵਰਕਾ",
 	"bs-statistics-aggregated-report-filter-user": "ਵਰਤੋਂਕਾਰ",
 	"bs-statistics-aggregated-report-filter-user-multi": "ਵਰਤੋਂਕਾਰ"
 }
