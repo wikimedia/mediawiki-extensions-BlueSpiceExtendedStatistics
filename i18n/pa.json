@@ -7,5 +7,7 @@
 	"bs-statistics-aggregated-report-filter-user": "ਵਰਤੋਂਕਾਰ",
 	"bs-statistics-diag-search-queries": "ਪੁੱਛਗਿੱਛ ਲੱਭੋ",
 	"bs-statistics-diagram": "ਪੁੱਛਗਿੱਛ",
-	"bs-statistics-aggregated-report-filter-user-multi": "ਵਰਤੋਂਕਾਰ"
+	"bs-statistics-aggregated-report-filter-user-multi": "ਵਰਤੋਂਕਾਰ",
+	"bs-statistics-paging-page-size": "ਵਰਕੇ ਦਾ ਆਕਾਰ",
+	"bs-statistics-aggregated-report-filter-page": "ਵਰਕਾ"
 }
