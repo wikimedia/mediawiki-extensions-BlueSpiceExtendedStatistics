@@ -6,6 +6,7 @@
 			"Grkn gll",
 			"Melissadilara",
 			"MuratTheTurkish",
+			"SaldırganSincap",
 			"Sayginer",
 			"Stonecy",
 			"ToprakM"
@@ -107,9 +108,9 @@
 	"bs-statistics-ve-progressinspector-title": "Süreç",
 	"bs-statistics-ve-progress-attr-baseitem-label": "Temel öge",
 	"bs-statistics-ve-progress-attr-progressitem-label": "Süreç ögesi",
-	"bs-statistics-ve-progress-attr-progressitem-help": "Süreç ögesi yardımı",
+	"bs-statistics-ve-progress-attr-progressitem-help": "Gövdede görünen metin ilerlemeyi tanımlar",
 	"bs-statistics-ve-progress-attr-width-label": "Genişlik",
-	"bs-statistics-ve-progress-attr-width-help": "Genişlik yardımı",
+	"bs-statistics-ve-progress-attr-width-help": "İlerleme çubuğunun piksel cinsinden genişliği",
 	"bs-statistics-aggregated-report-filter-namespace": "Ad alanı",
 	"bs-statistics-aggregated-report-filter-namespaces": "Ad alanları"
 }

@@ -127,5 +127,7 @@
 	"bs-statistics-ve-progress-attr-progressitem-help": "Tekst waarvan het voorkomen in de hoofdtekst de voortgang bepaalt",
 	"bs-statistics-ve-progress-attr-width-help": "Breedte van voortgangsbalk in pixels",
 	"bs-statistics-droplet-progress-name": "Voortgang",
-	"bs-statistics-droplet-progress-description": "Visualiseert de voortgang aan de hand van bepaalde meetvariabelen"
+	"bs-statistics-droplet-progress-description": "Visualiseert de voortgang aan de hand van bepaalde meetvariabelen",
+	"apihelp-query+statistics-reports-param-aggregate": "Of de statistieken moeten worden samengevoegd",
+	"bs-statistics-tag-progress-label-text": "<span class='visually-hidden'>Voortgangsbalk op </span> $1"
 }

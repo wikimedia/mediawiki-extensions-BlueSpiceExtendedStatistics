@@ -88,7 +88,7 @@
 	"bs-statistics-aggregationtype-label": "集計タイプ",
 	"bs-statistics-targets-label": "対象",
 	"bs-statistics-aggregated-report-picker-label": "レポートの種類",
-	"bs-statistics-aggregated-report-no-date": "現在のフィルタセットのデータがありません。フィルタ値を変更してください",
+	"bs-statistics-aggregated-report-no-date": "現在のフィルターセットのデータがありません。フィルター値を変更してください",
 	"bs-statistics-aggregated-report-filter-category-multi": "カテゴリ:",
 	"bs-statistics-aggregated-report-filter-date-start": "開始日",
 	"bs-statistics-aggregated-report-filter-date-end": "終了日",

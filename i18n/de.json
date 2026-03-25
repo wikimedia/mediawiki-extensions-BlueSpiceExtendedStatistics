@@ -126,5 +126,6 @@
 	"bs-statistics-ve-progress-attr-width-label": "Breite",
 	"bs-statistics-ve-progress-attr-width-help": "Breite des Fortschrittsbalkens in Pixel",
 	"bs-statistics-droplet-progress-name": "Fortschritt",
-	"bs-statistics-droplet-progress-description": "Visualisiert den Fortschritt anhand gegebener Messvariablen"
+	"bs-statistics-droplet-progress-description": "Visualisiert den Fortschritt anhand gegebener Messvariablen",
+	"bs-statistics-tag-progress-label-text": "<span class='visually-hidden'>Fortschrittsbalken bei</span> $1"
 }
