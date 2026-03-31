@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Renessaince",
+			"Ucukor",
 			"W"
 		]
 	},
@@ -25,5 +26,6 @@
 	"bs-statistics-panel-title-result": "Вынік",
 	"bs-statistics-datasource-label": "Крыніца зьвестак",
 	"bs-statistics-paging-page-size": "Памер старонкі",
-	"bs-statistics-aggregated-report-loading": "Загрузка зьвестак…"
+	"bs-statistics-aggregated-report-loading": "Загрузка зьвестак…",
+	"bs-statistics-aggregated-report-filter-interval": "Інтэрвал"
 }
