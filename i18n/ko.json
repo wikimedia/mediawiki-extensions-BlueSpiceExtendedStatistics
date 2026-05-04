@@ -4,6 +4,7 @@
 			"Comjun04",
 			"Hwangjy9",
 			"Maoue",
+			"Tensama0415",
 			"Underbaaar",
 			"Ykhwong"
 		]
@@ -31,5 +32,18 @@
 	"bs-statistics-aggregated-report-filter-user": "사용자",
 	"bs-statistics-aggregated-report-filter-user-multi": "사용자",
 	"bs-statistics-aggregated-report-error": "오류가 발생했습니다!",
-	"bs-statistics-aggregated-report-loading": "데이터를 불러오는 중..."
+	"bs-statistics-aggregated-report-loading": "데이터를 불러오는 중...",
+	"action-extendedstatistics-viewspecialpage-aggregated": "특수 문서 [[Special:AggregatedStatistic]]에 접근할",
+	"right-extendedstatistics-viewspecialpage-aggregated": "특수 문서 [[Special:AggregatedStatistic]]에 접근",
+	"bs-statistics-aggregationmode-label": "집계 모드",
+	"bs-statistics-aggregationfield-label": "집계 필드",
+	"bs-statistics-aggregationtype-label": "집계 유형",
+	"bs-statistics-targets-label": "대상",
+	"apihelp-query+statistics-reports-param-filter": "JSON 인코딩된 필터 데이터",
+	"apihelp-query+statistics-reports-param-aggregate": "통계를 집계할지 여부",
+	"bs-statistics-ve-progressinspector-title": "진행도",
+	"bs-statistics-ve-progress-attr-width-label": "너비",
+	"bs-statistics-ve-progress-attr-width-help": "진행도 바의 너비 (픽셀 단위)",
+	"bs-statistics-droplet-progress-name": "진행도",
+	"bs-statistics-droplet-progress-description": "주어진 측정 변수에 대한 진행 상황을 시각화합니다"
 }
