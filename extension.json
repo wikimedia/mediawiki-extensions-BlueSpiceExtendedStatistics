@@ -121,11 +121,15 @@
 	"Hooks": {
 		"LoadExtensionSchemaUpdates": "\\BlueSpice\\ExtendedStatistics\\Hook\\LoadExtensionSchemaUpdates\\AddSnapshotTable::callback",
 		"BSUsageTrackerRegisterCollectors": "\\BlueSpice\\ExtendedStatistics\\Hook\\BSUsageTrackerRegisterCollectors\\AddStatisticsProgressTag::callback",
-		"MWStakeGenericTagHandlerInitTags": "registerTags"
+		"MWStakeGenericTagHandlerInitTags": "registerTags",
+		"SetupAfterCache": "registerSnapshotGenerationCron"
 	},
 	"HookHandlers": {
 		"registerTags": {
 			"class": "\\BlueSpice\\ExtendedStatistics\\Hook\\RegisterTags"
+		},
+		"registerSnapshotGenerationCron": {
+			"class": "\\BlueSpice\\ExtendedStatistics\\Hook\\AddGenerateSnapshotCron"
 		}
 	},
 	"config_prefix": "bsg",
