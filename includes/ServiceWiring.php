@@ -70,5 +70,11 @@ return [
 
 	'ExtendedStatisticsSnapshotFactory' => static function ( MediaWikiServices $services ) {
 		return new SnapshotFactory();
-	}
+	},
+	'BlueSpice.ExtendedStatistics.SnapshotGenerator' => static function ( MediaWikiServices $services ) {
+		return new \BlueSpice\ExtendedStatistics\SnapshotGenerator(
+			$services->getService( 'ExtendedStatisticsSnapshotProviderFactory' ),
+			$services->getService( 'ExtendedStatisticsSnapshotStore' )
+		);
+	},
 ];

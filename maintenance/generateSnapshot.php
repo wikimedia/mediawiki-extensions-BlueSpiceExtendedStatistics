@@ -1,19 +1,12 @@
 <?php
 
-use BlueSpice\ExtendedStatistics\ISnapshotProvider;
-use BlueSpice\ExtendedStatistics\Snapshot;
 use BlueSpice\ExtendedStatistics\SnapshotDate;
-use BlueSpice\ExtendedStatistics\SnapshotDateRange;
+use BlueSpice\ExtendedStatistics\SnapshotGenerator;
 use MediaWiki\Maintenance\Maintenance;
-use MediaWiki\MediaWikiServices;
 
 require_once dirname( dirname( dirname( __DIR__ ) ) ) . '/maintenance/Maintenance.php';
 
 class GenerateSnapshot extends Maintenance {
-	/** @var \BlueSpice\ExtendedStatistics\AttributeRegistryFactory */
-	private $providerFactory;
-	/** @var \BlueSpice\ExtendedStatistics\ISnapshotStore */
-	private $snapshotStore;
 
 	public function __construct() {
 		parent::__construct();
@@ -38,26 +31,24 @@ class GenerateSnapshot extends Maintenance {
 		if ( !$this->hasOption( 'skip-timecheck' ) ) {
 			$this->timecheck();
 		}
-		$this->setServices();
+		/** @var SnapshotGenerator $generator */
+		$generator = $this->getServiceContainer()->getService( 'BlueSpice.ExtendedStatistics.SnapshotGenerator' );
 		$start = microtime( true );
 
 		$interval = $this->getOption( 'interval', 'day' );
-		if ( $interval === Snapshot::INTERVAL_DAY ) {
-			$this->generateForDate( $this->getYesterday() );
-		} else {
-			$this->aggregate( $interval );
-		}
+		$regenerate = $this->getOption( 'regenerate', false );
+		$res = $generator->generateSnapshot( $interval, $regenerate );
+		foreach ( $res['providers'] as $providerKey => $providerRes ) {
+			$this->output( "Provider: $providerKey..." );
+			if ( $providerRes ) {
+				$this->output( "Success\n" );
+			} else {
+				$this->output( "Failed\n" );
+			}
 
+		}
 		$end = microtime( true );
 		$this->output( "Complete! Took:" . ( round( $end - $start, 2 ) ) . "\n" );
-	}
-
-	private function setServices() {
-		$services = MediaWikiServices::getInstance();
-		$this->providerFactory = $services->getService(
-			'ExtendedStatisticsSnapshotProviderFactory'
-		);
-		$this->snapshotStore = $services->getService( 'ExtendedStatisticsSnapshotStore' );
 	}
 
 	/**
@@ -66,83 +57,6 @@ class GenerateSnapshot extends Maintenance {
 	private function getYesterday() {
 		$date = new SnapshotDate();
 		return $date->sub( new DateInterval( 'P1D' ) );
-	}
-
-	/**
-	 * @param SnapshotDate $date
-	 */
-	private function generateForDate( SnapshotDate $date ) {
-		/**
-		 * @var string $key
-		 * @var ISnapshotProvider $provider
-		 */
-		foreach ( $this->providerFactory->getAll() as $key => $provider ) {
-			$this->output( "Processing provider $key..." );
-			if (
-				$this->snapshotStore->hasSnapshot( $date, $key ) &&
-				!$this->hasOption( 'regenerate' )
-			) {
-				$this->output( "already exists, skipping\n" );
-				continue;
-			}
-
-			$snapshot = $provider->generateSnapshot( $date );
-			$status = $this->snapshotStore->persistSnapshot( $snapshot );
-			$secondaryData = $provider->getSecondaryData( $snapshot );
-			if ( is_array( $secondaryData ) ) {
-				$this->output( "storing secondary data..." );
-				$this->snapshotStore->persistSecondaryData( $snapshot, $secondaryData );
-			}
-
-			if ( $status ) {
-				$this->output( "done!\n" );
-			} else {
-				$this->output( "failed!\n" );
-			}
-		}
-	}
-
-	/**
-	 * @param string $interval
-	 */
-	private function aggregate( $interval ) {
-		$range = null;
-		$identifier = null;
-		switch ( $interval ) {
-			case Snapshot::INTERVAL_WEEK:
-				$range = SnapshotDateRange::newLastWeek();
-				$identifier = $range->getFrom()->format( 'W' );
-				break;
-			case Snapshot::INTERVAL_MONTH:
-				$range = SnapshotDateRange::newLastMonth();
-				$identifier = $range->getFrom()->format( 'F' );
-				break;
-			case Snapshot::INTERVAL_YEAR:
-				$range = SnapshotDateRange::newLastYear();
-				$identifier = $range->getFrom()->format( 'Y' );
-				break;
-		}
-
-		$this->output( "Generating snapshots for $interval $identifier...\n" );
-		/**
-		 * @var string $key
-		 * @var ISnapshotProvider $provider
-		 */
-		foreach ( $this->providerFactory->getAll() as $key => $provider ) {
-			$this->output( "Processing provider $key..." );
-			$snapshots = $this->snapshotStore->getSnapshotForRange( $range, $key );
-			if ( empty( $snapshots ) ) {
-				$this->output( "Found no snapshots for past $interval, skipping\n" );
-				continue;
-			}
-			$aggregated = $provider->aggregate( $snapshots, $interval, $range->getFrom() );
-			$status = $this->snapshotStore->persistSnapshot( $aggregated );
-			if ( $status ) {
-				$this->output( "done!\n" );
-			} else {
-				$this->output( "failed!\n" );
-			}
-		}
 	}
 
 	private function timecheck() {
