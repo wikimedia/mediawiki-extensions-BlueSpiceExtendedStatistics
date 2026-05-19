@@ -9,7 +9,7 @@
 			"Ykhwong"
 		]
 	},
-	"bs-statistics-desc": "BlueSpice의 통계 모듈",
+	"bs-statistics-desc": "블루스파이스의 통계 모듈",
 	"aggregatedstatistic": "스냅샷 통계",
 	"extendedstatisticssnapshots": "스냅샷",
 	"bs-statistics-button-label-apply": "필터 적용",
@@ -33,7 +33,7 @@
 	"bs-statistics-aggregated-report-filter-user-multi": "사용자",
 	"bs-statistics-aggregated-report-error": "오류가 발생했습니다!",
 	"bs-statistics-aggregated-report-loading": "데이터를 불러오는 중...",
-	"action-extendedstatistics-viewspecialpage-aggregated": "특수 문서 [[Special:AggregatedStatistic]]에 접근할",
+	"action-extendedstatistics-viewspecialpage-aggregated": "특수 문서 [[Special:AggregatedStatistic]]에 접근",
 	"right-extendedstatistics-viewspecialpage-aggregated": "특수 문서 [[Special:AggregatedStatistic]]에 접근",
 	"bs-statistics-aggregationmode-label": "집계 모드",
 	"bs-statistics-aggregationfield-label": "집계 필드",
