@@ -89,5 +89,10 @@
 	"bs-statistics-ve-progress-attr-width-label": "너비",
 	"bs-statistics-ve-progress-attr-width-help": "진행도 바의 너비 (픽셀 단위)",
 	"bs-statistics-droplet-progress-name": "진행도",
-	"bs-statistics-droplet-progress-description": "주어진 측정 변수에 대한 진행 상황을 시각화합니다"
+	"bs-statistics-droplet-progress-description": "주어진 측정 변수에 대한 진행 상황을 시각화합니다",
+	"apihelp-query+statistics-reports-summary": "다양한 통계 유형에 대한 통계 보고서를 제공합니다",
+	"apihelp-query+statistics-reports-example": "2021-09-14 및 2021-09-15 날짜의 \"mytype\" 유형에 대한 모든 보고서를 제공합니다",
+	"apihelp-query+statistics-reports-param-type": "통계의 유형 (보고서 키)",
+	"bs-statistics-aggregated-report-no-date": "현재 필터 세트에 대한 데이터가 없습니다. 필터 값을 변경하시기 바랍니다",
+	"bs-statistics-aggregated-filter-category-namespace-notice": "분류 또는 이름 공간에 따른 필터링"
 }
