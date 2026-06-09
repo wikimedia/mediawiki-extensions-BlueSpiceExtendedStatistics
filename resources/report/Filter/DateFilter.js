@@ -9,8 +9,8 @@
 	OO.inheritClass( bs.aggregatedStatistics.filter.DateFilter, bs.aggregatedStatistics.filter.Filter );
 
 	bs.aggregatedStatistics.filter.DateFilter.prototype.init = function () {
-		this.datePickerStart = new mw.widgets.DateInputWidget();
-		this.datePickerEnd = new mw.widgets.DateInputWidget();
+		this.datePickerStart = new OOJSPlus.ui.widget.DateInputWidget();
+		this.datePickerEnd = new OOJSPlus.ui.widget.DateInputWidget();
 		this.datePickerStart.connect( this, {
 			change: 'onFilter'
 		} );
