@@ -43,7 +43,7 @@
 	"bs-statistics-aggregated-report-filter-page": "문서",
 	"bs-statistics-aggregated-report-filter-user": "사용자",
 	"bs-statistics-aggregated-report-filter-user-multi": "사용자",
-	"bs-statistics-aggregated-filter-category-namespace-notice": "분류 또는 이름 공간에 따른 필터링",
+	"bs-statistics-aggregated-filter-category-namespace-notice": "분류 또는 이름공간에 따른 필터링",
 	"bs-statistics-aggregated-report-error": "오류가 발생했습니다!",
 	"bs-statistics-aggregated-report-loading": "데이터를 불러오는 중...",
 	"bs-statistics-pref-excludeusers-help": "관리자 권한을 가진 사용자 등 일부 사용자는 Special:ExtendedStatistics 문서의 통계를 왜곡할 수 있습니다. 이러한 사용자는 통계 결과에서 제외될 수 있습니다.",
