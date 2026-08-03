@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Robby"
+			"Robby",
+			"Volvox"
 		]
 	},
 	"bs-statistics-desc": "Statistik-Modul fir BlueSpice",
@@ -11,6 +12,7 @@
 	"bs-statistics-label-bar-chart": "Balkendiagramm",
 	"bs-statistics-label-line-chart": "Linnendiagramm",
 	"bs-statistics-datasource-label": "Source vun den Donnéeën",
+	"bs-statistics-aggregationtype-label": "Aggregatiounstyp",
 	"bs-statistics-targets-label": "Ziler",
 	"bs-statistics-paging-page-size": "Gréisst vun der Säit",
 	"bs-statistics-aggregated-report-filter-category-multi": "Kategorien",
