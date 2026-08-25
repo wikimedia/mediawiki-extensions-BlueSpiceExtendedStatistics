@@ -18,6 +18,7 @@
 	"rules": {
 		"es-x/no-object-values": "off",
 		"max-len": "off",
+		"mediawiki/no-unlabeled-buttonwidget": "off",
 		"no-jquery/no-global-selector": "off",
 		"no-prototype-builtins": "off"
 	}
