@@ -1,7 +1,22 @@
 {
 	"@metadata": {
 		"authors": [
-			"Ahmed-Najib-Biabani-Ibrahimkhel"
+			"Ahmed-Najib-Biabani-Ibrahimkhel",
+			"شاه زمان پټان"
 		]
-	}
+	},
+	"action-extendedstatistics-viewspecialpage-aggregated": "[[Special:AggregatedStatistic]] ځانگړي مخ ته لاسرسی ومومئ",
+	"right-extendedstatistics-viewspecialpage-aggregated": "[[Special:AggregatedStatistic]] ځانگړي مخ ته لاسرسی ومومئ",
+	"bs-statistics-button-label-apply": "چاڼگر پلي‌کول",
+	"bs-statistics-label-bar-chart": "ولاړ چارت",
+	"bs-statistics-label-line-chart": "کرښې چارت",
+	"bs-statistics-datasource-label": "اومتوک سرچینه",
+	"bs-statistics-aggregationmode-label": "راټولېدنې ونگ‌ډول",
+	"bs-statistics-aggregationfield-label": "راټولېدنې ډگر",
+	"bs-statistics-aggregationtype-label": "راټولېدنې ډول",
+	"bs-statistics-targets-label": "موخې",
+	"bs-statistics-paging-page-size": "مخ کچه",
+	"apihelp-query+statistics-reports-summary": "د بېلابېلو شمارنو ډولونو لپاره د شمارنې راپورونه چمتو کوي",
+	"apihelp-query+statistics-reports-param-type": "د شمارنې ډول (راپور کونجي)",
+	"bs-statistics-aggregated-report-picker-label": "راپور ډول"
 }
