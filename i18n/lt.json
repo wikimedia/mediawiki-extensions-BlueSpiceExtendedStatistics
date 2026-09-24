@@ -37,10 +37,5 @@
 	"bs-statistics-aggregated-report-filter-user-multi": "Naudotojai",
 	"bs-statistics-aggregated-filter-category-namespace-notice": "Filtruoti pagal kategorijas arba vardų sritis",
 	"bs-statistics-aggregated-report-error": "Įvyko klaida!",
-	"bs-statistics-aggregated-report-loading": "Įkeliami duomenys...",
-	"bs-statistics-ve-progressinspector-title": "Progresas",
-	"bs-statistics-ve-progress-attr-width-label": "Plotis",
-	"bs-statistics-ve-progress-attr-width-help": "Eigos juostos plotis pikseliais",
-	"bs-statistics-droplet-progress-name": "Progresas",
-	"bs-statistics-droplet-progress-description": "Vizualizuoja pažangą, palyginant su nurodytais matavimo kintamaisiais"
+	"bs-statistics-aggregated-report-loading": "Įkeliami duomenys..."
 }

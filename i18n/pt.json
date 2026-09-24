@@ -43,17 +43,5 @@
 	"bs-statistics-aggregated-filter-category-namespace-notice": "Filtrar só por categorias ou só por espaços nominais",
 	"bs-statistics-aggregated-report-error": "Ocorreu um erro!",
 	"bs-statistics-aggregated-report-loading": "A carregar dados...",
-	"bs-statistics-pref-excludeusers-help": "Alguns utilizadores, por exemplo com direitos de administrador, podem distorcer as estatísticas da página Special:ExtendedStatistics. Estes podem ser excluídos dos resultados estatísticos.",
-	"bs-statistics-tag-progress-desc": "Gera uma barra de progresso. O valor depende da aparência de um texto determinado, que se encontra no corpo, e de um limite superior definido pelo utilizador.",
-	"bs-statistics-ve-progressinspector-title": "Progresso",
-	"bs-statistics-ve-progress-attr-basecount-label": "Contagem de base",
-	"bs-statistics-ve-progress-attr-basecount-help": "Especifica o limite superior de ocorrências na página do elemento de progresso fornecido para que a barra de progresso seja completamente preenchida",
-	"bs-statistics-ve-progress-attr-baseitem-label": "Elemento de base",
-	"bs-statistics-ve-progress-attr-baseitem-help": "Alternativa ao número de base, em que pode ser usado texto para calcular o progresso. O número de ocorrências do elemento de base no texto é definido em relação ao número de ocorrências do elemento de progresso e indica assim o progresso",
-	"bs-statistics-ve-progress-attr-progressitem-label": "Elemento de progresso",
-	"bs-statistics-ve-progress-attr-progressitem-help": "O texto que aparece no corpo define o progresso",
-	"bs-statistics-ve-progress-attr-width-label": "Largura",
-	"bs-statistics-ve-progress-attr-width-help": "Largura da barra de progresso em píxeis",
-	"bs-statistics-droplet-progress-name": "Progresso",
-	"bs-statistics-droplet-progress-description": "Visualiza o progresso em relação a determinadas variáveis de medição"
+	"bs-statistics-pref-excludeusers-help": "Alguns utilizadores, por exemplo com direitos de administrador, podem distorcer as estatísticas da página Special:ExtendedStatistics. Estes podem ser excluídos dos resultados estatísticos."
 }

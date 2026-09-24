@@ -46,18 +46,5 @@
 	"bs-statistics-aggregated-filter-category-namespace-notice": "Filtrar por categorías ou por espazos de nomes",
 	"bs-statistics-aggregated-report-error": "Houbo un erro!",
 	"bs-statistics-aggregated-report-loading": "Cargando os datos...",
-	"bs-statistics-pref-excludeusers-help": "Algúns usuarios (por exemplo, aqueles con dereitos administrativos) poden distorcer as estatísticas da páxina «Special:ExtendedStatistics». Hai opción para excluílos dos resultados estatísticos.",
-	"bs-statistics-tag-progress-desc": "Xera unha barra de progreso. O valor depende da aparencia dun texto determinado que se atope no corpo e dun límite superior definido polo usuario.",
-	"bs-statistics-tag-progress-label-text": "<span class='visually-hidden'>Barra de progreso ao</span> $1",
-	"bs-statistics-ve-progressinspector-title": "Progreso",
-	"bs-statistics-ve-progress-attr-basecount-label": "Contador de base",
-	"bs-statistics-ve-progress-attr-basecount-help": "Especifica o límite superior do número de veces que o elemento de progreso indicado debe acontecer para que a barra de progreso se encha por completo",
-	"bs-statistics-ve-progress-attr-baseitem-label": "Elemento de base",
-	"bs-statistics-ve-progress-attr-baseitem-help": "Alternativa ao número de base onde se pode usar o texto para calcular o progreso. O número de aparicións do elemento de base no texto establécese en relación co número de aparicións do elemento de progreso e, polo tanto, indica o progreso.",
-	"bs-statistics-ve-progress-attr-progressitem-label": "Elemento de progreso",
-	"bs-statistics-ve-progress-attr-progressitem-help": "Texto cuxa aparición no corpo define o progreso",
-	"bs-statistics-ve-progress-attr-width-label": "Ancho",
-	"bs-statistics-ve-progress-attr-width-help": "Ancho da barra de progreso, en píxeles",
-	"bs-statistics-droplet-progress-name": "Progreso",
-	"bs-statistics-droplet-progress-description": "Visualiza o progreso fronte ás variables de medición indicadas"
+	"bs-statistics-pref-excludeusers-help": "Algúns usuarios (por exemplo, aqueles con dereitos administrativos) poden distorcer as estatísticas da páxina «Special:ExtendedStatistics». Hai opción para excluílos dos resultados estatísticos."
 }

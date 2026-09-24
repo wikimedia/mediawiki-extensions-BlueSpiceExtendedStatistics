@@ -41,9 +41,5 @@
 	"bs-statistics-aggregated-report-filter-user-multi": "Utenti",
 	"bs-statistics-aggregated-filter-category-namespace-notice": "Filtro per categorie o per namespace",
 	"bs-statistics-aggregated-report-error": "Si è verificato un errore!",
-	"bs-statistics-aggregated-report-loading": "Caricamento dati ...",
-	"bs-statistics-tag-progress-desc": "Genera una barra di avanzamento. Il valore dipende dall'aspetto di un testo dato nel corpo e da un limite superiore definito dall'utente.",
-	"bs-statistics-ve-progressinspector-title": "Avanzamento",
-	"bs-statistics-ve-progress-attr-width-label": "Larghezza",
-	"bs-statistics-ve-progress-attr-width-help": "Larghezza della barra di avanzamento in pixel"
+	"bs-statistics-aggregated-report-loading": "Caricamento dati ..."
 }

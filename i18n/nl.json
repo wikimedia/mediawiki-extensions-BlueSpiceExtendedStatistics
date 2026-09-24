@@ -49,18 +49,5 @@
 	"bs-statistics-aggregated-filter-category-namespace-notice": "Filter op categorieën of op naamruimten",
 	"bs-statistics-aggregated-report-error": "Er is een fout opgetreden!",
 	"bs-statistics-aggregated-report-loading": "Gegevens laden...",
-	"bs-statistics-pref-excludeusers-help": "Sommige gebruikers, bv. met beheerdersrechten, kunnen de statistieken op de pagina Special:ExtendedStatistics vervormen. Zij kunnen worden uitgesloten van statistische resultaten.",
-	"bs-statistics-tag-progress-desc": "Genereert een voortgangsbalk. De waarde hangt af van het uiterlijk van een gegeven tekst uit de hoofdtekst en van een door de gebruiker gedefinieerde bovengrens.",
-	"bs-statistics-tag-progress-label-text": "<span class='visually-hidden'>Voortgangsbalk op </span> $1",
-	"bs-statistics-ve-progressinspector-title": "Voortgang",
-	"bs-statistics-ve-progress-attr-basecount-label": "Basisaantal",
-	"bs-statistics-ve-progress-attr-basecount-help": "Geeft de bovengrens aan van het aantal keren dat het gegeven voortgangselement op de pagina moet voorkomen om de voortgangsbalk volledig te vullen",
-	"bs-statistics-ve-progress-attr-baseitem-label": "Basiselement",
-	"bs-statistics-ve-progress-attr-baseitem-help": "Alternatief voor het basisaantal waarbij de tekst kan worden gebruikt om de voortgang te berekenen. De voortgangsweergave wordt gebaseerd op de verhouding tussen het aantal malen dat het basiselement in de tekst voorkomt en het aantal malen dat het voortgangselement erin voorkomt.",
-	"bs-statistics-ve-progress-attr-progressitem-label": "Voortgangselement",
-	"bs-statistics-ve-progress-attr-progressitem-help": "Tekst waarvan het voorkomen in de hoofdtekst de voortgang bepaalt",
-	"bs-statistics-ve-progress-attr-width-label": "Breedte",
-	"bs-statistics-ve-progress-attr-width-help": "Breedte van voortgangsbalk in pixels",
-	"bs-statistics-droplet-progress-name": "Voortgang",
-	"bs-statistics-droplet-progress-description": "Visualiseert de voortgang aan de hand van bepaalde meetvariabelen"
+	"bs-statistics-pref-excludeusers-help": "Sommige gebruikers, bv. met beheerdersrechten, kunnen de statistieken op de pagina Special:ExtendedStatistics vervormen. Zij kunnen worden uitgesloten van statistische resultaten."
 }

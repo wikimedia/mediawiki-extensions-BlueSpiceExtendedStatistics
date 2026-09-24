@@ -26,7 +26,5 @@
 	"bs-statistics-aggregated-report-filter-user-multi": "Корисници",
 	"bs-statistics-aggregated-filter-category-namespace-notice": "Филтрирање или по категоријама или по именским просторима",
 	"bs-statistics-aggregated-report-error": "Дошло је до грешке!",
-	"bs-statistics-aggregated-report-loading": "Учитавање података...",
-	"bs-statistics-ve-progressinspector-title": "Напредак",
-	"bs-statistics-droplet-progress-name": "Напредак"
+	"bs-statistics-aggregated-report-loading": "Учитавање података..."
 }

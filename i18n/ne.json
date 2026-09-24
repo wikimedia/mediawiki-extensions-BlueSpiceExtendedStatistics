@@ -35,15 +35,5 @@
 	"bs-statistics-aggregated-report-filter-user-multi": "प्रयोगकर्ताहरू",
 	"bs-statistics-aggregated-filter-category-namespace-notice": "श्रेणीहरू वा नामपदहरूद्वारा फिल्टर गर्नुहोस्",
 	"bs-statistics-aggregated-report-error": "एउटा त्रुटि भएको छ!",
-	"bs-statistics-aggregated-report-loading": "डेटा लोड हुँदै...",
-	"bs-statistics-tag-progress-label-text": "$1 <span class='visually-hidden'>मा प्रगति पट्टी</span>",
-	"bs-statistics-ve-progressinspector-title": "प्रगति",
-	"bs-statistics-ve-progress-attr-basecount-label": "आधार गणना",
-	"bs-statistics-ve-progress-attr-baseitem-label": "आधारभूत वस्तु",
-	"bs-statistics-ve-progress-attr-progressitem-label": "प्रगति वस्तु",
-	"bs-statistics-ve-progress-attr-progressitem-help": "मुख्य भागमा देखिने पाठले प्रगतिलाई परिभाषित गर्दछ",
-	"bs-statistics-ve-progress-attr-width-label": "चौडाइ",
-	"bs-statistics-ve-progress-attr-width-help": "पिक्सेलमा प्रगति पट्टीको चौडाइ",
-	"bs-statistics-droplet-progress-name": "प्रगति",
-	"bs-statistics-droplet-progress-description": "दिइएको मापन चरहरू विरुद्ध प्रगतिको कल्पना गर्दछ"
+	"bs-statistics-aggregated-report-loading": "डेटा लोड हुँदै..."
 }

@@ -48,17 +48,5 @@
 	"bs-statistics-aggregated-filter-category-namespace-notice": "カテゴリまたは名前空間で絞り込み",
 	"bs-statistics-aggregated-report-error": "エラーが発生しました",
 	"bs-statistics-aggregated-report-loading": "データを読込中...",
-	"bs-statistics-pref-excludeusers-help": "管理者権限を持つ利用者など、一部の利用者はSpecial:ExtendedStatistics ページの統計情報を改ざんする可能性がありますが、統計結果から除外できます。",
-	"bs-statistics-tag-progress-desc": "進行状況バーを生成します。値は、本文で見つかった特定のテキストの外観と、利用者が定義した上限によって異なります。",
-	"bs-statistics-ve-progressinspector-title": "進捗",
-	"bs-statistics-ve-progress-attr-basecount-label": "ベースカウント",
-	"bs-statistics-ve-progress-attr-basecount-help": "進行状況バーが完全に満たされるために、指定された進行状況要素がページ上で発生しなければならない頻度の上限を指定します",
-	"bs-statistics-ve-progress-attr-baseitem-label": "ベースアイテム",
-	"bs-statistics-ve-progress-attr-baseitem-help": "テキストを使用して進行状況を計算できるベース番号の代替。本文中の基本項目の出現回数は、進捗項目の出現回数との関係で設定され、進捗状況を示します。",
-	"bs-statistics-ve-progress-attr-progressitem-label": "進行項目",
-	"bs-statistics-ve-progress-attr-progressitem-help": "本文の外観が進行状況を定義するテキスト",
-	"bs-statistics-ve-progress-attr-width-label": "幅",
-	"bs-statistics-ve-progress-attr-width-help": "プログレスバーの幅 (ピクセル単位)",
-	"bs-statistics-droplet-progress-name": "進捗",
-	"bs-statistics-droplet-progress-description": "与えられた計測変数に対する進行度を可視化します"
+	"bs-statistics-pref-excludeusers-help": "管理者権限を持つ利用者など、一部の利用者はSpecial:ExtendedStatistics ページの統計情報を改ざんする可能性がありますが、統計結果から除外できます。"
 }

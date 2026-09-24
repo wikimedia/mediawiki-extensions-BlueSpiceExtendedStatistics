@@ -51,18 +51,5 @@
 	"bs-statistics-aggregated-filter-category-namespace-notice": "Filtrer soit par catégories, soit par espaces de noms",
 	"bs-statistics-aggregated-report-error": "Une erreur est survenue !",
 	"bs-statistics-aggregated-report-loading": "Chargement des données...",
-	"bs-statistics-pref-excludeusers-help": "Certains utilisateurs, par exemple ceux avec des droits d’administrateur, peuvent perturber les statistiques de la page Special:ExtendedStatistics. Ils peuvent être exclus des résultats statistiques.",
-	"bs-statistics-tag-progress-desc": "Génère une barre de progression. La valeur dépend de l’apparition d’un texte donné trouvé dans le corps et d’une limite maximale définie par l’utilisateur.",
-	"bs-statistics-tag-progress-label-text": "<span class='visually-hidden'>Barre de progression à</span> $1",
-	"bs-statistics-ve-progressinspector-title": "Progression",
-	"bs-statistics-ve-progress-attr-basecount-label": "Compteur de base",
-	"bs-statistics-ve-progress-attr-basecount-help": "Spécifie la limite supérieure du nombre de fois où l’élément de progression donné doit se trouver sur la page pour que la barre de progression soit complètement remplie",
-	"bs-statistics-ve-progress-attr-baseitem-label": "Élément de base",
-	"bs-statistics-ve-progress-attr-baseitem-help": "Alternative au nombre de base où le texte peut être utilisé pour calculer la progression. Le nombre d’occurrences de l’élément de base dans le texte est fixé en relation avec le nombre d’occurrences de l’élément de progression et indique ainsi l’avancement",
-	"bs-statistics-ve-progress-attr-progressitem-label": "Élément de progression",
-	"bs-statistics-ve-progress-attr-progressitem-help": "Texte dont les apparitions dans le corps définit la progression",
-	"bs-statistics-ve-progress-attr-width-label": "Largeur",
-	"bs-statistics-ve-progress-attr-width-help": "Largeur de la barre de progression en pixels",
-	"bs-statistics-droplet-progress-name": "Avancement",
-	"bs-statistics-droplet-progress-description": "Visualise la progression des variables de mesure données"
+	"bs-statistics-pref-excludeusers-help": "Certains utilisateurs, par exemple ceux avec des droits d’administrateur, peuvent perturber les statistiques de la page Special:ExtendedStatistics. Ils peuvent être exclus des résultats statistiques."
 }
