@@ -40,18 +40,5 @@
 	"bs-statistics-aggregated-filter-category-namespace-notice": "Szűrés kategóriák vagy névterek szerint",
 	"bs-statistics-aggregated-report-error": "Hiba történt!",
 	"bs-statistics-aggregated-report-loading": "Adatok betöltése...",
-	"bs-statistics-pref-excludeusers-help": "Néhány felhasználó, pl. adminisztrátorok, torzíthatják a Special:ExtendedStatistics lapon található statisztikákat. Ezeket a felhasználókat ki lehet zárni a statisztikai eredményekből.",
-	"bs-statistics-tag-progress-desc": "Előrehaladási riportot készít. Az érték a törzsben található megadott szöveg számától és a felhasználó által meghatározott felső határtól függ.",
-	"bs-statistics-tag-progress-label-text": "<span class='visually-hidden'>Előrehaladási riport erről </span> $1",
-	"bs-statistics-ve-progressinspector-title": "Előrehaladás",
-	"bs-statistics-ve-progress-attr-basecount-label": "Alapszám",
-	"bs-statistics-ve-progress-attr-basecount-help": "Meghatározza a felső korlátot, hogy milyen gyakran kell a megadott elemnek megjelennie  lapon ahhoz, hogy az előrehaladás sáv teljes legyen.",
-	"bs-statistics-ve-progress-attr-baseitem-label": "Alapelem",
-	"bs-statistics-ve-progress-attr-baseitem-help": "Az alapszám alternatívája, ahol szöveg használható az előrehaladás számításához. Az alapelem szövegben való előfordulásainak száma a haladáselem előfordulásainak számához viszonyítva van beállítva, és így jelzi a haladást.",
-	"bs-statistics-ve-progress-attr-progressitem-label": "Haladáselem",
-	"bs-statistics-ve-progress-attr-progressitem-help": "A szöveg, ami a törzsben megjelenik, határozza meg a haladást",
-	"bs-statistics-ve-progress-attr-width-label": "Szélesség",
-	"bs-statistics-ve-progress-attr-width-help": "Az előrehaladás jelző sáv szélessége képpontban",
-	"bs-statistics-droplet-progress-name": "Előrehaladás",
-	"bs-statistics-droplet-progress-description": "Megjeleníti a haladást a megadott mérési változókhoz képest"
+	"bs-statistics-pref-excludeusers-help": "Néhány felhasználó, pl. adminisztrátorok, torzíthatják a Special:ExtendedStatistics lapon található statisztikákat. Ezeket a felhasználókat ki lehet zárni a statisztikai eredményekből."
 }

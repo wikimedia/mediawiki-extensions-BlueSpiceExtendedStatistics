@@ -22,7 +22,5 @@
 	"bs-statistics-aggregated-report-filter-page": "Strona",
 	"bs-statistics-aggregated-report-filter-user": "Użytkownik",
 	"bs-statistics-aggregated-report-filter-user-multi": "Użytkownicy",
-	"bs-statistics-aggregated-report-error": "Wystąpił błąd!",
-	"bs-statistics-ve-progress-attr-width-label": "Szerokość",
-	"bs-statistics-droplet-progress-name": "Postęp"
+	"bs-statistics-aggregated-report-error": "Wystąpił błąd!"
 }

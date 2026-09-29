@@ -21,7 +21,5 @@
 	"bs-statistics-aggregated-report-filter-namespaces": "Nimiavaruudet",
 	"bs-statistics-aggregated-report-filter-page": "Sivu",
 	"bs-statistics-aggregated-report-filter-user": "Käyttäjä",
-	"bs-statistics-aggregated-report-filter-user-multi": "Käyttäjät",
-	"bs-statistics-ve-progressinspector-title": "Edistyminen",
-	"bs-statistics-ve-progress-attr-width-label": "Leveys"
+	"bs-statistics-aggregated-report-filter-user-multi": "Käyttäjät"
 }

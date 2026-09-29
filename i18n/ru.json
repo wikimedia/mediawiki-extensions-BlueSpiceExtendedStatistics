@@ -43,9 +43,5 @@
 	"bs-statistics-aggregated-report-filter-user-multi": "Участники",
 	"bs-statistics-aggregated-filter-category-namespace-notice": "Фильтр по категориям или по пространствам имен",
 	"bs-statistics-aggregated-report-error": "Произошла ошибка!",
-	"bs-statistics-aggregated-report-loading": "Идёт загрузка данных…",
-	"bs-statistics-ve-progressinspector-title": "Прогресс",
-	"bs-statistics-ve-progress-attr-progressitem-help": "Текст, который появляется в теле, определяет прогресс",
-	"bs-statistics-ve-progress-attr-width-label": "Ширина",
-	"bs-statistics-droplet-progress-name": "Прогресс"
+	"bs-statistics-aggregated-report-loading": "Идёт загрузка данных…"
 }
