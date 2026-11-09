@@ -14,13 +14,15 @@ class AggregatedStatistic extends SpecialPage {
 	private $reportFactory;
 
 	public function __construct() {
-		parent::__construct(
-			'AggregatedStatistic',
-			'extendedstatistics-viewspecialpage-aggregated'
-		);
+		parent::__construct( 'AggregatedStatistic' );
 		$this->reportFactory = MediaWikiServices::getInstance()->getService(
 			'ExtendedStatisticsReportFactory'
 		);
+	}
+
+	/** @inheritDoc */
+	public function getRestriction(): string {
+		return 'extendedstatistics-viewspecialpage-aggregated';
 	}
 
 	/**
